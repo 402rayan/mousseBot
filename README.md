@@ -2,6 +2,6 @@
 Bot discord pour capturer des personnages
 
 # Arborescence
-
-├── .gitignore
-├── README.md   
+Il y a 2 dossiers principaux:
+- `test` 
+- `test2`
