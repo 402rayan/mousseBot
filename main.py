@@ -2,6 +2,11 @@
 import discord
 from discord.ext import commands 
 import getToken
+import bdd
+
+
+# Connect to database
+database = bdd.Database('./mousse.db')
 
 # Create a Discord client instance and set the command prefix
 intents = discord.Intents.all()
