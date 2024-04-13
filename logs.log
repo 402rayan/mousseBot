@@ -1,0 +1,1401 @@
+2024-04-13 10:47:35.658 | INFO     | __main__:on_ready:20 - MOUSSE#9964 est bien connecté!
+2024-04-13 10:47:35.703 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 10:49:33.190 | INFO     | __main__:on_ready:20 - MOUSSE#9964 est bien connecté!
+2024-04-13 10:49:33.190 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 10:49:46.637 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 10:49:46.650 | INFO     | bdd:insert_user:97 - L'utilisateur 402rayan a été inscrit dans la base de données.
+2024-04-13 10:50:40.322 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 10:50:40.323 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 10:54:36.440 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 10:54:36.441 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:03:42.142 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:03:42.143 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:03:54.672 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:03:54.673 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:03:56.543 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:03:56.544 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:03:57.685 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:03:57.687 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:03:57.698 | INFO     | bdd:claim_daily:131 - L'utilisateur 402rayan a réclamé son daily. Il a maintenant 1 tickets.
+2024-04-13 11:04:00.546 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:04:00.547 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:04:00.548 | INFO     | bdd:claim_daily:121 - L'utilisateur 402rayan a déjà réclamé son daily.
+2024-04-13 11:04:06.299 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:04:06.300 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:04:12.945 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 11:04:12.946 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan existe déjà dans la base de données.
+2024-04-13 11:04:12.959 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 724383641752436757.
+2024-04-13 11:04:12.960 | INFO     | bdd:summon_character:178 - Le joueur 724383641752436757 a invoqué Makima.
+2024-04-13 11:07:41.297 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:07:41.298 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:07:54.682 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:07:54.683 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:07:57.138 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:07:57.138 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:07:58.422 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:07:58.423 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:07:58.424 | INFO     | bdd:claim_daily:121 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 11:08:01.982 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:08:01.984 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:08:01.984 | INFO     | bdd:claim_daily:121 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 11:08:56.491 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:08:56.492 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:09:01.095 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:09:01.096 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:09:21.016 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:09:21.018 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:09:25.784 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:09:25.785 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:09:26.918 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:09:26.919 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:09:54.366 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:09:54.367 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:09:54.526 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:09:54.527 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:09:54.542 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:09:54.542 | INFO     | bdd:summon_character:178 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 11:12:44.669 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:12:44.670 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:12:44.683 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:12:44.683 | INFO     | bdd:summon_character:178 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:12:46.548 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:12:46.549 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:13:06.646 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:13:06.648 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:13:07.643 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:13:07.644 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:13:07.660 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:13:07.662 | INFO     | bdd:summon_character:178 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:17:39.418 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:17:39.420 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:17:40.194 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:17:40.196 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:17:40.213 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:17:40.217 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:18:02.889 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:18:02.890 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:18:03.747 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:18:03.748 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:18:03.761 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:18:03.761 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:18:23.141 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:18:23.142 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:18:25.062 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:18:25.064 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:18:25.079 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:18:25.081 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:20:51.985 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:20:51.986 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:20:53.096 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:20:53.097 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:20:53.111 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:20:53.113 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 11:21:36.848 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:21:36.848 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:21:37.787 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:21:37.788 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:21:37.800 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:21:37.801 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 11:22:09.885 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:22:09.886 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:22:09.912 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:22:09.913 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:22:09.927 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:22:09.929 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:22:41.734 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:22:41.735 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:22:42.588 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:22:42.589 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:22:42.603 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:22:42.604 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:24:10.532 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:24:10.533 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:24:11.348 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:24:11.349 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:24:11.361 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:24:11.362 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 11:24:47.537 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:24:47.538 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:24:47.551 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:24:47.552 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Aki.
+2024-04-13 11:24:47.999 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:24:48.000 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:24:49.562 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:24:49.564 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:24:49.577 | INFO     | bdd:create_character:153 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 11:24:49.579 | INFO     | bdd:summon_character:179 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 11:35:06.989 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:35:06.989 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:36:30.067 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:36:30.068 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:36:30.068 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:36:47.472 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:36:47.472 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:36:48.224 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:36:48.225 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:36:48.226 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:38:12.220 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:38:12.221 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:38:14.530 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:38:14.531 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:38:14.532 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:38:52.532 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:38:52.533 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:38:53.993 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:38:53.995 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:38:53.996 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:39:18.830 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:39:18.831 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:39:19.640 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:39:19.641 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:39:19.642 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:40:12.404 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:40:12.404 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:40:15.550 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:40:15.551 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:40:15.551 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:41:06.066 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:41:06.068 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:41:10.368 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:41:10.371 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:41:10.372 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:42:03.035 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:42:03.036 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:42:03.037 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:42:03.138 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:42:03.139 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:45:49.813 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:45:49.814 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:45:51.024 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:45:51.025 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:45:52.861 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:45:52.862 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:45:52.862 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:46:08.544 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:46:08.545 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:46:08.546 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 11:46:08.953 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:46:08.954 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:46:43.286 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 11:46:43.287 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 11:46:44.961 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:46:44.962 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:46:48.496 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 11:46:48.496 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 11:46:48.497 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 12:19:29.296 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:19:29.297 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:19:30.180 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:19:30.180 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:19:33.541 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:19:33.542 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:20:34.782 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:20:34.782 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:20:41.437 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:20:41.438 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:21:07.522 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:21:07.524 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:21:08.551 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:21:08.552 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:21:20.114 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:21:20.115 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:21:58.694 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:21:58.695 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:22:27.203 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:22:27.204 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:22:34.385 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:22:34.387 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:22:37.873 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:22:37.874 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:22:41.877 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:22:41.879 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:23:41.233 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:23:41.234 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:23:42.876 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:23:42.877 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:24:02.706 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:24:02.708 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:24:05.829 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:24:05.830 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:25:10.921 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:25:10.922 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:25:15.508 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:25:15.509 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:25:24.489 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:25:24.491 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:25:29.490 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:25:29.491 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:25:39.664 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:25:39.665 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:26:05.460 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:26:05.462 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:26:06.364 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:26:06.366 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:26:06.368 | ERROR    | __main__:idDiscordToInt:157 - Impossible de convertir @rayan en entier.
+2024-04-13 12:27:06.270 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:27:06.271 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:27:10.154 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:27:10.155 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:27:10.155 | ERROR    | __main__:idDiscordToInt:158 - Impossible de convertir @rayan en entier.
+2024-04-13 12:27:18.399 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:27:18.401 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:27:36.547 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:27:36.549 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:28:01.503 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:28:01.505 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:28:04.453 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:28:04.454 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:28:10.960 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:28:10.961 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:28:36.283 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:28:36.284 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:29:17.682 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur hakimeuw (512728949130788880) dans la base de données.
+2024-04-13 12:29:17.695 | INFO     | bdd:insert_user:97 - L'utilisateur hakimeuw (512728949130788880) a été inscrit dans la base de données.
+2024-04-13 12:29:17.697 | INFO     | bdd:inventaire:183 - Récupération de l'inventaire de hakimeuw (512728949130788880).
+2024-04-13 12:29:23.790 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:29:23.792 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:29:23.822 | INFO     | __main__:giveTicket:148 - L'utilisateur 402rayan (724383641752436757) a donné 10 tickets à 512728949130788880.
+2024-04-13 12:29:36.917 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:29:36.918 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:30:04.234 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur hakimeuw (512728949130788880) dans la base de données.
+2024-04-13 12:30:04.235 | INFO     | bdd:insert_user:99 - L'utilisateur hakimeuw (512728949130788880) existe déjà dans la base de données.
+2024-04-13 12:30:12.088 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:30:12.089 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:30:12.530 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:30:12.532 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:30:41.876 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:30:41.878 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:31:35.251 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:31:35.252 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:31:35.861 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:31:35.863 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:31:35.864 | INFO     | __main__:list_command:53 - Commande !list_command appelée par 402rayan (724383641752436757).
+2024-04-13 12:31:49.673 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:31:49.674 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:31:49.675 | INFO     | __main__:getTickets:62 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 12:33:11.768 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:33:11.769 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:33:11.770 | INFO     | __main__:getTickets:62 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 12:33:13.407 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:33:13.407 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:33:16.302 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:33:16.304 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:33:16.304 | INFO     | __main__:getTickets:62 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 12:33:21.974 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:33:21.975 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:33:21.975 | INFO     | __main__:getTickets:62 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 12:33:28.138 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:33:28.139 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:33:28.166 | INFO     | __main__:giveTicket:163 - L'utilisateur 402rayan (724383641752436757) a donné 3 tickets à 512728949130788880.
+2024-04-13 12:33:31.755 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:33:31.756 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:33:31.757 | INFO     | __main__:getTickets:62 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 12:39:24.354 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:39:24.355 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:39:24.764 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:39:24.765 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:39:39.722 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:39:39.723 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:39:40.231 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:39:40.232 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:39:45.295 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:39:45.296 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:41:19.360 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:41:19.361 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:41:20.336 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:41:20.338 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:41:20.338 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template 402rayan pour l'utilisateur 724383641752436757 (makima).
+2024-04-13 12:41:24.980 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:41:24.981 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:41:24.982 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template 402rayan pour l'utilisateur 724383641752436757 (Makima).
+2024-04-13 12:42:09.886 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:42:09.888 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:42:09.888 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template Makima pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:42:10.093 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:42:10.094 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:42:13.398 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:42:13.399 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:42:13.400 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template makima pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:43:13.610 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:43:13.610 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:43:14.355 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:43:14.356 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:43:14.357 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template makima pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:44:35.812 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:44:35.813 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:44:36.789 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:44:36.791 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:44:36.792 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template (2, 'Makima', 'S', 'https://i.imgur.com/BxbL0gt.gif', 200, 200, 200) pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:47:36.067 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:47:36.068 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:47:36.070 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template (2, 'Makima', 'S', 'https://i.imgur.com/BxbL0gt.gif', 200, 200, 200) pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:47:36.228 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 12:47:36.229 | INFO     | bdd:create_tables:87 - Les tables ont été créées.
+2024-04-13 12:47:50.396 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:47:50.398 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:47:50.398 | INFO     | bdd:get_character_template_by_name:153 - Récupération du template (1, 'Aki', 'A', 'https://imgur.com/g5YvNOp', 100, 100, 100) pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:47:58.092 | INFO     | bdd:insert_user:91 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 12:47:58.093 | INFO     | bdd:insert_user:99 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 12:47:58.119 | INFO     | bdd:create_character:159 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 12:47:58.120 | INFO     | bdd:summon_character:185 - Le joueur 402rayan (724383641752436757) a invoqué Makima.
+2024-04-13 13:01:04.608 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:01:17.588 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:01:17.631 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:05:56.347 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:05:56.349 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:06:00.884 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:06:00.897 | INFO     | bdd:insert_user:103 - L'utilisateur 402rayan (724383641752436757) a été inscrit dans la base de données.
+2024-04-13 13:06:00.899 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:06:27.690 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:06:27.692 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:06:28.860 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:06:28.861 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:06:28.862 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:07:04.657 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:07:04.658 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:07:05.756 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:07:05.758 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:07:05.759 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:07:54.427 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:07:54.428 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:07:55.378 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:07:55.379 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:07:55.380 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:08:50.890 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:08:50.891 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:08:51.591 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:08:51.592 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:08:55.340 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:08:55.341 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:08:57.595 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:08:57.596 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:00.071 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:00.072 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:00.097 | INFO     | bdd:claim_daily:137 - L'utilisateur 402rayan (724383641752436757) a réclamé son daily. Il a maintenant 1 tickets.
+2024-04-13 13:09:01.483 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:01.484 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:01.508 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:09:01.510 | INFO     | bdd:summon_character:191 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 13:09:29.550 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:29.551 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:29.576 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:09:29.578 | INFO     | bdd:summon_character:191 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 13:09:33.922 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:33.924 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:33.948 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:09:33.949 | INFO     | bdd:summon_character:191 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 13:09:58.038 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:58.039 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:59.448 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:09:59.450 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:09:59.450 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:11:11.408 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:11:11.409 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:11:13.231 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:11:13.232 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:11:13.232 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:11:50.434 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:11:50.435 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:11:51.403 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:11:51.404 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:11:51.405 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:12:30.361 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:12:30.362 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:12:30.363 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:12:30.588 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:12:30.589 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:12:51.256 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:12:51.257 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:12:51.468 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (942480142779969636).
+2024-04-13 13:13:45.194 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:13:45.195 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:13:45.341 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:13:46.112 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:13:46.112 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:13:51.547 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:13:51.547 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:13:51.689 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (512728949130788880).
+2024-04-13 13:17:24.785 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:17:24.787 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:17:25.441 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:17:25.443 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:17:25.444 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:17:29.746 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:17:29.747 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:17:29.908 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:17:53.359 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:17:53.361 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:17:53.548 | INFO     | bdd:get_team:204 - Récupération de l'équipe de MOUSSE (942480142779969636).
+2024-04-13 13:20:55.032 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:20:55.033 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:20:56.889 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:20:56.890 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:21:43.579 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:21:43.581 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:21:45.529 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:21:45.532 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:21:55.140 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:21:55.141 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:21:55.324 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:21:57.576 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:21:57.577 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:25:03.161 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur hakimeuw (512728949130788880) dans la base de données.
+2024-04-13 13:25:03.177 | INFO     | bdd:insert_user:103 - L'utilisateur hakimeuw (512728949130788880) a été inscrit dans la base de données.
+2024-04-13 13:28:33.148 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:28:33.149 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:28:33.150 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 13:29:41.504 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:29:41.505 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:29:41.687 | INFO     | bdd:get_team:204 - Récupération de l'équipe de hakimeuw (512728949130788880).
+2024-04-13 13:29:50.129 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:29:50.130 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:30:22.473 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:30:22.476 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:30:23.892 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:30:23.893 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:03.464 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:32:03.465 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:03.466 | ERROR    | __main__:fetch_user_from_message:224 - Erreur de syntaxe dans fetch_user_from_message appelée par 402rayan (724383641752436757).
+2024-04-13 13:32:03.748 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:32:03.749 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:32:31.283 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:32:31.283 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:32:34.939 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:32:34.940 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:34.941 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:32:38.659 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:32:38.661 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:38.851 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:32:41.934 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:32:41.935 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:42.133 | INFO     | bdd:get_team:204 - Récupération de l'équipe de hakimeuw (512728949130788880).
+2024-04-13 13:32:45.924 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:32:45.926 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:32:45.927 | ERROR    | __main__:fetch_user_from_message:224 - Erreur de syntaxe dans fetch_user_from_message appelée par 402rayan (724383641752436757).
+2024-04-13 13:34:15.389 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:34:15.390 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:34:15.391 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:34:16.624 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:34:16.625 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:34:19.777 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:34:19.778 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:34:19.779 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:35:36.344 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:35:36.346 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:35:40.165 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:35:40.166 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:35:40.167 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:03.813 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:36:03.814 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:36:03.993 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:03.995 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:03.996 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:09.198 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:09.199 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:09.200 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:25.642 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:36:25.643 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:36:25.925 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:25.926 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:25.928 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:29.362 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:29.363 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:29.364 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:32.641 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:32.642 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:32.643 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:36.451 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:36:36.453 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:36:36.454 | INFO     | __main__:getTickets:66 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 13:36:36.455 | ERROR    | __main__:fetch_user_from_message:225 - Erreur de syntaxe dans fetch_user_from_message appelée par 402rayan (724383641752436757).
+2024-04-13 13:46:21.313 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:46:21.314 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:46:24.911 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:24.912 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:46:28.522 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:28.522 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:46:39.799 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:39.800 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:46:39.801 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:46:40.063 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:46:40.064 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:46:44.869 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:44.870 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:46:45.028 | INFO     | bdd:get_team:204 - Récupération de l'équipe de hakimeuw (512728949130788880).
+2024-04-13 13:46:46.729 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:46.730 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:46:46.731 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:46:52.819 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:46:52.820 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:47:27.540 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:47:27.541 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:47:50.309 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:47:50.310 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:09.008 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:48:09.009 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:48:09.638 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:48:09.639 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:15.685 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:48:15.686 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:21.399 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:48:21.400 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:21.401 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage Moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:48:26.609 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:48:26.610 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:26.611 | INFO     | __main__:inventaire:121 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 13:48:26.611 | INFO     | bdd:inventaire:195 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 13:48:34.543 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:48:34.544 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:48:34.544 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:48:34.545 | INFO     | __main__:ajouterTeam:245 - L'utilisateur 402rayan (724383641752436757) a ajouté rayan à sa team en position 3.
+2024-04-13 13:52:29.627 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:52:29.627 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:55:00.879 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:55:00.880 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:55:00.881 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:55:00.882 | INFO     | __main__:ajouterTeam:245 - L'utilisateur 402rayan (724383641752436757) a ajouté rayan à sa team en position 3.
+2024-04-13 13:55:00.883 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 3, character id 1.
+2024-04-13 13:56:02.792 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 13:56:02.793 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 13:56:10.160 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:56:10.161 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:56:10.162 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:56:10.163 | INFO     | __main__:ajouterTeam:245 - L'utilisateur 402rayan (724383641752436757) a ajouté rayan à sa team en position 3.
+2024-04-13 13:56:10.164 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 3, character id 1.
+2024-04-13 13:56:13.644 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:56:13.644 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:56:19.138 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:56:19.139 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:56:20.966 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:56:20.967 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:56:20.968 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:57:19.890 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:19.891 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:19.903 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:57:19.904 | INFO     | bdd:summon_character:191 - Le joueur 402rayan (724383641752436757) a invoqué moshi.
+2024-04-13 13:57:24.385 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:24.386 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:24.386 | INFO     | __main__:inventaire:121 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 13:57:24.387 | INFO     | bdd:inventaire:195 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 13:57:32.210 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:32.211 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:35.855 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:35.856 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:35.857 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 13:57:35.858 | INFO     | __main__:ajouterTeam:245 - L'utilisateur 402rayan (724383641752436757) a ajouté moshi à sa team en position 1.
+2024-04-13 13:57:35.859 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 1, character id 4.
+2024-04-13 13:57:39.313 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:39.315 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:40.594 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:57:40.594 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:57:40.595 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 13:58:18.831 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 13:58:18.832 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 13:58:19.014 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:00:02.179 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:00:02.180 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:00:20.888 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:00:20.889 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:00:20.890 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:00:27.161 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:00:27.162 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:00:27.163 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:01:09.723 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:01:09.726 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:01:11.263 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:01:11.264 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:01:11.265 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:01:13.899 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:01:13.900 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:01:13.901 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:01:13.902 | INFO     | __main__:ajouterTeam:249 - L'utilisateur 402rayan (724383641752436757) a ajouté moshi à sa team en position 1.
+2024-04-13 14:01:13.903 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 1, character id 4.
+2024-04-13 14:01:17.595 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:01:17.596 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:01:17.597 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:01:49.895 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:01:49.895 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:02:04.399 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:04.401 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:04.401 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:02:05.111 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:02:05.111 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:02:22.741 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:22.743 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:22.744 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:02:27.970 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:27.971 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:31.929 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:31.931 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:31.931 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:02:35.626 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:35.627 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:35.628 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:02:38.314 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:38.315 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:38.316 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:02:44.786 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:44.787 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:44.788 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:02:44.789 | INFO     | __main__:ajouterTeam:248 - L'utilisateur 402rayan (724383641752436757) a ajouté rayan à sa team en position 1.
+2024-04-13 14:02:44.790 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 1, character id 1.
+2024-04-13 14:02:47.309 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:47.310 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:47.311 | INFO     | bdd:get_character_by_name_and_user:214 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:02:47.312 | INFO     | __main__:ajouterTeam:248 - L'utilisateur 402rayan (724383641752436757) a ajouté moshi à sa team en position 2.
+2024-04-13 14:02:47.312 | INFO     | bdd:set_team:219 - Modification de l'équipe de 402rayan (724383641752436757), slot 2, character id 4.
+2024-04-13 14:02:48.384 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:02:48.385 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:02:48.386 | INFO     | bdd:get_team:204 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:19:32.596 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:19:32.598 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:19:34.156 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:19:34.158 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:19:34.166 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:19:34.168 | INFO     | bdd:summon_character:194 - Le joueur 402rayan (724383641752436757) a invoqué moshi.
+2024-04-13 14:23:55.475 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:23:55.476 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:23:56.296 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:23:56.298 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:23:58.425 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:23:58.426 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:24:27.439 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:24:27.440 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:24:27.454 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 14:24:27.455 | INFO     | bdd:summon_character:202 - Le joueur 402rayan (724383641752436757) a invoqué caramel.
+2024-04-13 14:24:30.850 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:24:30.851 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:24:45.805 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:24:45.806 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:24:45.807 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:25:56.178 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:25:56.180 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:25:56.181 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:25:56.354 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:25:56.355 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:25:59.222 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:25:59.223 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:25:59.224 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:27:36.101 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:27:36.102 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:27:36.103 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:27:37.589 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:27:37.590 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:27:54.924 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:27:54.925 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:27:54.926 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 14:27:56.046 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 14:27:56.047 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 14:27:57.405 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 14:27:57.407 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 14:27:57.408 | INFO     | bdd:get_team:216 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 15:20:11.031 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:20:11.033 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:20:13.089 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:13.090 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:13.090 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:20:13.091 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:20:15.968 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:15.969 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:33.704 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:20:33.705 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:20:33.879 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:33.880 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:33.881 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:33.881 | INFO     | bdd:sell_character:249 - Vente du personnage 1 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:33.887 | INFO     | bdd:delete_character:174 - Le personnage 1 a été supprimé.
+2024-04-13 15:20:33.888 | INFO     | __main__:sell:298 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour 1 tickets.
+2024-04-13 15:20:36.168 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:36.169 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:36.170 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:36.171 | INFO     | bdd:sell_character:249 - Vente du personnage 2 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:36.178 | INFO     | bdd:delete_character:174 - Le personnage 2 a été supprimé.
+2024-04-13 15:20:36.179 | INFO     | __main__:sell:298 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour 1 tickets.
+2024-04-13 15:20:37.519 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:37.521 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:37.522 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:37.523 | INFO     | bdd:sell_character:249 - Vente du personnage 3 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:37.529 | INFO     | bdd:delete_character:174 - Le personnage 3 a été supprimé.
+2024-04-13 15:20:37.530 | INFO     | __main__:sell:298 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour 1 tickets.
+2024-04-13 15:20:38.704 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:38.705 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:38.706 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:47.698 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:47.699 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:47.700 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:20:47.701 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:20:50.965 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:50.966 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:50.967 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:50.968 | INFO     | bdd:sell_character:249 - Vente du personnage 4 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:50.974 | INFO     | bdd:delete_character:174 - Le personnage 4 a été supprimé.
+2024-04-13 15:20:50.975 | INFO     | __main__:sell:298 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour 2 tickets.
+2024-04-13 15:20:57.451 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:20:57.452 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:20:57.453 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:57.454 | INFO     | bdd:sell_character:249 - Vente du personnage 6 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:20:57.462 | INFO     | bdd:delete_character:174 - Le personnage 6 a été supprimé.
+2024-04-13 15:20:57.462 | INFO     | __main__:sell:298 - L'utilisateur 402rayan (724383641752436757) a vendu caramel pour 3 tickets.
+2024-04-13 15:22:35.594 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:22:35.595 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:22:39.182 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:22:39.183 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:22:39.183 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:22:39.184 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:22:42.215 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:22:42.216 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:22:42.216 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:22:42.217 | INFO     | bdd:sell_character:249 - Vente du personnage 5 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:22:42.224 | INFO     | bdd:delete_character:174 - Le personnage 5 a été supprimé.
+2024-04-13 15:22:42.225 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour 2 tickets.
+2024-04-13 15:23:08.474 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:08.476 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:08.477 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:08.720 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:23:08.721 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:23:29.614 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:29.615 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:29.616 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:30.489 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:23:30.490 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:23:32.534 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:32.535 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:32.536 | INFO     | bdd:get_team:219 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 15:23:34.035 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:34.036 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:34.037 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:23:34.038 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:23:36.503 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:36.504 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:36.513 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:36.516 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 15:23:39.296 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:39.298 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:39.305 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:39.307 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué caramel.
+2024-04-13 15:23:40.322 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:40.323 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:40.332 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:40.336 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué moshi.
+2024-04-13 15:23:42.040 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:42.041 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:44.980 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:44.981 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:44.982 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:23:44.983 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:23:47.732 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:23:47.733 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:23:47.734 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:47.735 | INFO     | bdd:sell_character:249 - Vente du personnage 9 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:23:47.742 | INFO     | bdd:delete_character:174 - Le personnage 9 a été supprimé.
+2024-04-13 15:23:47.743 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour 2 tickets.
+2024-04-13 15:24:22.938 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:24:22.939 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:24:23.219 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:24:23.220 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:24:23.220 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:24:29.282 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:24:29.284 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:24:29.284 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:24:29.286 | INFO     | bdd:sell_character:249 - Vente du personnage 8 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:24:29.292 | INFO     | bdd:delete_character:174 - Le personnage 8 a été supprimé.
+2024-04-13 15:24:29.292 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu caramel pour 3 tickets.
+2024-04-13 15:25:03.761 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:03.762 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:03.762 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:03.763 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:25:04.581 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:25:04.582 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:25:05.670 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:05.671 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:05.672 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:05.674 | INFO     | bdd:sell_character:249 - Vente du personnage 7 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:05.681 | INFO     | bdd:delete_character:174 - Le personnage 7 a été supprimé.
+2024-04-13 15:25:05.682 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour 1 tickets.
+2024-04-13 15:25:24.250 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:25:24.251 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:25:25.986 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:25.988 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:25.989 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:25.989 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:25:26.828 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:26.829 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:26.830 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:26.831 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:25:29.808 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:29.810 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:29.811 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:29.811 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:25:32.428 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:32.430 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:32.437 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:32.439 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 15:25:34.168 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:34.169 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:34.176 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:34.178 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué moshi.
+2024-04-13 15:25:35.867 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:35.869 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:35.870 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:35.870 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:25:40.245 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:40.246 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:40.247 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:40.248 | INFO     | bdd:sell_character:249 - Vente du personnage 10 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:40.255 | INFO     | bdd:delete_character:174 - Le personnage 10 a été supprimé.
+2024-04-13 15:25:40.256 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour 1 tickets.
+2024-04-13 15:25:44.256 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:44.258 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:44.258 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:44.259 | INFO     | bdd:sell_character:249 - Vente du personnage 11 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:44.266 | INFO     | bdd:delete_character:174 - Le personnage 11 a été supprimé.
+2024-04-13 15:25:44.267 | INFO     | __main__:sell:299 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour 2 tickets.
+2024-04-13 15:25:46.188 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:46.189 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:46.190 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:25:49.551 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:25:49.552 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:25:49.553 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:25:49.553 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:26:24.075 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:26:24.076 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:26:24.077 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:26:24.077 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:26:24.532 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:26:24.533 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:26:34.717 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:26:34.719 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:26:34.719 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:26:34.720 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:26:35.970 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:26:35.971 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:26:41.279 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:26:41.280 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:26:41.282 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:26:41.282 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:27:18.910 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:27:18.911 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:27:19.795 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:27:19.796 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:27:19.797 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:27:19.798 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:27:23.756 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:27:23.756 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:27:26.647 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:27:26.649 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:27:26.656 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:27:26.657 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué moshi.
+2024-04-13 15:28:25.576 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:25.577 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:25.585 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:28:25.586 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué rayan.
+2024-04-13 15:28:26.674 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:28:26.674 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:28:33.255 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:33.256 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:33.257 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:28:35.450 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:35.452 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:35.460 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:28:35.462 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué caramel.
+2024-04-13 15:28:36.991 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:36.992 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:40.093 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:40.095 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:40.096 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:28:40.097 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:28:42.932 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:28:42.933 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:28:42.934 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:28:42.935 | INFO     | bdd:sell_character:249 - Vente du personnage 12 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:28:42.940 | INFO     | bdd:delete_character:174 - Le personnage 12 a été supprimé.
+2024-04-13 15:28:42.941 | INFO     | __main__:sell:304 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour 2 tickets.
+2024-04-13 15:30:53.050 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:30:53.052 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:30:53.053 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:30:53.053 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:30:53.848 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:30:53.848 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:30:55.489 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:30:55.491 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:30:55.492 | INFO     | __main__:getTickets:71 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 15:30:58.092 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:30:58.093 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:30:58.094 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:31:01.711 | INFO     | bdd:sell_character:249 - Vente du personnage 14 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:31:01.719 | INFO     | bdd:delete_character:174 - Le personnage 14 a été supprimé.
+2024-04-13 15:31:01.726 | INFO     | __main__:sell:322 - L'utilisateur 402rayan (724383641752436757) a vendu caramel pour 3 tickets.
+2024-04-13 15:32:41.217 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:32:41.218 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:32:45.933 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:32:45.934 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:32:45.935 | INFO     | __main__:inventaire:132 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 15:32:45.935 | INFO     | bdd:inventaire:210 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 15:32:49.581 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:32:49.582 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:32:51.969 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:32:51.970 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:32:51.970 | INFO     | bdd:get_character_by_name_and_user:229 - Récupération du personnage rayan pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:33:03.216 | INFO     | bdd:sell_character:249 - Vente du personnage 13 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:33:03.227 | INFO     | bdd:delete_character:174 - Le personnage 13 a été supprimé.
+2024-04-13 15:33:03.233 | INFO     | __main__:sell:323 - L'utilisateur 402rayan (724383641752436757) a vendu rayan pour A tickets.
+2024-04-13 15:33:07.206 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:33:07.207 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:33:07.207 | INFO     | __main__:getTickets:71 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 15:33:09.935 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:33:09.936 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:33:09.943 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:33:09.944 | INFO     | bdd:summon_character:205 - Le joueur 402rayan (724383641752436757) a invoqué caramel.
+2024-04-13 15:45:05.595 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:45:05.595 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:45:11.750 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:45:11.751 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:45:11.758 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 15:45:11.759 | INFO     | bdd:summon_character:207 - Le joueur 402rayan (724383641752436757) a invoqué moshi. Il reste 999995 tickets. Le personnage invoqué a pour id 16. La rareté est B.
+2024-04-13 15:45:17.571 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:45:17.573 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:49:47.352 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:49:47.353 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:49:47.354 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:49:48.126 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:49:48.126 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:51:09.610 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:51:09.611 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:51:09.613 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:51:10.518 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:51:10.519 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:51:43.961 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:51:43.961 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:51:43.963 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:51:44.361 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:51:44.362 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:52:47.955 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:52:47.956 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:52:47.957 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:52:48.188 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:52:48.189 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:53:02.439 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:53:02.440 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:53:02.442 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:53:04.292 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:53:04.293 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:53:32.349 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:53:32.351 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:53:32.352 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:53:34.224 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:53:34.225 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:54:27.175 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:54:27.176 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:54:27.178 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:54:28.410 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:54:28.410 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:57:12.108 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:57:12.109 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:57:12.652 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:57:12.653 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:57:12.654 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:57:25.424 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:57:25.425 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:57:25.631 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:57:25.632 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:57:25.633 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:59:07.582 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 15:59:07.584 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 15:59:07.585 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 15:59:09.189 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:59:09.189 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 15:59:43.676 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 15:59:43.676 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:00:09.671 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:00:09.673 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:00:09.674 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 16:01:12.675 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:01:12.677 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:01:12.678 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 16:01:13.580 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:01:13.580 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:02:00.134 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:02:00.135 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:02:14.833 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:02:14.834 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:02:14.847 | INFO     | bdd:claim_daily:137 - L'utilisateur 402rayan (724383641752436757) a réclamé son daily. Il a maintenant 999996 tickets.
+2024-04-13 16:02:45.363 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:02:45.364 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:02:49.478 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:02:49.479 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:02:49.492 | INFO     | bdd:claim_daily:137 - L'utilisateur 402rayan (724383641752436757) a réclamé son daily. Il a maintenant 999997 tickets.
+2024-04-13 16:03:01.893 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:03:01.894 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:03:01.895 | INFO     | bdd:claim_daily:127 - L'utilisateur 402rayan (724383641752436757) a déjà réclamé son daily.
+2024-04-13 16:05:43.270 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:05:43.272 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:05:43.273 | INFO     | __main__:list_command:62 - Commande !list_command appelée par 402rayan (724383641752436757).
+2024-04-13 16:05:44.157 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:05:44.157 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:07:41.921 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:07:41.922 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:07:41.923 | INFO     | __main__:list_command:62 - Commande !list_command appelée par 402rayan (724383641752436757).
+2024-04-13 16:07:42.145 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:07:42.147 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:08:00.086 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:08:00.087 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:10:37.878 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:10:37.880 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:10:37.881 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:10:39.149 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:10:39.149 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:10:52.885 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:10:52.887 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:10:52.887 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:10:54.094 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:10:54.096 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:11:17.969 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:11:17.970 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:11:17.971 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:11:19.070 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:11:19.070 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:11:21.383 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:11:21.384 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:11:21.385 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:11:45.050 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:11:45.051 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:11:45.052 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:11:45.766 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:11:45.768 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:12:08.338 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:12:08.339 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:12:08.340 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:12:09.236 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:12:09.237 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:12:14.085 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:12:14.088 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:12:14.088 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:12:24.102 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:12:24.103 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:12:24.103 | INFO     | __main__:getTickets:86 - Commande !tickets appelée par 402rayan (724383641752436757).
+2024-04-13 16:12:37.627 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:12:37.628 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:12:37.629 | INFO     | __main__:list_command:62 - Commande !list_command appelée par 402rayan (724383641752436757).
+2024-04-13 16:13:13.441 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:13:13.443 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:13:13.444 | INFO     | __main__:list_command:62 - Commande !list_command appelée par 402rayan (724383641752436757).
+2024-04-13 16:13:14.502 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:13:14.503 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:13:28.875 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:13:28.876 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:13:28.877 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:15:11.175 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:15:11.176 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:15:11.677 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:15:11.679 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:15:11.681 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:15:14.205 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:15:14.207 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:15:14.208 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:15:14.208 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:16:35.260 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:16:35.261 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:16:35.407 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:16:35.408 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:16:35.408 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:16:35.409 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:16:38.117 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:16:38.118 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:16:38.119 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:16:38.120 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:17:34.517 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:17:34.518 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:17:34.988 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:17:34.989 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:17:34.990 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:17:34.991 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:18:22.983 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:18:22.983 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:18:25.630 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:18:25.631 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:18:25.631 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:18:25.632 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:18:45.673 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:18:45.673 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:18:45.674 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:18:45.675 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:18:45.880 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:18:45.881 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:19:05.126 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:19:05.127 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:19:05.128 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:19:07.519 | INFO     | bdd:sell_character:251 - Vente du personnage 15 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:19:07.531 | INFO     | bdd:delete_character:174 - Le personnage 15 a été supprimé.
+2024-04-13 16:19:07.546 | INFO     | __main__:sell:343 - L'utilisateur 402rayan (724383641752436757) a vendu caramel pour C tickets.
+2024-04-13 16:19:14.853 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:19:14.854 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:19:14.855 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:19:17.020 | INFO     | bdd:sell_character:251 - Vente du personnage 16 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:19:17.034 | INFO     | bdd:delete_character:174 - Le personnage 16 a été supprimé.
+2024-04-13 16:19:17.048 | INFO     | __main__:sell:343 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour B tickets.
+2024-04-13 16:19:18.325 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:19:18.327 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:19:18.328 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:19:18.329 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:21:25.809 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:21:25.810 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:21:26.068 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:21:26.069 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:22:27.576 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:22:27.577 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:22:27.624 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:22:27.625 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:23:10.638 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:23:10.649 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:23:10.900 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:23:10.902 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:23:19.915 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:23:19.916 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:23:24.756 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:23:24.757 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:23:43.067 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:23:43.068 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:23:48.693 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:23:48.694 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:23:48.722 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:24:43.658 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:24:43.658 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:24:45.485 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:24:45.486 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:24:55.030 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:24:55.032 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:24:55.057 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:25:16.749 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:25:16.750 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:25:18.745 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:25:18.745 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:25:23.097 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:25:23.099 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:25:23.124 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:25:52.082 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:25:52.083 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:25:55.454 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:25:55.456 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:25:55.484 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:26:14.016 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:26:14.017 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:26:15.416 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:26:15.417 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:26:15.443 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:26:27.204 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:26:27.206 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:26:39.160 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:26:39.162 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:26:39.958 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:26:39.959 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:26:39.984 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:27:11.022 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:27:11.024 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:27:11.049 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:27:11.317 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:27:11.318 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:27:23.296 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:27:23.298 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:27:23.327 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:27:23.517 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:27:23.518 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:27:41.161 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:27:41.163 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:27:43.074 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:27:43.074 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:27:43.075 | ERROR    | __main__:idDiscordToInt:206 - Impossible de convertir @Hakim en entier.
+2024-04-13 16:27:47.772 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:27:47.773 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:27:47.803 | INFO     | __main__:giveTicket:199 - L'utilisateur 402rayan (724383641752436757) a donné 15 tickets à 512728949130788880.
+2024-04-13 16:47:14.111 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:47:14.112 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:47:14.531 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:47:14.532 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:47:14.533 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:47:34.360 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:47:34.361 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:47:35.685 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:47:35.686 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:47:35.687 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:47:35.688 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:47:41.185 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:47:41.186 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:47:41.188 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:47:54.582 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:47:54.583 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:47:54.926 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:47:54.927 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:47:54.928 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:49:40.831 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:49:40.832 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:49:40.933 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:40.935 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:43.186 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:43.187 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:43.188 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:49:47.592 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:47.594 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:47.595 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:49:47.595 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:49:48.865 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:48.866 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:48.881 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:49:48.882 | INFO     | bdd:summon_character:207 - Le joueur 402rayan (724383641752436757) a invoqué caramel. Il reste 999867 tickets. Le personnage invoqué a pour id 17. La rareté est C.
+2024-04-13 16:49:55.547 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:55.548 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:55.549 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:49:55.550 | INFO     | __main__:ajouterTeam:280 - L'utilisateur 402rayan (724383641752436757) a ajouté caramel à sa team en position 1.
+2024-04-13 16:49:55.551 | INFO     | bdd:set_team:236 - Modification de l'équipe de 402rayan (724383641752436757), slot 1, character id 17.
+2024-04-13 16:49:58.682 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:49:58.684 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:49:58.685 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:50:07.559 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:50:07.561 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:50:07.561 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:51:11.401 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:51:11.402 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:51:11.403 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:51:11.923 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:51:11.923 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:52:42.082 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:52:42.084 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:52:42.085 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:52:42.767 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:52:42.767 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:52:59.681 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:52:59.681 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:53:00.854 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:53:00.856 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:53:00.857 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:53:54.569 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:53:54.571 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:53:55.084 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:53:55.084 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:53:55.085 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:55:21.286 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:21.288 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:21.289 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 16:55:21.654 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 16:55:21.654 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 16:55:23.135 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:23.136 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:23.137 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:55:23.137 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 16:55:27.303 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:27.304 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:27.317 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 16:55:27.318 | INFO     | bdd:summon_character:207 - Le joueur 402rayan (724383641752436757) a invoqué moshi. Il reste 999866 tickets. Le personnage invoqué a pour id 18. La rareté est B.
+2024-04-13 16:55:29.983 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:29.984 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:32.972 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:32.973 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:34.854 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:34.855 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:36.460 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:36.461 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:41.047 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:41.048 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:43.158 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:43.160 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:46.513 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:46.514 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:49.541 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 16:55:49.542 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 16:55:49.543 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 16:55:49.544 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 17:14:20.937 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:20.938 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:20.940 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 17:14:23.584 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:23.585 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:23.585 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 17:14:23.586 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 17:14:26.755 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:26.757 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:26.757 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:14:26.758 | INFO     | __main__:ajouterTeam:277 - L'utilisateur 402rayan (724383641752436757) a ajouté moshi à sa team en position 2.
+2024-04-13 17:14:26.759 | INFO     | bdd:set_team:236 - Modification de l'équipe de 402rayan (724383641752436757), slot 2, character id 18.
+2024-04-13 17:14:32.189 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:32.190 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:32.190 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:14:35.501 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:35.502 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:35.503 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:14:39.638 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:14:39.638 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:14:39.639 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 17:15:40.950 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:15:40.951 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:37:10.001 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:37:10.003 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:37:10.004 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 17:40:32.567 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:40:32.569 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:40:43.787 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:40:43.788 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:40:53.510 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:40:53.512 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:40:53.513 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:42:42.725 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:42:42.726 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:42:45.560 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:42:45.561 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:42:45.562 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:43:49.237 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:43:49.238 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:43:53.292 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:43:53.293 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:43:53.294 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:44:53.492 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:44:53.502 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:44:56.202 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:44:56.203 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:44:56.204 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:45:07.171 | INFO     | bdd:sell_character:251 - Vente du personnage 18 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:45:07.182 | INFO     | bdd:delete_character:174 - Le personnage 18 a été supprimé.
+2024-04-13 17:45:07.191 | INFO     | __main__:sell:330 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour B tickets.
+2024-04-13 17:45:52.202 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:45:52.203 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:45:53.803 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:45:53.805 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:45:53.806 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:45:57.491 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:45:57.492 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:45:57.493 | INFO     | bdd:get_team:221 - Récupération de l'équipe de 402rayan (724383641752436757).
+2024-04-13 17:46:04.143 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:46:04.144 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:46:04.145 | INFO     | __main__:inventaire:149 - Commande !inventaire appelée par 402rayan (724383641752436757).
+2024-04-13 17:46:04.146 | INFO     | bdd:inventaire:212 - Récupération de l'inventaire de 402rayan (724383641752436757).
+2024-04-13 17:46:10.964 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:46:10.965 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:46:10.966 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:46:36.419 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:46:36.420 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:46:36.421 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:47:41.541 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:47:41.542 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:47:42.693 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:47:42.694 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:47:42.697 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage caramel pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:47:48.421 | INFO     | bdd:sell_character:251 - Vente du personnage 17 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:47:48.430 | INFO     | bdd:delete_character:174 - Le personnage 17 a été supprimé.
+2024-04-13 17:47:48.438 | INFO     | __main__:sell:332 - L'utilisateur 402rayan (724383641752436757) a vendu caramel pour C tickets.
+2024-04-13 17:48:15.537 | INFO     | __main__:on_ready:21 - MOUSSE#9964 est bien connecté!
+2024-04-13 17:48:15.538 | INFO     | bdd:create_tables:93 - Les tables ont été créées.
+2024-04-13 17:48:17.254 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:48:17.259 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:48:20.526 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:48:20.528 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:48:22.522 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:48:22.524 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:48:22.531 | INFO     | bdd:create_character:165 - Un nouveau personnage a été créé pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:48:22.532 | INFO     | bdd:summon_character:207 - Le joueur 402rayan (724383641752436757) a invoqué moshi. Il reste 999871 tickets. Le personnage invoqué a pour id 19. La rareté est B.
+2024-04-13 17:48:25.567 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:48:25.570 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:48:25.571 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:48:33.924 | INFO     | bdd:insert_user:97 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-13 17:48:33.925 | INFO     | bdd:insert_user:105 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-13 17:48:33.925 | INFO     | bdd:get_character_by_name_and_user:231 - Récupération du personnage moshi pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:48:35.640 | INFO     | bdd:sell_character:251 - Vente du personnage 19 pour l'utilisateur 402rayan (724383641752436757).
+2024-04-13 17:48:35.646 | INFO     | bdd:delete_character:174 - Le personnage 19 a été supprimé.
+2024-04-13 17:48:35.654 | INFO     | __main__:sell:332 - L'utilisateur 402rayan (724383641752436757) a vendu moshi pour B tickets.
