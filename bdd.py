@@ -75,11 +75,11 @@ class Database:
         self.conn.execute('''
         CREATE TABLE IF NOT EXISTS characters (
             char_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user_id INTEGER,
+            user_discord_id INTEGER,
             template_id INTEGER,
             level INTEGER DEFAULT 1,
             experience INTEGER DEFAULT 0,
-            FOREIGN KEY (user_id) REFERENCES users (user_id),
+            FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id),
             FOREIGN KEY (template_id) REFERENCES character_templates (template_id)
         )
         ''')
@@ -90,7 +90,11 @@ class Database:
         CREATE TABLE IF NOT EXISTS synergies (
             synergy_id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT,
-            description TEXT
+            type_of_boost TEXT,
+            force_of_boost INTEGER,
+            description TEXT,
+            image_url TEXT,
+            color INTEGER
         )
         ''')
         self.conn.commit()
@@ -169,11 +173,11 @@ class Database:
         return self.cur.fetchone()
     
     def get_characters(self, user_discord_id):
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id JOIN character_template_synergies s ON t.template_id = s.template_id JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE user_id = {user_discord_id}")
+        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id LEFT JOIN character_template_synergies s ON t.template_id = s.template_id LEFT JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchall()
     
     def get_character(self, char_id):
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id JOIN character_template_synergies s ON t.template_id = s.template_id JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE char_id = {char_id}")
+        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id LEFT JOIN character_template_synergies s ON t.template_id = s.template_id LEFT JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE char_id = {char_id}")
         return self.cur.fetchone()
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
@@ -183,7 +187,7 @@ class Database:
         return template
     
     def create_character(self, user_discord_id,user_name, template_id):
-        self.cur.execute(f"INSERT INTO characters (user_id, template_id) VALUES ({user_discord_id}, {template_id})")
+        self.cur.execute(f"INSERT INTO characters (user_discord_id, template_id) VALUES ({user_discord_id}, {template_id})")
         self.conn.commit()
         logger.info(f"Un nouveau personnage a été créé pour l'utilisateur {user_name} ({user_discord_id}).")
         return self.cur.lastrowid
@@ -252,7 +256,7 @@ class Database:
     
     def get_character_by_name_and_user(self, user_discord_id, user_name, char_name):
         logger.info(f"Récupération du personnage {char_name} pour l'utilisateur {user_name} ({user_discord_id}).")
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
         return self.cur.fetchone()
     
     def set_team(self, user_discord_id, user_name, char_id, slot):

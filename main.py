@@ -45,7 +45,7 @@ async def on_message(message):
         await inventaire(message)
     elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
         await giveTicket(message)
-    elif contenu.startswith('!info '):
+    elif contenu.startswith('!info'):
         await info(message)
     elif contenu.startswith('!team') or contenu.startswith('!voirteam') or contenu.startswith('!voir_team') or contenu.startswith('!voir_team'):
         await voirTeam(message)
@@ -157,7 +157,13 @@ async def inventaire(message):
         color=discord.Color.blue()
     )
     for character in characters:
-        embed.add_field(name=f"{character[6]} [{character[7]}]", value=f"{character[9]} HP {character[10]} ATK {character[11]} DEF - Niveau {character[3]}\n", inline=False)
+        identifiant = character[2]
+        synergies = database.get_synergies_by_character_template(identifiant)
+        value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
+        if len(synergies) == 0:
+            value = ""
+        value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
+        embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     await message.channel.send(embed=embed)
 
@@ -245,14 +251,21 @@ async def voirTeam(message):
         return
     personnages = database.get_team(user.id, user.name)
     embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue())  
+    synergies = []
     for index, personnage in enumerate(personnages[:3], start=1):  # Ajoute un compteur commençant par 1
         if personnage is None:
             embed.add_field(name=f"{index}. Emplacement vide", value="", inline=False)
         else:
             # Affiche les détails du personnage avec l'index
+            identifiant = personnage[2]
+            synergies = database.get_synergies_by_character_template(identifiant)
+            value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
+            if len(synergies) == 0:
+                value = ""
+            value = f"{personnage[9]} HP {personnage[10]} ATK {personnage[11]} DEF - Niveau {personnage[3]}\n" + value
             embed.add_field(
                 name=f"{index}. {personnage[6]} [{personnage[7]}]",  # Index et nom du personnage
-                value=f"{personnage[9]} HP {personnage[10]} ATK {personnage[11]} DEF - Niveau {personnage[3]}\n",  # Détails du personnage
+                value=value,  # Détails du personnage
                 inline=False
             )
             
