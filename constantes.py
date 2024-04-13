@@ -1,3 +1,4 @@
 CONSTANTS = {
     'DAILY_TICKETS': 1,
+    'INVOCATION_COST': 1,
 }
