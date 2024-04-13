@@ -218,9 +218,20 @@ async def info(message):
     if character == None:
         await send_embed_info(message, "Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red())
         return
-    response = f"Voici les informations sur {nom}:\n"
-    response += f"Nom: {character[1]}\nType: {character[2]}\nHP: {character[4]}\nATK: {character[5]}\nDEF: {character[6]}\nIMAGE: {character[3]}\n"
-    await message.channel.send(response)
+    
+    synergies = database.get_synergies_by_character_template(character[0])
+    hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
+    embed = discord.Embed(
+        title=f"{nom} **[{rarity}]**",
+        color=CONSTANTS['RARITY_COLOR'][rarity],
+    )
+    embed.set_image(url=image)
+    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    print(synergies)
+    if len(synergies) > 0:
+        embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
+    await message.channel.send(embed=embed)
 
 @bot.command()
 async def voirTeam(message): 

@@ -169,15 +169,15 @@ class Database:
         return self.cur.fetchone()
     
     def get_characters(self, user_discord_id):
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_id = {user_discord_id} ")
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id JOIN character_template_synergies s ON t.template_id = s.template_id JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE user_id = {user_discord_id}")
         return self.cur.fetchall()
     
     def get_character(self, char_id):
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE char_id = {char_id}")
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id JOIN character_template_synergies s ON t.template_id = s.template_id JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE char_id = {char_id}")
         return self.cur.fetchone()
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
-        self.cur.execute(f"SELECT * FROM character_templates WHERE name LIKE('{template_name}')")
+        self.cur.execute(f"SELECT * FROM character_templates c LEFT JOIN character_template_synergies l ON c.template_id = l.template_id LEFT JOIN synergies s ON l.synergy_id = s.synergy_id WHERE c.name LIKE '{template_name}'")
         template = self.cur.fetchone()
         logger.info(f"Récupération du template {template} pour l'utilisateur {user_name} ({user_discord_id}).")
         return template
@@ -274,3 +274,16 @@ class Database:
         logger.info(f"Vente du personnage {char_id} pour l'utilisateur {user_name} ({user_discord_id}).")
         self.delete_character(char_id)
         return True
+    
+    def get_synergies(self):
+        self.cur.execute("SELECT * FROM synergies")
+        return self.cur.fetchall()
+    
+    def get_synergy(self, synergy_id):
+        self.cur.execute(f"SELECT * FROM synergies WHERE synergy_id = {synergy_id}")
+        return self.cur.fetchone()
+    
+    def get_synergies_by_character_template(self, template_id):
+        self.cur.execute(f"SELECT * FROM character_template_synergies s JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE template_id = {template_id}")
+        return self.cur.fetchall()
+        
