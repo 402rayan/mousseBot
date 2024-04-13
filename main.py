@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands 
 import getToken
 import bdd
-
+from loguru import logger
 
 # Connect to database
 database = bdd.Database('./mousse.db')
@@ -17,7 +17,9 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 # Set the confirmation message when the bot is ready
 @bot.event
 async def on_ready():
-    print(f'Je suis connecté sur le bot {bot.user.name}')
+    logger.info(f'{bot.user} est bien connecté!')
+    database.create_tables()
+    
 
 @bot.event
 async def on_message(message):
@@ -25,9 +27,9 @@ async def on_message(message):
     auteur = message.author
     if auteur == bot.user: # Check if the message is from the bot
         return
-    if contenu.startswith('!') == False: # Check if the message starts with '!'
+    if not(contenu.startswith('!')) :
         return
-
+    database.insert_user(auteur.id, auteur.name)
     await message.channel.send('Hello!')
 
 

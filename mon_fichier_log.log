@@ -1,0 +1,11 @@
+2024-04-13 09:31:52.770 | INFO     | bdd:create_tables:82 - Les tables ont été créées.
+2024-04-13 09:32:59.660 | INFO     | __main__:on_ready:20 - MOUSSE#9964 has connected to Discord!
+2024-04-13 09:32:59.660 | INFO     | bdd:create_tables:82 - Les tables ont été créées.
+2024-04-13 09:33:28.516 | INFO     | __main__:on_ready:20 - MOUSSE#9964 est bien connecté!
+2024-04-13 09:33:28.518 | INFO     | bdd:create_tables:82 - Les tables ont été créées.
+2024-04-13 09:33:54.310 | INFO     | __main__:on_ready:20 - MOUSSE#9964 est bien connecté!
+2024-04-13 09:33:54.311 | INFO     | bdd:create_tables:82 - Les tables ont été créées.
+2024-04-13 09:35:04.923 | INFO     | __main__:on_ready:20 - MOUSSE#9964 est bien connecté!
+2024-04-13 09:35:04.924 | INFO     | bdd:create_tables:82 - Les tables ont été créées.
+2024-04-13 09:35:08.349 | INFO     | bdd:insert_user:86 - Vérification de l'utilisateur 402rayan dans la base de données.
+2024-04-13 09:35:08.366 | INFO     | bdd:insert_user:92 - L'utilisateur 402rayan a été inscrit dans la base de données.
