@@ -30,7 +30,10 @@ async def on_message(message):
     if not(contenu.startswith('!')) :
         return
     database.insert_user(auteur.id, auteur.name)
-    await message.channel.send('Hello!')
+    if contenu.startswith('!tickets'):
+        await getTickets(message)
+    if contenu.startswith('!daily'):
+        await claimDaily(message)
 
 
 # Fonctions
@@ -40,6 +43,25 @@ async def list_command(ctx):
     response = 'You can use the following commands: \n !greet \n !list_command \n !functions'
     await ctx.send(response)
 
+@bot.command()
+async def getTickets(message):
+    user = message.author
+    tickets = database.get_tickets(user.id)
+    response = f'You have {tickets} tickets!'
+    await message.channel.send(response)
+
+@bot.command()
+async def claimDaily(message):
+    user = message.author
+    claim = database.claim_daily(user.id, user.name)
+    if claim[0]:
+        response = f"Récompense journalière réclamée avec succès!, vous avez maintenant {claim[1]} tickets!"
+    elif not(claim[0]):
+        temps_restant = claim[1]
+        temps_restant_heures = temps_restant.seconds//3600
+        temps_restant_minutes = (temps_restant.seconds//60)%60
+        response = f"Vous avez déjà réclamé votre récompense journalière!\n Vous pouvez réclamer une nouvelle récompense dans {temps_restant_heures} heures et {temps_restant_minutes} minutes."
+    await message.channel.send(response)
 
 # Run the bot with the token
 bot.run(getToken.getToken())
