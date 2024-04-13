@@ -1,0 +1,3 @@
+CONSTANTS = {
+    'DAILY_TICKETS': 1,
+}
