@@ -167,6 +167,9 @@ class Database:
     
     def delete_character(self, char_id):
         self.cur.execute(f"DELETE FROM characters WHERE char_id = {char_id}")
+        self.cur.execute(f"UPDATE users SET character_slot_one = NULL WHERE character_slot_one = {char_id}")
+        self.cur.execute(f"UPDATE users SET character_slot_two = NULL WHERE character_slot_two = {char_id}")
+        self.cur.execute(f"UPDATE users SET character_slot_three = NULL WHERE character_slot_three = {char_id}")
         self.conn.commit()
         logger.info(f"Le personnage {char_id} a été supprimé.")
     
@@ -241,3 +244,8 @@ class Database:
         if char_id in user[5:8]:
             return True
         return False
+    
+    def sell_character(self, user_discord_id, user_name, char_id):
+        logger.info(f"Vente du personnage {char_id} pour l'utilisateur {user_name} ({user_discord_id}).")
+        self.delete_character(char_id)
+        return True

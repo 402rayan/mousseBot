@@ -39,9 +39,9 @@ async def on_message(message):
         await admin(message)
     elif contenu.startswith('!list_command') or contenu.startswith('!help'):
         await list_command(message)
-    elif contenu.startswith('!invoc') or contenu.startswith('!invoq') :
+    elif contenu.startswith('!invo') or contenu.startswith('!sum'):
         await invocation(message)
-    elif contenu.startswith('!inv') or contenu.startswith('!pers'):
+    elif contenu.startswith('!inv') or contenu.startswith('!pers') or contenu.startswith('!bag'):
         await inventaire(message)
     elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
         await giveTicket(message)
@@ -51,6 +51,8 @@ async def on_message(message):
         await voirTeam(message)
     elif contenu.startswith('!ajouterteam') or contenu.startswith('!addteam') or contenu.startswith('!add_team') or contenu.startswith('!ajouter_team'):
         await ajouterTeam(message)
+    elif contenu.startswith('!sell') or contenu.startswith('!vendre'):
+        await sell(message)
 
 
 # Fonctions
@@ -58,7 +60,7 @@ async def on_message(message):
 @bot.command()
 async def list_command(message):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
-    commandes = ['!tickets', '!daily', '!admin', '!invocation', '!inventaire', '!givetickets', '!info','!team', '!addteam']
+    commandes = ['!tickets', '!daily', '!admin', '!invocation', '!inventaire', '!givetickets', '!info','!team', '!addteam', '!sell']
     response = "Liste des commandes disponibles:\n"
     for commande in commandes:
         response += f"{commande}\n"
@@ -129,6 +131,11 @@ async def invocation(message):
 async def inventaire(message):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
+    if characters == None or len(characters) == 0:
+        response = "Votre inventaire est vide!"
+        await message.channel.send(response)
+        return
+    
     response = f"Voici votre inventaire, {message.author.name}:\n"
     for character in characters:
         response += f"{character[6]} [{character[7]}] - Lv{character[3]}\n"
@@ -277,6 +284,47 @@ async def fetch_user_from_message(message, nombre_arguments_max=2):
     except ValueError:
         return False
     return message.author
+
+@bot.command()
+async def sell(message):
+    # Permet de vendre un personnage
+    contenu = message.content
+    if len(contenu.split(' ')) != 2:
+        response = "La commande doit être de la forme !sell <nom personnage>!"
+        await message.channel.send(response)
+        return
+    nom = contenu.split(' ')[1]
+    character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
+    if character == None:
+        response = "Ce personnage n'existe pas!"
+        await message.channel.send(response)
+        return
+    nom = character[6]
+    rarity = str(character[7])
+    tickets_obtenus = CONSTANTS['RARITY_PRICE'][rarity]
+    # Demandez confirmation
+    response = f"Êtes vous sûr de vouloir vendre {nom} [{rarity}] pour {tickets_obtenus} tickets? (Oui/Non)"
+    await message.channel.send(response)
+    def check(m):
+        return m.author == message.author and m.channel == message.channel
+    try:
+        msg = await bot.wait_for('message', check=check, timeout=20)
+    except:
+        response = "Temps écoulé, vente annulée!"
+        await message.channel.send(response)
+        return
+    if msg.content.lower() != "oui":
+        response = "Vente annulée!"
+        await message.channel.send(response)
+        return
+
+    database.sell_character(message.author.id,message.author.name, character[0])
+    database.update_tickets(message.author.id, database.get_tickets(message.author.id) + tickets_obtenus)
+    logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {rarity} tickets.")
+    response = f"Vous avez vendu {nom} pour {tickets_obtenus} tickets!"
+    await message.channel.send(response)
+
+
 
 # Run the bot with the token
 bot.run(getToken.getToken())
