@@ -33,29 +33,47 @@ async def on_message(message):
     database.insert_user(auteur.id, auteur.name)
     if contenu.startswith('!tickets'):
         await getTickets(message)
-    if contenu.startswith('!daily'):
+    elif contenu.startswith('!daily'):
         await claimDaily(message)
-    if contenu.startswith('!admin'):
+    elif contenu.startswith('!admin'):
         await admin(message)
-    if contenu.startswith('!list_command') or contenu.startswith('!help'):
+    elif contenu.startswith('!list_command') or contenu.startswith('!help'):
         await list_command(message)
-    if contenu.startswith('!invoc') or contenu.startswith('!invoq') :
+    elif contenu.startswith('!invoc') or contenu.startswith('!invoq') :
         await invocation(message)
-    if contenu.startswith('!inv') or contenu.startswith('!pers'):
+    elif contenu.startswith('!inv') or contenu.startswith('!pers'):
         await inventaire(message)
+    elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
+        await giveTicket(message)
+    elif contenu.startswith('!info '):
+        await info(message)
 
 # Fonctions
 
 @bot.command()
-async def list_command(ctx):
-    response = 'You can use the following commands: \n !tickets \n !daily \n '
-    await ctx.send(response)
+async def list_command(message):
+    logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
+    commandes = ['!tickets', '!daily', '!admin', '!invocation', '!inventaire', '!givetickets', '!info']
+    response = "Liste des commandes disponibles:\n"
+    for commande in commandes:
+        response += f"{commande}\n"
+    await message.channel.send(response)
 
 @bot.command()
 async def getTickets(message):
+    logger.info(f"Commande !tickets appelée par {message.author.name} ({message.author.id}).")
     user = message.author
+    # S'il y a un argument, on vérifie si c'est un utilisateur
+    if len(message.content.split(' ')) > 1:
+        idDiscord = message.content.split(' ')[1]
+        idDiscord = idDiscordToInt(idDiscord)
+        if idDiscord == None:
+            response = "L'utilisateur n'est pas valide!"
+            await message.channel.send(response)
+            return
+        user = await bot.fetch_user(idDiscord)
     tickets = database.get_tickets(user.id)
-    response = f'You have {tickets} tickets!'
+    response = f'{user} has {tickets} tickets!'
     await message.channel.send(response)
 
 @bot.command()
@@ -95,11 +113,84 @@ async def invocation(message):
 
 @bot.command()
 async def inventaire(message):
+    logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
     response = f"Voici votre inventaire, {message.author.name}:\n"
     for character in characters:
         response += f"{character[6]} [{character[7]}] - Lv{character[3]}\n"
     await message.channel.send(response)
+
+@bot.command()
+async def giveTicket(message):
+    # Fonction qui permet à un joueur A de donner x tickets à un joueur B
+    contenu = message.content
+    if len(contenu.split(' ')) != 3:
+        response = "La commande doit être de la forme !givetickets <destinataire> <montant>!"
+        await message.channel.send(response)
+        return
+    auteur = message.author
+    montant = contenu.split(' ')[2]
+    destinataire = contenu.split(' ')[1]
+    destinataire = idDiscordToInt(destinataire)
+    if destinataire == None:
+        response = "Le destinataire n'est pas valide!"
+        await message.channel.send(response)
+        return
+    if not montant.isdigit():
+        response = "Le nombre de ticket doit être un nombre!"
+        await message.channel.send(response)
+        return
+    montant = int(montant)
+    if montant < 0:
+        response = "Le nombre de ticket doit être positif!"
+        await message.channel.send(response)
+        return
+    tickets = database.get_tickets(auteur.id)
+    if tickets < montant:
+        response = "Vous n'avez pas assez de tickets!"
+        await message.channel.send(response)
+        return
+    if destinataire == auteur.id:
+        response = "Vous ne pouvez pas vous donner des tickets à vous-même!"
+        await message.channel.send(response)
+        return
+    # Vérfication de l'existence du destinataire
+    if not database.check_user(destinataire):
+        response = "Le destinataire n'a pas encore joué au jeu!"
+        await message.channel.send(response)
+        return
+    database.update_tickets(auteur.id, tickets - montant)
+    tickets = database.get_tickets(destinataire)
+    database.update_tickets(destinataire, tickets + montant)
+    logger.info(f"L'utilisateur {auteur.name} ({auteur.id}) a donné {montant} tickets à {destinataire}.")
+    response = f"Vous avez donné {montant} tickets à <@{destinataire}>!"
+    await message.channel.send(response)
+    
+def idDiscordToInt(idDiscord):
+    try:
+        return int(idDiscord.replace('<@', '').replace('>', ''))
+    except ValueError:
+        logger.error(f"Impossible de convertir {idDiscord} en entier.")
+        return None
+
+@bot.command()
+async def info(message):
+    # Permet d'obtenir les informations d'un personnage
+    contenu = message.content
+    if len(contenu.split(' ')) != 2:
+        response = "La commande doit être de la forme !info <nom personnage>!"
+        await message.channel.send(response)
+        return
+    nom = contenu.split(' ')[1]
+    character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
+    if character == None:
+        response = "Ce personnage n'existe pas!"
+        await message.channel.send(response)
+        return
+    response = f"Voici les informations sur {nom}:\n"
+    response += f"Nom: {character[1]}\nType: {character[2]}\nHP: {character[4]}\nATK: {character[5]}\nDEF: {character[6]}\nIMAGE: {character[3]}\n"
+    await message.channel.send(response)
+
 
 # Run the bot with the token
 bot.run(getToken.getToken())
