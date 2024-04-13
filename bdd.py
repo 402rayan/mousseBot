@@ -147,6 +147,12 @@ class Database:
         self.cur.execute(f"SELECT * FROM characters WHERE char_id = {char_id}")
         return self.cur.fetchone()
     
+    def get_character_template_by_name(self, user_discord_id, user_name, template_name):
+        self.cur.execute(f"SELECT * FROM character_templates WHERE name LIKE('{template_name}')")
+        template = self.cur.fetchone()
+        logger.info(f"Récupération du template {template} pour l'utilisateur {user_name} ({user_discord_id}).")
+        return template
+    
     def create_character(self, user_discord_id,user_name, template_id):
         self.cur.execute(f"INSERT INTO characters (user_id, template_id) VALUES ({user_discord_id}, {template_id})")
         self.conn.commit()
@@ -183,3 +189,7 @@ class Database:
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
         inventaire = self.get_characters(user_discord_id)
         return inventaire
+    
+    def check_user(self, user_discord_id):
+        self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone() is not None
