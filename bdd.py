@@ -44,7 +44,13 @@ class Database:
             user_discord_id TEXT,
             user_name TEXT,
             tickets INTEGER DEFAULT 0,
-            last_claim DATETIME
+            last_claim DATETIME,
+            character_slot_one INTEGER,
+            character_slot_two INTEGER,
+            character_slot_three INTEGER,
+            FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
+            FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
+            FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
         )
         ''')
         self.conn.commit()
@@ -144,7 +150,7 @@ class Database:
         return self.cur.fetchall()
     
     def get_character(self, char_id):
-        self.cur.execute(f"SELECT * FROM characters WHERE char_id = {char_id}")
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE char_id = {char_id}")
         return self.cur.fetchone()
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
@@ -175,14 +181,26 @@ class Database:
         if tickets < CONSTANTS['INVOCATION_COST']:
             return None
         tickets -= CONSTANTS['INVOCATION_COST']
-        self.update_tickets(user_discord_id, tickets)
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
-        template = random.choice(character_templates)
+        liste_personnages = self.get_characters(user_discord_id)
+        print(liste_personnages)
+        if len(liste_personnages) >= 10:
+            return "ERROR_MAX_CHARACTERS"
+        iteration = 0
+        while True and iteration < 100:
+            template = random.choice(character_templates)
+            template_id = template[0]
+            if not any(char[2] == template_id for char in liste_personnages):
+                break
+            iteration += 1
+        if iteration == 100:
+            return "ERROR_NO_CHARACTER"
         template_id = template[0]
         template_name = template[1]
         new_character = self.create_character(user_discord_id,user_name, template_id)
         logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}.")
+        self.update_tickets(user_discord_id, tickets)
         return [template, self.get_character(new_character)]
     
     def inventaire(self, user_discord_id, user_name):
@@ -193,3 +211,33 @@ class Database:
     def check_user(self, user_discord_id):
         self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone() is not None
+    
+    def get_team(self, user_discord_id, user_name):
+        logger.info(f"Récupération de l'équipe de {user_name} ({user_discord_id}).")
+        self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
+        user = self.cur.fetchone()
+        team = [user[5], user[6], user[7]]
+        for i in range(len(team)):
+            if team[i] is not None:
+                team[i] = self.get_character(team[i])
+        return team
+    
+    def get_character_by_name_and_user(self, user_discord_id, user_name, char_name):
+        logger.info(f"Récupération du personnage {char_name} pour l'utilisateur {user_name} ({user_discord_id}).")
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
+        return self.cur.fetchone()
+    
+    def set_team(self, user_discord_id, user_name, char_id, slot):
+        logger.info(f"Modification de l'équipe de {user_name} ({user_discord_id}), slot {slot}, character id {char_id}.")
+        slot = ['character_slot_one', 'character_slot_two', 'character_slot_three'][slot-1]
+        self.cur.execute(f"UPDATE users SET {slot} = {char_id} WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+        return True
+    
+    def check_character_in_team(self, user_discord_id, char_id):
+        
+        self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
+        user = self.cur.fetchone()
+        if char_id in user[5:8]:
+            return True
+        return False
