@@ -184,10 +184,12 @@ class Database:
         if tickets < CONSTANTS['INVOCATION_COST']:
             return None
         tickets -= CONSTANTS['INVOCATION_COST']
+        # On choisit la rareté du personnage invoqué
+        rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
+        character_templates = [char for char in character_templates if char[2] == rarity]
         liste_personnages = self.get_characters(user_discord_id)
-        print(liste_personnages)
         if len(liste_personnages) >= 10:
             return "ERROR_MAX_CHARACTERS"
         iteration = 0
@@ -202,7 +204,7 @@ class Database:
         template_id = template[0]
         template_name = template[1]
         new_character = self.create_character(user_discord_id,user_name, template_id)
-        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}.")
+        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}.")
         self.update_tickets(user_discord_id, tickets)
         return [template, self.get_character(new_character)]
     
