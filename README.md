@@ -1,7 +1,9 @@
 # mousseBot
-Bot discord pour capturer des personnages
+Bot discord permettant de joueur à un jeu où il faut monter son équipe et tenter de finir l'aventure.
 
 # Arborescence
-Il y a 2 dossiers principaux:
-- `test` 
-- `test2`
+
+- `main.py` Fichier principale contenant les fonctionnalités.
+- `bdd` Fichier contenant les fonctions concernant la base de donnée
+- `mousse.db` Base de donnée en SQLITE3
+- `logs.log` Fichier des logs
