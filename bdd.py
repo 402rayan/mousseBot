@@ -85,10 +85,33 @@ class Database:
         ''')
         self.conn.commit()
 
+    def create_synergy_table(self):
+        self.conn.execute('''
+        CREATE TABLE IF NOT EXISTS synergies (
+            synergy_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            description TEXT
+        )
+        ''')
+        self.conn.commit()
+    
+    def create_character_template_synergy_table(self):
+        self.conn.execute('''
+        CREATE TABLE IF NOT EXISTS character_template_synergies (
+            template_id INTEGER,
+            synergy_id INTEGER,
+            FOREIGN KEY (template_id) REFERENCES character_templates (template_id),
+            FOREIGN KEY (synergy_id) REFERENCES synergies (synergy_id)
+        )
+        ''')
+        self.conn.commit()
+
     def create_tables(self):
         self.create_user_table()
         self.create_character_template_table()
         self.create_character_table()
+        self.create_synergy_table()
+        self.create_character_template_synergy_table()
         self.conn.commit()
         logger.info("Les tables ont été créées.")
         
