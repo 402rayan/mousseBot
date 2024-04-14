@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 
 from constantes import CONSTANTS
 from constantes import all_characters_templates, all_synergies, all_link_synergies
+import Levenshtein
 
 # Configurer Loguru pour écrire les logs dans un fichier
 logger.add("logs.log", rotation="100 MB")  # Rotation du fichier après 100 MB
@@ -182,11 +183,24 @@ class Database:
         return self.cur.fetchone()
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
-        self.cur.execute(f"SELECT * FROM character_templates c LEFT JOIN character_template_synergies l ON c.template_id = l.template_id LEFT JOIN synergies s ON l.synergy_id = s.synergy_id WHERE c.name LIKE '{template_name}'")
-        template = self.cur.fetchone()
-        logger.info(f"Récupération du template {template} pour l'utilisateur {user_name} ({user_discord_id}).")
-        return template
-    
+        # Exécuter la requête SQL pour obtenir tous les templates
+        self.cur.execute(f"SELECT * FROM character_templates")
+        all_templates = self.cur.fetchall()
+        # Premiere étape : on vérifie si le nom est exact
+        for template in all_templates:
+            if template[1].lower() == template_name.lower():
+                return template
+        # Deuxième étape : on vérifie si le nom est proche
+        for template in all_templates:
+            print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
+            if Levenshtein.distance(template[1].lower(), template_name.lower()) <= 1:
+                return template
+        # Troisième étape : On vérifie si le nom est dans le nom du template
+        for template in all_templates:
+            if template_name.lower() in template[1].lower():
+                return template
+        return None
+        
     def create_character(self, user_discord_id,user_name, template_id):
         self.cur.execute(f"INSERT INTO characters (user_discord_id, template_id) VALUES ({user_discord_id}, {template_id})")
         self.conn.commit()

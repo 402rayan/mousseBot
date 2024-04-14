@@ -220,10 +220,11 @@ def idDiscordToInt(idDiscord):
 async def info(message):
     # Permet d'obtenir les informations d'un personnage
     contenu = message.content
-    if len(contenu.split(' ')) != 2:
+    if len(contenu.split(' ')) < 2:
         await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!info <nom personnage>**!", discord.Color.red())
         return
-    nom = contenu.split(' ')[1]
+    # On récupère le nom (tout ce qui suit le !info)
+    nom = " ".join(contenu.split(' ')[1:])
     character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
     if character == None:
         await send_embed_info(message, "Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red())
@@ -381,7 +382,7 @@ async def reset(message):
         return
     database.reset()
     await send_embed_info(message, "Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green())
-    
+
 # Fonction qui envoie un message d'information style embed d'information
 async def send_embed_info(message, title, description, color=discord.Color.blue(),footer=None):
     embed = discord.Embed(
