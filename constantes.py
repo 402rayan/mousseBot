@@ -36,6 +36,23 @@ CONSTANTS = {
     },
 }
 
+phrases_invocation = [
+    "Mais... C'est incroyable !",
+    "C'est un miracle !",
+    "Je n'en reviens pas !",
+    "C'est un rêve !",
+    "Wow..",
+    "Incroyable !",
+    "Qu'est-ce que ça pourrait bien être ?",
+    "Je suis impatient de voir ça !",
+    "Je suis sûr que c'est quelque chose de bien..",
+    "Je sens que c'est quelque chose de rare !",
+    "Impressionnant !",
+    "Impossible..",
+    "Est-ce que c'est vraiment possible ?",
+    "C'est un signe du destin !",
+    "Je suis sûr que c'est quelque chose de rare !"
+]
 
 all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""

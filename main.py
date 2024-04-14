@@ -1,10 +1,12 @@
 # Import the required modules
+import asyncio
 import discord
 from discord.ext import commands 
 from constantes import CONSTANTS
 import getToken
 import bdd
 from loguru import logger
+from constantes import phrases_invocation
 
 # Connect to database
 database = bdd.Database('./mousse.db')
@@ -91,31 +93,30 @@ async def getTickets(message):
     logger.info(f"Commande !tickets appelée par {message.author.name} ({message.author.id}).")
     user = await fetch_user_from_message(message, 2)
     if not user:
-        await send_embed_info(message, "Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red()))
         return
     if user == "ERROR_SYNTAX":
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!tickets** ou **!tickets <joueur>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!tickets** ou **!tickets <joueur>**!", discord.Color.red()))
         return
     print(user)
     tickets = database.get_tickets(user.id)
-    await send_embed_info(message=message, title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue())
+    await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue()))
 
 @bot.command()
 async def claimDaily(message):
     user = message.author
     claim = database.claim_daily(user.id, user.name)
     if claim[0]:
-        
         titre = f"Récompense journalière réclamée avec succès!"
-        response = f"Vous avez maintenant {claim[1]} tickets."
-        await send_embed_info(message, titre, response, discord.Color.green())
+        response = f"Tickets : {claim[1]}."
+        await message.channel.send(embed=embed_info(titre, response, discord.Color.green()))
     elif not(claim[0]):
         temps_restant = claim[1]
         temps_restant_heures = temps_restant.seconds//3600
         temps_restant_minutes = (temps_restant.seconds//60)%60
-        titre = "Vous avez déjà réclamé votre récompense journalière!"
-        response = f"Vous pouvez réclamer une nouvelle récompense dans **{temps_restant_heures} heures et {temps_restant_minutes} minutes**."
-        await send_embed_info(message, titre , response, discord.Color.red())
+        titre = "Récompense journalière déjà récupérée!"
+        response = f"Prochaine récompense dans **{temps_restant_heures} heures et {temps_restant_minutes} minutes**."
+        await message.channel.send(embed=embed_info(titre , response, discord.Color.red()))
     
 @bot.command()
 async def admin(message):
@@ -123,7 +124,7 @@ async def admin(message):
     response = "Liste des templates de personnages:\n"
     for template in liste_templates:
         response += f"{template[0]} - {template[1]}\n"
-    await message.channel.send(response)
+    await message.channel.send(response[:2000])
 
 @bot.command()
 async def invocation(message):
@@ -137,23 +138,30 @@ async def invocation(message):
     # SI la données est de type String, c'est une erreur
     if type(donnees) == str:
         if donnees == "ERROR_NO_CHARACTER":
-            response = "Aucun personnage n'a été trouvé pour l'invocation!"
-            await message.channel.send(response)
-        if donnees == "ERROR_MAX_CHARACTERS":
-            response = "Vous avez atteint le nombre maximum de personnages!\nVeuillez enlever un personnage de votre inventaire!"
-            await message.channel.send(response)
+            await message.channel.send(embed=embed_info("Erreur", "Aucun personnage n'a été trouvé!", discord.Color.red(), footer="Ticket remboursé."))
+        elif donnees == "ERROR_MAX_CHARACTERS":
+            await message.channel.send(embed=embed_info("Erreur", "Vous avez atteint le nombre maximum de personnages (20) !", discord.Color.red(),footer="Vendez des personnages avec !sell"))
         return
     template = donnees[0]
     character = donnees[1]
-    response = f"Vous avez invoqué {template[1]} de type {template[2]}!{template[3]}\ntickets restants : {tickets-CONSTANTS['INVOCATION_COST']}\nSTATS: HP: {str(template[4])} ATK: {str(template[5])} DEF: {str(template[6])} LEVEL: {str(character[3])} XP: {str(character[4])}\n"
-    await message.channel.send(response)
+    msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
+    rarityOfCharacter = template[2]
+    asyncio.sleep(1.5)
+    if rarityOfCharacter in ["F", "E", "D", "C"]:
+        await message.channel.send(embed=embed_info("Invocation...", f"Vous avez invoqué un personnage {rarityOfCharacter}!", discord.Color.blue()))
+    else:
+        
+        embed = embed_invocation(template)
+        await msg.edit(embed=embed)
+        asyncio.sleep(1)
+
 
 @bot.command()
 async def inventaire(message):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
     if characters == None or len(characters) == 0:
-        await send_embed_info(message, "Inventaire vide", "Votre inventaire est vide!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Inventaire vide", "Votre inventaire est vide!", discord.Color.red()))
         return
     
     embed = discord.Embed(
@@ -176,38 +184,38 @@ async def giveTicket(message):
     # Fonction qui permet à un joueur A de donner x tickets à un joueur B
     contenu = message.content
     if len(contenu.split(' ')) != 3:
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!givetickets <joueur> <nombre>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!givetickets <joueur> <nombre>**!", discord.Color.red()))
         return
     auteur = message.author
     montant = contenu.split(' ')[2]
     destinataire = contenu.split(' ')[1]
     destinataire = idDiscordToInt(destinataire)
     if destinataire == None:
-        await send_embed_info(message, "Erreur de syntaxe", "Le joueur n'est pas valide!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "Le joueur n'est pas valide!", discord.Color.red()))
         return
     if not montant.isdigit():
-        await send_embed_info(message, "Erreur de syntaxe", "Le montant doit être un **nombre**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "Le montant doit être un **nombre**!", discord.Color.red()))
         return
     montant = int(montant)
     if montant < 0:
-        await send_embed_info(message, "Erreur de syntaxe", "Le montant doit être **positif**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "Le montant doit être **positif**!", discord.Color.red()))
         return
     tickets = database.get_tickets(auteur.id)
     if tickets < montant:
-        await send_embed_info(message, "Pas assez de tickets", "Vous n'avez **pas assez** de tickets pour donner autant!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Pas assez de tickets", "Vous n'avez **pas assez** de tickets pour donner autant!", discord.Color.red()))
         return
     if destinataire == auteur.id:
-        await send_embed_info(message, "Erreur", "Vous ne pouvez pas vous donner des tickets à **vous-même**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur", "Vous ne pouvez pas vous donner des tickets à **vous-même**!", discord.Color.red()))
         return
     # Vérfication de l'existence du destinataire
     if not database.check_user(destinataire):
-        await send_embed_info(message, "Erreur", "Le joueur n'a pas encore joué au jeu.", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur", "Le joueur n'a pas encore joué au jeu.", discord.Color.red()))
         return
     database.update_tickets(auteur.id, tickets - montant)
     tickets = database.get_tickets(destinataire)
     database.update_tickets(destinataire, tickets + montant)
     logger.info(f"L'utilisateur {auteur.name} ({auteur.id}) a donné {montant} tickets à {destinataire}.")
-    await send_embed_info(message, "Transaction effectuée", f"Vous avez donné **{montant} tickets** à <@{destinataire}>!", discord.Color.green(), f"Tickets restants : {database.get_tickets(auteur.id)}.")
+    await message.channel.send(embed=embed_info("Transaction effectuée", f"Vous avez donné **{montant} tickets** à <@{destinataire}>!", discord.Color.green(), f"Tickets restants : {database.get_tickets(auteur.id)}."))
     
 def idDiscordToInt(idDiscord):
     try:
@@ -221,13 +229,13 @@ async def info(message):
     # Permet d'obtenir les informations d'un personnage
     contenu = message.content
     if len(contenu.split(' ')) < 2:
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!info <nom personnage>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!info <nom personnage>**!", discord.Color.red()))
         return
     # On récupère le nom (tout ce qui suit le !info)
     nom = " ".join(contenu.split(' ')[1:])
     character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
     if character == None:
-        await send_embed_info(message, "Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
         return
     
     synergies = database.get_synergies_by_character_template(character[0])
@@ -249,10 +257,10 @@ async def voirTeam(message):
     # Permet de voir ses personnages équipés en teams, ou la team d'un autre joueur
     user = await fetch_user_from_message(message, 2)
     if not user:
-        await send_embed_info(message, "Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red()))
         return
     if user == "ERROR_SYNTAX":
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!team** ou **!team <joueur>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!team** ou **!team <joueur>**!", discord.Color.red()))
         return
     team = database.get_team(user.id, user.name)
     embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue()) 
@@ -291,27 +299,27 @@ async def ajouterTeam(message):
     # Permet d'ajouter un personnage à son équipe
     contenu = message.content
     if len(contenu.split(' ')) != 3:
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!ajouterteam <position> <nom personnage>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!ajouterteam <position> <nom personnage>**!", discord.Color.red()))
         return
     nom = contenu.split(' ')[2]
     position = contenu.split(' ')[1]
     if not position.isdigit():
-        await send_embed_info(message, "Erreur de syntaxe", "La position doit être un **nombre**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La position doit être un **nombre**!", discord.Color.red()))
         return
     position = int(position)
     if position < 1 or position > 3:
-        await send_embed_info(message, "Erreur de syntaxe", "La position doit être **comprise entre 1 et 3**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La position doit être **comprise entre 1 et 3**!", discord.Color.red()))
         return
     character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
     if character == None:
-        await send_embed_info(message, "Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
         return
     if database.check_character_in_team(message.author.id, character[0]):
-        await send_embed_info(message, "Personnage déjà équipé", "Ce personnage est déjà dans votre équipe!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Personnage déjà équipé", "Ce personnage est déjà dans votre équipe!", discord.Color.red()))
         return
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a ajouté {nom} à sa team en position {str(position)}.")
     database.set_team(message.author.id, message.author.name, character[0], position)
-    await send_embed_info(message, "Personnage ajouté", f"Vous avez ajouté {nom} à votre team en position {str(position)}!", discord.Color.green(), f"Pour voir votre team, utilisez !team.")
+    await message.channel.send(embed=embed_info("Personnage ajouté", f"Vous avez ajouté {nom} à votre team en position {str(position)}!", discord.Color.green(), f"Pour voir votre team, utilisez !team."))
 
 async def fetch_user_from_message(message, nombre_arguments_max=2):
     # Permet de récupérer un utilisateur à partir d'un message
@@ -336,55 +344,55 @@ async def sell(message):
     # Permet de vendre un personnage
     contenu = message.content
     if len(contenu.split(' ')) != 2:
-        await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!sell <nom personnage>**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!sell <nom personnage>**!", discord.Color.red()))
         return
     nom = contenu.split(' ')[1]
     character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
     if character == None:
-        await send_embed_info(message, "Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
         return
     nom = character[6]
     rarity = str(character[7])
     tickets_obtenus = CONSTANTS['RARITY_PRICE'][rarity]
     # Demandez confirmation
     response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets? (réagissez)"
-    msg = await send_embed_info(message, "Confirmation", response, discord.Color.gold())
+    msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.gold()))
     await msg.add_reaction('✅')
     await msg.add_reaction('❌')
     # On met une réaction pour confirmer et on attend 30 secondes que l'utilisateur réagisse
     try:
         reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
     except:
-        await send_embed_info(message, "Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
         return
     if str(reaction.emoji):
         print("Réaction reçue")
     if str(reaction.emoji) != '✅':
-        await send_embed_info(message, "Vente annulée", "Vous avez annulé la vente!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Vente annulée", "Vous avez annulé la vente!", discord.Color.red()))
         return
     database.sell_character(message.author.id,message.author.name, character[0])
     database.update_tickets(message.author.id, database.get_tickets(message.author.id) + tickets_obtenus)
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {rarity} tickets.")
-    await send_embed_info(message, "Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}.")
+    await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
 
 @bot.command()
 async def createTemplates(message):
     if message.author.id != 724383641752436757:
-        await send_embed_info(message, "Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
     database.createAllDatas()
-    await send_embed_info(message, "Templates créés", "Les templates de personnages ont été créés!", discord.Color.green())
+    await message.channel.send(embed=embed_info("Templates créés", "Les templates de personnages ont été créés!", discord.Color.green()))
 
 @bot.command()
 async def reset(message):
     if message.author.id != 724383641752436757:
-        await send_embed_info(message, "Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red())
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
     database.reset()
-    await send_embed_info(message, "Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green())
+    await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
 
 # Fonction qui envoie un message d'information style embed d'information
-async def send_embed_info(message, title, description, color=discord.Color.blue(),footer=None):
+def embed_info(title, description, color=discord.Color.blue(),footer=None):
     embed = discord.Embed(
         title=title,
         description=description,
@@ -393,7 +401,23 @@ async def send_embed_info(message, title, description, color=discord.Color.blue(
     if footer:
         embed.set_footer(text=footer)
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
-    return await message.channel.send(embed=embed)
+    return embed
+
+def embed_invocation(character_template):
+    """ Fonction qui retourne un embed pour l'invocation d'un personnage """
+    character = character_template # Pour plus de lisibilité
+    synergies = database.get_synergies_by_character_template(character[0])
+    hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
+    embed = discord.Embed(
+        title=f"{nom} **[{rarity}]**",
+        color=CONSTANTS['RARITY_COLOR'][rarity],
+    )
+    embed.set_image(url=image)
+    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    if len(synergies) > 0:
+        embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
+    return embed
 
 # Run the bot with the token
 bot.run(getToken.getToken())
