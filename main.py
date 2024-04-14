@@ -249,9 +249,9 @@ async def voirTeam(message):
     if user == "ERROR_SYNTAX":
         await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!team** ou **!team <joueur>**!", discord.Color.red())
         return
-    personnages = database.get_team(user.id, user.name)
+    team = database.get_team(user.id, user.name)
     embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue())  
-    synergies = []
+    nom_synergies_actives = team['synergies']; personnages = team['team']; stats = team['stats']; bonus = team['bonus']
     for index, personnage in enumerate(personnages[:3], start=1):  # Ajoute un compteur commençant par 1
         if personnage is None:
             embed.add_field(name=f"{index}. Emplacement vide", value="", inline=False)
@@ -259,7 +259,7 @@ async def voirTeam(message):
             # Affiche les détails du personnage avec l'index
             identifiant = personnage[2]
             synergies = database.get_synergies_by_character_template(identifiant)
-            value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
+            value = f"*Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])  + "*"
             if len(synergies) == 0:
                 value = ""
             value = f"{personnage[9]} HP {personnage[10]} ATK {personnage[11]} DEF - Niveau {personnage[3]}\n" + value
@@ -269,9 +269,13 @@ async def voirTeam(message):
                 inline=False
             )
             
-
+    embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
-    embed.set_footer(text=f"Remplacer des unités avec !ajouterteam")
+    # On met les synergies en footer et le bonus
+    footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
+    if bonus:
+        footer += f"\nBonus : {bonus['HP']}HP {bonus['ATK']}ATK {bonus['DEF']}DEF "
+    embed.set_footer(text=footer)
     await message.channel.send(embed=embed)
     return
 
