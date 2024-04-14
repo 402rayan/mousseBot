@@ -4,7 +4,7 @@ from loguru import logger
 from datetime import datetime, timedelta
 
 from constantes import CONSTANTS
-from constantes import all_characters_templates, all_synergies, all_link_synergies
+from datas import all_characters_templates, all_synergies, all_link_synergies
 import Levenshtein
 
 # Configurer Loguru pour écrire les logs dans un fichier
