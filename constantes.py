@@ -331,6 +331,67 @@ all_characters_templates = [
             ("Mizuiro", "F", "https://picsum.photos/900/500", 0, 0, 0),
 
             # """ PERSONNAGE MY HERO ACADEMIA"""
+            # Personnages X
+            ("All Might", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Endeavor", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Shigaraki", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Deku (100%)", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("All For One", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Star And Stripe", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages SS
+            ("Overhaul", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Hawks", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Beast Jeanist", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Dabi", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Mirio", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Re Destro", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages S
+            ("Twice", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Shoto", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Bakugo", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Eraserhead", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Tamaki", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Stain", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Fumikage", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Nana Shimura", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Mirko", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Lady Nagant", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages A
+            ("Tenya", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Mt Lady", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Nighteye", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Sun Eater", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Ryuku", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Gran Torino", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages B
+            ("Ochaco", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Midnight", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Denki", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Crimson Riot", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Nezu", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Momo", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Gang Orca", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages C
+            ("Shindo", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Rock Lock", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Vlad King", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Testutetsu", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Snipe", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            
+            # Personnages D
+            ("Spinner", "D", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Shihai", "D", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Nomu", "D", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages E
+            ("Mineta", "E", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Shoji", "E", "https://picsum.photos/900/500", 0, 0, 0),
+            # Personnages F
+            ("Eri", "F", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Kenji", "F", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Sansa", "F", "https://picsum.photos/900/500", 0, 0, 0),
+
+            # """ PERSONNAGE HUNTER X HUNTER"""
+
         ]
 
 all_synergies = [
