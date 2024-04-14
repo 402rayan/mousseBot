@@ -53,6 +53,10 @@ async def on_message(message):
         await ajouterTeam(message)
     elif contenu.startswith('!sell') or contenu.startswith('!vendre'):
         await sell(message)
+    elif contenu.startswith('!create'):
+        await createTemplates(message)
+    elif contenu.startswith('!reset'):
+        await reset(message)
 
 
 # Fonctions
@@ -250,8 +254,10 @@ async def voirTeam(message):
         await send_embed_info(message, "Erreur de syntaxe", "La commande doit être de la forme **!team** ou **!team <joueur>**!", discord.Color.red())
         return
     team = database.get_team(user.id, user.name)
-    embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue())  
+    embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue()) 
+
     nom_synergies_actives = team['synergies']; personnages = team['team']; stats = team['stats']; bonus = team['bonus']
+
     for index, personnage in enumerate(personnages[:3], start=1):  # Ajoute un compteur commençant par 1
         if personnage is None:
             embed.add_field(name=f"{index}. Emplacement vide", value="", inline=False)
@@ -360,6 +366,22 @@ async def sell(message):
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {rarity} tickets.")
     await send_embed_info(message, "Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}.")
 
+@bot.command()
+async def createTemplates(message):
+    if message.author.id != 724383641752436757:
+        await send_embed_info(message, "Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red())
+        return
+    database.createAllDatas()
+    await send_embed_info(message, "Templates créés", "Les templates de personnages ont été créés!", discord.Color.green())
+
+@bot.command()
+async def reset(message):
+    if message.author.id != 724383641752436757:
+        await send_embed_info(message, "Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red())
+        return
+    database.reset()
+    await send_embed_info(message, "Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green())
+    
 # Fonction qui envoie un message d'information style embed d'information
 async def send_embed_info(message, title, description, color=discord.Color.blue(),footer=None):
     embed = discord.Embed(

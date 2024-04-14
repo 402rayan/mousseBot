@@ -4,6 +4,7 @@ from loguru import logger
 from datetime import datetime, timedelta
 
 from constantes import CONSTANTS
+from constantes import all_characters_templates, all_synergies, all_link_synergies
 
 # Configurer Loguru pour écrire les logs dans un fichier
 logger.add("logs.log", rotation="100 MB")  # Rotation du fichier après 100 MB
@@ -91,7 +92,7 @@ class Database:
             synergy_id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT,
             type_of_boost TEXT,
-            force_of_boost INTEGER,
+            force_of_boost FLOAT,
             description TEXT,
             image_url TEXT,
             color INTEGER
@@ -327,3 +328,46 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_synergies s JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE template_id = {template_id}")
         return self.cur.fetchall()
         
+    def create_character_templates(self):
+        self.cur.executemany('''
+        INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?) 
+        ''', all_characters_templates)
+        self.conn.commit()
+        logger.info("Les templates de personnages ont été ajoutés à la base de données.")
+
+    def create_synergies(self):
+        self.cur.executemany('''
+        INSERT INTO synergies (synergy_id, name, type_of_boost, force_of_boost, description, image_url, color) VALUES (?, ?, ?, ?, ?, ?, ?) 
+        ''', all_synergies)
+        self.conn.commit()
+        logger.info("Les synergies ont été ajoutées à la base de données.")
+    
+    def create_link_synergies(self):
+        for synergy_id, characters in all_link_synergies.items():
+            for character in characters:
+                char = self.get_character_template_by_name(0, "Bot", character)
+                if char is None:
+                    continue
+                char_id = char[0]
+                print(char_id, synergy_id)
+                self.cur.execute(f"INSERT INTO character_template_synergies (template_id, synergy_id) VALUES ({char_id}, {synergy_id})")
+        self.conn.commit()
+        logger.info("Les liens de synergies ont été ajoutés à la base de données.")
+
+    def createAllDatas(self):
+        self.create_character_templates()
+        self.create_synergies()
+        self.create_link_synergies()
+        self.conn.commit()
+        logger.info("Toutes les données ont été ajoutées à la base de données.")
+
+    def reset(self):
+        self.cur.execute("DROP TABLE IF EXISTS users")
+        self.cur.execute("DROP TABLE IF EXISTS characters")
+        self.cur.execute("DROP TABLE IF EXISTS character_templates")
+        self.cur.execute("DROP TABLE IF EXISTS synergies")
+        self.cur.execute("DROP TABLE IF EXISTS character_template_synergies")
+        self.conn.commit()
+        self.create_tables()
+        self.createAllDatas()
+        logger.info("Les tables ont été supprimées.")
