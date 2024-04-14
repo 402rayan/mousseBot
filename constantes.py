@@ -76,15 +76,15 @@ all_characters_templates = [
             ("Kefla", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Toppo", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Android 17", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Gotenks", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Gohan", "S", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages A
             ("Cabba", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Cell", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Majin Buu", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kale", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Caulifla", "A", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Trunks (Futur)", "A", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Gotenks", "A", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Gohan", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Trunks", "A", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages B
             ("Kale", "B", "https://picsum.photos/900/500", 0, 0, 0),
             ("C-18", "B", "https://picsum.photos/900/500", 0, 0, 0),
@@ -95,6 +95,7 @@ all_characters_templates = [
             ("Zarbon", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Dodoria", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Ginyu", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Goten", "C", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages D
             ("Chiaotzu", "D", "https://picsum.photos/900/500", 0, 0, 0),
             ("Raditz", "D", "https://picsum.photos/900/500", 0, 0, 0),
@@ -104,6 +105,7 @@ all_characters_templates = [
             ("Pui Pui", "E", "https://picsum.photos/900/500", 0, 0, 0),
             ("Saibaman", "E", "https://picsum.photos/900/500", 0, 0, 0),
             ("Oolong", "E", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Karin", "E", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages F
             ("Mr. Satan", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Yajirobe", "F", "https://picsum.photos/900/500", 0, 0, 0),
@@ -118,30 +120,34 @@ all_characters_templates = [
             # """ PERSONNAGE NARUTO"""
             # Personnages X
             ("Naruto Six Path", "X", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Sasuke Rinnegan", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Sasuke", "X", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kaguya", "X", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Madara Rinnegan", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Madara", "X", "https://picsum.photos/900/500", 0, 0, 0),
             ("Rikudo", "X", "https://picsum.photos/900/500", 0, 0, 0),
             ("Indra", "X", "https://picsum.photos/900/500", 0, 0, 0),
             ("Ashura", "X", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Obito Jinchuriki", "X", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Obito", "X", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages SS
             ("Hashirama", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Tobirama", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Hiruzen", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Toneri", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Pain", "SS", "https://imgur.com/MUcsXLQ", 0, 0, 0),
             ("Itachi", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Shisui", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Minato", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Orochimaru", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kabuto", "SS", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Sasuke", "SS", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Naruto", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Guy (8 portes)", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Momoshiki", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages S
             ("Hidan", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kakuzu", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Mei Terumi", "S", "https://i.imgur.com/JTaGhQQ.gif", 0, 0, 0),
+            ("Onoki", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Gaara", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Tsunade", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Kakashi", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kisame", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Darui", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Asuma", "S", "https://picsum.photos/900/500", 0, 0, 0),
@@ -152,7 +158,10 @@ all_characters_templates = [
             ("Sasori", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Deidara", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Killer Bee", "S", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Jiraiya", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Jiraya", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Izuna", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Konan", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Tobi", "S", "https://picsum.photos/900/500", 0, 0, 0),
             # Personnages A
             ("Yamato (ANBU)", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Zabuza", "A", "https://picsum.photos/900/500", 0, 0, 0),
@@ -160,7 +169,7 @@ all_characters_templates = [
             ("Choji", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Sai", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Temari", "A", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Konan", "A", "https://picsum.photos/900/500", 0, 0, 0),
+            
 
             # Personnages B
             ("Shino", "B", "https://picsum.photos/900/500", 0, 0, 0),
@@ -176,10 +185,12 @@ all_characters_templates = [
 
             # Personnages C
             ("Iruka", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Zetsu", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Shizune", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Anko", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Guren", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Yugao", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Sarada", "C", "https://picsum.photos/900/500", 0, 0, 0),
 
             # Personnages D
             ("Ebisu", "D", "https://picsum.photos/900/500", 0, 0, 0),
@@ -190,7 +201,7 @@ all_characters_templates = [
             ("Pakkun", "E", "https://picsum.photos/900/500", 0, 0, 0),
             ("Gama", "E", "https://picsum.photos/900/500", 0, 0, 0),
             ("Konohamaru", "E", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Karin", "E", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Karin (naruto)", "E", "https://picsum.photos/900/500", 0, 0, 0),
 
             # Personnages F
             ("Mizuki", "F", "https://picsum.photos/900/500", 0, 0, 0),
@@ -215,6 +226,7 @@ all_characters_templates = [
             ("Kizaru", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Fujitora", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Rayleigh", "SS", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Kong", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Katakuri", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Ryokugyu", "SS", "https://picsum.photos/900/500", 0, 0, 0),
             ("Garp", "SS", "https://picsum.photos/900/500", 0, 0, 0),
@@ -232,13 +244,14 @@ all_characters_templates = [
             ("Kuma", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Oden", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Sabo", "S", "https://i.imgur.com/vjcu8Gg.gif", 0, 0, 0),
+            ("Boa Hancock", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Marco", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Sanji", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Yamato", "S", "https://picsum.photos/900/500", 0, 0, 0),
 
             # Personnages A
+            ("Ivankov", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Brook", "A", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Franky", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Robin", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Jinbe", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Rob Lucci", "A", "https://i.imgur.com/aewCvhP.gif", 0, 0, 0),
@@ -252,6 +265,10 @@ all_characters_templates = [
             ("Ussop", "B", "https://i.imgur.com/oJD4qsv.gif", 0, 0, 0),
             ("Hina", "B", "https://picsum.photos/900/500", 0, 0, 0),
             ("Buggy", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Koala", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Inazuma", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Belo Betty", "B", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Franky", "B", "https://picsum.photos/900/500", 0, 0, 0),
             
 
             # Personnages C
@@ -259,6 +276,9 @@ all_characters_templates = [
             ("Arlong", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Don Krieg", "C", "https://picsum.photos/900/500", 0, 0, 0),
             ("Tashigi", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Cobra", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Hack", "C", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Chopper", "C", "https://picsum.photos/900/500", 0, 0, 0),
 
             # Personnages D
             ("Koby", "D", "https://picsum.photos/900/500", 0, 0, 0),
@@ -276,6 +296,7 @@ all_characters_templates = [
             ("Gaimon", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Kaya", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Laboon", "F", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Portgas D. Rouge", "F", "https://picsum.photos/900/500", 0, 0, 0),
 
             # """ PERSONNAGE BLEACH"""
 
@@ -303,6 +324,7 @@ all_characters_templates = [
 
             # Personnages S
             ("Mayuri", "S", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Sajin", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Senjumaru", "S", "https://picsum.photos/900/500", 0, 0, 0),
             ("Isshin", "S", "https://picsum.photos/900/500", 0, 0, 0),
 
@@ -315,6 +337,7 @@ all_characters_templates = [
 
             # Personnages A
 
+            ("Ukitake", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Nnoitra", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Shuhei", "A", "https://picsum.photos/900/500", 0, 0, 0),
             ("Ryuken", "A", "https://picsum.photos/900/500", 0, 0, 0),
@@ -347,7 +370,7 @@ all_characters_templates = [
 
             # Personnages F
             ("Kon", "F", "https://picsum.photos/900/500", 0, 0, 0),
-            ("Karin", "F", "https://picsum.photos/900/500", 0, 0, 0),
+            ("Karin Kurosaki", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Yuzu", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Tatsuki", "F", "https://picsum.photos/900/500", 0, 0, 0),
             ("Mizuiro", "F", "https://picsum.photos/900/500", 0, 0, 0),
@@ -595,19 +618,38 @@ all_synergies = [
     (17, "Sannin", "ATK", 0.50, "Les Sannins sont les trois ninjas légendaires de Konoha.", "https://picsum.photos/900/500", "#FF0000"),
     (18, "Révolutionnaires", "ATK", 0.15, "Les Révolutionnaires sont un groupe qui lutte contre le Gouvernement Mondial.", "https://picsum.photos/900/500", "#FFA500"),
     (19, "Volonté du D", "ATK", 0.15, "La Volonté du D est une mystérieuse lignée de pirates qui défient le Gouvernement Mondial.", "https://picsum.photos/900/500", "#0000FF"),
+    (20, "Animal", "ATK", 0.15, "Les Animaux sont des créatures qui possèdent des pouvoirs spéciaux.", "https://picsum.photos/900/500", "#800080")
+    (21, "Taka", "ATK", 0.15, "La Taka est un groupe de ninjas qui a été formé par Sasuke Uchiha.", "https://picsum.photos/900/500", "#FF0000"),
+    (22, "Rinnegan", "ATK", 0.15, "Le Rinnegan est le dōjutsu le plus puissant de l'univers Naruto.", "https://picsum.photos/900/500", "#FFA500"),
+    (23, "Konoha", "ATK", 0.15, "Konoha est le village caché de la Feuille, l'un des cinq grands villages ninjas.", "https://picsum.photos/900/500", "#0000FF"),
+    (24, "Suna", "ATK", 0.15, "Suna est le village caché du Sable, l'un des cinq grands villages ninjas.", "https://picsum.photos/900/500", "#800080"),
+    (25, "Kiri", "ATK", 0.15, "Kiri est le village caché de la Brume, l'un des cinq grands villages ninjas.", "https://picsum.photos/900/500", "#FF0000"),
+    (26, "Kumo", "ATK", 0.15, "Kumo est le village caché des Nuages, l'un des cinq grands villages ninjas.", "https://picsum.photos/900/500", "#FFA500"),
+    (27, "Iwa", "ATK", 0.15, "Iwa est le village caché de la Roche, l'un des cinq grands villages ninjas.", "https://picsum.photos/900/500", "#0000FF"),
+    (28, "Jinchuriki", "ATK", 0.15, "Les Jinchurikis sont des ninjas qui ont un démon à queue scellé en eux.", "https://picsum.photos/900/500", "#FF0000"),
+
 ]
 
 all_link_synergies = {
     1 : ["Itachi", "Kisame", "Deidara", "Sasori", "Hidan", "Kakuzu", "Pain", "Konan", "Zetsu", "Tobi"], # Akatsuki
-    2 : ["Goku", "Vegeta", "Gohan", "Trunks", "Goten", "Bardock", "Raditz", "Nappa", "Broly", "Cabba"], # Saiyan
+    2 : ["Goku", "Vegeta", "Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla"], # Saiyan
     4 : ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
-    5 : ["Itachi", "Sasuke", "Madara", "Obito", "Shisui", "Fugaku", "Indra", "Izuna", "Sarada", "Boruto"], # Uchiha
+    5 : ["Itachi", "Sasuke", "Madara", "Obito", "Shisui", "Fugaku", "Indra", "Izuna", "Sarada"], # Uchiha
     7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Garp", "Fujitora", "Ryokugyu", "Kong"], # Amiraux
     10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Barbe Noire","Luffy","Mihawk","Crocodile"], # Yonko
-    14 : ["Yamamoto", "Unohana", "Byakuya", "Kenpachi", "Ukitake", "Shunsui", "Sajin", "Mayuri", "Toshiro", "Rukia"], # Gotei 13
+    14 : ["Yamamoto", "Unohana", "Byakuya", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro", "Rukia"], # Gotei 13
     15 : ["Hashirama", "Tobirama", "Hiruzen", "Minato", "Tsunade", "Kakashi", "Naruto","Mei Terumi", "Onoki", "Gaara"], # Kage
     16 : ["Crocodile", "Doflamingo", "Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Buggy", "Law", "Barbe Noire"], # Shichibukai,
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
-    19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire", "Kaido", "Shanks"], # Volonté du D
+    19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku"], # Animal TODO
+    21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
+    22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
+    23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
+    24 : ["Gaara", "Temari", "Kankuro", "Rasa", "Yashamaru"], # Suna TODO
+    25 : ["Kisame", "Zabuza", "Haku", "Mei Terumi", "Ao", "Chojuro", "Yagura", "Mangetsu", "Suigetsu"], # Kiri TODO
+    26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Kurotsuchi", "Akatsuchi", "Onoki"], # Kumo TODO
+    27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
+    28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku"], # Jinchuriki TODO
 }
