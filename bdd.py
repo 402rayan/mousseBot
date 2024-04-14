@@ -232,7 +232,7 @@ class Database:
         character_templates = self.get_character_templates()
         character_templates = [char for char in character_templates if char[2] == rarity]
         liste_personnages = self.get_characters(user_discord_id)
-        if len(liste_personnages) >= 10:
+        if len(liste_personnages) >= CONSTANTS['MAX_CHARACTERS']:
             return "ERROR_MAX_CHARACTERS"
         iteration = 0
         while True and iteration < 100:

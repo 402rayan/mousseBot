@@ -1,6 +1,7 @@
 CONSTANTS = {
     'DAILY_TICKETS': 1,
     'INVOCATION_COST': 1,
+    'MAX_CHARACTERS': 20,
     'RARITY_PRICE': {
         'X': 100,
         'SS': 50,
@@ -13,10 +14,10 @@ CONSTANTS = {
         'F': 0.1,
     },
     'RARITY_CHANCE': {
-        'X': 0.01,
+        'X': 1,
         'SS': 0.02,
         'S': 0.05,
-        'A': 1,
+        'A': 0,
         'B': 0.15,
         'C': 0.2,
         'D': 0.15,

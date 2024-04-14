@@ -1,5 +1,6 @@
 # Import the required modules
 import asyncio
+import random
 import discord
 from discord.ext import commands 
 from constantes import CONSTANTS
@@ -140,20 +141,24 @@ async def invocation(message):
         if donnees == "ERROR_NO_CHARACTER":
             await message.channel.send(embed=embed_info("Erreur", "Aucun personnage n'a été trouvé!", discord.Color.red(), footer="Ticket remboursé."))
         elif donnees == "ERROR_MAX_CHARACTERS":
-            await message.channel.send(embed=embed_info("Erreur", "Vous avez atteint le nombre maximum de personnages (20) !", discord.Color.red(),footer="Vendez des personnages avec !sell"))
+            await message.channel.send(embed=embed_info("Erreur", f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !", discord.Color.red(),footer="Vendez des personnages avec !sell"))
         return
     template = donnees[0]
-    character = donnees[1]
     msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
-    asyncio.sleep(1.5)
     if rarityOfCharacter in ["F", "E", "D", "C"]:
-        await message.channel.send(embed=embed_info("Invocation...", f"Vous avez invoqué un personnage {rarityOfCharacter}!", discord.Color.blue()))
+        await asyncio.sleep(3)
+        await msg.edit(embed=embed_invocation(template))
+        return
     else:
-        
-        embed = embed_invocation(template)
-        await msg.edit(embed=embed)
-        asyncio.sleep(1)
+        nombreRotation = {"B" : 1, "A" : 2, "S" : 4, "SS" : 6, "X" : 8}
+        couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
+        for i in range(nombreRotation[rarityOfCharacter]):
+            await asyncio.sleep(3.5)
+            await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
+        await asyncio.sleep(random.randint(1, 5))
+        await msg.edit(embed=embed_invocation(template))
+    return
 
 
 @bot.command()
@@ -410,6 +415,7 @@ def embed_invocation(character_template):
     hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
     embed = discord.Embed(
         title=f"{nom} **[{rarity}]**",
+        description="Félicitations! Vous avez invoqué un nouveau personnage!",
         color=CONSTANTS['RARITY_COLOR'][rarity],
     )
     embed.set_image(url=image)
