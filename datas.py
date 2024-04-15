@@ -254,10 +254,10 @@ all_characters_templates = [
             # Personnages X
             ("Yhwach", "X", "https://i.pinimg.com/originals/61/64/7c/61647c2b43c3aece4d2f4e0f51fd98f8.gif", 0, 0, 0), # TOREVIEW
             ("Ichigo Final", "X", image_temporaire, 0, 0, 0),
-            ("Aizen", "X", image_temporaire, 0, 0, 0),
+            ("Aizen", "X", 'https://imgur.com/8xq9dtV', 0, 0, 0),
             ("Yamamoto", "X", 'https://i.imgur.com/EGYHcBd.gif', 0, 0, 0),
-            ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0), # TOREVIEW
-            ("Ichibe", "X", image_temporaire, 0, 0, 0),
+            ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0),
+            ("Ichibe", "X", 'image_temporaire', 0, 0, 0), #TO DO
 
             # Personnages SS
             ("Jugram", "SS", image_temporaire, 0, 0, 0),
@@ -278,7 +278,6 @@ all_characters_templates = [
             ("Sajin", "S", image_temporaire, 0, 0, 0),
             ("Senjumaru", "S", image_temporaire, 0, 0, 0),
             ("Isshin", "S", image_temporaire, 0, 0, 0),
-
             ("Rukia", "S", image_temporaire, 0, 0, 0),
             ("Shinji", "S", image_temporaire, 0, 0, 0),
             ("Soi Fon", "S", image_temporaire, 0, 0, 0),
