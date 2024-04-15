@@ -107,27 +107,27 @@ all_characters_templates = [
             ("Izuna", "S", 'https://i.imgur.com/OxGlzHg.png', 0, 0, 0),
             ("Konan", "S", 'https://i.imgur.com/3mOmZ0v.gif', 0, 0, 0),
             ("Tobi", "S", 'https://64.media.tumblr.com/a6ac04d437e10a8c383c601e9f8421a6/tumblr_n5vm5cCKrX1qk9powo1_500.gif', 0, 0, 0),
-            # Personnages A
-            ("Neji", "A", "https://imgur.com/acFMgGN", 0, 0, 0),
-            ("Yamato (ANBU)", "A", image_temporaire, 0, 0, 0),
-            ("Zabuza", "A", image_temporaire, 0, 0, 0),
-            ("Kankuro", "A", image_temporaire, 0, 0, 0),
-            ("Choji", "A", image_temporaire, 0, 0, 0),
+
+            # Personnages A 
+            ("Yamato (ANBU)", "A", image_temporaire, 0, 0, 0), #TO REVIEW
             ("Sai", "A", 'https://i.imgur.com/03ICbLj.gif', 0, 0, 0),
             ("Temari", "A", 'https://cdn.discordapp.com/attachments/805054171661336590/817119251750977566/TEMARI.gif', 0, 0, 0),
             
-
             # Personnages B
+            ("Neji", "B", "https://imgur.com/acFMgGN", 0, 0, 0),
+            ("Kankuro", "B", 'https://imgur.com/6h0fZTJ', 0, 0, 0),
+            ("Choji", "B", 'https://media1.tenor.com/m/FAqetz7SiCEAAAAd/choji.gif', 0, 0, 0), #TO REVIEW
             ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 0, 0, 0),
             ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 0, 0, 0),
-            ("Ino", "B", image_temporaire, 0, 0, 0),
+            ("Ino", "B", 'https://media1.tenor.com/m/tdptC0lOIB4AAAAC/ino-yamanaka-ino.gif', 0, 0, 0),
             ("Sakura", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808354355744342026/SAKUA.gif', 0, 0, 0),
             ("Hinata", "B", 'https://i.imgur.com/VsFYMA1.gif', 0, 0, 0),
             ("Suigetsu", "B", 'https://i.imgur.com/E6d3rSt.gif', 0, 0, 0),
-            ("Jugo", "B", image_temporaire, 0, 0, 0),
+            ("Jugo", "B", 'https://imgur.com/lfSps90', 0, 0, 0),
             ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 0, 0, 0),
             ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 0, 0, 0),
-            ("Fugaku", "B", image_temporaire, 0, 0, 0),
+            ("Fugaku", "B", image_temporaire, 0, 0, 0), #TO REVIEW
+            ("Zabuza", "B", 'image_temporaire', 0, 0, 0), #TO REVIEW
 
             # Personnages C
             ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 0, 0, 0),
