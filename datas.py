@@ -90,7 +90,7 @@ all_characters_templates = [
             ("Hiruzen", "S", 'https://media1.tenor.com/m/j6hgBpYSrL4AAAAC/hiruzen-sarutobi.gif', 0, 0, 0),
             ("Orochimaru", "S", 'https://media1.tenor.com/m/5lzbp1JeaGoAAAAd/anime-naruto-shippuden.gif', 0, 0, 0),
             ("Mei Terumi", "S", "https://i.imgur.com/JTaGhQQ.gif", 0, 0, 0),
-            ("Onoki", "S", image_temporaire, 0, 0, 0),
+            ("Onoki", "S", "https://pa1.aminoapps.com/8436/0050341a556d26a1e018daa2d679190837ffd8a2r1-500-281_hq.gif", 0, 0, 0),
             ("Gaara", "S", 'https://i.imgur.com/39HCNme.png', 0, 0, 0),
             ("Tsunade", "S", 'https://cdn.discordapp.com/attachments/804401351080542269/808357678472232960/Tsunade.gif', 0, 0, 0),
             ("Kakashi", "S", 'https://cdn.discordapp.com/attachments/804401351080542269/808401405283008593/KAKASHI.gif', 0, 0, 0),
@@ -102,14 +102,14 @@ all_characters_templates = [
             ("Rock Lee", "S", 'https://i.imgur.com/1V4WwG9.png', 0, 0, 0),
             ("Sasori", "S", 'https://i.imgur.com/RlpI6Rd.gif', 0, 0, 0),
             ("Deidara", "S", 'https://i.imgur.com/k83MFjs.gif', 0, 0, 0),
-            ("Killer Bee", "S", image_temporaire, 0, 0, 0),
+            ("Killer Bee", "S", "https://64.media.tumblr.com/0857bfcd4a3b9401ea2a12eaf84b0837/tumblr_n1b28tG2DJ1sigvrqo3_500.gif", 0, 0, 0),
             ("Jiraya", "S", 'https://cdn.discordapp.com/attachments/804401351080542269/808356331022319616/JIRAYA.gif', 0, 0, 0),
             ("Izuna", "S", 'https://i.imgur.com/OxGlzHg.png', 0, 0, 0),
             ("Konan", "S", 'https://i.imgur.com/3mOmZ0v.gif', 0, 0, 0),
             ("Tobi", "S", 'https://64.media.tumblr.com/a6ac04d437e10a8c383c601e9f8421a6/tumblr_n5vm5cCKrX1qk9powo1_500.gif', 0, 0, 0),
 
             # Personnages A 
-            ("Yamato (ANBU)", "A", image_temporaire, 0, 0, 0), #TO REVIEW
+            ("Yamato (ANBU)", "A", "https://i.pinimg.com/originals/9d/49/b6/9d49b6f4cbb2548a130d259a6c302ede.gif", 0, 0, 0), #TO REVIEW
             ("Sai", "A", 'https://i.imgur.com/03ICbLj.gif', 0, 0, 0),
             ("Temari", "A", 'https://cdn.discordapp.com/attachments/805054171661336590/817119251750977566/TEMARI.gif', 0, 0, 0),
             
@@ -126,33 +126,33 @@ all_characters_templates = [
             ("Jugo", "B", 'https://imgur.com/lfSps90', 0, 0, 0),
             ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 0, 0, 0),
             ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 0, 0, 0),
-            ("Fugaku", "B", image_temporaire, 0, 0, 0), #TO REVIEW
-            ("Zabuza", "B", 'image_temporaire', 0, 0, 0), #TO REVIEW
+            ("Fugaku", "B", "https://hero.fandom.com/wiki/Fugaku_Uchiha", 0, 0, 0), #TO REVIEW
+            ("Zabuza", "B", "https://i.imgur.com/ntmenx6.png", 0, 0, 0), #TO REVIEW
 
             # Personnages C
             ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 0, 0, 0),
-            ("Zetsu", "C", image_temporaire, 0, 0, 0),
-            ("Shizune", "C", image_temporaire, 0, 0, 0),
-            ("Anko", "C", image_temporaire, 0, 0, 0),
-            ("Guren", "C", image_temporaire, 0, 0, 0),
-            ("Yugao", "C", image_temporaire, 0, 0, 0),
-            ("Sarada", "C", image_temporaire, 0, 0, 0),
-            ("Tenten", "D", "https://imgur.com/s6MEz46", 0, 0, 0),
+            ("Zetsu", "C", "https://cdn.shopify.com/s/files/1/0046/2779/1960/files/black_zetsu.jpg?v=1583191483", 0, 0, 0),
+            ("Shizune", "C", "https://i.imgur.com/53rdzBL.png", 0, 0, 0),
+            ("Anko", "C", "https://static.wikia.nocookie.net/narutoinuyashapokemnyharrypotter/images/0/08/Anko_Mitarashi.jpg/revision/latest?cb=20130327192458&path-prefix=es", 0, 0, 0),
+            ("Guren", "C", "https://static.wikia.nocookie.net/naruto/images/9/90/Guren.png/revision/latest?cb=20171125162907&path-prefix=fr", 0, 0, 0),
+            ("Yugao", "C", "https://static.wikia.nocookie.net/naruto/images/9/9a/Y%C3%BBgao_Uzuki.png/revision/latest?cb=20170810173430&path-prefix=fr", 0, 0, 0),
+            ("Sarada", "C", "https://i0.wp.com/www.univers-otaku.com/wp-content/uploads/2020/12/sarada-uchiha.jpg?resize=740%2C370&ssl=1", 0, 0, 0),
+            ("Tenten", "C", "https://imgur.com/s6MEz46", 0, 0, 0),
+            ("Karin (naruto)", "C", "https://static.wikia.nocookie.net/naruto/images/5/50/Karin.png/revision/latest?cb=20201231015434&path-prefix=fr", 0, 0, 0),
             # Personnages D
             ("Ebisu", "D", 'https://i.imgur.com/qWpczNK.png', 0, 0, 0),
-            ("Tenten", "D", 'https://i.imgur.com/s6MEz46.png', 0, 0, 0),
 
             # Personnages E
-            ("Tonton", "E", image_temporaire, 0, 0, 0),
-            ("Pakkun", "E", image_temporaire, 0, 0, 0),
-            ("Gama", "E", image_temporaire, 0, 0, 0),
             ("Konohamaru", "E", 'https://i.imgur.com/aZoURBF.png', 0, 0, 0),
-            ("Karin (naruto)", "E", image_temporaire, 0, 0, 0),
+            ("Mizuki", "E", "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20210529210947&path-prefix=fr", 0, 0, 0),
+
 
             # Personnages F
-            ("Mizuki", "F", image_temporaire, 0, 0, 0),
-            ("Inari", "F", image_temporaire, 0, 0, 0),
-            ("Gato", "F", image_temporaire, 0, 0, 0),
+            ("Tonton", "F", "https://static.wikia.nocookie.net/xianb/images/f/fa/60t.png/revision/latest/scale-to-width-down/579?cb=20141101233045", 0, 0, 0),
+            ("Pakkun", "F", "https://lh4.googleusercontent.com/vh79H5M8vWfVyuSiNnhk27N59eFH-ukdQUT028m5kmqGsPHp5pO74qpVbTpkhdX80w3utduzz1PaUVEj8ZMAblZXV9n-R4_Z7wdhX1PHxHJDEY7DQbDWOaIVeztagZRM_9WTEYqdRHpawafgywENVw", 0, 0, 0),
+
+            ("Inari", "F", "https://static.wikia.nocookie.net/naruto/images/a/af/Inari_Parte_I_Anime.png/revision/latest?cb=20130829123658&path-prefix=es", 0, 0, 0),
+            ("Gato", "F", "https://static.wikia.nocookie.net/villains/images/2/2e/Gat%C5%8D_%28Naruto%29.jpg/revision/latest?cb=20120817183043", 0, 0, 0),
 
             # """ PERSONNAGE ONE PIECE"""
 
@@ -773,7 +773,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
