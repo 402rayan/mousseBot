@@ -86,7 +86,7 @@ async def list_command(message):
     )
     for key, value in commande.items():
         embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -181,7 +181,7 @@ async def inventaire(message):
             value = ""
         value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
         embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -251,7 +251,7 @@ async def info(message):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     print(synergies)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
@@ -290,7 +290,7 @@ async def voirTeam(message):
             )
             
     embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
@@ -405,7 +405,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
     )
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     return embed
 
 def embed_invocation(character_template):
@@ -420,7 +420,7 @@ def embed_invocation(character_template):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
