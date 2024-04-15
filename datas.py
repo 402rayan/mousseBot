@@ -254,7 +254,7 @@ all_characters_templates = [
             ("Ichigo Final", "X", image_temporaire, 0, 0, 0),
             ("Aizen", "X", image_temporaire, 0, 0, 0),
             ("Yamamoto", "X", 'https://i.imgur.com/EGYHcBd.gif', 0, 0, 0),
-            ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0),
+            ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0), # TOREVIEW
             ("Ichibe", "X", image_temporaire, 0, 0, 0),
 
             # Personnages SS
@@ -571,6 +571,78 @@ all_characters_templates = [
             ("Reigen", "F", image_temporaire , 0, 0, 0),
             ("Ichi Mezato", "F", image_temporaire , 0, 0, 0),
             ("Momozo Takenaka", "F", image_temporaire , 0, 0, 0),
+
+            # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
+
+            # Personnages X
+            ("Kars", "X", image_temporaire, 0, 0, 0),
+            ("Giorno", "X", image_temporaire, 0, 0, 0),
+            ("Pucci", "X", image_temporaire, 0, 0, 0),
+            
+            # Personnages SS
+
+            ("Diavolo", "SS", image_temporaire, 0, 0, 0),
+            ("Jotaro", "SS", image_temporaire, 0, 0, 0),
+            ("Dio", "SS", image_temporaire, 0, 0, 0),
+            ("Kira", "SS", image_temporaire, 0, 0, 0),
+
+
+            # Personnages S
+            ("Bucciarati", "S", image_temporaire, 0, 0, 0),
+            ("Josuke", "S", image_temporaire, 0, 0, 0),
+            ("Fugo", "S", image_temporaire, 0, 0, 0),
+            ("Wamuu", "S", image_temporaire, 0, 0, 0),
+            ("Esidisi", "S", image_temporaire, 0, 0, 0),
+            ("Akira", "S", image_temporaire, 0, 0, 0),
+            ("Risotto", "S", image_temporaire, 0, 0, 0),
+            ("Jolyne", "S", image_temporaire, 0, 0, 0),
+            
+            # Personnages A
+            ("Rohan", "A", image_temporaire, 0, 0, 0),
+            ("Koichi", "A", image_temporaire, 0, 0, 0),
+            ("Kakyoin", "A", image_temporaire, 0, 0, 0),
+            ("Mista", "A", image_temporaire, 0, 0, 0),
+            ("Polarneff", "A", image_temporaire, 0, 0, 0),
+            ("Okuyasu", "A", image_temporaire, 0, 0, 0),
+            ("Caesar", "A", image_temporaire, 0, 0, 0),
+            ("Ghiaccio", "A", image_temporaire, 0, 0, 0),
+            ("Prosciutto", "A", image_temporaire, 0, 0, 0),
+            ("Jonathan", "A", image_temporaire, 0, 0, 0),
+            ("Joseph", "A", image_temporaire, 0, 0, 0),
+            
+            # Personnages B
+            ("Trish", "B", image_temporaire, 0, 0, 0),
+            ("Narancia", "B", image_temporaire, 0, 0, 0),
+            ("Yukako", "B", image_temporaire, 0, 0, 0),
+            ("Miyamoto", "B", image_temporaire, 0, 0, 0),
+            ("Pesci", "B", image_temporaire, 0, 0, 0),
+            ("Melone ", "B", image_temporaire, 0, 0, 0),
+            ("Formaggio", "B", image_temporaire, 0, 0, 0),
+            ("Cioccolata", "B", image_temporaire, 0, 0, 0),
+            ("Squalo", "B", image_temporaire, 0, 0, 0),
+
+            # Personnages C
+            ("Shigechi", "C", image_temporaire, 0, 0, 0),
+            ("Mikitaka", "C", image_temporaire, 0, 0, 0),
+            ("Iggy", "C", image_temporaire, 0, 0, 0),
+            ("Formaggio", "C", image_temporaire, 0, 0, 0),
+            ("Stroheim", "C", image_temporaire, 0, 0, 0),
+
+            # Personnages D
+            ("Abbacchio", "D", image_temporaire, 0, 0, 0),
+            ("Foo Fighters", "D", image_temporaire, 0, 0, 0),
+
+            # Personnages E
+            ("Tonio", "E", image_temporaire, 0, 0, 0),
+            ("Straizo", "E", image_temporaire, 0, 0, 0),
+            ("Will Zeppeli", "E", image_temporaire, 0, 0, 0),
+            ("Luca", "E", image_temporaire, 0, 0, 0),
+
+            # Personnages F
+            ("Speedwagon", "F", image_temporaire, 0, 0, 0),
+            ("Emporio", "F", image_temporaire, 0, 0, 0),
+            ("Poco", "F", image_temporaire, 0, 0, 0),
+            ("Mario", "F", image_temporaire, 0, 0, 0),
         ]
 
 all_synergies = [
@@ -620,14 +692,26 @@ all_synergies = [
     (44, "Uzumaki", "ATK", 0.15, "Le clan Uzumaki est connu pour sa longévité et ses capacités de guérison.", image_temporaire, "#FF0000"),
     (45, "Hyuga", "ATK", 0.15, "Le clan Hyuga est connu pour son Byakugan et ses techniques de combat douces.", image_temporaire, "#FFA500"),
     (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacité à maîtriser les Bijuus.", image_temporaire, "#0000FF"),
-    (47, "Ototsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planètes pour obtenir du chakra.", image_temporaire, "#800080"),
+    (47, "Otsutsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planètes pour obtenir du chakra.", image_temporaire, "#800080"),
     (48, "Insecte", "ATK", 0.15, "Les Insectes sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#FF0000"),
     (49, "Garde Royale", "ATK", 0.15, "La Garde Royale est un groupe qui s'assure de la sécurité du roi.", image_temporaire, "#FFA500"),
+    (50, "Zeppeli", "ATK", 0.15, "Les Zeppelis sont une famille de maîtres de l'Onde qui combattent les vampires.", image_temporaire, "#0000FF"),
+    (51, "Joestar", "ATK", 0.15, "Les Joestars sont une famille de héros qui combattent les vampires et les Pillars.", image_temporaire, "#800080"),
+    (52, "Homme du pillar", "ATK", 0.15, "Les Pillars sont des guerriers qui servent les vampires et protègent la pierre rouge de l'Aja.", image_temporaire, "#FF0000"),
+    (53, "Maître du Temps", "ATK", 0.15, "Les Maîtres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
+    (54, "Maître de l'Explosion", "ATK", 0.15, "Les Maîtres de l'Explosion sont des personnages qui peuvent créer des explosions.", image_temporaire, "#0000FF"),
+    (55, "Squadra Esecuzioni", "ATK", 0.15, "La Squadra Esecuzioni est un groupe de tueurs à gages qui travaillent pour la Passione.", image_temporaire, "#0000FF"),
+    (56, "Hamon", "ATK", 0.15, "Le Hamon est une technique de combat qui utilise l'énergie du soleil pour attaquer les vampires.", image_temporaire, "#800080"),
+    (57, "Passione", "ATK", 0.15, "La Passione est une organisation criminelle italienne qui contrôle le trafic de drogue.", image_temporaire, "#FF0000"),
+    (58, "Team Bucciarati", "ATK", 0.15, "La Team Bucciarati est un groupe de gangsters qui travaillent pour la Passione.", image_temporaire, "#FFA500"),
+    (59, "JoBros", "ATK", 0.15, "Les JoBros sont les amis et alliés des Joestars qui les aident dans leur combat contre le mal.", image_temporaire, "#0000FF"),
+
 
 
 ]
 
 all_link_synergies = {
+    59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"],
     1 : ["Itachi", "Kisame", "Deidara", "Sasori", "Hidan", "Kakuzu", "Pain", "Konan", "Zetsu", "Tobi"], # Akatsuki
     2 : ["Goku", "Vegeta", "Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla"], # Saiyan
     4 : ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
@@ -668,4 +752,14 @@ all_link_synergies = {
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
     48 : ["Shino", "Meruem", "Pufu", "Youpi", "Neferopito"], # Insecte
     49 : ["Meruem", "Neferopito", "Youpi", "Pufu"], # Garde Royale
+    # 50 Zeppeli
+    50 : ["Will Zeppeli", "Caesar", "Gyro","Mario"], # Zeppeli
+
+    53 : ["Dio","Diavolo", "Jotaro"], # Maître du Temps
+    54 : ["Kira Yoshikage", "Bakugo"], # Maître de l'Explosion
+    55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
+    56 : ["Jonathan", "William Zeppeli", "Joseph", "Caesar", "Lisa Lisa", "Poco"], # Hamon
+    57 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"],
+    58 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio"],
+    
 }
