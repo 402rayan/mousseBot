@@ -114,22 +114,24 @@ all_characters_templates = [
             ("Zabuza", "A", image_temporaire, 0, 0, 0),
             ("Kankuro", "A", image_temporaire, 0, 0, 0),
             ("Choji", "A", image_temporaire, 0, 0, 0),
-            ("Sai", "A", image_temporaire, 0, 0, 0),
-            ("Temari", "A", image_temporaire, 0, 0, 0),
+            ("Sai", "A", 'https://i.imgur.com/03ICbLj.gif', 0, 0, 0),
+            ("Temari", "A", 'https://cdn.discordapp.com/attachments/805054171661336590/817119251750977566/TEMARI.gif', 0, 0, 0),
+            
+
             # Personnages B
-            ("Shino", "B", image_temporaire, 0, 0, 0),
-            ("Kiba", "B", image_temporaire, 0, 0, 0),
+            ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 0, 0, 0),
+            ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 0, 0, 0),
             ("Ino", "B", image_temporaire, 0, 0, 0),
-            ("Sakura", "B", image_temporaire, 0, 0, 0),
-            ("Hinata", "B", image_temporaire, 0, 0, 0),
-            ("Suigetsu", "B", image_temporaire, 0, 0, 0),
+            ("Sakura", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808354355744342026/SAKUA.gif', 0, 0, 0),
+            ("Hinata", "B", 'https://i.imgur.com/VsFYMA1.gif', 0, 0, 0),
+            ("Suigetsu", "B", 'https://i.imgur.com/E6d3rSt.gif', 0, 0, 0),
             ("Jugo", "B", image_temporaire, 0, 0, 0),
-            ("Haku", "B", "https://imgur.com/vqQD56N", 0, 0, 0),
-            ("Kurenai", "B", image_temporaire, 0, 0, 0),
+            ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 0, 0, 0),
+            ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 0, 0, 0),
             ("Fugaku", "B", image_temporaire, 0, 0, 0),
 
             # Personnages C
-            ("Iruka", "C", "https://i.imgur.com/p0YmijL.png", 0, 0, 0),
+            ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 0, 0, 0),
             ("Zetsu", "C", image_temporaire, 0, 0, 0),
             ("Shizune", "C", image_temporaire, 0, 0, 0),
             ("Anko", "C", image_temporaire, 0, 0, 0),
@@ -138,14 +140,14 @@ all_characters_templates = [
             ("Sarada", "C", image_temporaire, 0, 0, 0),
             ("Tenten", "D", "https://imgur.com/s6MEz46", 0, 0, 0),
             # Personnages D
-            ("Ebisu", "D", image_temporaire, 0, 0, 0),
-            
+            ("Ebisu", "D", 'https://i.imgur.com/qWpczNK.png', 0, 0, 0),
+            ("Tenten", "D", 'https://i.imgur.com/s6MEz46.png', 0, 0, 0),
 
             # Personnages E
             ("Tonton", "E", image_temporaire, 0, 0, 0),
             ("Pakkun", "E", image_temporaire, 0, 0, 0),
             ("Gama", "E", image_temporaire, 0, 0, 0),
-            ("Konohamaru", "E", image_temporaire, 0, 0, 0),
+            ("Konohamaru", "E", 'https://i.imgur.com/aZoURBF.png', 0, 0, 0),
             ("Karin (naruto)", "E", image_temporaire, 0, 0, 0),
 
             # Personnages F
@@ -167,61 +169,61 @@ all_characters_templates = [
 
             # Personnages SS
             ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 0, 0, 0),
-            ("Aokiji", "SS", image_temporaire, 0, 0, 0),
+            ("Aokiji", "SS", 'https://i.imgur.com/LCqY9UI.gif', 0, 0, 0),
             ("Kizaru", "SS", image_temporaire, 0, 0, 0),
-            ("Fujitora", "SS", image_temporaire, 0, 0, 0),
-            ("Rayleigh", "SS", image_temporaire, 0, 0, 0),
+            ("Fujitora", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),
+            ("Rayleigh", "SS", 'https://i.imgur.com/HzaJdFI.gif', 0, 0, 0),
             ("Kong", "SS", image_temporaire, 0, 0, 0),
-            ("Katakuri", "SS", image_temporaire, 0, 0, 0),
-            ("Ryokugyu", "SS", image_temporaire, 0, 0, 0),
-            ("Garp", "SS", image_temporaire, 0, 0, 0),
+            ("Katakuri", "SS", 'https://i.imgur.com/5z0sR8N.gif', 0, 0, 0),
+            ("Ryokugyu", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),
+            ("Garp", "SS", 'https://i.imgur.com/ZLd4sdw.gif', 0, 0, 0),
             ("Sengoku", "SS", image_temporaire, 0, 0, 0),
-            ("Mihawk", "SS", image_temporaire, 0, 0, 0),
-            ("Doflamingo", "SS", image_temporaire, 0, 0, 0),
+            ("Mihawk", "SS", 'https://i.imgur.com/UICGMYV.gif', 0, 0, 0),
+            ("Doflamingo", "SS", 'https://i.imgur.com/HHCqR9J.jpg', 0, 0, 0),
             ("Law", "SS", image_temporaire, 0, 0, 0),
-            ("Kid", "SS", image_temporaire, 0, 0, 0),
-            ("Zoro", "SS", image_temporaire, 0, 0, 0),
-            ("King", "SS", image_temporaire, 0, 0, 0),
+            ("Kid", "SS", 'https://i.imgur.com/5WxLV4L.gif', 0, 0, 0),
+            ("Zoro", "SS", 'https://i.imgur.com/fPok6pt.gif', 0, 0, 0),
+            ("King", "SS", 'https://i.imgur.com/wq5sEZ7.png', 0, 0, 0),
             
 
             # Personnages S
-            ("Crocodile", "S", image_temporaire, 0, 0, 0),
-            ("Ener", "S", image_temporaire, 0, 0, 0),
+            ("Crocodile", "S", 'https://i.imgur.com/H1BwUuK.gif', 0, 0, 0),
+            ("Ener", "S", 'https://i.imgur.com/s9LuY59.png', 0, 0, 0),
             ("Shiryu", "S", image_temporaire, 0, 0, 0),
             ("Smoker", "S", "https://i.imgur.com/3vJPaRx.gif", 0, 0, 0),
             ("Kuma", "S", image_temporaire, 0, 0, 0),
-            ("Oden", "S", image_temporaire, 0, 0, 0),
+            ("Oden", "S", 'https://i.imgur.com/mACnc1L.jpg', 0, 0, 0),
             ("Sabo", "S", "https://i.imgur.com/vjcu8Gg.gif", 0, 0, 0),
-            ("Boa Hancock", "S", image_temporaire, 0, 0, 0),
-            ("Marco", "S", image_temporaire, 0, 0, 0),
-            ("Sanji", "S", image_temporaire, 0, 0, 0),
+            ("Boa Hancock", "S", 'https://i.imgur.com/ZWtbLYH.gif', 0, 0, 0),
+            ("Marco", "S", 'https://i.imgur.com/LOo1j5P.gif', 0, 0, 0),
+            ("Sanji", "S", 'https://i.imgur.com/hkob0Vu.jpg', 0, 0, 0),
             ("Yamato", "S", image_temporaire, 0, 0, 0),
 
             # Personnages A
             ("Ivankov", "A", image_temporaire, 0, 0, 0),
             ("Brook", "A", image_temporaire, 0, 0, 0),
-            ("Robin", "A", image_temporaire, 0, 0, 0),
-            ("Jinbe", "A", image_temporaire, 0, 0, 0),
+            ("Robin", "A", 'https://i.imgur.com/tiC5mlA.gif', 0, 0, 0),
+            ("Jinbe", "A", 'https://i.imgur.com/5ktjcxG.png', 0, 0, 0),
             ("Rob Lucci", "A", "https://i.imgur.com/aewCvhP.gif", 0, 0, 0),
-            ("Magellan", "A", image_temporaire, 0, 0, 0),
+            ("Magellan", "A", 'https://i.imgur.com/nvHpUU8.png', 0, 0, 0),
             ("Ace", "A", "https://i.imgur.com/8AGmDrS.gif", 0, 0, 0),
             ("Karasu", "A", image_temporaire, 0, 0, 0),
             
             # Personnages B
-            ("Chooper", "B", image_temporaire, 0, 0, 0),
-            ("Nami", "B", image_temporaire, 0, 0, 0),
+            ("Chooper", "B", 'https://i.imgur.com/eSoVui2.png', 0, 0, 0),
+            ("Nami", "B", 'https://i.imgur.com/VAbsCsh.gif', 0, 0, 0),
             ("Ussop", "B", "https://i.imgur.com/oJD4qsv.gif", 0, 0, 0),
-            ("Hina", "B", image_temporaire, 0, 0, 0),
+            ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 0, 0, 0),
             ("Buggy", "B", image_temporaire, 0, 0, 0),
             ("Koala", "B", image_temporaire, 0, 0, 0),
-            ("Inazuma", "B", image_temporaire, 0, 0, 0),
+            ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 0, 0, 0),
             ("Belo Betty", "B", image_temporaire, 0, 0, 0),
-            ("Franky", "B", image_temporaire, 0, 0, 0),
+            ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 0, 0, 0),
             
 
             # Personnages C
             ("Vivi", "C", image_temporaire, 0, 0, 0),
-            ("Arlong", "C", image_temporaire, 0, 0, 0),
+            ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 0, 0, 0),
             ("Don Krieg", "C", image_temporaire, 0, 0, 0),
             ("Tashigi", "C", image_temporaire, 0, 0, 0),
             ("Cobra", "C", image_temporaire, 0, 0, 0),
@@ -229,7 +231,7 @@ all_characters_templates = [
             ("Chopper", "C", image_temporaire, 0, 0, 0),
 
             # Personnages D
-            ("Koby", "D", image_temporaire, 0, 0, 0),
+            ("Koby", "D", 'https://i.imgur.com/OtsQuBI.png', 0, 0, 0),
             ("Helmeppo", "D", image_temporaire, 0, 0, 0),
             ("Dorry", "D", image_temporaire, 0, 0, 0),
             ("Brogy", "D", image_temporaire, 0, 0, 0),
@@ -237,7 +239,7 @@ all_characters_templates = [
             
             # Personnages E
             ("Hatchan", "E", image_temporaire, 0, 0, 0),
-            ("Pell", "E", image_temporaire, 0, 0, 0),
+            ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 0, 0, 0),
             ("Wapol", "E", image_temporaire, 0, 0, 0),
 
             # Personnages F
