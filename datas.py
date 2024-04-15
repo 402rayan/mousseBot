@@ -79,12 +79,12 @@ all_characters_templates = [
             ("Toneri", "SS", 'https://media1.tenor.com/m/3iys2Q_ijIsAAAAC/chakra-tenseigan-tenseigan.gif', 0, 0, 0),
             ("Pain", "SS", "https://s12.gifyu.com/images/SZkqx.gif", 0, 0, 0),
             ("Itachi", "SS", 'https://media1.tenor.com/m/9T4QZFujmdcAAAAd/itachi-itachi-uchiha.gif', 0, 0, 0),
-            ("Shisui", "SS", 'https://media1.tenor.com/m/_To3NtVgZv0AAAAC/shisui-uchiha-shisui.gif', 0, 0, 0),
             ("Minato", "SS", 'https://media1.tenor.com/m/RvlB8akbQKMAAAAC/minenexos33.gif', 0, 0, 0), # TOREVIEW
             ("Kabuto", "SS", 'https://media1.tenor.com/m/-nxrWjUdXRYAAAAC/anime-kabuto-yakushi.gif', 0, 0, 0),
             ("Guy (8 portes)", "SS", 'https://media1.tenor.com/m/xa87Jinyrc0AAAAC/naruto-shippuden-might-guy.gif', 0, 0, 0),
             ("Momoshiki", "SS", 'https://media1.tenor.com/m/74cmic57CwoAAAAC/momoshiki.gif', 0, 0, 0),
             # Personnages S
+            ("Shisui", "S", 'https://media1.tenor.com/m/_To3NtVgZv0AAAAC/shisui-uchiha-shisui.gif', 0, 0, 0),
             ("Hidan", "S", 'https://i.imgur.com/Nz7dGAU.png', 0, 0, 0),
             ("Kakuzu", "S", 'https://i.imgur.com/BKf04A1.gif', 0, 0, 0),
             ("Hiruzen", "S", 'https://media1.tenor.com/m/j6hgBpYSrL4AAAAC/hiruzen-sarutobi.gif', 0, 0, 0),
@@ -643,6 +643,10 @@ all_characters_templates = [
             ("Speedwagon", "F", image_temporaire, 0, 0, 0),
             ("Poco", "F", image_temporaire, 0, 0, 0),
             ("Mario", "F", image_temporaire, 0, 0, 0),
+
+            # """ PERSONNAGE ONE PUNCH MAN ""
+
+
         ]
 
 all_synergies = [
