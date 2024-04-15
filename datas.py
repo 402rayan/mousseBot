@@ -385,32 +385,32 @@ all_characters_templates = [
 
             # """ PERSONNAGE HUNTER X HUNTER"""
             # Personnages X
-            ("Meruem", "X", image_temporaire, 0, 0, 0),
+            ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Gon Adulte", "X", image_temporaire, 0, 0, 0),
             ("Netero", "X", image_temporaire, 0, 0, 0),
-            ("Ging", "X", image_temporaire, 0, 0, 0),
+            ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
             # Personnages SS
             ("Kuroro", "SS", image_temporaire, 0, 0, 0),
             ("Hisoka", "SS", image_temporaire, 0, 0, 0),
             ("Killua", "SS", image_temporaire, 0, 0, 0),
-            ("Zeno", "SS", image_temporaire, 0, 0, 0),
-            ("Silva", "SS", image_temporaire, 0, 0, 0),
-            ("Illumi", "SS", image_temporaire, 0, 0, 0),
-            ("Neferopito", "SS", image_temporaire, 0, 0, 0),
-            ("Yupi", "SS", image_temporaire, 0, 0, 0),
-            ("Aruka", "SS", image_temporaire, 0, 0, 0),
+            ("Zeno", "SS", "https://i.imgur.com/inIqhEg.gif", 0, 0, 0),
+            ("Silva", "SS", "https://i.imgur.com/K8TUsWM.png", 0, 0, 0),
+            ("Illumi", "SS", 'https://i.imgur.com/tFOQgXs.gif', 0, 0, 0),
+            ("Neferopito", "SS", "https://i.imgur.com/5PkF2QA.gif", 0, 0, 0),
+            ("Yupi", "SS", "https://i.imgur.com/tWZDibP.png", 0, 0, 0),
+            ("Aruka", "SS", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
             # Personnages S
             ("Kurapika", "S", image_temporaire, 0, 0, 0),
             ("Morel", "S", image_temporaire, 0, 0, 0),
-            ("Kaito", "S", image_temporaire, 0, 0, 0),
-            ("Feitan", "S", image_temporaire, 0, 0, 0),
+            ("Kaito", "S", "https://i.imgur.com/RehnXP7.gif", 0, 0, 0),
+            ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 0, 0, 0),
             ("Uvogin", "S", image_temporaire, 0, 0, 0),
-            ("Phinks", "S", image_temporaire, 0, 0, 0),
+            ("Phinks", "S", "https://i.imgur.com/k5BLUMw.png", 0, 0, 0),
             ("Knuckle", "S", image_temporaire, 0, 0, 0),
-            ("Pouf", "S", image_temporaire, 0, 0, 0),
+            ("Pufu", "S", "https://i.imgur.com/CfoSEeD.gif", 0, 0, 0),
             ("Nabunaga", "S", image_temporaire, 0, 0, 0),
             # Personnages A
-            ("Machi", "A", image_temporaire, 0, 0, 0),
+            ("Machi", "A", "https://i.imgur.com/HCAKZfB.gif", 0, 0, 0),
             ("Shoot", "A", image_temporaire, 0, 0, 0),
             ("Genthru", "A", image_temporaire, 0, 0, 0),
             ("Sharnak", "A", image_temporaire, 0, 0, 0),
@@ -419,26 +419,26 @@ all_characters_templates = [
             ("Gon", "A", image_temporaire, 0, 0, 0),
             ("Pariston", "A", image_temporaire, 0, 0, 0),
             # Personnages B
-            ("Pakunoda", "B", image_temporaire, 0, 0, 0),
-            ("Shizuku", "B", image_temporaire, 0, 0, 0),
-            ("Franklin", "B", image_temporaire, 0, 0, 0),
-            ("Cheetu", "B", image_temporaire, 0, 0, 0),
-            ("Korutopi", "B", image_temporaire, 0, 0, 0),
-            ("Leorio", "B", image_temporaire, 0, 0, 0),
-            ("Kalluto", "B", image_temporaire, 0, 0, 0),
+            ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 0, 0, 0),
+            ("Shizuku", "B", "https://i.imgur.com/IbkxhGl.png", 0, 0, 0),
+            ("Franklin", "B", "https://i.imgur.com/xoln4Ly.gif", 0, 0, 0),
+            ("Cheetu", "B", "https://i.imgur.com/ZqFKcDD.png", 0, 0, 0),
+            ("Korutopi", "B", "https://i.imgur.com/QwL2k3G.png", 0, 0, 0),
+            ("Leorio", "B", 'https://i.imgur.com/NBFxlLS.gif', 0, 0, 0),
+            ("Kalluto", "B", "https://i.imgur.com/vCDM9hC.png", 0, 0, 0),
             # Personnages C
-            ("Zushi", "C", image_temporaire, 0, 0, 0),
+            ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 0, 0, 0),
             ("Wing", "C", image_temporaire, 0, 0, 0),
             ("Ponzu", "C", image_temporaire, 0, 0, 0),
-            ("Pokkle", "C", image_temporaire, 0, 0, 0),
+            ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 0, 0, 0),
             # Personnages D
-            ("Kikyo", "D", image_temporaire, 0, 0, 0),
+            ("Kikyo", "D", "https://i.imgur.com/dR5KneW.png", 0, 0, 0),
             # Personnages E
-            ("Tompa", "E", image_temporaire, 0, 0, 0),
+            ("Tompa", "E", "https://i.imgur.com/ms2R2ki.png", 0, 0, 0),
             ("Neon", "E", image_temporaire, 0, 0, 0),
             # Personnages F
             ("Komugi", "F", image_temporaire, 0, 0, 0),
-            ("Mito", "F", image_temporaire, 0, 0, 0),
+            ("Mito", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
 
             # """ PERSONNAGE AVATAR"""
             # Personnages X
@@ -620,6 +620,8 @@ all_synergies = [
     (45, "Hyuga", "ATK", 0.15, "Le clan Hyuga est connu pour son Byakugan et ses techniques de combat douces.", image_temporaire, "#FFA500"),
     (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacité à maîtriser les Bijuus.", image_temporaire, "#0000FF"),
     (47, "Ototsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planètes pour obtenir du chakra.", image_temporaire, "#800080"),
+    (48, "Insecte", "ATK", 0.15, "Les Insectes sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#FF0000"),
+    (49, "Garde Royale", "ATK", 0.15, "La Garde Royale est un groupe qui s'assure de la sécurité du roi.", image_temporaire, "#FFA500"),
 
 
 ]
@@ -655,7 +657,7 @@ all_link_synergies = {
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
 
-    40 : ["Zoro", "Mihawk","Toji", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach"], # Épéiste
+    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach"], # Épéiste
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple"], # Télékinésiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
@@ -663,4 +665,6 @@ all_link_synergies = {
     45 : ["Neji", "Hinata", "Hiashi", "Hanabi","Himawari", "Boruto"], # Hyuga
     46 : ["Hashirama", "Tobirama", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
+    48 : ["Shino", "Meruem", "Pouf", "Youpi", "Pitou"], # Insecte
+    49 : ["Meruem", "Pitou", "Youpi", "Pouf"], # Garde Royale
 }
