@@ -112,24 +112,24 @@ all_characters_templates = [
             ("Zabuza", "A", image_temporaire, 0, 0, 0),
             ("Kankuro", "A", image_temporaire, 0, 0, 0),
             ("Choji", "A", image_temporaire, 0, 0, 0),
-            ("Sai", "A", image_temporaire, 0, 0, 0),
-            ("Temari", "A", image_temporaire, 0, 0, 0),
+            ("Sai", "A", 'https://i.imgur.com/03ICbLj.gif', 0, 0, 0),
+            ("Temari", "A", 'https://cdn.discordapp.com/attachments/805054171661336590/817119251750977566/TEMARI.gif', 0, 0, 0),
             
 
             # Personnages B
-            ("Shino", "B", image_temporaire, 0, 0, 0),
-            ("Kiba", "B", image_temporaire, 0, 0, 0),
+            ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 0, 0, 0),
+            ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 0, 0, 0),
             ("Ino", "B", image_temporaire, 0, 0, 0),
-            ("Sakura", "B", image_temporaire, 0, 0, 0),
-            ("Hinata", "B", image_temporaire, 0, 0, 0),
-            ("Suigetsu", "B", image_temporaire, 0, 0, 0),
+            ("Sakura", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808354355744342026/SAKUA.gif', 0, 0, 0),
+            ("Hinata", "B", 'https://i.imgur.com/VsFYMA1.gif', 0, 0, 0),
+            ("Suigetsu", "B", 'https://i.imgur.com/E6d3rSt.gif', 0, 0, 0),
             ("Jugo", "B", image_temporaire, 0, 0, 0),
-            ("Haku", "B", image_temporaire, 0, 0, 0),
-            ("Kurenai", "B", image_temporaire, 0, 0, 0),
+            ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 0, 0, 0),
+            ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 0, 0, 0),
             ("Fugaku", "B", image_temporaire, 0, 0, 0),
 
             # Personnages C
-            ("Iruka", "C", image_temporaire, 0, 0, 0),
+            ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 0, 0, 0),
             ("Zetsu", "C", image_temporaire, 0, 0, 0),
             ("Shizune", "C", image_temporaire, 0, 0, 0),
             ("Anko", "C", image_temporaire, 0, 0, 0),
@@ -138,14 +138,14 @@ all_characters_templates = [
             ("Sarada", "C", image_temporaire, 0, 0, 0),
 
             # Personnages D
-            ("Ebisu", "D", image_temporaire, 0, 0, 0),
-            ("Tenten", "D", image_temporaire, 0, 0, 0),
+            ("Ebisu", "D", 'https://i.imgur.com/qWpczNK.png', 0, 0, 0),
+            ("Tenten", "D", 'https://i.imgur.com/s6MEz46.png', 0, 0, 0),
 
             # Personnages E
             ("Tonton", "E", image_temporaire, 0, 0, 0),
             ("Pakkun", "E", image_temporaire, 0, 0, 0),
             ("Gama", "E", image_temporaire, 0, 0, 0),
-            ("Konohamaru", "E", image_temporaire, 0, 0, 0),
+            ("Konohamaru", "E", 'https://i.imgur.com/aZoURBF.png', 0, 0, 0),
             ("Karin (naruto)", "E", image_temporaire, 0, 0, 0),
 
             # Personnages F
