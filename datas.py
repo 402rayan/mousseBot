@@ -169,23 +169,21 @@ all_characters_templates = [
             # Personnages SS
             ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 0, 0, 0),
             ("Aokiji", "SS", 'https://i.imgur.com/LCqY9UI.gif', 0, 0, 0),
-            ("Kizaru", "SS", image_temporaire, 0, 0, 0),
-            ("Fujitora", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),
+            ("Kizaru", "SS", 'https://imgur.com/nTGQsXq', 0, 0, 0),
+            ("Fujitora", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),#TO REVIEW
             ("Rayleigh", "SS", 'https://i.imgur.com/HzaJdFI.gif', 0, 0, 0),
-            ("Kong", "SS", image_temporaire, 0, 0, 0),
             ("Katakuri", "SS", 'https://i.imgur.com/5z0sR8N.gif', 0, 0, 0),
             ("Ryokugyu", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),
             ("Garp", "SS", 'https://i.imgur.com/ZLd4sdw.gif', 0, 0, 0),
-            ("Sengoku", "SS", image_temporaire, 0, 0, 0),
             ("Mihawk", "SS", 'https://i.imgur.com/UICGMYV.gif', 0, 0, 0),
             ("Doflamingo", "SS", 'https://i.imgur.com/HHCqR9J.jpg', 0, 0, 0),
-            ("Law", "SS", image_temporaire, 0, 0, 0),
+            ("Law", "SS", 'https://imgur.com/xJpnwDU', 0, 0, 0),
             ("Kid", "SS", 'https://i.imgur.com/5WxLV4L.gif', 0, 0, 0),
             ("Zoro", "SS", 'https://i.imgur.com/fPok6pt.gif', 0, 0, 0),
             ("King", "SS", 'https://i.imgur.com/wq5sEZ7.png', 0, 0, 0),
             
-
             # Personnages S
+            ("Sengoku", "S", image_temporaire, 0, 0, 0),
             ("Crocodile", "S", 'https://i.imgur.com/H1BwUuK.gif', 0, 0, 0),
             ("Ener", "S", 'https://i.imgur.com/s9LuY59.png', 0, 0, 0),
             ("Shiryu", "S", image_temporaire, 0, 0, 0),
@@ -199,6 +197,7 @@ all_characters_templates = [
             ("Yamato", "S", image_temporaire, 0, 0, 0),
 
             # Personnages A
+            ("Kong", "A", image_temporaire, 0, 0, 0),
             ("Ivankov", "A", image_temporaire, 0, 0, 0),
             ("Brook", "A", image_temporaire, 0, 0, 0),
             ("Robin", "A", 'https://i.imgur.com/tiC5mlA.gif', 0, 0, 0),
