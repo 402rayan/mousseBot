@@ -646,7 +646,53 @@ all_characters_templates = [
 
             # """ PERSONNAGE ONE PUNCH MAN ""
 
+            # Personnages X
+            ("Saitama", "X", image_temporaire, 0, 0, 0),
+            ("Garou", "X", image_temporaire, 0, 0, 0),
+            ("Boros", "X", image_temporaire, 0, 0, 0),
+            
 
+
+            # Personnages SS
+
+            ("Tatsumaki", "SS", image_temporaire, 0, 0, 0),
+            ("Blast", "SS", image_temporaire, 0, 0, 0),
+            ("King", "SS", image_temporaire, 0, 0, 0),
+
+            # Personnages S
+
+            ("Metal Knight", "S", image_temporaire, 0, 0, 0),
+            ("Flashy Flash", "S", image_temporaire, 0, 0, 0),
+            ("Bang", "S", image_temporaire, 0, 0, 0),
+            ("Atomic Samurai", "S", image_temporaire, 0, 0, 0),
+
+            # Personnages A
+            ("Genos", "A", image_temporaire, 0, 0, 0),
+            ("Child Emperor", "A", image_temporaire, 0, 0, 0),
+            ("Zombieman", "A", image_temporaire, 0, 0, 0),
+            ("Metal Bat", "A", image_temporaire, 0, 0, 0),
+
+            # Personnages B
+            ("Watchdog Man", "B", image_temporaire, 0, 0, 0),
+            ("Tanktop Master", "B", image_temporaire, 0, 0, 0),
+            ("Puri Puri Prisoner", "B", image_temporaire, 0, 0, 0),
+
+
+            # Personnages C
+            ("Stinger", "C", image_temporaire, 0, 0, 0),
+            ("Snake", "C", image_temporaire, 0, 0, 0),
+
+            # Personnages D
+            ("Crablante", "D", image_temporaire, 0, 0, 0),
+            ("Cyborgorilla", "D", image_temporaire, 0, 0, 0),
+
+            # Personnages E
+            ("Fubuki", "E", image_temporaire, 0, 0, 0),
+
+
+            # Personnages F
+            ("Mumen Rider", "F", image_temporaire, 0, 0, 0),
+            ("Horse Bone", "F", image_temporaire, 0, 0, 0),
         ]
 
 all_synergies = [
@@ -728,7 +774,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
