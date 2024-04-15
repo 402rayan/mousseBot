@@ -2,9 +2,9 @@ image_temporaire = "https://picsum.photos/900/500"
 all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""
             # Personnages X
-            ("Vegeta Ultra Ego", "X", image_temporaire, 0, 0, 0),
-            ("Goku Ultra Instinct", "X", image_temporaire, 0, 0, 0),
-            ("Zeno", "X", image_temporaire, 0, 0, 0),
+            ("Vegeta Ultra Ego", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
+            ("Goku Ultra Instinct", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
+            ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
             # Personnages SS
             ("Broly", "SS", image_temporaire, 0, 0, 0),
             ("Golden Freezer", "SS", 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a290752-d7eb-45e3-aa31-8e71b544cde0/dbm1yiz-525bf1bb-1bba-42e3-88bc-da271e0fc047.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhMjkwNzUyLWQ3ZWItNDVlMy1hYTMxLThlNzFiNTQ0Y2RlMFwvZGJtMXlpei01MjViZjFiYi0xYmJhLTQyZTMtODhiYy1kYTI3MWUwZmMwNDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.d2ovx3xnc5I44dQTZSSnyRLGuDKRZnyPp0m3qDlyHVo', 0, 0, 0),
