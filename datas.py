@@ -444,10 +444,10 @@ all_characters_templates = [
 
             # """ PERSONNAGE AVATAR"""
             # Personnages X
-            ("Aang (Avatar)", "X", image_temporaire, 0, 0, 0),
+            ("Aang", "X", image_temporaire, 0, 0, 0),
             ("Ozai", "X", image_temporaire, 0, 0, 0),
-            ("Kyoshi (Avatar)", "X", image_temporaire, 0, 0, 0),
-            ("Roku (Avatar)", "X", image_temporaire, 0, 0, 0),
+            ("Kyoshi", "X", image_temporaire, 0, 0, 0),
+            ("Roku", "X", image_temporaire, 0, 0, 0),
             ("Iroh", "X", image_temporaire, 0, 0, 0),
 
             # Personnages SS
@@ -650,7 +650,7 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku"], # Jinchuriki TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Aang", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
+    29 : ["Aang","Roku","Kyoshi", "Ace", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
     32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
@@ -667,6 +667,6 @@ all_link_synergies = {
     45 : ["Neji", "Hinata", "Hiashi", "Hanabi","Himawari", "Boruto"], # Hyuga
     46 : ["Hashirama", "Tobirama", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
-    48 : ["Shino", "Meruem", "Pouf", "Youpi", "Pitou"], # Insecte
-    49 : ["Meruem", "Pitou", "Youpi", "Pouf"], # Garde Royale
+    48 : ["Shino", "Meruem", "Pufu", "Youpi", "Neferopito"], # Insecte
+    49 : ["Meruem", "Neferopito", "Youpi", "Pufu"], # Garde Royale
 }
