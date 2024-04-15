@@ -16,12 +16,12 @@ all_characters_templates = [
             ("Zamasu", "SS", 'https://media1.tenor.com/m/TY1_T_suBr4AAAAC/zamasu-goku.gif', 0, 0, 0),
             ("Jiren", "SS", 'https://media1.tenor.com/m/97ITDVHgUwoAAAAC/dragon-ball-stare.gif', 0, 0, 0),
             # Personnages S
-            ("Hit", "S", image_temporaire, 0, 0, 0),
-            ("Kefla", "S", image_temporaire, 0, 0, 0),
-            ("Toppo", "S", image_temporaire, 0, 0, 0),
-            ("Android 17", "S", image_temporaire, 0, 0, 0),
-            ("Gotenks", "S", image_temporaire, 0, 0, 0),
-            ("Gohan", "S", image_temporaire, 0, 0, 0),
+            ("Hit", "S", 'https://media1.tenor.com/m/4TplENjWWCcAAAAd/hit-assassin.gif', 0, 0, 0),
+            ("Kefla", "S", 'https://media1.tenor.com/m/kV_BbTxQANgAAAAC/dragon-ball-dragon-ball-super.gif', 0, 0, 0),
+            ("Toppo", "S", 'https://media1.tenor.com/m/v6Yn-JgdX2gAAAAC/toppo-cartoon.gif', 0, 0, 0),
+            ("Android 17", "S", 'https://media1.tenor.com/m/1EE6jYeD874AAAAC/android17-dbz.gif', 0, 0, 0),
+            ("Gotenks", "S", 'https://media1.tenor.com/m/rqT2GpNIWfMAAAAd/goten-super-saiyan.gif', 0, 0, 0),
+            ("Gohan", "S", 'https://media1.tenor.com/m/vGaQ4md93OwAAAAd/gohan-son.gif', 0, 0, 0),
             # Personnages A
             ("Cabba", "A", image_temporaire, 0, 0, 0),
             ("Cell", "A", image_temporaire, 0, 0, 0),
