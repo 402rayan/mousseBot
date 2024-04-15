@@ -6,7 +6,7 @@ all_characters_templates = [
             ("Goku Ultra Instinct", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
             # Personnages SS
-            ("Broly", "SS", image_temporaire, 0, 0, 0), #TODO
+            ("Broly", "SS", "https://i.imgur.com/flUOeQK.gif", 0, 0, 0), #TODO
             ("Golden Freezer", "SS", 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a290752-d7eb-45e3-aa31-8e71b544cde0/dbm1yiz-525bf1bb-1bba-42e3-88bc-da271e0fc047.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhMjkwNzUyLWQ3ZWItNDVlMy1hYTMxLThlNzFiNTQ0Y2RlMFwvZGJtMXlpei01MjViZjFiYi0xYmJhLTQyZTMtODhiYy1kYTI3MWUwZmMwNDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.d2ovx3xnc5I44dQTZSSnyRLGuDKRZnyPp0m3qDlyHVo', 0, 0, 0),
             ("Beerus", "SS", 'https://media1.tenor.com/m/QlDaIzrNXNwAAAAC/beerus-stare.gif', 0, 0, 0),
             ("Champa", "SS", 'https://media1.tenor.com/m/cSbQJiwt5V4AAAAC/dbz-dbs.gif', 0, 0, 0),
@@ -15,6 +15,8 @@ all_characters_templates = [
             ("Goku Black", "SS", 'https://media1.tenor.com/m/AL-nOjhTt4UAAAAC/goku-black-smile.gif', 0, 0, 0),
             ("Zamasu", "SS", 'https://media1.tenor.com/m/TY1_T_suBr4AAAAC/zamasu-goku.gif', 0, 0, 0),
             ("Jiren", "SS", 'https://media1.tenor.com/m/97ITDVHgUwoAAAAC/dragon-ball-stare.gif', 0, 0, 0),
+            ("Gogeta", "SS", "https://i.imgur.com/5sTq4Q6.gif", 0, 0, 0),
+            ("Vegeto", "SS", "https://i.imgur.com/DBewj1R.gif", 0, 0, 0),
             # Personnages S
             ("Hit", "S", 'https://media1.tenor.com/m/4TplENjWWCcAAAAd/hit-assassin.gif', 0, 0, 0),
             ("Kefla", "S", 'https://media1.tenor.com/m/kV_BbTxQANgAAAAC/dragon-ball-dragon-ball-super.gif', 0, 0, 0),
@@ -35,7 +37,8 @@ all_characters_templates = [
             ("Frost", "B", 'https://static.wikia.nocookie.net/dragonball/images/c/c4/Dragon-Ball-Super-Episode-108-image-104.jpg/revision/latest/scale-to-width-down/1000?cb=20170925170848&path-prefix=fr', 0, 0, 0),
             ("Bardock", "B", 'https://static.wikia.nocookie.net/dragonball/images/f/ff/Bardack_dans_le_film_DBS_Broly.jpg/revision/latest/scale-to-width-down/1000?cb=20220711114340&path-prefix=fr', 0, 0, 0),
             # Personnages C
-            ("Tien Shin Han", "C", 'https://static.wikia.nocookie.net/dragonball/images/9/90/TienBuuSaga.png/revision/latest?cb=20130921104728&path-prefix=fr', 0, 0, 0),
+            ("Ten Shin Han", "C", 'https://static.wikia.nocookie.net/dragonball/images/9/90/TienBuuSaga.png/revision/latest?cb=20130921104728&path-prefix=fr', 0, 0, 0),
+            ("Pui Pui", "C", 'https://i.imgur.com/KCdTIUq.png', 0, 0, 0),
             ("Zarbon", "C", 'https://static.wikia.nocookie.net/dragonball/images/a/a0/Z%C3%A2bon_premi%C3%A8re_apparition.png/revision/latest?cb=20121014150058&path-prefix=fr', 0, 0, 0),
             ("Dodoria", "C", 'https://static.wikia.nocookie.net/dragonball/images/b/b0/Vlcap-2013-11-24-15h27m41s142.jpg/revision/latest?cb=20131124143313&path-prefix=fr', 0, 0, 0), #toreview
             ("Ginyu", "C", 'https://static.wikia.nocookie.net/dragonball/images/8/89/CapitaineGinyu.png/revision/latest?cb=20130718091929&path-prefix=fr', 0, 0, 0),
@@ -47,14 +50,12 @@ all_characters_templates = [
             ("Saibaman", "D", 'https://static.wikia.nocookie.net/dragonball/images/9/99/SaiabamenInfoBox-1-.jpg/revision/latest?cb=20141016164645&path-prefix=fr', 0, 0, 0),
             # Personnages E
             ("Yamcha", "E", 'https://www.superherodb.com/pictures2/portraits/10/050/1211.jpg?v=1645322906', 0, 0, 0),
-            ("Pui Pui", "E", 'https://static.wikia.nocookie.net/dragonball/images/0/07/Puipui.png/revision/latest?cb=20130527175529&path-prefix=fr', 0, 0, 0),
-            ("Oolong", "E", 'https://static.wikia.nocookie.net/dragonball/images/5/5b/Oolong_in.png/revision/latest/scale-to-width-down/1000?cb=20170817211549&path-prefix=fr', 0, 0, 0),
+            ("Oolong", "E", 'https://i.imgur.com/K00wC2U.png', 0, 0, 0),
             ("Karin", "E", 'https://static.wikia.nocookie.net/dragonball/images/f/fe/KorinBuuSagaNV.png/revision/latest?cb=20100513171706', 0, 0, 0),
             ("Dende", "E", 'https://static.wikia.nocookie.net/dragonball/images/4/45/Dende.png/revision/latest?cb=20150705191047&path-prefix=fr', 0, 0, 0),
-
             # Personnages F
             ("Mr. Satan", "F", 'https://static.wikia.nocookie.net/dragonball/images/d/d1/Mr_Satan_Artwork.png/revision/latest?cb=20170904190549&path-prefix=fr', 0, 0, 0),
-            ("Yajirobe", "F", 'https://static.wikia.nocookie.net/dragonball/images/e/ee/Yajirobe.png/revision/latest?cb=20130411141720&path-prefix=fr', 0, 0, 0),
+            ("Yajirobe", "F", "https://i.imgur.com/7yk8rDr.png", 0, 0, 0),
             ("Pilaf", "F", 'https://static.wikia.nocookie.net/dragonball/images/b/b1/Pilaf_render_by_luishatakeuchiha-d69lqwy.png/revision/latest?cb=20170813173722&path-prefix=fr', 0, 0, 0),
             ("Plume", "F", 'https://static.wikia.nocookie.net/dragonball/images/c/c0/Pu_erh_vs_Oolong.png/revision/latest?cb=20150803173741&path-prefix=fr', 0, 0, 0),
             ("Chichi", "F", 'https://static.wikia.nocookie.net/dragonball/images/6/67/Chichi_et_Gok%C3%BB.jpg/revision/latest?cb=20221224154029&path-prefix=fr', 0, 0, 0),
@@ -96,7 +97,6 @@ all_characters_templates = [
             ("Kisame", "S", image_temporaire, 0, 0, 0),
             ("Darui", "S", image_temporaire, 0, 0, 0),
             ("Asuma", "S", image_temporaire, 0, 0, 0),
-            ("Neji", "S", image_temporaire, 0, 0, 0),
             ("Kimimaro", "S", image_temporaire, 0, 0, 0),
             ("Shikamaru", "S", image_temporaire, 0, 0, 0),
             ("Rock Lee", "S", image_temporaire, 0, 0, 0),
@@ -108,14 +108,13 @@ all_characters_templates = [
             ("Konan", "S", image_temporaire, 0, 0, 0),
             ("Tobi", "S", image_temporaire, 0, 0, 0),
             # Personnages A
+            ("Neji", "A", "https://imgur.com/acFMgGN", 0, 0, 0),
             ("Yamato (ANBU)", "A", image_temporaire, 0, 0, 0),
             ("Zabuza", "A", image_temporaire, 0, 0, 0),
             ("Kankuro", "A", image_temporaire, 0, 0, 0),
             ("Choji", "A", image_temporaire, 0, 0, 0),
             ("Sai", "A", image_temporaire, 0, 0, 0),
             ("Temari", "A", image_temporaire, 0, 0, 0),
-            
-
             # Personnages B
             ("Shino", "B", image_temporaire, 0, 0, 0),
             ("Kiba", "B", image_temporaire, 0, 0, 0),
@@ -124,22 +123,22 @@ all_characters_templates = [
             ("Hinata", "B", image_temporaire, 0, 0, 0),
             ("Suigetsu", "B", image_temporaire, 0, 0, 0),
             ("Jugo", "B", image_temporaire, 0, 0, 0),
-            ("Haku", "B", image_temporaire, 0, 0, 0),
+            ("Haku", "B", "https://imgur.com/vqQD56N", 0, 0, 0),
             ("Kurenai", "B", image_temporaire, 0, 0, 0),
             ("Fugaku", "B", image_temporaire, 0, 0, 0),
 
             # Personnages C
-            ("Iruka", "C", image_temporaire, 0, 0, 0),
+            ("Iruka", "C", "https://i.imgur.com/p0YmijL.png", 0, 0, 0),
             ("Zetsu", "C", image_temporaire, 0, 0, 0),
             ("Shizune", "C", image_temporaire, 0, 0, 0),
             ("Anko", "C", image_temporaire, 0, 0, 0),
             ("Guren", "C", image_temporaire, 0, 0, 0),
             ("Yugao", "C", image_temporaire, 0, 0, 0),
             ("Sarada", "C", image_temporaire, 0, 0, 0),
-
+            ("Tenten", "D", "https://imgur.com/s6MEz46", 0, 0, 0),
             # Personnages D
             ("Ebisu", "D", image_temporaire, 0, 0, 0),
-            ("Tenten", "D", image_temporaire, 0, 0, 0),
+            
 
             # Personnages E
             ("Tonton", "E", image_temporaire, 0, 0, 0),
@@ -249,11 +248,11 @@ all_characters_templates = [
             # """ PERSONNAGE BLEACH"""
 
             # Personnages X
-            ("Yhwach", "X", image_temporaire, 0, 0, 0),
+            ("Yhwach", "X", "https://i.pinimg.com/originals/61/64/7c/61647c2b43c3aece4d2f4e0f51fd98f8.gif", 0, 0, 0), # TOREVIEW
             ("Ichigo Final", "X", image_temporaire, 0, 0, 0),
             ("Aizen", "X", image_temporaire, 0, 0, 0),
-            ("Yamamoto", "X", image_temporaire, 0, 0, 0),
-            ("Kenpachi", "X", image_temporaire, 0, 0, 0),
+            ("Yamamoto", "X", 'https://i.imgur.com/EGYHcBd.gif', 0, 0, 0),
+            ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0),
             ("Ichibe", "X", image_temporaire, 0, 0, 0),
 
             # Personnages SS
@@ -620,7 +619,7 @@ all_synergies = [
     (45, "Hyuga", "ATK", 0.15, "Le clan Hyuga est connu pour son Byakugan et ses techniques de combat douces.", image_temporaire, "#FFA500"),
     (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacité à maîtriser les Bijuus.", image_temporaire, "#0000FF"),
     (47, "Ototsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planètes pour obtenir du chakra.", image_temporaire, "#800080"),
-    
+
 
 ]
 
@@ -643,17 +642,19 @@ all_link_synergies = {
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
     24 : ["Gaara", "Temari", "Kankuro", "Rasa", "Yashamaru"], # Suna TODO
     25 : ["Kisame", "Zabuza", "Haku", "Mei Terumi", "Ao", "Chojuro", "Yagura", "Mangetsu", "Suigetsu"], # Kiri TODO
-    26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Kurotsuchi", "Akatsuchi", "Onoki"], # Kumo TODO
+    26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku"], # Jinchuriki TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Aang", "Itachi", "Madara", "Sasuke","Kakuzu"],# Maître du Feu TODO
+    29 : ["Aang","Roku","Kyoshi", "Ace", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Aang", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
     32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maître de l'Éclair TODO
 
 
-    40 : ["Zoro", "Mihawk", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu"], # Épéiste
+    36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
+
+    40 : ["Zoro", "Mihawk","Toji", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach"], # Épéiste
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple"], # Télékinésiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
