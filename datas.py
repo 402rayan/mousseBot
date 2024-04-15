@@ -33,9 +33,9 @@ all_characters_templates = [
             ("Kale", "B", image_temporaire, 0, 0, 0),
             ("C-18", "B", image_temporaire, 0, 0, 0),
             ("Frost", "B", image_temporaire, 0, 0, 0),
+            ("Bardock", "B", image_temporaire, 0, 0, 0),
             # Personnages C
             ("Tien", "C", image_temporaire, 0, 0, 0),
-            ("Bardock", "C", image_temporaire, 0, 0, 0),
             ("Zarbon", "C", image_temporaire, 0, 0, 0),
             ("Dodoria", "C", image_temporaire, 0, 0, 0),
             ("Ginyu", "C", image_temporaire, 0, 0, 0),
