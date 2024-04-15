@@ -97,7 +97,6 @@ all_characters_templates = [
             ("Kisame", "S", 'https://i.imgur.com/50KuDl3.gif', 0, 0, 0),
             ("Darui", "S", 'https://i.imgur.com/4agHAoM.gif', 0, 0, 0),
             ("Asuma", "S", 'https://i.imgur.com/lGIqLP3.gif', 0, 0, 0),
-            ("Neji", "S", 'https://i.imgur.com/acFMgGN.gif', 0, 0, 0),
             ("Kimimaro", "S", 'https://i.imgur.com/OEKnkD4.png', 0, 0, 0),
             ("Shikamaru", "S", 'https://i.imgur.com/KySPqGV.gif', 0, 0, 0),
             ("Rock Lee", "S", 'https://i.imgur.com/1V4WwG9.png', 0, 0, 0),
