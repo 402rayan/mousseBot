@@ -63,14 +63,14 @@ all_characters_templates = [
 
             # """ PERSONNAGE NARUTO"""
             # Personnages X
-            ("Naruto Six Path", "X", image_temporaire, 0, 0, 0),
-            ("Sasuke", "X", image_temporaire, 0, 0, 0),
-            ("Kaguya", "X", image_temporaire, 0, 0, 0),
-            ("Madara", "X", image_temporaire, 0, 0, 0),
-            ("Rikudo", "X", image_temporaire, 0, 0, 0),
-            ("Indra", "X", image_temporaire, 0, 0, 0),
-            ("Ashura", "X", image_temporaire, 0, 0, 0),
-            ("Obito", "X", image_temporaire, 0, 0, 0),
+            ("Naruto", "X", "https://i.imgur.com/n8cS6mP.gif", 0, 0, 0),
+            ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0),
+            ("Kaguya", "X", "https://i.imgur.com/P3M8HQH.gif", 0, 0, 0),
+            ("Madara", "X", "https://i.imgur.com/c0NF2KN.gif", 0, 0, 0),
+            ("Rikudo", "X", "https://i.imgur.com/bn7KwyD.gif", 0, 0, 0),
+            ("Indra", "X", "'https://i.imgur.com/dlXLwgN.gif'", 0, 0, 0),
+            ("Ashura", "X", "https://i.imgur.com/aRMeDPa.gif", 0, 0, 0),
+            ("Obito", "X", "https://i.imgur.com/A6roLXk.gif", 0, 0, 0),
             # Personnages SS
             ("Hashirama", "SS", image_temporaire, 0, 0, 0),
             ("Tobirama", "SS", image_temporaire, 0, 0, 0),
