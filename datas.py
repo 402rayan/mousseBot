@@ -600,15 +600,14 @@ all_characters_templates = [
             ("Koichi", "A", image_temporaire, 0, 0, 0),
             ("Kakyoin", "A", image_temporaire, 0, 0, 0),
             ("Mista", "A", image_temporaire, 0, 0, 0),
-            ("Polarneff", "A", image_temporaire, 0, 0, 0),
+            ("Polnareff", "A", image_temporaire, 0, 0, 0),
             ("Okuyasu", "A", image_temporaire, 0, 0, 0),
             ("Caesar", "A", image_temporaire, 0, 0, 0),
             ("Ghiaccio", "A", image_temporaire, 0, 0, 0),
             ("Prosciutto", "A", image_temporaire, 0, 0, 0),
-            ("Jonathan", "A", image_temporaire, 0, 0, 0),
-            ("Joseph", "A", image_temporaire, 0, 0, 0),
             
             # Personnages B
+            ("Emporio", "B", image_temporaire, 0, 0, 0),
             ("Trish", "B", image_temporaire, 0, 0, 0),
             ("Narancia", "B", image_temporaire, 0, 0, 0),
             ("Yukako", "B", image_temporaire, 0, 0, 0),
@@ -620,6 +619,8 @@ all_characters_templates = [
             ("Formaggio", "B", image_temporaire, 0, 0, 0),
             ("Cioccolata", "B", image_temporaire, 0, 0, 0),
             ("Squalo", "B", image_temporaire, 0, 0, 0),
+            ("Jonathan", "B", image_temporaire, 0, 0, 0),
+            ("Joseph", "B", image_temporaire, 0, 0, 0),
 
             # Personnages C
             ("Shigechi", "C", image_temporaire, 0, 0, 0),
@@ -640,7 +641,6 @@ all_characters_templates = [
 
             # Personnages F
             ("Speedwagon", "F", image_temporaire, 0, 0, 0),
-            ("Emporio", "F", image_temporaire, 0, 0, 0),
             ("Poco", "F", image_temporaire, 0, 0, 0),
             ("Mario", "F", image_temporaire, 0, 0, 0),
         ]
