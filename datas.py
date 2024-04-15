@@ -155,14 +155,14 @@ all_characters_templates = [
             # """ PERSONNAGE ONE PIECE"""
 
             # Personnages X
-            ("Kaido", "X", image_temporaire, 0, 0, 0),
-            ("Luffy Gear 5", "X", image_temporaire, 0, 0, 0),
-            ("Big Mom", "X", image_temporaire, 0, 0, 0),
-            ("Barbe Noire", "X", image_temporaire, 0, 0, 0),
-            ("Barbe Blanche", "X", image_temporaire, 0, 0, 0),
+            ("Kaido", "X", "https://i.imgur.com/BMDbkl8.gif", 0, 0, 0),
+            ("Luffy Gear 5", "X", "https://i.imgur.com/EmzijMq.gif", 0, 0, 0), # TOREVIEW
+            ("Big Mom", "X", "https://i.imgur.com/tPjCbUc.gif", 0, 0, 0),
+            ("Barbe Noire", "X", "https://i.pinimg.com/originals/08/74/d1/0874d121307b3cc5c123cbea31146127.gif", 0, 0, 0),
+            ("Barbe Blanche", "X", "https://i.imgur.com/BdnDfQj.gif", 0, 0, 0),
             ("Shanks", "X", "https://i.imgur.com/IwGDEdb.gif", 0, 0, 0),
-            ("Dragon", "X", image_temporaire, 0, 0, 0),
-            ("Gol D. Roger", "X", image_temporaire, 0, 0, 0),
+            ("Dragon", "X", "https://i.imgur.com/Zy9hmOz.gif", 0, 0, 0),
+            ("Gol D. Roger", "X", "https://i.imgur.com/jhHkjfz.gif", 0, 0, 0),
 
             # Personnages SS
             ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 0, 0, 0),
