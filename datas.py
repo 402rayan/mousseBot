@@ -26,6 +26,8 @@ all_characters_templates = [
             ("Gotenks", "S", 'https://media1.tenor.com/m/rqT2GpNIWfMAAAAd/goten-super-saiyan.gif', 0, 0, 0),
             ("Gohan", "S", 'https://media1.tenor.com/m/vGaQ4md93OwAAAAd/gohan-son.gif', 0, 0, 0), # TOREVIEW
             ("Kid Buu", "S", 'https://media1.tenor.com/m/YCONZC1xuUcAAAAC/majin-buu-evil-smile.gif', 0, 0, 0),
+            ("Shenron", "S", "https://64.media.tumblr.com/ca4c3f59f970ad67d482f1f43bf3f326/tumblr_onwpfrpHmn1qzxv73o1_540.gif", 0, 0, 0),
+
             # Personnages A
             ("Cell", "A", 'https://media1.tenor.com/m/qGAi7YUulBcAAAAd/dragon-ball-z-perfect-cell.gif', 0, 0, 0),
             ("Majin Buu", "A", 'https://media1.tenor.com/m/Z_LDrqLUt34AAAAC/comiendo-eat.gif', 0, 0, 0),
@@ -44,7 +46,9 @@ all_characters_templates = [
             ("Dodoria", "C", 'https://static.wikia.nocookie.net/dragonball/images/b/b0/Vlcap-2013-11-24-15h27m41s142.jpg/revision/latest?cb=20131124143313&path-prefix=fr', 0, 0, 0), #toreview
             ("Ginyu", "C", 'https://static.wikia.nocookie.net/dragonball/images/8/89/CapitaineGinyu.png/revision/latest?cb=20130718091929&path-prefix=fr', 0, 0, 0),
             ("Goten", "C", 'https://static.wikia.nocookie.net/dragonball/images/f/fc/GotenSaiyamanSaga02.png/revision/latest?cb=20130406215436&path-prefix=fr', 0, 0, 0),
+            ("Babidi", "C", 'https://static.wikia.nocookie.net/dragonball/images/8/89/Vlcap-2013-11-24-17h05m47s123.jpg/revision/latest?cb=20131124160636&path-prefix=fr', 0, 0, 0),
             # Personnages D
+            
             ("Chiaotzu", "D", 'https://static.wikia.nocookie.net/dragonball/images/7/70/381px-Chiaotzu23WMAT.png/revision/latest?cb=20130717190215&path-prefix=fr', 0, 0, 0),
             ("Raditz", "D", 'https://static.wikia.nocookie.net/dragonball/images/f/fa/Raditz_with_tail.jpg/revision/latest/scale-to-width-down/1000?cb=20130224144129&path-prefix=fr', 0, 0, 0),
             ("Nappa", "D", 'https://static.wikia.nocookie.net/dragonball/images/a/a0/Nappa2.jpg/revision/latest?cb=20121011190756&path-prefix=fr', 0, 0, 0),
@@ -485,22 +489,23 @@ all_characters_templates = [
 
             # """ PERSONNAGE JUJUTSU KAISEN"""
             # Personnages X
-            ("Sukuna", "X", "https://imgur.com/X6ItN6D", 0, 0, 0), #https://i.imgur.com/7l6cBTL.gif
-            ("Gojo", "X", image_temporaire, 0, 0, 0),
-            ("Yuta", "X", image_temporaire, 0, 0, 0),
-            ("Kenjaku", "X", image_temporaire, 0, 0, 0),
-            ("Mahoraga", "X", image_temporaire, 0, 0, 0),
+            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0), #https://i.imgur.com/7l6cBTL.gif
+            ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 0, 0, 0),
+            ("Kenjaku", "X", "https://steamuserimages-a.akamaihd.net/ugc/2278324186548756253/24401D0DEA0E6D00A35B208CEF250966F3C920D0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 0, 0, 0),
 
             # Personnages SS
+            ("Yuta", "SS", "https://64.media.tumblr.com/88eea7db2e1aeff7957867a11eb579dc/8b0c83155df8b2d5-a9/s540x810/d4fd780899e1f38e3b97fcae86bdb41453691535.gifv", 0, 0, 0),
+            ("Mahoraga", "SS", "https://www.breakflip.com/uploads/65573b2ad99c7-makora-ou-mahoraga-jujutsu-kaisen.jpg", 0, 0, 0),
+
             ("Toji", "SS", 'https://imgur.com/W479ima', 0, 0, 0),
             ("Aoi Todo", "SS", 'https://imgur.com/SpLV3Qv', 0, 0, 0),
-            ("Geto", "SS", 'https://imgur.com/ELLwOA5', 0, 0, 0),
-            ("Choso", "SS", 'https://imgur.com/lD3QBKF', 0, 0, 0),
+            ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 0, 0, 0),
+            ("Choso", "SS", 'https://i.pinimg.com/originals/65/2f/25/652f253995b84d6156dc4865be48837b.gif', 0, 0, 0),
             ("Mahito", "SS", 'https://imgur.com/nx6CAkr', 0, 0, 0),
-            ("Jogo", "SS", 'https://imgur.com/yyAs2nU', 0, 0, 0),
+            ("Jogo", "SS", 'https://64.media.tumblr.com/6fda876b0fee0316b1b2808e0b26e8cd/8cdd4038836dcaca-2c/s1280x1920/44fa45b447f79aaa38a691210c1231f041c87bf9.gifv', 0, 0, 0),
             ("Kinji Hakari", "SS", 'https://imgur.com/OSTYTVF', 0, 0, 0),
             ("Yuki Tsukumo", "SS", 'https://imgur.com/WlIBwGu', 0, 0, 0),
-            ("Dagon", "SS", 'https://imgur.com/tAJDSSQ', 0, 0, 0),
+            ("Dagon", "SS", 'https://64.media.tumblr.com/97ffcdfbd6a9ea8cffef764d86fe5b11/f98a9cffd59221b8-ab/s640x960/a29d32f3a037b09966e361ebbb26d56a4aafa464.gif', 0, 0, 0),
 
             # Personnages S
             ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 0, 0, 0),
@@ -514,13 +519,13 @@ all_characters_templates = [
             
             
             #Personnages A
-            ("Panda", "A", 'https://imgur.com/nvPKELk', 0, 0, 0),
             ("Inumaki", "A", 'https://imgur.com/OkbjhWZ', 0, 0, 0),
             ("Kamo", "A", 'https://imgur.com/8N9AYpE', 0, 0, 0),
             ("Mechamaru", "A", 'https://imgur.com/HIQY96Q', 0, 0, 0),
 
             # Personnages B
-            ("Nobara", "B", "https://64.media.tumblr.com/71aaf9fe1a8bb90bdb18a12af4a66f0c/baebe1b5c0659d44-38/s540x810/c63e18a1e02b3ddc124a63a57af3d3745ba93cbb.gif", 0, 0, 0),
+            ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 0, 0, 0),
+            ("Nobara", "B", "https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1c/Nobara_Kugisaki_EP3.png/revision/latest?cb=20210119101146&path-prefix=fr", 0, 0, 0),
             ("Yuji Itadori", "B", "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/itadori-yuji.jpg", 0, 0, 0),
             ("Kusakabe", "B", 'https://imgur.com/6rujX3t', 0, 0, 0),
             ("Takuma Ino", "B", 'https://imgur.com/W3diIlg', 0, 0, 0),
@@ -532,18 +537,21 @@ all_characters_templates = [
             ("Junpei", "C", 'https://imgur.com/7sVsWn3', 0, 0, 0),
             ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 0, 0, 0),
             ("Utahime", "C", 'https://imgur.com/IPp6E9q', 0, 0, 0),
+            ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 0, 0, 0),
+
             
 
             # Personnages D
-            
             ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 0, 0, 0),
 
             # Personnages E
-            ("Juzo", "E", "https://i.imgur.com/lkcQCxs.png", 0, 0, 0),
             ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 0, 0, 0),
+            ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 0, 0, 0),
+
 
             # Personnages F
-            ("Kechizu", "F", "https://i.imgur.com/fwEMmNC.png", 0, 0, 0),
+            ("Riko Amanai", "F", "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/07/whi-is-riko-amanai-important-in-jujutsu-kaisen.jpg", 0, 0, 0),
+            ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 0, 0, 0),
 
             # """ PERSONNAGE MOB PSYCHO """
 
@@ -585,12 +593,10 @@ all_characters_templates = [
             ("Dio", "SS", 'https://imgur.com/xngzKOg', 0, 0, 0),
             ("Kira", "SS", 'https://imgur.com/ZQPBO3Q', 0, 0, 0),
 
-
             # Personnages S
             ("Bucciarati", "S", 'https://imgur.com/zaBAVFx', 0, 0, 0),
             ("Josuke", "S", image_temporaire, 0, 0, 0), #TOREVIEW
             ("Fugo", "S", image_temporaire, 0, 0, 0), #TOREVIEW
-            ("Akira", "S", image_temporaire, 0, 0, 0), #TOREVIEW
             ("Risotto", "S", 'https://imgur.com/hQxmpqR', 0, 0, 0),
             ("Jolyne", "S", 'https://imgur.com/T2yg742', 0, 0, 0),
             
@@ -601,12 +607,13 @@ all_characters_templates = [
             ("Mista", "A", image_temporaire, 0, 0, 0),
             ("Polnareff", "A", image_temporaire, 0, 0, 0),
             ("Okuyasu", "A", image_temporaire, 0, 0, 0),
-            ("Caesar", "A", image_temporaire, 0, 0, 0),
             ("Ghiaccio", "A", image_temporaire, 0, 0, 0),
             ("Prosciutto", "A", image_temporaire, 0, 0, 0),
             
             # Personnages B
             ("Emporio", "B", image_temporaire, 0, 0, 0),
+            ("Akira", "B", image_temporaire, 0, 0, 0), #TOREVIEW
+            ("Caesar", "B", image_temporaire, 0, 0, 0),
             ("Trish", "B", image_temporaire, 0, 0, 0),
             ("Narancia", "B", image_temporaire, 0, 0, 0),
             ("Yukako", "B", image_temporaire, 0, 0, 0),
@@ -722,7 +729,7 @@ all_synergies = [
     (25, "Kiri", "ATK", 0.15, "Kiri est le village caché de la Brume, l'un des cinq grands villages ninjas.", image_temporaire, "#FF0000"),
     (26, "Kumo", "ATK", 0.15, "Kumo est le village caché des Nuages, l'un des cinq grands villages ninjas.", image_temporaire, "#FFA500"),
     (27, "Iwa", "ATK", 0.15, "Iwa est le village caché de la Roche, l'un des cinq grands villages ninjas.", image_temporaire, "#0000FF"),
-    (28, "Jinchuriki", "ATK", 0.15, "Les Jinchurikis sont des ninjas qui ont un démon à queue scellé en eux.", image_temporaire, "#FF0000"),
+    (28, "Réceptacle", "ATK", 0.15, "Les Réceptacles sont des personnes qui ont un Monstre scellé en eux.", image_temporaire, "#800080"),
     (29, "Maître du Feu", "ATK", 0.15, "Les Maîtres du Feu sont des personnages qui maîtrisent le feu.", image_temporaire, "#FFA500"),
     (30, "Maître de l'Eau", "ATK", 0.15, "Les Maîtres de l'Eau sont des personnages qui maîtrisent l'eau.", image_temporaire, "#0000FF"),
     (31, "Maître de la Terre", "ATK", 0.15, "Les Maîtres de la Terre sont des personnages qui maîtrisent la terre.", image_temporaire, "#800080"),
@@ -745,7 +752,6 @@ all_synergies = [
     (48, "Insecte", "ATK", 0.15, "Les Insectes sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#FF0000"),
     (49, "Garde Royale", "ATK", 0.15, "La Garde Royale est un groupe qui s'assure de la sécurité du roi.", image_temporaire, "#FFA500"),
     (50, "Zeppeli", "ATK", 0.15, "Les Zeppelis sont une famille de maîtres de l'Onde qui combattent les vampires.", image_temporaire, "#0000FF"),
-    (51, "Joestar", "ATK", 0.15, "Les Joestars sont une famille de héros qui combattent les vampires et les Pillars.", image_temporaire, "#800080"),
     (52, "Homme du pillar", "ATK", 0.15, "Les Pillars sont des guerriers qui servent les vampires et protègent la pierre rouge de l'Aja.", image_temporaire, "#FF0000"),
     (53, "Maître du Temps", "ATK", 0.15, "Les Maîtres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
     (54, "Maître de l'Explosion", "ATK", 0.15, "Les Maîtres de l'Explosion sont des personnages qui peuvent créer des explosions.", image_temporaire, "#0000FF"),
@@ -763,12 +769,26 @@ all_synergies = [
     (66, "Aveugle", "ATK", 0.4 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont développé d'autres sens pour compenser.", image_temporaire, "#800080"),
     (67, "Dojo de Bang", "ATK", 0.15, "Le Dojo de Bang est un lieu d'entraînement où les disciples apprennent les techniques de combat de Bang.", image_temporaire, "#FF0000"),
     (68, "Cyborg", "ATK", 0.15, "Les Cyborgs sont des êtres humains qui ont été améliorés avec des technologies cybernétiques.", image_temporaire, "#FFA500"),
+    (69, "JoJo", "ATK", 0.15, "Les JoJos sont les membres de la famille Joestar qui luttent contre les forces du mal.", image_temporaire, "#0000FF"),
+    (70, "Fléaux", "ATK", 0.15, "Les Fléaux sont des créatures maléfiques qui apportent la destruction et la mort partout où ils passent.", image_temporaire, "#800080"),
+    (71, "École de Tokyo", "ATK", 0.15, "L'École de Tokyo est un établissement scolaire où les élèves apprennent à maîtriser leurs pouvoirs surnaturels.", image_temporaire, "#FF0000"),
+    (72, "École de Kyoto", "ATK", 0.15, "L'École de Kyoto est un établissement scolaire rival de l'École de Tokyo.", image_temporaire, "#FFA500"),
+    (73, "Zenin", "ATK", 0.15, "Le clan Zenin est une famille de sorciers qui possède des pouvoirs magiques.", image_temporaire, "#0000FF"),
+    (74, "Kamo", "ATK", 0.15, "Le clan Kamo est une famille de sorciers qui possède des pouvoirs magiques.", image_temporaire, "#800080"),
+    (75, "Fushiguro", "ATK", 0.15, "La lignée Fushiguro est une lignée d'originaire humaine.", image_temporaire, "#FF0000"),
 ]
 
 all_link_synergies = {
+    75 : ["Toji","Megumi","Tsumiki Fushiguro"], # Fushiguro
+    74 : ["Noritoshi","Kenjaku"], # Kamo
+    73 : ["Toji", "Naobito","Mai","Maki","Megumi"], # Zenin
+    72 : ["Gakukanji","Utahime","Arata Nitta","Mai","Miwa","Mechamaru","Aoi Todo","Noritoshi","Momo","Akari Nitta"], # École de Kyoto
+    71 : ["Yaga","Ijichi","Gojo","Kusakabe","Sheko Ieri","Akari Nitta","Megumi","Yuji","Nobara","Maki","Toge Inumaki","Panda","Yuta","Hakari","Nanami","Geto","Yu Haibara"], # École de Tokyo
+    70 : ["Sukuna", "Mahito", "Jogo", "Dagon", "Hanami", "Choso","Eso","Kechizu"], # Fléaux
+    69 : ["Jonathan", "Joseph", "Jotaro", "Josuke", "Giorno", "Jolyne", "Johnny"], # JoJo
     68 : ["Genos","Cyborgorilla","C-17","C-18","C-16"], # Cyborg
     67 : ["Grimasse","Garou","Charanko","Bang"], # Dojo de Bang
-    66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul","Yomi"], # Aveugle TODO
+    66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul","Yomi"], # Aveugle 
     65 : ["Minato", "Tobirama", "Yoruichi", "Gran Torino","Sonic"], # Speedster TODO
     64 : ["Kaido","Ryukyu","Toshiro","Acnologia","Igneel","Shenron","Porungan"], # Draconique TODO
     63 : ["Big Mom", "Katakuri"], # Équipage de Big Mom
@@ -796,7 +816,7 @@ all_link_synergies = {
     25 : ["Kisame", "Zabuza", "Haku", "Mei Terumi", "Ao", "Chojuro", "Yagura", "Mangetsu", "Suigetsu"], # Kiri TODO
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
-    28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku"], # Jinchuriki TODO
+    28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Réceptacle TODO
     29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
@@ -823,7 +843,7 @@ all_link_synergies = {
     54 : ["Kira Yoshikage", "Bakugo"], # Maître de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan", "William Zeppeli", "Joseph", "Caesar", "Lisa Lisa", "Poco"], # Hamon
-    57 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"],
-    58 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio"],
+    57 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"], # Passione
+    58 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio"], # Team Bucciarati
     
 }
