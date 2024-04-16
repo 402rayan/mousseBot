@@ -58,11 +58,53 @@ async def on_message(message):
         await sell(message)
     elif contenu.startswith('!create'):
         await createTemplates(message)
+    elif contenu.startswith('!purple'):
+        await purple(message)
+    
     elif contenu.startswith('!reset'):
         await reset(message)
 
 
 # Fonctions
+# Fonctions
+async def purple(message):
+    # On charge le gif depuis assets/gif/fugo.gif
+    gif = discord.File("assets/gifs/433.gif", filename="fugo.gif")
+    embed = discord.Embed(
+        title="Fugo",
+        description="PURPLE HAZE A DECLENCHÉ SON VIRUS DANS LE SOUS-TERRAIN! VOUS DEVEZ FUIR!",
+        color=discord.Color.gold()
+    )
+    embed.set_image(url="attachment://fugo.gif")
+    await message.channel.send(file=gif, embed=embed)
+    alive = True
+    ticketsGagnes = 0
+    
+    await asyncio.sleep(3)
+    while alive:
+        # le taux de mort est entre 0 et 0.3
+        tauxDeMort = random.random() * 0.3
+        # On lui demande s'il souhaite s'enfuir ou s'il veut risquer sa chance pour gagner des tickets
+        msg = await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez vu un ticket, souhaitez vous le prendre? Vous risquez de mourir!", discord.Color.purple()))
+        await msg.add_reaction('🏃')
+        await msg.add_reaction('💰')
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '💰'])
+        except:
+            await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez été touché par Purple Haze et avez perdu tous vos tickets!", discord.Color.red()))
+            return
+        if str(reaction.emoji) == '🏃':
+            alive = False
+            await message.channel.send(embed=embed_info("PURPLE HAZE", f"Vous avez fui le sous-terrain avec {ticketsGagnes}!", discord.Color.green()))
+
+        elif str(reaction.emoji) == '💰':
+            if random.random() < tauxDeMort:
+                await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez été touché par Purple Haze et avez perdu tous vos tickets!", discord.Color.dark_red()))
+                return
+            ticketsGagnes += 1
+            await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez récupéré un ticket!", discord.Color.green(), f"Tickets sur vous : {ticketsGagnes}."))
+    return
+        
 
 @bot.command()
 async def list_command(message):
@@ -86,7 +128,7 @@ async def list_command(message):
     )
     for key, value in commande.items():
         embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -181,7 +223,7 @@ async def inventaire(message):
             value = ""
         value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
         embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -251,7 +293,7 @@ async def info(message):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     print(synergies)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
@@ -290,7 +332,7 @@ async def voirTeam(message):
             )
             
     embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
@@ -405,7 +447,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
     )
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     return embed
 
 def embed_invocation(character_template):
@@ -420,7 +462,7 @@ def embed_invocation(character_template):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed

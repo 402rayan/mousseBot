@@ -1,7 +1,10 @@
 import random
+import shutil
 import sqlite3
 from loguru import logger
 from datetime import datetime, timedelta
+
+import requests
 
 from constantes import CONSTANTS
 from datas import all_characters_templates, all_synergies, all_link_synergies
@@ -342,6 +345,19 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_synergies s JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE template_id = {template_id}")
         return self.cur.fetchall()
         
+    def save_gif_from_url(self,url, output_file):
+        try:
+            response = requests.get(url, stream=True)
+            if response.status_code == 200:
+                with open(output_file, 'wb') as f:
+                    response.raw.decode_content = True
+                    shutil.copyfileobj(response.raw, f)
+                print("GIF enregistré avec succès sous:", output_file)
+            else:
+                print("La requête a échoué avec le code:", response.status_code)
+        except Exception as e:
+            print("Une erreur s'est produite lors de l'enregistrement du GIF:", str(e))
+
     def create_character_templates(self):
         self.cur.executemany('''
         INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?) 
@@ -385,3 +401,10 @@ class Database:
         self.create_tables()
         self.createAllDatas()
         logger.info("Les tables ont été supprimées.")
+
+    def createGifsFromDatabase(self):
+        self.cur.execute("SELECT * FROM character_templates")
+        characters = self.cur.fetchall()
+        for character in characters:
+            self.save_gif_from_url(character[3], f"assets/gifs/{character[0]}.gif")
+        logger.info("Les GIFs ont été enregistrés.")

@@ -588,7 +588,7 @@ all_characters_templates = [
             # Personnages SS
 
             ("Diavolo", "SS", 'https://imgur.com/90RxqGR', 0, 0, 0),
-            ("Jotaro", "SS", 'https://imgur.com/XzBAKKf', 0, 0, 0),
+            ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 0, 0, 0),
             ("Dio", "SS", 'https://imgur.com/xngzKOg', 0, 0, 0),
             ("Kira", "SS", 'https://imgur.com/ZQPBO3Q', 0, 0, 0),
 
