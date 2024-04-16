@@ -1,0 +1,5 @@
+*.log
+getToken.py
+assets/gifs/*.gif
+assets/synergies/*
+logs.log
