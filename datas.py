@@ -489,14 +489,13 @@ all_characters_templates = [
 
             # """ PERSONNAGE JUJUTSU KAISEN"""
             # Personnages X
-            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0), #https://i.imgur.com/7l6cBTL.gif
+            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
             ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 0, 0, 0),
             ("Kenjaku", "X", "https://steamuserimages-a.akamaihd.net/ugc/2278324186548756253/24401D0DEA0E6D00A35B208CEF250966F3C920D0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 0, 0, 0),
 
             # Personnages SS
             ("Yuta", "SS", "https://64.media.tumblr.com/88eea7db2e1aeff7957867a11eb579dc/8b0c83155df8b2d5-a9/s540x810/d4fd780899e1f38e3b97fcae86bdb41453691535.gifv", 0, 0, 0),
             ("Mahoraga", "SS", "https://www.breakflip.com/uploads/65573b2ad99c7-makora-ou-mahoraga-jujutsu-kaisen.jpg", 0, 0, 0),
-
             ("Toji", "SS", 'https://imgur.com/W479ima', 0, 0, 0),
             ("Aoi Todo", "SS", 'https://imgur.com/SpLV3Qv', 0, 0, 0),
             ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 0, 0, 0),
@@ -519,9 +518,9 @@ all_characters_templates = [
             
             
             #Personnages A
-            ("Inumaki", "A", 'https://imgur.com/OkbjhWZ', 0, 0, 0),
+            ("Inumaki", "A", 'https://imgur.com/OkbjhWZ', 0, 0, 0), #VIDEO
             ("Kamo", "A", 'https://imgur.com/8N9AYpE', 0, 0, 0),
-            ("Mechamaru", "A", 'https://imgur.com/HIQY96Q', 0, 0, 0),
+            ("Mechamaru", "A", 'https://imgur.com/HIQY96Q', 0, 0, 0), #VIDEO
 
             # Personnages B
             ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 0, 0, 0),
@@ -582,8 +581,8 @@ all_characters_templates = [
             # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
 
             # Personnages X
-            ("Kars", "X", image_temporaire, 0, 0, 0),
-            ("Giorno", "X", image_temporaire, 0, 0, 0),
+            ("Kars", "X", 'https://imgur.com/4xhIuVK', 0, 0, 0),
+            ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 0, 0, 0),
             ("Pucci", "X", 'https://imgur.com/RTdkTrH', 0, 0, 0),
             
             # Personnages SS
@@ -595,60 +594,59 @@ all_characters_templates = [
 
             # Personnages S
             ("Bucciarati", "S", 'https://imgur.com/zaBAVFx', 0, 0, 0),
-            ("Josuke", "S", image_temporaire, 0, 0, 0), #TOREVIEW
-            ("Fugo", "S", image_temporaire, 0, 0, 0), #TOREVIEW
+            ("Josuke", "S", 'https://imgur.com/AcnhlnJ', 0, 0, 0), #TOREVIEW
+            ("Fugo", "S", 'https://imgur.com/gBcvGNj', 0, 0, 0), #TOREVIEW
             ("Risotto", "S", 'https://imgur.com/hQxmpqR', 0, 0, 0),
             ("Jolyne", "S", 'https://imgur.com/T2yg742', 0, 0, 0),
             
             # Personnages A
-            ("Rohan", "A", image_temporaire, 0, 0, 0),
-            ("Koichi", "A", image_temporaire, 0, 0, 0),
-            ("Kakyoin", "A", image_temporaire, 0, 0, 0),
-            ("Mista", "A", image_temporaire, 0, 0, 0),
-            ("Polnareff", "A", image_temporaire, 0, 0, 0),
-            ("Okuyasu", "A", image_temporaire, 0, 0, 0),
-            ("Ghiaccio", "A", image_temporaire, 0, 0, 0),
-            ("Prosciutto", "A", image_temporaire, 0, 0, 0),
+            ("Rohan", "A", 'https://imgur.com/UJgfmGg', 0, 0, 0),
+            ("Koichi", "A", 'https://imgur.com/HZ9vn1d', 0, 0, 0),
+            ("Kakyoin", "A", 'https://imgur.com/ZsxN3PG', 0, 0, 0),
+            ("Mista", "A", 'https://imgur.com/ab9sgfg', 0, 0, 0),
+            ("Polnareff", "A", 'https://imgur.com/eZjHHa9', 0, 0, 0),
+            ("Okuyasu", "A", 'https://imgur.com/BiveNFJ', 0, 0, 0),
+            ("Ghiaccio", "A", 'https://imgur.com/LNoxXyi', 0, 0, 0),
+            ("Prosciutto", "A", 'https://imgur.com/CsSR05A', 0, 0, 0),
             
             # Personnages B
-            ("Emporio", "B", image_temporaire, 0, 0, 0),
-            ("Akira", "B", image_temporaire, 0, 0, 0), #TOREVIEW
-            ("Caesar", "B", image_temporaire, 0, 0, 0),
-            ("Trish", "B", image_temporaire, 0, 0, 0),
-            ("Narancia", "B", image_temporaire, 0, 0, 0),
-            ("Yukako", "B", image_temporaire, 0, 0, 0),
-            ("Miyamoto", "B", image_temporaire, 0, 0, 0),
-            ("Wamuu", "B", image_temporaire, 0, 0, 0),
-            ("Esidisi", "B", image_temporaire, 0, 0, 0),
-            ("Pesci", "B", image_temporaire, 0, 0, 0),
-            ("Melone ", "B", image_temporaire, 0, 0, 0),
-            ("Formaggio", "B", image_temporaire, 0, 0, 0),
-            ("Cioccolata", "B", image_temporaire, 0, 0, 0),
-            ("Squalo", "B", image_temporaire, 0, 0, 0),
-            ("Jonathan", "B", image_temporaire, 0, 0, 0),
-            ("Joseph", "B", image_temporaire, 0, 0, 0),
+            ("Emporio", "B", 'https://imgur.com/KBZCTy6', 0, 0, 0),
+            ("Akira", "B", 'https://imgur.com/xn6pX9Z', 0, 0, 0), #TOREVIEW
+            ("Caesar", "B", 'https://imgur.com/3nzbH8Y', 0, 0, 0),
+            ("Trish", "B", 'https://imgur.com/I4nMHqt', 0, 0, 0),
+            ("Narancia", "B", 'https://imgur.com/ndZcfok', 0, 0, 0),
+            ("Yukako", "B", 'https://imgur.com/JZKQ2KS', 0, 0, 0),
+            ("Miyamoto", "B", 'https://imgur.com/lZLlEhu', 0, 0, 0),
+            ("Wamuu", "B", 'https://imgur.com/2Jc0FTu', 0, 0, 0),
+            ("Esidisi", "B", 'https://imgur.com/mdsI4Ir', 0, 0, 0),
+            ("Pesci", "B", 'https://imgur.com/RiqetYG', 0, 0, 0),
+            ("Melone ", "B", 'https://imgur.com/EMitGnp', 0, 0, 0),
+            ("Cioccolata", "B", 'https://imgur.com/XAu2MDR', 0, 0, 0),
+            ("Squalo", "B", 'https://imgur.com/1DP3U16', 0, 0, 0),
+            ("Jonathan", "B", 'https://imgur.com/dqGKC1P', 0, 0, 0),
+            ("Joseph", "B", 'https://imgur.com/YiGGszt', 0, 0, 0),
 
             # Personnages C
-            ("Shigechi", "C", image_temporaire, 0, 0, 0),
-            ("Mikitaka", "C", image_temporaire, 0, 0, 0),
-            ("Iggy", "C", image_temporaire, 0, 0, 0),
-            ("Formaggio", "C", image_temporaire, 0, 0, 0),
-            ("Stroheim", "C", image_temporaire, 0, 0, 0),
+            ("Shigechi", "C", 'https://imgur.com/6JKniYe', 0, 0, 0),
+            ("Mikitaka", "C", 'https://imgur.com/mMs5O78', 0, 0, 0),
+            ("Iggy", "C", 'https://imgur.com/HTb59id', 0, 0, 0),
+            ("Formaggio", "C", 'https://imgur.com/WCQtqwq', 0, 0, 0),
+            ("Stroheim", "C", 'https://imgur.com/OvyOZy3', 0, 0, 0),
 
             # Personnages D
-            ("Abbacchio", "D", image_temporaire, 0, 0, 0),
-            ("Foo Fighters", "D", image_temporaire, 0, 0, 0),
+            ("Abbacchio", "D", 'https://imgur.com/5FahNJl', 0, 0, 0),
+            ("Foo Fighters", "D", 'https://imgur.com/ZlCOCPn', 0, 0, 0),
 
             # Personnages E
-            ("Tonio", "E", image_temporaire, 0, 0, 0),
-            ("Straizo", "E", image_temporaire, 0, 0, 0),
-            ("Will Zeppeli", "E", image_temporaire, 0, 0, 0),
-            ("Luca", "E", image_temporaire, 0, 0, 0),
+            ("Tonio", "E", 'https://imgur.com/PIXbcZb', 0, 0, 0),
+            ("Straizo", "E", 'https://imgur.com/D4muQp5', 0, 0, 0),
+            ("Will Zeppeli", "E", 'https://imgur.com/SVm9I2K', 0, 0, 0),
+            ("Luca", "E", 'https://imgur.com/3HamVjM', 0, 0, 0),
 
             # Personnages F
-            ("Speedwagon", "F", image_temporaire, 0, 0, 0),
-            ("Poco", "F", image_temporaire, 0, 0, 0),
-            ("Mario", "F", image_temporaire, 0, 0, 0),
+            ("Speedwagon", "F", 'https://imgur.com/Q4pR4ws', 0, 0, 0),
+            ("Poco", "F", 'https://imgur.com/qeYo0He', 0, 0, 0),
+            ("Mario Zucchero", "F", 'https://imgur.com/dBDj9C5', 0, 0, 0),
 
             # """ PERSONNAGE ONE PUNCH MAN ""
 
