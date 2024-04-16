@@ -760,14 +760,12 @@ all_synergies = [
     (64, "Draconique", "ATK", 0.15, "Les Dragons sont des créatures mythiques qui possèdent des pouvoirs magiques.", image_temporaire, "#FFA500"),
     (65, "Speedster", "ATK", 0.15, "Les Speedsters sont des personnages qui peuvent se déplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
     (66, "Aveugle", "ATK", 0.4 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont développé d'autres sens pour compenser.", image_temporaire, "#800080"),
-
-
 ]
 
 all_link_synergies = {
-    66 : ["Fujitora","Toph","Tosen"], # Aveugle TODO
+    66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul","Yomi"], # Aveugle TODO
     65 : ["Minato", "Tobirama", "Yoruichi", "Gran Torino"], # Speedster TODO
-    64 : ["Kaido","Ryukyu","Toshiro"], # Draconique TODO
+    64 : ["Kaido","Ryukyu","Toshiro","Acnologia","Igneel","Shenron","Porungan"], # Draconique TODO
     63 : ["Big Mom", "Katakuri"], # Équipage de Big Mom
     62 : ["Kaido", "King", "Queen", "Jack"], # Équipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # Équipage de Shanks
