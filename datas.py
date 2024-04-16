@@ -577,23 +577,23 @@ all_characters_templates = [
             # Personnages X
             ("Kars", "X", image_temporaire, 0, 0, 0),
             ("Giorno", "X", image_temporaire, 0, 0, 0),
-            ("Pucci", "X", image_temporaire, 0, 0, 0),
+            ("Pucci", "X", 'https://imgur.com/RTdkTrH', 0, 0, 0),
             
             # Personnages SS
 
-            ("Diavolo", "SS", image_temporaire, 0, 0, 0),
-            ("Jotaro", "SS", image_temporaire, 0, 0, 0),
-            ("Dio", "SS", image_temporaire, 0, 0, 0),
-            ("Kira", "SS", image_temporaire, 0, 0, 0),
+            ("Diavolo", "SS", 'https://imgur.com/90RxqGR', 0, 0, 0),
+            ("Jotaro", "SS", 'https://imgur.com/XzBAKKf', 0, 0, 0),
+            ("Dio", "SS", 'https://imgur.com/xngzKOg', 0, 0, 0),
+            ("Kira", "SS", 'https://imgur.com/ZQPBO3Q', 0, 0, 0),
 
 
             # Personnages S
-            ("Bucciarati", "S", image_temporaire, 0, 0, 0),
-            ("Josuke", "S", image_temporaire, 0, 0, 0),
-            ("Fugo", "S", image_temporaire, 0, 0, 0),
-            ("Akira", "S", image_temporaire, 0, 0, 0),
-            ("Risotto", "S", image_temporaire, 0, 0, 0),
-            ("Jolyne", "S", image_temporaire, 0, 0, 0),
+            ("Bucciarati", "S", 'https://imgur.com/zaBAVFx', 0, 0, 0),
+            ("Josuke", "S", image_temporaire, 0, 0, 0), #TOREVIEW
+            ("Fugo", "S", image_temporaire, 0, 0, 0), #TOREVIEW
+            ("Akira", "S", image_temporaire, 0, 0, 0), #TOREVIEW
+            ("Risotto", "S", 'https://imgur.com/hQxmpqR', 0, 0, 0),
+            ("Jolyne", "S", 'https://imgur.com/T2yg742', 0, 0, 0),
             
             # Personnages A
             ("Rohan", "A", image_temporaire, 0, 0, 0),
