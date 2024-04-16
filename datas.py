@@ -324,40 +324,38 @@ all_characters_templates = [
             ("Yuzu", "F", 'https://imgur.com/plnofeu', 0, 0, 0),
             ("Tatsuki", "F", 'https://imgur.com/mSvWp2O', 0, 0, 0),
             ("Mizuiro", "F", 'https://imgur.com/b4sfzoT', 0, 0, 0),
-
             # """ PERSONNAGE MY HERO ACADEMIA"""
             # Personnages X
-            ("All Might", "X", image_temporaire, 0, 0, 0),
-            ("Endeavor", "X", image_temporaire, 0, 0, 0),
-            ("Shigaraki", "X", image_temporaire, 0, 0, 0),
-            ("Deku (100%)", "X", image_temporaire, 0, 0, 0),
-            ("All For One", "X", image_temporaire, 0, 0, 0),
-            ("Star And Stripe", "X", image_temporaire, 0, 0, 0),
+            ("All Might", "X", "https://qph.cf2.quoracdn.net/main-qimg-7d4d4918652a643f9b6801606035fe66", 0, 0, 0),
+            ("Shigaraki", "X", "https://www.icegif.com/wp-content/uploads/2022/01/icegif-830.gif", 0, 0, 0),
+            ("All For One", "X", "https://www.serieously.com/app/uploads/2023/04/tumblr_ouxiale3pz1v1hotuo2_640.gif", 0, 0, 0),
+            ("Star And Stripe", "X", "https://64.media.tumblr.com/e7fe132058464fcc7b6e45489836aa12/799bb7ae5d0c1a2d-0b/s640x960/5245e55efb31adf90e196ca6a92b9b64df808ced.gif", 0, 0, 0),
             # Personnages SS
-            ("Overhaul", "SS", image_temporaire, 0, 0, 0),
-            ("Hawks", "SS", image_temporaire, 0, 0, 0),
-            ("Beast Jeanist", "SS", image_temporaire, 0, 0, 0),
-            ("Dabi", "SS", image_temporaire, 0, 0, 0),
-            ("Mirio", "SS", image_temporaire, 0, 0, 0),
-            ("Re Destro", "SS", image_temporaire, 0, 0, 0),
+            ("Izuku Midoriya", "SS", "https://i.pinimg.com/originals/49/41/43/4941430a113739775b3fafbe8d1a81b2.gif", 0, 0, 0),
+            ("Endeavor", "SS", "https://i.pinimg.com/originals/49/56/12/495612a35e36440b1607270e8bf1ca3e.gif", 0, 0, 0),
+            ("Overhaul", "SS", "https://64.media.tumblr.com/17d512a46dd582dd24e0bb36b48dbdcd/d50adf26237562cb-51/s540x810/df6c2dfb27f13cf0538979584d97630140a34283.gif", 0, 0, 0),
+            ("Beast Jeanist", "SS", "https://64.media.tumblr.com/521598d908ab9b8d7cb38b09b77b0d9c/tumblr_osxxvly6ms1wqyomso1_540.gif", 0, 0, 0),
+            ("Nana Shimura", "SS", "https://i.imgur.com/ct2j0jN.gif", 0, 0, 0),
+            ("Dabi", "SS", "https://static.animecorner.me/2022/12/my-hero-academia-season-6-episode-11-1.jpg", 0, 0, 0),
+            ("Mirio", "SS", "https://64.media.tumblr.com/bc3415aed521b623970871cf1c332d25/tumblr_pftup2rGRy1ru8plxo1_540.gif", 0, 0, 0),
+            ("Re Destro", "SS", "https://i.redd.it/t3m1gtvs9awb1.gif", 0, 0, 0),
             # Personnages S
-            ("Twice", "S", image_temporaire, 0, 0, 0),
-            ("Shoto", "S", image_temporaire, 0, 0, 0),
-            ("Bakugo", "S", image_temporaire, 0, 0, 0),
-            ("Eraserhead", "S", image_temporaire, 0, 0, 0),
-            ("Tamaki", "S", image_temporaire, 0, 0, 0),
-            ("Stain", "S", image_temporaire, 0, 0, 0),
-            ("Fumikage", "S", image_temporaire, 0, 0, 0),
-            ("Nana Shimura", "S", image_temporaire, 0, 0, 0),
-            ("Mirko", "S", image_temporaire, 0, 0, 0),
-            ("Lady Nagant", "S", image_temporaire, 0, 0, 0),
+            ("Hawks", "S", "https://i.pinimg.com/originals/8d/19/c4/8d19c45317f7e38e372ddeba342cf165.gif", 0, 0, 0),
+            ("Twice", "S", "https://i.imgur.com/aTXRvNJ.gif", 0, 0, 0),
+            ("Shoto", "S", "https://i.redd.it/quy3b0pf16d31.gif", 0, 0, 0),
+            ("Bakugo", "S", "https://img.wattpad.com/dc246422070809bd086ac97693bc04a560634155/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4d46367848686d62785448726a773d3d2d313133373837333639312e3136616165316163303134653732633536363335323739353730312e676966", 0, 0, 0),
+            ("Eraserhead", "S", "https://i.pinimg.com/originals/e2/58/6b/e2586b5f78e89ecc597293e35a03faad.gif", 0, 0, 0),
+            ("Tamaki", "S", "https://i.pinimg.com/originals/ac/a9/02/aca902c662ebf2c39cea2732f352effe.gif", 0, 0, 0),
+            ("Stain", "S", "https://78.media.tumblr.com/6960a5a0b1f0f0f665c7f6bfd88f10d5/tumblr_otunqgSVmE1vb2040o2_500.gif", 0, 0, 0),
+            ("Fumikage", "S", "https://img.wattpad.com/4283ecbd858dfc3890407125bb15c01719a5b32b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f455856757964466f4c51314b70673d3d2d313132312e313666643666616233633339363064653137333733353434393032382e676966", 0, 0, 0),
+            ("Mirko", "S", "https://i.pinimg.com/originals/d7/fd/6d/d7fd6d2551098794e172a13355a80291.gif", 0, 0, 0),
+            ("Lady Nagant", "S", "https://i.pinimg.com/originals/39/59/1c/39591c97f9e6b9a5f47a2b7f0ab7d963.gif", 0, 0, 0),
             # Personnages A
-            ("Tenya", "A", image_temporaire, 0, 0, 0),
-            ("Mt Lady", "A", image_temporaire, 0, 0, 0),
-            ("Nighteye", "A", image_temporaire, 0, 0, 0),
-            ("Sun Eater", "A", image_temporaire, 0, 0, 0),
-            ("Ryuku", "A", image_temporaire, 0, 0, 0),
-            ("Gran Torino", "A", image_temporaire, 0, 0, 0),
+            ("Tenya", "A", "https://static.wikia.nocookie.net/heros/images/f/f6/Tenya_Infobox.gif/revision/latest?cb=20200324130143&path-prefix=fr", 0, 0, 0),
+            ("Mt Lady", "A", "https://i.pinimg.com/originals/c5/e7/d0/c5e7d0827bceace163672dd309c33574.gif", 0, 0, 0),
+            ("Nighteye", "A", "https://64.media.tumblr.com/efc6870d8848e1ce03cb34c40af6e711/d88e8f356b2e4ba8-39/s540x810/3a7c1a045ed596a30576ff47cfe310f1f9685fe3.gif", 0, 0, 0),
+            ("Ryuku", "A", "https://64.media.tumblr.com/2dfb44a3544b3d118168b28fd79e83f4/25d5e489df925e26-49/s540x810/26df1ec3c8eb8d25abb27668924c495ff685e879.gif", 0, 0, 0),
+            ("Gran Torino", "A", "https://i.pinimg.com/originals/f4/6d/46/f46d46e7d08b90465475211d87304cdf.gif", 0, 0, 0),
             # Personnages B
             ("Ochaco", "B", image_temporaire, 0, 0, 0),
             ("Midnight", "B", image_temporaire, 0, 0, 0),
@@ -759,11 +757,17 @@ all_synergies = [
     (61, "Équipage de Shanks", "ATK", 0.15, "L'équipage de Shanks est un groupe de pirates dirigé par Shanks le Roux.", image_temporaire, "#0000FF"),
     (62, "Équipage de Kaido", "ATK", 0.15, "L'équipage de Kaido est un groupe de pirates dirigé par Kaido le Cent bêtes.", image_temporaire, "#800080"),
     (63, "Équipage de Big Mom", "ATK", 0.15, "L'équipage de Big Mom est un groupe de pirates dirigé par Big Mom.", image_temporaire, "#FF0000"),
+    (64, "Draconique", "ATK", 0.15, "Les Dragons sont des créatures mythiques qui possèdent des pouvoirs magiques.", image_temporaire, "#FFA500"),
+    (65, "Speedster", "ATK", 0.15, "Les Speedsters sont des personnages qui peuvent se déplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
+    (66, "Aveugle", "ATK", 0.4 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont développé d'autres sens pour compenser.", image_temporaire, "#800080"),
 
 
 ]
 
 all_link_synergies = {
+    66 : ["Fujitora","Toph","Tosen"], # Aveugle TODO
+    65 : ["Minato", "Tobirama", "Yoruichi", "Gran Torino"], # Speedster TODO
+    64 : ["Kaido","Ryukyu","Toshiro"], # Draconique TODO
     63 : ["Big Mom", "Katakuri"], # Équipage de Big Mom
     62 : ["Kaido", "King", "Queen", "Jack"], # Équipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # Équipage de Shanks
@@ -781,7 +785,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
@@ -790,12 +794,12 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku"], # Jinchuriki TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
+    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
     32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maître de l'Éclair TODO
-
+    34 : ["Shoto","Aokiji", "Gray", "Toshiro", "Rukia"], # Maître de la Glace TODO
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
 
@@ -812,7 +816,7 @@ all_link_synergies = {
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar", "Gyro","Mario"], # Zeppeli
 
-    53 : ["Dio","Diavolo", "Jotaro"], # Maître du Temps
+    53 : ["Dio","Diavolo", "Jotaro","Nighteye"], # Maître du Temps
     54 : ["Kira Yoshikage", "Bakugo"], # Maître de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan", "William Zeppeli", "Joseph", "Caesar", "Lisa Lisa", "Poco"], # Hamon
