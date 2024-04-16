@@ -392,9 +392,9 @@ all_characters_templates = [
             ("Netero", "X", image_temporaire, 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
             # Personnages SS
-            ("Kuroro", "SS", image_temporaire, 0, 0, 0),
-            ("Hisoka", "SS", image_temporaire, 0, 0, 0),
-            ("Killua", "SS", image_temporaire, 0, 0, 0),
+            ("Kuroro", "SS", 'https://imgur.com/eWUEITZ', 0, 0, 0),
+            ("Hisoka", "SS", 'https://imgur.com/l69c0NZ', 0, 0, 0),
+            ("Killua", "SS", 'https://imgur.com/2sLrUqa', 0, 0, 0),
             ("Zeno", "SS", "https://i.imgur.com/inIqhEg.gif", 0, 0, 0),
             ("Silva", "SS", "https://i.imgur.com/K8TUsWM.png", 0, 0, 0),
             ("Illumi", "SS", 'https://i.imgur.com/tFOQgXs.gif', 0, 0, 0),
@@ -402,24 +402,24 @@ all_characters_templates = [
             ("Yupi", "SS", "https://i.imgur.com/tWZDibP.png", 0, 0, 0),
             ("Aruka", "SS", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
             # Personnages S
-            ("Kurapika", "S", image_temporaire, 0, 0, 0),
-            ("Morel", "S", image_temporaire, 0, 0, 0),
+            ("Kurapika", "S", 'https://imgur.com/ltImMBx', 0, 0, 0),
+            ("Morel", "S", 'https://imgur.com/1J0JLeS', 0, 0, 0),
             ("Kaito", "S", "https://i.imgur.com/RehnXP7.gif", 0, 0, 0),
             ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 0, 0, 0),
-            ("Uvogin", "S", image_temporaire, 0, 0, 0),
+            ("Uvogin", "S", 'https://imgur.com/iqzrrW8', 0, 0, 0),
             ("Phinks", "S", "https://i.imgur.com/k5BLUMw.png", 0, 0, 0),
-            ("Knuckle", "S", image_temporaire, 0, 0, 0),
+            ("Knuckle", "S", 'https://imgur.com/sMDxcKR', 0, 0, 0), #TOREVIEW
             ("Pufu", "S", "https://i.imgur.com/CfoSEeD.gif", 0, 0, 0),
-            ("Nabunaga", "S", image_temporaire, 0, 0, 0),
+            ("Nabunaga", "S", 'https://imgur.com/1UMIlo3', 0, 0, 0),
             # Personnages A
             ("Machi", "A", "https://i.imgur.com/HCAKZfB.gif", 0, 0, 0),
-            ("Shoot", "A", image_temporaire, 0, 0, 0),
-            ("Genthru", "A", image_temporaire, 0, 0, 0),
-            ("Sharnak", "A", image_temporaire, 0, 0, 0),
-            ("Biscuit", "A", image_temporaire, 0, 0, 0),
-            ("Razor", "A", image_temporaire, 0, 0, 0),
-            ("Gon", "A", image_temporaire, 0, 0, 0),
-            ("Pariston", "A", image_temporaire, 0, 0, 0),
+            ("Shoot", "A", 'https://imgur.com/tU2Fwq6', 0, 0, 0),
+            ("Genthru", "A", 'https://imgur.com/WtnOU7k', 0, 0, 0),
+            ("Sharnak", "A", 'https://imgur.com/EwSJxbs', 0, 0, 0),
+            ("Biscuit", "A", 'https://imgur.com/3WUyIRV', 0, 0, 0),
+            ("Razor", "A", 'https://imgur.com/0quOdEi', 0, 0, 0), #TOREVIEW
+            ("Gon", "A", 'https://imgur.com/8cMbCOF', 0, 0, 0),
+            ("Pariston", "A", 'https://imgur.com/71ouSTW', 0, 0, 0),
             # Personnages B
             ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 0, 0, 0),
             ("Shizuku", "B", "https://i.imgur.com/IbkxhGl.png", 0, 0, 0),
@@ -430,16 +430,16 @@ all_characters_templates = [
             ("Kalluto", "B", "https://i.imgur.com/vCDM9hC.png", 0, 0, 0),
             # Personnages C
             ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 0, 0, 0),
-            ("Wing", "C", image_temporaire, 0, 0, 0),
-            ("Ponzu", "C", image_temporaire, 0, 0, 0),
+            ("Wing", "C", 'https://imgur.com/h8Btyhj', 0, 0, 0),
+            ("Ponzu", "C", 'https://imgur.com/f4vOKAP', 0, 0, 0),
             ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 0, 0, 0),
             # Personnages D
             ("Kikyo", "D", "https://i.imgur.com/dR5KneW.png", 0, 0, 0),
             # Personnages E
             ("Tompa", "E", "https://i.imgur.com/ms2R2ki.png", 0, 0, 0),
-            ("Neon", "E", image_temporaire, 0, 0, 0),
+            ("Neon", "E", 'https://imgur.com/Rz5HGeZ', 0, 0, 0),
             # Personnages F
-            ("Komugi", "F", image_temporaire, 0, 0, 0),
+            ("Komugi", "F", 'https://imgur.com/4VchruE', 0, 0, 0),
             ("Mito", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
 
             # """ PERSONNAGE AVATAR"""
