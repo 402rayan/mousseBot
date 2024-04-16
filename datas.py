@@ -486,54 +486,53 @@ all_characters_templates = [
 
             # """ PERSONNAGE JUJUTSU KAISEN"""
             # Personnages X
-            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
+            ("Sukuna", "X", "https://imgur.com/X6ItN6D", 0, 0, 0), #https://i.imgur.com/7l6cBTL.gif
             ("Gojo", "X", image_temporaire, 0, 0, 0),
             ("Yuta", "X", image_temporaire, 0, 0, 0),
             ("Kenjaku", "X", image_temporaire, 0, 0, 0),
             ("Mahoraga", "X", image_temporaire, 0, 0, 0),
 
             # Personnages SS
-            ("Toji", "SS", image_temporaire, 0, 0, 0),
-            ("Aoi Todo", "SS", image_temporaire, 0, 0, 0),
-            ("Geto", "SS", image_temporaire, 0, 0, 0),
-            ("Choso", "SS", image_temporaire, 0, 0, 0),
-            ("Mahito", "SS", image_temporaire, 0, 0, 0),
-            ("Jogo", "SS", image_temporaire, 0, 0, 0),
-            ("Kinji Hakari", "SS", image_temporaire, 0, 0, 0),
-            ("Yuki Tsukumo", "SS", image_temporaire, 0, 0, 0),
-            ("Dagon", "SS", image_temporaire, 0, 0, 0),
+            ("Toji", "SS", 'https://imgur.com/W479ima', 0, 0, 0),
+            ("Aoi Todo", "SS", 'https://imgur.com/SpLV3Qv', 0, 0, 0),
+            ("Geto", "SS", 'https://imgur.com/ELLwOA5', 0, 0, 0),
+            ("Choso", "SS", 'https://imgur.com/lD3QBKF', 0, 0, 0),
+            ("Mahito", "SS", 'https://imgur.com/nx6CAkr', 0, 0, 0),
+            ("Jogo", "SS", 'https://imgur.com/yyAs2nU', 0, 0, 0),
+            ("Kinji Hakari", "SS", 'https://imgur.com/OSTYTVF', 0, 0, 0),
+            ("Yuki Tsukumo", "SS", 'https://imgur.com/WlIBwGu', 0, 0, 0),
+            ("Dagon", "SS", 'https://imgur.com/tAJDSSQ', 0, 0, 0),
 
             # Personnages S
             ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 0, 0, 0),
-            ("Maki", "S", image_temporaire, 0, 0, 0),
-            ("Nanami", "S", image_temporaire, 0, 0, 0),
-            ("Higuruma", "S", image_temporaire, 0, 0, 0),
-            ("Naobito", "S", image_temporaire, 0, 0, 0),
-            ("Miguel", "S", image_temporaire, 0, 0, 0),
-            ("Mei mei", "S", image_temporaire, 0, 0, 0),
-            ("Naoya", "S", image_temporaire, 0, 0, 0),
+            ("Maki", "S", 'https://imgur.com/zGKPJI9', 0, 0, 0),
+            ("Nanami", "S", 'https://imgur.com/phtWBmN', 0, 0, 0),
+            ("Higuruma", "S", 'https://media1.tenor.com/m/vt4qMArBGP4AAAAC/hiromi-higuruma-higuruma-hiromi.gif', 0, 0, 0),
+            ("Naobito", "S", 'https://imgur.com/FTRAhNn', 0, 0, 0),
+            ("Miguel", "S", 'https://imgur.com/a8zQRsZ', 0, 0, 0), #TOREVIEW
+            ("Mei mei", "S", 'https://imgur.com/KoWiulR', 0, 0, 0),
+            ("Naoya", "S", 'https://imgur.com/LiKy4we', 0, 0, 0),
             
             
             #Personnages A
-            ("Panda", "A", image_temporaire, 0, 0, 0),
-            ("Inumaki", "A", image_temporaire, 0, 0, 0),
-            ("Kamo", "A", image_temporaire, 0, 0, 0),
-            ("Nobara", "A", "https://64.media.tumblr.com/71aaf9fe1a8bb90bdb18a12af4a66f0c/baebe1b5c0659d44-38/s540x810/c63e18a1e02b3ddc124a63a57af3d3745ba93cbb.gif", 0, 0, 0),
-            ("Toge", "A", image_temporaire, 0, 0, 0),
-            ("Mechamaru", "A", image_temporaire, 0, 0, 0),
+            ("Panda", "A", 'https://imgur.com/nvPKELk', 0, 0, 0),
+            ("Inumaki", "A", 'https://imgur.com/OkbjhWZ', 0, 0, 0),
+            ("Kamo", "A", 'https://imgur.com/8N9AYpE', 0, 0, 0),
+            ("Mechamaru", "A", 'https://imgur.com/HIQY96Q', 0, 0, 0),
 
             # Personnages B
+            ("Nobara", "B", "https://64.media.tumblr.com/71aaf9fe1a8bb90bdb18a12af4a66f0c/baebe1b5c0659d44-38/s540x810/c63e18a1e02b3ddc124a63a57af3d3745ba93cbb.gif", 0, 0, 0),
             ("Yuji Itadori", "B", "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/itadori-yuji.jpg", 0, 0, 0),
-            ("Kusakabe", "B", image_temporaire, 0, 0, 0),
-            ("Takuma Ino", "B", image_temporaire, 0, 0, 0),
-            ("Yaga", "B", image_temporaire, 0, 0, 0),
-            ("Gakuganji", "B", image_temporaire, 0, 0, 0),
+            ("Kusakabe", "B", 'https://imgur.com/6rujX3t', 0, 0, 0),
+            ("Takuma Ino", "B", 'https://imgur.com/W3diIlg', 0, 0, 0),
+            ("Yaga", "B", 'https://imgur.com/R8Rq12y', 0, 0, 0),
+            ("Gakuganji", "B", 'https://imgur.com/uAnAEms', 0, 0, 0),
             
 
             # Personnages C
-            ("Junpei", "C", image_temporaire, 0, 0, 0),
+            ("Junpei", "C", 'https://imgur.com/7sVsWn3', 0, 0, 0),
             ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 0, 0, 0),
-            ("Utahime", "C", image_temporaire, 0, 0, 0),
+            ("Utahime", "C", 'https://imgur.com/IPp6E9q', 0, 0, 0),
             
 
             # Personnages D
