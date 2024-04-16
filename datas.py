@@ -271,7 +271,7 @@ all_characters_templates = [
             ("Ulquiorra", "SS", "https://i.imgur.com/OaYNXCg.gif", 0, 0, 0),
             ("Gin", "SS", "https://i.imgur.com/kveTtpS.gif", 0, 0, 0),
             ("Stark", "SS", "https://64.media.tumblr.com/d098d4d0dcc9411718b795db7cd09ee1/33ae4a4514128801-1c/s500x750/83239f37db8b0611e5b6db959e157c71ff876915.gif", 0, 0, 0),
-            ("Renji", "SS", "https://i.pinimg.com/originals/a9/bc/7e/a9bc7e81b852d5487a6136c71fe6fb37.gif", 0, 0, 0),
+            ("Renji", "SS", "https://i.pinimg.com/originals/a9/bc/7e/a9bc7e81b852d5487a6136c71fe6fb37.gif", 0, 0, 0), #TOREVIEW
             ("Senjumaru", "SS", "https://64.media.tumblr.com/03802a81c9691aa4d222ebffb95725b1/f8e12cf39120d6fa-8d/s640x960/f1a4333133480be0b08c54e60cc83921023833e7.gif", 0, 0, 0),
 
             # Personnages S
@@ -279,51 +279,51 @@ all_characters_templates = [
             ("Sajin", "S", "https://64.media.tumblr.com/9feeb9306aaa5209099b7dfe883e90c0/tumblr_naoc4a1gdh1sv0f5ao1_500.gif", 0, 0, 0),
             ("Isshin", "S", "https://64.media.tumblr.com/f482a92079273624a2ba3594d7e60710/9ffabbab708a4da9-22/s640x960/d0bd1f5d4e745cf6f3dfa7546bbeea55fbaf3f83.gif", 0, 0, 0),
             ("Rukia", "S", "https://i.pinimg.com/originals/27/79/da/2779da8d545e74ef108bbd115df8bc15.gif", 0, 0, 0),
-            ("Shinji", "S", image_temporaire, 0, 0, 0),
-            ("Soi Fon", "S", image_temporaire, 0, 0, 0),
-            ("Tosen", "S", image_temporaire, 0, 0, 0),
-            ("Baraggan", "S", image_temporaire, 0, 0, 0),
-            ("Grimmjow", "S", image_temporaire, 0, 0, 0),
+            ("Shinji", "S", 'https://imgur.com/xeM1NLz', 0, 0, 0), #TOREVIEW
+            ("Soi Fon", "S", 'https://imgur.com/EVH34qM', 0, 0, 0),
+            ("Tosen", "S", 'https://imgur.com/4GA76X1', 0, 0, 0),
+            ("Baraggan", "S", 'https://imgur.com/k89CHqN', 0, 0, 0),
+            ("Grimmjow", "S", 'https://imgur.com/nj464jc', 0, 0, 0),
 
             # Personnages A
 
-            ("Ukitake", "A", image_temporaire, 0, 0, 0),
-            ("Nnoitra", "A", image_temporaire, 0, 0, 0),
-            ("Shuhei", "A", image_temporaire, 0, 0, 0),
-            ("Ryuken", "A", image_temporaire, 0, 0, 0),
-            ("Orihime", "A", image_temporaire, 0, 0, 0),
-            ("Ginjo", "A", image_temporaire, 0, 0, 0),
+            ("Ukitake", "A", 'https://imgur.com/djpHY0S', 0, 0, 0), #TOREVIEW
+            ("Nnoitra", "A", 'https://imgur.com/z5SAM9h', 0, 0, 0),
+            ("Shuhei", "A", 'https://imgur.com/rkQNMQX', 0, 0, 0),
+            ("Ryuken", "A", 'https://imgur.com/turdL6j', 0, 0, 0),
+            ("Orihime", "A", 'https://imgur.com/xGhy8ky', 0, 0, 0),
+            ("Ginjo", "A", 'https://imgur.com/xLPLs5Q', 0, 0, 0),
             
             
             # Personnages B
 
-            ("Kira", "B", image_temporaire, 0, 0, 0),
-            ("Ikkaku", "B", image_temporaire, 0, 0, 0),
-            ("Kensei", "B", image_temporaire, 0, 0, 0),
-            ("Chad", "B", image_temporaire, 0, 0, 0),
-            ("Yumichika", "B", image_temporaire, 0, 0, 0),
+            ("Kira", "B", 'https://imgur.com/H5EQmb0', 0, 0, 0),
+            ("Ikkaku", "B", 'https://imgur.com/wWd1Z4z', 0, 0, 0),
+            ("Kensei", "B", 'https://imgur.com/fHD5IZV', 0, 0, 0),
+            ("Chad", "B", 'image_temporaire', 0, 0, 0),
+            ("Yumichika", "B", 'image_temporaire', 0, 0, 0),
 
             # Personnages C
-            ("Ganju", "C", image_temporaire, 0, 0, 0),
-            ("Marechiyo", "C", image_temporaire, 0, 0, 0),
-            ("Love", "C", image_temporaire, 0, 0, 0),
+            ("Ganju", "C", 'https://imgur.com/4HYU47B', 0, 0, 0),
+            ("Marechiyo", "C", 'https://imgur.com/QdU2qIp', 0, 0, 0),
+            ("Love", "C", 'https://imgur.com/LJzVWIY', 0, 0, 0),
 
             # Personnages D
-            ("Tessai", "D", image_temporaire, 0, 0, 0),
-            ("Hanataro", "D", image_temporaire, 0, 0, 0),
-            ("Yachiru", "D", image_temporaire, 0, 0, 0),
+            ("Tessai", "D", 'https://imgur.com/VwYCDSH', 0, 0, 0),
+            ("Hanataro", "D", 'https://imgur.com/MPaOL4G', 0, 0, 0),
+            ("Yachiru", "D", 'https://imgur.com/CbYKjNb', 0, 0, 0),
 
             # Personnages E
-            ("Jinta", "E", image_temporaire, 0, 0, 0),
-            ("Ururu", "E", image_temporaire, 0, 0, 0),
-            ("Keigo", "E", image_temporaire, 0, 0, 0),
+            ("Jinta", "E", 'https://imgur.com/pAuQhV7', 0, 0, 0),
+            ("Ururu", "E", 'https://imgur.com/DoiSB83', 0, 0, 0),
+            ("Keigo", "E", 'https://imgur.com/D8dqhs2', 0, 0, 0),
 
             # Personnages F
-            ("Kon", "F", image_temporaire, 0, 0, 0),
-            ("Karin Kurosaki", "F", image_temporaire, 0, 0, 0),
-            ("Yuzu", "F", image_temporaire, 0, 0, 0),
-            ("Tatsuki", "F", image_temporaire, 0, 0, 0),
-            ("Mizuiro", "F", image_temporaire, 0, 0, 0),
+            ("Kon", "F", 'https://imgur.com/t1az2SQ', 0, 0, 0),
+            ("Karin Kurosaki", "F", 'https://imgur.com/Spca2oo', 0, 0, 0),
+            ("Yuzu", "F", 'https://imgur.com/plnofeu', 0, 0, 0),
+            ("Tatsuki", "F", 'https://imgur.com/mSvWp2O', 0, 0, 0),
+            ("Mizuiro", "F", 'https://imgur.com/b4sfzoT', 0, 0, 0),
 
             # """ PERSONNAGE MY HERO ACADEMIA"""
             # Personnages X
