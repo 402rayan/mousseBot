@@ -3018,3 +3018,31 @@
 2024-04-16 22:14:19.107 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
 2024-04-16 22:14:29.563 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
 2024-04-16 22:14:29.565 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:16:21.728 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:16:21.729 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:16:24.777 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:16:24.778 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:21:30.273 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:21:30.275 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:21:32.886 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:21:32.887 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:24:21.797 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:24:21.799 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:24:28.625 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:24:28.627 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:25:02.858 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:25:02.861 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:25:03.797 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:25:03.798 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:25:28.096 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:25:28.098 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:25:30.892 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:25:30.893 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:25:47.266 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:25:47.268 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:25:51.752 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:25:51.752 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.
+2024-04-16 23:29:32.187 | INFO     | __main__:on_ready:24 - MOUSSE#9964 est bien connecté!
+2024-04-16 23:29:32.188 | INFO     | bdd:create_tables:125 - Les tables ont été créées.
+2024-04-16 23:29:35.620 | INFO     | bdd:insert_user:129 - Vérification de l'utilisateur 402rayan (724383641752436757) dans la base de données.
+2024-04-16 23:29:35.621 | INFO     | bdd:insert_user:137 - L'utilisateur 402rayan (724383641752436757) existe déjà dans la base de données.

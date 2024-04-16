@@ -67,35 +67,35 @@ async def on_message(message):
 
 
 # Fonctions
+
+# Partie Histoire
+
 async def cookWithSanji(message):
-    nom = "Sanji"
-    gif = discord.File("./assets/histoire/cookWithSanji.gif", filename="sanji.gif")
-    pfp = discord.File("./assets/histoire/sanji.png", filename="sanji.png")
-    embed = discord.Embed(
-        title="Sanji",
-        description="Sanji a besoin de votre aide pour cuisiner!",
-        color=discord.Color.gold()
-    )
-    embed.set_image(url="attachment://sanji.gif")
-    embed.set_author(name=nom, icon_url="attachment://sanji.png")
-    
-    await message.channel.send(files=[gif, pfp], embed=embed)
-    return
+    await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "Sanji a besoin de votre aide pour cuisiner!", discord.Color.red())
+    # Le but est que sanji vous donne un nom d'ingrédient ou d'aliment et que vous cliquiez sur la bonne réaction
+    # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
+    # Il y a 4 réactions différentes dont une seule bonne
+    ingredients = {
+        "Pomme": "🍎",
+        "Banane": "🍌",
+        "Pain": "🍞",
+        "Poulet": "🍗",
+        "Pizza": "🍕",
+        "Poisson": "🐟",
+        "Sushi": "🍣",
+        "Glace": "🍦",
+        "Hamburger": "🍔",
+        "Frites": "🍟",
+        "Hot Dog": "🌭",
+        "Pop Corn": "🍿",
+        "Tarte": "🥧",
+        "Gâteau": "🍰",
+        "Chocolat": "🍫",
+    }
 
 
 async def purple(message):
-    identifiant = bdd.getIdFromName("Fugo")
-    if not identifiant:
-        logger.error("Impossible de trouver l'identifiant de Fugo.")
-        return
-    gif = discord.File("assets/gifs/" + str(identifiant) + ".gif", filename="fruit.gif")
-    embed = discord.Embed(
-        title="Fugo",
-        description="PURPLE HAZE A DECLENCHÉ SON VIRUS DANS LE SOUS-TERRAIN! VOUS DEVEZ FUIR!",
-        color=discord.Color.gold()
-    )
-    embed.set_image(url="attachment://fugo.gif")
-    await message.channel.send(file=gif, embed=embed)
+    await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Purple Haze a déclenché son virus! Fuyez aussi vite que vous pouvez!", discord.Color.purple())
     alive = True
     ticketsGagnes = 0
     
@@ -123,7 +123,22 @@ async def purple(message):
             ticketsGagnes += 1
             await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez récupéré un ticket!", discord.Color.green(), f"Tickets sur vous : {ticketsGagnes}."))
     return
+
+
+def embed_histoire_character(message, nom, nomGif, nomPfp, description, color=discord.Color.gold()):
+    gif = discord.File("./assets/histoire/" + nomGif + ".gif", filename=nomGif + ".gif")
+    pfp = discord.File("./assets/histoire/" + nomPfp + ".png", filename=nomPfp + ".png")
+    embed = discord.Embed(
+        title=nom,
+        description=description,
+        color=color
+    )
+    embed.set_image(url="attachment://" + nomGif + ".gif")
+    embed.set_author(name=nom, icon_url="attachment://" + nomPfp + ".png")
+    return message.channel.send(files=[gif,pfp], embed=embed)
         
+# Fin Partie Histoire
+
 
 @bot.command()
 async def list_command(message):
