@@ -537,7 +537,7 @@ all_characters_templates = [
             ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 0, 0, 0),
             ("Utahime", "C", 'https://imgur.com/IPp6E9q', 0, 0, 0),
             ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 0, 0, 0),
-
+            ("Haruta Shigemo", "C", "https://staticg.sportskeeda.com/editor/2023/10/9dbce-16972933761276-1920.jpg", 0, 0, 0),
             
 
             # Personnages D
@@ -824,7 +824,7 @@ all_link_synergies = {
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
 
-    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach"], # Épéiste
+    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # Épéiste
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Télékinésiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche

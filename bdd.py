@@ -341,6 +341,10 @@ class Database:
         self.cur.execute(f"SELECT * FROM synergies WHERE synergy_id = {synergy_id}")
         return self.cur.fetchone()
     
+    def nameFinder(self, name):
+        self.cur.execute(f"SELECT * FROM character_templates WHERE name LIKE '%{name}%'")
+        return self.cur.fetchall()
+
     def get_synergies_by_character_template(self, template_id):
         self.cur.execute(f"SELECT * FROM character_template_synergies s JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE template_id = {template_id}")
         return self.cur.fetchall()
@@ -408,3 +412,13 @@ class Database:
         for character in characters:
             self.save_gif_from_url(character[3], f"assets/gifs/{character[0]}.gif")
         logger.info("Les GIFs ont été enregistrés.")
+    
+    def getIdFromName(self,name):
+        # Retourne l'id du personnage à partir de son nom si il existe, sinon None
+        template = self.get_character_template_by_name(0, "Bot", name)
+        logger.info(f"Récupération de l'id du personnage {name}.")
+        logger.info(template)
+        if template is None:
+            return None
+        return template[0]
+        

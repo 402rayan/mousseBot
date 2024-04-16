@@ -60,16 +60,35 @@ async def on_message(message):
         await createTemplates(message)
     elif contenu.startswith('!purple'):
         await purple(message)
-    
+    elif contenu.startswith('!cookWithSanji'):
+        await cookWithSanji(message)
     elif contenu.startswith('!reset'):
         await reset(message)
 
 
 # Fonctions
-# Fonctions
+async def cookWithSanji(message):
+    nom = "Sanji"
+    gif = discord.File("./assets/histoire/cookWithSanji.gif", filename="sanji.gif")
+    pfp = discord.File("./assets/histoire/sanji.png", filename="sanji.png")
+    embed = discord.Embed(
+        title="Sanji",
+        description="Sanji a besoin de votre aide pour cuisiner!",
+        color=discord.Color.gold()
+    )
+    embed.set_image(url="attachment://sanji.gif")
+    embed.set_author(name=nom, icon_url="attachment://sanji.png")
+    
+    await message.channel.send(files=[gif, pfp], embed=embed)
+    return
+
+
 async def purple(message):
-    # On charge le gif depuis assets/gif/fugo.gif
-    gif = discord.File("assets/gifs/433.gif", filename="fugo.gif")
+    identifiant = bdd.getIdFromName("Fugo")
+    if not identifiant:
+        logger.error("Impossible de trouver l'identifiant de Fugo.")
+        return
+    gif = discord.File("assets/gifs/" + str(identifiant) + ".gif", filename="fruit.gif")
     embed = discord.Embed(
         title="Fugo",
         description="PURPLE HAZE A DECLENCHÉ SON VIRUS DANS LE SOUS-TERRAIN! VOUS DEVEZ FUIR!",
