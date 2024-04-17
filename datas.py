@@ -785,11 +785,55 @@ all_characters_templates = [
             ("Goto", "F", image_temporaire, 0, 0, 0),
             ("Kaburamaru", "F", image_temporaire, 0, 0, 0),
 
-
-
-
-            
-        ]
+            # """ PERSONNAGE FMAB """
+            # Personnages X
+            ("Père", "X", image_temporaire, 0, 0, 0),
+            # Personnages SS
+            ("Hohenheim", "SS", image_temporaire, 0, 0, 0),
+            ("King Bradley", "SS", image_temporaire, 0, 0, 0),
+            # Personnages S
+            ("Edward", "S", image_temporaire, 0, 0, 0),
+            ("Izumi Curtis", "S", image_temporaire, 0, 0, 0),
+            ("Alphonse", "S", image_temporaire, 0, 0, 0),
+            ("Roy Mustang", "S", image_temporaire, 0, 0, 0),
+            ("Scar", "S", image_temporaire, 0, 0, 0),
+            ("Kimbley", "S", image_temporaire, 0, 0, 0),
+            ("Selim", "S", image_temporaire, 0, 0, 0),
+            # Personnages A
+            ("Ling Yao", "A", image_temporaire, 0, 0, 0),
+            ("Envy", "A", image_temporaire, 0, 0, 0),
+            ("Sloth", "A", image_temporaire, 0, 0, 0),
+            ("Glutonny", "A", image_temporaire, 0, 0, 0),
+            ("Lust", "A", image_temporaire, 0, 0, 0),
+            ("Olivia Mira Armstrong", "A", image_temporaire, 0, 0, 0),
+            ("Alex Louis Armstrong", "A", image_temporaire, 0, 0, 0),
+            # Personnages B
+            ("Maes Hughes", "B", image_temporaire, 0, 0, 0),
+            ("Mei Chang", "B", image_temporaire, 0, 0, 0),
+            ("Riza Hawkeye", "B", image_temporaire, 0, 0, 0),
+            ("Lan Fan", "B", image_temporaire, 0, 0, 0),
+            ("Fu", "B", image_temporaire, 0, 0, 0),
+            ("Alex Louis Armstrong", "B", image_temporaire, 0, 0, 0),
+            # Personnages C
+            ("Heinkel", "C", image_temporaire, 0, 0, 0),
+            ("Marcoh", "C", image_temporaire, 0, 0, 0),
+            ("Darius", "C", image_temporaire, 0, 0, 0),
+            # Personnages D
+            ("Maria Ross", "E", image_temporaire, 0, 0, 0),
+            ("Miles", "E", image_temporaire, 0, 0, 0),
+            ("Falman", "E", image_temporaire, 0, 0, 0),
+            # Personnages E
+            ("Paninya", "E", image_temporaire, 0, 0, 0),
+            ("Havoc", "E", image_temporaire, 0, 0, 0),
+            ("Heymans", "E", image_temporaire, 0, 0, 0),
+            ("Fuery", "E", image_temporaire, 0, 0, 0),
+            # Personnages F
+            ("Yoki", "F", image_temporaire, 0, 0, 0),
+            ("Nina Tucker", "F", image_temporaire, 0, 0, 0),
+            ("Trisha", "F", image_temporaire, 0, 0, 0),
+            ("Xiao Mei", "F", image_temporaire, 0, 0, 0),
+            ("Winry", "F", image_temporaire, 0, 0, 0)
+]
 
 all_synergies = [
     (1, "Akatsuki", "ATK", 0.15,"L'akkatsuki est une organisation criminelle de ninjas déserteurs.", image_temporaire, "#FF0000"),
@@ -879,9 +923,27 @@ all_synergies = [
     (86, "Lune", "ATK", 0.15, "Les Lunes sont des démons puissants qui servent Muzan.", image_temporaire, "#800080"),
     (87, "Brando", "ATK", 0.15, "Les Brando sont une famille de vampires qui cherchent à dominer le monde.", image_temporaire, "#FF0000"),
     (88, "Maître de la Gravité", "ATK", 0.15, "Les Maîtres de la Gravité sont des personnages qui peuvent contrôler la gravité.", image_temporaire, "#FFA500"),
+    (89, "Armstrong", "ATK", 0.15, "La famille Armstrog est une famille illustre et noble qui a servi Amestris pendant des générations.", image_temporaire, "#0000FF"),
+    (90, "Homonculus", "ATK", 0.15, "Les Homonculus sont des êtres artificiels créés par le Père pour servir ses desseins.", image_temporaire, "#800080"),
+    (91, "Alchimist d'Etat", "ATK", 0.15, "Les Alchimistes d'Etat sont des alchimistes qui servent le gouvernement d'Amestris.", image_temporaire, "#FF0000"),
+    (92, "Xing", "ATK", 0.15, "Le pays de Xing est un pays voisin d'Amestris qui pratique l'alchimie de l'est.", image_temporaire, "#FFA500"),
+    (93, "Elric", "ATK", 0.15, "La famille Elric est une famille d'alchilmistes (sauf la mère).", image_temporaire, "#0000FF"),
+    (94, "Automail", "ATK", 0.15, "L'Automail est une prothèse mécanique qui remplace un membre perdu.", image_temporaire, "#800080"),
+    (95, "Ishval", "ATK", 0.15, "Les Ishvals sont un peuple pacifique qui a été décimé par les alchimistes d'Amestris.", image_temporaire, "#FF0000"),
+    (96, "Bradley", "ATK", 0.15, "La famille Bradley comporte deux Homonculus et est au pouvoir du pays.", image_temporaire, "#FFA500"),
+    (97, "Unité Mustang", "ATK", 0.15, "L'Unité Mustang est une unité de l'armée d'Amestris dirigée par Roy Mustang.", image_temporaire, "#0000FF"),
 ]
 
 all_link_synergies = {
+    97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Fuery","Falman"],
+    96 : ["King Bradley","Selim"],
+    95 : ["Scar","Frère de Scar","Miles"], # Ishval
+    94 : ["Edward","Paninya","Lan Fan"], # Automail
+    93 : ["Hohenheim","Edward","Alphonse","Trisha"], # Elric
+    92 : ["Ling Yao","Mei Chang","Lan Fan","Fu","Xiao Mei"], # Xing
+    91 : ["Edward Elric","Alphonse Elric","Roy Mustang","Kimbley","Olivia Mira Armstrong","Alex Louis Armstrong"], # Alchimist d'Etat
+    90 : ["Lust","Glutonny","Envy","Sloth","Greed","Wrath","Pride","Father"], # Homonculus
+    89 : ["Mira","Alex"],
     88 : ["Kenjaku","Okuyasu","Yuki","Fujitora","Pain"], # Maître de la Gravité
     87 : ["Dio","Diego","Giorno","Dario Brando"], # Brando
     86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lune
