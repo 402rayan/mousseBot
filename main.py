@@ -8,7 +8,6 @@ import getToken
 import bdd
 from loguru import logger
 from constantes import phrases_invocation
-
 # Connect to database
 database = bdd.Database('./mousse.db')
 
@@ -71,46 +70,60 @@ async def on_message(message):
 # Partie Histoire
 
 async def cookWithSanji(message):
-    await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "Sanji a besoin de votre aide pour cuisiner!", discord.Color.red())
+    await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "","Sanji a besoin de votre aide pour cuisiner!", discord.Color.gold())
     # Le but est que sanji vous donne un nom d'ingrédient ou d'aliment et que vous cliquiez sur la bonne réaction
     # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
     # Il y a 4 réactions différentes dont une seule bonne
-    ingredients = {
-        "Pomme": "🍎",
-        "Banane": "🍌",
-        "Pain": "🍞",
-        "Poulet": "🍗",
-        "Pizza": "🍕",
-        "Poisson": "🐟",
-        "Sushi": "🍣",
-        "Glace": "🍦",
-        "Hamburger": "🍔",
-        "Frites": "🍟",
-        "Hot Dog": "🌭",
-        "Pop Corn": "🍿",
-        "Tarte": "🥧",
-        "Gâteau": "🍰",
-        "Chocolat": "🍫",
-    }
-
+    ingredientReussis = 0; totalIngredients = 4; temps = 3
+    while ingredientReussis <= totalIngredients:
+        await asyncio.sleep(2)
+        retour = get_ingredient() 
+        ingredient = retour[0]
+        liste_reactions = retour[1]
+        msg = await embed_histoire_character(message, "Sanji", None ,"sanji", f"Cliquez sur la bonne réaction!",f"Sanji a besoin de {ingredient[0]} pour cuisiner!", discord.Color.gold())
+        # On veut que dans la liste des réactions il y a ait 3 réactions aléatoires et une bonne
+        for reaction in liste_reactions:
+            await msg.add_reaction(reaction)
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=temps, check=lambda reaction, user: user == message.author and str(reaction.emoji) in liste_reactions)
+        except:
+            await message.channel.send(embed=embed_info("Vous n'avez pas donné l'ingrédient à temps. ", "Le plat est un total désastre.", discord.Color.red()))
+            return
+        if str(reaction.emoji) == ingredient[1]:
+            await embed_histoire_character(message, "Sanji", None, "sanji", f"Plus que {totalIngredients - ingredientReussis} ingrédients.", "Bravo! Vous avez réussi!", discord.Color.gold())
+            ingredientReussis += 1; temps -= 0.4
+        else:
+            await message.channel.send(embed=embed_info("Vous avez donné le mauvais ingrédient..", "Le plat est un total désastre.", discord.Color.red()))
+    
+def get_ingredient():
+    # Fonction qui retourne un ingrédient, et une liste de 3 ingrédients aléatoires + le bon ingrédient
+    ingredient = random.choice(list(CONSTANTS['INGREDIENTS'].keys()))
+    ingredient = (ingredient, CONSTANTS['INGREDIENTS'][ingredient])
+    liste_reactions = list(CONSTANTS['INGREDIENTS'].values())
+    liste_reactions.remove(ingredient[1])
+    liste_reactions = random.sample(liste_reactions, 3)
+    liste_reactions.append(ingredient[1])
+    random.shuffle(liste_reactions)
+    return ingredient, liste_reactions
 
 async def purple(message):
-    await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Purple Haze a déclenché son virus! Fuyez aussi vite que vous pouvez!", discord.Color.purple())
+    await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Fuyez aussi vite que vous pouvez!","Purple Haze a déclenché son virus!", discord.Color.purple())
     alive = True
     ticketsGagnes = 0
-    
     await asyncio.sleep(3)
     while alive:
         # le taux de mort est entre 0 et 0.3
         tauxDeMort = random.random() * 0.3
         # On lui demande s'il souhaite s'enfuir ou s'il veut risquer sa chance pour gagner des tickets
-        msg = await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez vu un ticket, souhaitez vous le prendre? Vous risquez de mourir!", discord.Color.purple()))
+        phrase = "Vous avez vu un autre " if ticketsGagnes > 0 else "Vous avez vu un "
+        notice = "\n🏃 : Fuir  💰 : Prendre le ticket"
+        msg = await embed_histoire_character(message, "Purple Haze", None, "purpleHaze","Avez-vous vraiment le temps.. ?" + notice, phrase + "ticket, souhaitez vous le prendre?", discord.Color.purple())
         await msg.add_reaction('🏃')
         await msg.add_reaction('💰')
         try:
             reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '💰'])
         except:
-            await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez été touché par Purple Haze et avez perdu tous vos tickets!", discord.Color.red()))
+            await embed_histoire_character(message, "Purple Haze", None, "purpleHaze", "Le poison de Purple Haze vous a rattrapé et avez perdu tous vos tickets!","Vous avez pris trop de temps!", discord.Color.dark_red())
             return
         if str(reaction.emoji) == '🏃':
             alive = False
@@ -118,24 +131,29 @@ async def purple(message):
 
         elif str(reaction.emoji) == '💰':
             if random.random() < tauxDeMort:
-                await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez été touché par Purple Haze et avez perdu tous vos tickets!", discord.Color.dark_red()))
+                await embed_histoire_character(message, "Purple Haze", None, "purpleHaze","Le poison de Purple Haze vous a rattrapé et avez perdu tous vos tickets!","Vous avez été touché.", discord.Color.dark_red())
                 return
             ticketsGagnes += 1
             await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez récupéré un ticket!", discord.Color.green(), f"Tickets sur vous : {ticketsGagnes}."))
+            await asyncio.sleep(2.5)
     return
 
-
-def embed_histoire_character(message, nom, nomGif, nomPfp, description, color=discord.Color.gold()):
-    gif = discord.File("./assets/histoire/" + nomGif + ".gif", filename=nomGif + ".gif")
-    pfp = discord.File("./assets/histoire/" + nomPfp + ".png", filename=nomPfp + ".png")
+def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold()):
+    files = []
     embed = discord.Embed(
-        title=nom,
+        title=titre,
         description=description,
         color=color
     )
-    embed.set_image(url="attachment://" + nomGif + ".gif")
-    embed.set_author(name=nom, icon_url="attachment://" + nomPfp + ".png")
-    return message.channel.send(files=[gif,pfp], embed=embed)
+    if nomGif:
+        gif = discord.File("./assets/histoire/" + nomGif + ".gif", filename=nomGif + ".gif")
+        embed.set_image(url="attachment://" + nomGif + ".gif")
+        files.append(gif)
+    if nomPfp:
+        pfp = discord.File("./assets/histoire/" + nomPfp + ".png", filename=nomPfp + ".png")
+        embed.set_author(name=nom, icon_url="attachment://" + nomPfp + ".png")
+        files.append(pfp)
+    return message.channel.send(files=files, embed=embed)
         
 # Fin Partie Histoire
 

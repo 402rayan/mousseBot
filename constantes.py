@@ -36,6 +36,63 @@ CONSTANTS = {
         'F': 0xADD8E6, # Bleu clair (#ADD8E6) - Doux et discret, parfait pour les personnages les moins influents.
 
     },
+    'INGREDIENTS': {
+        "Pomme": "🍎",
+        "Banane": "🍌",
+        "Pain": "🍞",
+        "Poulet": "🍗",
+        "Pizza": "🍕",
+        "Poisson": "🐟",
+        "Sushi": "🍣",
+        "Glace": "🍦",
+        "Hamburger": "🍔",
+        "Frites": "🍟",
+        "Hot Dog": "🌭",
+        "Pop Corn": "🍿",
+        "Tarte": "🥧",
+        "Gâteau": "🍰",
+        "Chocolat": "🍫",
+        "Bonbon": "🍬",
+        "Lait": "🥛",
+        "Café": "☕",
+        "Jus": "🥤",
+        "Vin": "🍷",
+        "Bière": "🍺",
+        "Eau": "💧",
+        "Carotte": "🥕",
+        "Tomate": "🍅",
+        "Salade": "🥗",
+        "Pomme de terre": "🥔",
+        "Oignon": "🧅",
+        "Ail": "🧄",
+        "Concombre": "🥒",
+        "Courgette": "🥬",
+        "Aubergine": "🍆",
+        "Champignon": "🍄",
+        "Brocoli": "🥦",
+        "Piment": "🌶️",
+        "Citron": "🍋",
+        "Orange": "🍊",
+        "Poire": "🍐",
+        "Ananas": "🍍",
+        "Pastèque": "🍉",
+        "Melon": "🍈",
+        "Fraise": "🍓",
+        "Cerise": "🍒",
+        "Raisin": "🍇",
+        "Noix de coco": "🥥",
+        "Noix": "🌰",
+        "Pistache": "🥜",
+        "Miel": "🍯",
+        "Sel": "🧂",
+        "Pêche": "🍑",
+        "Croissant": "🥐",
+        "Baguette": "🥖",
+        "Fromage": "🧀",
+        "Menthe": "🌿",
+
+
+    }
 }
 
 """ 
@@ -67,3 +124,4 @@ phrases_invocation = [
     "C'est un signe du destin !",
     "Je suis sûr que c'est quelque chose de rare !"
 ]
+
