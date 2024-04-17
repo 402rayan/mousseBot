@@ -697,6 +697,79 @@ all_characters_templates = [
 
             # Personnages F
             ("Mumen Rider", "F", "https://i.redd.it/diszh9zoizoa1.jpg", 0, 0, 0),
+
+            # """ PERSONNAGE DEMON SLAYER """
+            # Personnages X
+            ("Tanjiro", "X", image_temporaire, 0, 0, 0),
+            ("Muzan", "X", image_temporaire, 0, 0, 0),
+            ("Yoriichi", "X", image_temporaire, 0, 0, 0),
+            ("Kokushibo", "X", image_temporaire, 0, 0, 0),
+
+            # Personnages SS
+
+            ("Gyomei", "SS", image_temporaire, 0, 0, 0),
+            ("Doma", "SS", image_temporaire, 0, 0, 0),
+            ("Akaza", "SS", image_temporaire, 0, 0, 0),
+
+            # Personnages S
+
+            ("Sanemi", "S", image_temporaire, 0, 0, 0),
+            ("Muichiro", "S", image_temporaire, 0, 0, 0),
+            ("Obanai", "S", image_temporaire, 0, 0, 0),
+            ("Giyu", "S", image_temporaire, 0, 0, 0),
+
+            # Personnages A
+            ("Rengoku", "A", image_temporaire, 0, 0, 0),
+            ("Uzui Tengen", "A", image_temporaire, 0, 0, 0),
+            ("Mitsuri", "A", image_temporaire, 0, 0, 0),
+            ("Nezuko", "A", image_temporaire, 0, 0, 0),
+            ("Kanao", "A", image_temporaire, 0, 0, 0),
+            ("Tamayo", "A", image_temporaire, 0, 0, 0),
+            ("Shinobu Kocho", "A", image_temporaire, 0, 0, 0),
+
+            # Personnages B
+            ("Zenitsu", "B", image_temporaire, 0, 0, 0),
+            ("Inosuke", "B", image_temporaire, 0, 0, 0),
+            ("Kaigaku", "B", image_temporaire, 0, 0, 0),
+
+            ("Genya", "B", image_temporaire, 0, 0, 0),
+            ("Daki", "B", image_temporaire, 0, 0, 0),
+            ("Enmu", "B", image_temporaire, 0, 0, 0),
+
+            # Personnages C
+            ("Rui", "C", image_temporaire, 0, 0, 0),
+            ("Mukago", "C", image_temporaire, 0, 0, 0),
+            ("Fille Araignée", "C", image_temporaire, 0, 0, 0),
+            ("Mère Araignée", "C", image_temporaire, 0, 0, 0),
+            ("Susamaru", "C", image_temporaire, 0, 0, 0),
+            ("Jigoro", "C", image_temporaire, 0, 0, 0),
+
+
+            # Personnages D
+            ("Tanjuro", "D", image_temporaire, 0, 0, 0),
+
+            # Personnages E
+            ("Shinzu", "E", image_temporaire, 0, 0, 0),
+            ("Murata", "E", image_temporaire, 0, 0, 0),
+            ("Kyogai", "E", image_temporaire, 0, 0, 0),
+            ("Kanamue", "E", image_temporaire, 0, 0, 0),
+            ("Kagaya", "E", image_temporaire, 0, 0, 0),
+
+
+            # Personnages F
+            ("Kiriya", "F", image_temporaire, 0, 0, 0),
+            ("Nichika", "F", image_temporaire, 0, 0, 0),
+            ("Chachamaru", "F", image_temporaire, 0, 0, 0),
+            ("Aoi Kanzaki", "F", image_temporaire, 0, 0, 0),
+            ("Sumi", "F", image_temporaire, 0, 0, 0),
+            ("Kiyo", "F", image_temporaire, 0, 0, 0),
+            ("Naho", "F", image_temporaire, 0, 0, 0),
+            ("Goto", "F", image_temporaire, 0, 0, 0),
+            ("Kaburamaru", "F", image_temporaire, 0, 0, 0),
+
+
+
+
             
         ]
 
@@ -775,9 +848,31 @@ all_synergies = [
     (73, "Zenin", "ATK", 0.15, "Le clan Zenin est une famille de sorciers qui possède des pouvoirs magiques.", image_temporaire, "#0000FF"),
     (74, "Kamo", "ATK", 0.15, "Le clan Kamo est une famille de sorciers qui possède des pouvoirs magiques.", image_temporaire, "#800080"),
     (75, "Fushiguro", "ATK", 0.15, "La lignée Fushiguro est une lignée d'originaire humaine.", image_temporaire, "#FF0000"),
+    (76, "Ubuyashiki", "ATK", 0.15, "La famille Ubuyashiki est une famille de démons qui dirige le clan des pourfendeurs de démons.", image_temporaire, "#FFA500"),
+    (77, "Hashira", "ATK", 0.15, "Les Hashiras sont les piliers de l'organisation des pourfendeurs de démons.", image_temporaire, "#0000FF"),
+    (78, "Pourfendeurs de démons", "ATK", 0.15, "Les Pourfendeurs de démons sont une organisation secrète qui lutte contre les démons.", image_temporaire, "#800080"),
+    (79, "Domaine des Papillons", "ATK", 0.15, "Le Domaine des Papillons est un lieu mystérieux où les démons se rassemblent pour se nourrir.", image_temporaire, "#FF0000"),
+    (80, "Démons", "ATK", 0.15, "Les Démons sont des créatures maléfiques qui se nourrissent de la chair humaine.", image_temporaire, "#FFA500"),
+    (81, "Kamado", "ATK", 0.15, "La famille Kamado est une famille de pourfendeurs de démons qui a été décimée par les démons.", image_temporaire, "#0000FF"),
+    (82, "Souffle du Soleil", "ATK", 0.15, "Le Souffle du Soleil est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#800080"),
+    (83, "Souffle de la Foudre", "ATK", 0.15, "Le Souffle de la Foudre est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#FF0000"),
+    (84, "Souffle de l'Eau", "ATK", 0.15, "Le Souffle de l'Eau est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#FFA500"),
+    (85, "Souffle de la Fleur", "ATK", 0.15, "Le Souffle de la Fleur est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#0000FF"),
+    (86, "Lunes", "ATK", 0.15, "Les Lunes sont des démons puissants qui servent Muzan.", image_temporaire, "#800080"),
 ]
 
 all_link_synergies = {
+    86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lunes
+    85 : ["Kanae","Kanao"], # Souffle de la Fleur
+    84 : ["Sakonji","Giyu","Sabito","Makomo","Tanjiro","Murata"], # Souffle de l'Eau
+    83 : ["Zenitsu","Kaigaku","Jigoro"], # Souffle de la Foudre
+    82 : ["Tanjiro", "Yoriichi","Sumiyoshi","Tanjuro"], #Kamado
+    81 : ["Tanjiro","Nezuko","Kanao","Sumiyoshi","Tanjuro"], #Kamado
+    80 : ["Muzan","Nezuko","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignée","Mère Araignée","Shinzu"], # Démons
+    79 : ["Aoi Kanzaki","Sumi","Kiyo","Naho","Goto"], # Domaine des Papillons
+    78 : ["Kanao","Tanjiro","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeurs de démons
+    77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui"], # Hashira
+    76 : ["Kagaya","Amane","Hinaki","Nichika","Kiriya","Kanata"], # Ubuyashiki
     75 : ["Toji","Megumi","Tsumiki Fushiguro"], # Fushiguro
     74 : ["Noritoshi","Kenjaku"], # Kamo
     73 : ["Toji", "Naobito","Mai","Maki","Megumi"], # Zenin
@@ -794,7 +889,7 @@ all_link_synergies = {
     62 : ["Kaido", "King", "Queen", "Jack"], # Équipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # Équipage de Shanks
     60 : ["Ussop","Kaya","Kuro","Merry","Yassop"],
-    59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"],
+    59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"], # JoBros
     1 : ["Itachi", "Kisame", "Deidara", "Sasori", "Hidan", "Kakuzu", "Pain", "Konan", "Zetsu", "Tobi"], # Akatsuki
     2 : ["Goku", "Vegeta", "Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla"], # Saiyan
     4 : ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
@@ -807,7 +902,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
@@ -816,7 +911,7 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Réceptacle TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo"],# Maître du Feu TODO
+    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Abdul"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
     32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
