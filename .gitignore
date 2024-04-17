@@ -2,6 +2,8 @@
 getToken.py
 assets/gifs/*.gif
 assets/synergies/*
-logs.log
+*.log
 __pycache__
 logs.log
+mousse.db-journal
+

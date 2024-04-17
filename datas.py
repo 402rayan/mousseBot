@@ -582,39 +582,47 @@ all_characters_templates = [
             # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
 
             # Personnages X
-            ("Kars", "X", 'https://imgur.com/4xhIuVK', 0, 0, 0),
             ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 0, 0, 0),
             ("Pucci", "X", 'https://imgur.com/RTdkTrH', 0, 0, 0),
+            ("Funny Valentine", "X", image_temporaire, 0, 0, 0),
+            ("Gyro", "X", image_temporaire, 0, 0, 0),
+            ("Johnny", "X", image_temporaire, 0, 0, 0),
             
             # Personnages SS
 
+            ("Kars", "SS", 'https://imgur.com/4xhIuVK', 0, 0, 0),
             ("Diavolo", "SS", 'https://imgur.com/90RxqGR', 0, 0, 0),
             ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 0, 0, 0),
+            ("Diego", "SS", image_temporaire, 0, 0, 0),
             ("Dio", "SS", 'https://imgur.com/xngzKOg', 0, 0, 0),
             ("Kira", "SS", 'https://imgur.com/ZQPBO3Q', 0, 0, 0),
 
             # Personnages S
-            ("Bucciarati", "S", 'https://imgur.com/zaBAVFx', 0, 0, 0),
             ("Josuke", "S", 'https://imgur.com/AcnhlnJ', 0, 0, 0), #TOREVIEW
             ("Fugo", "S", 'https://imgur.com/gBcvGNj', 0, 0, 0), #TOREVIEW
-            ("Risotto", "S", 'https://imgur.com/hQxmpqR', 0, 0, 0),
+            ("Vanilla Ice", "S", 'https://imgur.com/1Z2Z2Zz', 0, 0, 0),
             ("Jolyne", "S", 'https://imgur.com/T2yg742', 0, 0, 0),
+            ("Weather Report", "S", image_temporaire, 0, 0, 0),
             
             # Personnages A
+            ("Anasui", "A", 'https://imgur.com/1Z2Z2Zz', 0, 0, 0),
+            ("Bucciarati", "A", 'https://imgur.com/zaBAVFx', 0, 0, 0),
+            ("Risotto", "A", 'https://imgur.com/hQxmpqR', 0, 0, 0),
             ("Rohan", "A", 'https://imgur.com/UJgfmGg', 0, 0, 0),
-            ("Koichi", "A", 'https://imgur.com/HZ9vn1d', 0, 0, 0),
             ("Kakyoin", "A", 'https://imgur.com/ZsxN3PG', 0, 0, 0),
-            ("Mista", "A", 'https://imgur.com/ab9sgfg', 0, 0, 0),
             ("Polnareff", "A", 'https://imgur.com/eZjHHa9', 0, 0, 0),
             ("Okuyasu", "A", 'https://imgur.com/BiveNFJ', 0, 0, 0),
             ("Ghiaccio", "A", 'https://imgur.com/LNoxXyi', 0, 0, 0),
             ("Prosciutto", "A", 'https://imgur.com/CsSR05A', 0, 0, 0),
+            ("Mohamed Abdul", "A", 'https://imgur.com/1Z2Z2Zz', 0, 0, 0),
+            ("Illuso", "A", 'https://imgur.com/1Z2Z2Zz', 0, 0, 0),
+            ("Cioccolata", "A", 'https://imgur.com/XAu2MDR', 0, 0, 0),
+
             
             # Personnages B
+            ("Koichi", "B", 'https://imgur.com/HZ9vn1d', 0, 0, 0),
             ("Emporio", "B", 'https://imgur.com/KBZCTy6', 0, 0, 0),
             ("Akira", "B", 'https://imgur.com/xn6pX9Z', 0, 0, 0), #TOREVIEW
-            ("Caesar", "B", 'https://imgur.com/3nzbH8Y', 0, 0, 0),
-            ("Trish", "B", 'https://imgur.com/I4nMHqt', 0, 0, 0),
             ("Narancia", "B", 'https://imgur.com/ndZcfok', 0, 0, 0),
             ("Yukako", "B", 'https://imgur.com/JZKQ2KS', 0, 0, 0),
             ("Miyamoto", "B", 'https://imgur.com/lZLlEhu', 0, 0, 0),
@@ -622,32 +630,42 @@ all_characters_templates = [
             ("Esidisi", "B", 'https://imgur.com/mdsI4Ir', 0, 0, 0),
             ("Pesci", "B", 'https://imgur.com/RiqetYG', 0, 0, 0),
             ("Melone ", "B", 'https://imgur.com/EMitGnp', 0, 0, 0),
-            ("Cioccolata", "B", 'https://imgur.com/XAu2MDR', 0, 0, 0),
             ("Squalo", "B", 'https://imgur.com/1DP3U16', 0, 0, 0),
-            ("Jonathan", "B", 'https://imgur.com/dqGKC1P', 0, 0, 0),
             ("Joseph", "B", 'https://imgur.com/YiGGszt', 0, 0, 0),
+            ("Mista", "B", 'https://imgur.com/ab9sgfg', 0, 0, 0),
+
 
             # Personnages C
+            ("Caesar", "C", 'https://imgur.com/3nzbH8Y', 0, 0, 0),
+            ("Lisa Lisa", "C", 'https://i.pinimg.com/736x/8e/81/74/8e817463c33ba3039e93c253f00bbacb.jpg', 0, 0, 0),
             ("Shigechi", "C", 'https://imgur.com/6JKniYe', 0, 0, 0),
             ("Mikitaka", "C", 'https://imgur.com/mMs5O78', 0, 0, 0),
             ("Iggy", "C", 'https://imgur.com/HTb59id', 0, 0, 0),
             ("Formaggio", "C", 'https://imgur.com/WCQtqwq', 0, 0, 0),
             ("Stroheim", "C", 'https://imgur.com/OvyOZy3', 0, 0, 0),
+            ("Foo Fighters", "C", 'https://imgur.com/ZlCOCPn', 0, 0, 0),
+            ("Trish", "C", 'https://imgur.com/I4nMHqt', 0, 0, 0),
+            ("Hermes", "C", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/09/Ermes-Costello-and-her-Stand-Smack.jpg', 0, 0, 0),
 
             # Personnages D
             ("Abbacchio", "D", 'https://imgur.com/5FahNJl', 0, 0, 0),
-            ("Foo Fighters", "D", 'https://imgur.com/ZlCOCPn', 0, 0, 0),
+            ("Daniel Darby", "D", 'https://i.pinimg.com/736x/5e/8c/15/5e8c15dbafc2d01662eab438bcd32e9d.jpg', 0, 0, 0), #TOREVIEW
+            ("Jonathan", "D", 'https://imgur.com/dqGKC1P', 0, 0, 0),
 
             # Personnages E
-            ("Tonio", "E", 'https://imgur.com/PIXbcZb', 0, 0, 0),
             ("Straizo", "E", 'https://imgur.com/D4muQp5', 0, 0, 0),
             ("Will Zeppeli", "E", 'https://imgur.com/SVm9I2K', 0, 0, 0),
-            ("Luca", "E", 'https://imgur.com/3HamVjM', 0, 0, 0),
+            ("Boingo", "E", 'https://jojocomparisons.github.io/images/SC27/bd-02270-1090px.jpg', 0, 0, 0),
+            ("Oingo","E", 'https://64.media.tumblr.com/d8034453f7e998104a35e83911d067ec/3cfe647de86da704-47/s1280x1920/d18891e4e45818d59b3d87e7d60ae16e97a09ccb.jpg', 0, 0, 0),
 
             # Personnages F
+            ("Tonio", "F", 'https://imgur.com/PIXbcZb', 0, 0, 0),
+            ("Luca", "F", 'https://imgur.com/3HamVjM', 0, 0, 0),
+            ("Anne", "F", 'https://i.pinimg.com/736x/6e/26/d7/6e26d7d149f72e207059a9c53623bbfc.jpg', 0, 0, 0),
             ("Speedwagon", "F", 'https://imgur.com/Q4pR4ws', 0, 0, 0),
             ("Poco", "F", 'https://imgur.com/qeYo0He', 0, 0, 0),
             ("Mario Zucchero", "F", 'https://imgur.com/dBDj9C5', 0, 0, 0),
+            ("Dario Brando", "F", "https://cdn.anisearch.fr/images/character/screen/31/31596/full/479344.webp", 0, 0, 0),
 
             # """ PERSONNAGE ONE PUNCH MAN ""
 
@@ -858,11 +876,15 @@ all_synergies = [
     (83, "Souffle de la Foudre", "ATK", 0.15, "Le Souffle de la Foudre est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#FF0000"),
     (84, "Souffle de l'Eau", "ATK", 0.15, "Le Souffle de l'Eau est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#FFA500"),
     (85, "Souffle de la Fleur", "ATK", 0.15, "Le Souffle de la Fleur est une technique de combat utilisée par les pourfendeurs de démons.", image_temporaire, "#0000FF"),
-    (86, "Lunes", "ATK", 0.15, "Les Lunes sont des démons puissants qui servent Muzan.", image_temporaire, "#800080"),
+    (86, "Lune", "ATK", 0.15, "Les Lunes sont des démons puissants qui servent Muzan.", image_temporaire, "#800080"),
+    (87, "Brando", "ATK", 0.15, "Les Brando sont une famille de vampires qui cherchent à dominer le monde.", image_temporaire, "#FF0000"),
+    (88, "Maître de la Gravité", "ATK", 0.15, "Les Maîtres de la Gravité sont des personnages qui peuvent contrôler la gravité.", image_temporaire, "#FFA500"),
 ]
 
 all_link_synergies = {
-    86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lunes
+    88 : ["Kenjaku","Okuyasu","Yuki","Fujitora","Pain"], # Maître de la Gravité
+    87 : ["Dio","Diego","Giorno","Dario Brando"], # Brando
+    86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lune
     85 : ["Kanae","Kanao"], # Souffle de la Fleur
     84 : ["Sakonji","Giyu","Sabito","Makomo","Tanjiro","Murata"], # Souffle de l'Eau
     83 : ["Zenitsu","Kaigaku","Jigoro"], # Souffle de la Foudre
@@ -889,7 +911,7 @@ all_link_synergies = {
     62 : ["Kaido", "King", "Queen", "Jack"], # Équipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # Équipage de Shanks
     60 : ["Ussop","Kaya","Kuro","Merry","Yassop"],
-    59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"], # JoBros
+    59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Mohamed Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"], # JoBros
     1 : ["Itachi", "Kisame", "Deidara", "Sasori", "Hidan", "Kakuzu", "Pain", "Konan", "Zetsu", "Tobi"], # Akatsuki
     2 : ["Goku", "Vegeta", "Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla"], # Saiyan
     4 : ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
@@ -911,7 +933,7 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Réceptacle TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Abdul"],# Maître du Feu TODO
+    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maître du Feu TODO
     30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
     31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
     32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
