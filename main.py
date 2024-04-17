@@ -440,28 +440,51 @@ async def voirTeam(message, userFromDb):
 async def ajouterTeam(message, userFromDb):
     # Permet d'ajouter un personnage à son équipe
     contenu = message.content
-    if len(contenu.split(' ')) != 3:
+    if len(contenu.split(' ')) < 3:
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!ajouterteam <position> <nom personnage>**!", discord.Color.red()))
         return
-    nom = contenu.split(' ')[2]
+
+    nom = " ".join(contenu.split(' ')[2:])
+    character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
+    if character == None:
+        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
+        return
+    nom = character[1]
     position = contenu.split(' ')[1]
     if not position.isdigit():
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La position doit être un **nombre**!", discord.Color.red()))
         return
     position = int(position)
+
     if position < 1 or position > 3:
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La position doit être **comprise entre 1 et 3**!", discord.Color.red()))
         return
     character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
+
     if character == None:
-        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Vous ne possèdez pas ce personnage!", f"Vous ne possèdez pas **{nom}**", discord.Color.red()))
         return
+    
     if database.check_character_in_team(message.author.id, character[0]):
-        await message.channel.send(embed=embed_info("Personnage déjà équipé", "Ce personnage est déjà dans votre équipe!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Personnage déjà équipé", f"**{nom}** est déjà dans votre équipe!", discord.Color.red()))
         return
+    
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a ajouté {nom} à sa team en position {str(position)}.")
     database.set_team(message.author.id, message.author.name, character[0], position)
-    await message.channel.send(embed=embed_info("Personnage ajouté", f"Vous avez ajouté {nom} à votre team en position {str(position)}!", discord.Color.green(), f"Pour voir votre team, utilisez !team."))
+
+    # Génération de l'embem
+    image = character[8]
+    embed = discord.Embed(
+        title=f"{ nom } occupe désormais la position { position }.",
+        color=discord.Color.green()
+    )
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_footer(text="Pour voir votre team, tapez !team.")
+ 
+    embed.set_image(url=image)
+
+    await message.channel.send(embed=embed)
+    return
 
 async def fetch_user_from_message(message, nombre_arguments_max=2):
     # Permet de récupérer un utilisateur à partir d'un message
