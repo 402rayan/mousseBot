@@ -123,7 +123,7 @@ async def cookWithSanji(message, userFromDb):
     # Le but est que sanji vous donne un nom d'ingrédient ou d'aliment et que vous cliquiez sur la bonne réaction
     # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
     # Il y a 4 réactions différentes dont une seule bonne
-    ingredientReussis = 0; totalIngredients = 4; temps = 3
+    ingredientReussis = 0; totalIngredients = 2; temps = 3
     while ingredientReussis <= totalIngredients:
         await asyncio.sleep(2)
         retour = get_ingredient() 
@@ -143,7 +143,9 @@ async def cookWithSanji(message, userFromDb):
             ingredientReussis += 1; temps -= 0.4
         else:
             await message.channel.send(embed=embed_info("Vous avez donné le mauvais ingrédient..", "Le plat est un total désastre.", discord.Color.red()))
-    
+            return
+    await embed_histoire_character(message, "Sanji", "sanjiTaste", "sanji", "Grâce à vous, Sanji a pu préparer un plat exquis!", "Félicitations!", discord.Color.gold())
+
 def get_ingredient():
     # Fonction qui retourne un ingrédient, et une liste de 3 ingrédients aléatoires + le bon ingrédient
     ingredient = random.choice(list(CONSTANTS['INGREDIENTS'].keys()))
