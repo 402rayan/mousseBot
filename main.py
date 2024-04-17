@@ -51,8 +51,10 @@ async def on_message(message):
         await inventaire(message, userFromDb)
     elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
         await giveTicket(message, userFromDb)
-    elif contenu.startswith('!info'):
+    elif contenu.startswith('!info '):
         await info(message, userFromDb)
+    elif contenu.startswith('!infos'):
+        await infoSynergie(message, userFromDb)
     elif contenu.startswith('!team') or contenu.startswith('!voirteam') or contenu.startswith('!voir_team') or contenu.startswith('!voir_team'):
         await voirTeam(message, userFromDb)
     elif contenu.startswith('!ajouterteam') or contenu.startswith('!addteam') or contenu.startswith('!add_team') or contenu.startswith('!ajouter_team'):
@@ -392,6 +394,40 @@ async def info(message, userFromDb):
     print(synergies)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
+    await message.channel.send(embed=embed)
+
+@bot.command()
+async def infoSynergie(message, userFromDb):
+    # Permet d'obtenir les informations d'une synergie
+    contenu = message.content
+    if len(contenu.split(' ')) < 2:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!infosynergie <nom synergie>**!", discord.Color.red()))
+        return
+    # On récupère le nom (tout ce qui suit le !info)
+    nom = " ".join(contenu.split(' ')[1:])
+    synergie = database.get_synergie_by_name(userFromDb[0], userFromDb[1], nom)
+    if synergie == None:
+        await message.channel.send(embed=embed_info("Synergie introuvable", "Cette synergie **n'existe pas**!", discord.Color.red()))
+        return
+    
+    # Création de l'embed
+    nom = synergie[1]; typeOfBoost = synergie[2]; forceOfBoost = synergie[3];
+    description = synergie[4]; image = synergie[5]; color = int(synergie[6][1:], 16)
+    charactersFromSynergy = database.get_character_template_who_has_synergy(synergie[0])
+    if not charactersFromSynergy or len(charactersFromSynergy) == 0:
+        liste_personnages = "Aucun personnage n'a cette synergie."
+    else:
+        liste_personnages = " ~ ".join([character[1] for character in charactersFromSynergy])
+    embed = discord.Embed(
+        title=nom,
+        description=description,
+        color=color
+    )
+    embed.set_footer(text=f"Boost : {typeOfBoost} {forceOfBoost}")
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.add_field(name="Personnages", value=liste_personnages[:1999], inline=False)
+    embed.set_image(url=image)
+    
     await message.channel.send(embed=embed)
 
 @bot.command()

@@ -217,6 +217,29 @@ class Database:
             if template_name.lower() in template[1].lower():
                 return template
         return None
+    
+    def get_synergie_by_name(self, user_discord_id, user_name, synergy_name):
+        # Exécuter la requête SQL pour obtenir toutes les synergies
+        self.cur.execute(f"SELECT * FROM synergies")
+        all_synergies = self.cur.fetchall()
+        # Premiere étape : on vérifie si le nom est exact
+        for synergy in all_synergies:
+            if synergy[1].lower() == synergy_name.lower():
+                return synergy
+        # Deuxième étape : on vérifie si le nom est proche
+        for synergy in all_synergies:
+            if Levenshtein.distance(synergy[1].lower(), synergy_name.lower()) <= 1:
+                return synergy
+        # Troisième étape : On vérifie si le nom est dans le nom de la synergie
+        for synergy in all_synergies:
+            if synergy_name.lower() in synergy[1].lower():
+                return synergy
+        return None
+    
+    def get_character_template_who_has_synergy(self, synergy_id):
+        logger.info(f"Récupération des personnages ayant la synergie {synergy_id}.")
+        self.cur.execute(f"SELECT * FROM character_templates c JOIN character_template_synergies s ON c.template_id = s.template_id WHERE synergy_id = {synergy_id}")
+        return self.cur.fetchall()
         
     def create_character(self, user_discord_id,user_name, template_id):
         self.cur.execute(f"INSERT INTO characters (user_discord_id, template_id) VALUES ({user_discord_id}, {template_id})")

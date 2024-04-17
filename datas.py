@@ -504,6 +504,7 @@ all_characters_templates = [
             ("Jogo", "SS", 'https://64.media.tumblr.com/6fda876b0fee0316b1b2808e0b26e8cd/8cdd4038836dcaca-2c/s1280x1920/44fa45b447f79aaa38a691210c1231f041c87bf9.gifv', 0, 0, 0),
             ("Kinji Hakari", "SS", 'https://imgur.com/OSTYTVF', 0, 0, 0),
             ("Yuki Tsukumo", "SS", 'https://imgur.com/WlIBwGu', 0, 0, 0),
+            ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 0, 0, 0),
             ("Dagon", "SS", 'https://64.media.tumblr.com/97ffcdfbd6a9ea8cffef764d86fe5b11/f98a9cffd59221b8-ab/s640x960/a29d32f3a037b09966e361ebbb26d56a4aafa464.gif', 0, 0, 0),
 
             # Personnages S
