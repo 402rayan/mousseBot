@@ -14,7 +14,7 @@ CONSTANTS = {
         'F': 0.1,
     },
     'RARITY_CHANCE': {
-        'X': 1,
+        'X': 0.01,
         'SS': 0.02,
         'S': 0.05,
         'A': 0,
@@ -90,9 +90,10 @@ CONSTANTS = {
         "Baguette": "🥖",
         "Fromage": "🧀",
         "Menthe": "🌿",
-
-
-    }
+    },
+    'COLORS': {
+        'HISTOIRE' : 0x00BFFF
+    },
 }
 
 """ 

@@ -33,43 +33,86 @@ async def on_message(message):
     if not(contenu.startswith('!')) :
         return
     database.insert_user(auteur.id, auteur.name)
+    userFromDb = database.getUser(auteur.id)
+    if not userFromDb:
+        logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
+        return
     if contenu.startswith('!tickets'):
-        await getTickets(message)
+        await getTickets(message, userFromDb)
     elif contenu.startswith('!daily'):
-        await claimDaily(message)
+        await claimDaily(message, userFromDb)
     elif contenu.startswith('!admin'):
-        await admin(message)
+        await admin(message, userFromDb)
     elif contenu.startswith('!list_command') or contenu.startswith('!help'):
-        await list_command(message)
+        await list_command(message, userFromDb)
     elif contenu.startswith('!invo') or contenu.startswith('!sum'):
-        await invocation(message)
+        await invocation(message, userFromDb)
     elif contenu.startswith('!inv') or contenu.startswith('!pers') or contenu.startswith('!bag'):
-        await inventaire(message)
+        await inventaire(message, userFromDb)
     elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
-        await giveTicket(message)
+        await giveTicket(message, userFromDb)
     elif contenu.startswith('!info'):
-        await info(message)
+        await info(message, userFromDb)
     elif contenu.startswith('!team') or contenu.startswith('!voirteam') or contenu.startswith('!voir_team') or contenu.startswith('!voir_team'):
-        await voirTeam(message)
+        await voirTeam(message, userFromDb)
     elif contenu.startswith('!ajouterteam') or contenu.startswith('!addteam') or contenu.startswith('!add_team') or contenu.startswith('!ajouter_team'):
-        await ajouterTeam(message)
+        await ajouterTeam(message, userFromDb)
     elif contenu.startswith('!sell') or contenu.startswith('!vendre'):
-        await sell(message)
+        await sell(message, userFromDb)
     elif contenu.startswith('!create'):
-        await createTemplates(message)
+        await createTemplates(message, userFromDb)
+    elif contenu.startswith('!his'):
+        await histoire(message, userFromDb)
+    # A supp
     elif contenu.startswith('!purple'):
-        await purple(message)
+        await purple(message, userFromDb)
     elif contenu.startswith('!cookWithSanji'):
-        await cookWithSanji(message)
+        await cookWithSanji(message, userFromDb)
     elif contenu.startswith('!reset'):
-        await reset(message)
+        await reset(message, userFromDb)
 
 
 # Fonctions
 
 # Partie Histoire
+async def histoire(message, userFromDb):
+    if not userFromDb:
+        logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
+        return
+    niveau = getNiveauFromUser(userFromDb)
+    if niveau == 1:
+        await niveau1(message, userFromDb)
+    elif niveau == 2:
+        await niveau2(message, userFromDb)
 
-async def cookWithSanji(message):
+async def niveau1(message, userFromDb):
+    await message.channel.send(embed=embed_naratteur("Niveau 1 - Introduction", ""))
+    await asyncio.sleep(2)
+    await finDeNiveau(message, userFromDb, 2)
+
+async def niveau2(message, userFromDb):
+    await message.channel.send(embed=embed_naratteur("Niveau 2 - La forêt", ""))
+    await asyncio.sleep(2)
+    await finDeNiveau(message, userFromDb, 3)
+    
+def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None):
+    embed = discord.Embed(
+        title=titre,
+        description=description,
+        color=color
+    )
+    nom = "Histoire" if not niveau else f"Histoire - Niv.{niveau}"
+    embed.set_author(name=nom, icon_url=bot.user.avatar_url)
+    return embed
+
+async def finDeNiveau(message, userFromDb, level):
+    database.updateNiveauHistoire(userFromDb[1], level)
+    await message.channel.send(embed=embed_naratteur(f"Vous avez terminé le niveau {str(level-1)}!", f"Vous êtes maintenant au niveau {str(level)}!"))
+
+def getNiveauFromUser(user):
+    return user[8]
+
+async def cookWithSanji(message, userFromDb):
     await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "","Sanji a besoin de votre aide pour cuisiner!", discord.Color.gold())
     # Le but est que sanji vous donne un nom d'ingrédient ou d'aliment et que vous cliquiez sur la bonne réaction
     # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
@@ -106,7 +149,7 @@ def get_ingredient():
     random.shuffle(liste_reactions)
     return ingredient, liste_reactions
 
-async def purple(message):
+async def purple(message, userFromDb):
     await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Fuyez aussi vite que vous pouvez!","Purple Haze a déclenché son virus!", discord.Color.purple())
     alive = True
     ticketsGagnes = 0
@@ -159,7 +202,7 @@ def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, co
 
 
 @bot.command()
-async def list_command(message):
+async def list_command(message, userFromDb):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
     commande = {
         "!tickets": "Permet de voir le nombre de tickets que vous avez.",
@@ -184,7 +227,7 @@ async def list_command(message):
     await message.channel.send(embed=embed)
 
 @bot.command()
-async def getTickets(message):
+async def getTickets(message, userFromDb):
     logger.info(f"Commande !tickets appelée par {message.author.name} ({message.author.id}).")
     user = await fetch_user_from_message(message, 2)
     if not user:
@@ -198,7 +241,7 @@ async def getTickets(message):
     await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue()))
 
 @bot.command()
-async def claimDaily(message):
+async def claimDaily(message, userFromDb):
     user = message.author
     claim = database.claim_daily(user.id, user.name)
     if claim[0]:
@@ -214,7 +257,7 @@ async def claimDaily(message):
         await message.channel.send(embed=embed_info(titre , response, discord.Color.red()))
     
 @bot.command()
-async def admin(message):
+async def admin(message, userFromDb):
     liste_templates = database.get_character_templates()
     response = "Liste des templates de personnages:\n"
     for template in liste_templates:
@@ -222,7 +265,7 @@ async def admin(message):
     await message.channel.send(response[:2000])
 
 @bot.command()
-async def invocation(message):
+async def invocation(message, userFromDb):
     # On vérifie si l'utilisateur a assez de tickets
     tickets = database.get_tickets(message.author.id)
     if tickets < CONSTANTS['INVOCATION_COST']:
@@ -256,7 +299,7 @@ async def invocation(message):
 
 
 @bot.command()
-async def inventaire(message):
+async def inventaire(message, userFromDb):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
     if characters == None or len(characters) == 0:
@@ -279,7 +322,7 @@ async def inventaire(message):
     await message.channel.send(embed=embed)
 
 @bot.command()
-async def giveTicket(message):
+async def giveTicket(message, userFromDb):
     # Fonction qui permet à un joueur A de donner x tickets à un joueur B
     contenu = message.content
     if len(contenu.split(' ')) != 3:
@@ -324,7 +367,7 @@ def idDiscordToInt(idDiscord):
         return None
 
 @bot.command()
-async def info(message):
+async def info(message, userFromDb):
     # Permet d'obtenir les informations d'un personnage
     contenu = message.content
     if len(contenu.split(' ')) < 2:
@@ -352,7 +395,7 @@ async def info(message):
     await message.channel.send(embed=embed)
 
 @bot.command()
-async def voirTeam(message): 
+async def voirTeam(message, userFromDb): 
     # Permet de voir ses personnages équipés en teams, ou la team d'un autre joueur
     user = await fetch_user_from_message(message, 2)
     if not user:
@@ -394,7 +437,7 @@ async def voirTeam(message):
     return
 
 @bot.command()
-async def ajouterTeam(message):
+async def ajouterTeam(message, userFromDb):
     # Permet d'ajouter un personnage à son équipe
     contenu = message.content
     if len(contenu.split(' ')) != 3:
@@ -439,7 +482,7 @@ async def fetch_user_from_message(message, nombre_arguments_max=2):
     return message.author
 
 @bot.command()
-async def sell(message):
+async def sell(message, userFromDb):
     # Permet de vendre un personnage
     contenu = message.content
     if len(contenu.split(' ')) != 2:
@@ -475,7 +518,7 @@ async def sell(message):
     await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
 
 @bot.command()
-async def createTemplates(message):
+async def createTemplates(message, userFromDb):
     if message.author.id != 724383641752436757:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
@@ -483,7 +526,7 @@ async def createTemplates(message):
     await message.channel.send(embed=embed_info("Templates créés", "Les templates de personnages ont été créés!", discord.Color.green()))
 
 @bot.command()
-async def reset(message):
+async def reset(message, userFromDb):
     if message.author.id != 724383641752436757:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return

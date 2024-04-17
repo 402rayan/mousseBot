@@ -53,6 +53,7 @@ class Database:
             character_slot_one INTEGER,
             character_slot_two INTEGER,
             character_slot_three INTEGER,
+            histoireLevel INTEGER DEFAULT 1,
             FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
@@ -114,6 +115,16 @@ class Database:
         )
         ''')
         self.conn.commit()
+    
+    def crate_user_choices(self):
+        self.cur.execute('''
+        CREATE TABLE IF NOT EXISTS user_choices (
+            user_discord_id TEXT,
+            lvl1fumee BOOLEAN DEFAULT NULL,
+            lvl1feu BOOLEAN DEFAULT NULL,
+            FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
+        )
+        ''')
 
     def create_tables(self):
         self.create_user_table()
@@ -121,6 +132,7 @@ class Database:
         self.create_character_table()
         self.create_synergy_table()
         self.create_character_template_synergy_table()
+        self.crate_user_choices()
         self.conn.commit()
         logger.info("Les tables ont été créées.")
         
@@ -130,7 +142,9 @@ class Database:
         self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
         user = self.cur.fetchone()
         if user is None:
-            self.cur.execute(f"INSERT INTO users (user_discord_id, user_name) VALUES ({user_discord_id}, '{user_name}')")
+            self.cur.execute(f"INSERT INTO users (user_discord_id, user_name, tickets) VALUES ({user_discord_id}, '{user_name}', 10)")
+            # On l'insère aussi dans la table des choix
+            self.cur.execute(f"INSERT INTO user_choices (user_discord_id) VALUES ({user_discord_id})")
             self.conn.commit()
             logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a été inscrit dans la base de données.")
         else:
@@ -422,3 +436,18 @@ class Database:
             return None
         return template[0]
         
+
+    # Mode histoire
+
+    def getChoices(self, user_discord_id):
+        self.cur.execute(f"SELECT * FROM user_choices WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()
+    
+    def getUser(self, user_discord_id):
+        self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()
+
+    def updateNiveauHistoire(self, user_discord_id, niveau):
+        self.cur.execute(f"UPDATE users SET histoireLevel = {niveau} WHERE user_discord_id = {user_discord_id}")
+        logger.info(f"Le niveau d'histoire de l'utilisateur {user_discord_id} a été mis à jour à {niveau}.")
+        self.conn.commit()
