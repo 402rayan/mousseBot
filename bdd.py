@@ -432,7 +432,7 @@ class Database:
         self.conn.commit()
         logger.info("Toutes les données ont été ajoutées à la base de données.")
 
-    def reset(self):
+    def reset(self,verbose=False):
         self.cur.execute("DROP TABLE IF EXISTS users")
         self.cur.execute("DROP TABLE IF EXISTS characters")
         self.cur.execute("DROP TABLE IF EXISTS character_templates")
@@ -440,8 +440,10 @@ class Database:
         self.cur.execute("DROP TABLE IF EXISTS character_template_synergies")
         self.conn.commit()
         self.create_tables()
+
         self.createAllDatas()
-        logger.info("Les tables ont été supprimées.")
+        if verbose:
+            logger.info("Les tables ont été supprimées.")
 
     def createGifsFromDatabase(self):
         self.cur.execute("SELECT * FROM character_templates")

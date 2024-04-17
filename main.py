@@ -70,6 +70,8 @@ async def on_message(message):
         await purple(message, userFromDb)
     elif contenu.startswith('!cookWithSanji'):
         await cookWithSanji(message, userFromDb)
+    elif contenu.startswith('!labyrinthe'):
+        await labyrinthe(message, userFromDb)
     elif contenu.startswith('!reset'):
         await reset(message, userFromDb)
 
@@ -96,7 +98,9 @@ async def niveau2(message, userFromDb):
     await message.channel.send(embed=embed_naratteur("Niveau 2 - La forêt", ""))
     await asyncio.sleep(2)
     await finDeNiveau(message, userFromDb, 3)
-    
+
+
+
 def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None):
     embed = discord.Embed(
         title=titre,
@@ -182,6 +186,74 @@ async def purple(message, userFromDb):
             await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez récupéré un ticket!", discord.Color.green(), f"Tickets sur vous : {ticketsGagnes}."))
             await asyncio.sleep(2.5)
     return
+
+async def labyrinthe(message, userFromDb):
+    maison = {
+    'Entrée': ['Salon', 'Écurie'],
+    'Chambre 1': ['Salle de bain', 'Chambre 2'],
+    'Cuisine': ['Salon', 'Cellier','Bureau'],
+    'Salon': ['Entrée', 'Cuisine', 'Bureau', 'Chambre 1'],
+    'Salle de bain': ['Chambre 1'],
+    'Bureau': ['Salon', 'Bibliothèque','Cuisine'],
+    'Cave': [], 
+    'Grenier': ['Chambre 3'],
+    'Cellier': ['Cuisine'],
+    'Chambre 3': ['Grenier', 'Chambre 2','Écurie'],
+    'Chambre 2': ['Chambre 1', 'Chambre 3'],
+    'Forge': ['Écurie','Cellier'],
+    'Écurie': ['Forge', 'Entrée'],
+    'Bibliothèque': ['Bureau', 'Cave']  
+}
+    pieceActuelle = 'Entrée'
+    pieceFinale = 'Cave'
+    ticketsRamasses = 0
+    hasDiscoveredSdb = False; hasDiscoveredGrenier = False; hasDiscoveredForge = False
+    listeEmojis = ['1️⃣', '2️⃣', '3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣']
+    while pieceActuelle != pieceFinale:
+        if pieceActuelle == 'Salle de bain' and not hasDiscoveredSdb:
+            hasDiscoveredSdb = True
+            await message.channel.send(embed=embed_info(f"Vous avez découvert un ticket dans la salle de bain!", "", discord.Color.gold()))
+            await asyncio.sleep(2)
+            ticketsRamasses += 1
+        if pieceActuelle == 'Grenier' and not hasDiscoveredGrenier:
+            hasDiscoveredGrenier = True
+            await message.channel.send(embed=embed_info(f"Vous avez découvert un ticket dans le grenier!", "", discord.Color.gold()))
+            await asyncio.sleep(2)
+            ticketsRamasses += 1
+        if pieceActuelle == 'Forge' and not hasDiscoveredForge:
+            hasDiscoveredForge = True
+            await message.channel.send(embed=embed_info(f"Vous sentez une présence...", "", discord.Color.dark_gray()))
+            await asyncio.sleep(2)
+            await message.channel.send(embed=embed_info(f"La présence se rapproche!!!", "", discord.Color.dark_gray()))
+            await asyncio.sleep(2)
+            await message.channel.send(embed=embed_info(f"Ce n'était qu'un petit chat mignon!", "", discord.Color.dark_orange()))
+            await asyncio.sleep(2)
+            await message.channel.send(embed=embed_info(f"Le chat se transforme..", "Combat contre Yoruichi", discord.Color.gold()))
+            await message.channel.send(embed=embed_info(f"Après avoir battu Yoruichi, vous trouvez 6 tickets dans sa poche!", "", discord.Color.gold()))
+            await asyncio.sleep(2)
+            ticketsRamasses += 6
+        if ticketsRamasses <= 0:
+            await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"", discord.Color.blue()))
+        else:
+            await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"Tickets trouvés : {ticketsRamasses}", discord.Color.blue()))
+        await asyncio.sleep(2)
+        listePiecesAvailables = maison[pieceActuelle]
+        listePiecesAvailables = random.sample(listePiecesAvailables, len(listePiecesAvailables))
+        description = ""
+        for i in range(len(listePiecesAvailables)):
+            description += f"{listeEmojis[i]} : {listePiecesAvailables[i]}\n"
+        msg = await message.channel.send(embed=embed_info("Choisissez une pièce à explorer :", description, discord.Color.blue()))
+        for i in range(len(listePiecesAvailables)):
+            await msg.add_reaction(listeEmojis[i])
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in listeEmojis)
+        except:
+            await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+            return
+        pieceActuelle = listePiecesAvailables[listeEmojis.index(str(reaction.emoji))]
+    await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez trouvé la sortie de la cave!", discord.Color.green()))
+        
+
 
 def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold()):
     files = []
@@ -589,7 +661,7 @@ async def reset(message, userFromDb):
     if message.author.id != 724383641752436757:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
-    database.reset()
+    database.reset(False)
     await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
 
 # Fonction qui envoie un message d'information style embed d'information
