@@ -391,7 +391,7 @@ all_characters_templates = [
             # """ PERSONNAGE HUNTER X HUNTER"""
             # Personnages X
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
-            ("Gon Adulte", "X", image_temporaire, 0, 0, 0),
+            ("Gon Freecss", "X", "https://64.media.tumblr.com/704dfb6cff638b74862be478cd16f0ee/tumblr_p20mqwIbSZ1w0ii2ho1_1280.gifv", 0, 0, 0),
             ("Netero", "X", image_temporaire, 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
             # Personnages SS
@@ -421,7 +421,6 @@ all_characters_templates = [
             ("Sharnak", "A", 'https://i.imgur.com/EwSJxbs.png', 0, 0, 0),
             ("Biscuit", "A", 'https://i.imgur.com/3WUyIRV.png', 0, 0, 0),
             ("Razor", "A", 'https://i.imgur.com/0quOdEi.png', 0, 0, 0), #TOREVIEW
-            ("Gon", "A", 'https://i.imgur.com/8cMbCOF.png', 0, 0, 0),
             ("Pariston", "A", 'https://i.imgur.com/71ouSTW.png', 0, 0, 0),
             # Personnages B
             ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 0, 0, 0),

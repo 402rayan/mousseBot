@@ -293,8 +293,9 @@ class Database:
     
     def inventaire(self, user_discord_id, user_name):
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
-        inventaire = self.get_characters(user_discord_id)
-        return inventaire
+        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id}")
+        characters = self.cur.fetchall()
+        return characters
     
     def check_user(self, user_discord_id):
         self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
@@ -481,3 +482,8 @@ class Database:
     def get_character_template_by_rarity(self, rarity):
         self.cur.execute(f"SELECT * FROM character_templates WHERE rarity = '{rarity}'")
         return self.cur.fetchone()
+    
+    def setLevel(self, user_discord_id, level):
+        self.cur.execute(f"UPDATE users SET histoireLevel = {level} WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+        logger.info(f"Le niveau d'histoire de l'utilisateur {user_discord_id} a été mis à jour à {level}.")

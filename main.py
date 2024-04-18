@@ -70,12 +70,19 @@ async def handle_user_level(message, userFromDb):
         3: niveau3
     }
     niveau = getNiveauFromUser(userFromDb)
+    equipe = database.get_team(userFromDb[1],userFromDb[2])
+    if not equipe:
+        logger.error(f"Erreur lors de la récupération de l'équipe de l'utilisateur {message.author.name} ({message.author.id}).")
+        return
+    if None in equipe['team']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous devez avoir une équipe complète pour continuer l'histoire!", discord.Color.red()))
+        return
     handler = level_to_function.get(niveau)
     if handler:
-        await handler(message, userFromDb)
+        await handler(message, userFromDb, equipe)
     else:
         logger.error(f"Niveau inconnu {niveau} pour l'utilisateur {message.author.name} ({message.author.id}).")
-        message.channel.send(embed=embed_info("Erreur", "Niveau inconnu.", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Erreur", "Niveau inconnu.", discord.Color.red()))
 
 async def histoire(message, userFromDb):
     if not userFromDb:
@@ -83,34 +90,91 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
-async def niveau1(message, userFromDb):
-    await message.channel.send(embed=embed_naratteur("Niveau 1 - Introduction", ""))
-    await asyncio.sleep(2)
-    await finDeNiveau(message, userFromDb, 2)
-
-async def niveau2(message, userFromDb):
-    await message.channel.send(embed=embed_naratteur("Niveau 2 - La forêt", ""))
-    await asyncio.sleep(2)
-    await finDeNiveau(message, userFromDb, 3)
-
-async def niveau3(message, userFromDb):
-    await message.channel.send(embed=embed_naratteur("Niveau 3 - La montagne", ""))
+async def niveau3(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 3, "La montagne", equipe, CONSTANTS['COLORS']['MONTAGNE'])
     await asyncio.sleep(2)
     await finDeNiveau(message, userFromDb, 4)
 
-def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None):
+async def niveau2(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 2, "La forêt", equipe, CONSTANTS['COLORS']['FORET'])
+    await asyncio.sleep(2)
+    await finDeNiveau(message, userFromDb, 3)
+
+async def niveau1(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['HISTOIRE'])
+    await asyncio.sleep(3)
+    await message.channel.send(embed=embed_naratteur("Cinématique : Enrico Pucci détruit l'univers...", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    await asyncio.sleep(4.5)
+    await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans un indroit inconnu.. une autre personne semble ne pas être très loin..", ""))
+    await asyncio.sleep(4.5)
+    await message.channel.send(embed=embed_naratteur("Vous semblez être dans une forêt..", "", CONSTANTS['COLORS']['FORET']))
+    await asyncio.sleep(4.5)
+    await embed_histoire_character(message,"Un homme inconnu vous demande : ", "", "inconnu", "", "Tout va bien?", CONSTANTS['COLORS']['INCONNU'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à défiler inexorablement.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(5)
+    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'ai alors aperçu un homme vêtu d'une chape noire et puis.. je me suis réveillé ici.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Inconu", "", "inconnu", "", "Un bruit surgit..", CONSTANTS['COLORS']['INCONNU'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Saibaman", "saibaman", "saibaman", "", "Un monstre vous attaque!", CONSTANTS['COLORS']['SAIBAMAN'])
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_info("Combat contre le Saibaman", "Vous avez vaincu le Saibaman!", discord.Color.green()))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "Impressionant!", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "Je crois apercevoir de la fumée vers là-bas.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_raw("Un bruit retentit de l'autre côté de la forêt..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(5)
+    description = "🌲 : Aller vers la forêt" + "\n💨 : Aller vers la fumée"
+    msg = await embed_histoire_character(message,"Shanks :", "", "shanks", description, "Où devrions-nous aller?", CONSTANTS['COLORS']['SHANKS'])
+    for reaction in ['🌲','💨']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🌲', '💨'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) == '🌲':
+        await message.channel.send(embed=embed_raw("Vous partez en route vers la forêt.", "", CONSTANTS['COLORS']['FORET']))
+    if str(reaction.emoji) == '💨':
+        await message.channel.send(embed=embed_raw("Vous partez en route vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
+    await finDeNiveau(message, userFromDb, 2)
+
+async def test(message, userFromDb):
+    await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à tournoyer inlassablement.\nJ'ai alors aperçu une sorte de prêtre, et je me suis réveiller ici..", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
+
+def embed_raw(titre,description,color):
+    embed = discord.Embed(
+        title=titre,
+        description=description,
+        color=color
+    )
+    return embed
+
+def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None, footer=None):
     embed = discord.Embed(
         title=titre,
         description=description,
         color=color
     )
     nom = "Histoire" if not niveau else f"Histoire - Niv.{niveau}"
+    if footer:
+        embed.set_footer(text=footer)
     embed.set_author(name=nom, icon_url=bot.user.avatar_url)
     return embed
 
 async def finDeNiveau(message, userFromDb, level):
     database.updateNiveauHistoire(userFromDb[1], level)
-    await message.channel.send(embed=embed_naratteur(f"Vous avez terminé le niveau {str(level-1)}!", f"Vous êtes maintenant au niveau {str(level)}!"))
+    await message.channel.send(embed=embed_naratteur(f"Félicitations! Vous avez terminé le niveau {str(level-1)}!", f"",discord.Color.green()))
+
+async def debutDeNiveau(message, userFromDb, level,nom, equipe, couleur=discord.Color.gold()):
+    description = "Équipe: " + " ~ ".join([f"{equipe['team'][i][6]}" for i in range(len(equipe['team']))])
+    await message.channel.send(embed=embed_naratteur(f"Niveau {str(level)} - {nom}", "", couleur,"",description))
 
 def getNiveauFromUser(user):
     return user[8]
@@ -386,7 +450,8 @@ async def invocation(message, userFromDb):
             await asyncio.sleep(3.5)
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
         await asyncio.sleep(random.randint(1, 3))
-        await msg.channel.send(embed=embed_invocation(template))
+        await msg.delete()
+        await message.channel.send(embed=embed_invocation(template))
     return
 
 
@@ -394,6 +459,7 @@ async def invocation(message, userFromDb):
 async def inventaire(message, userFromDb):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
+    print(characters)
     if characters == None or len(characters) == 0:
         await message.channel.send(embed=embed_info("Inventaire vide", "Votre inventaire est vide!", discord.Color.red()))
         return
@@ -690,6 +756,18 @@ async def reset(message, userFromDb):
     database.reset(False)
     await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
 
+@bot.command()
+async def setLevel(message, userFromDb):
+    level = message.content.split(' ')[1]
+    if not level.isdigit():
+        await message.channel.send(embed=embed_info("Erreur", "Le niveau doit être un nombre!", discord.Color.red()))
+        return
+    level = int(level)
+    if level < 1 or level > 100:
+        await message.channel.send(embed=embed_info("Erreur", "Le niveau doit être compris entre 1 et 100!", discord.Color.red()))
+        return
+    database.setLevel(message.author.id, level)
+    await message.channel.send(embed=embed_info("Niveau modifié", f"Votre niveau a été modifié à {level}!", discord.Color.green()))
 # Fonction qui envoie un message d'information style embed d'information
 def embed_info(title, description, color=discord.Color.blue(),footer=None):
     embed = discord.Embed(
@@ -719,7 +797,6 @@ def embed_invocation(character_template):
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
-
 
 commands = {
     "tickets": getTickets,
@@ -754,12 +831,14 @@ commands = {
     "vendre": sell,
     "create": createTemplates,
     "his": histoire,
-    "purple": purple,
-    "cookWithSanji": cookWithSanji,
-    "labyrinthe": labyrinthe,
+    "pur": purple,
+    "cook": cookWithSanji,
+    "laby": labyrinthe,
     "reset": reset,
-    "couleur": couleur,
-    "liste": liste
+    "coul": couleur,
+    "liste": liste,
+    "setlevel": setLevel,
+    "test": test
 }
 
 
