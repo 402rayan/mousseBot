@@ -34,7 +34,8 @@ CONSTANTS = {
     'D': 0x1E9021,
     'E': 0xD3CB34,
     'F': 0x9CA1A7,
-}
+},
+    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X']
 
 
 ,

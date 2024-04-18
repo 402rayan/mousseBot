@@ -76,7 +76,8 @@ async def on_message(message):
         await reset(message, userFromDb)
     elif contenu.startswith('!couleur'):
         await couleur(message, userFromDb)
-
+    elif contenu.startswith('!liste '):
+        await liste(message, userFromDb)
 # Fonctions
 
 # Partie Histoire
@@ -273,6 +274,19 @@ def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, co
     return message.channel.send(files=files, embed=embed)
         
 # Fin Partie Histoire
+@bot.command()
+async def liste(message, userFromDb):
+    # Retourne la liste de tous les persos de rang
+    rang = message.content.split(' ')[1]
+    if rang not in CONSTANTS['RARITY']:
+        await message.channel.send(embed=embed_info("Erreur", "Le rang n'est pas valide!", discord.Color.red()))
+        return
+    liste = database.get_character_templates()
+    response = "Liste des personnages:\n"
+    for character in liste:
+        if character[2] == rang:
+            response += f"{character[1]},"
+    await message.channel.send(response[:2000])
 
 @bot.command()
 async def couleur(message, userFromDb):
