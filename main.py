@@ -100,7 +100,6 @@ async def niveau2(message, userFromDb):
     await finDeNiveau(message, userFromDb, 3)
 
 
-
 def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None):
     embed = discord.Embed(
         title=titre,
@@ -616,35 +615,43 @@ async def fetch_user_from_message(message, nombre_arguments_max=2):
 
 @bot.command()
 async def sell(message, userFromDb):
+    logger.info(f"Commande !sell appelée par {message.author.name} ({message.author.id}).")
     # Permet de vendre un personnage
+       # Permet d'ajouter un personnage à son équipe
     contenu = message.content
-    if len(contenu.split(' ')) != 2:
-        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!sell <nom personnage>**!", discord.Color.red()))
+    if len(contenu.split(' ')) < 2:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!ajouterteam <position> <nom personnage>**!", discord.Color.red()))
         return
-    nom = contenu.split(' ')[1]
-    character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
+    nom = " ".join(contenu.split(' ')[1:])
+    character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
     if character == None:
         await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
+        return
+    nom = character[1]
+    character = database.get_character_by_name_and_user(message.author.id, message.author.name, nom)
+    if character == None:
+        await message.channel.send(embed=embed_info("Vous ne possèdez pas ce personnage!", f"Vous ne possèdez pas **{nom}**", discord.Color.red()))
         return
     nom = character[6]
     rarity = str(character[7])
     tickets_obtenus = CONSTANTS['RARITY_PRICE'][rarity]
     # Demandez confirmation
-    response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets? (réagissez)"
-    msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.gold()))
-    await msg.add_reaction('✅')
-    await msg.add_reaction('❌')
-    # On met une réaction pour confirmer et on attend 30 secondes que l'utilisateur réagisse
-    try:
-        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
-    except:
-        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
-        return
-    if str(reaction.emoji):
-        print("Réaction reçue")
-    if str(reaction.emoji) != '✅':
-        await message.channel.send(embed=embed_info("Vente annulée", "Vous avez annulé la vente!", discord.Color.red()))
-        return
+    if rarity in ["X", "SS", "S", "A"]:
+        response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets? (réagissez)"
+        msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.gold()))
+        await msg.add_reaction('✅')
+        await msg.add_reaction('❌')
+        # On met une réaction pour confirmer et on attend 30 secondes que l'utilisateur réagisse
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+        except:
+            await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+            return
+        if str(reaction.emoji):
+            print("Réaction reçue")
+        if str(reaction.emoji) != '✅':
+            await message.channel.send(embed=embed_info("Vente annulée", "Vous avez annulé la vente!", discord.Color.red()))
+            return
     database.sell_character(message.author.id,message.author.name, character[0])
     database.update_tickets(message.author.id, database.get_tickets(message.author.id) + tickets_obtenus)
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {rarity} tickets.")

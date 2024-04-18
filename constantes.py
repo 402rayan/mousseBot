@@ -3,7 +3,7 @@ CONSTANTS = {
     'INVOCATION_COST': 0,
     'MAX_CHARACTERS': 20,
     'RARITY_PRICE': {
-        'X': 0.1,
+        'X': 100,
         'SS': 50,
         'S': 25,
         'A': 10,
