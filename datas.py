@@ -470,7 +470,7 @@ all_characters_templates = [
             ("Mai", "A", image_temporaire, 0, 0, 0),
 
             # Personnages B
-            ("Jet", "B", image_temporaire, 0, 0, 0),
+            ("Jet", "B", "image_temporaire", 0, 0, 0),
             ("Haru", "B", image_temporaire, 0, 0, 0),
             ("June", "B", image_temporaire, 0, 0, 0),
 
@@ -666,6 +666,11 @@ all_characters_templates = [
             ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 0, 0, 0),
             ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 0, 0, 0),
             ("Dario Brando", "F", "https://cdn.anisearch.fr/images/character/screen/31/31596/full/479344.webp", 0, 0, 0),
+            ("Tama", "F", 'https://static.wikia.nocookie.net/jjba/images/c/c3/Tama_AV.png/revision/latest?cb=20161020082753', 0, 0, 0), #ALICE
+
+
+
+            
 
             # """ PERSONNAGE ONE PUNCH MAN ""
 
@@ -781,9 +786,9 @@ all_characters_templates = [
             ("Aoi Kanzaki", "F", image_temporaire, 0, 0, 0),
             ("Sumi", "F", image_temporaire, 0, 0, 0),
             ("Kiyo", "F", image_temporaire, 0, 0, 0),
-            ("Naho", "F", image_temporaire, 0, 0, 0),
-            ("Goto", "F", image_temporaire, 0, 0, 0),
-            ("Kaburamaru", "F", image_temporaire, 0, 0, 0),
+            ("Naho", "F", 'https://media.tenor.com/loSeXIWYBz4AAAAe/kimetsu-no-yaiba-naho.png', 0, 0, 0),
+            ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
+            ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
 
             # """ PERSONNAGE FMAB """
             # Personnages X
@@ -800,7 +805,7 @@ all_characters_templates = [
             ("Kimbley", "S", image_temporaire, 0, 0, 0),
             ("Selim", "S", image_temporaire, 0, 0, 0),
             # Personnages A
-            ("Ling Yao", "A", image_temporaire, 0, 0, 0),
+            ("Ling Yao", "A", 'image_temporaire', 0, 0, 0),
             ("Envy", "A", image_temporaire, 0, 0, 0),
             ("Sloth", "A", image_temporaire, 0, 0, 0),
             ("Glutonny", "A", image_temporaire, 0, 0, 0),
@@ -808,31 +813,34 @@ all_characters_templates = [
             ("Olivia Mira Armstrong", "A", image_temporaire, 0, 0, 0),
             ("Alex Louis Armstrong", "A", image_temporaire, 0, 0, 0),
             # Personnages B
-            ("Maes Hughes", "B", image_temporaire, 0, 0, 0),
-            ("Mei Chang", "B", image_temporaire, 0, 0, 0),
-            ("Riza Hawkeye", "B", image_temporaire, 0, 0, 0),
-            ("Lan Fan", "B", image_temporaire, 0, 0, 0),
-            ("Fu", "B", image_temporaire, 0, 0, 0),
-            ("Alex Louis Armstrong", "B", image_temporaire, 0, 0, 0),
+            ("Maes Hughes", "B", 'https://dotandline.net/wp-content/uploads/2019/04/1oBfz_9RwpI-l8nNc0-1LPA-1210x642.jpg', 0, 0, 0),
+            ("Mei Chang", "B", 'https://static.wikia.nocookie.net/fma/images/5/54/MayChanAnime.jpg/revision/latest?cb=20140313183202&path-prefix=fr', 0, 0, 0),
+            ("Riza Hawkeye", "B", 'https://static.wikia.nocookie.net/fma/images/4/45/RizaHawkeye2009.png/revision/latest?cb=20160109014818&path-prefix=pt-br', 0, 0, 0),
+            ("Lan Fan", "B", 'https://m.media-amazon.com/images/M/MV5BOGUwMWZmZWItNmNjMS00YWVlLWJmNzMtNjM1ZjQ5OWJlOTY2XkEyXkFqcGdeQXVyNzg5MjYxOTU@._V1_.jpg', 0, 0, 0),
+            ("Fu", "B", 'https://randomc.net/image/Fullmetal%20Alchemist/Fullmetal%20Alchemist%20-%2056%20-%20Large%2039.jpg', 0, 0, 0),
+            ("Buccaneer", "B", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/FMA-Best-Non-Alchemists-buccaneeer-7.jpg?q=50&fit=crop&w=767&dpr=1.5', 0, 0, 0),
+            ("Sig Curtis", "B", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/FMA-Best-Non-Alchemists-sig-curtis-3.jpg?q=50&fit=crop&w=767&dpr=1.5', 0, 0, 0),
             # Personnages C
-            ("Heinkel", "C", image_temporaire, 0, 0, 0),
-            ("Marcoh", "C", image_temporaire, 0, 0, 0),
-            ("Darius", "C", image_temporaire, 0, 0, 0),
+            ("Heinkel", "C", 'https://static.wikia.nocookie.net/fma/images/3/3e/Heinkel.png/revision/latest?cb=20131124151120&path-prefix=es', 0, 0, 0),
+            ("Marcoh", "C", 'https://static.wikia.nocookie.net/fullmetal-alchemist-database/images/d/dd/TimMarcohEp06.png/revision/latest?cb=20121003100124', 0, 0, 0),
+            ("Darius", "C", 'https://img.wattpad.com/3780bf7629942b356c600cdc065782c5d4333c60/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f427872452d6773334b4849652d513d3d2d313830362e313631343435356662633330396231663839373830363932373030352e6a7067?s=fit&w=720&h=720', 0, 0, 0),
+            ("Frère de Scar", "C", 'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/collage-maker-16-jun-2023-02-16-pm-2173.jpg?q=50&fit=crop&w=767&dpr=1.5', 0, 0, 0),
             # Personnages D
-            ("Maria Ross", "E", image_temporaire, 0, 0, 0),
-            ("Miles", "E", image_temporaire, 0, 0, 0),
-            ("Falman", "E", image_temporaire, 0, 0, 0),
+            ("Maria Ross", "E", 'https://64.media.tumblr.com/26534a85011494bcf1b060f800b85124/tumblr_inline_psfbw4azHw1rjaji1_640.pnj', 0, 0, 0),
+            ("Miles", "E", 'https://static.wikia.nocookie.net/fma/images/1/1f/Mayor_Miles.jpg/revision/latest/scale-to-width-down/1280?cb=20120728223951&path-prefix=es', 0, 0, 0),
+            ("Falman", "E", 'https://static.wikia.nocookie.net/fma/images/e/ea/Falman_end.jpg/revision/latest?cb=20100706161631', 0, 0, 0),
+            ("Barry the Chopper", "E", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/FMA-Best-Non-Alchemists-barry-the-chopper-8.jpg', 0, 0, 0),
             # Personnages E
-            ("Paninya", "E", image_temporaire, 0, 0, 0),
-            ("Havoc", "E", image_temporaire, 0, 0, 0),
-            ("Heymans", "E", image_temporaire, 0, 0, 0),
-            ("Fuery", "E", image_temporaire, 0, 0, 0),
+            ("Paninya", "E", 'https://static.wikia.nocookie.net/fma/images/6/64/Paninya_blade.jpg/revision/latest?cb=20100117071553', 0, 0, 0),
+            ("Havoc", "E", 'https://pm1.aminoapps.com/6188/349b2b972d07c9a9aa380390dfbb07ab24dffe56_hq.jpg', 0, 0, 0),
+            ("Heymans", "E", 'https://64.media.tumblr.com/174ec5c57ad62321d15153505322d349/tumblr_pk9pmwQYk51sau2q2o1_r1_1280.png', 0, 0, 0),
+            ("Fuery", "E", "https://pm1.aminoapps.com/6155/bed103c20470950c8b1a842321648ffe253b27f5_hq.jpg", 0, 0, 0),
             # Personnages F
-            ("Yoki", "F", image_temporaire, 0, 0, 0),
-            ("Nina Tucker", "F", image_temporaire, 0, 0, 0),
-            ("Trisha", "F", image_temporaire, 0, 0, 0),
-            ("Xiao Mei", "F", image_temporaire, 0, 0, 0),
-            ("Winry", "F", image_temporaire, 0, 0, 0),
+            ("Yoki", "F", 'https://static.wikia.nocookie.net/fma/images/b/b4/Yoki_2009.jpg/revision/latest?cb=20200809005502&path-prefix=es', 0, 0, 0),
+            ("Nina Tucker", "F", 'https://static.wikia.nocookie.net/moviemorgue/images/a/ae/Nina_alexander.jpg/revision/latest?cb=20160524214723', 0, 0, 0),
+            ("Trisha", "F", 'https://i.pinimg.com/originals/e0/5c/60/e05c6066ac4977b871cfe729f07d45c1.jpg', 0, 0, 0),
+            ("Xiao Mei", "F", 'https://i.pinimg.com/originals/30/4f/2e/304f2e830ee98ed4d18fcde6be4e88cc.gif', 0, 0, 0),
+            ("Winry", "F", 'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/04/maxresdefault-2.jpg', 0, 0, 0),
 
             # """ PERSONNAGES SNK """
             # Personnages X
