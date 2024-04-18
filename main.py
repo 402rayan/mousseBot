@@ -17,13 +17,30 @@ client = discord.Client(intents=intents)
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+# Dictionnaire pour suivre les verrous par utilisateur
+user_locks = {}
+
+async def execute_command(command, message, userFromDb):
+    if userFromDb[0] in user_locks:
+        await message.channel.send(embed=embed_info("Vous avez déjà une commande en cours!", "", discord.Color.red()))
+        return
+
+    # Créer un verrou pour l'utilisateur
+    user_locks[userFromDb[0]] = asyncio.Lock()
+    try:
+        # Attendre l'acquisition du verrou
+        async with user_locks[userFromDb[0]]:
+            await command(message, userFromDb)
+    finally:
+        # Assurez-vous de libérer le verrou après l'exécution de la commande
+        del user_locks[userFromDb[0]]
+
 # Set the confirmation message when the bot is ready
 @bot.event
 async def on_ready():
     logger.info(f'{bot.user} est bien connecté!')
     database.create_tables()
     
-
 @bot.event
 async def on_message(message):
     contenu = message.content
@@ -37,59 +54,34 @@ async def on_message(message):
     if not userFromDb:
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
-    if contenu.startswith('!tickets'):
-        await getTickets(message, userFromDb)
-    elif contenu.startswith('!daily'):
-        await claimDaily(message, userFromDb)
-    elif contenu.startswith('!admin'):
-        await admin(message, userFromDb)
-    elif contenu.startswith('!list_command') or contenu.startswith('!help'):
-        await list_command(message, userFromDb)
-    elif contenu.startswith('!invo') or contenu.startswith('!sum'):
-        await invocation(message, userFromDb)
-    elif contenu.startswith('!inv') or contenu.startswith('!pers') or contenu.startswith('!bag'):
-        await inventaire(message, userFromDb)
-    elif contenu.startswith('!givetickets') or contenu.startswith('!donnertickets') or contenu.startswith('!donnerticket') or contenu.startswith('!giveticket') or contenu.startswith('!give_tickets') or contenu.startswith('!donner_tickets') or contenu.startswith('!donner_ticket') or contenu.startswith('!give_ticket'):
-        await giveTicket(message, userFromDb)
-    elif contenu.startswith('!info '):
-        await info(message, userFromDb)
-    elif contenu.startswith('!infos'):
-        await infoSynergie(message, userFromDb)
-    elif contenu.startswith('!team') or contenu.startswith('!voirteam') or contenu.startswith('!voir_team') or contenu.startswith('!voir_team'):
-        await voirTeam(message, userFromDb)
-    elif contenu.startswith('!ajouterteam') or contenu.startswith('!addteam') or contenu.startswith('!add_team') or contenu.startswith('!ajouter_team'):
-        await ajouterTeam(message, userFromDb)
-    elif contenu.startswith('!sell') or contenu.startswith('!vendre'):
-        await sell(message, userFromDb)
-    elif contenu.startswith('!create'):
-        await createTemplates(message, userFromDb)
-    elif contenu.startswith('!his'):
-        await histoire(message, userFromDb)
-    # A supp
-    elif contenu.startswith('!purple'):
-        await purple(message, userFromDb)
-    elif contenu.startswith('!cookWithSanji'):
-        await cookWithSanji(message, userFromDb)
-    elif contenu.startswith('!labyrinthe'):
-        await labyrinthe(message, userFromDb)
-    elif contenu.startswith('!reset'):
-        await reset(message, userFromDb)
-    elif contenu.startswith('!couleur'):
-        await couleur(message, userFromDb)
-    elif contenu.startswith('!liste '):
-        await liste(message, userFromDb)
-# Fonctions
+    contenu = contenu[1:]
+    for cmd, func in commands.items():
+        if contenu.startswith(cmd):
+            await execute_command(func, message, userFromDb)
+            break
+
+
 
 # Partie Histoire
+async def handle_user_level(message, userFromDb):
+    level_to_function = {
+        1: niveau1,
+        2: niveau2,
+        3: niveau3
+    }
+    niveau = getNiveauFromUser(userFromDb)
+    handler = level_to_function.get(niveau)
+    if handler:
+        await handler(message, userFromDb)
+    else:
+        logger.error(f"Niveau inconnu {niveau} pour l'utilisateur {message.author.name} ({message.author.id}).")
+        message.channel.send(embed=embed_info("Erreur", "Niveau inconnu.", discord.Color.red()))
+
 async def histoire(message, userFromDb):
     if not userFromDb:
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
-    niveau = getNiveauFromUser(userFromDb)
-    if niveau == 1:
-        await niveau1(message, userFromDb)
-    elif niveau == 2:
-        await niveau2(message, userFromDb)
+    await handle_user_level(message, userFromDb)
 
 async def niveau1(message, userFromDb):
     await message.channel.send(embed=embed_naratteur("Niveau 1 - Introduction", ""))
@@ -101,6 +93,10 @@ async def niveau2(message, userFromDb):
     await asyncio.sleep(2)
     await finDeNiveau(message, userFromDb, 3)
 
+async def niveau3(message, userFromDb):
+    await message.channel.send(embed=embed_naratteur("Niveau 3 - La montagne", ""))
+    await asyncio.sleep(2)
+    await finDeNiveau(message, userFromDb, 4)
 
 def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None):
     embed = discord.Embed(
@@ -723,6 +719,52 @@ def embed_invocation(character_template):
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
+
+
+commands = {
+    "tickets": getTickets,
+    "daily": claimDaily,
+    "admin": admin,
+    "list_command": list_command,
+    "help": list_command,
+    "invo": invocation,
+    "sum": invocation,
+    "inv": inventaire,
+    "pers": inventaire,
+    "bag": inventaire,
+    "givetickets": giveTicket,
+    "donnertickets": giveTicket,
+    "donnerticket": giveTicket,
+    "giveticket": giveTicket,
+    "give_tickets": giveTicket,
+    "donner_tickets": giveTicket,
+    "donner_ticket": giveTicket,
+    "give_ticket": giveTicket,
+    "info": info,
+    "infos": infoSynergie,
+    "team": voirTeam,
+    "voirteam": voirTeam,
+    "voir_team": voirTeam,
+    "voir_team": voirTeam,
+    "ajouterteam": ajouterTeam,
+    "addteam": ajouterTeam,
+    "add_team": ajouterTeam,
+    "ajouter_team": ajouterTeam,
+    "sell": sell,
+    "vendre": sell,
+    "create": createTemplates,
+    "his": histoire,
+    "purple": purple,
+    "cookWithSanji": cookWithSanji,
+    "labyrinthe": labyrinthe,
+    "reset": reset,
+    "couleur": couleur,
+    "liste": liste
+}
+
+
+
+
 
 # Run the bot with the token
 bot.run(getToken.getToken())
