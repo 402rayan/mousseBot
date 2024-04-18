@@ -3,11 +3,11 @@ all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""
             # Personnages X
             ("Vegeta", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
-            ("Son Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
+            ("Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
             ("Grand Prêtre", "X", "https://pa1.aminoapps.com/6541/a48a166406b4a43ae04845d7c33aa93c35208c66_hq.gif", 0, 0, 0),
             # Personnages SS
-            ("Broly", "SS", "https://i.imgur.com/flUOeQK.gif", 0, 0, 0), #TODO
+            ("Broly", "SS", "https://www.dragon-ball-gif.com/wp-content/uploads/2022/01/Broly-Super-Saiyan.gif", 0, 0, 0), #TODO
             ("Golden Freezer", "SS", 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a290752-d7eb-45e3-aa31-8e71b544cde0/dbm1yiz-525bf1bb-1bba-42e3-88bc-da271e0fc047.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhMjkwNzUyLWQ3ZWItNDVlMy1hYTMxLThlNzFiNTQ0Y2RlMFwvZGJtMXlpei01MjViZjFiYi0xYmJhLTQyZTMtODhiYy1kYTI3MWUwZmMwNDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.d2ovx3xnc5I44dQTZSSnyRLGuDKRZnyPp0m3qDlyHVo', 0, 0, 0),
             ("Beerus", "SS", 'https://media1.tenor.com/m/QlDaIzrNXNwAAAAC/beerus-stare.gif', 0, 0, 0),
             ("Champa", "SS", 'https://media1.tenor.com/m/cSbQJiwt5V4AAAAC/dbz-dbs.gif', 0, 0, 0),
@@ -54,7 +54,7 @@ all_characters_templates = [
             ("Nappa", "D", 'https://static.wikia.nocookie.net/dragonball/images/a/a0/Nappa2.jpg/revision/latest?cb=20121011190756&path-prefix=fr', 0, 0, 0),
             ("Saibaman", "D", 'https://static.wikia.nocookie.net/dragonball/images/9/99/SaiabamenInfoBox-1-.jpg/revision/latest?cb=20141016164645&path-prefix=fr', 0, 0, 0),
             # Personnages E
-            ("Yamcha", "E", 'https://www.superherodb.com/pictures2/portraits/10/050/1211.jpg?v=1645322906', 0, 0, 0),
+            ("Yamcha", "E", 'https://criticalhits.com.br/wp-content/uploads/2023/01/Yamcha-Scars-in-Dragon-Ball-910x455.jpg', 0, 0, 0),
             ("Oolong", "E", 'https://i.imgur.com/K00wC2U.png', 0, 0, 0),
             ("Karin", "E", 'https://static.wikia.nocookie.net/dragonball/images/f/fe/KorinBuuSagaNV.png/revision/latest?cb=20100513171706', 0, 0, 0),
             ("Dende", "E", 'https://static.wikia.nocookie.net/dragonball/images/4/45/Dende.png/revision/latest?cb=20150705191047&path-prefix=fr', 0, 0, 0),
@@ -200,6 +200,7 @@ all_characters_templates = [
             ("Marco", "S", 'https://i.imgur.com/LOo1j5P.gif', 0, 0, 0),
             ("Sanji", "S", 'https://i.imgur.com/hkob0Vu.jpg', 0, 0, 0),
             ("Yamato", "S", "https://giffiles.alphacoders.com/216/216308.gif", 0, 0, 0),
+            ("Ace", "S", "https://i.imgur.com/8AGmDrS.gif", 0, 0, 0),
 
             # Personnages A
             ("Kong", "A", "https://i.ytimg.com/vi/iRnFypQECiA/maxresdefault.jpg", 0, 0, 0),
@@ -209,7 +210,6 @@ all_characters_templates = [
             ("Jinbe", "A", 'https://i.imgur.com/5ktjcxG.png', 0, 0, 0),
             ("Rob Lucci", "A", "https://i.imgur.com/aewCvhP.gif", 0, 0, 0),
             ("Magellan", "A", 'https://i.imgur.com/nvHpUU8.png', 0, 0, 0),
-            ("Ace", "A", "https://i.imgur.com/8AGmDrS.gif", 0, 0, 0),
             ("Karasu", "A", "https://64.media.tumblr.com/442ea21ce795aef5dd5c530483bb8f34/tumblr_ppxot6VR2p1v6xsm2o3_540.gif", 0, 0, 0),
             ("Yassop", "A","https://64.media.tumblr.com/baec79e8188657006b2e80c7405461ec/tumblr_mx8i0nXwyc1rr37qoo1_500.gif", 0, 0, 0),
             
