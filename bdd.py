@@ -268,6 +268,7 @@ class Database:
         tickets -= CONSTANTS['INVOCATION_COST']
         # On choisit la rareté du personnage invoqué
         rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
+        # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
         character_templates = [char for char in character_templates if char[2] == rarity]

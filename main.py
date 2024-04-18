@@ -363,13 +363,15 @@ async def invocation(message, userFromDb):
         await msg.edit(embed=embed_invocation(template))
         return
     else:
-        nombreRotation = {"B" : 1, "A" : 2, "S" : 4, "SS" : 6, "X" : 8}
+        random.shuffle(phrases_invocation) # On mélange les phrases d'invocation
+        nombreRotation = {"B" : 1, "A" : 2, "S" : 3, "SS" : 4, "X" : 6}
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
+        random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
             await asyncio.sleep(3.5)
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        await asyncio.sleep(random.randint(1, 5))
-        await msg.edit(embed=embed_invocation(template))
+        await asyncio.sleep(random.randint(1, 3))
+        await msg.channel.send(embed=embed_invocation(template))
     return
 
 
