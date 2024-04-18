@@ -832,7 +832,7 @@ all_characters_templates = [
             ("Nina Tucker", "F", image_temporaire, 0, 0, 0),
             ("Trisha", "F", image_temporaire, 0, 0, 0),
             ("Xiao Mei", "F", image_temporaire, 0, 0, 0),
-            ("Winry", "F", image_temporaire, 0, 0, 0)
+            ("Winry", "F", image_temporaire, 0, 0, 0),
 
             # """ PERSONNAGES SNK """
             # Personnages X
