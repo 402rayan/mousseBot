@@ -2,8 +2,8 @@ image_temporaire = "https://picsum.photos/900/500"
 all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""
             # Personnages X
-            ("Vegeta Ultra Ego", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
-            ("Goku Ultra Instinct", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
+            ("Vegeta", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
+            ("Son Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
             ("Grand Prêtre", "X", "https://pa1.aminoapps.com/6541/a48a166406b4a43ae04845d7c33aa93c35208c66_hq.gif", 0, 0, 0),
             # Personnages SS
