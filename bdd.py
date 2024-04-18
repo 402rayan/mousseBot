@@ -209,7 +209,7 @@ class Database:
                 return template
         # Deuxième étape : on vérifie si le nom est proche
         for template in all_templates:
-            print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
+            # print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
             if Levenshtein.distance(template[1].lower(), template_name.lower()) <= 1:
                 return template
         # Troisième étape : On vérifie si le nom est dans le nom du template
@@ -421,7 +421,7 @@ class Database:
                 if char is None:
                     continue
                 char_id = char[0]
-                print(char_id, synergy_id)
+                # print(char_id, synergy_id)
                 self.cur.execute(f"INSERT INTO character_template_synergies (template_id, synergy_id) VALUES ({char_id}, {synergy_id})")
         self.conn.commit()
         logger.info("Les liens de synergies ont été ajoutés à la base de données.")
@@ -477,3 +477,7 @@ class Database:
         self.cur.execute(f"UPDATE users SET histoireLevel = {niveau} WHERE user_discord_id = {user_discord_id}")
         logger.info(f"Le niveau d'histoire de l'utilisateur {user_discord_id} a été mis à jour à {niveau}.")
         self.conn.commit()
+
+    def get_character_template_by_rarity(self, rarity):
+        self.cur.execute(f"SELECT * FROM character_templates WHERE rarity = '{rarity}'")
+        return self.cur.fetchone()

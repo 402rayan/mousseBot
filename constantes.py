@@ -25,16 +25,19 @@ CONSTANTS = {
         'F': 0.1,
     },
 'RARITY_COLOR': {
-    'X': 0x4B0082, # Indigo foncé (#4B0082) - Mystérieux et puissant, évoquant une rareté extrême et une force incontestable.
-    'SS': 0x483D8B, # Bleu ardoise foncé (#483D8B) - Noble et imposant, parfait pour représenter une puissance redoutable.
-    'S': 0x800000, # Marron rouge (#800000) - Profond et intense, convient aux personnages très puissants.
-    'A': 0xCC0000, # Rouge vif (#CC0000) - Vibrant et énergique, indiquant une force importante.
-    'B': 0x4682B4, # Bleu acier (#4682B4) - Sérieux et stable, bien adapté pour des personnages de niveau intermédiaire.
-    'C': 0xFF6347, # Tomate (#FF6347) - Chaleureux et accueillant, bien pour des personnages de niveau moyen.
-    'D': 0xFFD700, # Or (#FFD700) - Lumineux et prometteur, symbolisant un potentiel à développer.
-    'E': 0x32CD32, # Vert citron (#32CD32) - Frais et vibrant, mais moins intense, parfait pour les personnages moins forts.
-    'F': 0xB0E0E6, # Bleu poudre (#B0E0E6) - Doux et subtil, indiquant le niveau le plus bas.
-},
+    'X': 0x1e103b, 
+    'SS': 0x8C001A,
+    'S': 0xD82F00,
+    'A': 0xF5B521,
+    'B': 0x4C66D6,
+    'C': 0x2CBBCB,
+    'D': 0x1E9021,
+    'E': 0xD3CB34,
+    'F': 0x9CA1A7,
+}
+
+
+,
 
     'INGREDIENTS': {
         "Pomme": "🍎",

@@ -74,7 +74,8 @@ async def on_message(message):
         await labyrinthe(message, userFromDb)
     elif contenu.startswith('!reset'):
         await reset(message, userFromDb)
-
+    elif contenu.startswith('!couleur'):
+        await couleur(message, userFromDb)
 
 # Fonctions
 
@@ -254,8 +255,6 @@ async def labyrinthe(message, userFromDb):
         pieceActuelle = listePiecesAvailables[listeEmojis.index(str(reaction.emoji))]
     await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez trouvé la sortie de la cave!", discord.Color.green()))
         
-
-
 def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold()):
     files = []
     embed = discord.Embed(
@@ -275,7 +274,13 @@ def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, co
         
 # Fin Partie Histoire
 
-
+@bot.command()
+async def couleur(message, userFromDb):
+    # Récupère un personnage de chaque rang et les affiche avec embed_invocation
+    for rang in ["F", "E", "D", "C", "B", "A", "S", "SS", "X"]:
+        template = database.get_character_template_by_rarity(rang)
+        await asyncio.sleep(0.5)
+        await message.channel.send(embed=embed_invocation(template))
 @bot.command()
 async def list_command(message, userFromDb):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
@@ -690,6 +695,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
 def embed_invocation(character_template):
     """ Fonction qui retourne un embed pour l'invocation d'un personnage """
     character = character_template # Pour plus de lisibilité
+    print(character)
     synergies = database.get_synergies_by_character_template(character[0])
     hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
     embed = discord.Embed(
