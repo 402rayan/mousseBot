@@ -833,6 +833,52 @@ all_characters_templates = [
             ("Trisha", "F", image_temporaire, 0, 0, 0),
             ("Xiao Mei", "F", image_temporaire, 0, 0, 0),
             ("Winry", "F", image_temporaire, 0, 0, 0)
+
+            # """ PERSONNAGES SNK """
+            # Personnages X
+            ("Eren", "X", image_temporaire, 0, 0, 0),
+            # Personnages SS
+            ("Armin", "SS", image_temporaire, 0, 0, 0),
+            ("Bertholdt", "SS", image_temporaire, 0, 0, 0),
+            ("Livai", "SS", image_temporaire, 0, 0, 0),
+            ("Reiner", "SS", image_temporaire, 0, 0, 0),
+            # Personnages S
+            ("Annie", "S", image_temporaire, 0, 0, 0),
+            ("Sieg", "S", image_temporaire, 0, 0, 0),
+            ("Mikasa", "S", image_temporaire, 0, 0, 0),
+            ("Pieck", "S", image_temporaire, 0, 0, 0),
+            # Personnages A
+            ("Xaver", "A", image_temporaire, 0, 0, 0),
+            ("Grisha", "A", image_temporaire, 0, 0, 0),
+            ("Ymir", "A", image_temporaire, 0, 0, 0),
+            ("Falco", "A", image_temporaire, 0, 0, 0),
+            ("Kenny", "A", image_temporaire, 0, 0, 0),
+            ("Porco", "A", image_temporaire, 0, 0, 0),
+            ("Erwin", "A", image_temporaire, 0, 0, 0),
+            # Personnages B
+            ("Mike", "B", "https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/cdn1/movies-pictures/AOTS02_01.jpg", 0, 0, 0),
+            ("Frieda", "B", "https://pbs.twimg.com/media/FKbV-8FaUAAn4zI?format=jpg&name=large", 0, 0, 0),
+            ("Jean", "B", "https://static.wikia.nocookie.net/shingekinokyojin/images/2/22/Jean_pas_content.jpg/revision/latest/scale-to-width-down/1280?cb=20140629165849&path-prefix=fr", 0, 0, 0),
+            ("Hange", "B", "https://45secondes.fr/wp-content/uploads/2023/02/1677204130_Hange-de-Shingeki-no-Kyojin-faits-curieux-que-vous.jpg", 0, 0, 0),
+            ("Rhodes", "B", "https://static.wikia.nocookie.net/shingekinokyojin/images/7/78/Rhodes_Reiss_Anime_-_850_%282%29.png/revision/latest/scale-to-width/360?cb=20180826231656&path-prefix=fr", 0, 0, 0),
+            # Personnages C
+            ("Yelena", "C", "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/03/Yelena-in-Attack-on-Titan-and-Cart.jpg", 0, 0, 0),
+            ("Hannes", "C", "https://boutique-manga.fr/wp-content/uploads/2021/03/Hannes.jpg", 0, 0, 0),
+            ("Historia", "C", "https://i.pinimg.com/originals/f4/27/13/f427139c83b864284bad663309cc3d7d.jpg", 0, 0, 0),
+            ("Floch", "C", "https://static.wikia.nocookie.net/shingekinokyojin/images/a/a5/Floch_acknowledges_his_survival.png/revision/latest?cb=20220215031016", 0, 0, 0),
+            ("Pixis", "C", "https://i.pinimg.com/originals/38/4a/bc/384abcf51d55f6272bf047b93e84cfba.jpg", 0, 0, 0),
+            ("Sacha", "C", "https://static.wikia.nocookie.net/shingekinokyojin/images/b/bc/Sasha_mange_une_patate_lors_du_rite_d%27initiation.jpg/revision/latest/scale-to-width-down/1334?cb=20230701145817&path-prefix=fr", 0, 0, 0),
+            ("Kony", "C", "https://i.pinimg.com/736x/14/e9/0e/14e90e06e144f3279d3cd8b692450bb8.jpg", 0, 0, 0),
+            ("Théo Magath", "C", "https://cdn.anisearch.fr/images/character/screen/105/105263/full/541797.webp", 0, 0, 0),
+            # Personnages D
+            ("Gabi", "D", "https://static.wikia.nocookie.net/shingekinokyojin/images/5/53/Gaby_demandant_%C3%A0_Falco_pourquoi_il_l%27a_suivit_%C3%A0_Paradis.png/revision/latest/scale-to-width-down/1240?cb=20221015230732&path-prefix=fr", 0, 0, 0),
+            ("Udo", "D", "https://wisecineman.ru/kartinki/heroes/attack-on-titan/1034.webp", 0, 0, 0),
+            ("Zofia", "D", "https://sm.ign.com/t/ign_latam/screenshot/default/zofia-shingeki_bxe5.1280.jpg", 0, 0, 0),
+            ("Willy", "D", "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2020/12/willy-tybur-shingeki-no-kyojin.jpg", 0, 0, 0),
+            # Personnages E
+            ("Onyankopon", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/5/52/Onyankopon_protests_the_treatment_of_the_volunteers.png/revision/latest?cb=20210301055248", 0, 0, 0),
+            ("Nicolo", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/1/1e/%C3%89pisode_68.png/revision/latest/scale-to-width-down/1280?cb=20210215025407&path-prefix=fr", 0, 0, 0),
+            # Personnages F
 ]
 
 all_synergies = [
