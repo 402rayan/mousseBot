@@ -449,7 +449,7 @@ async def invocation(message, userFromDb):
         for i in range(nombreRotation[rarityOfCharacter]):
             await asyncio.sleep(3.5)
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        await asyncio.sleep(random.randint(1, 3))
+        await asyncio.sleep(random.randint(1, 2))
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template))
     return
