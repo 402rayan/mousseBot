@@ -17,29 +17,25 @@ CONSTANTS = {
         'X': 0.01,
         'SS': 0.02,
         'S': 0.05,
-        'A': 0,
+        'A': 0.1,
         'B': 0.15,
         'C': 0.2,
         'D': 0.15,
         'E': 0.1,
         'F': 0.1,
     },
-'RARITY_COLOR': {
-    'X': 0x1e103b, 
-    'SS': 0x8C001A,
-    'S': 0xD82F00,
-    'A': 0xF5B521,
-    'B': 0x4C66D6,
-    'C': 0x2CBBCB,
-    'D': 0x1E9021,
-    'E': 0xD3CB34,
-    'F': 0x9CA1A7,
-},
-    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X']
-
-
-,
-
+    'RARITY_COLOR': {
+        'X': 0x1e103b, 
+        'SS': 0x8C001A,
+        'S': 0xD82F00,
+        'A': 0xF5B521,
+        'B': 0x4C66D6,
+        'C': 0x2CBBCB,
+        'D': 0x1E9021,
+        'E': 0xD3CB34,
+        'F': 0x9CA1A7,
+    },
+    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'INGREDIENTS': {
         "Pomme": "🍎",
         "Banane": "🍌",
@@ -96,7 +92,27 @@ CONSTANTS = {
         "Menthe": "🌿",
     },
     'COLORS': {
-        'HISTOIRE' : 0x00BFFF
+        'HISTOIRE' : 0x00BFFF,
+        'INCONNU' : 0x000000,
+        'FORET' : 0x228B22,
+        'SHANKS' : 0xcc1215,
+        'SAIBAMAN' : 0x00FF00,
+        'BRUIT' : 0x261b12,
+        'ENRICO_PUCCI' : 0x1c0116,
+        'FUMEE' : 0x1c1c1c,
+        'MONTAGNE' : 0x8B4513,
+        'NARRATEUR' : 0x360801,
+        'BROGGY' : 0x8B0000,
+        'FIN_NIVEAU' : 0x00bf66,
+        'NIGHT' : 0x000000,
+        'DARK_RED' : 0x8B0000,
+        'FROID' : 0x87CEEB,
+        'ZUKO' : 0x8B0000,
+        'RUI' : 0xFFFFFF,
+        'GROTTE' : 0x8B4513,
+        'PURPLE_HAZE' : 0xa424c7,
+        'LIGHT' : 0xf4ff91,
+        
     },
 }
 
