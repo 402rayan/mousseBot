@@ -91,28 +91,75 @@ async def histoire(message, userFromDb):
     await handle_user_level(message, userFromDb)
 
 async def niveau3(message, userFromDb, equipe):
-    await debutDeNiveau(message, userFromDb, 3, "Une Seule Question", equipe, CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(3)
+    ticketsGagnes = 0
+    await debutDeNiveau(message, userFromDb, 3, "Un nouveau monde impitoyable", equipe, CONSTANTS['COLORS']['FROID'])
+    await asyncio.sleep(4)
     # Le bug qui se produit ne vous téléporte pas cette fois, mais la nuit est tombé d'un coup... 
     await message.channel.send(embed=embed_naratteur("La nuit est tombée d'un coup suite à l'anomalie..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    await asyncio.sleep(4)
     # Vous parcourez la forêt à la recherche d'autres personnes ou de réponses et des murmures se font entendre au loin.
     await message.channel.send(embed=embed_naratteur("Vous parcourez la forêt à la recherche d'autres personnes ou de réponses..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(3)
+    await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Des murmures se font entendre au loin..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    await asyncio.sleep(4)
     # Ces murmures sont étranges, comme s'ils étaient les échos du passés. Un évènement sûrement liés aux bugs.
     await message.channel.send(embed=embed_naratteur("Ces murmures sont étranges..", "Comme s'ils étaient les échos du passé.", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    await asyncio.sleep(4)
     # Après quelques temps, vous quittez la forêt, il commence subitement à faire très froid. Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme, ils ont du sang sur eux. Vous n'avez même pas le temps de réfléchir qu'ils vous attaquent.
     await message.channel.send(embed=embed_naratteur("Vous quittez la forêt, il commence à faire très froid..", "", CONSTANTS['COLORS']['FROID']))
-    await asyncio.sleep(3)
-    await message.channel.send(embed=embed_raw("Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme.\nIls ont du sang sur eux..", "", CONSTANTS['COLORS']['FROID']))
-    await asyncio.sleep(3)
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme.", "Ils ont du sang sur eux..", CONSTANTS['COLORS']['FROID']))
+    await asyncio.sleep(5)
     await embed_histoire_character(message, "Jeune garçon", "haku", "froid", "", "Le jeune garçon vous attaque.", CONSTANTS['COLORS']['FROID'],isNotGif=True)
+    await asyncio.sleep(4)
+    await message.channel.send("combat avec haku") #TODO
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Shanks est surpris :", "", "shanks", "", "Je ne vous pensais pas aussi fort.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Voulant défendre son ami, l'homme se jette sur vous avec son épée mais..", "", CONSTANTS['COLORS']['FROID']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Shanks immobilise l'homme :", "shanksHaki", "shanks", "", "", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(5)
+    await embed_histoire_character(message, "Shanks lui ordonne:", "", "shanks", "", "Reste bien sage et contente toi de répondre à mes questions.", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(3)
-    await message.channel.send("combat avec zabuza") #TODO
-    await asyncio.sleep(3)
+    await embed_histoire_character(message, "L'inconnu rétorque :", "", "froid", "", "Hmprf.. Je suppose que je n'ai pas le choix. Mais qu'une seule question.", CONSTANTS['COLORS']['FROID'])
+    await asyncio.sleep(4)
+    """
+    1 - Sais-tu où sommes nous?  -> Je l'ignore, mais j'ai apercu un pretre qui blablabla
+    2 - Comment es-tu arrivé là? -> j'ai aperçu un homme mystérieux accélerer les cycles de la jours et la nuit, puis j'ai été téléporté dans divers monde, un monde remplis d'eau, un monde remplis de bâtiments immenses.. puis un groupe de gens m'ont attaqué
+    3 - Pourquoi nous-as tu attaqué? -> Quand nous sommes venus ici, divers groupes de personnes nous ont attaqués..
+    4 - Aurais-tu trouvé des objets? Oui j'ai trouvé ça en fouillant l'un de nos assaillants, ça ne m'a pas l'air utile vous pouvez le prendre +2 ticket
+    """
+    description = "1️⃣ : Sais-tu où nous sommes?\n2️⃣ : Comment es-tu arrivé là?\n3️⃣ : Pourquoi nous-as tu attaqué?\n4️⃣ : As-tu trouvé quelque chose?"
+    msg = await embed_histoire_character(message, "L'inconnu nous demande :", "", "froid", description, "Alors ?", CONSTANTS['COLORS']['FROID'])
+    for reaction in ['1️⃣', '2️⃣', '3️⃣', '4️⃣']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['1️⃣', '2️⃣', '3️⃣', '4️⃣'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) in ['1️⃣', '2️⃣']:
+        await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Je l'ignore, tout ce que j'ai aperçu c'est le jour et la nuit qui ne faisaient plus qu'un.", CONSTANTS['COLORS']['FROID'])
+    elif str(reaction.emoji) == '3️⃣':
+        await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Quand nous sommes venus ici, divers groupes de personnes nous ont attaqués..", CONSTANTS['COLORS']['FROID'])
+    else:
+        await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Non, rien d'intéressant.", CONSTANTS['COLORS']['FROID'])
+        await asyncio.sleep(3)
+        await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Ah, peut-être que ce truc pourrait t'intéresser.", CONSTANTS['COLORS']['FROID'])
+        await asyncio.sleep(3)
+        ticketsGagnes += 2
+        await message.channel.send(embed=embed_info("L'homme vous tend 2 tickets d'invocations.", "", discord.Color.gold()))
+    await asyncio.sleep(5)
+    await embed_histoire_character(message, "Shanks :", "", "shanks", "", "Merci pour ces informations.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    # Zabuza nous dis de ne surtout pas oublier que ce monde est impitoyable, et qu'il faut être en permanence sur ses gardes
+    await embed_histoire_character(message, "Zabuza :", "", "zabuza", "", "Je reconnais ta puissance. Mon nom est Zabuza, laissez moi vous dire que ce nouveau monde est impitoyable.", CONSTANTS['COLORS']['FROID'])
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 4, ticketsGagnes)
+
+
+
     
 
 
@@ -255,6 +302,7 @@ async def test(message, userFromDb):
     await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à tournoyer inlassablement.\nJ'ai alors aperçu une sorte de prêtre, et je me suis réveiller ici..", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
 
 def embed_raw(titre,description,color, footer=None):
+    # Retourne un embed avec un titre, une description, une couleur et un footer
     embed = discord.Embed(
         title=titre,
         description=description,
@@ -265,6 +313,7 @@ def embed_raw(titre,description,color, footer=None):
     return embed
 
 def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None, footer=None):
+    # Retourne un embed avec un titre, une description, une couleur, un niveau et un footer ainsi que MOUSSE en haut
     embed = discord.Embed(
         title=titre,
         description=description,
@@ -273,10 +322,11 @@ def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], n
     nom = "Histoire" if not niveau else f"Histoire - Niv.{niveau}"
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=nom, icon_url=bot.user.avatar.url)
+    embed.set_author(name=nom, icon_url=bot.user.avatar_url)
     return embed
 
 async def finDeNiveau(message, userFromDb, level, ticketsGagnes = 0):
+    # Met à jour le niveau de l'utilisateur et lui donne des tickets s'il en a gagné et lui envoie un message de fin de niveau
     database.updateNiveauHistoire(userFromDb[1], level)
     footer = None
     if ticketsGagnes > 0:
@@ -494,7 +544,7 @@ async def list_command(message, userFromDb):
     )
     for key, value in commande.items():
         embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -592,7 +642,7 @@ async def inventaire(message, userFromDb):
             value = ""
         value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
         embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -662,7 +712,7 @@ async def info(message, userFromDb):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     await message.channel.send(embed=embed)
@@ -695,7 +745,7 @@ async def infoSynergie(message, userFromDb):
         color=color
     )
     embed.set_footer(text=f"Boost : {typeOfBoost} {forceOfBoost}")
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     embed.add_field(name="Personnages", value=liste_personnages[:1999], inline=False)
     embed.set_image(url=image)
     
@@ -734,7 +784,7 @@ async def voirTeam(message, userFromDb):
             )
             
     embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
@@ -785,7 +835,7 @@ async def ajouterTeam(message, userFromDb):
         title=f"{ nom } occupe désormais la position { position }.",
         color=discord.Color.green()
     )
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     embed.set_footer(text="Pour voir votre team, tapez !team.")
  
     embed.set_image(url=image)
@@ -891,7 +941,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
     )
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     return embed
 
 def embed_invocation(character_template):
@@ -907,7 +957,7 @@ def embed_invocation(character_template):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
