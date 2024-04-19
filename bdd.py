@@ -121,11 +121,18 @@ class Database:
         CREATE TABLE IF NOT EXISTS user_choices (
             user_discord_id TEXT,
             lvl1fumee BOOLEAN DEFAULT NULL,
-            lvl1feu BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')
-
+    
+    def getChoice(self, user_discord_id, choice):
+        self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
+    
+    def updateChoice(self, user_discord_id, choice, value):
+        self.cur.execute(f"UPDATE user_choices SET {choice} = {value} WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+    
     def create_tables(self):
         self.create_user_table()
         self.create_character_template_table()
@@ -440,6 +447,7 @@ class Database:
         self.cur.execute("DROP TABLE IF EXISTS character_templates")
         self.cur.execute("DROP TABLE IF EXISTS synergies")
         self.cur.execute("DROP TABLE IF EXISTS character_template_synergies")
+        self.cur.execute("DROP TABLE IF EXISTS user_choices")
         self.conn.commit()
         self.create_tables()
 
@@ -465,10 +473,6 @@ class Database:
         
 
     # Mode histoire
-
-    def getChoices(self, user_discord_id):
-        self.cur.execute(f"SELECT * FROM user_choices WHERE user_discord_id = {user_discord_id}")
-        return self.cur.fetchone()
     
     def getUser(self, user_discord_id):
         self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")

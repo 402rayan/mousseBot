@@ -99,6 +99,11 @@ CONSTANTS = {
         'SAIBAMAN' : 0x00FF00,
         'BRUIT' : 0x261b12,
         'ENRICO_PUCCI' : 0x1c0116,
+        'FUMEE' : 0x1c1c1c,
+        'MONTAGNE' : 0x8B4513,
+        'NARRATEUR' : 0x360801,
+        'BROGGY' : 0x8B0000,
+        'FIN_NIVEAU' : 0x00bf66,
     },
 }
 

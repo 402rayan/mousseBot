@@ -96,9 +96,90 @@ async def niveau3(message, userFromDb, equipe):
     await finDeNiveau(message, userFromDb, 4)
 
 async def niveau2(message, userFromDb, equipe):
-    await debutDeNiveau(message, userFromDb, 2, "La forêt", equipe, CONSTANTS['COLORS']['FORET'])
-    await asyncio.sleep(2)
-    await finDeNiveau(message, userFromDb, 3)
+    isFumee = database.getChoice(userFromDb[1], "lvl1fumee")
+    ticketsGagnes = 0
+    nom = "Un bruit étrange"
+    if isFumee:
+        nom = "Une fumée étrange"
+    await debutDeNiveau(message, userFromDb, 2, nom, equipe, CONSTANTS['COLORS']['FORET'])
+    await asyncio.sleep(4)
+    if isFumee:
+        await message.channel.send(embed=embed_raw("Votre équipe et Shanks se dirigent vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        # La fumée provient d'un grand feu de camp
+        await message.channel.send(embed=embed_raw("La fumée semble provenir d'un grand feu de camp..", "", CONSTANTS['COLORS']['FUMEE']))
+    else:
+        await message.channel.send(embed=embed_raw("Votre équipe et Shanks se dirigent vers le bruit.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_raw("Vous trouvez un objet brillant!", "", discord.Color.gold(), "Vous avez trouvé un ticket!"))
+        ticketsGagnes += 1
+        await asyncio.sleep(4)
+        await embed_histoire_character(message,"Shanks constate:", "", "shanks", "", "Il n'y a rien ici.", CONSTANTS['COLORS']['SHANKS'])
+        await asyncio.sleep(4) 
+        await message.channel.send(embed=embed_raw("Le bruit recommence et s'approche..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Une grande voix s'exclame : ", "", "inconnu", "", "Hmrpf.. Broggy regarde, nous avons des visiteurs!", CONSTANTS['COLORS']['INCONNU'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Inconnu", "dorryBroggy", "inconnu", "", "Deux géants intimidants vous regardent", CONSTANTS['COLORS']['INCONNU'],isNotGif=True)
+    await asyncio.sleep(4)
+    # Shanks nous demande que faire, Soit les attaquer soit Essayer de leur parler
+    description = "🗡️ : Les attaquer" + "\n💬 : Essayer de leur parler"
+    msg = await embed_histoire_character(message,"Shanks :", "", "shanks", description, "Que devrions-nous faire?", CONSTANTS['COLORS']['SHANKS'])
+    couleursBug = [0xa732f0,0x001aff, CONSTANTS['COLORS']['ENRICO_PUCCI'], 0x1c0116, 0x000000]
+    for reaction in ['🗡️','💬']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🗡️', '💬'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) == '🗡️':
+        await message.channel.send(embed=embed_raw("Vous attaquez les géants..", "", discord.Color.red()))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_info("Combat contre Dorry et Broggy", "Vous avez vaincu les géants!", discord.Color.green()))
+        await asyncio.sleep(4)
+        await embed_histoire_character(message,"Shanks est perplexe :", "", "shanks", "", "La violence n'est pas toujours la meilleure des solutions.", CONSTANTS['COLORS']['SHANKS'])
+        await asyncio.sleep(4)
+        embed = discord.Embed(
+            title="Mai-.. Mais que se passe-t-il ?",
+            description="",
+            color=CONSTANTS['COLORS']['SHANKS']
+        )
+        pfp = discord.File("./assets/histoire/shanks.png", filename="shanks.png")
+        embed.set_author(name="Shanks :", icon_url="attachment://shanks.png")
+        msg = await message.channel.send(files=[pfp], embed=embed)
+        await asyncio.sleep(1)
+        # On changer la couleur du message
+        for i in range(4):
+            embed.color = couleursBug[i]
+            await msg.edit(embed=embed)
+            await asyncio.sleep(1.2)
+    else:
+        # On essaye de leur parler
+        await message.channel.send(embed=embed_raw("Vous essayez de leur parler..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_raw("Dorry et Broggy vous écoutent attentivement et semblent amicaux..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(5)
+        # Ils nous trouvent drôles et nous explique qu'eux aussi étaient sur une île quand des bugs ont commencé à se produire
+        embed = discord.Embed(
+            title="Nous étions sur notre île habituellement quand la nuit a comm-..",
+            description="",
+            color=CONSTANTS['COLORS']['BROGGY']
+        )
+        pfp = discord.File("./assets/histoire/broggy.png", filename="broggy.png")
+        embed.set_author(name="Dorry et Broggy :", icon_url="attachment://broggy.png")
+        msg = await message.channel.send(files=[pfp], embed=embed)
+        await asyncio.sleep(3)
+        # On changer la couleur du message
+        for i in range(4):
+            embed.color = couleursBug[i]
+            await msg.edit(embed=embed)
+            await asyncio.sleep(1.2)
+    await asyncio.sleep(3)
+    # Un nouveau bug se produit
+    await message.channel.send(embed=embed_raw("Un nouveau bug se produit..", "",CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    await asyncio.sleep(3)
+    await finDeNiveau(message, userFromDb, 3, ticketsGagnes)
 
 async def niveau1(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['HISTOIRE'])
@@ -119,7 +200,7 @@ async def niveau1(message, userFromDb, equipe):
     await asyncio.sleep(4)
     await embed_histoire_character(message,"Inconu", "", "inconnu", "", "Un bruit surgit..", CONSTANTS['COLORS']['INCONNU'])
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Saibaman", "saibaman", "saibaman", "", "Un monstre vous attaque!", CONSTANTS['COLORS']['SAIBAMAN'])
+    await embed_histoire_character(message,"Saibaman", "saibaman", "saibaman", "", "Un monstre vous attaque!", CONSTANTS['COLORS']['SAIBAMAN'],False)
     await asyncio.sleep(5)
     await message.channel.send(embed=embed_info("Combat contre le Saibaman", "Vous avez vaincu le Saibaman!", discord.Color.green()))
     await asyncio.sleep(4)
@@ -142,18 +223,22 @@ async def niveau1(message, userFromDb, equipe):
         await message.channel.send(embed=embed_raw("Vous partez en route vers la forêt.", "", CONSTANTS['COLORS']['FORET']))
     if str(reaction.emoji) == '💨':
         await message.channel.send(embed=embed_raw("Vous partez en route vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
+    database.updateChoice(userFromDb[1], "lvl1fumee", str(reaction.emoji) == '💨')
+    print(str(reaction.emoji) == '💨')
     await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 2)
 
 async def test(message, userFromDb):
     await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à tournoyer inlassablement.\nJ'ai alors aperçu une sorte de prêtre, et je me suis réveiller ici..", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
 
-def embed_raw(titre,description,color):
+def embed_raw(titre,description,color, footer=None):
     embed = discord.Embed(
         title=titre,
         description=description,
         color=color
     )
+    if footer:
+        embed.set_footer(text=footer)
     return embed
 
 def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], niveau=None, footer=None):
@@ -165,12 +250,16 @@ def embed_naratteur(titre, description, color=CONSTANTS['COLORS']['HISTOIRE'], n
     nom = "Histoire" if not niveau else f"Histoire - Niv.{niveau}"
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=nom, icon_url=bot.user.avatar_url)
+    embed.set_author(name=nom, icon_url=bot.user.avatar.url)
     return embed
 
-async def finDeNiveau(message, userFromDb, level):
+async def finDeNiveau(message, userFromDb, level, ticketsGagnes = 0):
     database.updateNiveauHistoire(userFromDb[1], level)
-    await message.channel.send(embed=embed_naratteur(f"Félicitations! Vous avez terminé le niveau {str(level-1)}!", f"",discord.Color.green()))
+    footer = None
+    if ticketsGagnes > 0:
+        database.update_tickets(userFromDb[1], database.get_tickets(userFromDb[1]) + ticketsGagnes)
+        footer = f"Tickets gagnés : {ticketsGagnes}."
+    await message.channel.send(embed=embed_naratteur(f"Félicitations! Vous avez terminé le niveau {str(level-1)}!", f"", CONSTANTS['COLORS']['FIN_NIVEAU'], None, footer))
 
 async def debutDeNiveau(message, userFromDb, level,nom, equipe, couleur=discord.Color.gold()):
     description = "Équipe: " + " ~ ".join([f"{equipe['team'][i][6]}" for i in range(len(equipe['team']))])
@@ -316,7 +405,7 @@ async def labyrinthe(message, userFromDb):
         pieceActuelle = listePiecesAvailables[listeEmojis.index(str(reaction.emoji))]
     await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez trouvé la sortie de la cave!", discord.Color.green()))
         
-def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold()):
+def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold(), isNotGif=False):
     files = []
     embed = discord.Embed(
         title=titre,
@@ -324,8 +413,13 @@ def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, co
         color=color
     )
     if nomGif:
-        gif = discord.File("./assets/histoire/" + nomGif + ".gif", filename=nomGif + ".gif")
-        embed.set_image(url="attachment://" + nomGif + ".gif")
+        if isNotGif:
+            gif = discord.File("./assets/histoire/" + nomGif + ".png", filename=nomGif + ".png")
+            embed.set_image(url="attachment://" + nomGif + ".png")
+        else:
+            gif = discord.File("./assets/histoire/" + nomGif + ".gif", filename=nomGif + ".gif")
+            embed.set_image(url="attachment://" + nomGif + ".gif")
+        
         files.append(gif)
     if nomPfp:
         pfp = discord.File("./assets/histoire/" + nomPfp + ".png", filename=nomPfp + ".png")
@@ -377,7 +471,7 @@ async def list_command(message, userFromDb):
     )
     for key, value in commande.items():
         embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -459,7 +553,6 @@ async def invocation(message, userFromDb):
 async def inventaire(message, userFromDb):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
-    print(characters)
     if characters == None or len(characters) == 0:
         await message.channel.send(embed=embed_info("Inventaire vide", "Votre inventaire est vide!", discord.Color.red()))
         return
@@ -476,7 +569,7 @@ async def inventaire(message, userFromDb):
             value = ""
         value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
         embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     await message.channel.send(embed=embed)
 
 @bot.command()
@@ -546,8 +639,7 @@ async def info(message, userFromDb):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
-    print(synergies)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     await message.channel.send(embed=embed)
@@ -580,7 +672,7 @@ async def infoSynergie(message, userFromDb):
         color=color
     )
     embed.set_footer(text=f"Boost : {typeOfBoost} {forceOfBoost}")
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     embed.add_field(name="Personnages", value=liste_personnages[:1999], inline=False)
     embed.set_image(url=image)
     
@@ -619,7 +711,7 @@ async def voirTeam(message, userFromDb):
             )
             
     embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
@@ -670,7 +762,7 @@ async def ajouterTeam(message, userFromDb):
         title=f"{ nom } occupe désormais la position { position }.",
         color=discord.Color.green()
     )
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     embed.set_footer(text="Pour voir votre team, tapez !team.")
  
     embed.set_image(url=image)
@@ -682,7 +774,6 @@ async def fetch_user_from_message(message, nombre_arguments_max=2):
     # Permet de récupérer un utilisateur à partir d'un message
     try:
         parts = message.content.split(' ')
-        print(parts, len(parts))
         if len(parts) > nombre_arguments_max:
             logger.error(f"Erreur de syntaxe dans fetch_user_from_message appelée par {message.author.name} ({message.author.id}).")
             return "ERROR_SYNTAX"
@@ -777,7 +868,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
     )
     if footer:
         embed.set_footer(text=footer)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     return embed
 
 def embed_invocation(character_template):
@@ -793,7 +884,7 @@ def embed_invocation(character_template):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar_url)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
