@@ -65,10 +65,8 @@ async def on_message(message):
 # Partie Histoire
 async def handle_user_level(message, userFromDb):
     level_to_function = {
-        1: niveau1,
-        2: niveau2,
-        3: niveau3,
-        4: niveau4,
+        1: niveau1, 2: niveau2, 3: niveau3,
+        4: niveau4, 5: niveau5
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -83,13 +81,41 @@ async def handle_user_level(message, userFromDb):
         await handler(message, userFromDb, equipe)
     else:
         logger.error(f"Niveau inconnu {niveau} pour l'utilisateur {message.author.name} ({message.author.id}).")
-        await message.channel.send(embed=embed_info("Erreur", "Niveau inconnu.", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Félicitations", "Vous avez terminé l'histoire!", random.choice(list(CONSTANTS['COLORS'].values()))))
 
 async def histoire(message, userFromDb):
     if not userFromDb:
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     await handle_user_level(message, userFromDb)
+
+async def niveau5(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 5, "Caverne", equipe, CONSTANTS['COLORS']['GROTTE'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Un bruit vous réveille alors que vous étiez entrain de vous reposer..", "", CONSTANTS['COLORS']['GROTTE']))
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_naratteur("Une étrange odeur se fait sentir..", "", CONSTANTS['COLORS']['GROTTE']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous levez et apercevez une lumière au fond de la caverne..", "", CONSTANTS['COLORS']['LIGHT']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous approchez de la lumière..", "", CONSTANTS['COLORS']['LIGHT']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous apercevez un humain et un monstre violet au loin..", "", CONSTANTS['COLORS']['PURPLE_HAZE']))
+    await asyncio.sleep(5)
+    # on entend quelqu'un dire "oh encore des visiteurs, purple Haze tu sais quoi faire"
+    await embed_histoire_character(message,"Inconnu", "", "inconnu", "", "Encore des visiteurs? Purple Haze tu sais quoi faire.", CONSTANTS['COLORS']['INCONNU'])
+    await asyncio.sleep(5)
+    ticketGagnes, escaped = await purple(message, userFromDb)
+    await asyncio.sleep(4)
+    if not escaped:
+        # On prend le nombre de tickets qu'il a
+        tickets = database.get_tickets(userFromDb[1])
+        # Vous avez perdu 
+        await message.channel.send(embed=embed_info("Vous avez perdu..", f"Vous avez perdu {tickets} tickets.", discord.Color.red()))
+        # On retire les tickets
+        database.updateTickets(userFromDb[1], 0)
+        await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 6, ticketGagnes)
 
 async def niveau4(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 4, "Une nouvelle rencontre", equipe, CONSTANTS['COLORS']['ZUKO'])
@@ -151,7 +177,6 @@ async def niveau4(message, userFromDb, equipe):
     await message.channel.send(embed=embed_naratteur("Vous continuez votre route et apercevez une grotte au loin..", "Vous partez vous reposer au sein de la grotte.", CONSTANTS['COLORS']['GROTTE']))
     await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 5)
-
 
 async def niveau3(message, userFromDb, equipe):
     ticketsGagnes = 0
@@ -438,35 +463,35 @@ def get_ingredient():
 
 async def purple(message, userFromDb):
     await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Fuyez aussi vite que vous pouvez!","Purple Haze a déclenché son virus!", discord.Color.purple())
-    alive = True
+    alive = True; escaped = False;
     ticketsGagnes = 0
-    await asyncio.sleep(3)
-    while alive:
+    await asyncio.sleep(7)
+    while alive and not escaped:
         # le taux de mort est entre 0 et 0.3
         tauxDeMort = random.random() * 0.3
         # On lui demande s'il souhaite s'enfuir ou s'il veut risquer sa chance pour gagner des tickets
-        phrase = "Vous avez vu un autre " if ticketsGagnes > 0 else "Vous avez vu un "
-        notice = "\n🏃 : Fuir  💰 : Prendre le ticket"
+        phrase = "Vous aperçevait un autre " if ticketsGagnes > 0 else "Vous apercevez un "
+        notice = "\n🏃 : Fuir  🎫 : Prendre le ticket"
         msg = await embed_histoire_character(message, "Purple Haze", None, "purpleHaze","Avez-vous vraiment le temps.. ?" + notice, phrase + "ticket, souhaitez vous le prendre?", discord.Color.purple())
         await msg.add_reaction('🏃')
-        await msg.add_reaction('💰')
+        await msg.add_reaction('🎫')
         try:
-            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '💰'])
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '🎫'])
         except:
-            await embed_histoire_character(message, "Purple Haze", None, "purpleHaze", "Le poison de Purple Haze vous a rattrapé et avez perdu tous vos tickets!","Vous avez pris trop de temps!", discord.Color.dark_red())
-            return
+            await embed_histoire_character(message, "Purple Haze", None, "purpleHaze", "Le poison de Purple Haze vous a rattrapé et a désagrégé tous vos tickets!","Vous avez pris trop de temps!", discord.Color.dark_red())
+            return 0, False
         if str(reaction.emoji) == '🏃':
-            alive = False
-            await message.channel.send(embed=embed_info("PURPLE HAZE", f"Vous avez fui le sous-terrain avec {ticketsGagnes}!", discord.Color.green()))
+            escaped = True
+            await message.channel.send(embed=embed_info("", f"Vous avez réussi à fuire la caverne avec {ticketsGagnes} tickets!", discord.Color.gold()))
 
-        elif str(reaction.emoji) == '💰':
+        elif str(reaction.emoji) == '🎫':
             if random.random() < tauxDeMort:
-                await embed_histoire_character(message, "Purple Haze", None, "purpleHaze","Le poison de Purple Haze vous a rattrapé et avez perdu tous vos tickets!","Vous avez été touché.", discord.Color.dark_red())
-                return
+                await embed_histoire_character(message, "Purple Haze", None, "purpleHaze","Le poison de Purple Haze vous a rattrapé et a désagrégé tous vos tickets!","Vous avez été touché.", discord.Color.dark_red())
+                return 0, False
             ticketsGagnes += 1
-            await message.channel.send(embed=embed_info("PURPLE HAZE", "Vous avez récupéré un ticket!", discord.Color.green(), f"Tickets sur vous : {ticketsGagnes}."))
+            await message.channel.send(embed=embed_raw("Vous avez pris le ticket!", f"Tickets sur vous : {ticketsGagnes}", discord.Color.gold()))
             await asyncio.sleep(2.5)
-    return
+    return ticketsGagnes, escaped
 
 async def labyrinthe(message, userFromDb):
     maison = {

@@ -110,6 +110,8 @@ CONSTANTS = {
         'ZUKO' : 0x8B0000,
         'RUI' : 0xFFFFFF,
         'GROTTE' : 0x8B4513,
+        'PURPLE_HAZE' : 0xa424c7,
+        'LIGHT' : 0xf4ff91,
         
     },
 }
