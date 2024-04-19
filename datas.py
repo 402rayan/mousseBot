@@ -537,7 +537,7 @@ all_characters_templates = [
             ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 0, 0, 0),
             ("Utahime", "C", 'https://i.imgur.com/IPp6E9q.png', 0, 0, 0),
             ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 0, 0, 0),
-            ("Haruta Shigemo", "C", "https://staticg.sportskeeda.com/editor/2023/10/9dbce-16972933761276-1920.jpg", 0, 0, 0),
+            ("Haruta Shigemo", "C", "https://i0.wp.com/www.spielanime.com/wp-content/uploads/2023/10/Haruta-Shigemo-has-a-unique-Curse-Technique-How-does-it-work-1.webp", 0, 0, 0),
             
 
             # Personnages D

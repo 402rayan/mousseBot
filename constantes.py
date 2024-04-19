@@ -107,6 +107,10 @@ CONSTANTS = {
         'NIGHT' : 0x000000,
         'DARK_RED' : 0x8B0000,
         'FROID' : 0x87CEEB,
+        'ZUKO' : 0x8B0000,
+        'RUI' : 0xFFFFFF,
+        'GROTTE' : 0x8B4513,
+        
     },
 }
 
