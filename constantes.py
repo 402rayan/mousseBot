@@ -104,6 +104,9 @@ CONSTANTS = {
         'NARRATEUR' : 0x360801,
         'BROGGY' : 0x8B0000,
         'FIN_NIVEAU' : 0x00bf66,
+        'NIGHT' : 0x000000,
+        'DARK_RED' : 0x8B0000,
+        'FROID' : 0x87CEEB,
     },
 }
 

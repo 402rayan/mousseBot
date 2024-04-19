@@ -91,9 +91,32 @@ async def histoire(message, userFromDb):
     await handle_user_level(message, userFromDb)
 
 async def niveau3(message, userFromDb, equipe):
-    await debutDeNiveau(message, userFromDb, 3, "La montagne", equipe, CONSTANTS['COLORS']['MONTAGNE'])
-    await asyncio.sleep(2)
-    await finDeNiveau(message, userFromDb, 4)
+    await debutDeNiveau(message, userFromDb, 3, "Une Seule Question", equipe, CONSTANTS['COLORS']['FROID'])
+    await asyncio.sleep(3)
+    # Le bug qui se produit ne vous téléporte pas cette fois, mais la nuit est tombé d'un coup... 
+    await message.channel.send(embed=embed_naratteur("La nuit est tombée d'un coup suite à l'anomalie..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
+    # Vous parcourez la forêt à la recherche d'autres personnes ou de réponses et des murmures se font entendre au loin.
+    await message.channel.send(embed=embed_naratteur("Vous parcourez la forêt à la recherche d'autres personnes ou de réponses..", "", CONSTANTS['COLORS']['FORET']))
+    await asyncio.sleep(3)
+    await message.channel.send(embed=embed_naratteur("Des murmures se font entendre au loin..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
+    # Ces murmures sont étranges, comme s'ils étaient les échos du passés. Un évènement sûrement liés aux bugs.
+    await message.channel.send(embed=embed_naratteur("Ces murmures sont étranges..", "Comme s'ils étaient les échos du passé.", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
+    # Après quelques temps, vous quittez la forêt, il commence subitement à faire très froid. Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme, ils ont du sang sur eux. Vous n'avez même pas le temps de réfléchir qu'ils vous attaquent.
+    await message.channel.send(embed=embed_naratteur("Vous quittez la forêt, il commence à faire très froid..", "", CONSTANTS['COLORS']['FROID']))
+    await asyncio.sleep(3)
+    await message.channel.send(embed=embed_raw("Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme.\nIls ont du sang sur eux..", "", CONSTANTS['COLORS']['FROID']))
+    await asyncio.sleep(3)
+    await embed_histoire_character(message, "Jeune garçon", "haku", "froid", "", "Le jeune garçon vous attaque.", CONSTANTS['COLORS']['FROID'],isNotGif=True)
+    await asyncio.sleep(3)
+    await message.channel.send("combat avec zabuza") #TODO
+    await asyncio.sleep(3)
+    
+
+
+
 
 async def niveau2(message, userFromDb, equipe):
     isFumee = database.getChoice(userFromDb[1], "lvl1fumee")
