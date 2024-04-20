@@ -662,21 +662,29 @@ async def invocation(message, userFromDb):
     template = donnees[0]
     msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
-    if rarityOfCharacter in ["F", "E", "D", "C"]:
+    if rarityOfCharacter == "X":
+        schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
+        nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
+        msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
+        await asyncio.sleep(6)
+        await msg.delete()
+        await message.channel.send(embed=embed_invocation(template,message.author))
+        
+    elif rarityOfCharacter in ["F", "E", "D", "C"]:
         await asyncio.sleep(3)
-        await msg.edit(embed=embed_invocation(template))
-        return
+        await msg.edit(embed=embed_invocation(template,message.author))
+
     else:
         random.shuffle(phrases_invocation) # On mélange les phrases d'invocation
-        nombreRotation = {"B" : 1, "A" : 2, "S" : 3, "SS" : 4, "X" : 6}
+        nombreRotation = {"B" : 1, "A" : 2, "S" : 3, "SS" : 4}
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
-            await asyncio.sleep(3.5)
+            await asyncio.sleep(random.uniform(0.5, 2))
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        await asyncio.sleep(random.randint(1, 2))
+        await asyncio.sleep(3)
         await msg.delete()
-        await message.channel.send(embed=embed_invocation(template))
+        await message.channel.send(embed=embed_invocation(template,message.author))
     return
 
 @bot.command()
@@ -1083,7 +1091,7 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     return embed
 
-def embed_invocation(character_template):
+def embed_invocation(character_template, user=None):
     """ Fonction qui retourne un embed pour l'invocation d'un personnage """
     character = character_template # Pour plus de lisibilité
     print(character)
@@ -1096,7 +1104,10 @@ def embed_invocation(character_template):
     )
     embed.set_image(url=image)
     embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    if not user:
+        embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    else:
+        embed.set_author(name=f"{user.name} a invoqué :", icon_url=user.avatar.url)
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed

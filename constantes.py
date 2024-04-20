@@ -17,7 +17,7 @@ CONSTANTS = {
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
-        'X': 0.01,
+        'X': 1,
         'SS': 0.02,
         'S': 0.05,
         'A': 0.1,
@@ -121,19 +121,11 @@ CONSTANTS = {
         'LIGHT' : 0xf4ff91,
         
     },
+    "NOMS_GIF_INVOCATION": [
+        # Nom du gif, texte à afficher, couleur du texte
+        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"]
+    ]
 }
-
-""" 
-Rang F : Bleu clair (#ADD8E6) - Doux et discret, parfait pour les personnages les moins influents.
-Rang E : Vert clair (#98FB98) - Plus vif que le bleu clair, mais toujours doux et non menaçant.
-Rang D : Jaune clair (#FFFF99) - Lumineux et encourageant, symbolisant un potentiel non encore pleinement exploité.
-Rang C : Orange (#FFA500) - Chaleureux et plus sérieux, marquant une montée en compétence et en influence.
-Rang B : Améthyste (#9966CC) - Une teinte plus mystique et profonde, faisant la transition vers des enjeux plus sérieux sans atteindre l'intensité des rangs supérieurs.
-Rang A : Rouge (#FF0000) - Dynamique et puissant, indiquant des personnages d'une grande force et importance.
-Rang S : Rouge sang (#8B0000) - Foncé et menaçant, parfait pour les personnages extrêmement puissants et influents.
-Rang SS : Noir métallique (#1C1C1C) - Imposant et intimidant, évoquant la peur et le respect, soulignant une puissance presque inégalée.
-Rang X : Noir profond (#000000) - Le summum de la puissance, terrifiant et dominant, le noir profond représente la menace ultime.
-"""
 
 phrases_invocation = [
     "Mais... C'est incroyable !",
@@ -150,6 +142,14 @@ phrases_invocation = [
     "Impossible..",
     "Est-ce que c'est vraiment possible ?",
     "C'est un signe du destin !",
-    "Je suis sûr que c'est quelque chose de rare !"
+    "Je suis sûr que c'est quelque chose de rare !",
+    "Peut-être que..",
+    "🤩   🤩   🤩   🤩",
+    "🎉   🎉   🎉   🎉",
+    "🎊   🎊   🎊   🎊",
+    "🎁   🎁   🎁   🎁",
+    "🎈   🎈   🎈   🎈",
+    "C'est le moment de vérité !",
+    "Le suspens est à son comble...",
 ]
 
