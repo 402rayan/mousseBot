@@ -1270,7 +1270,7 @@ async def list_command(message, userFromDb):
 commands = {
     "pow": getPower,
     "pui" : getPower,
-    "tickets": getTickets,
+    "tic": getTickets,
     "hou": claimHourly,
     "dai": claimHourly,
     "admin": admin,
@@ -1289,7 +1289,7 @@ commands = {
     "donner_tickets": giveTicket,
     "donner_ticket": giveTicket,
     "give_ticket": giveTicket,
-    "info": info,
+    "info ": info,
     "infos": infoSynergie,
     "te": voirTeam,
     "voi": voirTeam,
