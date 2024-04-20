@@ -66,7 +66,7 @@ async def on_message(message):
 async def handle_user_level(message, userFromDb):
     level_to_function = {
         1: niveau1, 2: niveau2, 3: niveau3,
-        4: niveau4, 5: niveau5
+        4: niveau4, 5: niveau5, 6: niveau6
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -88,6 +88,58 @@ async def histoire(message, userFromDb):
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     await handle_user_level(message, userFromDb)
+
+async def niveau6(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 6, "Un repas pris de court", equipe, discord.Color.gold())
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous ressortez de la grotte et il fait jour!", "", CONSTANTS['COLORS']['CIEL']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous apercevez un petit village au loin et décidez d'y aller.", "", CONSTANTS['COLORS']['CIEL']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous êtes accueilis avec hospitalité! Les gens sont souriants et gentils!", "", CONSTANTS['COLORS']['CIEL']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous décidez de manger quelque chose et vous vous dirigez vers le chef cuisinier du village..", "", CONSTANTS['COLORS']['CIEL']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Sanji se présente :", "", "sanji", "", "Je suis Sanji, c'est moi qui m'occupe de faire à manger ici.", discord.Color.gold())
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Sanji :", "", "sanji", "", "Et si vous m'aidiez à faire à manger pour ce midi!", discord.Color.gold())
+    await asyncio.sleep(4)
+    reussis = await cookWithSanji(message, userFromDb)
+    await asyncio.sleep(4)
+    if not reussis:
+        return
+    await message.channel.send(embed=embed_naratteur("Le repas est un succès et tout le monde est content!", "", CONSTANTS['COLORS']['CIEL']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Sanji est surpris :", "", "sanji", "", "Mai-s... Qu'est-ce que c'est que ça?!", discord.Color.gold())
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Sanji est terrifié :", "sanjiScared", "sanji", "", "De-des gens se transforment en monstres!", discord.Color.gold(),isNotGif=True)
+    await asyncio.sleep(4)
+    await embed_histoire_character(message,"Un monstre attaque le village", "mahitoAttack", "mahito", "", "", CONSTANTS['COLORS']['MAHITO'])
+    await asyncio.sleep(6)
+    await embed_histoire_character(message,"Sanji s'adresse à nous:", "", "sanji", "", "Je vais m'occuper de lui, occupez-vous des habitants!", discord.Color.gold())
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous occupez de mettre en sécurité les habitants du village, mais quelque chose attire votre attention", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_naratteur("Vous apercevez un homme au loin, un homme qui ressemble fortement au prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    await asyncio.sleep(4)
+    # Choix
+    description = "🏃 : Poursuivre le prêtre" + "\n🛡️ : Défendre le village"
+    msg = await message.channel.send(embed=embed_raw("Que faites-vous?", description, CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    for reaction in ['🏃','🛡️']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '🛡️'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) == '🏃':
+        await message.channel.send(embed=embed_info("Vous partez à la poursuite du prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    else:
+        await message.channel.send(embed=embed_info("Vous décider de rester défendre le village.", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    await asyncio.sleep(4)
+    database.updateChoice(userFromDb[1], "lvl6pucci", str(reaction.emoji) == '💨')
+    await finDeNiveau(message, userFromDb, 7)
+
 
 async def niveau5(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 5, "Caverne", equipe, CONSTANTS['COLORS']['GROTTE'])
@@ -111,9 +163,13 @@ async def niveau5(message, userFromDb, equipe):
         # On prend le nombre de tickets qu'il a
         tickets = database.get_tickets(userFromDb[1])
         # Vous avez perdu 
-        await message.channel.send(embed=embed_info("Vous avez perdu..", f"Vous avez perdu {tickets} tickets.", discord.Color.red()))
+        ticketGagnes = -10
+        if tickets < 10:
+            ticketGagnes = -tickets
+        # On affiche la valeur absolu pour le texte
+        nombreAffiche = abs(ticketGagnes)
+        await message.channel.send(embed=embed_info("Vous avez perdu..", f"Vous avez perdu {nombreAffiche} tickets.", discord.Color.red()))
         # On retire les tickets
-        database.updateTickets(userFromDb[1], 0)
         await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 6, ticketGagnes)
 
@@ -410,7 +466,7 @@ async def finDeNiveau(message, userFromDb, level, ticketsGagnes = 0):
     # Met à jour le niveau de l'utilisateur et lui donne des tickets s'il en a gagné et lui envoie un message de fin de niveau
     database.updateNiveauHistoire(userFromDb[1], level)
     footer = None
-    if ticketsGagnes > 0:
+    if ticketsGagnes != 0:
         database.update_tickets(userFromDb[1], database.get_tickets(userFromDb[1]) + ticketsGagnes)
         footer = f"Tickets gagnés : {ticketsGagnes}."
     await message.channel.send(embed=embed_naratteur(f"Félicitations! Vous avez terminé le niveau {str(level-1)}!", f"", CONSTANTS['COLORS']['FIN_NIVEAU'], None, footer))
@@ -423,17 +479,19 @@ def getNiveauFromUser(user):
     return user[8]
 
 async def cookWithSanji(message, userFromDb):
-    await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "","Sanji a besoin de votre aide pour cuisiner!", discord.Color.gold())
+    await embed_histoire_character(message, "Sanji", "cookWithSanji", "sanji", "","Sanji prépare à manger!", discord.Color.gold())
     # Le but est que sanji vous donne un nom d'ingrédient ou d'aliment et que vous cliquiez sur la bonne réaction
     # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
     # Il y a 4 réactions différentes dont une seule bonne
-    ingredientReussis = 0; totalIngredients = 2; temps = 3
+    ingredientReussis = 0; totalIngredients = 5; temps = 5
+    await asyncio.sleep(4)
     while ingredientReussis <= totalIngredients:
         await asyncio.sleep(2)
+        temps -= (0.2* temps)
         retour = get_ingredient() 
         ingredient = retour[0]
         liste_reactions = retour[1]
-        msg = await embed_histoire_character(message, "Sanji", None ,"sanji", f"Cliquez sur la bonne réaction!",f"Sanji a besoin de {ingredient[0]} pour cuisiner!", discord.Color.gold())
+        msg = await embed_histoire_character(message, "Sanji", None ,"sanji", f"Cliquez sur la bonne réaction!",f"Sanji a besoin de {ingredient[0]} pour son plat!", discord.Color.gold())
         # On veut que dans la liste des réactions il y a ait 3 réactions aléatoires et une bonne
         for reaction in liste_reactions:
             await msg.add_reaction(reaction)
@@ -441,14 +499,17 @@ async def cookWithSanji(message, userFromDb):
             reaction, user = await bot.wait_for('reaction_add', timeout=temps, check=lambda reaction, user: user == message.author and str(reaction.emoji) in liste_reactions)
         except:
             await message.channel.send(embed=embed_info("Vous n'avez pas donné l'ingrédient à temps. ", "Le plat est un total désastre.", discord.Color.red()))
-            return
+            return False
         if str(reaction.emoji) == ingredient[1]:
-            await embed_histoire_character(message, "Sanji", None, "sanji", f"Plus que {totalIngredients - ingredientReussis} ingrédients.", "Bravo! Vous avez réussi!", discord.Color.gold())
-            ingredientReussis += 1; temps -= 0.4
+            desc = f"Plus que {totalIngredients - ingredientReussis} ingrédients." if ingredientReussis < totalIngredients else ""
+            await embed_histoire_character(message, "Sanji", None, "sanji", desc, "Bravo! Vous avez réussi!", discord.Color.gold())
+            ingredientReussis += 1;
         else:
             await message.channel.send(embed=embed_info("Vous avez donné le mauvais ingrédient..", "Le plat est un total désastre.", discord.Color.red()))
-            return
+            return False
+    await asyncio.sleep(3)
     await embed_histoire_character(message, "Sanji", "sanjiTaste", "sanji", "Grâce à vous, Sanji a pu préparer un plat exquis!", "Félicitations!", discord.Color.gold())
+    return True
 
 def get_ingredient():
     # Fonction qui retourne un ingrédient, et une liste de 3 ingrédients aléatoires + le bon ingrédient
@@ -478,7 +539,7 @@ async def purple(message, userFromDb):
         try:
             reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '🎫'])
         except:
-            await embed_histoire_character(message, "Purple Haze", None, "purpleHaze", "Le poison de Purple Haze vous a rattrapé et a désagrégé tous vos tickets!","Vous avez pris trop de temps!", discord.Color.dark_red())
+            await embed_histoire_character(message, "Purple Haze", None, "purpleHaze", "Le poison de Purple Haze vous a rattrapé et a désagrégé 10 de vos tickets!","Vous avez pris trop de temps!", discord.Color.dark_red())
             return 0, False
         if str(reaction.emoji) == '🏃':
             escaped = True
@@ -625,7 +686,7 @@ async def claimHourly(message, userFromDb):
     claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
         titre = f"Vous avez obtenu 3 tickets et beaucoup d'expérience!"
-        await message.channel.send(embed=embed_auteur(message.author,f"Récompense de {message.author.name} :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
+        await message.channel.send(embed=embed_auteur(message.author,f"Récompense :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
     elif not(claim[0]):
         temps_restant = claim[1]
         temps_restant_minutes = (temps_restant.seconds//60)%60
@@ -708,7 +769,7 @@ async def inventaire(message, userFromDb):
         
 
         
-        embed.set_author(name=f"Inventaire de {message.author.name} {page_index + 1}/{len(pages)}", icon_url=message.author.avatar.url)
+        embed.set_author(name=f"Inventaire {page_index + 1}/{len(pages)}", icon_url=message.author.avatar.url)
         for character in pages[page_index]:
             identifiant = character[2]
             rang = character[7]  # Assumons que l'indice 7 contient le rang du personnage
@@ -1019,7 +1080,7 @@ async def createTemplates(message, userFromDb):
 
 @bot.command()
 async def reset(message, userFromDb):
-    if message.author.id != 724383641752436757:
+    if message.author.id not in [724383641752436757,617045747862470803]:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
     database.reset(False)
@@ -1132,7 +1193,7 @@ async def list_command(message, userFromDb):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
     commande = {
         "!tickets": "Permet de voir le nombre de tickets que vous avez.",
-        "!hourly": "Permet de réclamer 3 tickets toutes les heures!",
+        "!hourly": "Permet de réclamer tickets  et expériences!",
         "!invo": "Permet d'invoquer un personnage.",
         "!inv": "Permet de voir votre inventaire.",
         "!givetickets *{joueur}* *{nombre}*": "Permet de donner des tickets à un autre joueur.",

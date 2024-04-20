@@ -121,6 +121,7 @@ class Database:
         CREATE TABLE IF NOT EXISTS user_choices (
             user_discord_id TEXT,
             lvl1fumee BOOLEAN DEFAULT NULL,
+            lvl6pucci BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')

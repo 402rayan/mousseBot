@@ -548,7 +548,7 @@ all_characters_templates = [
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 0, 0, 0),
             ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 0, 0, 0),
             ("Choso", "SS", 'https://i.pinimg.com/originals/65/2f/25/652f253995b84d6156dc4865be48837b.gif', 0, 0, 0),
-            ("Mahito", "SS", 'https://i.imgur.com/nx6CAkr.png', 0, 0, 0),
+            ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 0, 0, 0),
             ("Jogo", "SS", 'https://64.media.tumblr.com/6fda876b0fee0316b1b2808e0b26e8cd/8cdd4038836dcaca-2c/s1280x1920/44fa45b447f79aaa38a691210c1231f041c87bf9.gifv', 0, 0, 0),
             ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 0, 0, 0),
             ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 0, 0, 0),
@@ -564,7 +564,7 @@ all_characters_templates = [
             ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 0, 0, 0), #TOREVIEW
             ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 0, 0, 0),
             ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 0, 0, 0),
-            
+            ("Yuji Itadori", "S", "https://i.makeagif.com/media/12-14-2023/xrC5c5.gif", 0, 0, 0),
             
             #Personnages A
             ("Inumaki", "A", 'https://i.imgur.com/OkbjhWZ.png', 0, 0, 0), #VIDEO
@@ -574,7 +574,6 @@ all_characters_templates = [
             # Personnages B
             ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 0, 0, 0),
             ("Nobara", "B", "https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1c/Nobara_Kugisaki_EP3.png/revision/latest?cb=20210119101146&path-prefix=fr", 0, 0, 0),
-            ("Yuji Itadori", "B", "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/itadori-yuji.jpg", 0, 0, 0),
             ("Kusakabe", "B", 'https://i.imgur.com/6rujX3t.png', 0, 0, 0),
             ("Takuma Ino", "B", 'https://i.imgur.com/W3diIlg.png', 0, 0, 0),
             ("Yaga", "B", 'https://i.imgur.com/R8Rq12y.png', 0, 0, 0),
@@ -1070,7 +1069,7 @@ all_link_synergies = {
     67 : ["Grimasse","Garou","Charanko","Bang"], # Dojo de Bang
     66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul","Yomi"], # Aveugle 
     65 : ["Minato", "Tobirama", "Yoruichi", "Gran Torino","Sonic"], # Speedster TODO
-    64 : ["Kaido","Ryukyu","Toshiro","Acnologia","Igneel","Shenron","Porungan"], # Draconique TODO
+    64 : ["Kaido","Ryukyu","Toshiro","Acnologia","Igneel","Shenron","Porunga"], # Draconique TODO
     63 : ["Big Mom", "Katakuri"], # Équipage de Big Mom
     62 : ["Kaido", "King", "Queen", "Jack"], # Équipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # Équipage de Shanks
