@@ -683,24 +683,52 @@ async def invocation(message, userFromDb):
 async def inventaire(message, userFromDb):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
-    if characters == None or len(characters) == 0:
+    if characters is None or len(characters) == 0:
         await message.channel.send(embed=embed_info("Inventaire vide", "Votre inventaire est vide!", discord.Color.red()))
         return
-    
-    embed = discord.Embed(
-        title=f"Inventaire de {message.author.name}:",
-        color=discord.Color.blue()
-    )
-    for character in characters:
-        identifiant = character[2]
-        synergies = database.get_synergies_by_character_template(identifiant)
-        value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
-        if len(synergies) == 0:
-            value = ""
-        value = f"HP: {character[4]} ATK: {character[5]} DEF: {character[6]} - Niveau {character[3]}\n" + value
-        embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
-    await message.channel.send(embed=embed)
+
+    # Pagination setup
+    items_per_page = 5
+    pages = [characters[i:i + items_per_page] for i in range(0, len(characters), items_per_page)]
+    page_index = 0
+
+    def create_embed(page_index):
+        embed = discord.Embed(
+            title="",
+            color=discord.Color.blue()
+        )
+        embed.set_author(name=f"Inventaire de {message.author.name} {page_index + 1}/{len(pages)}", icon_url=message.author.avatar.url)
+        for character in pages[page_index]:
+            identifiant = character[2]
+            synergies = database.get_synergies_by_character_template(identifiant)
+            value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
+            if len(synergies) == 0:
+                value = ""
+            value = f"HP: {character[9]} ATK: {character[10]} DEF: {character[11]} - Niveau {character[3]}\n" + value
+            embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
+        return embed
+
+    # Send initial embed
+    inventory_msg = await message.channel.send(embed=create_embed(page_index))
+    if len(pages) > 1:
+        await inventory_msg.add_reaction('◀️')
+        await inventory_msg.add_reaction('▶️')
+
+    def check(reaction, user):
+        return user == message.author and str(reaction.emoji) in ['◀️', '▶️'] and reaction.message.id == inventory_msg.id
+
+    # Reaction-based pagination
+    while True:
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+            if str(reaction.emoji) == '▶️' and page_index + 1 < len(pages):
+                page_index += 1
+                await inventory_msg.edit(embed=create_embed(page_index))
+            elif str(reaction.emoji) == '◀️' and page_index > 0:
+                page_index -= 1
+                await inventory_msg.edit(embed=create_embed(page_index))
+        except asyncio.TimeoutError:
+            break
 
 @bot.command()
 async def giveTicket(message, userFromDb):
