@@ -171,18 +171,18 @@ class Database:
         self.cur.execute(f"UPDATE users SET tickets = {tickets} WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
     
-    def claim_daily(self, user_discord_id, user_name):
-        # On vérifie si l'utilisateur a déjà réclamé son daily
+    def claim_hourly(self, user_discord_id, user_name):
+        # On vérifie si l'utilisateur a déjà réclamé son hourly
         last_claim = self.get_last_claim(user_discord_id)
         if last_claim is not None:
             last_claim = datetime.strptime(last_claim, '%Y-%m-%d %H:%M:%S.%f')
-            if last_claim.date() == datetime.now().date():
-                logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a déjà réclamé son daily.")
+            if last_claim + timedelta(hours=1) > datetime.now():
+                logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a déjà réclamé son hourly.")
                 remaining_time = last_claim + timedelta(days=1) - datetime.now()
                 return [False, remaining_time]
         # On ajoute les tickets
         tickets = self.get_tickets(user_discord_id)
-        tickets += CONSTANTS['DAILY_TICKETS']
+        tickets += CONSTANTS['HOURLY_TICKETS']
         self.update_tickets(user_discord_id, tickets)
         # On met à jour la date de réclamation
         self.cur.execute(f"UPDATE users SET last_claim = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")

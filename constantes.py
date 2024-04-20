@@ -1,5 +1,5 @@
 CONSTANTS = {
-    'DAILY_TICKETS': 1,
+    'HOURLY_TICKETS': 3,
     'INVOCATION_COST': 0,
     'MAX_CHARACTERS': 25,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],

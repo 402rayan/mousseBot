@@ -622,17 +622,17 @@ async def getTickets(message, userFromDb):
 @bot.command()
 async def claimHourly(message, userFromDb):
     user = message.author
-    claim = database.claim_daily(user.id, user.name)
+    claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
-        titre = f"Récompense journalière réclamée avec succès!"
-        response = f"Tickets : {claim[1]}."
+        titre = f"Vous avez obtenu 3 tickets ! Revenez dans une heure."
+        response = f"Tickets actuels : {claim[1]}."
         await message.channel.send(embed=embed_info(titre, response, discord.Color.green()))
     elif not(claim[0]):
         temps_restant = claim[1]
-        temps_restant_heures = temps_restant.seconds//3600
         temps_restant_minutes = (temps_restant.seconds//60)%60
+        temps_restants_secondes = temps_restant.seconds%60
         titre = "Récompense journalière déjà récupérée!"
-        response = f"Prochaine récompense dans **{temps_restant_heures} heures et {temps_restant_minutes} minutes**."
+        response = f"Prochaine récompense dans **{temps_restant_minutes} minutes et {temps_restants_secondes} secondes**."
         await message.channel.send(embed=embed_info(titre , response, discord.Color.red()))
     
 @bot.command()
@@ -1158,6 +1158,7 @@ commands = {
     "pui" : getPower,
     "tickets": getTickets,
     "hou": claimHourly,
+    "dai": claimHourly,
     "admin": admin,
     "list": list_command,
     "help": list_command,
