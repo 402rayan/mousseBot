@@ -1029,13 +1029,15 @@ async def reset(message, userFromDb):
 @bot.command()
 async def classement(message, userFromDb):
     classement = database.getClassement(message.guild.members)
-    titre = "Classement des joueurs:"
+    max_length = 10
+    classement = classement[:max_length]
+    titre = "Classement des joueurs de " + message.guild.name + " :"
     response = ""
     for index, joueur in enumerate(classement):
         identifiant = joueur[0]
         user = await message.guild.fetch_member(identifiant)
         response += f"{index + 1}. {user.name} - {joueur[1]} puissance\n"
-    await message.channel.send(embed=embed_info(titre, response, discord.Color.blue()))
+    await message.channel.send(embed=embed_info(titre, response, discord.Color.blue(),"La puissance est calculée en fonction des niveaux et des personnages de votre inventaire."))
 
 
 def get_color_based_on_power(power):

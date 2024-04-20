@@ -478,9 +478,9 @@ class Database:
         print(characters)
         for character in characters:
             rarity = character[7]
-            print(rarity)
-            power += CONSTANTS['RARITY_POWER'][rarity]
-            print(power)
+            level = character[3]
+            print(level)
+            power += (CONSTANTS['RARITY_POWER'][rarity] + level)
         return power
     
     def getClassement(self, guildMembers):
