@@ -66,7 +66,8 @@ async def on_message(message):
 async def handle_user_level(message, userFromDb):
     level_to_function = {
         1: niveau1, 2: niveau2, 3: niveau3,
-        4: niveau4, 5: niveau5, 6: niveau6
+        4: niveau4, 5: niveau5, 6: niveau6,
+        7: niveau7
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -88,6 +89,59 @@ async def histoire(message, userFromDb):
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     await handle_user_level(message, userFromDb)
+
+async def niveau7(message, userFromDb, equipe):
+    followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
+    if followedPucci:
+        await debutDeNiveau(message, userFromDb, 7, "Poursuite du prêtre mystérieux!", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous partez à la poursuite du prêtre..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous le perdez de vue..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        # Vous entendez que le combat entre le mosntre et Sanji a commencé et des flammes jaillisent de là bas
+        await message.channel.send(embed=embed_naratteur("Vous entendez que le combat entre le monstre et Sanji a commencé..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous entendez un petit bruit..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(1.5)
+        await embed_histoire_character(message, "Le prêtre vous attrape par la gorge", "pucciShot", "pucci", "", "Et vous emporte avec lui", CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await asyncio.sleep(6)
+        await message.channel.send(embed=embed_naratteur("Vous êtes projeté au loin, presque inconscient..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Le Prêtre :", "", "pucci", "", "C'est contre mes intérêts de t'éliminer maintenant.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Le Prêtre :", "", "pucci", "", "Disparaîs de ma vue, insecte.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("L'aura du prêtre et sa force vous est insupportable..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+    
+    else:
+        await debutDeNiveau(message, userFromDb, 7, "Défense du village", equipe, CONSTANTS['COLORS']['MAHITO'])
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous décidez de rester défendre le village.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous vous dépêchez d'aller prêter main forte à Sanji..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Mahito", "", "mahito", "", "C'est parfait, continuez à venir, venez me rendre plus fort!", CONSTANTS['COLORS']['MAHITO'])
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Sanji est surpris :", "", "sanji", "", "Je ne peux pas le battre! Attaquons le à 2!", discord.Color.gold())
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Vous vous battez contre Mahito..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Alors que vous pensiez avoir le dessus..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Mahito", "mahitoDomain", "mahito", "", "Extension du-.. Territoire", CONSTANTS['COLORS']['MAHITO'])
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Zuko intervient :", "", "zuko", "", "Lâche-les.", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        await embed_histoire_character(message, "Zuko", "zukoThrowFire", "zuko", "", "Je vais m'occuper de lui.", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # Avec le combat et l'intervention de Zuko, nous nous évanouissons
+        await message.channel.send(embed=embed_naratteur("L'épuisement du au combat, et la chaleur ardente du feu vous est insupportable..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous évanouissez..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 8)
 
 async def niveau6(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 6, "Un repas pris de court", equipe, discord.Color.gold())
@@ -122,9 +176,8 @@ async def niveau6(message, userFromDb, equipe):
     await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("Vous apercevez un homme au loin, un homme qui ressemble fortement au prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
     await asyncio.sleep(4)
-    # Choix
     description = "🏃 : Poursuivre le prêtre" + "\n🛡️ : Défendre le village"
-    msg = await message.channel.send(embed=embed_raw("Que faites-vous?", description, CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['ENRICO_PUCCI']))
     for reaction in ['🏃','🛡️']:
         await msg.add_reaction(reaction)
     try:
@@ -136,10 +189,9 @@ async def niveau6(message, userFromDb, equipe):
         await message.channel.send(embed=embed_info("Vous partez à la poursuite du prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
     else:
         await message.channel.send(embed=embed_info("Vous décider de rester défendre le village.", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
-    await asyncio.sleep(4)
-    database.updateChoice(userFromDb[1], "lvl6pucci", str(reaction.emoji) == '💨')
+    await asyncio.sleep(2.5)
+    database.updateChoice(userFromDb[1], "lvl6pucci", str(reaction.emoji) == '🏃')
     await finDeNiveau(message, userFromDb, 7)
-
 
 async def niveau5(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 5, "Caverne", equipe, CONSTANTS['COLORS']['GROTTE'])
