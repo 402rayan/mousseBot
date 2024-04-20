@@ -199,11 +199,11 @@ class Database:
         return self.cur.fetchone()
     
     def get_characters(self, user_discord_id):
-        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id LEFT JOIN character_template_synergies s ON t.template_id = s.template_id LEFT JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE user_discord_id = {user_discord_id}")
+        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchall()
     
     def get_character(self, char_id):
-        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id LEFT JOIN character_template_synergies s ON t.template_id = s.template_id LEFT JOIN synergies sy ON s.synergy_id = sy.synergy_id WHERE char_id = {char_id}")
+        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE char_id = {char_id}")
         return self.cur.fetchone()
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
@@ -471,6 +471,27 @@ class Database:
             return None
         return template[0]
         
+    def getPower(self, user_discord_id):
+        # On récupère les personnages de l'utilisateur
+        characters = self.get_characters(user_discord_id)
+        power = 0
+        print(characters)
+        for character in characters:
+            rarity = character[7]
+            print(rarity)
+            power += CONSTANTS['RARITY_POWER'][rarity]
+            print(power)
+        return power
+    
+    def getClassement(self, guildMembers):
+        # On sélectionne les joueurs qui sont sur le serveur Discord de l'utilisateur
+        self.cur.execute(f"SELECT * FROM users WHERE user_discord_id IN ({','.join(str(member.id) for member in guildMembers)})")
+        users = self.cur.fetchall()
+        classement = []
+        for users in users:
+            classement.append([users[1],self.getPower(users[1])])
+        classement.sort(key=lambda x: x[1], reverse=True)
+        return classement
 
     # Mode histoire
     

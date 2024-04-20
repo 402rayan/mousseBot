@@ -603,30 +603,7 @@ async def couleur(message, userFromDb):
         template = database.get_character_template_by_rarity(rang)
         await asyncio.sleep(0.5)
         await message.channel.send(embed=embed_invocation(template))
-@bot.command()
-async def list_command(message, userFromDb):
-    logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
-    commande = {
-        "!tickets": "Permet de voir le nombre de tickets que vous avez.",
-        "!daily": "Permet de réclamer votre ticket journalier.",
-        "!invo": "Permet d'invoquer un personnage.",
-        "!inv": "Permet de voir votre inventaire.",
-        "!givetickets *{joueur}* *{nombre}*": "Permet de donner des tickets à un autre joueur.",
-        "!info *{personnage}*": "Permet de voir les informations d'un personnage.",
-        "!team": "Permet de voir votre team.",
-        "!ajouterteam *{position}* *{personnage}*": "Permet d'ajouter un personnage à votre team.",
-        "!sell *{personnage}*": "Permet de vendre un personnage."
-    }
-    
-    embed = discord.Embed(
-        title="Liste des commandes disponibles:",
-        description="Voici la liste des commandes disponibles:",
-        color=discord.Color.blurple()
-    )
-    for key, value in commande.items():
-        embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
-    await message.channel.send(embed=embed)
+
 
 @bot.command()
 async def getTickets(message, userFromDb):
@@ -643,7 +620,7 @@ async def getTickets(message, userFromDb):
     await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue()))
 
 @bot.command()
-async def claimDaily(message, userFromDb):
+async def claimHourly(message, userFromDb):
     user = message.author
     claim = database.claim_daily(user.id, user.name)
     if claim[0]:
@@ -701,7 +678,6 @@ async def invocation(message, userFromDb):
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template))
     return
-
 
 @bot.command()
 async def inventaire(message, userFromDb):
@@ -1002,6 +978,47 @@ async def reset(message, userFromDb):
     await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
 
 @bot.command()
+async def classement(message, userFromDb):
+    classement = database.getClassement(message.guild.members)
+    titre = "Classement des joueurs:"
+    response = ""
+    for index, joueur in enumerate(classement):
+        identifiant = joueur[0]
+        user = await message.guild.fetch_member(identifiant)
+        response += f"{index + 1}. {user.name} - {joueur[1]} puissance\n"
+    await message.channel.send(embed=embed_info(titre, response, discord.Color.blue()))
+
+
+def get_color_based_on_power(power):
+    power_ranges = {
+        100: CONSTANTS['RARITY_COLOR']['F'],
+        200: CONSTANTS['RARITY_COLOR']['E'],
+        300: CONSTANTS['RARITY_COLOR']['D'],
+        float('inf'): CONSTANTS['RARITY_COLOR']['C']  # Supposons que tout supérieur à 300 est 'C'
+    }
+
+    for threshold, color in power_ranges.items():
+        if power < threshold:
+            return color
+    return CONSTANTS['RARIY_COLOR']['C']  # Fallback par sécurité
+
+
+@bot.command()
+async def getPower(message, userFromDb):
+    user = await fetch_user_from_message(message, 2)
+    if not user:
+        await message.channel.send(embed=embed_info("Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red()))
+        return
+    if user == "ERROR_SYNTAX":
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!power** ou **!power <joueur>**!", discord.Color.red()))
+        return
+    power = database.getPower(user.id)
+    # On atribue une couleur en fonction de la puissance
+    color = get_color_based_on_power(power)
+    await message.channel.send(embed=embed_auteur(user, name=f"", description=f"Votre puissance est de **{power}**!", couleur=color))
+        
+
+@bot.command()
 async def setLevel(message, userFromDb):
     level = message.content.split(' ')[1]
     if not level.isdigit():
@@ -1043,11 +1060,54 @@ def embed_invocation(character_template):
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     return embed
 
+def embed_auteur(auteur,name=None,titre="",description="",couleur=CONSTANTS['COLORS']['FROID'],footer=None):
+    # Retourne un embed avec la photo de l'auteur et son nom en haut à gauche
+    embed = discord.Embed(
+        title=titre,
+        description=description,
+        color=couleur
+    )
+    nom = name if name else auteur.name
+    embed.set_author(name=nom, icon_url=auteur.avatar.url)
+    if footer:
+        embed.set_footer(text=footer)
+    return embed
+
+
+@bot.command()
+async def list_command(message, userFromDb):
+    logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
+    commande = {
+        "!tickets": "Permet de voir le nombre de tickets que vous avez.",
+        "!hourly": "Permet de réclamer 3 tickets toutes les heures!",
+        "!invo": "Permet d'invoquer un personnage.",
+        "!inv": "Permet de voir votre inventaire.",
+        "!givetickets *{joueur}* *{nombre}*": "Permet de donner des tickets à un autre joueur.",
+        "!info *{personnage}*": "Permet de voir les informations d'un personnage.",
+        "!team": "Permet de voir votre team.",
+        "!ajouterteam *{position}* *{personnage}*": "Permet d'ajouter un personnage à votre team.",
+        "!sell *{personnage}*": "Permet de vendre un personnage.",
+        "!classement": "Permet de voir le classement des joueurs.",
+        "!power": "Permet de voir votre puissance basé sur l'inventaire.",
+    }
+    
+    embed = discord.Embed(
+        title="Liste des commandes disponibles:",
+        description="",
+        color=discord.Color.blurple()
+    )
+    for key, value in commande.items():
+        embed.add_field(name=key, value=value, inline=False)
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    await message.channel.send(embed=embed)
+
 commands = {
+    "pow": getPower,
+    "pui" : getPower,
     "tickets": getTickets,
-    "daily": claimDaily,
+    "hou": claimHourly,
     "admin": admin,
-    "list_command": list_command,
+    "list": list_command,
     "help": list_command,
     "invo": invocation,
     "sum": invocation,
@@ -1064,14 +1124,12 @@ commands = {
     "give_ticket": giveTicket,
     "info": info,
     "infos": infoSynergie,
-    "team": voirTeam,
-    "voirteam": voirTeam,
-    "voir_team": voirTeam,
-    "voir_team": voirTeam,
+    "te": voirTeam,
+    "voi": voirTeam,
     "ajouterteam": ajouterTeam,
     "addteam": ajouterTeam,
     "add_team": ajouterTeam,
-    "ajouter_team": ajouterTeam,
+    "ajou": ajouterTeam,
     "sell": sell,
     "vendre": sell,
     "create": createTemplates,
@@ -1083,7 +1141,9 @@ commands = {
     "coul": couleur,
     "liste": liste,
     "setlevel": setLevel,
-    "test": test
+    "test": test,
+    "cla": classement,
+    "ran": classement,
 }
 
 

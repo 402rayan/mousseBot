@@ -1,8 +1,10 @@
 CONSTANTS = {
     'DAILY_TICKETS': 1,
     'INVOCATION_COST': 0,
-    'MAX_CHARACTERS': 20,
+    'MAX_CHARACTERS': 25,
+    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'RARITY_PRICE': {
+        # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
         'X': 100,
         'SS': 50,
         'S': 25,
@@ -14,6 +16,7 @@ CONSTANTS = {
         'F': 0.1,
     },
     'RARITY_CHANCE': {
+        # Chance d'obtenir un personnage de la rareté correspondante
         'X': 0.01,
         'SS': 0.02,
         'S': 0.05,
@@ -25,6 +28,7 @@ CONSTANTS = {
         'F': 0.1,
     },
     'RARITY_COLOR': {
+        # Couleur des personnages de la rareté correspondante
         'X': 0x1e103b, 
         'SS': 0x8C001A,
         'S': 0xD82F00,
@@ -35,7 +39,10 @@ CONSTANTS = {
         'E': 0xD3CB34,
         'F': 0x9CA1A7,
     },
-    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
+    'RARITY_POWER': {
+        # Puissance des personnages de la rareté correspondante
+        'X' : 100,'SS': 75, 'S' : 60, 'A' : 50, 'B' : 30, 'C' : 20, 'D' : 0, 'E' : 0, 'F' : 0
+    },
     'INGREDIENTS': {
         "Pomme": "🍎",
         "Banane": "🍌",

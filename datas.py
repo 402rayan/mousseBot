@@ -231,7 +231,7 @@ all_characters_templates = [
             ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 0, 0, 0),
             ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 0, 0, 0),
             ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 0, 0, 0),
-            ("Cobra", "C", "https://lh6.googleusercontent.com/Jnz9DOxO_5Cw_kDPNjLOw1xDHP2LnY5RlPSwGSG9nO5DZ1vsYtGjeFmSOYHDxq2T3xY5uYH3OUPk6KldqzfBK6c0TLfiUmRa-bVivtaNqg8uRpiDHy8LTSBnRCJDLv8nZEh2i6rs1XU4XtdMBYpy1uI", 0, 0, 0),
+            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 0, 0, 0),
             ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 0, 0, 0),
             ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 0, 0, 0),
 
