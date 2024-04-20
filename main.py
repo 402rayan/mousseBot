@@ -695,18 +695,31 @@ async def inventaire(message, userFromDb):
     def create_embed(page_index):
         embed = discord.Embed(
             title="",
-            color=discord.Color.blue()
         )
+        # Initialisation du dictionnaire pour compter les rangs
+        rang_comptage = {}
+        
+
+        
         embed.set_author(name=f"Inventaire de {message.author.name} {page_index + 1}/{len(pages)}", icon_url=message.author.avatar.url)
         for character in pages[page_index]:
             identifiant = character[2]
+            rang = character[7]  # Assumons que l'indice 7 contient le rang du personnage
+            # Mise à jour du compteur pour le rang
+            if rang in rang_comptage:
+                rang_comptage[rang] += 1
+            else:
+                rang_comptage[rang] = 1
             synergies = database.get_synergies_by_character_template(identifiant)
             value = f"Synergies : " + " ~ ".join([synergie[3] for synergie in synergies])
             if len(synergies) == 0:
                 value = ""
             value = f"HP: {character[9]} ATK: {character[10]} DEF: {character[11]} - Niveau {character[3]}\n" + value
-            embed.add_field(name=f"{character[6]} [{character[7]}]", value=value, inline=False)
+            embed.add_field(name=f"{character[6]} [{rang}]", value=value, inline=False)
+        majorite = max(rang_comptage, key=rang_comptage.get)
+        embed.color = CONSTANTS['RARITY_COLOR'][majorite]
         return embed
+
 
     # Send initial embed
     inventory_msg = await message.channel.send(embed=create_embed(page_index))
