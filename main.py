@@ -624,9 +624,8 @@ async def claimHourly(message, userFromDb):
     user = message.author
     claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
-        titre = f"Vous avez obtenu 3 tickets ! Revenez dans une heure."
-        response = f"Tickets actuels : {claim[1]}."
-        await message.channel.send(embed=embed_info(titre, response, discord.Color.green()))
+        titre = f"Vous avez obtenu 3 tickets et beaucoup d'expérience!"
+        await message.channel.send(embed=embed_auteur(message.author,f"Récompense de {message.author.name} :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
     elif not(claim[0]):
         temps_restant = claim[1]
         temps_restant_minutes = (temps_restant.seconds//60)%60
@@ -741,7 +740,7 @@ async def inventaire(message, userFromDb):
     # Reaction-based pagination
     while True:
         try:
-            reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+            reaction, user = await bot.wait_for('reaction_add', timeout=4.0, check=check)
             if str(reaction.emoji) == '▶️' and page_index + 1 < len(pages):
                 page_index += 1
                 await inventory_msg.edit(embed=create_embed(page_index))

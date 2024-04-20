@@ -123,7 +123,8 @@ CONSTANTS = {
     },
     "NOMS_GIF_INVOCATION": [
         # Nom du gif, texte à afficher, couleur du texte
-        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"]
+        #["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
+        ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
     ]
 }
 

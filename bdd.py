@@ -171,6 +171,35 @@ class Database:
         self.cur.execute(f"UPDATE users SET tickets = {tickets} WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
     
+    def xp_for_next_level(self, current_level):
+        # Base XP required for the first level
+        base_xp = 100
+        # Growth rate
+        growth_rate = 1.15
+        # Calculate XP for the next level
+        return int(base_xp * (growth_rate ** current_level))
+
+    def get_current_xp_and_level(self, character_id):
+        self.cur.execute(f"SELECT experience, level FROM characters WHERE char_id = {character_id}")
+        current_xp, current_level = self.cur.fetchone()
+        return current_xp, current_level
+    
+    def update_level_and_xp(self,character_id, xp_to_add):
+        # Récupère l'XP actuel et le niveau de l'utilisateur
+        current_xp, current_level = self.get_current_xp_and_level(character_id)
+        print(current_xp, current_level)
+        
+        # Mise à jour de l'XP
+        new_xp = current_xp + xp_to_add
+        while (new_xp >= self.xp_for_next_level(current_level)) and (current_level < 100):
+            new_xp -= self.xp_for_next_level(current_level)
+            current_level += 1
+        
+        # Mettre à jour l'XP et le niveau dans la base de données
+        self.cur.execute(f"UPDATE characters SET experience = {new_xp}, level = {current_level} WHERE char_id = {character_id}")
+        logger.info(f"Le personnage {character_id} a gagné {xp_to_add} XP. Il est maintenant niveau {current_level} avec {new_xp} XP.")
+        self.conn.commit()
+        
     def claim_hourly(self, user_discord_id, user_name):
         # On vérifie si l'utilisateur a déjà réclamé son hourly
         last_claim = self.get_last_claim(user_discord_id)
@@ -187,6 +216,12 @@ class Database:
         # On met à jour la date de réclamation
         self.cur.execute(f"UPDATE users SET last_claim = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
+        # On rajoute un niveau à toute sa team
+        xp_to_add = 5000
+        self.cur.execute(f"SELECT * FROM characters WHERE user_discord_id = {user_discord_id}")
+        characters = self.cur.fetchall()
+        for character in characters:
+            self.update_level_and_xp(character[0], xp_to_add)
         logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a réclamé son daily. Il a maintenant {tickets} tickets.")
         return [True, tickets]
         
