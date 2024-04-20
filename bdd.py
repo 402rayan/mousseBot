@@ -202,9 +202,16 @@ class Database:
         self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchall()
     
+    def get_character_with_stats(self,character):
+        level = character[3]
+        newCharacter = (character[0],character[1],character[2],character[3],character[4],character[5],character[6],character[7],character[8],character[9] + level,character[10] + level,character[11] + level)
+        return newCharacter
+    
     def get_character(self, char_id):
+        # Retourne un character avec ses stats à jour en fonction du niveau
         self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE char_id = {char_id}")
-        return self.cur.fetchone()
+        character = self.cur.fetchone()
+        return self.get_character_with_stats(character)
     
     def get_character_template_by_name(self, user_discord_id, user_name, template_name):
         # Exécuter la requête SQL pour obtenir tous les templates
@@ -299,9 +306,12 @@ class Database:
         return [template, self.get_character(new_character)]
     
     def inventaire(self, user_discord_id, user_name):
+        # Retourne l'inventaire de l'utilisateur avec les statistiques des personnages en fonction du niveau
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
         self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} ORDER BY t.rarity ASC")
         characters = self.cur.fetchall()
+        # Ajout des stats 
+        characters = [self.get_character_with_stats(character) for character in characters]
         return characters
     
     def check_user(self, user_discord_id):
@@ -321,6 +331,7 @@ class Database:
         stats = {'HP': 0, 'ATK': 0, 'DEF': 0}
         for char in team:
             if char is not None:
+                print(char)
                 stats['HP'] += int(char[9])
                 stats['ATK'] += int(char[10])
                 stats['DEF'] += int(char[11])
