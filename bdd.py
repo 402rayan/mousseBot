@@ -344,7 +344,25 @@ class Database:
     def inventaire(self, user_discord_id, user_name):
         # Retourne l'inventaire de l'utilisateur avec les statistiques des personnages en fonction du niveau
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
-        self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} ORDER BY t.rarity ASC")
+        rarity_order = {'X': 0, 'SS': 1, 'S': 2, 'A': 3, 'B': 4, 'C': 5, 'D': 6, 'E': 7, 'F': 8}
+
+        # Utiliser une clause CASE pour attribuer un poids à chaque rareté
+        case_statement = "CASE"
+        for rarity, weight in rarity_order.items():
+            case_statement += f" WHEN t.rarity = '{rarity}' THEN {weight}"
+        case_statement += " END AS rarity_weight"
+
+        # Utiliser la clause ORDER BY avec la colonne de poids nouvellement créée
+        query = f"""
+            SELECT *, {case_statement}
+            FROM characters c 
+            JOIN character_templates t ON c.template_id = t.template_id 
+            WHERE user_discord_id = {user_discord_id} 
+            ORDER BY rarity_weight
+        """
+
+        self.cur.execute(query)
+
         characters = self.cur.fetchall()
         # Ajout des stats 
         characters = [self.get_character_with_stats(character) for character in characters]
