@@ -600,32 +600,7 @@ all_characters_templates = [
             ("Riko Amanai", "F", "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/07/whi-is-riko-amanai-important-in-jujutsu-kaisen.jpg", 0, 0, 0),
             ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 0, 0, 0),
 
-            # """ PERSONNAGE MOB PSYCHO """
-
-            # Personnages X
-            ("Mob", "X", image_temporaire , 0, 0, 0),
-
-            # Personnages SS
-            ("Teruki", "SS", image_temporaire , 0, 0, 0),
-            ("Sho Suzuki", "SS", image_temporaire , 0, 0, 0),
-
-            # Personnages A
-            ("Ritsu", "A", image_temporaire , 0, 0, 0),
-
-            # Personnages B
-            ("Dimple", "B", image_temporaire , 0, 0, 0),
-            ("Tome Kurata", "B", image_temporaire , 0, 0, 0),
-
-            # Personnages C
-            ("Tenga Onigawara", "C", image_temporaire , 0, 0, 0),
-
-            # Personnages D
-            ("Musashi Goda", "D", image_temporaire , 0, 0, 0),
-            # Personnages F
-            ("Reigen", "F", image_temporaire , 0, 0, 0),
-            ("Ichi Mezato", "F", image_temporaire , 0, 0, 0),
-            ("Momozo Takenaka", "F", image_temporaire , 0, 0, 0),
-
+            
             # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
 
             # Personnages X
@@ -852,10 +827,10 @@ all_characters_templates = [
             ("Kimbley", "S", 'https://i.pinimg.com/originals/74/eb/d6/74ebd6be3e4f5266a1d4287cb39c4a81.gif', 0, 0, 0),
             ("Selim", "S", 'https://i.pinimg.com/originals/d4/23/8f/d4238f77ae7c24c353db3e1800f80a9c.gif', 0, 0, 0),
             # Personnages A
-            ("Ling Yao", "A", 'https://img.wattpad.com/28744bd347f88ed5472ca05e1097d8f41ac561c7/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f626f305132707348324c307935773d3d2d313739362e313631336566646237633161646632313231323832363130383336332e676966', 0, 0, 0),
+            ("Ling Yao", "A", 'https://i.imgur.com/cEoziXY.gif', 0, 0, 0),
             ("Envy", "A", 'https://i.pinimg.com/originals/23/a4/20/23a4205d0cdd79edd3a581af116c4c3a.gif', 0, 0, 0),
             ("Sloth", "A", 'https://64.media.tumblr.com/24140bc1e9729533976a1b21d9040ff9/tumblr_nns0kjJJBc1r0i0mqo3_500.gifv', 0, 0, 0),
-            ("Glutonny", "A", 'https://i.pinimg.com/originals/9c/15/90/9c15901a9f6f0b6c599a750a59a81d6d.gif_temporaire', 0, 0, 0),
+            ("Glutonny", "A", image_temporaire, 0, 0, 0),
             ("Lust", "A", 'https://animesher.com/orig/1/148/1487/14877/animesher.com_fullmetal-alchemist-gif-fmab-1487723.gif', 0, 0, 0),
             ("Olivia Mira Armstrong", "A", 'https://i.imgur.com/Jwzc22O.gif', 0, 0, 0),
             ("Alex Louis Armstrong", "A", 'https://media.tenor.com/HyfICEoEJKcAAAAd/fma-fmab.gif', 0, 0, 0),
@@ -946,7 +921,7 @@ all_synergies = [
     (7, "Amiraux", "ATK", 0.15, "Les Amiraux sont les trois plus puissants marins de la Marine.", 'https://steamuserimages-a.akamaihd.net/ugc/914674978440099035/39C53679BC6727A9D6074B90BCD0C9BC72D1DEDD/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#0000FF"), #TOREVIEW
     (8, "Espada", "ATK", 0.15, "Les Espadas sont les dix plus puissants Hollows sous les ordres d'Aizen.", 'https://i.redd.it/d2umjaymimsa1.jpg', "#800080"),
     (9, "Vongola", "ATK", 0.15, "La famille Vongola est une organisation mafieuse italienne qui utilise des anneaux pour combattre.", 'https://images2.wikia.nocookie.net/__cb20100422034551/reborn/images/e/e8/Tsuna_And_The_Guardians.PNG', "#FF0000"),
-    (10, "Yonko", "ATK", 0.3, "Les Yonkos sont les quatre plus puissants pirates du Nouveau Monde.", 'https://www.japanfm.fr/wp-content/uploads/2023/03/4-yonko-1200x675.jpg', "#FFA500"),
+    (10, "Yonko", "ATK", 0.3, "Les Yonkos sont les quatre plus puissants pirates du Nouveau Monde.", 'https://www.univers-otaku.com/wp-content/uploads/2021/03/one-piece-Yonko.jpg', "#FFA500"),
     (11, "Akimichi", "ATK", 0.15, "Le clan Akimichi est connu pour sa technique de transformation en géant.", 'https://staticg.sportskeeda.com/editor/2022/06/d5daf-16559000633224.png', "#0000FF"), #TOREVIEW 
     (12, "Vizard", "ATK", 0.15, "Les Vizards sont des Shinigamis qui ont acquis des pouvoirs de Hollows.", 'https://i.pinimg.com/originals/b9/54/72/b95472a06de8ce83188fa0c2723c05cc.gif', "#800080"),
     (13, "Varia", "ATK", 0.15, "La Varia est un groupe d'assassins de la famille Vongola.", 'https://static.wikia.nocookie.net/reborn/images/5/5c/Past_Varia.PNG/revision/latest?cb=20111107024622', "#FF0000"),
