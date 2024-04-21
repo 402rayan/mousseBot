@@ -1,7 +1,7 @@
 CONSTANTS = {
     'HOURLY_TICKETS': 3,
     'INVOCATION_COST': 0,
-    'MAX_CHARACTERS': 25,
+    'MAX_CHARACTERS': 60,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
@@ -118,7 +118,8 @@ CONSTANTS = {
         'LIGHT' : 0xf4ff91,
         'CIEL' : 0x87CEEB,
         'DANGER' : 0xff0000, 'MAHITO' : 0xa8bacd,
-        'FLAMME' : 0xff0000,
+        'FLAMME' : 0xff0000, 'FRANKLIN' : 0x5c3307,
+        'BRIGADE_FANTOME' : 0x000000, 'UVOGUINE' : 0x5c5d51,
         
     },
     "NOMS_GIF_INVOCATION": [

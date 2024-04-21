@@ -26,14 +26,18 @@ async def execute_command(command, message, userFromDb):
         return
 
     # Créer un verrou pour l'utilisateur
-    user_locks[userFromDb[0]] = asyncio.Lock()
-    try:
-        # Attendre l'acquisition du verrou
-        async with user_locks[userFromDb[0]]:
-            await command(message, userFromDb)
-    finally:
-        # Assurez-vous de libérer le verrou après l'exécution de la commande
-        del user_locks[userFromDb[0]]
+    # Sauf si c'est la commande inventaire
+    if command != inventaire:
+        user_locks[userFromDb[0]] = asyncio.Lock()
+        try:
+            # Attendre l'acquisition du verrou
+            async with user_locks[userFromDb[0]]:
+                await command(message, userFromDb)
+        finally:
+            # Assurez-vous de libérer le verrou après l'exécution de la commande
+            del user_locks[userFromDb[0]]
+    else:
+        await command(message, userFromDb)
 
 # Set the confirmation message when the bot is ready
 @bot.event
@@ -67,7 +71,8 @@ async def handle_user_level(message, userFromDb):
     level_to_function = {
         1: niveau1, 2: niveau2, 3: niveau3,
         4: niveau4, 5: niveau5, 6: niveau6,
-        7: niveau7, 8: niveau8
+        7: niveau7, 8: niveau8, 9: niveau9,
+        10: niveau10
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -90,11 +95,118 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
+async def niveau10(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 10, "La brigade fantôme", equipe, CONSTANTS['COLORS']['UVOGUINE'])
+    await asyncio.sleep(4)
+    # Après avoir vaincu Franklin, on continue notre route mais on entend des bruits venant d'une grotte
+    await message.channel.send(embed=embed_naratteur("Après avoir vaincu Franklin, vous continuez votre route..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "", "grotte", "", "", "Vous entendez des cris venant d'une grotte..", CONSTANTS['COLORS']['FORET'],True)
+    await asyncio.sleep(4)
+    # Vous décidez d'aller voir ce qu'il se passe
+    await message.channel.send(embed=embed_naratteur("Vous décidez d'aller voir ce qu'il se passe..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Des gens sont enfermés dans des cellules et nous crient de nous en aller le plus vite possible
+    await embed_histoire_character(message, "Des gens enfermés dans des cellules vous crient :", "", "inconnu", "", "Partez!! Partez d'ici le plus vite possible!", CONSTANTS['COLORS']['INCONNU'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Un homme vous interpelle :", "uvoguine", "uvoguine", "", "Mon petit-déjeuner est arrivé!", CONSTANTS['COLORS']['UVOGUINE'])
+    await asyncio.sleep(4)
+    # QQue faire ? Fuir ou combattre
+    description = "🏃 : Fuir" + "\n⚔️ : Combattre"
+    msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['UVOGUINE']))
+    for reaction in ['🏃','⚔️']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '⚔️'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à prendre une décision, Uvoguine n'a fait qu'une bouchée de vous.", "", discord.Color.red()))
+        return await echecNiveau(message, userFromDb, 10)
+    if str(reaction.emoji) == '🏃':
+        await message.channel.send(embed=embed_info("Vous avez fui la grotte.", "", discord.Color.green()))
+        await asyncio.sleep(4)
+        # Mais uvoguine vous a rattrapé
+        await embed_histoire_character(message, "Uvoguine vous interpelle :", "", "uvoguine", "", "Tu ne peux pas m'échapper!", CONSTANTS['COLORS']['UVOGUINE'])
+        await asyncio.sleep(4)
+    
+    # Combat avec Uvoguine
+    await message.channel.send("combat avec uvoguine") #TODO
+    await asyncio.sleep(4)
+    # Vous avez réussi à le battre
+    await finDeNiveau(message, userFromDb, 11)
+
+async def niveau9(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 9, "Synergie contre fusillade", equipe, CONSTANTS['COLORS']['FRANKLIN'])
+    await asyncio.sleep(3)
+    # On vérifie que l'utilisateur à bien une synergie dans son équipe
+    team = database.get_team(userFromDb[1], userFromDb[2])
+    synergies = team['synergies']
+    if not synergies:
+        await message.channel.send(embed=embed_info("Votre équipe ne présente pas de synergie", "Vous feriez mieux d'écouter les conseils de Zuko.", CONSTANTS['COLORS']['ZUKO']))
+        await asyncio.sleep(2)
+        return await echecNiveau(message, userFromDb, 9)
+    await message.channel.send(embed=embed_naratteur("Vous avez une synergie dans votre équipe!", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Vous partez vers l'ouest 
+    await message.channel.send(embed=embed_naratteur("Vous partez vers l'ouest suite à la demande de Zuko.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Sur la route, vous croisez petit à petit des groupes
+    await message.channel.send(embed=embed_naratteur("Sur la route, vous commencez à croiser de plus en plus de regroupements de personnes.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Les gens commencent à se regrouper
+    await message.channel.send(embed=embed_naratteur("Votre voyage se passe bien.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Après 4h de route, vous arrivez devant une montagne et vous êtes attaqués subitement par un membre de la brigade fantôme, c'est Pakunoda
+    await message.channel.send(embed=embed_naratteur("Après quatre heures de route, vous arrivez devant la montagne décrite par Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
+    await asyncio.sleep(4)
+    # Franklin nous shoot dessus
+    await embed_histoire_character(message, "Quelqu'un vous tire dessus!!", "franklinShoot", "franklin", "", "", CONSTANTS['COLORS']['FRANKLIN'])
+    await asyncio.sleep(6)
+    description = "➡️ : Esquiver à droite" + "\n⬅️ : Esquiver à gauche" + "\n🛡️ : Essayer de parer"
+    emojis = ['➡️', '⬅️', '🛡️']
+    for balle in range(3):
+        # Une balle arrive sur vous, que faites vous, esquiver à droite, à gauche, essayer de parer
+        addition = "autre " if balle > 0 else ""
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_naratteur("Une " + addition + " balle arrive sur vous..", "", CONSTANTS['COLORS']['FRANKLIN']))
+        await asyncio.sleep(3)
+        msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['FRANKLIN']))
+        for reaction in emojis:
+            await msg.add_reaction(reaction)
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in emojis)
+        except:
+            await message.channel.send(embed=embed_info("Vous n'avez pas pris de décision à temps et les balles vous ont tués!", "", discord.Color.red()))
+            return await echecNiveau(message, userFromDb, 9)
+        reussite = 0.9 > random.random()
+        
+        if str(reaction.emoji) == '🛡️':
+            if reussite:
+                await message.channel.send(embed=embed_info("Vous avez réussi à parer la balle!", "", discord.Color.green()))
+            else:
+                await message.channel.send(embed=embed_info("Vous n'avez pas réussi à parer la balle! Vous succombez à vos blessures.", "", discord.Color.red()))
+                return await echecNiveau(message, userFromDb, 9)
+        else:
+            if reussite:
+                await message.channel.send(embed=embed_info("Vous avez réussi à esquiver la balle!", "", discord.Color.green()))
+            else:
+                await message.channel.send(embed=embed_info("Vous n'avez pas réussi à esquiver la balle! Vous succombez à vos blessures.", "", discord.Color.red()))
+                return await echecNiveau(message, userFromDb, 9)
+            
+    await asyncio.sleep(4)
+    # On arrive à atteindre son corps à corps
+    await message.channel.send(embed=embed_naratteur("Vous parvenez à vous rapprocher de votre adversaire.", "", CONSTANTS['COLORS']['FRANKLIN']))
+    await asyncio.sleep(4)
+    # Combat avec Franklin
+    await message.channel.send("combat avec franklin") #TODO
+    await asyncio.sleep(4)
+    # Vous avez réussi à le battre
+    await finDeNiveau(message, userFromDb, 10)
+
 async def niveau8(message, userFromDb, equipe):
     followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
     # Si followed Pucci Héros du Village, sinon Lâche
     if followedPucci:
-        await debutDeNiveau(message, userFromDb, 8, "Paria du village", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await debutDeNiveau(message, userFromDb, 8, "Paria du village", equipe, CONSTANTS['COLORS']['ZUKO'])
     else:
         await debutDeNiveau(message, userFromDb, 8, "Héros du village", equipe, discord.Color.gold())
     await asyncio.sleep(4)
@@ -137,10 +249,7 @@ async def niveau8(message, userFromDb, equipe):
     await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4)
-    await finDeNiveau(message, userFromDb, 9)
-    
-        
-        
+    await finDeNiveau(message, userFromDb, 9) 
 
 async def niveau7(message, userFromDb, equipe):
     followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
@@ -585,6 +694,9 @@ async def debutDeNiveau(message, userFromDb, level,nom, equipe, couleur=discord.
     description = "Équipe: " + " ~ ".join([f"{equipe['team'][i][6]}" for i in range(len(equipe['team']))])
     await message.channel.send(embed=embed_naratteur(f"Niveau {str(level)} - {nom}", "", couleur,"",description))
 
+async def echecNiveau(message, userFromDb, level):
+    await message.channel.send(embed=embed_naratteur(f"Vous avez échoué au niveau {str(level)}", "", discord.Color.red()))
+
 def getNiveauFromUser(user):
     return user[8]
 
@@ -911,7 +1023,7 @@ async def inventaire(message, userFromDb):
     # Reaction-based pagination
     while True:
         try:
-            reaction, user = await bot.wait_for('reaction_add', timeout=4.0, check=check)
+            reaction, user = await bot.wait_for('reaction_add', timeout=20.0, check=check)
             if str(reaction.emoji) == '▶️' and page_index + 1 < len(pages):
                 page_index += 1
                 await inventory_msg.edit(embed=create_embed(page_index))
