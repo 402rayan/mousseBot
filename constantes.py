@@ -118,6 +118,7 @@ CONSTANTS = {
         'LIGHT' : 0xf4ff91,
         'CIEL' : 0x87CEEB,
         'DANGER' : 0xff0000, 'MAHITO' : 0xa8bacd,
+        'FLAMME' : 0xff0000,
         
     },
     "NOMS_GIF_INVOCATION": [

@@ -67,7 +67,7 @@ async def handle_user_level(message, userFromDb):
     level_to_function = {
         1: niveau1, 2: niveau2, 3: niveau3,
         4: niveau4, 5: niveau5, 6: niveau6,
-        7: niveau7
+        7: niveau7, 8: niveau8
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -90,6 +90,58 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
+async def niveau8(message, userFromDb, equipe):
+    followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
+    # Si followed Pucci Héros du Village, sinon Lâche
+    if followedPucci:
+        await debutDeNiveau(message, userFromDb, 8, "Paria du village", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
+    else:
+        await debutDeNiveau(message, userFromDb, 8, "Héros du village", equipe, discord.Color.gold())
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans une pièce sombre..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Zuko nous dit ah tu es
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ah, tu es réveillé.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    if followedPucci:
+        # Zuko nous dit qu'il a entendu des combats au loin et quil 'est intervenu
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai entendu des combats au loin, je suis intervenu aussi vite que j'ai pu.", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # J'ai réussi à terasser le monstre mais..
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai réussi à vaincre le monstre qui attaquait le village mais..", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # Ton ami aux cheveux blonds n'a pas survécu
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ton ami aux cheveux blonds n'a pas survécu.", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # Le village t'en veut
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Le village t'en veut, ils te reprochent d'avoir fui le combat.", CONSTANTS['COLORS']['ZUKO'])
+    else:
+        # Zuko nous dit qu'il a entendu des combats au loin et quil 'est intervenu
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai entendu des combats au loin, je suis intervenu aussi vite que j'ai pu.", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # J'ai réussi à terasser le monstre mais..
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ne t'en fais pas, j'ai réussi à vaincre le monstre qui attaquait le village", CONSTANTS['COLORS']['ZUKO'])
+        await asyncio.sleep(4)
+        # Tout le village t'ait reconnaissant de les avoir sauvé
+        await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Tout le village t'est reconnaissant de les avoir sauvés.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Je dois partir rapidement à cause d'un groupe d'individus.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ils se font appeler la brigade fantome, ils font couler le sang partout", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Puis-je te demander quelque chose?", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'aimerais que tu t'occupes d'un de leur membre qui se situe vers l'ouest.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Tu devrais pouvoir le battre, mais assure toi quand même d'avoir une synergie dans ton équipe.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 9)
+    
+        
+        
+
 async def niveau7(message, userFromDb, equipe):
     followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
     if followedPucci:
@@ -102,8 +154,14 @@ async def niveau7(message, userFromDb, equipe):
         # Vous entendez que le combat entre le mosntre et Sanji a commencé et des flammes jaillisent de là bas
         await message.channel.send(embed=embed_naratteur("Vous entendez que le combat entre le monstre et Sanji a commencé..", "", CONSTANTS['COLORS']['BRUIT']))
         await asyncio.sleep(4)
+        # Du feu jaillis de là bas
+        await message.channel.send(embed=embed_naratteur("Des flammes jaillissent de là bas..", "", CONSTANTS['COLORS']['FLAMME']))
+        await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous entendez un petit bruit..", "", CONSTANTS['COLORS']['BRUIT']))
         await asyncio.sleep(1.5)
+        # Le prêtre nous dit de rester concentré
+        await embed_histoire_character(message, "Le prêtre mystérieux :", "", "pucci", "", "Reste concentré ici.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
+        await asyncio.sleep(4)
         await embed_histoire_character(message, "Le prêtre vous attrape par la gorge", "pucciShot", "pucci", "", "Et vous emporte avec lui", CONSTANTS['COLORS']['ENRICO_PUCCI'])
         await asyncio.sleep(6)
         await message.channel.send(embed=embed_naratteur("Vous êtes projeté au loin, presque inconscient..", "", CONSTANTS['COLORS']['BRUIT']))
@@ -576,7 +634,7 @@ def get_ingredient():
 
 async def purple(message, userFromDb):
     await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Fuyez aussi vite que vous pouvez!","Purple Haze a déclenché son virus!", discord.Color.purple())
-    alive = True; escaped = False;
+    alive = True; escaped = False
     ticketsGagnes = 0
     await asyncio.sleep(7)
     while alive and not escaped:

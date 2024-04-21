@@ -393,7 +393,7 @@ all_characters_templates = [
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Gon Freecss", "X", "https://64.media.tumblr.com/704dfb6cff638b74862be478cd16f0ee/tumblr_p20mqwIbSZ1w0ii2ho1_1280.gifv", 0, 0, 0),
             #("Gon Adulte", "X", 'https://i.imgur.com/8cMbCOF.png', 0, 0, 0), #TOREVIEW
-            ("Kuroro", "X", 'https://i.imgur.com/eWUEITZ.png', 0, 0, 0),
+            ("Kuroro", "X", 'https://www.kana.fr/assets/uploads/2017/11/hunter-x-hunter-kuroro-lucifuru.gif?x99153', 0, 0, 0),
             ("Netero", "X", image_temporaire, 0, 0, 0),
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
