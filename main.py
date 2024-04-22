@@ -1140,6 +1140,38 @@ async def infoSynergie(message, userFromDb):
     await message.channel.send(embed=embed)
 
 @bot.command()
+async def infoTechnique(message, userFromDb):
+    # Permet d'obtenir les informations d'une technique
+    contenu = message.content
+    if len(contenu.split(' ')) < 2:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!infotechnique <nom technique>**!", discord.Color.red()))
+        return
+    # On récupère le nom (tout ce qui suit le !info)
+    nom = " ".join(contenu.split(' ')[1:])
+    technique = database.get_technique_by_name(nom)
+    if technique == None:
+        await message.channel.send(embed=embed_info("Technique introuvable", "Cette technique **n'existe pas**!", discord.Color.red()))
+        return
+    
+    # Création de l'embed
+    nom = technique[2]; description = technique[3]; image = technique[4]; color = int(technique[5][1:], 16)
+    charactersFromTechnique = database.get_character_template(technique[1])
+    if not charactersFromTechnique:
+        liste_personnages = "Aucun personnage n'a cette technique."
+    else:
+        liste_personnages = "Cette technique appartient à " + charactersFromTechnique[1]
+    embed = discord.Embed(
+        title=nom,
+        description=description,
+        color=color
+    )
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_footer(text=liste_personnages)
+    embed.set_image(url=image)
+    
+    await message.channel.send(embed=embed)
+
+@bot.command()
 async def voirTeam(message, userFromDb): 
     # Permet de voir ses personnages équipés en teams, ou la team d'un autre joueur
     user = await fetch_user_from_message(message, 2)
@@ -1481,6 +1513,7 @@ commands = {
     "test": test,
     "cla": classement,
     "ran": classement,
+    "infot": infoTechnique
 }
 
 

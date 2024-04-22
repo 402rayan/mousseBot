@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import requests
 
 from constantes import CONSTANTS
-from datas import all_characters_templates, all_synergies, all_link_synergies
+from datas import all_characters_templates, all_synergies, all_link_synergies, all_techniques
 import Levenshtein
 
 # Configurer Loguru pour écrire les logs dans un fichier
@@ -126,6 +126,21 @@ class Database:
         )
         ''')
     
+    def create_character_template_technique_table(self):
+        # technique ID, character_template_ID, nom, descriptionn, image_url, color
+        self.cur.execute('''
+        CREATE TABLE IF NOT EXISTS character_template_techniques (
+            technique_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            template_id INTEGER,
+            name TEXT,
+            description TEXT,
+            image_url TEXT,
+            color INTEGER,
+            FOREIGN KEY (template_id) REFERENCES character_templates (template_id)
+        )
+        ''')
+        self.conn.commit()
+        
     def getChoice(self, user_discord_id, choice):
         self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
@@ -141,6 +156,7 @@ class Database:
         self.create_synergy_table()
         self.create_character_template_synergy_table()
         self.crate_user_choices()
+        self.create_character_template_technique_table()
         self.conn.commit()
         logger.info("Les tables ont été créées.")
         
@@ -424,6 +440,22 @@ class Database:
         self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
         return self.cur.fetchone()
     
+    def get_technique_by_name(self, name):
+        
+        self.cur.execute(f"SELECT * FROM character_template_techniques")
+        techniques = self.cur.fetchall()
+        # On cherche d'abord le nom exact
+        for technique in techniques:
+            if technique[2].lower() == name.lower():
+                return technique
+            # On cherche ensuite si le nom est proche
+            if Levenshtein.distance(technique[2].lower(), name.lower()) <= 1:
+                return technique
+            # On cherche ensuite si le nom est dans le nom de la technique
+            if name.lower() in technique[2].lower():
+                print(technique)
+                return technique
+        return None
     def set_team(self, user_discord_id, user_name, char_id, slot):
         logger.info(f"Modification de l'équipe de {user_name} ({user_discord_id}), slot {slot}, character id {char_id}.")
         slot = ['character_slot_one', 'character_slot_two', 'character_slot_three'][slot-1]
@@ -498,11 +530,24 @@ class Database:
                 self.cur.execute(f"INSERT INTO character_template_synergies (template_id, synergy_id) VALUES ({char_id}, {synergy_id})")
         self.conn.commit()
         logger.info("Les liens de synergies ont été ajoutés à la base de données.")
+        
+    def create_techniques(self, verbose=False):
+        for character, techniques in all_techniques.items():
+            if verbose:
+                logger.info(f"Ajout des techniques pour le personnage {character}.")
+                logger.info(techniques)
+            for technique in techniques:
+                self.cur.execute(f"INSERT INTO character_template_techniques (template_id, name, description, image_url, color) VALUES ({self.getIdFromName(character)}, '{technique[0]}', '{technique[1]}', '{technique[2]}', '{technique[3]}')")
+                if verbose:
+                    logger.info(f"La technique {technique[0]} a été ajoutée pour le personnage {character}.")
+        self.conn.commit()
+        logger.info("Les techniques ont été ajoutées à la base de données.")
 
     def createAllDatas(self):
         self.create_character_templates()
         self.create_synergies()
         self.create_link_synergies()
+        self.create_techniques()
         self.conn.commit()
         logger.info("Toutes les données ont été ajoutées à la base de données.")
 
@@ -513,6 +558,7 @@ class Database:
         self.cur.execute("DROP TABLE IF EXISTS synergies")
         self.cur.execute("DROP TABLE IF EXISTS character_template_synergies")
         self.cur.execute("DROP TABLE IF EXISTS user_choices")
+        self.cur.execute("DROP TABLE IF EXISTS character_template_techniques")
         self.conn.commit()
         self.create_tables()
 

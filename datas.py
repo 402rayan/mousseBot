@@ -397,12 +397,12 @@ all_characters_templates = [
             ("Netero", "X", image_temporaire, 0, 0, 0),
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
-            ("Aruka", "X", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
+            ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
 
             # Personnages SS
-            ("Zeno", "SS", "https://i.imgur.com/inIqhEg.gif", 0, 0, 0),
-            ("Illumi", "SS", 'https://i.imgur.com/tFOQgXs.gif', 0, 0, 0),
-            ("Silva", "SS", "https://i.imgur.com/K8TUsWM.png", 0, 0, 0),
+            ("Zeno Zoldyck", "SS", "https://i.imgur.com/inIqhEg.gif", 0, 0, 0),
+            ("Illumi Zoldyck", "SS", 'https://i.imgur.com/tFOQgXs.gif', 0, 0, 0),
+            ("Silva Zoldyck", "SS", "https://i.imgur.com/K8TUsWM.png", 0, 0, 0),
             ("Hisoka", "SS", 'https://i.imgur.com/l69c0NZ.png', 0, 0, 0),
             ("Neferopito", "SS", "https://i.imgur.com/5PkF2QA.gif", 0, 0, 0),
             ("Pufu", "SS", "https://i.imgur.com/CfoSEeD.gif", 0, 0, 0),
@@ -413,7 +413,7 @@ all_characters_templates = [
             ("Kaito", "S", "https://i.imgur.com/RehnXP7.gif", 0, 0, 0),
             ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 0, 0, 0),
             ("Kurapika", "S", 'https://i.imgur.com/ltImMBx.png', 0, 0, 0),
-            ("Killua", "S", 'https://i.imgur.com/2sLrUqa.png', 0, 0, 0),
+            ("Kirua Zoldyck", "S", 'https://i.imgur.com/2sLrUqa.png', 0, 0, 0),
             ("Uvogin", "S", 'https://i.imgur.com/iqzrrW8.png', 0, 0, 0),
             ("Nabunaga", "S", 'https://i.imgur.com/1UMIlo3.png', 0, 0, 0),
             ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 0, 0, 0),
@@ -467,7 +467,7 @@ all_characters_templates = [
             ("Kiriko", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/3/34/KirikoGotoh.PNG/revision/latest/scale-to-width-down/250?cb=20190203130647", 0, 0, 0),
             ("Ponzu", "D", 'https://i.imgur.com/f4vOKAP.png', 0, 0, 0),
             ("Gereta", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/0/03/Geretta_tonnel.jpg/revision/latest?cb=20141014062140&path-prefix=ru", 0, 0, 0),
-            ("Kikyo", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/f/f7/24_-_Kikyo_talking_to_Gon.png/revision/latest?cb=20170503131700&path-prefix=id", 0, 0, 0),
+            ("Kikyo Zoldyck", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/f/f7/24_-_Kikyo_talking_to_Gon.png/revision/latest?cb=20170503131700&path-prefix=id", 0, 0, 0),
             ("Vezze", "D", "https://i.ytimg.com/vi/zXCjw64nYKc/hqdefault.jpg", 0, 0, 0),
 
             # Personnages E
@@ -1008,10 +1008,12 @@ all_synergies = [
     (95, "Ishval", "ATK", 0.15, "Les Ishvals sont un peuple pacifique qui a été décimé par les alchimistes d'Amestris.", image_temporaire, "#FF0000"),
     (96, "Bradley", "ATK", 0.15, "La famille Bradley comporte deux Homonculus et est au pouvoir du pays.", image_temporaire, "#FFA500"),
     (97, "Unité Mustang", "ATK", 0.15, "L'Unité Mustang est une unité de l'armée d'Amestris dirigée par Roy Mustang.", image_temporaire, "#0000FF"),
-    (98, "U.A.", "ATK", 0.15, "L'U.A. est une école de héros où les étudiants apprennent à devenir des héros professionnels.", "https://i.pinimg.com/originals/bf/79/4c/bf794c14c44f96e60f4a34e3008d6033.gif", "#800080"),
+    (98, "U.A.", "ATK", 0.15, "L'U.A. est une école de héros où les étudiants apprennent à devenir des héros professionnels.", "ua.gif", "#800080"),
+    (99, "Zoldyck", "ATK", 0.15, "La famille Zoldyck est une famille d'assassins qui sont les plus redoutés du monde.", "zoldyck.png", "#fde9e0"),
 ]
 
 all_link_synergies = {
+    99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Milluki Zoldyck", "Alluka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck"], # Zoldyck
     98 : ["Izuku Midoriya","Katsuki Bakugo","Ochaco Uraraka","Tenya Iida","Shoto Todoroki","Momo Yaoyorozu","Eijiro Kirishima","Denki Kaminari","Mina Ashido","Tsuyu Asui","Fumikage Tokoyami","Kyoka Jiro","Hanta Sero","Yuga Aoyama","Toru Hagakure","Mezo Shoji","Koji Koda","Rikido Sato","Mashirao Ojiro","Eri","Mirio Togata","Tamaki Amajiki","Nejire Hado","Hawks","Endeavor","All Might","Shota Aizawa","Present Mic","Midnight","Snipe","Vlad King","Eraser Head","Power Loader"], # U.A.
     97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Fuery","Falman"], # Unité Mustang
     96 : ["King Bradley","Selim"], # Bradley
@@ -1104,13 +1106,11 @@ all_link_synergies = {
     
 }
 
-"""import networkx as nx
-import matplotlib.pyplot as plt
-
-G = nx.Graph(maison)
-plt.figure(figsize=(10, 10))
-for edge in maison:
-    G.add_edges_from(([(edge, to) for to in maison[edge]]))
-nx.draw(G, with_labels=True, node_size=5000, node_color='skyblue', font_size=15, font_weight='bold')
-plt.show()
-"""
+all_techniques = {
+    "All Might" : [
+        ["United States of Smash", "United States of Smash est une technique de combat utilisée par All Might pour vaincre All For One.", "https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3d/United_States_of_Smash.gif/revision/latest?cb=20180907164218&path-prefix=fr", "#FF0000"],
+    ],
+    "Sasuke" : [
+        ["Le Rinnegan", "Le Rinnegan est un dôjutsu légendaire qui confère à son utilisateur des pouvoirs divins.", "https://steamuserimages-a.akamaihd.net/ugc/867366666491119650/FC7508A5A6E820DD113D441353AF2377832C521A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#d100ff"],
+    ]
+}
