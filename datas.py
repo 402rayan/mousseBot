@@ -71,14 +71,14 @@ all_characters_templates = [
             # """ PERSONNAGE NARUTO"""
             # Personnages X
             ("Naruto", "X", "https://i.imgur.com/n8cS6mP.gif", 0, 0, 0),
-            ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0), # 
+            ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0), 
             ("Kaguya", "X", "https://i.imgur.com/P3M8HQH.gif", 0, 0, 0),
             ("Madara", "X", "https://i.imgur.com/c0NF2KN.gif", 0, 0, 0),
             ("Rikudo", "X", "https://i.imgur.com/bn7KwyD.gif", 0, 0, 0),
-            ("Indra", "X", "https://i.imgur.com/dlXLwgN.gif", 0, 0, 0),
-            ("Ashura", "X", "https://i.imgur.com/aRMeDPa.gif", 0, 0, 0),
             ("Obito", "X", "https://i.imgur.com/A6roLXk.gif", 0, 0, 0),
             # Personnages SS
+            ("Indra", "SS", "https://i.imgur.com/dlXLwgN.gif", 0, 0, 0),
+            ("Ashura", "SS", "https://i.imgur.com/aRMeDPa.gif", 0, 0, 0),
             ("Hashirama", "SS", 'https://media1.tenor.com/m/sd97xiiyvtkAAAAC/hashirama-jutsu-naruto.gif', 0, 0, 0),
             ("Tobirama", "SS", 'https://media1.tenor.com/m/4CQxkScISFkAAAAC/tobirama-senju-tobirama.gif', 0, 0, 0),
             ("Toneri", "SS", 'https://media1.tenor.com/m/3iys2Q_ijIsAAAAC/chakra-tenseigan-tenseigan.gif', 0, 0, 0),
@@ -493,7 +493,7 @@ all_characters_templates = [
             ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 0, 0, 0),
             ("Kon (hxh)", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/3/35/76_-_Kon_as_a_cub.png/revision/latest/scale-to-width-down/1200?cb=20150524053717', 0, 0, 0),
 
-            # """ PERSONNAGE AVATAR"""
+            # """ PERSONNAGE AVATAR """
             # Personnages X
             ("Aang", "X", image_temporaire, 0, 0, 0),
             ("Ozai", "X", image_temporaire, 0, 0, 0),
@@ -535,7 +535,7 @@ all_characters_templates = [
             ("Meng", "F", image_temporaire, 0, 0, 0),
             ("Pesticide", "F", image_temporaire, 0, 0, 0),
 
-            # """ PERSONNAGE JUJUTSU KAISEN"""
+            # """ PERSONNAGE JUJUTSU KAISEN """
             # Personnages X
             ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
             ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 0, 0, 0),
