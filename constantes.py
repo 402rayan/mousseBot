@@ -124,7 +124,7 @@ CONSTANTS = {
         
     },
     "NOMS_GIF_INVOCATION": [
-        # Nom du gif, texte à afficher, couleur du texte
+        # Nom du gif, texte à afficher, couleur du texte, pfp
         ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
         ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
         ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],

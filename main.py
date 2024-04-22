@@ -66,8 +66,6 @@ async def on_message(message):
             await execute_command(func, message, userFromDb)
             break
 
-
-
 # Partie Histoire
 async def handle_user_level(message, userFromDb):
     level_to_function = {

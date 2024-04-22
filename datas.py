@@ -808,7 +808,7 @@ all_characters_templates = [
             ("Aoi Kanzaki", "F", image_temporaire, 0, 0, 0),
             ("Sumi", "F", image_temporaire, 0, 0, 0),
             ("Kiyo", "F", image_temporaire, 0, 0, 0),
-            ("Naho", "F", 'https://media.tenor.com/loSeXIWYBz4AAAAe/kimetsu-no-yaiba-naho.png', 0, 0, 0),
+            ("Naho", "F", 'https://i.imgur.com/LyTz20q.gif', 0, 0, 0),
             ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
             ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
 
@@ -927,7 +927,7 @@ all_characters_templates = [
 
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
-            ()
+            
 ]
 
 all_synergies = [
@@ -1135,5 +1135,5 @@ all_techniques = {
     ],
     "Sasuke" : [
         ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
-    ]
+    ],
 }
