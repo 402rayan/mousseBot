@@ -131,7 +131,7 @@ async def niveau10(message, userFromDb, equipe):
     #     await asyncio.sleep(4)
     
     # Combat avec Uvoguine
-    await combat(message, equipe, ennemis['UVOGUINE'])
+    await combatPvm(message, equipe, ennemis['UVOGUINE'])
     await asyncio.sleep(4)
     # Vous avez réussi à le battre
     # await finDeNiveau(message, userFromDb, 11)
@@ -1106,50 +1106,45 @@ async def info(message, userFromDb):
     await message.channel.send(embed=embed)
 
 @bot.command()
-async def combat(message, team, ennemi):
+async def combatPvm(message, team, ennemi):
     print(team)
     await introductionCombat(message, team, ennemi)
     await asyncio.sleep(2)
     # Calcul des sommes des statistiques pour l'équipe et l'ennemi
     somme_stats_ennemi = ennemi['stats']['ATK'] + ennemi['stats']['DEF'] + ennemi['stats']['HP']
     somme_stats_team = team['stats']['ATK'] + team['stats']['DEF'] + team['stats']['HP']
-    await statistiquesCombat(message,somme_stats_team, somme_stats_ennemi)
+    chanceVictory, combatType = statistiquesCombat(message,somme_stats_team, somme_stats_ennemi)
+    victoire = random.random() < chanceVictory
+    await message.channel.send(embed=embed_info("Résultat du combat", f"Vous avez **{'gagné' if victoire else 'perdu'}** le combat! ({combatType})", discord.Color.green() if victoire else discord.Color.red()))
     
-async def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
+def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
     # Calcul de la différence relative en pourcentage
     total_stats = somme_stats_ennemi + somme_stats_team
     if total_stats == 0:
         total_stats = 1  # Éviter la division par zéro
 
     difference_relative = (somme_stats_team - somme_stats_ennemi) / total_stats
-    await message.channel.send(embed=embed_info(f"différence relative : {difference_relative}", f"{somme_stats_team} vs {somme_stats_ennemi}", discord.Color.gold()))
-    # Ajustement basé sur la différence relative, limité à 40%
     ajustement = min(0.40, abs(difference_relative))
-    await message.channel.send(embed=embed_info(f"ajustement de {ajustement}", "", discord.Color.gold()))
-
     # Calcul des chances de victoire
     if somme_stats_team > somme_stats_ennemi:
         chance_victory_team = CONSTANTS['BASE_CHANCE_VICTORY'] + ajustement
     else:
         chance_victory_team = 1 - (CONSTANTS['BASE_CHANCE_VICTORY'] + ajustement)
-
     chance_victory_ennemy = 1 - chance_victory_team
-    await message.channel.send(embed=embed_info(f"Chances de victoire de l'équipe : {chance_victory_team * 100:.2f}%", f"Chances de victoire de l'ennemi : {chance_victory_ennemy * 100:.2f}%", discord.Color.gold()))
-
     # Seuils pour la classification des combats basés sur la différence relative
     percentage_difference = abs(difference_relative * 100)  # Convertir en pourcentage
     
     if percentage_difference < 8:
-        combat_type = "Combat TRÈS SERRÉ"
+        combat_type = "VERY_HARD_DIFFICULTY"
     elif percentage_difference < 15:
-        combat_type = "Combat SERRÉ"
+        combat_type = "HARD_DIFFICULTY"
     elif percentage_difference < 25:
-        combat_type = "Combat DOMINÉ"
+        combat_type = "LOW_DIFFICULTY"
     else:
-        combat_type = "Combat TRÈS DOMINÉ"
-    
-    await message.channel.send(embed=embed_info(f"type de combat :{combat_type}", f"pourcentage différence : {percentage_difference}", discord.Color.gold()))
-    
+        combat_type = "NO_DIFFICULTY"
+    return chance_victory_team, combat_type
+
+
 @bot.command()
 async def introductionCombat(message, team, ennemi):
     # Affiche l'introduction du combat
@@ -1252,7 +1247,7 @@ async def infoTechnique(message, userFromDb):
         liste_personnages = "Cette technique appartient à " + charactersFromTechnique[1]
     embed = discord.Embed(
         title=nom,
-        description=description,
+        description="",
         color=color
     )
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
