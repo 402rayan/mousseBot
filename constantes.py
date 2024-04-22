@@ -18,7 +18,7 @@ CONSTANTS = {
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
         'X': 0.01,
-        'SS': 0.02,
+        'SS': 2,
         'S': 0.05,
         'A': 0.1,
         'B': 0.15,
@@ -126,7 +126,7 @@ CONSTANTS = {
         # Nom du gif, texte à afficher, couleur du texte
         #["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
         #["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
-        ["shanksPreteForce", "Shanks vous prête sa force!", 0xcc1215, "shanks"],
+        ["shanksPreteForce", "Shanks vous prête sa force!", 0x869ee0, "shanks"],
     ]
 }
 

@@ -944,7 +944,7 @@ async def invocation(message, userFromDb):
     template = donnees[0]
     msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
-    if rarityOfCharacter == "X":
+    if rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
         msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
@@ -958,11 +958,11 @@ async def invocation(message, userFromDb):
 
     else:
         random.shuffle(phrases_invocation) # On mélange les phrases d'invocation
-        nombreRotation = {"B" : 1, "A" : 2, "S" : 3, "SS" : 4}
+        nombreRotation = {"B" : 1, "A" : 2, "S" : 3}
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
-            await asyncio.sleep(random.uniform(0.5, 2))
+            await asyncio.sleep(random.uniform(1, 2))
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
         await asyncio.sleep(3)
         await msg.delete()
