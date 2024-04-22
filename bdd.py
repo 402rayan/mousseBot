@@ -357,6 +357,16 @@ class Database:
         self.update_tickets(user_discord_id, tickets)
         return [template, self.get_character(new_character)]
     
+    def fakeTeam(self, user_discord_id):
+        # Donne Gojo, Sasuke et All Might
+        goku = self.get_character_template_by_name(user_discord_id, "Bot", "Goku")
+        sasuke = self.get_character_template_by_name(user_discord_id, "Bot", "Sasuke")
+        allmight = self.get_character_template_by_name(user_discord_id, "Bot", "All Might")
+        self.create_character(user_discord_id, "Bot", goku[0])
+        self.create_character(user_discord_id, "Bot", sasuke[0])
+        self.create_character(user_discord_id, "Bot", allmight[0])
+
+        
     def inventaire(self, user_discord_id, user_name):
         # Retourne l'inventaire de l'utilisateur avec les statistiques des personnages en fonction du niveau
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
@@ -401,7 +411,6 @@ class Database:
         stats = {'HP': 0, 'ATK': 0, 'DEF': 0}
         for char in team:
             if char is not None:
-                print(char)
                 stats['HP'] += int(char[9])
                 stats['ATK'] += int(char[10])
                 stats['DEF'] += int(char[11])
@@ -453,7 +462,6 @@ class Database:
                 return technique
             # On cherche ensuite si le nom est dans le nom de la technique
             if name.lower() in technique[2].lower():
-                print(technique)
                 return technique
         return None
     def set_team(self, user_discord_id, user_name, char_id, slot):
@@ -586,11 +594,9 @@ class Database:
         # On récupère les personnages de l'utilisateur
         characters = self.get_characters(user_discord_id)
         power = 0
-        print(characters)
         for character in characters:
             rarity = character[7]
             level = character[3]
-            print(level)
             power += (CONSTANTS['RARITY_POWER'][rarity] + level)
         return power
     

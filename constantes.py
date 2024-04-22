@@ -2,6 +2,7 @@ CONSTANTS = {
     'HOURLY_TICKETS': 3,
     'INVOCATION_COST': 0,
     'MAX_CHARACTERS': 60,
+    'BASE_CHANCE_VICTORY': 0.6,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
@@ -156,3 +157,17 @@ phrases_invocation = [
     "Le suspens est à son comble...",
 ]
 
+
+ennemis = {
+    "UVOGUINE" : {
+        'nom' : 'Uvoguine',
+        'couleur' : CONSTANTS['COLORS']['UVOGUINE'],
+        'nomGif' : 'uvoguine',
+        'nomPfp' : 'uvoguine',
+        'stats' : {
+            'HP' : 500,
+            'ATK' : 700,
+            'DEF' : 500,
+        }
+    }
+}

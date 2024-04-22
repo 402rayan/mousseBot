@@ -3,7 +3,7 @@ all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""
             # Personnages X
             ("Vegeta", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
-            ("Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0),
+            ("Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0), #
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
             ("Grand Prêtre", "X", "https://pa1.aminoapps.com/6541/a48a166406b4a43ae04845d7c33aa93c35208c66_hq.gif", 0, 0, 0),
             # Personnages SS
@@ -71,7 +71,7 @@ all_characters_templates = [
             # """ PERSONNAGE NARUTO"""
             # Personnages X
             ("Naruto", "X", "https://i.imgur.com/n8cS6mP.gif", 0, 0, 0),
-            ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0),
+            ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0), # 
             ("Kaguya", "X", "https://i.imgur.com/P3M8HQH.gif", 0, 0, 0),
             ("Madara", "X", "https://i.imgur.com/c0NF2KN.gif", 0, 0, 0),
             ("Rikudo", "X", "https://i.imgur.com/bn7KwyD.gif", 0, 0, 0),
@@ -331,7 +331,7 @@ all_characters_templates = [
             ("Mizuiro", "F", 'https://i.imgur.com/b4sfzoT.png', 0, 0, 0),
             # """ PERSONNAGE MY HERO ACADEMIA"""
             # Personnages X
-            ("All Might", "X", "https://qph.cf2.quoracdn.net/main-qimg-7d4d4918652a643f9b6801606035fe66", 0, 0, 0),
+            ("All Might", "X", "https://i.imgur.com/CUUh7Cd.gif", 0, 0, 0),
             ("Shigaraki", "X", "https://www.icegif.com/wp-content/uploads/2022/01/icegif-830.gif", 0, 0, 0),
             ("All For One", "X", "https://www.serieously.com/app/uploads/2023/04/tumblr_ouxiale3pz1v1hotuo2_640.gif", 0, 0, 0),
             ("Star And Stripe", "X", "https://64.media.tumblr.com/e7fe132058464fcc7b6e45489836aa12/799bb7ae5d0c1a2d-0b/s640x960/5245e55efb31adf90e196ca6a92b9b64df808ced.gif", 0, 0, 0),
@@ -547,9 +547,9 @@ all_characters_templates = [
             ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 0, 0, 0),
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 0, 0, 0),
             ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 0, 0, 0),
-            ("Choso", "SS", 'https://i.pinimg.com/originals/65/2f/25/652f253995b84d6156dc4865be48837b.gif', 0, 0, 0),
+            ("Choso", "SS", 'choso.gif', 0, 0, 0),
             ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 0, 0, 0),
-            ("Jogo", "SS", 'https://64.media.tumblr.com/6fda876b0fee0316b1b2808e0b26e8cd/8cdd4038836dcaca-2c/s1280x1920/44fa45b447f79aaa38a691210c1231f041c87bf9.gifv', 0, 0, 0),
+            ("Jogo", "SS", 'jogo.gif', 0, 0, 0),
             ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 0, 0, 0),
             ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 0, 0, 0),
             ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 0, 0, 0),
@@ -1108,9 +1108,9 @@ all_link_synergies = {
 
 all_techniques = {
     "All Might" : [
-        ["United States of Smash", "United States of Smash est une technique de combat utilisée par All Might pour vaincre All For One.", "https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3d/United_States_of_Smash.gif/revision/latest?cb=20180907164218&path-prefix=fr", "#FF0000"],
+        ["United States of Smash", "utilise l'","https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3d/United_States_of_Smash.gif/revision/latest?cb=20180907164218&path-prefix=fr", "#FF0000"],
     ],
     "Sasuke" : [
-        ["Le Rinnegan", "Le Rinnegan est un dôjutsu légendaire qui confère à son utilisateur des pouvoirs divins.", "https://steamuserimages-a.akamaihd.net/ugc/867366666491119650/FC7508A5A6E820DD113D441353AF2377832C521A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#d100ff"],
+        ["Rinnegan", "active son", "https://steamuserimages-a.akamaihd.net/ugc/867366666491119650/FC7508A5A6E820DD113D441353AF2377832C521A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#d100ff"],
     ]
 }

@@ -1,13 +1,15 @@
 # Import the required modules
 import asyncio
+import os
 import random
 import discord
+from discord import File
 from discord.ext import commands 
 from constantes import CONSTANTS
 import getToken
 import bdd
 from loguru import logger
-from constantes import phrases_invocation
+from constantes import phrases_invocation, ennemis
 # Connect to database
 database = bdd.Database('./mousse.db')
 
@@ -97,42 +99,42 @@ async def histoire(message, userFromDb):
 
 async def niveau10(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 10, "La brigade fantôme", equipe, CONSTANTS['COLORS']['UVOGUINE'])
-    await asyncio.sleep(4)
-    # Après avoir vaincu Franklin, on continue notre route mais on entend des bruits venant d'une grotte
-    await message.channel.send(embed=embed_naratteur("Après avoir vaincu Franklin, vous continuez votre route..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
-    await embed_histoire_character(message, "", "grotte", "", "", "Vous entendez des cris venant d'une grotte..", CONSTANTS['COLORS']['FORET'],True)
-    await asyncio.sleep(4)
-    # Vous décidez d'aller voir ce qu'il se passe
-    await message.channel.send(embed=embed_naratteur("Vous décidez d'aller voir ce qu'il se passe..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
-    # Des gens sont enfermés dans des cellules et nous crient de nous en aller le plus vite possible
-    await embed_histoire_character(message, "Des gens enfermés dans des cellules vous crient :", "", "inconnu", "", "Partez!! Partez d'ici le plus vite possible!", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
-    await embed_histoire_character(message, "Un homme vous interpelle :", "uvoguine", "uvoguine", "", "Mon petit-déjeuner est arrivé!", CONSTANTS['COLORS']['UVOGUINE'])
-    await asyncio.sleep(4)
-    # QQue faire ? Fuir ou combattre
-    description = "🏃 : Fuir" + "\n⚔️ : Combattre"
-    msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['UVOGUINE']))
-    for reaction in ['🏃','⚔️']:
-        await msg.add_reaction(reaction)
-    try:
-        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '⚔️'])
-    except:
-        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à prendre une décision, Uvoguine n'a fait qu'une bouchée de vous.", "", discord.Color.red()))
-        return await echecNiveau(message, userFromDb, 10)
-    if str(reaction.emoji) == '🏃':
-        await message.channel.send(embed=embed_info("Vous avez fui la grotte.", "", discord.Color.green()))
-        await asyncio.sleep(4)
-        # Mais uvoguine vous a rattrapé
-        await embed_histoire_character(message, "Uvoguine vous interpelle :", "", "uvoguine", "", "Tu ne peux pas m'échapper!", CONSTANTS['COLORS']['UVOGUINE'])
-        await asyncio.sleep(4)
+    # await asyncio.sleep(4)
+    # # Après avoir vaincu Franklin, on continue notre route mais on entend des bruits venant d'une grotte
+    # await message.channel.send(embed=embed_naratteur("Après avoir vaincu Franklin, vous continuez votre route..", "", CONSTANTS['COLORS']['BRUIT']))
+    # await asyncio.sleep(4)
+    # await embed_histoire_character(message, "", "grotte", "", "", "Vous entendez des cris venant d'une grotte..", CONSTANTS['COLORS']['FORET'],True)
+    # await asyncio.sleep(4)
+    # # Vous décidez d'aller voir ce qu'il se passe
+    # await message.channel.send(embed=embed_naratteur("Vous décidez d'aller voir ce qu'il se passe..", "", CONSTANTS['COLORS']['BRUIT']))
+    # await asyncio.sleep(4)
+    # # Des gens sont enfermés dans des cellules et nous crient de nous en aller le plus vite possible
+    # await embed_histoire_character(message, "Des gens enfermés dans des cellules vous crient :", "", "inconnu", "", "Partez!! Partez d'ici le plus vite possible!", CONSTANTS['COLORS']['INCONNU'])
+    # await asyncio.sleep(4)
+    # await embed_histoire_character(message, "Un homme vous interpelle :", "uvoguine", "uvoguine", "", "Mon petit-déjeuner est arrivé!", CONSTANTS['COLORS']['UVOGUINE'])
+    # await asyncio.sleep(4)
+    # # QQue faire ? Fuir ou combattre
+    # description = "🏃 : Fuir" + "\n⚔️ : Combattre"
+    # msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['UVOGUINE']))
+    # for reaction in ['🏃','⚔️']:
+    #     await msg.add_reaction(reaction)
+    # try:
+    #     reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🏃', '⚔️'])
+    # except:
+    #     await message.channel.send(embed=embed_info("Vous avez mis trop de temps à prendre une décision, Uvoguine n'a fait qu'une bouchée de vous.", "", discord.Color.red()))
+    #     return await echecNiveau(message, userFromDb, 10)
+    # if str(reaction.emoji) == '🏃':
+    #     await message.channel.send(embed=embed_info("Vous avez fui la grotte.", "", discord.Color.green()))
+    #     await asyncio.sleep(4)
+    #     # Mais uvoguine vous a rattrapé
+    #     await embed_histoire_character(message, "Uvoguine vous interpelle :", "", "uvoguine", "", "Tu ne peux pas m'échapper!", CONSTANTS['COLORS']['UVOGUINE'])
+    #     await asyncio.sleep(4)
     
     # Combat avec Uvoguine
-    await message.channel.send("combat avec uvoguine") #TODO
+    await combat(message, equipe, ennemis['UVOGUINE'])
     await asyncio.sleep(4)
     # Vous avez réussi à le battre
-    await finDeNiveau(message, userFromDb, 11)
+    # await finDeNiveau(message, userFromDb, 11)
 
 async def niveau9(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 9, "Synergie contre fusillade", equipe, CONSTANTS['COLORS']['FRANKLIN'])
@@ -650,7 +652,6 @@ async def niveau1(message, userFromDb, equipe):
     if str(reaction.emoji) == '💨':
         await message.channel.send(embed=embed_raw("Vous partez en route vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
     database.updateChoice(userFromDb[1], "lvl1fumee", str(reaction.emoji) == '💨')
-    print(str(reaction.emoji) == '💨')
     await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 2)
 
@@ -898,7 +899,6 @@ async def getTickets(message, userFromDb):
     if user == "ERROR_SYNTAX":
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!tickets** ou **!tickets <joueur>**!", discord.Color.red()))
         return
-    print(user)
     tickets = database.get_tickets(user.id)
     await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue()))
 
@@ -1106,6 +1106,96 @@ async def info(message, userFromDb):
     await message.channel.send(embed=embed)
 
 @bot.command()
+async def combat(message, team, ennemi):
+    print(team)
+    await introductionCombat(message, team, ennemi)
+    await asyncio.sleep(2)
+    # Calcul des sommes des statistiques pour l'équipe et l'ennemi
+    somme_stats_ennemi = ennemi['stats']['ATK'] + ennemi['stats']['DEF'] + ennemi['stats']['HP']
+    somme_stats_team = team['stats']['ATK'] + team['stats']['DEF'] + team['stats']['HP']
+    await statistiquesCombat(message,somme_stats_team, somme_stats_ennemi)
+    
+async def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
+    # Calcul de la différence relative en pourcentage
+    total_stats = somme_stats_ennemi + somme_stats_team
+    if total_stats == 0:
+        total_stats = 1  # Éviter la division par zéro
+
+    difference_relative = (somme_stats_team - somme_stats_ennemi) / total_stats
+    await message.channel.send(embed=embed_info(f"différence relative : {difference_relative}", f"{somme_stats_team} vs {somme_stats_ennemi}", discord.Color.gold()))
+    # Ajustement basé sur la différence relative, limité à 40%
+    ajustement = min(0.40, abs(difference_relative))
+    await message.channel.send(embed=embed_info(f"ajustement de {ajustement}", "", discord.Color.gold()))
+
+    # Calcul des chances de victoire
+    if somme_stats_team > somme_stats_ennemi:
+        chance_victory_team = CONSTANTS['BASE_CHANCE_VICTORY'] + ajustement
+    else:
+        chance_victory_team = 1 - (CONSTANTS['BASE_CHANCE_VICTORY'] + ajustement)
+
+    chance_victory_ennemy = 1 - chance_victory_team
+    await message.channel.send(embed=embed_info(f"Chances de victoire de l'équipe : {chance_victory_team * 100:.2f}%", f"Chances de victoire de l'ennemi : {chance_victory_ennemy * 100:.2f}%", discord.Color.gold()))
+
+    # Seuils pour la classification des combats basés sur la différence relative
+    percentage_difference = abs(difference_relative * 100)  # Convertir en pourcentage
+    
+    if percentage_difference < 8:
+        combat_type = "Combat TRÈS SERRÉ"
+    elif percentage_difference < 15:
+        combat_type = "Combat SERRÉ"
+    elif percentage_difference < 25:
+        combat_type = "Combat DOMINÉ"
+    else:
+        combat_type = "Combat TRÈS DOMINÉ"
+    
+    await message.channel.send(embed=embed_info(f"type de combat :{combat_type}", f"pourcentage différence : {percentage_difference}", discord.Color.gold()))
+    
+@bot.command()
+async def introductionCombat(message, team, ennemi):
+    # Affiche l'introduction du combat
+    await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
+    await asyncio.sleep(2)
+    print(team)
+    team_atk = team['stats']['ATK']; team_def = team['stats']['DEF']; team_hp = team['stats']['HP']
+    titre = "Votre équipe est prête à combattre!"; statsTeam = f"HP:{team_hp} ATK:{team_atk} DEF:{team_def}"
+    perso1 = team['team'][0]; perso2 = team['team'][1]; perso3 = team['team'][2]
+    description1 = f"{perso1[6]} **[{perso1[7]}]**"; description2 = f"{perso2[6]} **[{perso2[7]}]**"; description3 = f"{perso3[6]} **[{perso3[7]}]**"
+    embed = embed_character(message,team['team'][0], titre, description1, statsTeam)
+    embed2 = embed_character(message,team['team'][1], titre, description1 + " ~ " + description2, statsTeam)
+    embed3 = embed_character(message,team['team'][2], titre, description1 + " ~ " + description2 + " ~ " + description3, statsTeam)
+    msg = await message.channel.send(embed=embed)
+    await asyncio.sleep(2.5)
+    await msg.edit(embed=embed2)
+    await asyncio.sleep(2.5)
+    await msg.edit(embed=embed3)
+    await asyncio.sleep(2.5)
+    embedVs = discord.Embed(
+        title="VS",
+        color=0xffcc33
+    )
+    await message.channel.send(embed=embedVs)
+    await asyncio.sleep(2)
+    await embed_histoire_character(message, ennemi['nom'], ennemi['nomGif'], ennemi['nomPfp'],"", "", ennemi['couleur'])
+    
+
+
+def embed_character(message, character,title="",description="", footer=""):
+    # Retourne un embed avec les informations d'un personnage 
+    nom = character[6]; hp = character[9]; atk = character[10]; defense = character[11]; rarity = character[7]; nomImage = character[8]
+    embed = discord.Embed(
+        title=title,
+        description=description,
+        color=CONSTANTS['RARITY_COLOR'][rarity],
+    )
+    embed.set_image(url=nomImage)
+    embed.set_author(name=message.author.name, icon_url=message.author.avatar.url)
+    if footer:
+        embed.set_footer(text=footer)
+    return embed
+
+    
+    
+@bot.command()
 async def infoSynergie(message, userFromDb):
     # Permet d'obtenir les informations d'une synergie
     contenu = message.content
@@ -1250,15 +1340,16 @@ async def ajouterTeam(message, userFromDb):
     database.set_team(message.author.id, message.author.name, character[0], position)
 
     # Génération de l'embem
-    image = character[8]
+    nomImage = character[8]
+    print(character)
+    print(nomImage)
     embed = discord.Embed(
         title=f"{ nom } occupe désormais la position { position }.",
         color=discord.Color.green()
     )
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     embed.set_footer(text="Pour voir votre team, tapez !team.")
- 
-    embed.set_image(url=image)
+    embed.set_image(url=nomImage)
 
     await message.channel.send(embed=embed)
     return
@@ -1314,8 +1405,6 @@ async def sell(message, userFromDb):
         except:
             await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
             return
-        if str(reaction.emoji):
-            print("Réaction reçue")
         if str(reaction.emoji) != '✅':
             await message.channel.send(embed=embed_info("Vente annulée", "Vous avez annulé la vente!", discord.Color.red()))
             return
@@ -1367,6 +1456,12 @@ def get_color_based_on_power(power):
             return color
     return CONSTANTS['RARIY_COLOR']['C']  # Fallback par sécurité
 
+@bot.command()
+async def fakeTeam(message, userFromDb):
+    # Fonction pour tester la team
+    # On créer les characters All Might, Sasuke et Gojo
+    database.fakeTeam(message.author.id)
+    await message.channel.send(embed=embed_info("Team ajoutée", "Votre team a été ajoutée!", discord.Color.green()))
 
 @bot.command()
 async def getPower(message, userFromDb):
@@ -1410,7 +1505,6 @@ def embed_info(title, description, color=discord.Color.blue(),footer=None):
 def embed_invocation(character_template, user=None):
     """ Fonction qui retourne un embed pour l'invocation d'un personnage """
     character = character_template # Pour plus de lisibilité
-    print(character)
     synergies = database.get_synergies_by_character_template(character[0])
     hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
     embed = discord.Embed(
@@ -1441,6 +1535,17 @@ def embed_auteur(auteur,name=None,titre="",description="",couleur=CONSTANTS['COL
         embed.set_footer(text=footer)
     return embed
 
+@bot.command()
+async def fakeStatistiquesCombat(message, userFromDb):
+    # Fonction pour tester les statistiques de combat, sous forme !stat <nbTeam> <nbAllie>
+    somme_stats_team = 0
+    somme_stats_ennemi = 0
+    if len(message.content.split(' ')) < 3:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!stat <nbTeam> <nbAllie>**!", discord.Color.red()))
+        return
+    somme_stats_team = int(message.content.split(' ')[1])
+    somme_stats_ennemi = int(message.content.split(' ')[2])
+    await statistiquesCombat(message, somme_stats_team, somme_stats_ennemi)
 
 @bot.command()
 async def list_command(message, userFromDb):
@@ -1513,7 +1618,9 @@ commands = {
     "test": test,
     "cla": classement,
     "ran": classement,
-    "infot": infoTechnique
+    "infot": infoTechnique,
+    "fake": fakeTeam,
+    "stat": fakeStatistiquesCombat,
 }
 
 
