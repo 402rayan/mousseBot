@@ -927,6 +927,7 @@ all_characters_templates = [
 
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
+            ()
 ]
 
 all_synergies = [
