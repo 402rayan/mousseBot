@@ -909,6 +909,24 @@ all_characters_templates = [
             ("Onyankopon", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/5/52/Onyankopon_protests_the_treatment_of_the_volunteers.png/revision/latest?cb=20210301055248", 0, 0, 0),
             ("Nicolo", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/1/1e/%C3%89pisode_68.png/revision/latest/scale-to-width-down/1280?cb=20210215025407&path-prefix=fr", 0, 0, 0),
             # Personnages F
+
+            # """ PERSONNAGES NNT """
+            # Personnages X
+            ("Meliodas", "X", image_temporaire, 0, 0, 0),
+
+            # Personnages SS
+            ("Ban", "SS", image_temporaire, 0, 0, 0),
+            ("Estarossa", "SS", image_temporaire, 0, 0, 0),
+            ("Escanor", "SS", image_temporaire, 0, 0, 0),
+            ("Zeldris", "SS", image_temporaire, 0, 0, 0),
+
+            # Personnages S
+            ("Arthur", "S", image_temporaire, 0, 0, 0),
+            ("Gowther", "S", image_temporaire, 0, 0, 0),
+            ("Merlin", "S", image_temporaire, 0, 0, 0),
+
+            # Personnages A
+            ("Derrierie", "A", image_temporaire, 0, 0, 0),
 ]
 
 all_synergies = [
@@ -1010,9 +1028,13 @@ all_synergies = [
     (97, "Unité Mustang", "ATK", 0.15, "L'Unité Mustang est une unité de l'armée d'Amestris dirigée par Roy Mustang.", image_temporaire, "#0000FF"),
     (98, "U.A.", "ATK", 0.15, "L'U.A. est une école de héros où les étudiants apprennent à devenir des héros professionnels.", "ua.gif", "#800080"),
     (99, "Zoldyck", "ATK", 0.15, "La famille Zoldyck est une famille d'assassins qui sont les plus redoutés du monde.", "zoldyck.png", "#fde9e0"),
+    (100, "Dix Commandements", "ATK", 0.15, "Les Dix Commandements sont les dix démons les plus puissants de l'Empire de Britannia.", "https://i.imgur.com/SMEji4z.jpeg", "#FF0000"),
+    (101, "Les Sept Péchés Capitaux", "ATK", 0.15, "Les Sept Péchés Capitaux sont un groupe de chevaliers qui ont trahi le royaume de Liones.", "https://i.imgur.com/CnvtvuO.jpeg", "#FFA500"),
 ]
 
 all_link_synergies = {
+    101 : ["Meliodas","Ban","King","Diane","Gowther","Merlin","Escanor"], # Les Sept Péchés Capitaux
+    100 : ["Derrierie","Estaossa","Zeldris","Gloxinia","Drole","Grayroad","Fraudrin","Monspiet","Melascula","Galand"], # Dix Commandements
     99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Milluki Zoldyck", "Alluka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck"], # Zoldyck
     98 : ["Izuku Midoriya","Katsuki Bakugo","Ochaco Uraraka","Tenya Iida","Shoto Todoroki","Momo Yaoyorozu","Eijiro Kirishima","Denki Kaminari","Mina Ashido","Tsuyu Asui","Fumikage Tokoyami","Kyoka Jiro","Hanta Sero","Yuga Aoyama","Toru Hagakure","Mezo Shoji","Koji Koda","Rikido Sato","Mashirao Ojiro","Eri","Mirio Togata","Tamaki Amajiki","Nejire Hado","Hawks","Endeavor","All Might","Shota Aizawa","Present Mic","Midnight","Snipe","Vlad King","Eraser Head","Power Loader"], # U.A.
     97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Fuery","Falman"], # Unité Mustang
@@ -1108,9 +1130,9 @@ all_link_synergies = {
 
 all_techniques = {
     "All Might" : [
-        ["United States of Smash", "utilise l'","https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3d/United_States_of_Smash.gif/revision/latest?cb=20180907164218&path-prefix=fr", "#FF0000"],
+        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"],
     ],
     "Sasuke" : [
-        ["Rinnegan", "active son", "https://steamuserimages-a.akamaihd.net/ugc/867366666491119650/FC7508A5A6E820DD113D441353AF2377832C521A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#d100ff"],
+        ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
     ]
 }

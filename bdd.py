@@ -133,7 +133,7 @@ class Database:
             technique_id INTEGER PRIMARY KEY AUTOINCREMENT,
             template_id INTEGER,
             name TEXT,
-            description TEXT,
+            phrase TEXT,
             image_url TEXT,
             color INTEGER,
             FOREIGN KEY (template_id) REFERENCES character_templates (template_id)
@@ -450,7 +450,6 @@ class Database:
         return self.cur.fetchone()
     
     def get_technique_by_name(self, name):
-        
         self.cur.execute(f"SELECT * FROM character_template_techniques")
         techniques = self.cur.fetchall()
         # On cherche d'abord le nom exact
@@ -464,6 +463,7 @@ class Database:
             if name.lower() in technique[2].lower():
                 return technique
         return None
+    
     def set_team(self, user_discord_id, user_name, char_id, slot):
         logger.info(f"Modification de l'équipe de {user_name} ({user_discord_id}), slot {slot}, character id {char_id}.")
         slot = ['character_slot_one', 'character_slot_two', 'character_slot_three'][slot-1]
@@ -545,7 +545,7 @@ class Database:
                 logger.info(f"Ajout des techniques pour le personnage {character}.")
                 logger.info(techniques)
             for technique in techniques:
-                self.cur.execute(f"INSERT INTO character_template_techniques (template_id, name, description, image_url, color) VALUES ({self.getIdFromName(character)}, '{technique[0]}', '{technique[1]}', '{technique[2]}', '{technique[3]}')")
+                self.cur.execute(f"INSERT INTO character_template_techniques (template_id, name, phrase, image_url, color) VALUES ({self.getIdFromName(character)}, '{technique[0]}', '{technique[1]}', '{technique[2]}', '{technique[3]}')")
                 if verbose:
                     logger.info(f"La technique {technique[0]} a été ajoutée pour le personnage {character}.")
         self.conn.commit()
