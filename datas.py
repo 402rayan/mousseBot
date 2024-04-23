@@ -2,36 +2,41 @@ image_temporaire = "https://picsum.photos/900/500"
 all_characters_templates = [
             # """ PERSONNAGE DRAGON BALL"""
             # Personnages X
-            ("Vegeta", "X", "https://i.imgur.com/sSjFzsz.jpeg", 0, 0, 0),
-            ("Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 0, 0, 0), #
-            ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 0, 0, 0),
-            ("Grand Prêtre", "X", "https://pa1.aminoapps.com/6541/a48a166406b4a43ae04845d7c33aa93c35208c66_hq.gif", 0, 0, 0),
+
+            ("Goku", "X", "https://i.imgur.com/k2T0SKd.gif", 905, 1100, 900),
+            ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 800, 1300, 800),
+            ("Grand Prêtre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1100, 1000),
+            ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1000, 1000),
+            ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1000, 1050, 1000),
+            ("Beerus", "x", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1200, 910),
+            ("Gohan", "x", 'https://i.imgur.com/SJPfZLY.gif', 950, 960, 970),
+
             # Personnages SS
-            ("Broly", "SS", "https://www.dragon-ball-gif.com/wp-content/uploads/2022/01/Broly-Super-Saiyan.gif", 0, 0, 0), #TODO
-            ("Golden Freezer", "SS", 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a290752-d7eb-45e3-aa31-8e71b544cde0/dbm1yiz-525bf1bb-1bba-42e3-88bc-da271e0fc047.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhMjkwNzUyLWQ3ZWItNDVlMy1hYTMxLThlNzFiNTQ0Y2RlMFwvZGJtMXlpei01MjViZjFiYi0xYmJhLTQyZTMtODhiYy1kYTI3MWUwZmMwNDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.d2ovx3xnc5I44dQTZSSnyRLGuDKRZnyPp0m3qDlyHVo', 0, 0, 0),
-            ("Beerus", "SS", 'https://media1.tenor.com/m/QlDaIzrNXNwAAAAC/beerus-stare.gif', 0, 0, 0),
-            ("Champa", "SS", 'https://media1.tenor.com/m/cSbQJiwt5V4AAAAC/dbz-dbs.gif', 0, 0, 0),
-            ("Vados", "SS", 'https://media1.tenor.com/m/-Ku4nzfbkX0AAAAC/dbz-dbs.gif', 0, 0, 0),
-            ("Whis", "SS", 'https://media1.tenor.com/m/nFIwm1YB8XwAAAAC/dbz-training.gif', 0, 0, 0),
-            ("Goku Black", "SS", 'https://media1.tenor.com/m/AL-nOjhTt4UAAAAC/goku-black-smile.gif', 0, 0, 0),
-            ("Zamasu", "SS", 'https://media1.tenor.com/m/TY1_T_suBr4AAAAC/zamasu-goku.gif', 0, 0, 0),
-            ("Jiren", "SS", 'https://media1.tenor.com/m/97ITDVHgUwoAAAAC/dragon-ball-stare.gif', 0, 0, 0),
-            ("Gogeta", "SS", "https://i.imgur.com/5sTq4Q6.gif", 0, 0, 0),
-            ("Vegeto", "SS", "https://i.imgur.com/DBewj1R.gif", 0, 0, 0),
+            ("Belmod", "SS", "https://i.imgur.com/Yeq7JQY.gif", 800, 900, 800),
+            ("Piccolo", "SS", "https://i.imgur.com/srHRyMX.gif", 800, 850, 800),
+            ("Champa", "SS", 'https://i.imgur.com/F7Q78tL.gif', 800, 1000, 800),
+            ("Vegeto", "SS", "https://i.imgur.com/DBewj1R.gif", 770, 810, 770),
+            ("Gogeta", "SS", "https://i.imgur.com/5sTq4Q6.gif", 750, 800, 760),
+            ("Broly", "SS", "https://i.imgur.com/gstppUE.gif", 750, 780, 730), 
+            ("Jiren", "SS", 'https://i.imgur.com/K7M25Xe.gif', 740, 750, 745),
+            ("Zamasu", "SS", 'https://i.imgur.com/Cz6XOfz.gif', 730, 750, 735),
+            ("Vegeta", "SS", "https://i.imgur.com/CkK8SBp.gif", 700, 750, 680),
+            ("Toppo", "SS", 'https://i.imgur.com/PIp2SBH.gif', 710, 730, 720),
+            
             # Personnages S
-            ("Hit", "S", 'https://media1.tenor.com/m/4TplENjWWCcAAAAd/hit-assassin.gif', 0, 0, 0),
-            ("Kefla", "S", 'https://media1.tenor.com/m/kV_BbTxQANgAAAAC/dragon-ball-dragon-ball-super.gif', 0, 0, 0),
-            ("Toppo", "S", 'https://media1.tenor.com/m/v6Yn-JgdX2gAAAAC/toppo-cartoon.gif', 0, 0, 0), #TOREVIEW
-            ("Android 17", "S", 'https://media1.tenor.com/m/1EE6jYeD874AAAAC/android17-dbz.gif', 0, 0, 0),
-            ("Gotenks", "S", 'https://media1.tenor.com/m/rqT2GpNIWfMAAAAd/goten-super-saiyan.gif', 0, 0, 0),
-            ("Gohan", "S", 'https://media1.tenor.com/m/vGaQ4md93OwAAAAd/gohan-son.gif', 0, 0, 0), # TOREVIEW
-            ("Kid Buu", "S", 'https://media1.tenor.com/m/YCONZC1xuUcAAAAC/majin-buu-evil-smile.gif', 0, 0, 0),
-            ("Shenron", "S", "https://64.media.tumblr.com/ca4c3f59f970ad67d482f1f43bf3f326/tumblr_onwpfrpHmn1qzxv73o1_540.gif", 0, 0, 0),
+            ("Kefla", "S", 'https://i.imgur.com/VjmzJvV.gif', 560, 550, 560),
+            ("Goku Black", "S", 'https://i.imgur.com/20z0F8R.gif', 550, 620, 560),
+            ("Hit", "S", 'https://i.imgur.com/vPZDJKq.gif', 520, 610, 540),
+            ("C-17", "S", 'https://i.imgur.com/UsE616g.gif', 545, 545, 545),
+            ("Kale", "S", 'https://i.imgur.com/6K1YluE.gif', 515, 530, 540),
 
             # Personnages A
-            ("Cell", "A", 'https://media1.tenor.com/m/qGAi7YUulBcAAAAd/dragon-ball-z-perfect-cell.gif', 0, 0, 0),
-            ("Majin Buu", "A", 'https://media1.tenor.com/m/Z_LDrqLUt34AAAAC/comiendo-eat.gif', 0, 0, 0),
-            ("Kale", "A", 'https://media1.tenor.com/m/0x6K_lFUUdkAAAAC/dbs-kale.gif', 0, 0, 0),
+            ("Gotenks", "S", 'https://i.imgur.com/jsv7oRx.gif', 0, 0, 0),
+            ("Kid Buu", "S", 'https://media1.tenor.com/m/YCONZC1xuUcAAAAC/majin-buu-evil-smile.gif', 0, 0, 0),
+            ("Shenron", "S", "https://64.media.tumblr.com/ca4c3f59f970ad67d482f1f43bf3f326/tumblr_onwpfrpHmn1qzxv73o1_540.gif", 0, 0, 0),
+            ("Golden Freezer", "A", 'https://i.imgur.com/dqV5UcM.gif', 0, 0, 0),
+            ("Cell", "A", 'https://i.imgur.com/wzqjr1t.gif', 0, 0, 0),
+            ("Majin Buu", "A", 'https://i.imgur.com/dRswoNA.gif', 0, 0, 0),
             ("Caulifla", "A", 'https://media1.tenor.com/m/dPo3nmJ2NUsAAAAC/caulifla-dragon-ball-z.gif', 0, 0, 0),
             ("Trunks", "A", 'https://media1.tenor.com/m/JeLASItCa6UAAAAC/dbz-dragon-ball.gif', 0, 0, 0), # TOREVIEW
             # Personnages B
@@ -538,7 +543,7 @@ all_characters_templates = [
             # """ PERSONNAGE JUJUTSU KAISEN """
             # Personnages X
             ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
-            ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 0, 0, 0),
+            ("Gojo", "X", "https://i.imgur.com/ZRlOmKu.gif", 0, 0, 0),
             ("Kenjaku", "X", "https://steamuserimages-a.akamaihd.net/ugc/2278324186548756253/24401D0DEA0E6D00A35B208CEF250966F3C920D0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 0, 0, 0),
 
             # Personnages SS
@@ -1020,7 +1025,7 @@ all_synergies = [
     (88, "Maître de la Gravité", "ATK", 0.15, "Les Maîtres de la Gravité sont des personnages qui peuvent contrôler la gravité.", image_temporaire, "#FFA500"),
     (89, "Armstrong", "ATK", 0.15, "La famille Armstrog est une famille illustre et noble qui a servi Amestris pendant des générations.", image_temporaire, "#0000FF"),
     (90, "Homonculus", "ATK", 0.15, "Les Homonculus sont des êtres artificiels créés par le Père pour servir ses desseins.", image_temporaire, "#800080"),
-    (91, "Alchimist d'Etat", "ATK", 0.15, "Les Alchimistes d'Etat sont des alchimistes qui servent le gouvernement d'Amestris.", image_temporaire, "#FF0000"),
+    (91, "Alchimiste d'Etat", "ATK", 0.15, "Les Alchimistes d'Etat sont des alchimistes qui servent le gouvernement d'Amestris.", image_temporaire, "#FF0000"),
     (92, "Xing", "ATK", 0.15, "Le pays de Xing est un pays voisin d'Amestris qui pratique l'alchimie de l'est.", image_temporaire, "#FFA500"),
     (93, "Elric", "ATK", 0.15, "La famille Elric est une famille d'alchilmistes (sauf la mère).", image_temporaire, "#0000FF"),
     (94, "Automail", "ATK", 0.15, "L'Automail est une prothèse mécanique qui remplace un membre perdu.", image_temporaire, "#800080"),
@@ -1031,9 +1036,13 @@ all_synergies = [
     (99, "Zoldyck", "ATK", 0.15, "La famille Zoldyck est une famille d'assassins qui sont les plus redoutés du monde.", "zoldyck.png", "#fde9e0"),
     (100, "Dix Commandements", "ATK", 0.15, "Les Dix Commandements sont les dix démons les plus puissants de l'Empire de Britannia.", "https://i.imgur.com/SMEji4z.jpeg", "#FF0000"),
     (101, "Les Sept Péchés Capitaux", "ATK", 0.15, "Les Sept Péchés Capitaux sont un groupe de chevaliers qui ont trahi le royaume de Liones.", "https://i.imgur.com/CnvtvuO.jpeg", "#FFA500"),
+    (102, "Dieu de la Destruction", "ATK", 0.15, "Les Dieux de la Destruction sont des divinités qui détruisent les planètes pour maintenir l'équilibre de l'univers.", "https://i.imgur.com/uxo372k.png", "#0000FF"),
+    (103, "Ange", "ATK", 0.15, "Les Anges sont des êtres célestes qui servent les dieux et protègent l'univers.", "https://i.imgur.com/xt9Tn0P.jpeg", "#800080"),
 ]
 
 all_link_synergies = {
+    103 : ["Whis","Vados","Grand prêtre"], # Anges
+    102 : ["Beerus","Champa","Belmod"], # Dieu de la Destruction
     101 : ["Meliodas","Ban","King","Diane","Gowther","Merlin","Escanor"], # Les Sept Péchés Capitaux
     100 : ["Derrierie","Estaossa","Zeldris","Gloxinia","Drole","Grayroad","Fraudrin","Monspiet","Melascula","Galand"], # Dix Commandements
     99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Milluki Zoldyck", "Alluka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck"], # Zoldyck
@@ -1089,7 +1098,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Révolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonté du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
