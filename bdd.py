@@ -629,3 +629,8 @@ class Database:
         self.cur.execute(f"UPDATE users SET histoireLevel = {level} WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
         logger.info(f"Le niveau d'histoire de l'utilisateur {user_discord_id} a été mis à jour à {level}.")
+        
+    def getAllCharactersFromUniversName(self, univers_name):
+        for univers in all_characters_templates:
+            if univers_name.lower() in univers.lower():
+                return all_characters_templates[univers]

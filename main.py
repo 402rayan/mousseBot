@@ -1470,6 +1470,36 @@ async def getPower(message, userFromDb):
     color = get_color_based_on_power(power)
     await message.channel.send(embed=embed_auteur(user, name=f"", description=f"Votre puissance est de **{power}**!", couleur=color))
         
+@bot.command()
+async def afficherUnivers(message, userFromDb):
+    univers = message.content.split(' ')[1]
+    persos = database.getAllCharactersFromUniversName(univers)
+    if persos == None or len(persos) == 0:
+        await message.channel.send(embed=embed_info("Univers introuvable", "Cet univers n'existe pas!", discord.Color.red()))
+        return
+    prevention = "Etre vous sur dafficher " + str(len(persos)) + " personnages ?"
+    if len(persos) > 10:
+        msg = await message.channel.send(embed=embed_info("Attention", prevention, discord.Color.red()))
+        await msg.add_reaction('✅')
+        await msg.add_reaction('❌')
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+        except:
+            await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+            return
+        if str(reaction.emoji) != '✅':
+            await message.channel.send(embed=embed_info("Affichage annulé", "Vous avez annulé l'affichage!", discord.Color.red()))
+            return
+    for perso in persos:
+        nom = perso[1-1]; rarity = perso[2-1]; image = perso[3-1]; hp = perso[4-1]; atk = perso[5-1]; defense = perso[6-1]
+        embed = discord.Embed(
+            title=f"{nom} **[{rarity}]**",
+            description=f"HP: {hp} ATK: {atk} DEF: {defense}",
+            color=CONSTANTS['RARITY_COLOR'][rarity],
+        )
+        embed.set_image(url=image)
+        embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+        await message.channel.send(embed=embed)
 
 @bot.command()
 async def setLevel(message, userFromDb):
@@ -1614,6 +1644,7 @@ commands = {
     "infot": infoTechnique,
     "fake": fakeTeam,
     "stat": fakeStatistiquesCombat,
+    "affi": afficherUnivers
 }
 
 

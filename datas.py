@@ -6,8 +6,8 @@ all_characters_templates = {
             ("Grand Pretre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1200, 1000),
             ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1040, 1000),
             ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1010, 1050, 1000),
-            ("Beerus", "x", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1150, 910),
-            ("Gohan", "x", 'https://i.imgur.com/SJPfZLY.gif', 950, 960, 970),
+            ("Beerus", "X", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1150, 910),
+            ("Gohan", "X", 'https://i.imgur.com/SJPfZLY.gif', 950, 960, 970),
 
             # Personnages SS
             ("Belmod", "SS", "https://i.imgur.com/Yeq7JQY.gif", 800, 900, 800),
@@ -269,11 +269,11 @@ all_characters_templates = {
             "Bleach" : [
             # Personnages X
             ("Yhwach", "X", "https://i.pinimg.com/originals/61/64/7c/61647c2b43c3aece4d2f4e0f51fd98f8.gif", 0, 0, 0), # TOREVIEW
-            ("Ichigo Final", "X", image_temporaire, 0, 0, 0),
+            ("Ichigo Kurosaki", "X", image_temporaire, 0, 0, 0),
             ("Aizen", "X", 'https://i.imgur.com/8xq9dtV.png', 0, 0, 0),
             ("Yamamoto", "X", 'https://i.imgur.com/EGYHcBd.gif', 0, 0, 0),
             ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 0, 0, 0),
-            ("Ichibe", "X", 'image_temporaire', 0, 0, 0), #TO DO
+            ("Ichibe", "X", image_temporaire, 0, 0, 0), #TO DO
 
             # Personnages SS
             ("Jugram", "SS", "https://64.media.tumblr.com/68c0c258665d8e6aa675f50a0190d1b4/e45f851320545784-81/s540x810/f7fb36d19986346588d36c429b2139390f9512b9.gifv", 0, 0, 0),
@@ -316,8 +316,8 @@ all_characters_templates = {
             ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 0, 0, 0),
             ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 0, 0, 0),
             ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 0, 0, 0),
-            ("Chad", "B", 'image_temporaire', 0, 0, 0),
-            ("Yumichika", "B", 'image_temporaire', 0, 0, 0),
+            ("Chad", "B", image_temporaire, 0, 0, 0),
+            ("Yumichika", "B", image_temporaire, 0, 0, 0),
 
             # Personnages C
             ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 0, 0, 0),
@@ -564,9 +564,9 @@ all_characters_templates = {
             ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 720, 780, 760),
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 700, 730, 720),
             ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 700, 750, 670),
-            ("Choso", "SS", 'choso.gif', 730, 740, 760),
+            ("Choso", "SS", 'https://i.imgur.com/tPHJtTO.gif', 730, 740, 760),
             ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 650, 730, 700),
-            ("Jogo", "SS", 'jogo.gif', 700, 750, 700),
+            ("Jogo", "SS", 'https://i.imgur.com/iyNljeL.gif', 700, 750, 700),
             ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 777, 777, 777),
             ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 700, 800, 700),
             ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 700, 730, 700),
@@ -1132,7 +1132,7 @@ all_link_synergies = {
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
 
-    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
+    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
