@@ -518,7 +518,7 @@ all_characters_templates = [
             ("Mai", "A", image_temporaire, 0, 0, 0),
 
             # Personnages B
-            ("Jet", "B", "image_temporaire", 0, 0, 0),
+            ("Jet", "B", image_temporaire, 0, 0, 0),
             ("Haru", "B", image_temporaire, 0, 0, 0),
             ("June", "B", image_temporaire, 0, 0, 0),
 
@@ -537,76 +537,76 @@ all_characters_templates = [
 
             # """ PERSONNAGE JUJUTSU KAISEN """
             # Personnages X
-            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
-            ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 0, 0, 0),
+            ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 1000, 1100, 1050),
+            ("Gojo", "X", "https://www.gifcen.com/wp-content/uploads/2022/04/gojo-gif-9.gif", 999, 1050, 999),
             ("Kenjaku", "X", "https://steamuserimages-a.akamaihd.net/ugc/2278324186548756253/24401D0DEA0E6D00A35B208CEF250966F3C920D0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 0, 0, 0),
 
             # Personnages SS
-            ("Yuta", "SS", "https://64.media.tumblr.com/88eea7db2e1aeff7957867a11eb579dc/8b0c83155df8b2d5-a9/s540x810/d4fd780899e1f38e3b97fcae86bdb41453691535.gifv", 0, 0, 0),
-            ("Mahoraga", "SS", "https://www.breakflip.com/uploads/65573b2ad99c7-makora-ou-mahoraga-jujutsu-kaisen.jpg", 0, 0, 0),
-            ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 0, 0, 0),
-            ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 0, 0, 0),
-            ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 0, 0, 0),
-            ("Choso", "SS", 'choso.gif', 0, 0, 0),
-            ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 0, 0, 0),
-            ("Jogo", "SS", 'jogo.gif', 0, 0, 0),
-            ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 0, 0, 0),
-            ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 0, 0, 0),
-            ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 0, 0, 0),
-            ("Dagon", "SS", 'https://64.media.tumblr.com/97ffcdfbd6a9ea8cffef764d86fe5b11/f98a9cffd59221b8-ab/s640x960/a29d32f3a037b09966e361ebbb26d56a4aafa464.gif', 0, 0, 0),
+            ("Yuta", "SS", "https://64.media.tumblr.com/88eea7db2e1aeff7957867a11eb579dc/8b0c83155df8b2d5-a9/s540x810/d4fd780899e1f38e3b97fcae86bdb41453691535.gifv", 700, 700, 700),
+            ("Mahoraga", "SS", "https://imgur.com/X3JpLMk", 850, 850, 850),
+            ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 720, 780, 760),
+            ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 700, 730, 720),
+            ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 700, 750, 670),
+            ("Choso", "SS", 'choso.gif', 730, 740, 760),
+            ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 650, 730, 700),
+            ("Jogo", "SS", 'jogo.gif', 700, 750, 700),
+            ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 777, 777, 777),
+            ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 700, 800, 700),
+            ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 700, 730, 700),
+            ("Dagon", "SS", 'https://64.media.tumblr.com/97ffcdfbd6a9ea8cffef764d86fe5b11/f98a9cffd59221b8-ab/s640x960/a29d32f3a037b09966e361ebbb26d56a4aafa464.gif', 700, 760, 700),
 
             # Personnages S
-            ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 0, 0, 0),
-            ("Maki", "S", 'https://i.imgur.com/zGKPJI9.png', 0, 0, 0),
-            ("Nanami", "S", 'https://i.imgur.com/phtWBmN.png', 0, 0, 0),
-            ("Higuruma", "S", 'https://media1.tenor.com/m/vt4qMArBGP4AAAAC/hiromi-higuruma-higuruma-hiromi.gif', 0, 0, 0),
-            ("Naobito", "S", 'https://i.imgur.com/FTRAhNn.png', 0, 0, 0),
-            ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 0, 0, 0), #TOREVIEW
-            ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 0, 0, 0),
-            ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 0, 0, 0),
-            ("Yuji Itadori", "S", "https://i.makeagif.com/media/12-14-2023/xrC5c5.gif", 0, 0, 0),
+            ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 550, 600, 500),
+            ("Maki", "S", 'https://i.imgur.com/zGKPJI9.png', 600, 500, 600),
+            ("Nanami", "S", 'https://i.imgur.com/phtWBmN.png', 580, 610, 570),
+            ("Higuruma", "S", 'https://media1.tenor.com/m/vt4qMArBGP4AAAAC/hiromi-higuruma-higuruma-hiromi.gif', 550, 580, 530),
+            ("Naobito", "S", 'https://i.imgur.com/FTRAhNn.png', 500, 600, 550),
+            ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 580, 540, 580), #TOREVIEW
+            ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 520, 570, 530),
+            ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 500, 600, 550),
+            ("Yuji Itadori", "S", "https://i.makeagif.com/media/12-14-2023/xrC5c5.gif", 600, 570, 600),
             
             #Personnages A
-            ("Inumaki", "A", 'https://i.imgur.com/OkbjhWZ.png', 0, 0, 0), #VIDEO
-            ("Kamo", "A", 'https://i.imgur.com/8N9AYpE.png', 0, 0, 0),
-            ("Mechamaru", "A", 'https://i.imgur.com/HIQY96Q.png', 0, 0, 0), #VIDEO
+            ("Inumaki", "A", 'https://i.imgur.com/OkbjhWZ.png', 400, 420, 400), #VIDEO
+            ("Kamo", "A", 'https://i.imgur.com/8N9AYpE.png', 400, 450, 420),
+            ("Mechamaru", "A", 'https://i.imgur.com/HIQY96Q.png', 430, 400, 440), #VIDEO
 
             # Personnages B
-            ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 0, 0, 0),
-            ("Nobara", "B", "https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1c/Nobara_Kugisaki_EP3.png/revision/latest?cb=20210119101146&path-prefix=fr", 0, 0, 0),
-            ("Kusakabe", "B", 'https://i.imgur.com/6rujX3t.png', 0, 0, 0),
-            ("Takuma Ino", "B", 'https://i.imgur.com/W3diIlg.png', 0, 0, 0),
-            ("Yaga", "B", 'https://i.imgur.com/R8Rq12y.png', 0, 0, 0),
-            ("Gakuganji", "B", 'https://i.imgur.com/uAnAEms.png', 0, 0, 0),
+            ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 340, 320, 330),
+            ("Nobara", "B", "https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1c/Nobara_Kugisaki_EP3.png/revision/latest?cb=20210119101146&path-prefix=fr", 320, 350, 320),
+            ("Kusakabe", "B", 'https://i.imgur.com/6rujX3t.png', 320, 330, 330),
+            ("Takuma Ino", "B", 'https://i.imgur.com/W3diIlg.png', 310, 360, 320),
+            ("Yaga", "B", 'https://i.imgur.com/R8Rq12y.png', 330, 310, 330),
+            ("Gakuganji", "B", 'https://i.imgur.com/uAnAEms.png', 310, 340, 320),
             
 
             # Personnages C
-            ("Junpei", "C", 'https://i.imgur.com/7sVsWn3.png', 0, 0, 0),
-            ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 0, 0, 0),
-            ("Utahime", "C", 'https://i.imgur.com/IPp6E9q.png', 0, 0, 0),
-            ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 0, 0, 0),
-            ("Haruta Shigemo", "C", "https://i0.wp.com/www.spielanime.com/wp-content/uploads/2023/10/Haruta-Shigemo-has-a-unique-Curse-Technique-How-does-it-work-1.webp", 0, 0, 0),
+            ("Junpei", "C", 'https://i.imgur.com/7sVsWn3.png', 260, 260, 260),
+            ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 260, 260, 260),
+            ("Utahime", "C", 'https://i.imgur.com/IPp6E9q.png', 240, 280, 260),
+            ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 260, 260, 260),
+            ("Haruta Shigemo", "C", "https://i0.wp.com/www.spielanime.com/wp-content/uploads/2023/10/Haruta-Shigemo-has-a-unique-Curse-Technique-How-does-it-work-1.webp", 260, 260, 260),
             
 
             # Personnages D
-            ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 0, 0, 0),
+            ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 180, 200, 160),
 
             # Personnages E
-            ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 0, 0, 0),
-            ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 0, 0, 0),
+            ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 120, 120, 120),
+            ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 120, 120, 120),
 
 
             # Personnages F
-            ("Riko Amanai", "F", "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/07/whi-is-riko-amanai-important-in-jujutsu-kaisen.jpg", 0, 0, 0),
-            ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 0, 0, 0),
+            ("Riko Amanai", "F", "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/07/whi-is-riko-amanai-important-in-jujutsu-kaisen.jpg", 50, 50, 50),
+            ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 50, 50, 50),
 
             
             # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
 
             # Personnages X
-            ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 0, 0, 0),
-            ("Pucci", "X", 'https://i.imgur.com/RTdkTrH.png', 0, 0, 0),
-            ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 0, 0, 0),
+            ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 900, 1200, 950),
+            ("Pucci", "X", 'https://i.imgur.com/RTdkTrH.png', 950, 1200, 900),
+            ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 950, 1050, 950),
             ("Gyro", "X", image_temporaire, 0, 0, 0), #TOREVIEW
             ("Johnny", "X", image_temporaire, 0, 0, 0),
             
