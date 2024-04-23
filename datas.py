@@ -611,8 +611,8 @@ all_characters_templates = [
             # Personnages X
             ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 0, 0, 0),
             ("Pucci", "X", 'https://i.imgur.com/RTdkTrH.png', 0, 0, 0),
-            ("Funny Valentine", "X", image_temporaire, 0, 0, 0),
-            ("Gyro", "X", image_temporaire, 0, 0, 0),
+            ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 0, 0, 0),
+            ("Gyro", "X", image_temporaire, 0, 0, 0), #TOREVIEW
             ("Johnny", "X", image_temporaire, 0, 0, 0),
             
             # Personnages SS
@@ -620,19 +620,19 @@ all_characters_templates = [
             ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.png', 0, 0, 0),
             ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.png', 0, 0, 0),
             ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 0, 0, 0),
-            ("Diego", "SS", image_temporaire, 0, 0, 0),
+            ("Diego", "SS", image_temporaire, 0, 0, 0), #TOREVIEW
             ("Dio", "SS", 'https://i.imgur.com/xngzKOg.png', 0, 0, 0),
             ("Kira", "SS", 'https://i.imgur.com/ZQPBO3Q.png', 0, 0, 0),
 
             # Personnages S
             ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.png', 0, 0, 0), #TOREVIEW
             ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.png', 0, 0, 0), #TOREVIEW
-            ("Vanilla Ice", "S", image_temporaire, 0, 0, 0),
+            ("Vanilla Ice", "S", "https://imgur.com/VoH5XBm", 0, 0, 0),#TOREVIEW
             ("Jolyne", "S", 'https://i.imgur.com/T2yg742.png', 0, 0, 0),
-            ("Weather Report", "S", image_temporaire, 0, 0, 0),
+            ("Weather Report", "S", "https://imgur.com/zHlZilS", 0, 0, 0),
             
             # Personnages A
-            ("Anasui", "A", image_temporaire, 0, 0, 0),
+            ("Anasui", "A", "https://imgur.com/cQtCTf7", 0, 0, 0),
             ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.png', 0, 0, 0),
             ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.png', 0, 0, 0),
             ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.png', 0, 0, 0),
@@ -641,8 +641,8 @@ all_characters_templates = [
             ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.png', 0, 0, 0),
             ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.png', 0, 0, 0),
             ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.png', 0, 0, 0),
-            ("Mohamed Abdul", "A", image_temporaire, 0, 0, 0),
-            ("Illuso", "A", image_temporaire, 0, 0, 0),
+            ("Mohamed Abdul", "A", "https://imgur.com/2fIG9TF", 0, 0, 0),
+            ("Illuso", "A", "https://imgur.com/4oeiAEJ", 0, 0, 0),
             ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.png', 0, 0, 0),
 
             
