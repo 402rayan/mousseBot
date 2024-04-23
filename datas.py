@@ -334,41 +334,42 @@ all_characters_templates = [
             ("Yuzu", "F", 'https://i.imgur.com/plnofeu.png', 0, 0, 0),
             ("Tatsuki", "F", 'https://i.imgur.com/mSvWp2O.png', 0, 0, 0),
             ("Mizuiro", "F", 'https://i.imgur.com/b4sfzoT.png', 0, 0, 0),
+            
             # """ PERSONNAGE MY HERO ACADEMIA"""
             # Personnages X
             ("All Might", "X", "https://i.imgur.com/CUUh7Cd.gif", 0, 0, 0),
-            ("Shigaraki", "X", "https://www.icegif.com/wp-content/uploads/2022/01/icegif-830.gif", 0, 0, 0),
-            ("All For One", "X", "https://www.serieously.com/app/uploads/2023/04/tumblr_ouxiale3pz1v1hotuo2_640.gif", 0, 0, 0),
-            ("Star And Stripe", "X", "https://64.media.tumblr.com/e7fe132058464fcc7b6e45489836aa12/799bb7ae5d0c1a2d-0b/s640x960/5245e55efb31adf90e196ca6a92b9b64df808ced.gif", 0, 0, 0),
+            ("Shigaraki", "X", "https://i.imgur.com/4G7TwKg.gif", 0, 0, 0),
+            ("All For One", "X", "https://i.imgur.com/rR1sQPU.gif", 0, 0, 0),
+            ("Star And Stripe", "X", "https://i.imgur.com/awX9W1z.gif", 0, 0, 0),
             # Personnages SS
-            ("Izuku Midoriya", "SS", "https://i.pinimg.com/originals/49/41/43/4941430a113739775b3fafbe8d1a81b2.gif", 0, 0, 0),
-            ("Endeavor", "SS", "https://i.pinimg.com/originals/49/56/12/495612a35e36440b1607270e8bf1ca3e.gif", 0, 0, 0),
-            ("Overhaul", "SS", "https://64.media.tumblr.com/17d512a46dd582dd24e0bb36b48dbdcd/d50adf26237562cb-51/s540x810/df6c2dfb27f13cf0538979584d97630140a34283.gif", 0, 0, 0),
-            ("Beast Jeanist", "SS", "https://64.media.tumblr.com/521598d908ab9b8d7cb38b09b77b0d9c/tumblr_osxxvly6ms1wqyomso1_540.gif", 0, 0, 0),
+            ("Izuku Midoriya", "SS", "https://i.imgur.com/sfcQ2nE.gif", 0, 0, 0),
+            ("Endeavor", "SS", "https://i.imgur.com/Y2olaBF.gif", 0, 0, 0),
+            ("Overhaul", "SS", "https://i.imgur.com/dcPHh3I.gif", 0, 0, 0),
+            ("Beast Jeanist", "SS", "https://i.imgur.com/YomRbmO.gif", 0, 0, 0),
             ("Nana Shimura", "SS", "https://i.imgur.com/ct2j0jN.gif", 0, 0, 0),
-            ("Dabi", "SS", "https://static.animecorner.me/2022/12/my-hero-academia-season-6-episode-11-1.jpg", 0, 0, 0),
-            ("Mirio", "SS", "https://64.media.tumblr.com/bc3415aed521b623970871cf1c332d25/tumblr_pftup2rGRy1ru8plxo1_540.gif", 0, 0, 0),
-            ("Re Destro", "SS", "https://i.redd.it/t3m1gtvs9awb1.gif", 0, 0, 0),
+            ("Dabi", "SS", "https://i.imgur.com/BjDR5Yi.gif", 0, 0, 0),
+            ("Mirio", "SS", "https://i.imgur.com/gOMDPVp.gif", 0, 0, 0),
+            ("Re Destro", "SS", "https://i.imgur.com/HQp99hz.gif", 0, 0, 0),
             # Personnages S
-            ("Hawks", "S", "https://i.pinimg.com/originals/8d/19/c4/8d19c45317f7e38e372ddeba342cf165.gif", 0, 0, 0),
+            ("Hawks", "S", "https://i.imgur.com/X15PwP6.gif", 0, 0, 0),
             ("Twice", "S", "https://i.imgur.com/aTXRvNJ.gif", 0, 0, 0),
-            ("Shoto Todoroki", "S", "https://i.redd.it/quy3b0pf16d31.gif", 0, 0, 0),
-            ("Katsuki Bakugo", "S", "https://img.wattpad.com/dc246422070809bd086ac97693bc04a560634155/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4d46367848686d62785448726a773d3d2d313133373837333639312e3136616165316163303134653732633536363335323739353730312e676966", 0, 0, 0),
-            ("Eraserhead", "S", "https://i.pinimg.com/originals/e2/58/6b/e2586b5f78e89ecc597293e35a03faad.gif", 0, 0, 0),
-            ("Tamaki", "S", "https://i.pinimg.com/originals/ac/a9/02/aca902c662ebf2c39cea2732f352effe.gif", 0, 0, 0),
-            ("Stain", "S", "https://78.media.tumblr.com/6960a5a0b1f0f0f665c7f6bfd88f10d5/tumblr_otunqgSVmE1vb2040o2_500.gif", 0, 0, 0),
-            ("Fumikage", "S", "https://img.wattpad.com/4283ecbd858dfc3890407125bb15c01719a5b32b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f455856757964466f4c51314b70673d3d2d313132312e313666643666616233633339363064653137333733353434393032382e676966", 0, 0, 0),
-            ("Mirko", "S", "https://i.pinimg.com/originals/d7/fd/6d/d7fd6d2551098794e172a13355a80291.gif", 0, 0, 0),
-            ("Lady Nagant", "S", "https://i.pinimg.com/originals/39/59/1c/39591c97f9e6b9a5f47a2b7f0ab7d963.gif", 0, 0, 0),
+            ("Shoto Todoroki", "S", "https://i.imgur.com/SYm3EIh.gif", 0, 0, 0),
+            ("Katsuki Bakugo", "S", "https://i.imgur.com/NK0LePb.gif", 0, 0, 0),
+            ("Eraserhead", "S", "https://i.imgur.com/kPsHrCm.gif", 0, 0, 0),
+            ("Tamaki", "S", "https://i.imgur.com/PrRON0k.gif", 0, 0, 0),
+            ("Stain", "S", "https://i.imgur.com/bLlQH1S.gif", 0, 0, 0),
+            ("Fumikage", "S", "https://i.imgur.com/75sU4v8.gif", 0, 0, 0),
+            ("Mirko", "S", "https://i.imgur.com/uaH6Nth.gif", 0, 0, 0),
+            ("Lady Nagant", "S", "https://i.imgur.com/XTarup4.gif", 0, 0, 0),
             # Personnages A
-            ("Tenya", "A", "https://static.wikia.nocookie.net/heros/images/f/f6/Tenya_Infobox.gif/revision/latest?cb=20200324130143&path-prefix=fr", 0, 0, 0),
-            ("Mt Lady", "A", "https://i.pinimg.com/originals/c5/e7/d0/c5e7d0827bceace163672dd309c33574.gif", 0, 0, 0),
-            ("Nighteye", "A", "https://64.media.tumblr.com/efc6870d8848e1ce03cb34c40af6e711/d88e8f356b2e4ba8-39/s540x810/3a7c1a045ed596a30576ff47cfe310f1f9685fe3.gif", 0, 0, 0),
-            ("Ryuku", "A", "https://64.media.tumblr.com/2dfb44a3544b3d118168b28fd79e83f4/25d5e489df925e26-49/s540x810/26df1ec3c8eb8d25abb27668924c495ff685e879.gif", 0, 0, 0),
-            ("Gran Torino", "A", "https://i.pinimg.com/originals/f4/6d/46/f46d46e7d08b90465475211d87304cdf.gif", 0, 0, 0),
+            ("Tenya", "A", "https://i.imgur.com/XAE3t5c.gif", 0, 0, 0),
+            ("Mt Lady", "A", "https://i.imgur.com/BGdhXVd.gif", 0, 0, 0),
+            ("Nighteye", "A", "https://i.imgur.com/fgO8qfb.gif", 0, 0, 0),
+            ("Ryuku", "A", "https://i.imgur.com/jUEf20r.gif", 0, 0, 0),
+            ("Gran Torino", "A", "https://i.imgur.com/pHGoXST.gif", 0, 0, 0),
             # Personnages B
-            ("Ochaco", "B", image_temporaire, 0, 0, 0),
-            ("Midnight", "B", image_temporaire, 0, 0, 0),
+            ("Ochaco", "B", 'https://i.imgur.com/GqBcqOI.jpeg', 0, 0, 0),
+            ("Midnight", "B", 'https://i.imgur.com/L4S7dNo.jpeg', 0, 0, 0),
             ("Denki", "B", image_temporaire, 0, 0, 0),
             ("Crimson Riot", "B", image_temporaire, 0, 0, 0),
             ("Nezu", "B", image_temporaire, 0, 0, 0),
@@ -396,10 +397,10 @@ all_characters_templates = [
             # """ PERSONNAGE HUNTER X HUNTER"""
             # Personnages X
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
-            ("Gon Freecss", "X", "https://64.media.tumblr.com/704dfb6cff638b74862be478cd16f0ee/tumblr_p20mqwIbSZ1w0ii2ho1_1280.gifv", 0, 0, 0),
+            ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 0, 0, 0),
             #("Gon Adulte", "X", 'https://i.imgur.com/8cMbCOF.png', 0, 0, 0), #TOREVIEW
-            ("Kuroro", "X", 'https://www.kana.fr/assets/uploads/2017/11/hunter-x-hunter-kuroro-lucifuru.gif?x99153', 0, 0, 0),
-            ("Netero", "X", image_temporaire, 0, 0, 0),
+            ("Kuroro", "X", 'https://i.imgur.com/3TjMAKv.gif', 0, 0, 0),
+            ("Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 0, 0, 0),
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
             ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
@@ -423,80 +424,80 @@ all_characters_templates = [
             ("Nabunaga", "S", 'https://i.imgur.com/1UMIlo3.png', 0, 0, 0),
             ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 0, 0, 0),
             ("Phinks", "S", "https://i.imgur.com/k5BLUMw.png", 0, 0, 0),
-            ("Bonolenov Ndongo", "S", "https://static.wikia.nocookie.net/anicrossbr/images/b/be/Maxresdefault-1457717095.jpg/revision/latest/scale-to-width-down/1200?cb=20160311172455&path-prefix=pt-br", 0, 0, 0), #TOREVIEW #GIF
+            ("Bonolenov Ndongo", "S", "https://i.imgur.com/WNj1k2B.jpeg", 0, 0, 0), #TOREVIEW #GIF
             ("Biscuit", "S", 'https://i.imgur.com/3WUyIRV.png', 0, 0, 0),
             
             # Personnages A
             ("Morel", "A", 'https://i.imgur.com/1J0JLeS.png', 0, 0, 0),
             ("Knuckle", "A", 'https://i.imgur.com/sMDxcKR.png', 0, 0, 0), #TOREVIEW
             ("Kalluto", "A", "https://i.imgur.com/vCDM9hC.png", 0, 0, 0),
-            ("Hanzô", "A", "https://static.wikia.nocookie.net/hunterxhunter/images/b/b6/Hanzo%27s_hidden_blade.png/revision/latest?cb=20230314040650", 0, 0, 0), #TOREVIEW #GIF
+            ("Hanzô", "A", "https://i.imgur.com/HuuzzwW.jpeg", 0, 0, 0), #TOREVIEW #GIF
             ("Sharnak", "A", 'https://i.imgur.com/EwSJxbs.png', 0, 0, 0),
             ("Franklin", "A", "https://i.imgur.com/xoln4Ly.gif", 0, 0, 0),
             ("Shizuku", "A", "https://i.imgur.com/IbkxhGl.png", 0, 0, 0),
             ("Genthru", "A", 'https://i.imgur.com/WtnOU7k.png', 0, 0, 0),
             ("Cheetu", "A", "https://i.imgur.com/ZqFKcDD.png", 0, 0, 0),
-            ("Zazan", "A", "https://i.pinimg.com/originals/79/44/68/794468678bb42627a0532551eef35283.png", 0, 0, 0), #TOREVIEW #GIF
-            ("Novu", "A", "https://static.wikia.nocookie.net/hunterxhunter/images/6/69/Novu1.jpg/revision/latest?cb=20200620171540&path-prefix=fr", 0, 0, 0), #TOREVIEW #GIF
+            ("Zazan", "A", "https://i.imgur.com/LpXVPsM.png", 0, 0, 0), #TOREVIEW #GIF
+            ("Novu", "A", "https://i.imgur.com/VJ00COB.jpeg", 0, 0, 0), #TOREVIEW #GIF
             ("Shoot", "A", 'https://i.imgur.com/tU2Fwq6.png', 0, 0, 0),
             ("Pariston", "A", 'https://i.imgur.com/71ouSTW.png', 0, 0, 0),
-            ("Pamu Shiberia", "A", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/09/Palm-Siberia-As-An-Ant-Cropped.jpg', 0, 0, 0),
+            ("Pamu Shiberia", "A", 'https://i.imgur.com/pIxg46u.jpeg', 0, 0, 0),
 
             # Personnages B
             ("Leorio", "B", 'https://i.imgur.com/NBFxlLS.gif', 0, 0, 0),
-            ("Satotsu", "B", 'https://i.pinimg.com/564x/5f/bb/8d/5fbb8da96fb15da2db5f17dc6f001457.jpg', 0, 0, 0),
-            ("Gotoh", "B", 'https://static.wikia.nocookie.net/hunterxhunter/images/2/20/Gotoh_HxH_2011.png/revision/latest?cb=20180704171039&path-prefix=de', 0, 0, 0),
-            ("Mike", "B", 'https://i.ytimg.com/vi/mO-hKinGF-Y/maxresdefault.jpg', 0, 0, 0),
+            ("Satotsu", "B", 'https://i.imgur.com/QQS66Kw.jpeg', 0, 0, 0),
+            ("Gotoh", "B", 'https://i.imgur.com/hYXIzdH.png', 0, 0, 0),
+            ("Mike", "B", 'https://i.imgur.com/Opybqgn.jpeg', 0, 0, 0),
             ("Wing", "B", 'https://i.imgur.com/h8Btyhj.png', 0, 0, 0),
-            ("Kastro", "B", 'https://i.pinimg.com/originals/fe/36/d6/fe36d697316e0e2a3555d832cc7d8bcc.png', 0, 0, 0),
+            ("Kastro", "B", 'https://i.imgur.com/mjgiM60.png', 0, 0, 0),
             ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 0, 0, 0),
-            ("Korutopi", "B", "https://i.pinimg.com/736x/fe/eb/78/feeb7881be988fa230e0795feb738d52.jpg", 0, 0, 0),
+            ("Korutopi", "B", "https://i.imgur.com/uqHvQrZ.jpeg", 0, 0, 0),
             ("Koruto", "B", "https://i.imgur.com/QwL2k3G.png", 0, 0, 0),
-            ("Meleoron", "B", "https://i.pinimg.com/originals/89/31/ec/8931ec6188654aa962a025796d201757.jpg", 0, 0, 0),
-            ("Ikalgo", "B", "https://static.wikia.nocookie.net/hunterxhunter/images/9/9c/HxH2011_EP119_Ikalgo_IMG.png/revision/latest?cb=20220810174247", 0, 0, 0),
-            ("Welfin", "B", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea914385-70d7-476d-aa3b-37d0c449c464/deoelye-c70663b6-56f7-4a92-a96d-44e5ea1f8bdc.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VhOTE0Mzg1LTcwZDctNDc2ZC1hYTNiLTM3ZDBjNDQ5YzQ2NFwvZGVvZWx5ZS1jNzA2NjNiNi01NmY3LTRhOTItYTk2ZC00NGU1ZWExZjhiZGMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WLJv0JJtJNfwVLYiMwDhyXw6cTZooTNlBnpWGW3CEsE", 0, 0, 0),
+            ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 0, 0, 0),
+            ("Ikalgo", "B", "hhttps://i.imgur.com/P3Jc5JY.png", 0, 0, 0),
+            ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 0, 0, 0),
             
             # Personnages C
             ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 0, 0, 0),
-            ("Buhara", "C", "https://static.wikia.nocookie.net/hunterxhunter/images/c/ce/Buhara_in_the_2011_anime_adaptation.png/revision/latest/scale-to-width-down/637?cb=20160512200528&path-prefix=de", 0, 0, 0),
-            ("Menchi", "C", "https://pbs.twimg.com/media/EWKkda9XsAM7w1e.jpg", 0, 0, 0),
-            ("Kanaria", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/hunter-x-hunter-canary-3.jpg", 0, 0, 0),
+            ("Buhara", "C", "https://i.imgur.com/EDIxD4t.png", 0, 0, 0),
+            ("Menchi", "C", "https://i.imgur.com/OYoD8tt.jpeg", 0, 0, 0),
+            ("Kanaria", "C", "https://i.imgur.com/tSSM35N.jpeg", 0, 0, 0),
             ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 0, 0, 0),
-            ("Guido", "C", "https://static.wikia.nocookie.net/hunterxhunter/images/a/a6/Gido_HxH_2011.png/revision/latest?cb=20181219124853&path-prefix=de", 0, 0, 0),
-            ("Riluberto", "C", "https://static.wikia.nocookie.net/hunterxhunter/images/f/f4/Riehlvelt_2011.png/revision/latest?cb=20140723042130&path-prefix=es", 0, 0, 0),
-            ("Sadaso", "C", "https://static.wikia.nocookie.net/hunterxhunter/images/9/9b/Sadaso_HxH_2011.PNG/revision/latest?cb=20230408180314", 0, 0, 0),
-            ("Sukuwara", "C", "https://i0.wp.com/64.media.tumblr.com/9966f67be6830f2b7fb1e255bd891322/e48329a1258122b1-bd/s1280x1920/ece0e2622464d95053968eab8c7a7e75d9c53ff3.jpg", 0, 0, 0),
-            ("Senritsu", "C", "https://static.wikia.nocookie.net/hunterxhunter/images/4/44/Melodie_de_Senritsu.jpg/revision/latest/scale-to-width-down/474?cb=20201104155845&path-prefix=fr", 0, 0, 0),
+            ("Guido", "C", "https://i.imgur.com/6EeZcNz.png", 0, 0, 0),
+            ("Riluberto", "C", "https://i.imgur.com/NDJrQVS.png", 0, 0, 0),
+            ("Sadaso", "C", "https://i.imgur.com/e2ppqVH.jpeg", 0, 0, 0),
+            ("Sukuwara", "C", "https://i.imgur.com/iK18Eos.jpeg", 0, 0, 0),
+            ("Senritsu", "C", "https://i.imgur.com/1PhNNbj.jpeg", 0, 0, 0),
 
             # Personnages D
-            ("Kiriko", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/3/34/KirikoGotoh.PNG/revision/latest/scale-to-width-down/250?cb=20190203130647", 0, 0, 0),
+            ("Kiriko", "D", "https://i.imgur.com/kc1BLPf.jpeg", 0, 0, 0),
             ("Ponzu", "D", 'https://i.imgur.com/f4vOKAP.png', 0, 0, 0),
-            ("Gereta", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/0/03/Geretta_tonnel.jpg/revision/latest?cb=20141014062140&path-prefix=ru", 0, 0, 0),
-            ("Kikyo Zoldyck", "D", "https://static.wikia.nocookie.net/hunterxhunter/images/f/f7/24_-_Kikyo_talking_to_Gon.png/revision/latest?cb=20170503131700&path-prefix=id", 0, 0, 0),
-            ("Vezze", "D", "https://i.ytimg.com/vi/zXCjw64nYKc/hqdefault.jpg", 0, 0, 0),
+            ("Gereta", "D", "https://i.imgur.com/lFVctp1.jpeg", 0, 0, 0),
+            ("Kikyo Zoldyck", "D", "https://i.imgur.com/AoZVrw6.png", 0, 0, 0),
+            ("Vezze", "D", "https://i.imgur.com/0BqXqAn.png", 0, 0, 0),
 
             # Personnages E
             ("Tompa", "E", "https://i.imgur.com/ms2R2ki.png", 0, 0, 0),
-            ("Todo", "E", "https://static.wikia.nocookie.net/hunterxhunter/images/9/9f/Todo2.jpg/revision/latest?cb=20140809131128&path-prefix=fr", 0, 0, 0),
-            ("Majtani", "E", "https://static.wikia.nocookie.net/hunterxhunter/images/d/de/HxH2011_EP9_Majitani_during_his_match_with_Kurapika.png/revision/latest?cb=20230309232338", 0, 0, 0),
-            ("Leluto", "E", "https://static.wikia.nocookie.net/hunterxhunter/images/5/5e/HxH2011_EP11_Leroute_reveals_her_appearance.png/revision/latest/scale-to-width-down/1200?cb=20230310032204", 0, 0, 0),
-            ("Jones", "E", "https://static.wikia.nocookie.net/hunterxhunter/images/5/59/HxH2011_EP11_Johness_reveals_himself.png/revision/latest?cb=20230310034953", 0, 0, 0),
-            ("Zebulo", "E", "https://static.wikia.nocookie.net/hunterxhunter/images/2/20/Zebro_2011.png/revision/latest?cb=20140714071032&path-prefix=es", 0, 0, 0),
+            ("Todo", "E", "https://i.imgur.com/DAVdi3M.jpeg", 0, 0, 0),
+            ("Majtani", "E", "https://i.imgur.com/DmJoWX5.jpeg", 0, 0, 0),
+            ("Leluto", "E", "https://i.imgur.com/wgyMHWc.png", 0, 0, 0),
+            ("Jones", "E", "https://i.imgur.com/MShzS9R.png", 0, 0, 0),
+            ("Zebulo", "E", "https://i.imgur.com/nuTPuxR.png", 0, 0, 0),
             ("Ciquento", "E", "https://i.imgur.com/rfiLrO7.png", 0, 0, 0),
-            ("Miruki", "E", "https://pm1.narvii.com/6905/d96de0f8cfc3d93cf9228f85ab2d31ec6cf2e24dr1-1045-662v2_hq.jpg", 0, 0, 0),
+            ("Miruki Zoldyck", "E", "https://i.imgur.com/IcwaCHD.jpeg", 0, 0, 0),
             ("Neon", "E", 'https://i.imgur.com/Rz5HGeZ.png', 0, 0, 0),
-            ("Pegui", "E", 'https://i0.wp.com/www.univers-otaku.com/wp-content/uploads/2021/03/peggy-hxh.jpg?resize=740%2C370&ssl=1', 0, 0, 0),
+            ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 0, 0, 0),
 
             # Personnages F
             ("Mito", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
-            ("Capitaine", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/5/5b/Capitaine_2011_Infobox.png/revision/latest?cb=20150618102629&path-prefix=fr', 0, 0, 0),
-            ("Beans", "F", 'https://imageservice.disco.peacocktv.com/uuid/02ce258a-9e02-3159-8d10-15e8741d8c1e/LAND_16_9?language=eng&territory=US&version=e18986d4-65ec-33b4-bc4f-251dc4a71286', 0, 0, 0),
-            ("Bodoro", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/4/43/Bodoro_hxh_final.jpg/revision/latest?cb=20140928103344&path-prefix=ru', 0, 0, 0),
-            ("Togari", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/c/cf/HxH2011_EP10_Togari_close-up.png/revision/latest?cb=20230310005523', 0, 0, 0),
-            ("Kara", "F", 'https://i.pinimg.com/736x/74/9b/d2/749bd23b1e75e8b8edc9cd62fd88c4ce.jpg', 0, 0, 0),
-            ("Cocco", "F", 'https://asset-2.tstatic.net/kupang/foto/bank/images/ADEGAN-HUNTER-X-HUNTER-EPISODE-30.jpg', 0, 0, 0),
+            ("Capitaine", "F", 'https://i.imgur.com/Q3iev4b.png', 0, 0, 0),
+            ("Beans", "F", 'https://i.imgur.com/ZH36bXI.jpeg', 0, 0, 0),
+            ("Bodoro", "F", 'https://i.imgur.com/VSWUPF5.jpeg', 0, 0, 0),
+            ("Togari", "F", 'https://i.imgur.com/yaTcfzQ.png', 0, 0, 0),
+            ("Kara", "F", 'https://i.imgur.com/zPxLCH0.jpeg', 0, 0, 0),
+            ("Cocco", "F", 'https://i.imgur.com/aMpudLr.jpeg', 0, 0, 0),
             ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 0, 0, 0),
-            ("Kon (hxh)", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/3/35/76_-_Kon_as_a_cub.png/revision/latest/scale-to-width-down/1200?cb=20150524053717', 0, 0, 0),
+            ("Kon (hxh)", "F", 'https://i.imgur.com/rMn0Ukz.png', 0, 0, 0),
 
             # """ PERSONNAGE AVATAR """
             # Personnages X
@@ -1140,7 +1141,7 @@ all_link_synergies = {
 
 all_techniques = {
     "All Might" : [
-        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"],
+        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
     ],
     "Sasuke" : [
         ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
