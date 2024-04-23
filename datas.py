@@ -944,6 +944,33 @@ all_characters_templates = {
 
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
+            ],
+            "Chainsaw Man" : [
+                ("Denji", "X", "https://i.imgur.com/YnDFcsy.gif", 0, 0, 0),
+                ("Makima", "X", "https://i.imgur.com/UCcRxPY.gif", 0, 0, 0),
+
+                ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 0, 0, 0),
+                
+                ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 0, 0, 0),
+                ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 0, 0, 0),
+                ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 0, 0, 0),
+                ("Samurai Sword", "S", "https://i.imgur.com/8Bj3B08.gif", 0, 0, 0),
+                ("Akane Sawatari", "S", "https://i.imgur.com/mbr0WZ8.gif", 0, 0, 0),
+                
+                ("Power", "A", "https://i.imgur.com/WzSAOuy.gif", 0, 0, 0),
+
+
+                ("Kobeni Higashiyama", "B", "https://i.imgur.com/yB3UtcT.jpeg", 0, 0, 0),
+                ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 0, 0, 0),
+                ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 0, 0, 0),
+
+                ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 0, 0, 0),
+                ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 0, 0, 0),
+
+
+
+
+                ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 0, 0, 0),
             ]
 }
 
@@ -1024,7 +1051,7 @@ all_synergies = [
     (75, "Fushiguro", "ATK", 0.15, "La lignee Fushiguro est une lignee d'originaire humaine.", image_temporaire, "#FF0000"),
     (76, "Ubuyashiki", "ATK", 0.15, "La famille Ubuyashiki est une famille de demons qui dirige le clan des pourfendeurs de demons.", image_temporaire, "#FFA500"),
     (77, "Hashira", "ATK", 0.15, "Les Hashiras sont les piliers de l'organisation des pourfendeurs de demons.", image_temporaire, "#0000FF"),
-    (78, "Pourfendeurs de demons", "ATK", 0.15, "Les Pourfendeurs de demons sont une organisation secrete qui lutte contre les demons.", image_temporaire, "#800080"),
+    (78, "Pourfendeur de demons", "ATK", 0.15, "Les Pourfendeurs de demons sont une organisation secrete qui lutte contre les demons.", image_temporaire, "#800080"),
     (79, "Domaine des Papillons", "ATK", 0.15, "Le Domaine des Papillons est un lieu mysterieux où les demons se rassemblent pour se nourrir.", image_temporaire, "#FF0000"),
     (80, "Demons", "ATK", 0.15, "Les Demons sont des creatures malefiques qui se nourrissent de la chair humaine.", image_temporaire, "#FFA500"),
     (81, "Kamado", "ATK", 0.15, "La famille Kamado est une famille de pourfendeurs de demons qui a ete decimee par les demons.", image_temporaire, "#0000FF"),
@@ -1052,9 +1079,12 @@ all_synergies = [
     (103, "Ange", "ATK", 0.15, "Les Anges sont des etres celestes qui servent les dieux et protegent l'univers.", "https://i.imgur.com/xt9Tn0P.jpeg", "#800080"),
     (104, "Famille de Son Goku", "ATK", 0.15, "La famille de Son Goku est une famille de guerriers Saiyans qui protegent la Terre.", "https://i.imgur.com/cChWxf7.jpeg", "#FF0000"),
     (105, "Famille de Vegeta", "ATK", 0.15, "La famille de Vegeta est une famille de guerriers Saiyans qui protegent la Terre.", "https://i.imgur.com/eyN6Qg9.jpeg", "#FFA500"),
+    (106, "Section 4 Anti-Demon", "ATK", 0.15, "La Section 4 Anti-Demon est une unite speciale de la police qui lutte contre les demons.", "https://i.imgur.com/dijQZFN.jpeg", "#0000FF"),
+
 ]
 
 all_link_synergies = {
+    106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Fushi","Madoka"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Goten"], # Famille de Son Goku
     103 : ["Whis","Vados","Grand pretre"], # Anges
@@ -1082,7 +1112,7 @@ all_link_synergies = {
     81 : ["Tanjiro","Nezuko","Kanao","Sumiyoshi","Tanjuro"], #Kamado
     80 : ["Muzan","Nezuko","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignee","Mere Araignee","Shinzu"], # Demons
     79 : ["Aoi Kanzaki","Sumi","Kiyo","Naho","Goto"], # Domaine des Papillons
-    78 : ["Kanao","Tanjiro","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeurs de demons
+    78 : ["Kanao","Tanjiro","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeur de demons
     77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui"], # Hashira
     76 : ["Kagaya","Amane","Hinaki","Nichika","Kiriya","Kanata"], # Ubuyashiki
     75 : ["Toji","Megumi","Tsumiki Fushiguro"], # Fushiguro
