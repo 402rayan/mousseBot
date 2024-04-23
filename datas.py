@@ -1,8 +1,6 @@
 image_temporaire = "https://picsum.photos/900/500"
-all_characters_templates = [
-            # """ PERSONNAGE DRAGON BALL"""
-            # Personnages X
-
+all_characters_templates = {
+            "DRAGONALL" : [
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 1100, 900),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 800, 1300, 800),
             ("Grand Prêtre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1100, 1000),
@@ -82,8 +80,8 @@ all_characters_templates = [
             #("Dende", "E", 'https://static.wikia.nocookie.net/dragonball/images/4/45/Dende.png/revision/latest?cb=20150705191047&path-prefix=fr', 0, 0, 0),
             #("Gyumao", "F", 'https://static.wikia.nocookie.net/dragonball/images/c/c2/300px-Ox-KingPresentsEp05-1-.png/revision/latest?cb=20150707150216&path-prefix=fr', 0, 0, 0),
             #("Dr. Brief", "F", 'https://static.wikia.nocookie.net/dragonball/images/8/87/Vlcap-2015-05-23-12h32m25s768.png/revision/latest?cb=20150523110821&path-prefix=fr', 0, 0, 0),
-
-            # """ PERSONNAGE NARUTO"""
+            ],
+            "Naruto" : [
             # Personnages X
             ("Naruto", "X", "https://i.imgur.com/n8cS6mP.gif", 0, 0, 0),
             ("Sasuke", "X", "https://i.imgur.com/PYEEX2h.gif", 0, 0, 0), 
@@ -173,9 +171,8 @@ all_characters_templates = [
 
             ("Inari", "F", "https://static.wikia.nocookie.net/naruto/images/a/af/Inari_Parte_I_Anime.png/revision/latest?cb=20130829123658&path-prefix=es", 0, 0, 0),
             ("Gato", "F", "https://static.wikia.nocookie.net/villains/images/2/2e/Gat%C5%8D_%28Naruto%29.jpg/revision/latest?cb=20120817183043", 0, 0, 0),
-
-            # """ PERSONNAGE ONE PIECE"""
-
+],
+            "ONE PIECE" : [
             # Personnages X
             ("Kaido", "X", "https://i.imgur.com/BMDbkl8.gif", 0, 0, 0),
             ("Luffy", "X", "https://i.imgur.com/EmzijMq.gif", 0, 0, 0), # TOREVIEW
@@ -268,9 +265,8 @@ all_characters_templates = [
             ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 0, 0, 0),
             ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 0, 0, 0),
             ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 0, 0, 0),
-
-            # """ PERSONNAGE BLEACH"""
-
+            ],
+            "BLEACH" : [
             # Personnages X
             ("Yhwach", "X", "https://i.pinimg.com/originals/61/64/7c/61647c2b43c3aece4d2f4e0f51fd98f8.gif", 0, 0, 0), # TOREVIEW
             ("Ichigo Final", "X", image_temporaire, 0, 0, 0),
@@ -344,7 +340,8 @@ all_characters_templates = [
             ("Yuzu", "F", 'https://i.imgur.com/plnofeu.png', 0, 0, 0),
             ("Tatsuki", "F", 'https://i.imgur.com/mSvWp2O.png', 0, 0, 0),
             ("Mizuiro", "F", 'https://i.imgur.com/b4sfzoT.png', 0, 0, 0),
-            # """ PERSONNAGE MY HERO ACADEMIA"""
+            ],
+            "MY HERO ACADEMIA" : [
             # Personnages X
             ("All Might", "X", "https://i.imgur.com/CUUh7Cd.gif", 0, 0, 0),
             ("Shigaraki", "X", "https://www.icegif.com/wp-content/uploads/2022/01/icegif-830.gif", 0, 0, 0),
@@ -402,8 +399,8 @@ all_characters_templates = [
             ("Eri", "F", image_temporaire, 0, 0, 0),
             ("Kenji", "F", image_temporaire, 0, 0, 0),
             ("Sansa", "F", image_temporaire, 0, 0, 0),
-
-            # """ PERSONNAGE HUNTER X HUNTER"""
+            ],
+            "HUNTER X HUNTER" : [
             # Personnages X
             ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Gon Freecss", "X", "https://64.media.tumblr.com/704dfb6cff638b74862be478cd16f0ee/tumblr_p20mqwIbSZ1w0ii2ho1_1280.gifv", 0, 0, 0),
@@ -507,8 +504,8 @@ all_characters_templates = [
             ("Cocco", "F", 'https://asset-2.tstatic.net/kupang/foto/bank/images/ADEGAN-HUNTER-X-HUNTER-EPISODE-30.jpg', 0, 0, 0),
             ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 0, 0, 0),
             ("Kon (hxh)", "F", 'https://static.wikia.nocookie.net/hunterxhunter/images/3/35/76_-_Kon_as_a_cub.png/revision/latest/scale-to-width-down/1200?cb=20150524053717', 0, 0, 0),
-
-            # """ PERSONNAGE AVATAR """
+            ],
+            "AVATAR" : [
             # Personnages X
             ("Aang", "X", image_temporaire, 0, 0, 0),
             ("Ozai", "X", image_temporaire, 0, 0, 0),
@@ -550,7 +547,8 @@ all_characters_templates = [
             ("Meng", "F", image_temporaire, 0, 0, 0),
             ("Pesticide", "F", image_temporaire, 0, 0, 0),
 
-            # """ PERSONNAGE JUJUTSU KAISEN """
+            ],
+            "JUJUTSU KAISEN" : [
             # Personnages X
             ("Sukuna", "X", "https://i.imgur.com/7l6cBTL.gif", 0, 0, 0),
             ("Gojo", "X", "https://i.imgur.com/ZRlOmKu.gif", 0, 0, 0),
@@ -616,8 +614,8 @@ all_characters_templates = [
             ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 0, 0, 0),
 
             
-            # """ PERSONNAGE JOJO'S BIZARRE ADVENTURE """
-
+            ],
+            "JOJO'S BIZARRE ADVENTURE" : [
             # Personnages X
             ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 0, 0, 0),
             ("Pucci", "X", 'https://i.imgur.com/RTdkTrH.png', 0, 0, 0),
@@ -705,11 +703,8 @@ all_characters_templates = [
             ("Dario Brando", "F", "https://cdn.anisearch.fr/images/character/screen/31/31596/full/479344.webp", 0, 0, 0),
             ("Tama", "F", 'https://static.wikia.nocookie.net/jjba/images/c/c3/Tama_AV.png/revision/latest?cb=20161020082753', 0, 0, 0), #ALICE
 
-
-
-            
-
-            # """ PERSONNAGE ONE PUNCH MAN ""
+            ],
+            "ONE PUNCH MAN" : [
 
             # Personnages X
             ("Saitama", "X", "https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 0, 0, 0),
@@ -757,8 +752,8 @@ all_characters_templates = [
 
             # Personnages F
             ("Mumen Rider", "F", "https://i.redd.it/diszh9zoizoa1.jpg", 0, 0, 0),
-
-            # """ PERSONNAGE DEMON SLAYER """
+            ],
+            "DEMON SLAYER" : [
             # Personnages X
             ("Tanjiro", "X", image_temporaire, 0, 0, 0),
             ("Muzan", "X", image_temporaire, 0, 0, 0),
@@ -826,7 +821,8 @@ all_characters_templates = [
             ("Naho", "F", 'https://i.imgur.com/LyTz20q.gif', 0, 0, 0),
             ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
             ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
-
+            ],
+            "FULL METAL ALCHIMIST BROTHERHOOD" : [
             # """ PERSONNAGE FMAB """
             # Personnages X
             ("Père", "X", image_temporaire, 0, 0, 0),
@@ -878,7 +874,8 @@ all_characters_templates = [
             ("Trisha", "F", 'https://i.pinimg.com/originals/e0/5c/60/e05c6066ac4977b871cfe729f07d45c1.jpg', 0, 0, 0),
             ("Xiao Mei", "F", 'https://i.pinimg.com/originals/30/4f/2e/304f2e830ee98ed4d18fcde6be4e88cc.gif', 0, 0, 0),
             ("Winry", "F", 'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/04/maxresdefault-2.jpg', 0, 0, 0),
-
+            ],
+            "ATTACK ON TITAN" : [
             # """ PERSONNAGES SNK """
             # Personnages X
             ("Eren", "X", image_temporaire, 0, 0, 0),
@@ -924,7 +921,8 @@ all_characters_templates = [
             ("Onyankopon", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/5/52/Onyankopon_protests_the_treatment_of_the_volunteers.png/revision/latest?cb=20210301055248", 0, 0, 0),
             ("Nicolo", "E", "https://static.wikia.nocookie.net/shingekinokyojin/images/1/1e/%C3%89pisode_68.png/revision/latest/scale-to-width-down/1280?cb=20210215025407&path-prefix=fr", 0, 0, 0),
             # Personnages F
-
+            ],
+            "NANATSU NO TAIZAI" : [
             # """ PERSONNAGES NNT """
             # Personnages X
             ("Meliodas", "X", image_temporaire, 0, 0, 0),
@@ -942,8 +940,8 @@ all_characters_templates = [
 
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
-            
-]
+            ]
+}
 
 all_synergies = [
     (1, "Akatsuki", "ATK", 0.15,"L'akkatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
