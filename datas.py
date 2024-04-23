@@ -377,38 +377,41 @@ all_characters_templates = {
             # Personnages B
             ("Ochaco", "B", 'https://i.imgur.com/GqBcqOI.jpeg', 0, 0, 0),
             ("Midnight", "B", 'https://i.imgur.com/L4S7dNo.jpeg', 0, 0, 0),
-            ("Denki", "B", image_temporaire, 0, 0, 0),
-            ("Crimson Riot", "B", image_temporaire, 0, 0, 0),
-            ("Nezu", "B", image_temporaire, 0, 0, 0),
-            ("Momo Yaoyorozu", "B", image_temporaire, 0, 0, 0),
-            ("Gang Orca", "B", image_temporaire, 0, 0, 0),
+            ("Denki", "B", 'https://i.imgur.com/aq2fHI5.png', 0, 0, 0),
+            ("Crimson Riot", "B", 'https://i.imgur.com/8VssE2J.jpeg', 0, 0, 0), #TOREVIEW ya rien dautre cm image 
+            ("Nezu", "B", 'https://i.imgur.com/PipbKlv.png', 0, 0, 0),
+            ("Momo Yaoyorozu", "B", 'https://i.imgur.com/3knQkZJ.jpeg', 0, 0, 0),
+            ("Gang Orca", "B", 'https://i.imgur.com/op6GToE.jpeg', 0, 0, 0),
+            ("Shinso Hitoshi", "B", 'https://i.imgur.com/Vw0skrm.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
+            ("Nejire Hado", "B", 'https://i.imgur.com/JRE6K7R.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
             # Personnages C
-            ("Shindo", "C", image_temporaire, 0, 0, 0),
-            ("Rock Lock", "C", image_temporaire, 0, 0, 0),
-            ("Vlad King", "C", image_temporaire, 0, 0, 0),
-            ("Testutetsu", "C", image_temporaire, 0, 0, 0),
-            ("Snipe", "C", image_temporaire, 0, 0, 0),
+            ("Shindo", "C", 'https://i.imgur.com/I7uLCYw.jpeg', 0, 0, 0),
+            ("Rock Lock", "C", 'https://i.imgur.com/s3iBS2y.jpeg', 0, 0, 0),
+            ("Vlad King", "C", 'https://i.imgur.com/v4AGxIS.jpeg', 0, 0, 0),
+            ("Testutetsu", "C", "https://i.imgur.com/06KllgA.jpeg", 0, 0, 0), #TOREVIEW A retirer car no image
+            ("Snipe", "C", 'https://i.imgur.com/urx0HwQ.jpeg', 0, 0, 0),
             
             # Personnages D
-            ("Spinner", "D", image_temporaire, 0, 0, 0),
-            ("Shihai", "D", image_temporaire, 0, 0, 0),
-            ("Nomu", "D", image_temporaire, 0, 0, 0),
+            ("Spinner", "D", 'https://i.imgur.com/MeW1vaE.jpeg', 0, 0, 0),
+            ("Shihai", "D", 'https://i.imgur.com/SIaA75c.jpeg', 0, 0, 0),
+            ("Nomu", "D", 'https://i.imgur.com/Vn6WFcc.jpeg', 0, 0, 0),
+            ("Kyoka Jiro", "D", 'https://i.imgur.com/R8DEMdM.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
+
             # Personnages E
-            ("Mineta", "E", image_temporaire, 0, 0, 0),
-            ("Shoji", "E", image_temporaire, 0, 0, 0),
+            ("Mineta", "E", 'https://i.imgur.com/gORmmMX.jpeg', 0, 0, 0), #BALANCETONPORC
+            ("Shoji", "E", 'https://i.imgur.com/lCTpZJE.jpeg', 0, 0, 0),
             # Personnages F
-            ("Eri", "F", image_temporaire, 0, 0, 0),
-            ("Kenji", "F", image_temporaire, 0, 0, 0),
-            ("Sansa", "F", image_temporaire, 0, 0, 0),
+            ("Eri", "F", 'https://i.imgur.com/thiVSIU.jpeg', 0, 0, 0),
+            ("Kenji", "F", 'https://i.imgur.com/BGeI2LC.jpeg', 0, 0, 0), #ou https://www.geekgirlauthority.com/wp-content/uploads/2017/08/mhas2e18-deku.jpg
+            ("Sansa", "F", 'https://i.imgur.com/bKASPVp.jpeg', 0, 0, 0),
             ],
             "Hunter x Hunter" : [
             # Personnages X
-            ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
+            ("Meruem", "X", "https://i.imgur.com/knC0hFT.gif", 0, 0, 0),
             ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 0, 0, 0),
             #("Gon Adulte", "X", 'https://i.imgur.com/8cMbCOF.png', 0, 0, 0), #TOREVIEW
             ("Kuroro", "X", 'https://i.imgur.com/3TjMAKv.gif', 0, 0, 0),
             ("Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 0, 0, 0),
-            ("Meruem", "X", "https://i.imgur.com/c2CR7Hs.gif", 0, 0, 0),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
             ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
 
@@ -461,7 +464,7 @@ all_characters_templates = {
             ("Korutopi", "B", "https://i.imgur.com/uqHvQrZ.jpeg", 0, 0, 0),
             ("Koruto", "B", "https://i.imgur.com/QwL2k3G.png", 0, 0, 0),
             ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 0, 0, 0),
-            ("Ikalgo", "B", "hhttps://i.imgur.com/P3Jc5JY.png", 0, 0, 0),
+            ("Ikalgo", "B", "https://i.imgur.com/P3Jc5JY.png", 0, 0, 0),
             ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 0, 0, 0),
             
             # Personnages C
