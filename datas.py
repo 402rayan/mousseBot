@@ -291,10 +291,10 @@ all_characters_templates = {
             ("Senjumaru", "SS", "https://imgur.com/EKWGM3I", 0, 0, 0),
 
             # Personnages S
-            ("Mayuri", "S", "https://gifs.eco.br/wp-content/uploads/2022/07/gifs-do-mayuri-kurotsuchi-1.gif", 0, 0, 0),
-            ("Sajin", "S", "https://64.media.tumblr.com/9feeb9306aaa5209099b7dfe883e90c0/tumblr_naoc4a1gdh1sv0f5ao1_500.gif", 0, 0, 0),
-            ("Isshin", "S", "https://64.media.tumblr.com/f482a92079273624a2ba3594d7e60710/9ffabbab708a4da9-22/s640x960/d0bd1f5d4e745cf6f3dfa7546bbeea55fbaf3f83.gif", 0, 0, 0),
-            ("Rukia", "S", "https://i.pinimg.com/originals/27/79/da/2779da8d545e74ef108bbd115df8bc15.gif", 0, 0, 0),
+            ("Mayuri", "S", "https://imgur.com/n8BNWm7", 0, 0, 0),
+            ("Sajin", "S", "https://imgur.com/6cf4JEH", 0, 0, 0),
+            ("Isshin", "S", "https://imgur.com/GTYbLGY", 0, 0, 0),
+            ("Rukia", "S", "https://imgur.com/IDjAqqP", 0, 0, 0),
             ("Shinji", "S", 'https://i.imgur.com/xeM1NLz.png', 0, 0, 0), #TOREVIEW
             ("Soi Fon", "S", 'https://i.imgur.com/EVH34qM.png', 0, 0, 0),
             ("Tosen", "S", 'https://i.imgur.com/4GA76X1.png', 0, 0, 0),
@@ -316,8 +316,8 @@ all_characters_templates = {
             ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 0, 0, 0),
             ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 0, 0, 0),
             ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 0, 0, 0),
-            ("Chad", "B", image_temporaire, 0, 0, 0),
-            ("Yumichika", "B", image_temporaire, 0, 0, 0),
+            ("Chad", "B", "https://imgur.com/o4eSlWY", 0, 0, 0),
+            ("Yumichika", "B", "https://imgur.com/mC8r7ka", 0, 0, 0),
 
             # Personnages C
             ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 0, 0, 0),
