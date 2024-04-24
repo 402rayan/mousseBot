@@ -407,107 +407,106 @@ all_characters_templates = {
             ],
             "Hunter x Hunter" : [
             # Personnages X
-            ("Meruem", "X", "https://i.imgur.com/knC0hFT.gif", 0, 0, 0),
-            ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 0, 0, 0),
-            #("Gon Adulte", "X", 'https://i.imgur.com/8cMbCOF.png', 0, 0, 0), #TOREVIEW
-            ("Kuroro", "X", 'https://i.imgur.com/3TjMAKv.gif', 0, 0, 0),
-            ("Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 0, 0, 0),
-            ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 0, 0, 0),
-            ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 0, 0, 0),
+            ("Meruem", "X", "https://i.imgur.com/knC0hFT.gif", 1000, 1000, 1000),
+            ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 950, 1050, 950),
+            ("Kuroro", "X", 'https://i.imgur.com/3TjMAKv.gif', 950, 960, 950),
+            ("Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 920, 980, 950),
+            ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 900, 930, 960),
+            ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 1000, 1000, 1000),
 
             # Personnages SS
-            ("Zeno Zoldyck", "SS", "https://i.imgur.com/inIqhEg.gif", 0, 0, 0),
-            ("Illumi Zoldyck", "SS", 'https://i.imgur.com/tFOQgXs.gif', 0, 0, 0),
-            ("Silva Zoldyck", "SS", "https://i.imgur.com/K8TUsWM.png", 0, 0, 0),
-            ("Hisoka", "SS", 'https://i.imgur.com/l69c0NZ.png', 0, 0, 0),
-            ("Neferopito", "SS", "https://i.imgur.com/5PkF2QA.gif", 0, 0, 0),
-            ("Pufu", "SS", "https://i.imgur.com/CfoSEeD.gif", 0, 0, 0),
-            ("Razor", "SS", 'https://i.imgur.com/0quOdEi.png', 0, 0, 0), #TOREVIEW 
-            ("Yupi", "SS", "https://i.imgur.com/tWZDibP.png", 0, 0, 0),
+            ("Zeno Zoldyck", "SS", "https://i.imgur.com/inIqhEg.gif", 730, 780, 740),
+            ("Illumi Zoldyck", "SS", 'https://i.imgur.com/tFOQgXs.gif', 710, 720, 725),
+            ("Silva Zoldyck", "SS", "https://i.imgur.com/K8TUsWM.gif", 720, 760, 730),
+            ("Hisoka", "SS", 'https://i.imgur.com/l69c0NZ.gif', 720, 730, 725),
+            ("Neferopito", "SS", "https://i.imgur.com/5PkF2QA.gif", 800, 780, 790), # SS+
+            ("Pufu", "SS", "https://i.imgur.com/CfoSEeD.gif", 780, 700, 800),
+            ("Razor", "SS", 'https://i.imgur.com/LZ1bwdl.gif', 700, 730, 700), #TOREVIEW 
+            ("Yupi", "SS", "https://i.imgur.com/tWZDibP.gif", 790, 800, 810),
 
             # Personnages S
-            ("Kaito", "S", "https://i.imgur.com/RehnXP7.gif", 0, 0, 0),
-            ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 0, 0, 0),
-            ("Kurapika", "S", 'https://i.imgur.com/ltImMBx.png', 0, 0, 0),
-            ("Kirua Zoldyck", "S", 'https://i.imgur.com/2sLrUqa.png', 0, 0, 0),
-            ("Uvogin", "S", 'https://i.imgur.com/iqzrrW8.png', 0, 0, 0),
-            ("Nabunaga", "S", 'https://i.imgur.com/1UMIlo3.png', 0, 0, 0),
-            ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 0, 0, 0),
-            ("Phinks", "S", "https://i.imgur.com/k5BLUMw.png", 0, 0, 0),
-            ("Bonolenov Ndongo", "S", "https://i.imgur.com/WNj1k2B.jpeg", 0, 0, 0), #TOREVIEW #GIF
-            ("Biscuit", "S", 'https://i.imgur.com/3WUyIRV.png', 0, 0, 0),
+            ("Kaito", "S", "https://i.imgur.com/RehnXP7.gif", 530, 580, 535),
+            ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 525, 600, 515),
+            ("Kurapika", "S", 'https://i.imgur.com/ltImMBx.gif', 580, 580, 575),
+            ("Kirua Zoldyck", "S", 'https://i.imgur.com/2sLrUqa.gif', 520, 610, 520),
+            ("Uvogin", "S", 'https://i.imgur.com/iqzrrW8.gif', 540, 590, 560),
+            ("Nabunaga", "S", 'https://i.imgur.com/1UMIlo3.gif', 520, 580, 520),
+            ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 520, 575, 520),
+            ("Phinks", "S", "https://i.imgur.com/k5BLUMw.gif", 530, 575, 525),
+            ("Bonolenov Ndongo", "S", "https://i.imgur.com/WNj1k2B.gif", 520, 565, 530), #TOREVIEW #GIF
+            ("Biscuit", "S", 'https://i.imgur.com/3WUyIRV.gif', 560, 570, 555),
             
             # Personnages A
-            ("Morel", "A", 'https://i.imgur.com/1J0JLeS.png', 0, 0, 0),
-            ("Knuckle", "A", 'https://i.imgur.com/sMDxcKR.png', 0, 0, 0), #TOREVIEW
-            ("Kalluto", "A", "https://i.imgur.com/vCDM9hC.png", 0, 0, 0),
-            ("Hanzô", "A", "https://i.imgur.com/HuuzzwW.jpeg", 0, 0, 0), #TOREVIEW #GIF
-            ("Sharnak", "A", 'https://i.imgur.com/EwSJxbs.png', 0, 0, 0),
-            ("Franklin", "A", "https://i.imgur.com/xoln4Ly.gif", 0, 0, 0),
-            ("Shizuku", "A", "https://i.imgur.com/IbkxhGl.png", 0, 0, 0),
-            ("Genthru", "A", 'https://i.imgur.com/WtnOU7k.png', 0, 0, 0),
-            ("Cheetu", "A", "https://i.imgur.com/ZqFKcDD.png", 0, 0, 0),
-            ("Zazan", "A", "https://i.imgur.com/LpXVPsM.png", 0, 0, 0), #TOREVIEW #GIF
-            ("Novu", "A", "https://i.imgur.com/VJ00COB.jpeg", 0, 0, 0), #TOREVIEW #GIF
-            ("Shoot", "A", 'https://i.imgur.com/tU2Fwq6.png', 0, 0, 0),
-            ("Pariston", "A", 'https://i.imgur.com/71ouSTW.png', 0, 0, 0),
-            ("Pamu Shiberia", "A", 'https://i.imgur.com/pIxg46u.jpeg', 0, 0, 0),
+            ("Morel", "A", 'https://i.imgur.com/FnQu94R.gif', 430, 400, 420),
+            ("Knuckle", "A", 'https://i.imgur.com/sMDxcKR.gif', 420, 415, 410), #TOREVIEW
+            ("Kalluto", "A", "https://i.imgur.com/vCDM9hC.gif", 415, 420, 410),
+            ("Hanzo (hxh)", "A", "https://i.imgur.com/HuuzzwW.gif", 410, 400, 410), #TOREVIEW #GIF
+            ("Sharnak", "A", 'https://i.imgur.com/EwSJxbs.gif', 420, 430, 400),
+            ("Franklin", "A", "https://i.imgur.com/xoln4Ly.gif", 410, 420, 400),
+            ("Shizuku", "A", "https://i.imgur.com/IbkxhGl.gif", 410, 415, 405),
+            ("Genthru", "A", 'https://i.imgur.com/WtnOU7k.gif', 400, 440, 420),
+            ("Cheetu", "A", "https://i.imgur.com/ZqFKcDD.gif", 420, 430, 410),
+            ("Zazan", "A", "https://i.imgur.com/LpXVPsM.gif", 430, 420, 430), #TOREVIEW #GIF
+            ("Novu", "A", "https://i.imgur.com/UIgaydF.gif", 400, 400, 410), #TOREVIEW #GIF
+            ("Shoot", "A", 'https://i.imgur.com/tU2Fwq6.gif', 410, 430, 430),
+            ("Pariston", "A", 'https://i.imgur.com/71ouSTW.gif', 420, 440, 420),
+            ("Pamu Shiberia", "A", 'https://i.imgur.com/AJTBunT.gif', 430, 440, 420),
 
             # Personnages B
-            ("Leorio", "B", 'https://i.imgur.com/NBFxlLS.gif', 0, 0, 0),
-            ("Satotsu", "B", 'https://i.imgur.com/QQS66Kw.jpeg', 0, 0, 0),
-            ("Gotoh", "B", 'https://i.imgur.com/hYXIzdH.png', 0, 0, 0),
-            ("Mike", "B", 'https://i.imgur.com/Opybqgn.jpeg', 0, 0, 0),
-            ("Wing", "B", 'https://i.imgur.com/h8Btyhj.png', 0, 0, 0),
-            ("Kastro", "B", 'https://i.imgur.com/mjgiM60.png', 0, 0, 0),
-            ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 0, 0, 0),
-            ("Korutopi", "B", "https://i.imgur.com/uqHvQrZ.jpeg", 0, 0, 0),
-            ("Koruto", "B", "https://i.imgur.com/QwL2k3G.png", 0, 0, 0),
-            ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 0, 0, 0),
-            ("Ikalgo", "B", "https://i.imgur.com/P3Jc5JY.png", 0, 0, 0),
-            ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 0, 0, 0),
+            ("Leorio", "B", 'https://i.imgur.com/NBFxlLS.gif', 320, 350, 325),
+            ("Satotsu", "B", 'https://i.imgur.com/QQS66Kw.jpeg', 300, 320, 310),
+            ("Gotoh", "B", 'https://i.imgur.com/hYXIzdH.png', 330, 350, 330),
+            ("Mike", "B", 'https://i.imgur.com/Opybqgn.jpeg', 330, 340, 335),
+            ("Wing", "B", 'https://i.imgur.com/h8Btyhj.png', 320, 310, 315),
+            ("Kastro", "B", 'https://i.imgur.com/mjgiM60.png', 315, 320, 320),
+            ("Pakunoda", "B", "https://i.imgur.com/IxWVTzo.gif", 330, 340, 320),
+            ("Korutopi", "B", "https://i.imgur.com/uqHvQrZ.jpeg", 325, 335, 315),
+            ("Koruto", "B", "https://i.imgur.com/QwL2k3G.png", 340, 330, 340),
+            ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 325, 335, 330),
+            ("Ikalgo", "B", "https://i.imgur.com/P3Jc5JY.png", 300, 350, 315),
+            ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 345, 350, 340),
             
             # Personnages C
-            ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 0, 0, 0),
-            ("Buhara", "C", "https://i.imgur.com/EDIxD4t.png", 0, 0, 0),
-            ("Menchi", "C", "https://i.imgur.com/OYoD8tt.jpeg", 0, 0, 0),
-            ("Kanaria", "C", "https://i.imgur.com/tSSM35N.jpeg", 0, 0, 0),
-            ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 0, 0, 0),
-            ("Guido", "C", "https://i.imgur.com/6EeZcNz.png", 0, 0, 0),
-            ("Riluberto", "C", "https://i.imgur.com/NDJrQVS.png", 0, 0, 0),
-            ("Sadaso", "C", "https://i.imgur.com/e2ppqVH.jpeg", 0, 0, 0),
-            ("Sukuwara", "C", "https://i.imgur.com/iK18Eos.jpeg", 0, 0, 0),
-            ("Senritsu", "C", "https://i.imgur.com/1PhNNbj.jpeg", 0, 0, 0),
+            ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 240, 275, 235),
+            ("Buhara", "C", "https://i.imgur.com/EDIxD4t.png", 300, 220, 260),
+            ("Menchi", "C", "https://i.imgur.com/OYoD8tt.jpeg", 270, 260, 255),
+            ("Kanaria", "C", "https://i.imgur.com/tSSM35N.jpeg", 270, 260, 255),
+            ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 265, 275, 255),
+            ("Guido", "C", "https://i.imgur.com/6EeZcNz.png", 245, 250, 240),
+            ("Riluberto", "C", "https://i.imgur.com/NDJrQVS.png", 245, 250, 240),
+            ("Sadaso", "C", "https://i.imgur.com/e2ppqVH.jpeg", 250, 260, 240),
+            ("Sukuwara", "C", "https://i.imgur.com/iK18Eos.jpeg", 245, 250, 235),
+            ("Senritsu", "C", "https://i.imgur.com/1PhNNbj.jpeg", 250, 230, 240),
 
             # Personnages D
-            ("Kiriko", "D", "https://i.imgur.com/kc1BLPf.jpeg", 0, 0, 0),
-            ("Ponzu", "D", 'https://i.imgur.com/f4vOKAP.png', 0, 0, 0),
-            ("Gereta", "D", "https://i.imgur.com/lFVctp1.jpeg", 0, 0, 0),
-            ("Kikyo Zoldyck", "D", "https://i.imgur.com/AoZVrw6.png", 0, 0, 0),
-            ("Vezze", "D", "https://i.imgur.com/0BqXqAn.png", 0, 0, 0),
+            ("Kiriko", "D", "https://i.imgur.com/kc1BLPf.jpeg", 150, 140, 170),
+            ("Ponzu", "D", 'https://i.imgur.com/f4vOKAP.png', 150, 190, 140),
+            ("Kikyo Zoldyck", "D", "https://i.imgur.com/AoZVrw6.png", 160, 180, 170),
+            ("Vezze", "D", "https://i.imgur.com/bfKaKiD.jpeg", 150, 180, 160),
 
             # Personnages E
-            ("Tompa", "E", "https://i.imgur.com/ms2R2ki.png", 0, 0, 0),
-            ("Todo", "E", "https://i.imgur.com/DAVdi3M.jpeg", 0, 0, 0),
-            ("Majtani", "E", "https://i.imgur.com/DmJoWX5.jpeg", 0, 0, 0),
-            ("Leluto", "E", "https://i.imgur.com/wgyMHWc.png", 0, 0, 0),
-            ("Jones", "E", "https://i.imgur.com/MShzS9R.png", 0, 0, 0),
-            ("Zebulo", "E", "https://i.imgur.com/nuTPuxR.png", 0, 0, 0),
-            ("Ciquento", "E", "https://i.imgur.com/rfiLrO7.png", 0, 0, 0),
-            ("Miruki Zoldyck", "E", "https://i.imgur.com/IcwaCHD.jpeg", 0, 0, 0),
-            ("Neon", "E", 'https://i.imgur.com/Rz5HGeZ.png', 0, 0, 0),
-            ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 0, 0, 0),
+            ("Tompa", "E", "https://i.imgur.com/ms2R2ki.png", 115, 105, 110),
+            ("Todo", "E", "https://i.imgur.com/DAVdi3M.jpeg", 125, 100, 105),
+            ("Majtani", "E", "https://i.imgur.com/DmJoWX5.jpeg", 95, 120, 115),
+            ("Leluto", "E", "https://i.imgur.com/wgyMHWc.png", 110, 110, 110),
+            ("Jones", "E", "https://i.imgur.com/MShzS9R.png", 120, 105, 105),
+            ("Zebulo", "E", "https://i.imgur.com/nuTPuxR.png", 105, 110, 115),
+            ("Ciquento", "E", "https://i.imgur.com/rfiLrO7.png", 100, 115, 115),
+            ("Miruki Zoldyck", "E", "https://i.imgur.com/IcwaCHD.jpeg", 110, 110, 110),
+            ("Neon", "E", 'https://i.imgur.com/Rz5HGeZ.png', 95, 115, 120),
+            ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 100, 110, 120),
+            ("Bodoro", "E", 'https://i.imgur.com/VSWUPF5.jpeg', 115, 110, 105),
 
+
+            
             # Personnages F
-            ("Mito Freecss", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
-            ("Capitaine", "F", 'https://i.imgur.com/Q3iev4b.png', 0, 0, 0),
-            ("Beans", "F", 'https://i.imgur.com/ZH36bXI.jpeg', 0, 0, 0),
-            ("Bodoro", "F", 'https://i.imgur.com/VSWUPF5.jpeg', 0, 0, 0),
-            ("Togari", "F", 'https://i.imgur.com/yaTcfzQ.png', 0, 0, 0),
-            ("Kara", "F", 'https://i.imgur.com/zPxLCH0.jpeg', 0, 0, 0),
-            ("Cocco", "F", 'https://i.imgur.com/aMpudLr.jpeg', 0, 0, 0),
-            ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 0, 0, 0),
-            ("Kon (hxh)", "F", 'https://i.imgur.com/rMn0Ukz.png', 0, 0, 0),
+            ("Mito Freecss", "F", 'https://i.imgur.com/Yy7iG5d.png', 45, 50, 45),
+            ("Capitaine", "F", 'https://i.imgur.com/Q3iev4b.png', 50, 45, 45),
+            ("Beans", "F", 'https://i.imgur.com/ZH36bXI.jpeg', 40, 50, 50),
+            ("Kara", "F", 'https://i.imgur.com/zPxLCH0.jpeg', 45, 55, 40),
+            ("Cocco", "F", 'https://i.imgur.com/aMpudLr.jpeg', 50, 40, 50),
+            ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 55, 45, 40),
+            ("Kon (hxh)", "F", 'https://i.imgur.com/rMn0Ukz.png', 40, 45, 55),
             ],
             "Avatar" : [
             # Personnages X
@@ -1199,6 +1198,11 @@ all_techniques = {
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
     ],
-    "Pere":
+    "Pere": [
         ["Alchimie", "utilise l'", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
+    ],
+    "Morel": [
+        ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
+    ]
+        
 }
