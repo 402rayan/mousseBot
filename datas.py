@@ -268,47 +268,47 @@ all_characters_templates = {
             ],
             "Bleach" : [
             # Personnages X
-            ("Yhwach", "X", "https://imgur.com/OLYulIP", 950, 1200, 1000), 
-            ("Ichigo Kurosaki", "X", "https://imgur.com/5LJbZtC", 1000, 1200, 1000),
-            ("Aizen", "X", 'https://i.imgur.com/8xq9dtV.png', 950, 1100, 970),
+            ("Yhwach", "X", "https://i.imgur.com/OLYulIP.gif", 950, 1200, 1000), 
+            ("Ichigo Kurosaki", "X", "https://i.imgur.com/5LJbZtC.gif", 1000, 1200, 1000),
+            ("Aizen", "X", 'https://i.imgur.com/8xq9dtV.gif', 950, 1100, 970),
             ("Yamamoto", "X", 'https://i.imgur.com/EGYHcBd.gif', 900, 1300, 900),
             ("Kenpachi", "X", "https://i.imgur.com/DCS6I2N.gif", 1000, 1100, 1000),
-            ("Ichibe", "X", "https://imgur.com/dg916bt", 1100, 950, 1000),
+            ("Ichibe", "X", "https://i.imgur.com/dg916bt.gif", 1100, 950, 1000),
 
             # Personnages SS
-            ("Jugram", "SS", "https://imgur.com/kXmvoS6", 700, 750, 700),
-            ("Uryu", "SS", "https://imgur.com/AC2f6Ey", 700, 800, 700),
+            ("Jugram", "SS", "https://i.imgur.com/kXmvoS6.gif", 700, 750, 700),
+            ("Uryu", "SS", "https://i.imgur.com/AC2f6Ey.gif", 700, 800, 700),
             ("Kyoraku", "SS", "https://i.imgur.com/7DGfP2z.gif", 750, 850, 700),
-            ("Byakuya", "SS", "https://imgur.com/nQDkC3B", 700, 800, 720),
+            ("Byakuya", "SS", "https://i.imgur.com/VZrc8mU.gif", 700, 800, 720),
             ("Toshiro", "SS", "https://i.imgur.com/R9S0Qa4.gif", 700, 720, 700),
             ("Urahara", "SS", "https://i.gifer.com/53FX.gif", 730, 800, 720),
             ("Yoruichi", "SS", "https://i.gifer.com/3flV.gif", 700, 770, 720),
-            ("Unohana", "SS", "https://imgur.com/b1x9GUC", 700, 850, 750),
+            ("Unohana", "SS", "https://i.imgur.com/b1x9GUC.gif", 700, 850, 750),
             ("Ulquiorra", "SS", "https://i.imgur.com/OaYNXCg.gif", 700, 800, 700),
             ("Gin", "SS", "https://i.imgur.com/kveTtpS.gif", 700, 750, 720),
-            ("Stark", "SS", "https://imgur.com/SNpSgRB", 700, 780, 720),
-            ("Renji", "SS", "https://imgur.com/RptZEBF", 720, 700, 720), 
-            ("Senjumaru", "SS", "https://imgur.com/EKWGM3I", 70, 800, 700),
+            ("Stark", "SS", "https://i.imgur.com/SNpSgRB.gif", 700, 780, 720),
+            ("Renji", "SS", "https://i.imgur.com/RptZEBF.gif", 720, 700, 720), 
+            ("Senjumaru", "SS", "https://i.imgur.com/EKWGM3I.gif", 70, 800, 700),
 
             # Personnages S
-            ("Mayuri", "S", "https://imgur.com/n8BNWm7", 550, 600, 550),
-            ("Sajin", "S", "https://imgur.com/6cf4JEH", 600, 500, 550),
-            ("Isshin", "S", "https://imgur.com/GTYbLGY", 550, 550, 550),
-            ("Rukia", "S", "https://imgur.com/IDjAqqP", 550, 620, 550),
-            ("Shinji", "S", 'https://imgur.com/9vxW0IN', 550, 650, 550), 
-            ("Soi Fon", "S", 'https://i.imgur.com/EVH34qM.png', 550, 580, 550),
-            ("Tosen", "S", 'https://i.imgur.com/4GA76X1.png', 550, 550, 550),
-            ("Baraggan", "S", 'https://i.imgur.com/k89CHqN.png', 550, 570, 550),
-            ("Grimmjow", "S", 'https://i.imgur.com/nj464jc.png', 580, 600, 550),
+            ("Mayuri", "S", "https://i.imgur.com/n8BNWm7.gif", 550, 600, 550),
+            ("Sajin", "S", "https://i.imgur.com/6cf4JEH.gif", 600, 500, 550),
+            ("Isshin", "S", "https://i.imgur.com/GTYbLGY.gif", 550, 550, 550),
+            ("Rukia", "S", "https://i.imgur.com/IDjAqqP.gif", 550, 620, 550),
+            ("Shinji", "S", 'https://i.imgur.com/9vxW0IN.gif', 550, 650, 550), 
+            ("Soi Fon", "S", 'https://i.imgur.com/EVH34qM.gif', 550, 580, 550),
+            ("Tosen", "S", 'https://i.imgur.com/4GA76X1.gif', 550, 550, 550),
+            ("Baraggan", "S", 'https://i.imgur.com/k89CHqN.gif', 550, 570, 550),
+            ("Grimmjow", "S", 'https://i.imgur.com/nj464jc.gif', 580, 600, 550),
 
             # Personnages A
 
-            ("Ukitake", "A", 'https://imgur.com/PqGvVzv', 400, 420, 400), 
-            ("Nnoitra", "A", 'https://i.imgur.com/z5SAM9h.png', 450, 450, 450),
-            ("Shuhei", "A", 'https://i.imgur.com/rkQNMQX.png', 420, 430, 420),
-            ("Ryuken", "A", 'https://i.imgur.com/turdL6j.png', 420, 450, 420),
-            ("Orihime", "A", 'https://i.imgur.com/xGhy8ky.png', 420, 420, 460),
-            ("Ginjo", "A", 'https://i.imgur.com/xLPLs5Q.png', 420, 420, 420),
+            ("Ukitake", "A", 'https://i.imgur.com/PqGvVzv.gif', 400, 420, 400), 
+            ("Nnoitra", "A", 'https://i.imgur.com/z5SAM9h.gif', 450, 450, 450),
+            ("Shuhei", "A", 'https://i.imgur.com/rkQNMQX.gif', 420, 430, 420),
+            ("Ryuken", "A", 'https://i.imgur.com/turdL6j.gif', 420, 450, 420),
+            ("Orihime", "A", 'https://i.imgur.com/xGhy8ky.gif', 420, 420, 460),
+            ("Ginjo", "A", 'https://i.imgur.com/xLPLs5Q.gif', 420, 420, 420),
             
             
             # Personnages B
@@ -316,8 +316,8 @@ all_characters_templates = {
             ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 330, 330, 330),
             ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 340, 360, 330),
             ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 340, 340, 330),
-            ("Chad", "B", "https://imgur.com/o4eSlWY", 340, 350, 340),
-            ("Yumichika", "B", "https://imgur.com/mC8r7ka", 330, 330, 330),
+            ("Chad", "B", "https://i.imgur.com/o4eSlWY.jpeg", 340, 350, 340),
+            ("Yumichika", "B", "https://i.imgur.com/mC8r7ka.jpeg", 330, 330, 330),
 
             # Personnages C
             ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 260, 260, 260),
@@ -327,7 +327,7 @@ all_characters_templates = {
             # Personnages D
             ("Tessai", "D", 'https://i.imgur.com/VwYCDSH.png', 180, 180, 180),
             ("Hanataro", "D", 'https://i.imgur.com/MPaOL4G.png', 180, 180, 180),
-            ("Yachiru", "D", 'https://i.imgur.com/CbYKjNb.png', 180, 180, 180),
+            ("Yachiru", "D", 'https://i.imgur.com/6mO9KFd.jpeg', 180, 180, 180),
 
             # Personnages E
             ("Jinta", "E", 'https://i.imgur.com/pAuQhV7.png', 120, 120, 120),
@@ -560,7 +560,7 @@ all_characters_templates = {
 
             # Personnages SS
             ("Yuta", "SS", "https://i.imgur.com/zG66ujn.gif", 700, 700, 700),
-            ("Mahoraga", "SS", "https://imgur.com/X3JpLMk", 850, 850, 850),
+            ("Mahoraga", "SS", "https://i.imgur.com/X3JpLMk", 850, 850, 850),
             ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 720, 780, 760),
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 700, 730, 720),
             ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 700, 750, 670),
@@ -639,12 +639,12 @@ all_characters_templates = {
             # Personnages S
             ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.png', 0, 0, 0), #TOREVIEW
             ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.png', 0, 0, 0), #TOREVIEW
-            ("Vanilla Ice", "S", "https://imgur.com/VoH5XBm", 0, 0, 0),#TOREVIEW
+            ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm", 0, 0, 0),#TOREVIEW
             ("Jolyne", "S", 'https://i.imgur.com/T2yg742.png', 0, 0, 0),
-            ("Weather Report", "S", "https://imgur.com/zHlZilS", 0, 0, 0),
+            ("Weather Report", "S", "https://i.imgur.com/zHlZilS", 0, 0, 0),
             
             # Personnages A
-            ("Anasui", "A", "https://imgur.com/cQtCTf7", 0, 0, 0),
+            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 0, 0, 0),
             ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.png', 0, 0, 0),
             ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.png', 0, 0, 0),
             ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.png', 0, 0, 0),
@@ -653,8 +653,8 @@ all_characters_templates = {
             ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.png', 0, 0, 0),
             ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.png', 0, 0, 0),
             ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.png', 0, 0, 0),
-            ("Mohamed Abdul", "A", "https://imgur.com/2fIG9TF", 0, 0, 0),
-            ("Illuso", "A", "https://imgur.com/4oeiAEJ", 0, 0, 0),
+            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 0, 0, 0),
+            ("Illuso", "A", "https://i.imgur.com/4oeiAEJ", 0, 0, 0),
             ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.png', 0, 0, 0),
 
             
