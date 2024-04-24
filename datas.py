@@ -829,55 +829,55 @@ all_characters_templates = {
             "Full Metal Alchemist" : [
             # """ PERSONNAGE FMAB """
             # Personnages X
-            ("Pere", "X", image_temporaire, 0, 0, 0),
+            ("Pere", "X", "https://i.imgur.com/X617w07.gif", 0, 0, 0),
             # Personnages SS
-            ("Hohenheim", "SS", image_temporaire, 0, 0, 0),
-            ("King Bradley", "SS", image_temporaire, 0, 0, 0),
+            ("Hohenheim", "SS", "https://i.imgur.com/bMNh7n0.gif", 0, 0, 0),
+            ("King Bradley", "SS", "https://i.imgur.com/Di7mjqq.gif", 0, 0, 0),
             # Personnages S
-            ("Edward", "S", image_temporaire, 0, 0, 0),
-            ("Izumi Curtis", "S", image_temporaire, 0, 0, 0),
-            ("Alphonse", "S", 'https://64.media.tumblr.com/69ac26044524b4ff433a48d0678b9f34/tumblr_ohh2eot5Q91ulthnlo1_500.gif', 0, 0, 0),
-            ("Roy Mustang", "S", 'https://giffiles.alphacoders.com/113/113460.gif', 0, 0, 0),
-            ("Scar", "S", 'https://64.media.tumblr.com/125cbdf034f355d0c3ec65272c4b7d67/f87f6ffe974c0b18-49/s540x810/1bfa10ac9b97595151733e296581ad54bbb1c6a3.gif', 0, 0, 0),
-            ("Kimbley", "S", 'https://i.pinimg.com/originals/74/eb/d6/74ebd6be3e4f5266a1d4287cb39c4a81.gif', 0, 0, 0),
-            ("Selim", "S", 'https://i.pinimg.com/originals/d4/23/8f/d4238f77ae7c24c353db3e1800f80a9c.gif', 0, 0, 0),
+            ("Edward", "S", "https://i.imgur.com/Lmbb9ZT.gif", 0, 0, 0),
+            ("Izumi Curtis", "S", "https://i.imgur.com/WBcqtWl.gif", 0, 0, 0),
+            ("Alphonse", "S", 'https://i.imgur.com/q6IW5xU.gif', 0, 0, 0),
+            ("Roy Mustang", "S", 'https://i.imgur.com/Oyk2Pp4.gif', 0, 0, 0),
+            ("Scar", "S", 'https://i.imgur.com/9dw5ri9.gif', 0, 0, 0),
+            ("Kimbley", "S", 'https://i.imgur.com/r9nB7SF.gif', 0, 0, 0),
+            ("Selim", "S", 'https://i.imgur.com/XYj2ZtU.gif', 0, 0, 0),
             # Personnages A
             ("Ling Yao", "A", 'https://i.imgur.com/cEoziXY.gif', 0, 0, 0),
-            ("Envy", "A", 'https://i.pinimg.com/originals/23/a4/20/23a4205d0cdd79edd3a581af116c4c3a.gif', 0, 0, 0),
-            ("Sloth", "A", 'https://64.media.tumblr.com/24140bc1e9729533976a1b21d9040ff9/tumblr_nns0kjJJBc1r0i0mqo3_500.gifv', 0, 0, 0),
-            ("Glutonny", "A", image_temporaire, 0, 0, 0),
-            ("Lust", "A", 'https://animesher.com/orig/1/148/1487/14877/animesher.com_fullmetal-alchemist-gif-fmab-1487723.gif', 0, 0, 0),
+            ("Envy", "A", 'https://i.imgur.com/rRFT3ec.gif', 0, 0, 0),
+            ("Sloth", "A", 'https://i.imgur.com/sltbpFK.gif', 0, 0, 0),
+            ("Glutonny", "A", "https://i.imgur.com/16YlN6x.gif", 0, 0, 0),
+            ("Lust", "A", 'https://i.imgur.com/lriujEU.gif', 0, 0, 0),
             ("Olivia Mira Armstrong", "A", 'https://i.imgur.com/Jwzc22O.gif', 0, 0, 0),
-            ("Alex Louis Armstrong", "A", 'https://media.tenor.com/HyfICEoEJKcAAAAd/fma-fmab.gif', 0, 0, 0),
+            ("Alex Louis Armstrong", "A", 'https://i.imgur.com/Hx8D4HJ.gif', 0, 0, 0),
             # Personnages B
-            ("Maes Hughes", "B", 'https://dotandline.net/wp-content/uploads/2019/04/1oBfz_9RwpI-l8nNc0-1LPA-1210x642.jpg', 0, 0, 0),
-            ("Mei Chang", "B", 'https://static.wikia.nocookie.net/fma/images/5/54/MayChanAnime.jpg/revision/latest?cb=20140313183202&path-prefix=fr', 0, 0, 0),
-            ("Riza Hawkeye", "B", 'https://static.wikia.nocookie.net/fma/images/4/45/RizaHawkeye2009.png/revision/latest?cb=20160109014818&path-prefix=pt-br', 0, 0, 0),
-            ("Lan Fan", "B", 'https://m.media-amazon.com/images/M/MV5BOGUwMWZmZWItNmNjMS00YWVlLWJmNzMtNjM1ZjQ5OWJlOTY2XkEyXkFqcGdeQXVyNzg5MjYxOTU@._V1_.jpg', 0, 0, 0),
-            ("Fu", "B", 'https://randomc.net/image/Fullmetal%20Alchemist/Fullmetal%20Alchemist%20-%2056%20-%20Large%2039.jpg', 0, 0, 0),
-            ("Buccaneer", "B", 'https://i0.wp.com/64.media.tumblr.com/25b146c8615996d95c0e3e83aa8267b7/tumblr_inline_pb3dkg9gur1tnyqk3_1280.png', 0, 0, 0),
-            ("Sig Curtis", "B", 'https://static.wikia.nocookie.net/fullmetal-alchemist-database/images/4/42/SigCurtis12.png/revision/latest?cb=20121013092904', 0, 0, 0),
+            ("Maes Hughes", "B", 'https://i.imgur.com/uvT3bWb.jpeg', 0, 0, 0),
+            ("Mei Chang", "B", 'https://i.imgur.com/tfeqXJu.jpeg', 0, 0, 0),
+            ("Riza Hawkeye", "B", 'https://i.imgur.com/vTsQ4ZZ.jpeg', 0, 0, 0),
+            ("Lan Fan", "B", 'https://i.imgur.com/ukRcnJx.jpeg', 0, 0, 0),
+            ("Fu", "B", 'https://i.imgur.com/yQdAnYc.jpeg', 0, 0, 0),
+            ("Buccaneer", "B", 'https://i.imgur.com/v6ykfW1.png', 0, 0, 0),
+            ("Sig Curtis", "B", 'https://i.imgur.com/gMvZCxb.png', 0, 0, 0),
             # Personnages C
-            ("Heinkel", "C", 'https://static.wikia.nocookie.net/fma/images/3/3e/Heinkel.png/revision/latest?cb=20131124151120&path-prefix=es', 0, 0, 0),
-            ("Marcoh", "C", 'https://static.wikia.nocookie.net/fullmetal-alchemist-database/images/d/dd/TimMarcohEp06.png/revision/latest?cb=20121003100124', 0, 0, 0),
-            ("Darius", "C", 'https://img.wattpad.com/3780bf7629942b356c600cdc065782c5d4333c60/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f427872452d6773334b4849652d513d3d2d313830362e313631343435356662633330396231663839373830363932373030352e6a7067?s=fit&w=720&h=720', 0, 0, 0),
-            ("Frere de Scar", "C", 'https://www.otakia.com/wp-content/uploads/V_1/personnage_89/7925.jpg', 0, 0, 0),
+            ("Heinkel", "C", 'https://i.imgur.com/IFSivAT.jpeg', 0, 0, 0),
+            ("Marcoh", "C", 'https://i.imgur.com/6hbihPy.png', 0, 0, 0),
+            ("Darius", "C", 'https://i.imgur.com/OugYS2B.jpeg', 0, 0, 0),
+            ("Frere de Scar", "C", 'https://i.imgur.com/xwYWbhD.jpeg', 0, 0, 0),
             # Personnages D
-            ("Maria Ross", "E", 'https://ginnodangan.files.wordpress.com/2010/06/fma60-02.jpg', 0, 0, 0),
-            ("Miles", "E", 'https://static.wikia.nocookie.net/fma/images/1/1f/Mayor_Miles.jpg/revision/latest/scale-to-width-down/1280?cb=20120728223951&path-prefix=es', 0, 0, 0),
-            ("Falman", "E", 'https://static.wikia.nocookie.net/fma/images/e/ea/Falman_end.jpg/revision/latest?cb=20100706161631', 0, 0, 0),
-            ("Barry the Chopper", "E", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/FMA-Best-Non-Alchemists-barry-the-chopper-8.jpg', 0, 0, 0),
+            ("Maria Ross", "E", 'https://i.imgur.com/8zUxWkq.jpeg', 0, 0, 0),
+            ("Miles", "E", 'https://i.imgur.com/097qkPG.jpeg', 0, 0, 0),
+            ("Falman", "E", 'https://i.imgur.com/zNRwZQT.jpeg', 0, 0, 0),
+            ("Barry the Chopper", "E", 'https://i.imgur.com/O7u2J3P.jpeg', 0, 0, 0),
             # Personnages E
-            ("Paninya", "E", 'https://static.wikia.nocookie.net/fma/images/6/64/Paninya_blade.jpg/revision/latest?cb=20100117071553', 0, 0, 0),
-            ("Havoc", "E", 'https://pm1.aminoapps.com/6188/349b2b972d07c9a9aa380390dfbb07ab24dffe56_hq.jpg', 0, 0, 0),
-            ("Heymans", "E", 'https://64.media.tumblr.com/174ec5c57ad62321d15153505322d349/tumblr_pk9pmwQYk51sau2q2o1_r1_1280.png', 0, 0, 0),
-            ("Fuery", "E", "https://pm1.aminoapps.com/6155/bed103c20470950c8b1a842321648ffe253b27f5_hq.jpg", 0, 0, 0),
+            ("Paninya", "E", 'https://i.imgur.com/uS1Dxp3.jpeg', 0, 0, 0),
+            ("Havoc", "E", 'https://i.imgur.com/rM9I8Ot.jpeg', 0, 0, 0),
+            ("Heymans", "E", 'https://i.imgur.com/jJdB2II.png', 0, 0, 0),
+            ("Fuery", "E", "https://i.imgur.com/6dCkq7z.jpeg", 0, 0, 0),
             # Personnages F
-            ("Yoki", "F", 'https://static.wikia.nocookie.net/fma/images/b/b4/Yoki_2009.jpg/revision/latest?cb=20200809005502&path-prefix=es', 0, 0, 0),
-            ("Nina Tucker", "F", 'https://static.wikia.nocookie.net/moviemorgue/images/a/ae/Nina_alexander.jpg/revision/latest?cb=20160524214723', 0, 0, 0),
-            ("Trisha", "F", 'https://i.pinimg.com/originals/e0/5c/60/e05c6066ac4977b871cfe729f07d45c1.jpg', 0, 0, 0),
-            ("Xiao Mei", "F", 'https://i.pinimg.com/originals/30/4f/2e/304f2e830ee98ed4d18fcde6be4e88cc.gif', 0, 0, 0),
-            ("Winry", "F", 'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/04/maxresdefault-2.jpg', 0, 0, 0),
+            ("Yoki", "F", 'https://i.imgur.com/pPbOaqJ.jpeg', 0, 0, 0),
+            ("Nina Tucker", "F", 'https://i.imgur.com/gOeHUXg.jpeg', 0, 0, 0),
+            ("Trisha", "F", 'https://i.imgur.com/QVYbkRB.jpeg', 0, 0, 0),
+            ("Xiao Mei", "F", 'https://i.imgur.com/FAQHPlD.gif', 0, 0, 0),
+            ("Winry", "F", 'https://i.imgur.com/mbX301B.jpeg', 0, 0, 0),
             ],
             "Attack On Titan" : [
             # """ PERSONNAGES SNK """
@@ -1100,7 +1100,7 @@ all_link_synergies = {
     93 : ["Hohenheim","Edward","Alphonse","Trisha"], # Elric
     92 : ["Ling Yao","Mei Chang","Lan Fan","Fu","Xiao Mei"], # Xing
     91 : ["Edward Elric","Alphonse Elric","Roy Mustang","Kimbley","Olivia Mira Armstrong","Alex Louis Armstrong"], # Alchimist d'Etat
-    90 : ["Lust","Glutonny","Envy","Sloth","Greed","Wrath","Pride","Father"], # Homonculus
+    90 : ["Lust","Glutonny","Envy","Sloth","Greed","Wrath","Pride","Pere"], # Homonculus
     89 : ["Olivia Mira Armstrong","Alex Louis Armstrong"], # Armstrong
     88 : ["Kenjaku","Okuyasu","Yuki","Fujitora","Pain"], # Maître de la Gravite
     87 : ["Dio","Diego","Giorno","Dario Brando"], # Brando
@@ -1196,5 +1196,7 @@ all_techniques = {
     ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
-    ]
+    ],
+    "Pere":
+        ["Alchimie", "utilise l'", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
 }
