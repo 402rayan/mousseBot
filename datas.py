@@ -510,48 +510,30 @@ all_characters_templates = {
             ("Komugi", "F", 'https://i.imgur.com/4VchruE.png', 55, 45, 40),
             ("Kon (hxh)", "F", 'https://i.imgur.com/rMn0Ukz.png', 40, 45, 55),
             ],
-            "Avatar" : [
+            "Avatar" : [ # ✅
             # Personnages X
-            ("Aang", "X", image_temporaire, 0, 0, 0),
-            ("Ozai", "X", image_temporaire, 0, 0, 0),
-            ("Kyoshi", "X", image_temporaire, 0, 0, 0),
-            ("Roku", "X", image_temporaire, 0, 0, 0),
-            ("Iroh", "X", image_temporaire, 0, 0, 0),
-
+            ("Aang", "X", "https://i.imgur.com/TqtpU5Q.gif", 930, 920, 925),
             # Personnages SS
-            ("Katara", "SS", image_temporaire, 0, 0, 0),
-            ("Zuko", "SS", image_temporaire, 0, 0, 0),
-            ("Toph", "SS", image_temporaire, 0, 0, 0),
-            ("Azula", "SS", image_temporaire, 0, 0, 0),
-
-            # Personnages S
-            ("Amiral Zhao", "S", image_temporaire, 0, 0, 0),
-            ("Hama", "S", image_temporaire, 0, 0, 0),
-
+            ("Lord Ozai", "SS", "https://i.imgur.com/3K6X9Ro.gif", 710, 760, 705),
+            ("Iroh", "SS", "https://i.imgur.com/KSigNP8.gif", 690,740,695),
+            ("Azula", "SS", "https://i.imgur.com/GT1KSqZ.gif", 660, 720, 685),
+            ("Zuko", "SS", "https://i.imgur.com/VLqP4QM.gif", 670, 710, 700),
             # Personnages A
-            ("Sokka", "A", image_temporaire, 0, 0, 0),
-            ("Suki", "A", image_temporaire, 0, 0, 0),
-            ("Ty Lee", "A", image_temporaire, 0, 0, 0),
-            ("Mai", "A", image_temporaire, 0, 0, 0),
+            ("Mai", "A", "https://i.imgur.com/opVoND8.gif", 400, 440, 410),
+            ("Toph", "A", "https://i.imgur.com/Bjbn4ew.gif", 390, 430, 420),
+            ("Katara", "A", "https://i.imgur.com/4hOIpNj.gif", 400, 420, 425),
 
-            # Personnages B
-            ("Jet", "B", image_temporaire, 0, 0, 0),
-            ("Haru", "B", image_temporaire, 0, 0, 0),
-            ("June", "B", image_temporaire, 0, 0, 0),
+            # Personnages 
+            ("Ty Lee", "B", "https://i.imgur.com/XFnYb26.jpeg", 390, 450, 400),
 
             # Personnages C
+            ("Sokka", "C", "https://i.imgur.com/VMVIHVh.png", 260, 270, 240),
             
             # Personnages D
-            ("Demi-Portion", "D", image_temporaire, 0, 0, 0),
-            ("La Fleche", "D", image_temporaire, 0, 0, 0),
-            
+            ("Suki", "D", "https://i.imgur.com/Tfhd7Ez.jpeg", 160, 180, 165),
+            ("Appa", "D", "https://i.imgur.com/sdASYR2.jpeg", 155, 160, 200),
             # Personnages E
-            ("Le Duc", "E", image_temporaire, 0, 0, 0),
-
-            # Personnages F
-            ("Meng", "F", image_temporaire, 0, 0, 0),
-            ("Pesticide", "F", image_temporaire, 0, 0, 0),
-
+            ("Yue", "E", "https://i.imgur.com/vRv3CZJ.jpeg", 110, 80, 90),
             ],
             "Jujutsu Kaisen" : [  # ✅
             # Personnages X
@@ -1155,7 +1137,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Revolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
@@ -1213,6 +1195,8 @@ all_techniques = {
     ],
     "Morel": [
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
-    ]
-        
+    ],
+    "Aang": [
+        ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
+    ],
 }
