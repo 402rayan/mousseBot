@@ -499,7 +499,7 @@ all_characters_templates = {
             ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 0, 0, 0),
 
             # Personnages F
-            ("Mito", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
+            ("Mito Freecss", "F", 'https://i.imgur.com/Yy7iG5d.png', 0, 0, 0),
             ("Capitaine", "F", 'https://i.imgur.com/Q3iev4b.png', 0, 0, 0),
             ("Beans", "F", 'https://i.imgur.com/ZH36bXI.jpeg', 0, 0, 0),
             ("Bodoro", "F", 'https://i.imgur.com/VSWUPF5.jpeg', 0, 0, 0),
@@ -676,7 +676,7 @@ all_characters_templates = {
 
             # Personnages C
             ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 0, 0, 0),
-            ("Lisa Lisa", "C", 'https://i.pinimg.com/736x/8e/81/74/8e817463c33ba3039e93c253f00bbacb.jpg', 0, 0, 0),
+            ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 0, 0, 0),
             ("Shigechi", "C", 'https://i.imgur.com/6JKniYe.png', 0, 0, 0),
             ("Mikitaka", "C", 'https://i.imgur.com/mMs5O78.png', 0, 0, 0),
             ("Iggy", "C", 'https://i.imgur.com/HTb59id.png', 0, 0, 0),
@@ -778,7 +778,7 @@ all_characters_templates = {
             ("Giyu", "S", image_temporaire, 0, 0, 0),
 
             # Personnages A
-            ("Rengoku", "A", image_temporaire, 0, 0, 0),
+            ("Rengoku", "A", "https://i.imgur.com/6HL02sP.gif", 0, 0, 0),
             ("Uzui Tengen", "A", image_temporaire, 0, 0, 0),
             ("Mitsuri", "A", image_temporaire, 0, 0, 0),
             ("Nezuko", "A", image_temporaire, 0, 0, 0),
@@ -1080,10 +1080,12 @@ all_synergies = [
     (104, "Famille de Son Goku", "ATK", 0.15, "La famille de Son Goku est une famille de guerriers Saiyans qui protegent la Terre.", "https://i.imgur.com/cChWxf7.jpeg", "#FF0000"),
     (105, "Famille de Vegeta", "ATK", 0.15, "La famille de Vegeta est une famille de guerriers Saiyans qui protegent la Terre.", "https://i.imgur.com/eyN6Qg9.jpeg", "#FFA500"),
     (106, "Section 4 Anti-Demon", "ATK", 0.15, "La Section 4 Anti-Demon est une unite speciale de la police qui lutte contre les demons.", "https://i.imgur.com/dijQZFN.jpeg", "#0000FF"),
+    (107, "Freecss", "ATK", 0.15, "La famille Freecss est une famille de chasseurs qui cherchent des tresors et des creatures rares.", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/12/Gon-and-Ging-Freecss.jpg", "#800080"),
 
 ]
 
 all_link_synergies = {
+    107 : ["Mito Freecss","Gon Freecss", "Ging Freecss"],
     106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Fushi","Madoka"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Goten"], # Famille de Son Goku
@@ -1166,7 +1168,7 @@ all_link_synergies = {
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
-    44 : ["Naruto", "Kushina", "Nagato", "Karin", "Mito", "Boruto", "Himawari"], # Uzumaki
+    44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Nagato", "Karin", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki"], # Uzumaki
     45 : ["Neji", "Hinata", "Hiashi", "Hanabi","Himawari", "Boruto"], # Hyuga
     46 : ["Hashirama", "Tobirama", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
