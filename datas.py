@@ -410,7 +410,7 @@ all_characters_templates = {
             ("Meruem", "X", "https://i.imgur.com/knC0hFT.gif", 1000, 1000, 1000),
             ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 950, 1050, 950),
             ("Kuroro", "X", 'https://i.imgur.com/3TjMAKv.gif', 950, 960, 950),
-            ("Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 920, 980, 950),
+            ("Isaac Netero", "X", 'https://i.imgur.com/vtkowxL.gif', 920, 980, 950),
             ("Ging", "X", "https://i.imgur.com/VOtkd0O.gif", 900, 930, 960),
             ("Aruka Zoldyck", "X", "https://i.imgur.com/DHIbvOx.gif", 1000, 1000, 1000),
 
@@ -433,23 +433,24 @@ all_characters_templates = {
             ("Nabunaga", "S", 'https://i.imgur.com/1UMIlo3.gif', 520, 580, 520),
             ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 520, 575, 520),
             ("Phinks", "S", "https://i.imgur.com/k5BLUMw.gif", 530, 575, 525),
-            ("Bonolenov Ndongo", "S", "https://i.imgur.com/WNj1k2B.gif", 520, 565, 530), #TOREVIEW #GIF
-            ("Biscuit", "S", 'https://i.imgur.com/3WUyIRV.gif', 560, 570, 555),
+            ("Bonolenov Ndongo", "S", "https://i.imgur.com/WNj1k2B.gif", 520, 565, 530), #TOREVIEW 
+            ("Biscuit Kruger", "S", 'https://i.imgur.com/3WUyIRV.gif', 560, 570, 555),
             
             # Personnages A
+            ("Botobai Gigante", "A", "https://i.imgur.com/mjz1Chv.png", 430, 450, 440),
             ("Morel", "A", 'https://i.imgur.com/FnQu94R.gif', 430, 400, 420),
-            ("Knuckle", "A", 'https://i.imgur.com/sMDxcKR.gif', 420, 415, 410), #TOREVIEW
-            ("Kalluto", "A", "https://i.imgur.com/vCDM9hC.gif", 415, 420, 410),
-            ("Hanzo (hxh)", "A", "https://i.imgur.com/HuuzzwW.gif", 410, 400, 410), #TOREVIEW #GIF
+            ("Knuckle", "A", 'https://i.imgur.com/sMDxcKR.gif', 420, 415, 410), 
+            ("Karuto Zoldyck", "A", "https://i.imgur.com/vCDM9hC.gif", 415, 420, 410),
+            ("Hanzo (hxh)", "A", "https://i.imgur.com/HuuzzwW.gif", 410, 400, 410),  
             ("Sharnak", "A", 'https://i.imgur.com/EwSJxbs.gif', 420, 430, 400),
             ("Franklin", "A", "https://i.imgur.com/xoln4Ly.gif", 410, 420, 400),
             ("Shizuku", "A", "https://i.imgur.com/IbkxhGl.gif", 410, 415, 405),
             ("Genthru", "A", 'https://i.imgur.com/WtnOU7k.gif', 400, 440, 420),
             ("Cheetu", "A", "https://i.imgur.com/ZqFKcDD.gif", 420, 430, 410),
-            ("Zazan", "A", "https://i.imgur.com/LpXVPsM.gif", 430, 420, 430), #TOREVIEW #GIF
-            ("Novu", "A", "https://i.imgur.com/UIgaydF.gif", 400, 400, 410), #TOREVIEW #GIF
+            ("Zazan", "A", "https://i.imgur.com/LpXVPsM.gif", 430, 420, 430),  
+            ("Novu", "A", "https://i.imgur.com/UIgaydF.gif", 400, 400, 410),  
             ("Shoot", "A", 'https://i.imgur.com/tU2Fwq6.gif', 410, 430, 430),
-            ("Pariston", "A", 'https://i.imgur.com/71ouSTW.gif', 420, 440, 420),
+            ("Pariston Hill", "A", 'https://i.imgur.com/71ouSTW.gif', 420, 440, 420),
             ("Pamu Shiberia", "A", 'https://i.imgur.com/AJTBunT.gif', 430, 440, 420),
 
             # Personnages B
@@ -465,6 +466,7 @@ all_characters_templates = {
             ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 325, 335, 330),
             ("Ikalgo", "B", "https://i.imgur.com/P3Jc5JY.png", 300, 350, 315),
             ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 345, 350, 340),
+            ("Tsezugera", "B", "https://i.imgur.com/3WvsTfn.png", 320, 350, 320),
             
             # Personnages C
             ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 240, 275, 235),
@@ -811,12 +813,12 @@ all_characters_templates = {
             ("Murata", "E", image_temporaire, 0, 0, 0),
             ("Kyogai", "E", image_temporaire, 0, 0, 0),
             ("Kanamue", "E", image_temporaire, 0, 0, 0),
-            ("Kagaya", "E", image_temporaire, 0, 0, 0),
+            ("Kagaya Ubuyashiki", "E", image_temporaire, 0, 0, 0),
 
 
             # Personnages F
-            ("Kiriya", "F", image_temporaire, 0, 0, 0),
-            ("Nichika", "F", image_temporaire, 0, 0, 0),
+            ("Kiriya Ubuyashiki", "F", image_temporaire, 0, 0, 0),
+            ("Nichika Ubuyashiki", "F", image_temporaire, 0, 0, 0),
             ("Chachamaru", "F", image_temporaire, 0, 0, 0),
             ("Aoi Kanzaki", "F", image_temporaire, 0, 0, 0),
             ("Sumi", "F", image_temporaire, 0, 0, 0),
@@ -1080,10 +1082,18 @@ all_synergies = [
     (105, "Famille de Vegeta", "ATK", 0.15, "La famille de Vegeta est une famille de guerriers Saiyans qui protegent la Terre.", "https://i.imgur.com/eyN6Qg9.jpeg", "#FFA500"),
     (106, "Section 4 Anti-Demon", "ATK", 0.15, "La Section 4 Anti-Demon est une unite speciale de la police qui lutte contre les demons.", "https://i.imgur.com/dijQZFN.jpeg", "#0000FF"),
     (107, "Freecss", "ATK", 0.15, "La famille Freecss est une famille de chasseurs qui cherchent des tresors et des creatures rares.", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/12/Gon-and-Ging-Freecss.jpg", "#800080"),
+    (108, "Hunter étoilé", "ATK", 0.15, "L'Association Hunter est une organisation de chasseurs qui traquent les creatures rares et les criminels. Les hunters étoilés sont leurs meilleurs atouts.", "https://i.imgur.com/fHvGkwX.jpeg", "#f40000"),
+    (109, "Zodiac", "ATK", 0.15, "Les Zodiacs sont les douze membres du conseil des Hunters qui sont les plus puissants et les plus influents de l'Association Hunter.", "https://i.imgur.com/fHvGkwX.jpeg", "#FFA500"),
+    (110, "Brigade Fantome", "ATK", 0.15, "La Brigade Fantome est une organisation criminelle qui lutte contre l'Association Hunter.", "https://i.imgur.com/2KZe6ug.gif", "#00000"),
+    (111, "Forme de vie ultime", "ATK", 0.15, "Les formes de vie ultime sont des créatures ultimes qui dépassent les limites de l'humanité.", "", "#00000"),
 
 ]
 
 all_link_synergies = {
+    111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
+    110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Shalnark", "Bonolenov", "Karuto Zoldyck", "Uvogin"], # Brigade Fantome
+    109 : ["Leorio","Ging Freecs", "Batobai Gigante", "Pariston","Kurapika"], # Zodiac
+    108 : ["Menchi","Tsezugera", "Morel","Ging Freecss","Biscuit Kruger","Botobai Gigante","Pariston Hill"], # Hunter étoilé
     107 : ["Mito Freecss","Gon Freecss", "Ging Freecss"],
     106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Fushi","Madoka"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta"], # Famille de Vegeta
@@ -1092,7 +1102,7 @@ all_link_synergies = {
     102 : ["Beerus","Champa","Belmod"], # Dieu de la Destruction
     101 : ["Meliodas","Ban","King","Diane","Gowther","Merlin","Escanor"], # Les Sept Peches Capitaux
     100 : ["Derrierie","Estaossa","Zeldris","Gloxinia","Drole","Grayroad","Fraudrin","Monspiet","Melascula","Galand"], # Dix Commandements
-    99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Milluki Zoldyck", "Alluka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck"], # Zoldyck
+    99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Milluki Zoldyck", "Alluka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck","Karuto Zoldyck"], # Zoldyck
     98 : ["Izuku Midoriya","Katsuki Bakugo","Ochaco Uraraka","Tenya Iida","Shoto Todoroki","Momo Yaoyorozu","Eijiro Kirishima","Denki Kaminari","Mina Ashido","Tsuyu Asui","Fumikage Tokoyami","Kyoka Jiro","Hanta Sero","Yuga Aoyama","Toru Hagakure","Mezo Shoji","Koji Koda","Rikido Sato","Mashirao Ojiro","Eri","Mirio Togata","Tamaki Amajiki","Nejire Hado","Hawks","Endeavor","All Might","Shota Aizawa","Present Mic","Midnight","Snipe","Vlad King","Eraser Head","Power Loader"], # U.A.
     97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Fuery","Falman"], # Unite Mustang
     96 : ["King Bradley","Selim"], # Bradley
@@ -1115,7 +1125,7 @@ all_link_synergies = {
     79 : ["Aoi Kanzaki","Sumi","Kiyo","Naho","Goto"], # Domaine des Papillons
     78 : ["Kanao","Tanjiro","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeur de demons
     77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui"], # Hashira
-    76 : ["Kagaya","Amane","Hinaki","Nichika","Kiriya","Kanata"], # Ubuyashiki
+    76 : ["Kagaya Ubuyashiki","Amane Ubuyashiki","Hinaki Ubuyashiki","Nichika Ubuyashiki","Kiriya Ubuyashiki","Kanata Ubuyashiki"], # Ubuyashiki
     75 : ["Toji","Megumi","Tsumiki Fushiguro"], # Fushiguro
     74 : ["Noritoshi","Kenjaku"], # Kamo
     73 : ["Toji", "Naobito","Mai","Maki","Megumi"], # Zenin
@@ -1127,7 +1137,7 @@ all_link_synergies = {
     67 : ["Grimasse","Garou","Charanko","Bang"], # Dojo de Bang
     66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul","Yomi"], # Aveugle 
     65 : ["Minato", "Tobirama", "Yoruichi", "Gran Torino","Sonic"], # Speedster TODO
-    64 : ["Kaido","Ryukyu","Toshiro","Acnologia","Igneel","Shenron","Porunga"], # Draconique TODO
+    64 : ["Kaido","Ryukyu","Toshiro","Shenron","Botobai Gigante"], # Draconique TODO  ,"Acnologia","Igneel"
     63 : ["Big Mom", "Katakuri"], # equipage de Big Mom
     62 : ["Kaido", "King", "Queen", "Jack"], # equipage de Kaido
     61 : ["Shanks","Yasopp","Lucky Roo","Benn Beckman","Rockstar"], # equipage de Shanks
