@@ -266,7 +266,7 @@ all_characters_templates = {
             ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 0, 0, 0),
             ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 0, 0, 0),
             ],
-            "Bleach" : [
+            "Bleach" : [ # ✅
             # Personnages X
             ("Yhwach", "X", "https://i.imgur.com/OLYulIP.gif", 950, 1200, 1000), 
             ("Ichigo Kurosaki", "X", "https://i.imgur.com/5LJbZtC.gif", 1000, 1200, 1000),
@@ -276,19 +276,19 @@ all_characters_templates = {
             ("Ichibe", "X", "https://i.imgur.com/dg916bt.gif", 1100, 950, 1000),
 
             # Personnages SS
-            ("Jugram", "SS", "https://i.imgur.com/kXmvoS6.gif", 700, 750, 700),
-            ("Uryu", "SS", "https://i.imgur.com/AC2f6Ey.gif", 700, 800, 700),
-            ("Kyoraku", "SS", "https://i.imgur.com/7DGfP2z.gif", 750, 850, 700),
-            ("Byakuya", "SS", "https://i.imgur.com/VZrc8mU.gif", 700, 800, 720),
-            ("Toshiro", "SS", "https://i.imgur.com/R9S0Qa4.gif", 700, 720, 700),
-            ("Urahara", "SS", "https://i.gifer.com/53FX.gif", 730, 800, 720),
-            ("Yoruichi", "SS", "https://i.gifer.com/3flV.gif", 700, 770, 720),
-            ("Unohana", "SS", "https://i.imgur.com/b1x9GUC.gif", 700, 850, 750),
-            ("Ulquiorra", "SS", "https://i.imgur.com/OaYNXCg.gif", 700, 800, 700),
-            ("Gin", "SS", "https://i.imgur.com/kveTtpS.gif", 700, 750, 720),
+            ("Jugram", "SS", "https://i.imgur.com/kXmvoS6.gif", 705, 750, 695),
+            ("Uryu", "SS", "https://i.imgur.com/AC2f6Ey.gif", 695, 800, 705),
+            ("Kyoraku", "SS", "https://i.imgur.com/7DGfP2z.gif", 745, 850, 705),
+            ("Byakuya", "SS", "https://i.imgur.com/VZrc8mU.gif", 695, 800, 725),
+            ("Toshiro", "SS", "https://i.imgur.com/R9S0Qa4.gif", 705, 720, 695),
+            ("Urahara", "SS", "https://i.gifer.com/53FX.gif", 725, 800, 715),
+            ("Yoruichi", "SS", "https://i.gifer.com/3flV.gif", 705, 770, 715),
+            ("Unohana", "SS", "https://i.imgur.com/b1x9GUC.gif", 695, 850, 755),
+            ("Ulquiorra", "SS", "https://i.imgur.com/OaYNXCg.gif", 690, 800, 710),
+            ("Gin", "SS", "https://i.imgur.com/kveTtpS.gif", 705, 750, 715),
             ("Stark", "SS", "https://i.imgur.com/SNpSgRB.gif", 700, 780, 720),
-            ("Renji", "SS", "https://i.imgur.com/RptZEBF.gif", 720, 700, 720), 
-            ("Senjumaru", "SS", "https://i.imgur.com/EKWGM3I.gif", 70, 800, 700),
+            ("Renji", "SS", "https://i.imgur.com/RptZEBF.gif", 725, 705, 720),
+            ("Senjumaru", "SS", "https://i.imgur.com/EKWGM3I.gif", 715, 800, 725),
 
             # Personnages S
             ("Mayuri", "S", "https://i.imgur.com/n8BNWm7.gif", 550, 600, 550),
@@ -303,43 +303,43 @@ all_characters_templates = {
 
             # Personnages A
 
-            ("Ukitake", "A", 'https://i.imgur.com/PqGvVzv.gif', 400, 420, 400), 
-            ("Nnoitra", "A", 'https://i.imgur.com/z5SAM9h.gif', 450, 450, 450),
-            ("Shuhei", "A", 'https://i.imgur.com/rkQNMQX.gif', 420, 430, 420),
-            ("Ryuken", "A", 'https://i.imgur.com/turdL6j.gif', 420, 450, 420),
-            ("Orihime", "A", 'https://i.imgur.com/xGhy8ky.gif', 420, 420, 460),
-            ("Ginjo", "A", 'https://i.imgur.com/xLPLs5Q.gif', 420, 420, 420),
+            ("Ukitake", "A", 'https://i.imgur.com/PqGvVzv.gif', 395, 420, 405), 
+            ("Nnoitra", "A", 'https://i.imgur.com/z5SAM9h.gif', 440, 450, 460),
+            ("Shuhei", "A", 'https://i.imgur.com/rkQNMQX.gif', 415, 435, 420),
+            ("Ryuken", "A", 'https://i.imgur.com/turdL6j.gif', 410, 450, 430),
+            ("Orihime", "A", 'https://i.imgur.com/xGhy8ky.gif', 430, 420, 460),
+            ("Ginjo", "A", 'https://i.imgur.com/xLPLs5Q.gif', 410, 420, 430),
             
             
             # Personnages B
 
-            ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 330, 330, 330),
-            ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 340, 360, 330),
-            ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 340, 340, 330),
-            ("Chad", "B", "https://i.imgur.com/o4eSlWY.jpeg", 340, 350, 340),
-            ("Yumichika", "B", "https://i.imgur.com/mC8r7ka.jpeg", 330, 330, 330),
+            ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 330, 340, 320),
+            ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 345, 360, 335),
+            ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 335, 345, 330),
+            ("Chad", "B", "https://i.imgur.com/o4eSlWY.jpeg", 340, 360, 330),
+            ("Yumichika", "B", "https://i.imgur.com/mC8r7ka.jpeg", 320, 330, 340),
 
             # Personnages C
-            ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 260, 260, 260),
-            ("Marechiyo", "C", 'https://i.imgur.com/QdU2qIp.png', 260, 260, 260),
-            ("Love", "C", 'https://i.imgur.com/LJzVWIY.png', 260, 260, 260),
+            ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 245, 255, 240),
+            ("Marechiyo", "C", 'https://i.imgur.com/QdU2qIp.png', 250, 260, 270),
+            ("Love", "C", 'https://i.imgur.com/LJzVWIY.png', 265, 250, 275),
 
             # Personnages D
-            ("Tessai", "D", 'https://i.imgur.com/VwYCDSH.png', 180, 180, 180),
-            ("Hanataro", "D", 'https://i.imgur.com/MPaOL4G.png', 180, 180, 180),
-            ("Yachiru", "D", 'https://i.imgur.com/6mO9KFd.jpeg', 180, 180, 180),
+            ("Tessai", "D", 'https://i.imgur.com/VwYCDSH.png', 175, 190, 180),
+            ("Hanataro", "D", 'https://i.imgur.com/MPaOL4G.png', 185, 170, 180),
+            ("Yachiru", "D", 'https://i.imgur.com/6mO9KFd.jpeg', 180, 190, 175),
 
             # Personnages E
-            ("Jinta", "E", 'https://i.imgur.com/pAuQhV7.png', 120, 120, 120),
-            ("Ururu", "E", 'https://i.imgur.com/DoiSB83.png', 120, 120, 120),
-            ("Keigo", "E", 'https://i.imgur.com/D8dqhs2.png', 120, 120, 120),
+            ("Jinta", "E", 'https://i.imgur.com/pAuQhV7.png', 115, 120, 125),
+            ("Ururu", "E", 'https://i.imgur.com/DoiSB83.png', 120, 130, 110),
+            ("Keigo", "E", 'https://i.imgur.com/D8dqhs2.png', 125, 120, 115),
 
             # Personnages F
-            ("Kon", "F", 'https://i.imgur.com/t1az2SQ.png', 50, 50, 50),
-            ("Karin Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 50, 50, 50),
-            ("Yuzu", "F", 'https://i.imgur.com/plnofeu.png', 50, 50, 50),
-            ("Tatsuki", "F", 'https://i.imgur.com/mSvWp2O.png', 50, 50, 50),
-            ("Mizuiro", "F", 'https://i.imgur.com/b4sfzoT.png', 50, 50, 50),
+            ("Kon", "F", 'https://i.imgur.com/t1az2SQ.png', 45, 50, 55),
+            ("Karin Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 50, 55, 45),
+            ("Yuzu", "F", 'https://i.imgur.com/plnofeu.png', 55, 45, 50),
+            ("Tatsuki", "F", 'https://i.imgur.com/mSvWp2O.png', 50, 55, 50),
+            ("Mizuiro", "F", 'https://i.imgur.com/b4sfzoT.png', 45, 55, 50),
             
             ],
             "My Hero Academia" : [
