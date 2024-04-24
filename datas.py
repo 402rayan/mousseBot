@@ -279,8 +279,8 @@ all_characters_templates = {
             ("Jugram", "SS", "https://i.imgur.com/kXmvoS6.gif", 705, 750, 695),
             ("Uryu", "SS", "https://i.imgur.com/AC2f6Ey.gif", 695, 800, 705),
             ("Kyoraku", "SS", "https://i.imgur.com/7DGfP2z.gif", 745, 850, 705),
-            ("Byakuya", "SS", "https://i.imgur.com/VZrc8mU.gif", 695, 800, 725),
-            ("Toshiro", "SS", "https://i.imgur.com/R9S0Qa4.gif", 705, 720, 695),
+            ("Byakuya Kuchiki", "SS", "https://i.imgur.com/VZrc8mU.gif", 695, 800, 725),
+            ("Toshiro Hitsugaya", "SS", "https://i.imgur.com/R9S0Qa4.gif", 705, 720, 695),
             ("Urahara", "SS", "https://i.gifer.com/53FX.gif", 725, 800, 715),
             ("Yoruichi", "SS", "https://i.gifer.com/3flV.gif", 705, 770, 715),
             ("Unohana", "SS", "https://i.imgur.com/b1x9GUC.gif", 695, 850, 755),
@@ -294,7 +294,7 @@ all_characters_templates = {
             ("Mayuri", "S", "https://i.imgur.com/n8BNWm7.gif", 550, 600, 550),
             ("Sajin", "S", "https://i.imgur.com/6cf4JEH.gif", 600, 500, 550),
             ("Isshin", "S", "https://i.imgur.com/GTYbLGY.gif", 550, 550, 550),
-            ("Rukia", "S", "https://i.imgur.com/IDjAqqP.gif", 550, 620, 550),
+            ("Rukia Kuchiki", "S", "https://i.imgur.com/IDjAqqP.gif", 550, 620, 550),
             ("Shinji", "S", 'https://i.imgur.com/9vxW0IN.gif', 550, 650, 550), 
             ("Soi Fon", "S", 'https://i.imgur.com/EVH34qM.gif', 550, 580, 550),
             ("Tosen", "S", 'https://i.imgur.com/4GA76X1.gif', 550, 550, 550),
@@ -1068,8 +1068,11 @@ all_synergies = [
     (109, "Zodiac", "ATK", 0.15, "Les Zodiacs sont les douze membres du conseil des Hunters qui sont les plus puissants et les plus influents de l'Association Hunter.", "https://i.imgur.com/fHvGkwX.jpeg", "#FFA500"),
     (110, "Brigade Fantome", "ATK", 0.15, "La Brigade Fantome est une organisation criminelle qui lutte contre l'Association Hunter.", "https://i.imgur.com/2KZe6ug.gif", "#00000"),
     (111, "Forme de vie ultime", "ATK", 0.15, "Les formes de vie ultime sont des créatures ultimes qui dépassent les limites de l'humanité.", "", "#00000"),
+    
 
 ]
+
+# FAIRE FAMILLY KUCHIKI 
 
 all_link_synergies = {
     111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
@@ -1146,12 +1149,12 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Receptacle TODO
-    29 : ["Aang","Roku","Kyoshi", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maître du Feu TODO
-    30 : ["Aang","Roku","Kyoshi", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Tenzin", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
-    31 : ["Aang","Roku","Kyoshi", "Toph", "Bumi", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
-    32 : ["Aang","Roku","Kyoshi", "Tenzin", "Gyatso", "Zaheer", "Jinora", "Ikki", "Meelo", "Kai"], # Maître de l'Air TODO
+    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maître du Feu TODO
+    30 : ["Aang", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
+    31 : ["Aang", "Toph", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
+    32 : ["Aang"], # Maître de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maître de l'eclair TODO
-    34 : ["Shoto","Aokiji", "Gray", "Toshiro", "Rukia"], # Maître de la Glace TODO
+    34 : ["Shoto","Aokiji", "Gray", "Toshiro Hitsugaya", "Rukia"], # Maître de la Glace TODO
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
 

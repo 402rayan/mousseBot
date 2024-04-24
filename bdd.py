@@ -277,10 +277,14 @@ class Database:
         for template in all_templates:
             # print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
             if Levenshtein.distance(template[1].lower(), template_name.lower()) <= 1:
+                if user_name == "Bot":
+                    print(template[1].lower(), " a été trouvé avec une distance.")
                 return template
         # Troisième étape : On vérifie si le nom est dans le nom du template
         for template in all_templates:
             if template_name.lower() in template[1].lower():
+                if user_name == "Bot":
+                    print(template[1].lower(), " a été trouvé dans le nom.")
                 return template
         return None
     
