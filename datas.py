@@ -1,6 +1,6 @@
 image_temporaire = "https://picsum.photos/900/500"
 all_characters_templates = {
-            "Dragon Ball" : [
+            "Dragon Ball" : [ # ✅
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 1050, 900),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 800, 1300, 800),
             ("Grand Pretre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1200, 1000),
@@ -405,7 +405,7 @@ all_characters_templates = {
             ("Kenji", "F", 'https://i.imgur.com/BGeI2LC.jpeg', 0, 0, 0), #ou https://www.geekgirlauthority.com/wp-content/uploads/2017/08/mhas2e18-deku.jpg
             ("Sansa", "F", 'https://i.imgur.com/bKASPVp.jpeg', 0, 0, 0),
             ],
-            "Hunter x Hunter" : [
+            "Hunter x Hunter" : [ # ✅
             # Personnages X
             ("Meruem", "X", "https://i.imgur.com/knC0hFT.gif", 1000, 1000, 1000),
             ("Gon Freecss", "X", "https://i.imgur.com/BiklKkz.gif", 950, 1050, 950),
@@ -551,70 +551,70 @@ all_characters_templates = {
             ("Pesticide", "F", image_temporaire, 0, 0, 0),
 
             ],
-            "Jujutsu Kaisen" : [
+            "Jujutsu Kaisen" : [  # ✅
             # Personnages X
             ("Sukuna", "X", "https://i.imgur.com/sALgfhD.gif", 1000, 1100, 1050),
             ("Gojo", "X", "https://i.imgur.com/ZRlOmKu.gif", 999, 1050, 999),
-            ("Kenjaku", "X", "https://i.imgur.com/40tFQKc.gif", 0, 0, 0),
+            ("Kenjaku", "X", "https://i.imgur.com/40tFQKc.gif", 910, 920, 925),
 
             # Personnages SS
-            ("Yuta", "SS", "https://i.imgur.com/zG66ujn.gif", 700, 700, 700),
+            ("Yuta", "SS", "https://i.imgur.com/zG66ujn.gif", 750, 790, 785),
             ("Mahoraga", "SS", "https://i.imgur.com/X3JpLMk", 850, 850, 850),
             ("Toji", "SS", 'https://i.imgur.com/W479ima.png', 720, 780, 760),
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 700, 730, 720),
-            ("Geto", "SS", 'https://64.media.tumblr.com/19e09d940c695b8d9e47af07ae8826b9/f07192eb66cf933d-73/s640x960/82552430b812572b330eb6c89879b73594ef7474.gif', 700, 750, 670),
+            ("Geto", "SS", 'https://i.imgur.com/ZetAyjs.gif', 700, 750, 670),
             ("Choso", "SS", 'https://i.imgur.com/tPHJtTO.gif', 730, 740, 760),
-            ("Mahito", "SS", 'https://img.wattpad.com/14eabd0424b9c709292b027e38c2058406053e0b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f33494c736e58435875774e3677513d3d2d3135382e313637383038396633663265326635313530393235373531333533382e676966', 650, 730, 700),
+            ("Mahito", "SS", 'https://i.imgur.com/a2gCQIC.gif', 650, 730, 700),
             ("Jogo", "SS", 'https://i.imgur.com/iyNljeL.gif', 700, 750, 700),
             ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 777, 777, 777),
             ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 700, 800, 700),
-            ("Hanami","SS","https://i.pinimg.com/originals/e7/17/c6/e717c677e76c4e0df9a22ec53418367f.gif", 700, 730, 700),
-            ("Dagon", "SS", 'https://64.media.tumblr.com/97ffcdfbd6a9ea8cffef764d86fe5b11/f98a9cffd59221b8-ab/s640x960/a29d32f3a037b09966e361ebbb26d56a4aafa464.gif', 700, 760, 700),
+            ("Hanami","SS","https://i.imgur.com/eO8Ezjm.gif", 700, 730, 700),
+            ("Dagon", "SS", 'https://i.imgur.com/Arh6UMF.gif', 700, 760, 700),
 
             # Personnages S
-            ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 550, 600, 500),
-            ("Maki", "S", 'https://i.imgur.com/zGKPJI9.png', 600, 500, 600),
+            ("Megumi", "S", "https://i.imgur.com/ZrNNA55.gif", 550, 610, 515),
+            ("Maki", "S", 'https://i.imgur.com/zGKPJI9.png', 590, 505, 685),
             ("Nanami", "S", 'https://i.imgur.com/phtWBmN.png', 580, 610, 570),
-            ("Higuruma", "S", 'https://media1.tenor.com/m/vt4qMArBGP4AAAAC/hiromi-higuruma-higuruma-hiromi.gif', 550, 580, 530),
-            ("Naobito", "S", 'https://i.imgur.com/FTRAhNn.png', 500, 600, 550),
-            ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 580, 540, 580), #TOREVIEW
-            ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 520, 570, 530),
-            ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 500, 600, 550),
-            ("Yuji Itadori", "S", "https://i.makeagif.com/media/12-14-2023/xrC5c5.gif", 600, 570, 600),
+            ("Higuruma", "S", 'https://i.imgur.com/VnEkm6V.jpeg', 550, 585, 525),
+            ("Naobito", "S", 'https://i.imgur.com/FTRAhNn.png', 505, 595, 545),
+            ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 575, 540, 575), 
+            ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 525, 565, 535),
+            ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 510, 590, 540),
+            ("Yuji Itadori", "S", "https://i.imgur.com/75H1WqO.gif", 600, 570, 600),
             
             #Personnages A
-            ("Inumaki", "A", 'https://i.imgur.com/OkbjhWZ.png', 400, 420, 400), #VIDEO
+            ("Inumaki", "A", 'https://i.imgur.com/D7071yc.gif', 400, 420, 400), 
             ("Kamo", "A", 'https://i.imgur.com/8N9AYpE.png', 400, 450, 420),
-            ("Mechamaru", "A", 'https://i.imgur.com/HIQY96Q.png', 430, 400, 440), #VIDEO
+            ("Mechamaru", "A", 'https://i.imgur.com/bjBDlk6.gif', 430, 400, 440),
 
             # Personnages B
-            ("Panda", "B", 'https://i0.wp.com/quotetheanime.com/wp-content/uploads/2021/09/p1.jpg', 340, 320, 330),
-            ("Nobara", "B", "https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1c/Nobara_Kugisaki_EP3.png/revision/latest?cb=20210119101146&path-prefix=fr", 320, 350, 320),
-            ("Kusakabe", "B", 'https://i.imgur.com/6rujX3t.png', 320, 330, 330),
+            ("Panda", "B", 'https://i.imgur.com/32zGh1W.jpeg', 340, 320, 330),
+            ("Nobara", "B", "https://i.imgur.com/ToHbnHv.jpeg", 320, 350, 320),
+            ("Kusakabe", "B", 'https://i.imgur.com/6rujX3t.png', 320, 335, 330),
             ("Takuma Ino", "B", 'https://i.imgur.com/W3diIlg.png', 310, 360, 320),
             ("Yaga", "B", 'https://i.imgur.com/R8Rq12y.png', 330, 310, 330),
             ("Gakuganji", "B", 'https://i.imgur.com/uAnAEms.png', 310, 340, 320),
             
 
             # Personnages C
-            ("Junpei", "C", 'https://i.imgur.com/7sVsWn3.png', 260, 260, 260),
-            ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 260, 260, 260),
+            ("Junpei", "C", 'https://i.imgur.com/7sVsWn3.png', 240, 260, 220),
+            ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 240, 260, 230),
             ("Utahime", "C", 'https://i.imgur.com/IPp6E9q.png', 240, 280, 260),
-            ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 260, 260, 260),
-            ("Haruta Shigemo", "C", "https://i0.wp.com/www.spielanime.com/wp-content/uploads/2023/10/Haruta-Shigemo-has-a-unique-Curse-Technique-How-does-it-work-1.webp", 260, 260, 260),
+            ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 250, 270, 260),
+            ("Haruta Shigemo", "C", "https://i.imgur.com/IY5zel0.jpeg", 240, 255, 220),
             
 
             # Personnages D
-            ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 180, 200, 160),
+            ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 180, 200, 165),
 
             # Personnages E
-            ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 120, 120, 120),
-            ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 120, 120, 120),
+            ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 110, 120, 125),
+            ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 110, 130, 110),
 
 
             # Personnages F
-            ("Riko Amanai", "F", "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/07/whi-is-riko-amanai-important-in-jujutsu-kaisen.jpg", 50, 50, 50),
-            ("Tsumiki Fushiguro", "F", "https://thicc-af.mywaifulist.moe/waifus/tsumiki-fushiguro-sorcery-fight/pEdHC9PdLGod6CXdmkwM0Bj7zjHftDfqhXy9ba3B.jpg?class=thumbnail", 50, 50, 50),
+            ("Riko Amanai", "F", "https://i.imgur.com/WkfCzwy.jpeg", 50, 50, 50),
+            ("Tsumiki Fushiguro", "F", "https://i.imgur.com/wNU5qjd.png", 50, 50, 50),
 
             
             ],
@@ -825,7 +825,7 @@ all_characters_templates = {
             ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
             ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
             ],
-            "Full Metal Alchemist" : [
+            "Full Metal Alchemist" : [ # 
             # """ PERSONNAGE FMAB """
             # Personnages X
             ("Pere", "X", "https://i.imgur.com/X617w07.gif", 0, 0, 0),
@@ -878,7 +878,7 @@ all_characters_templates = {
             ("Xiao Mei", "F", 'https://i.imgur.com/FAQHPlD.gif', 0, 0, 0),
             ("Winry", "F", 'https://i.imgur.com/mbX301B.jpeg', 0, 0, 0),
             ],
-            "Attack On Titan" : [
+            "Attack On Titan" : [ # ✅
             # """ PERSONNAGES SNK """
             # Personnages X
             ("Eren Yeager", "X", "https://i.imgur.com/izA5HAI.gif", 960, 950, 945),
