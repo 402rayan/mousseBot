@@ -604,91 +604,90 @@ all_characters_templates = {
             ],
             "Jojo's Bizarre Adventure" : [
             # Personnages X
-            ("Giorno", "X", 'https://steamuserimages-a.akamaihd.net/ugc/828010176607459436/A1557FBD095E14949A16EF073E6B166C1A218917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', 900, 1200, 950),
-            ("Pucci", "X", 'https://i.imgur.com/RTdkTrH.png', 950, 1200, 900),
+            ("Giorno", "X", 'https://imgur.com/iJ9oUE1', 900, 1200, 950),
+            ("Pucci", "X", 'https://imgur.com/hWurlzP', 950, 1200, 900),
             ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 950, 1050, 950),
-            ("Gyro", "X", image_temporaire, 0, 0, 0), #TOREVIEW
-            ("Johnny", "X", image_temporaire, 0, 0, 0),
+            ("Johnny", "X", "https://imgur.com/839IXuS", 950, 1100, 900),
             
             # Personnages SS
-
-            ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.png', 0, 0, 0),
-            ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.png', 0, 0, 0),
-            ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 0, 0, 0),
-            ("Diego", "SS", image_temporaire, 0, 0, 0), #TOREVIEW
-            ("Dio", "SS", 'https://i.imgur.com/xngzKOg.png', 0, 0, 0),
-            ("Kira", "SS", 'https://i.imgur.com/ZQPBO3Q.png', 0, 0, 0),
+            ("Gyro", "SS", "https://imgur.com/sPFgVJQ", 700, 750, 700),
+            ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.png', 850, 850, 850),
+            ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.png', 750, 850, 700),
+            ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 750, 800, 750),
+            ("Diego", "SS", "https://imgur.com/Ncp5cvE", 740, 800, 730), #TOREVIEW
+            ("Dio", "SS", 'https://i.imgur.com/xngzKOg.png', 800, 850, 750),
+            ("Kira", "SS", 'https://i.imgur.com/ZQPBO3Q.png', 700, 800, 700),
 
             # Personnages S
-            ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.png', 0, 0, 0), #TOREVIEW
-            ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.png', 0, 0, 0), #TOREVIEW
-            ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm", 0, 0, 0),#TOREVIEW
-            ("Jolyne", "S", 'https://i.imgur.com/T2yg742.png', 0, 0, 0),
-            ("Weather Report", "S", "https://i.imgur.com/zHlZilS", 0, 0, 0),
+            ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.png', 550, 580, 550), #TOREVIEW
+            ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.png', 550, 600, 550), #TOREVIEW
+            ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm", 550, 570, 550),#TOREVIEW
+            ("Jolyne", "S", 'https://i.imgur.com/T2yg742.png', 500, 550, 550),
+            ("Weather Report", "S", "https://i.imgur.com/zHlZilS", 550, 550, 550),
             
             # Personnages A
-            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 0, 0, 0),
-            ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.png', 0, 0, 0),
-            ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.png', 0, 0, 0),
-            ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.png', 0, 0, 0),
-            ("Kakyoin", "A", 'https://i.imgur.com/ZsxN3PG.png', 0, 0, 0),
-            ("Polnareff", "A", 'https://i.imgur.com/eZjHHa9.png', 0, 0, 0),
-            ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.png', 0, 0, 0),
-            ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.png', 0, 0, 0),
-            ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.png', 0, 0, 0),
-            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 0, 0, 0),
-            ("Illuso", "A", "https://i.imgur.com/4oeiAEJ", 0, 0, 0),
-            ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.png', 0, 0, 0),
+            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 420, 450, 420),
+            ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.png', 450, 450, 450),
+            ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.png', 420, 480, 420),
+            ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.png', 400, 440, 420),
+            ("Kakyoin", "A", 'https://i.imgur.com/ZsxN3PG.png', 420, 420, 420),
+            ("Polnareff", "A", 'https://i.imgur.com/eZjHHa9.png', 420, 450, 420),
+            ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.png', 420, 450, 420),
+            ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.png', 420, 420, 420),
+            ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.png', 420, 420, 420),
+            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 420, 420, 420),
+            ("Illuso", "A", "https://i.imgur.com/4oeiAEJ", 420, 420, 420),
+            ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.png', 420, 420, 420),
 
             
             # Personnages B
-            ("Koichi", "B", 'https://i.imgur.com/HZ9vn1d.png', 0, 0, 0),
-            ("Emporio", "B", 'https://i.imgur.com/KBZCTy6.png', 0, 0, 0),
-            ("Akira", "B", 'https://i.imgur.com/xn6pX9Z.png', 0, 0, 0), #TOREVIEW
-            ("Narancia", "B", 'https://i.imgur.com/ndZcfok.png', 0, 0, 0),
-            ("Yukako", "B", 'https://i.imgur.com/JZKQ2KS.png', 0, 0, 0),
-            ("Miyamoto", "B", 'https://i.imgur.com/lZLlEhu.png', 0, 0, 0),
-            ("Wamuu", "B", 'https://i.imgur.com/2Jc0FTu.png', 0, 0, 0),
-            ("Esidisi", "B", 'https://i.imgur.com/mdsI4Ir.png', 0, 0, 0),
-            ("Pesci", "B", 'https://i.imgur.com/RiqetYG.png', 0, 0, 0),
-            ("Melone ", "B", 'https://i.imgur.com/EMitGnp.png', 0, 0, 0),
-            ("Squalo", "B", 'https://i.imgur.com/1DP3U16.png', 0, 0, 0),
-            ("Joseph", "B", 'https://i.imgur.com/YiGGszt.png', 0, 0, 0),
-            ("Mista", "B", 'https://i.imgur.com/ab9sgfg.png', 0, 0, 0),
+            ("Koichi", "B", 'https://i.imgur.com/HZ9vn1d.png', 330, 360, 320),
+            ("Emporio", "B", 'https://i.imgur.com/KBZCTy6.png', 300, 340, 320),
+            ("Akira", "B", 'https://i.imgur.com/xn6pX9Z.png', 300, 370, 320), #TOREVIEW
+            ("Narancia", "B", 'https://i.imgur.com/ndZcfok.png', 300, 350, 320),
+            ("Yukako", "B", 'https://i.imgur.com/JZKQ2KS.png', 330, 330, 320),
+            ("Miyamoto", "B", 'https://i.imgur.com/lZLlEhu.png', 300, 330, 320),
+            ("Wamuu", "B", 'https://i.imgur.com/2Jc0FTu.png', 340, 320, 340),
+            ("Esidisi", "B", 'https://i.imgur.com/mdsI4Ir.png', 340, 320, 340),
+            ("Pesci", "B", 'https://i.imgur.com/RiqetYG.png', 300, 320, 330),
+            ("Melone ", "B", 'https://i.imgur.com/EMitGnp.png', 330, 320, 310),
+            ("Squalo", "B", 'https://i.imgur.com/1DP3U16.png', 320, 340, 320),
+            ("Joseph", "B", 'https://i.imgur.com/YiGGszt.png', 340, 340, 320),
+            ("Mista", "B", 'https://i.imgur.com/ab9sgfg.png', 330, 360, 320),
 
 
             # Personnages C
-            ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 0, 0, 0),
-            ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 0, 0, 0),
-            ("Shigechi", "C", 'https://i.imgur.com/6JKniYe.png', 0, 0, 0),
-            ("Mikitaka", "C", 'https://i.imgur.com/mMs5O78.png', 0, 0, 0),
-            ("Iggy", "C", 'https://i.imgur.com/HTb59id.png', 0, 0, 0),
-            ("Formaggio", "C", 'https://i.imgur.com/WCQtqwq.png', 0, 0, 0),
-            ("Stroheim", "C", 'https://i.imgur.com/OvyOZy3.png', 0, 0, 0),
-            ("Foo Fighters", "C", 'https://i.imgur.com/ZlCOCPn.png', 0, 0, 0),
-            ("Trish", "C", 'https://i.imgur.com/I4nMHqt.png', 0, 0, 0),
-            ("Hermes", "C", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/09/Ermes-Costello-and-her-Stand-Smack.jpg', 0, 0, 0),
+            ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 260, 270, 260),
+            ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 250, 260, 250),
+            ("Shigechi", "C", 'https://i.imgur.com/6JKniYe.png', 230, 230, 220),
+            ("Mikitaka", "C", 'https://i.imgur.com/mMs5O78.png', 260, 240, 230),
+            ("Iggy", "C", 'https://i.imgur.com/HTb59id.png', 230, 260, 220),
+            ("Formaggio", "C", 'https://i.imgur.com/WCQtqwq.png', 240, 270, 240),
+            ("Stroheim", "C", 'https://i.imgur.com/OvyOZy3.png', 260, 230, 240),
+            ("Foo Fighters", "C", 'https://i.imgur.com/ZlCOCPn.png', 260, 240, 260),
+            ("Trish", "C", 'https://i.imgur.com/I4nMHqt.png', 240, 270, 240),
+            ("Hermes", "C", 'https://imgur.com/TbkuZDj', 270, 250, 260),
 
             # Personnages D
-            ("Abbacchio", "D", 'https://i.imgur.com/5FahNJl.png', 0, 0, 0),
-            ("Daniel Darby", "D", 'https://i.pinimg.com/736x/5e/8c/15/5e8c15dbafc2d01662eab438bcd32e9d.jpg', 0, 0, 0), #TOREVIEW
-            ("Jonathan", "D", 'https://i.imgur.com/dqGKC1P.png', 0, 0, 0),
+            ("Abbacchio", "D", 'https://i.imgur.com/5FahNJl.png', 180, 200, 190),
+            ("Daniel Darby", "D", 'https://imgur.com/w1Qu1p2', 170, 170, 170), #TOREVIEW
+            ("Jonathan", "D", 'https://i.imgur.com/dqGKC1P.png', 200, 200, 200),
 
             # Personnages E
-            ("Straizo", "E", 'https://i.imgur.com/D4muQp5.png', 0, 0, 0),
-            ("Will Zeppeli", "E", 'https://i.imgur.com/SVm9I2K.png', 0, 0, 0),
-            ("Boingo", "E", 'https://jojocomparisons.github.io/images/SC27/bd-02270-1090px.jpg', 0, 0, 0),
-            ("Oingo","E", 'https://64.media.tumblr.com/d8034453f7e998104a35e83911d067ec/3cfe647de86da704-47/s1280x1920/d18891e4e45818d59b3d87e7d60ae16e97a09ccb.jpg', 0, 0, 0),
+            ("Straizo", "E", 'https://i.imgur.com/D4muQp5.png', 110, 130, 120),
+            ("Will Zeppeli", "E", 'https://i.imgur.com/SVm9I2K.png', 120, 130, 120),
+            ("Boingo", "E", 'https://imgur.com/I1GDLQ9', 110, 120, 120),
+            ("Oingo","E", 'https://imgur.com/4t8W7rq', 130, 130, 120),
 
             # Personnages F
-            ("Tonio", "F", 'https://i.imgur.com/PIXbcZb.png', 0, 0, 0),
-            ("Luca", "F", 'https://i.imgur.com/3HamVjM.png', 0, 0, 0),
-            ("Anne", "F", 'https://i.pinimg.com/736x/6e/26/d7/6e26d7d149f72e207059a9c53623bbfc.jpg', 0, 0, 0),
-            ("Speedwagon", "F", 'https://i.imgur.com/Q4pR4ws.png', 0, 0, 0),
-            ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 0, 0, 0),
-            ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 0, 0, 0),
-            ("Dario Brando", "F", "https://cdn.anisearch.fr/images/character/screen/31/31596/full/479344.webp", 0, 0, 0),
-            ("Tama", "F", 'https://static.wikia.nocookie.net/jjba/images/c/c3/Tama_AV.png/revision/latest?cb=20161020082753', 0, 0, 0), #ALICE
+            ("Tonio", "F", 'https://i.imgur.com/PIXbcZb.png', 50, 60, 50),
+            ("Luca", "F", 'https://i.imgur.com/3HamVjM.png', 40, 50, 60),
+            ("Anne", "F", 'https://imgur.com/AkQ1PV2', 50, 40, 50),
+            ("Speedwagon", "F", 'https://i.imgur.com/Q4pR4ws.png', 50, 60, 50),
+            ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 40, 50, 40),
+            ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 50, 50, 50),
+            ("Dario Brando", "F", "https://imgur.com/LjMHPwB", 40, 40, 40),
+            ("Tama", "F", 'https://imgur.com/1cQyIW5', 50, 30, 60), #ALICE
 
             ],
             "One Punch Man" : [
