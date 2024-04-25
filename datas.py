@@ -928,32 +928,32 @@ all_characters_templates = {
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
             ],
-            "Chainsaw Man" : [
-                ("Denji", "X", "https://i.imgur.com/YnDFcsy.gif", 0, 0, 0),
-                ("Makima", "X", "https://i.imgur.com/UCcRxPY.gif", 0, 0, 0),
+            "Chainsaw Man" : [ # ✅
+                ("Denji", "X", "https://i.imgur.com/YnDFcsy.gif", 940, 960, 945),
+                ("Makima", "X", "https://i.imgur.com/UCcRxPY.gif", 910, 950, 920),
 
-                ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 0, 0, 0),
+                ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 720, 730, 715),
                 
-                ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 0, 0, 0),
-                ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 0, 0, 0),
-                ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 0, 0, 0),
-                ("Samurai Sword", "S", "https://i.imgur.com/8Bj3B08.gif", 0, 0, 0),
-                ("Akane Sawatari", "S", "https://i.imgur.com/mbr0WZ8.gif", 0, 0, 0),
+                ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 510, 570, 540),
+                ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 520, 540, 530),
+                ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 530, 560, 555),
+                ("Samurai Sword", "S", "https://i.imgur.com/8Bj3B08.gif", 565, 580, 575),
+                ("Akane Sawatari", "S", "https://i.imgur.com/mbr0WZ8.gif", 540, 565, 545),
                 
-                ("Power", "A", "https://i.imgur.com/WzSAOuy.gif", 0, 0, 0),
+                ("Power", "A", "https://i.imgur.com/WzSAOuy.gif", 410, 430, 425),
 
 
-                ("Kobeni Higashiyama", "B", "https://i.imgur.com/yB3UtcT.jpeg", 0, 0, 0),
-                ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 0, 0, 0),
-                ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 0, 0, 0),
+                ("Kobeni Higashiyama", "B", "https://i.imgur.com/yB3UtcT.jpeg", 330, 320, 315),
+                ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 340, 320, 315),
+                ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 330, 340, 310),
 
-                ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 0, 0, 0),
-                ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 0, 0, 0),
-
-
+                ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 240, 250, 255),
+                ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 255, 250, 240),
 
 
-                ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 0, 0, 0),
+
+
+                ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 40, 55, 50),
             ]
 }
 
