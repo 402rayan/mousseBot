@@ -809,58 +809,61 @@ all_characters_templates = {
             ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
             ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
             ],
-            "Full Metal Alchemist" : [ # 
-            # """ PERSONNAGE FMAB """
+            "Full Metal Alchemist" : [ # ✅
             # Personnages X
-            ("Pere", "X", "https://i.imgur.com/X617w07.gif", 0, 0, 0),
+            ("Pere", "X", "https://i.imgur.com/X617w07.gif", 963, 963, 963),
             # Personnages SS
-            ("Hohenheim", "SS", "https://i.imgur.com/bMNh7n0.gif", 0, 0, 0),
-            ("King Bradley", "SS", "https://i.imgur.com/Di7mjqq.gif", 0, 0, 0),
+            ("Hohenheim", "SS", "https://i.imgur.com/bMNh7n0.gif", 720, 730, 735),
+            ("King Bradley", "SS", "https://i.imgur.com/Di7mjqq.gif", 750, 770, 750),
             # Personnages S
-            ("Edward", "S", "https://i.imgur.com/Lmbb9ZT.gif", 0, 0, 0),
-            ("Izumi Curtis", "S", "https://i.imgur.com/WBcqtWl.gif", 0, 0, 0),
-            ("Alphonse", "S", 'https://i.imgur.com/q6IW5xU.gif', 0, 0, 0),
-            ("Roy Mustang", "S", 'https://i.imgur.com/Oyk2Pp4.gif', 0, 0, 0),
-            ("Scar", "S", 'https://i.imgur.com/9dw5ri9.gif', 0, 0, 0),
-            ("Kimbley", "S", 'https://i.imgur.com/r9nB7SF.gif', 0, 0, 0),
-            ("Selim", "S", 'https://i.imgur.com/XYj2ZtU.gif', 0, 0, 0),
+            ("Edward", "S", "https://i.imgur.com/Lmbb9ZT.gif", 540, 555, 530),
+            ("Izumi Curtis", "S", "https://i.imgur.com/WBcqtWl.gif", 535, 540, 530),
+            ("Alphonse", "S", 'https://i.imgur.com/q6IW5xU.gif', 560, 570, 600),
+            ("Roy Mustang", "S", 'https://i.imgur.com/Oyk2Pp4.gif', 550, 700, 540), # high S
+            ("Scar", "S", 'https://i.imgur.com/9dw5ri9.gif', 580, 600, 790), # high S
+            ("Kimbley", "S", 'https://i.imgur.com/r9nB7SF.gif', 530, 555, 535),
+            ("Selim", "S", 'https://i.imgur.com/XYj2ZtU.gif', 545, 560, 540),
             # Personnages A
-            ("Ling Yao", "A", 'https://i.imgur.com/cEoziXY.gif', 0, 0, 0),
-            ("Envy", "A", 'https://i.imgur.com/rRFT3ec.gif', 0, 0, 0),
-            ("Sloth", "A", 'https://i.imgur.com/sltbpFK.gif', 0, 0, 0),
-            ("Glutonny", "A", "https://i.imgur.com/16YlN6x.gif", 0, 0, 0),
-            ("Lust", "A", 'https://i.imgur.com/lriujEU.gif', 0, 0, 0),
-            ("Olivia Mira Armstrong", "A", 'https://i.imgur.com/Jwzc22O.gif', 0, 0, 0),
-            ("Alex Louis Armstrong", "A", 'https://i.imgur.com/Hx8D4HJ.gif', 0, 0, 0),
+            ("Ling Yao", "A", 'https://i.imgur.com/cEoziXY.gif', 420, 430, 410),
+            ("Envy", "A", 'https://i.imgur.com/rRFT3ec.gif', 440, 430, 420),
+            ("Sloth", "A", 'https://i.imgur.com/sltbpFK.gif', 450, 430, 410),
+            ("Gluttony", "A", "https://i.imgur.com/16YlN6x.gif", 430, 420, 440),
+            ("Lust", "A", 'https://i.imgur.com/lriujEU.gif', 420, 410, 440),
+            ("Olivia Mira Armstrong", "A", 'https://i.imgur.com/Jwzc22O.gif', 440, 450, 420),
+            ("Alex Louis Armstrong", "A", 'https://i.imgur.com/Hx8D4HJ.gif', 450, 430, 430),
             # Personnages B
-            ("Maes Hughes", "B", 'https://i.imgur.com/uvT3bWb.jpeg', 0, 0, 0),
-            ("Mei Chang", "B", 'https://i.imgur.com/tfeqXJu.jpeg', 0, 0, 0),
-            ("Riza Hawkeye", "B", 'https://i.imgur.com/vTsQ4ZZ.jpeg', 0, 0, 0),
-            ("Lan Fan", "B", 'https://i.imgur.com/ukRcnJx.jpeg', 0, 0, 0),
-            ("Fu", "B", 'https://i.imgur.com/yQdAnYc.jpeg', 0, 0, 0),
-            ("Buccaneer", "B", 'https://i.imgur.com/v6ykfW1.png', 0, 0, 0),
-            ("Sig Curtis", "B", 'https://i.imgur.com/gMvZCxb.png', 0, 0, 0),
+            ("Mei Chang", "B", 'https://i.imgur.com/tfeqXJu.jpeg', 330, 325, 335),
+            ("Riza Hawkeye", "B", 'https://i.imgur.com/vTsQ4ZZ.jpeg', 335, 330, 325),
+            ("Lan Fan", "B", 'https://i.imgur.com/ukRcnJx.jpeg', 340, 325, 325),
+            ("Fu", "B", 'https://i.imgur.com/yQdAnYc.jpeg', 325, 340, 325),
+            ("Buccaneer", "B", 'https://i.imgur.com/v6ykfW1.png', 335, 335, 320),
+            ("Sig Curtis", "B", 'https://i.imgur.com/gMvZCxb.png', 325, 325, 340),
+
             # Personnages C
-            ("Heinkel", "C", 'https://i.imgur.com/IFSivAT.jpeg', 0, 0, 0),
-            ("Marcoh", "C", 'https://i.imgur.com/6hbihPy.png', 0, 0, 0),
-            ("Darius", "C", 'https://i.imgur.com/OugYS2B.jpeg', 0, 0, 0),
-            ("Frere de Scar", "C", 'https://i.imgur.com/xwYWbhD.jpeg', 0, 0, 0),
+            ("Heinkel", "C", 'https://i.imgur.com/IFSivAT.jpeg', 255, 260, 265),
+            ("Marcoh", "C", 'https://i.imgur.com/6hbihPy.png', 260, 255, 265),
+            ("Darius", "C", 'https://i.imgur.com/OugYS2B.jpeg', 265, 260, 255),
+            ("Frere de Scar", "C", 'https://i.imgur.com/xwYWbhD.jpeg', 265, 265, 250),
+
             # Personnages D
-            ("Maria Ross", "E", 'https://i.imgur.com/8zUxWkq.jpeg', 0, 0, 0),
-            ("Miles", "E", 'https://i.imgur.com/097qkPG.jpeg', 0, 0, 0),
-            ("Falman", "E", 'https://i.imgur.com/zNRwZQT.jpeg', 0, 0, 0),
-            ("Barry the Chopper", "E", 'https://i.imgur.com/O7u2J3P.jpeg', 0, 0, 0),
+            ("Maes Hughes", "D", 'https://i.imgur.com/uvT3bWb.jpeg', 180, 170, 165),
+            ("Maria Ross", "D", 'https://i.imgur.com/8zUxWkq.jpeg', 175, 180, 185),
+            ("Miles", "D", 'https://i.imgur.com/097qkPG.jpeg', 180, 185, 175),
+            ("Falman", "D", 'https://i.imgur.com/zNRwZQT.jpeg', 185, 175, 180),
+            ("Barry the Chopper", "D", 'https://i.imgur.com/O7u2J3P.jpeg', 180, 180, 180),
+
             # Personnages E
-            ("Paninya", "E", 'https://i.imgur.com/uS1Dxp3.jpeg', 0, 0, 0),
-            ("Havoc", "E", 'https://i.imgur.com/rM9I8Ot.jpeg', 0, 0, 0),
-            ("Heymans", "E", 'https://i.imgur.com/jJdB2II.png', 0, 0, 0),
-            ("Fuery", "E", "https://i.imgur.com/6dCkq7z.jpeg", 0, 0, 0),
+            ("Paninya", "E", 'https://i.imgur.com/uS1Dxp3.jpeg', 115, 120, 125),
+            ("Havoc", "E", 'https://i.imgur.com/rM9I8Ot.jpeg', 120, 125, 115),
+            ("Heymans", "E", 'https://i.imgur.com/jJdB2II.png', 125, 115, 120),
+            ("Fuery", "E", "https://i.imgur.com/6dCkq7z.jpeg", 120, 120, 120),
+
             # Personnages F
-            ("Yoki", "F", 'https://i.imgur.com/pPbOaqJ.jpeg', 0, 0, 0),
-            ("Nina Tucker", "F", 'https://i.imgur.com/gOeHUXg.jpeg', 0, 0, 0),
-            ("Trisha", "F", 'https://i.imgur.com/QVYbkRB.jpeg', 0, 0, 0),
-            ("Xiao Mei", "F", 'https://i.imgur.com/FAQHPlD.gif', 0, 0, 0),
-            ("Winry", "F", 'https://i.imgur.com/mbX301B.jpeg', 0, 0, 0),
+            ("Yoki", "F", 'https://i.imgur.com/pPbOaqJ.jpeg', 35, 50, 35),
+            ("Nina Tucker", "F", 'https://i.imgur.com/gOeHUXg.jpeg', 50, 45, 35),
+            ("Trisha", "F", 'https://i.imgur.com/QVYbkRB.jpeg', 35, 50, 35),
+            ("Xiao Mei", "F", 'https://i.imgur.com/FAQHPlD.gif', 30, 55, 35),
+            ("Winry", "F", 'https://i.imgur.com/mbX301B.jpeg', 35, 55, 30),
             ],
             "Attack On Titan" : [ # ✅
             # """ PERSONNAGES SNK """
