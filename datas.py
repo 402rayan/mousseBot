@@ -53,15 +53,15 @@ all_characters_templates = {
             ("Uub", "C", "https://i.imgur.com/fZvqk1U.jpeg", 250, 250, 235),
             ("Kaio Shin", "C", "https://i.imgur.com/NNcDlai.jpeg", 230, 240, 270),
             ("Goten", "C", 'https://i.imgur.com/LaP4Y5P.jpeg', 240, 255, 270),
+
             # Personnages D
             ("Cell JR", "D", "https://i.imgur.com/phScIgK.png", 200, 195, 190),
             ("Ginyu", "D", 'https://i.imgur.com/dlJPBnS.png', 180, 180, 180),
             ("Nappa", "D", 'https://i.imgur.com/BlMwN5j.png', 175,180, 160),
             ("Yamcha", "D", 'https://i.imgur.com/aiWaIkE.jpeg', 165, 155, 120),
             ("Raditz", "D", 'https://i.imgur.com/tpHt9cZ.jpeg', 155, 140, 135),
-            
-            # Personnages E
 
+            # Personnages E
             ("Chaozu", "E", 'https://i.imgur.com/ptM5r0p.jpeg', 135, 125, 115),
             ("Tao Pai Pai", "E", 'https://i.imgur.com/x1oDMNg.jpeg', 120, 120, 120),
             ("Jaco", "E", "https://i.imgur.com/HM25j5z.jpeg", 110, 120, 90),
@@ -69,6 +69,7 @@ all_characters_templates = {
             ("Babidi", "E", 'https://i.imgur.com/4u5Iy99.jpeg', 110, 130, 80),
             ("Videl", "E", "https://i.imgur.com/cVYDJ9A.png", 100, 100, 90),
             ("Yajirobe", "E", "https://i.imgur.com/7yk8rDr.png", 90, 100, 85),
+
            # Personnages F
             ("Oolong", "F", 'https://i.imgur.com/K00wC2U.png', 20, 10, 20),
             ("Mr. Satan", "F", 'https://i.imgur.com/1GwcT5j.jpeg', 30, 40, 30),
@@ -89,6 +90,7 @@ all_characters_templates = {
             ("Madara", "X", "https://i.imgur.com/c0NF2KN.gif", 0, 0, 0),
             ("Rikudo", "X", "https://i.imgur.com/bn7KwyD.gif", 0, 0, 0),
             ("Obito", "X", "https://i.imgur.com/A6roLXk.gif", 0, 0, 0),
+
             # Personnages SS
             ("Indra", "SS", "https://i.imgur.com/dlXLwgN.gif", 0, 0, 0),
             ("Ashura", "SS", "https://i.imgur.com/aRMeDPa.gif", 0, 0, 0),
@@ -101,6 +103,7 @@ all_characters_templates = {
             ("Kabuto", "SS", 'https://media1.tenor.com/m/-nxrWjUdXRYAAAAC/anime-kabuto-yakushi.gif', 0, 0, 0),
             ("Guy (8 portes)", "SS", 'https://media1.tenor.com/m/xa87Jinyrc0AAAAC/naruto-shippuden-might-guy.gif', 0, 0, 0),
             ("Momoshiki", "SS", 'https://media1.tenor.com/m/74cmic57CwoAAAAC/momoshiki.gif', 0, 0, 0),
+
             # Personnages S
             ("Shisui", "S", 'https://media1.tenor.com/m/_To3NtVgZv0AAAAC/shisui-uchiha-shisui.gif', 0, 0, 0),
             ("Hidan", "S", 'https://i.imgur.com/Nz7dGAU.png', 0, 0, 0),
@@ -132,45 +135,44 @@ all_characters_templates = {
             ("Temari", "A", 'https://cdn.discordapp.com/attachments/805054171661336590/817119251750977566/TEMARI.gif', 0, 0, 0),
             
             # Personnages B
-            ("Neji", "B", "https://i.imgur.com/acFMgGN.png", 0, 0, 0),
-            ("Kankuro", "B", 'https://i.imgur.com/6h0fZTJ.png', 0, 0, 0),
-            ("Choji", "B", 'https://media1.tenor.com/m/FAqetz7SiCEAAAAd/choji.gif', 0, 0, 0), #TO REVIEW
-            ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 0, 0, 0),
-            ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 0, 0, 0),
-            ("Ino", "B", 'https://media1.tenor.com/m/tdptC0lOIB4AAAAC/ino-yamanaka-ino.gif', 0, 0, 0),
-            ("Sakura", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808354355744342026/SAKUA.gif', 0, 0, 0),
-            ("Hinata", "B", 'https://i.imgur.com/VsFYMA1.gif', 0, 0, 0),
-            ("Suigetsu", "B", 'https://i.imgur.com/E6d3rSt.gif', 0, 0, 0),
-            ("Jugo", "B", 'https://i.imgur.com/lfSps90.png', 0, 0, 0),
-            ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 0, 0, 0),
-            ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 0, 0, 0),
-            ("Fugaku", "B", "https://hero.fandom.com/wiki/Fugaku_Uchiha", 0, 0, 0), #TO REVIEW
-            ("Zabuza", "B", "https://i.imgur.com/ntmenx6.png", 0, 0, 0), #TO REVIEW
+            ("Neji", "B", "https://i.imgur.com/acFMgGN.png", 330, 330, 330),
+            ("Kankuro", "B", 'https://i.imgur.com/6h0fZTJ.png', 330, 330, 330),
+            ("Choji", "B", 'https://media1.tenor.com/m/FAqetz7SiCEAAAAd/choji.gif', 330, 330, 330), #TO REVIEW
+            ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 330, 330, 330),
+            ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 330, 330, 330),
+            ("Ino", "B", 'https://media1.tenor.com/m/tdptC0lOIB4AAAAC/ino-yamanaka-ino.gif', 330, 330, 330),
+            ("Sakura", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808354355744342026/SAKUA.gif', 330, 330, 330),
+            ("Hinata", "B", 'https://i.imgur.com/VsFYMA1.gif', 330, 330, 330),
+            ("Suigetsu", "B", 'https://i.imgur.com/E6d3rSt.gif', 330, 330, 330),
+            ("Jugo", "B", 'https://i.imgur.com/lfSps90.png', 330, 330, 330),
+            ("Haku", "B", 'https://i.imgur.com/vqQD56N.png', 330, 330, 330),
+            ("Kurenai", "B", 'https://i.imgur.com/1E2Ux2a.png', 330, 330, 330),
+            ("Fugaku", "B", "https://hero.fandom.com/wiki/Fugaku_Uchiha", 330, 330, 330), #TO REVIEW
+            ("Zabuza", "B", "https://i.imgur.com/ntmenx6.png", 330, 330, 330), #TO REVIEW
 
             # Personnages C
-            ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 0, 0, 0),
-            ("Zetsu", "C", "https://cdn.shopify.com/s/files/1/0046/2779/1960/files/black_zetsu.jpg?v=1583191483", 0, 0, 0),
-            ("Shizune", "C", "https://i.imgur.com/53rdzBL.png", 0, 0, 0),
-            ("Anko", "C", "https://static.wikia.nocookie.net/narutoinuyashapokemnyharrypotter/images/0/08/Anko_Mitarashi.jpg/revision/latest?cb=20130327192458&path-prefix=es", 0, 0, 0),
-            ("Guren", "C", "https://static.wikia.nocookie.net/naruto/images/9/90/Guren.png/revision/latest?cb=20171125162907&path-prefix=fr", 0, 0, 0),
-            ("Yugao", "C", "https://static.wikia.nocookie.net/naruto/images/9/9a/Y%C3%BBgao_Uzuki.png/revision/latest?cb=20170810173430&path-prefix=fr", 0, 0, 0),
-            ("Sarada", "C", "https://i0.wp.com/www.univers-otaku.com/wp-content/uploads/2020/12/sarada-uchiha.jpg?resize=740%2C370&ssl=1", 0, 0, 0),
-            ("Tenten", "C", "https://i.imgur.com/s6MEz46.png", 0, 0, 0),
-            ("Karin (naruto)", "C", "https://static.wikia.nocookie.net/naruto/images/5/50/Karin.png/revision/latest?cb=20201231015434&path-prefix=fr", 0, 0, 0),
+            ("Iruka", "C", 'https://i.imgur.com/p0YmijL.png', 260, 260, 260),
+            ("Zetsu", "C", "https://cdn.shopify.com/s/files/1/0046/2779/1960/files/black_zetsu.jpg?v=1583191483", 260, 260, 260),
+            ("Shizune", "C", "https://i.imgur.com/53rdzBL.png", 260, 260, 260),
+            ("Anko", "C", "https://static.wikia.nocookie.net/narutoinuyashapokemnyharrypotter/images/0/08/Anko_Mitarashi.jpg/revision/latest?cb=20130327192458&path-prefix=es", 260, 260, 260),
+            ("Guren", "C", "https://static.wikia.nocookie.net/naruto/images/9/90/Guren.png/revision/latest?cb=20171125162907&path-prefix=fr", 260, 260, 260),
+            ("Yugao", "C", "https://static.wikia.nocookie.net/naruto/images/9/9a/Y%C3%BBgao_Uzuki.png/revision/latest?cb=20170810173430&path-prefix=fr", 260, 260, 260),
+            ("Sarada", "C", "https://i0.wp.com/www.univers-otaku.com/wp-content/uploads/2020/12/sarada-uchiha.jpg?resize=740%2C370&ssl=1", 260, 260, 260),
+            ("Tenten", "C", "https://i.imgur.com/s6MEz46.png", 260, 260, 260),
+            ("Karin (naruto)", "C", "https://static.wikia.nocookie.net/naruto/images/5/50/Karin.png/revision/latest?cb=20201231015434&path-prefix=fr", 260, 260, 260),
+
             # Personnages D
-            ("Ebisu", "D", 'https://i.imgur.com/qWpczNK.png', 0, 0, 0),
+            ("Ebisu", "D", 'https://i.imgur.com/qWpczNK.png', 180, 180, 180),
 
             # Personnages E
-            ("Konohamaru", "E", 'https://i.imgur.com/aZoURBF.png', 0, 0, 0),
-            ("Mizuki", "E", "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20210529210947&path-prefix=fr", 0, 0, 0),
-
+            ("Konohamaru", "E", 'https://i.imgur.com/aZoURBF.png', 120, 120, 120),
+            ("Mizuki", "E", "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20210529210947&path-prefix=fr", 120, 120, 120),
 
             # Personnages F
-            ("Tonton", "F", "https://static.wikia.nocookie.net/xianb/images/f/fa/60t.png/revision/latest/scale-to-width-down/579?cb=20141101233045", 0, 0, 0),
-            ("Pakkun", "F", "https://lh4.googleusercontent.com/vh79H5M8vWfVyuSiNnhk27N59eFH-ukdQUT028m5kmqGsPHp5pO74qpVbTpkhdX80w3utduzz1PaUVEj8ZMAblZXV9n-R4_Z7wdhX1PHxHJDEY7DQbDWOaIVeztagZRM_9WTEYqdRHpawafgywENVw", 0, 0, 0),
-
-            ("Inari", "F", "https://static.wikia.nocookie.net/naruto/images/a/af/Inari_Parte_I_Anime.png/revision/latest?cb=20130829123658&path-prefix=es", 0, 0, 0),
-            ("Gato", "F", "https://static.wikia.nocookie.net/villains/images/2/2e/Gat%C5%8D_%28Naruto%29.jpg/revision/latest?cb=20120817183043", 0, 0, 0),
+            ("Tonton", "F", "https://static.wikia.nocookie.net/xianb/images/f/fa/60t.png/revision/latest/scale-to-width-down/579?cb=20141101233045", 50, 50, 50),
+            ("Pakkun", "F", "https://lh4.googleusercontent.com/vh79H5M8vWfVyuSiNnhk27N59eFH-ukdQUT028m5kmqGsPHp5pO74qpVbTpkhdX80w3utduzz1PaUVEj8ZMAblZXV9n-R4_Z7wdhX1PHxHJDEY7DQbDWOaIVeztagZRM_9WTEYqdRHpawafgywENVw", 50, 50, 50),
+            ("Inari", "F", "https://static.wikia.nocookie.net/naruto/images/a/af/Inari_Parte_I_Anime.png/revision/latest?cb=20130829123658&path-prefix=es", 50, 50, 50),
+            ("Gato", "F", "https://static.wikia.nocookie.net/villains/images/2/2e/Gat%C5%8D_%28Naruto%29.jpg/revision/latest?cb=20120817183043", 50, 50, 50),
 ],
             "One Piece" : [
             # Personnages X
@@ -235,37 +237,37 @@ all_characters_templates = {
             ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 0, 0, 0),
             ("Belo Betty", "B", "https://areajugones.sport.es/wp-content/uploads/2020/01/belo-betty-one-piece.jpg", 0, 0, 0),
             ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 0, 0, 0),
-                    ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 0, 0, 0),
+            ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 0, 0, 0),
             
-
             # Personnages C
-            ("Vivi", "C", "https://www.mangaluxe.com/dossiers/one-piece/img/nefertari-vivi.jpg", 0, 0, 0),
-            ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 0, 0, 0),
-            ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 0, 0, 0),
-            ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 0, 0, 0),
-            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 0, 0, 0),
-            ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 0, 0, 0),
-            ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 0, 0, 0),
+            ("Vivi", "C", "https://www.mangaluxe.com/dossiers/one-piece/img/nefertari-vivi.jpg", 260, 260, 260),
+            ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 260, 260, 260),
+            ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 260, 260, 260),
+            ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 260, 260, 260),
+            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 260, 260, 260),
+            ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 260, 260, 260),
+            ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 260, 260, 260),
 
             # Personnages D
-            ("Dorry", "D", "https://m.media-amazon.com/images/M/MV5BZDE2OTA2MTMtN2VkZS00NDZkLThmNDctMTYzNDc5NzgxMDEyXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_.jpg", 0, 0, 0),
-            ("Brogy", "D", "https://www.roadtolaughtale.fr/wp-content/uploads/2024/01/broggy.jpg", 0, 0, 0),
-            ("Lindbergh", "D", "https://static.wikia.nocookie.net/onepiece/images/3/31/Cool_Shooter.png/revision/latest?cb=20190414113534", 0, 0, 0),
+            ("Dorry", "D", "https://m.media-amazon.com/images/M/MV5BZDE2OTA2MTMtN2VkZS00NDZkLThmNDctMTYzNDc5NzgxMDEyXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_.jpg", 180, 180, 180),
+            ("Brogy", "D", "https://www.roadtolaughtale.fr/wp-content/uploads/2024/01/broggy.jpg", 180, 180, 180),
+            ("Lindbergh", "D", "https://static.wikia.nocookie.net/onepiece/images/3/31/Cool_Shooter.png/revision/latest?cb=20190414113534", 180, 180, 180),
             
             # Personnages E
-            ("Helmeppo", "E", "https://img24.tokyvideo.com/videos/319/319429/previews/previews_0009.jpg", 0, 0, 0),
-            ("Hatchan", "E", "https://lh5.googleusercontent.com/E3R0RFsbrh_SRGWZWQtDSYsYJ7O-aWkJ712dsKRX8b7O6nrEo9-94iFS8UShWmB0OIbaG4ce_C94fQiTrYSiybFqRzVrLAp1N86kHOvzDdoSBbHcfqPTyvNVZhklda5HJl9ybAAIpEJ2nAG8oV5sXXM", 0, 0, 0),
-            ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 0, 0, 0),
-            ("Kuro", "E", "https://cdn-www.konbini.com/files/2023/04/one_piece_eiichiro_oda_premierefois14.jpg", 0,0,0),
-            ("Wapol", "E", "https://lh6.googleusercontent.com/VoyVXJY9nyRm35lSZLupPJsQkeHhqjGiWGyvglXg_IzfsrB4yYxJwZoc19Cjbt85aoFBTiDIfXav3q9aCKxC_f2Am_vcWRLqUxI1OMmx6_IysLZ7bzoBnCv4NuOHPdmYu8z-J7eM6JFjX7o4-OURPjs", 0, 0, 0),
+            ("Helmeppo", "E", "https://img24.tokyvideo.com/videos/319/319429/previews/previews_0009.jpg", 120, 120, 120),
+            ("Hatchan", "E", "https://lh5.googleusercontent.com/E3R0RFsbrh_SRGWZWQtDSYsYJ7O-aWkJ712dsKRX8b7O6nrEo9-94iFS8UShWmB0OIbaG4ce_C94fQiTrYSiybFqRzVrLAp1N86kHOvzDdoSBbHcfqPTyvNVZhklda5HJl9ybAAIpEJ2nAG8oV5sXXM", 120, 120, 120),
+            ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 120, 120, 120),
+            ("Kuro", "E", "https://cdn-www.konbini.com/files/2023/04/one_piece_eiichiro_oda_premierefois14.jpg", 120, 120, 120),
+            ("Wapol", "E", "https://lh6.googleusercontent.com/VoyVXJY9nyRm35lSZLupPJsQkeHhqjGiWGyvglXg_IzfsrB4yYxJwZoc19Cjbt85aoFBTiDIfXav3q9aCKxC_f2Am_vcWRLqUxI1OMmx6_IysLZ7bzoBnCv4NuOHPdmYu8z-J7eM6JFjX7o4-OURPjs", 120, 120, 120),
 
             # Personnages F
-            ("Merry","F","https://static.wikia.nocookie.net/onepiece/images/c/c1/Merry_spara.png/revision/latest?cb=20220124140512&path-prefix=it",0,0,0),
-            ("Gaimon", "F", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/gaimon-cropped.jpg", 0, 0, 0),
-            ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 0, 0, 0),
-            ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 0, 0, 0),
-            ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 0, 0, 0),
+            ("Merry","F","https://static.wikia.nocookie.net/onepiece/images/c/c1/Merry_spara.png/revision/latest?cb=20220124140512&path-prefix=it",50, 50, 50),
+            ("Gaimon", "F", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/gaimon-cropped.jpg", 50, 50, 50),
+            ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 50, 50, 50),
+            ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 50, 50, 50),
+            ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 50, 50, 50),
             ],
+            
             "Bleach" : [ # ✅
             # Personnages X
             ("Yhwach", "X", "https://i.imgur.com/OLYulIP.gif", 950, 1200, 1000), 
@@ -302,17 +304,14 @@ all_characters_templates = {
             ("Grimmjow", "S", 'https://i.imgur.com/nj464jc.gif', 580, 600, 550),
 
             # Personnages A
-
             ("Ukitake", "A", 'https://i.imgur.com/PqGvVzv.gif', 395, 420, 405), 
             ("Nnoitra", "A", 'https://i.imgur.com/z5SAM9h.gif', 440, 450, 460),
             ("Shuhei", "A", 'https://i.imgur.com/rkQNMQX.gif', 415, 435, 420),
             ("Ryuken", "A", 'https://i.imgur.com/turdL6j.gif', 410, 450, 430),
             ("Orihime", "A", 'https://i.imgur.com/xGhy8ky.gif', 430, 420, 460),
             ("Ginjo", "A", 'https://i.imgur.com/xLPLs5Q.gif', 410, 420, 430),
-            
-            
+                
             # Personnages B
-
             ("Kira", "B", 'https://i.imgur.com/H5EQmb0.png', 330, 340, 320),
             ("Ikkaku", "B", 'https://i.imgur.com/wWd1Z4z.png', 345, 360, 335),
             ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 335, 345, 330),
@@ -348,6 +347,7 @@ all_characters_templates = {
             ("Shigaraki", "X", "https://i.imgur.com/4G7TwKg.gif", 0, 0, 0),
             ("All For One", "X", "https://i.imgur.com/rR1sQPU.gif", 0, 0, 0),
             ("Star And Stripe", "X", "https://i.imgur.com/awX9W1z.gif", 0, 0, 0),
+
             # Personnages SS
             ("Izuku Midoriya", "SS", "https://i.imgur.com/sfcQ2nE.gif", 0, 0, 0),
             ("Endeavor", "SS", "https://i.imgur.com/Y2olaBF.gif", 0, 0, 0),
@@ -357,6 +357,7 @@ all_characters_templates = {
             ("Dabi", "SS", "https://i.imgur.com/BjDR5Yi.gif", 0, 0, 0),
             ("Mirio", "SS", "https://i.imgur.com/gOMDPVp.gif", 0, 0, 0),
             ("Re Destro", "SS", "https://i.imgur.com/HQp99hz.gif", 0, 0, 0),
+
             # Personnages S
             ("Hawks", "S", "https://i.imgur.com/X15PwP6.gif", 0, 0, 0),
             ("Twice", "S", "https://i.imgur.com/aTXRvNJ.gif", 0, 0, 0),
@@ -368,42 +369,46 @@ all_characters_templates = {
             ("Fumikage", "S", "https://i.imgur.com/75sU4v8.gif", 0, 0, 0),
             ("Mirko", "S", "https://i.imgur.com/uaH6Nth.gif", 0, 0, 0),
             ("Lady Nagant", "S", "https://i.imgur.com/XTarup4.gif", 0, 0, 0),
+
             # Personnages A
             ("Tenya", "A", "https://i.imgur.com/XAE3t5c.gif", 0, 0, 0),
             ("Mt Lady", "A", "https://i.imgur.com/BGdhXVd.gif", 0, 0, 0),
             ("Nighteye", "A", "https://i.imgur.com/fgO8qfb.gif", 0, 0, 0),
             ("Ryuku", "A", "https://i.imgur.com/jUEf20r.gif", 0, 0, 0),
             ("Gran Torino", "A", "https://i.imgur.com/pHGoXST.gif", 0, 0, 0),
+
             # Personnages B
             ("Ochaco", "B", 'https://i.imgur.com/GqBcqOI.jpeg', 0, 0, 0),
             ("Midnight", "B", 'https://i.imgur.com/L4S7dNo.jpeg', 0, 0, 0),
             ("Denki", "B", 'https://i.imgur.com/aq2fHI5.png', 0, 0, 0),
-            ("Crimson Riot", "B", 'https://i.imgur.com/8VssE2J.jpeg', 0, 0, 0), #TOREVIEW ya rien dautre cm image 
+            ("Crimson Riot", "B", 'https://i.imgur.com/8VssE2J.jpeg', 0, 0, 0), 
             ("Nezu", "B", 'https://i.imgur.com/PipbKlv.png', 0, 0, 0),
             ("Momo Yaoyorozu", "B", 'https://i.imgur.com/3knQkZJ.jpeg', 0, 0, 0),
             ("Gang Orca", "B", 'https://i.imgur.com/op6GToE.jpeg', 0, 0, 0),
-            ("Shinso Hitoshi", "B", 'https://i.imgur.com/Vw0skrm.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
-            ("Nejire Hado", "B", 'https://i.imgur.com/JRE6K7R.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
+            ("Shinso Hitoshi", "B", 'https://i.imgur.com/Vw0skrm.jpeg', 0, 0, 0), 
+            ("Nejire Hado", "B", 'https://i.imgur.com/JRE6K7R.jpeg', 0, 0, 0), 
+
             # Personnages C
-            ("Shindo", "C", 'https://i.imgur.com/I7uLCYw.jpeg', 0, 0, 0),
-            ("Rock Lock", "C", 'https://i.imgur.com/s3iBS2y.jpeg', 0, 0, 0),
-            ("Vlad King", "C", 'https://i.imgur.com/v4AGxIS.jpeg', 0, 0, 0),
-            ("Testutetsu", "C", "https://i.imgur.com/06KllgA.jpeg", 0, 0, 0), #TOREVIEW A retirer car no image
-            ("Snipe", "C", 'https://i.imgur.com/urx0HwQ.jpeg', 0, 0, 0),
+            ("Shindo", "C", 'https://i.imgur.com/I7uLCYw.jpeg', 260, 260, 260),
+            ("Rock Lock", "C", 'https://i.imgur.com/s3iBS2y.jpeg', 260, 260, 260),
+            ("Vlad King", "C", 'https://i.imgur.com/v4AGxIS.jpeg', 260, 260, 260),
+            ("Testutetsu", "C", "https://i.imgur.com/06KllgA.jpeg", 260, 260, 260), 
+            ("Snipe", "C", 'https://i.imgur.com/urx0HwQ.jpeg', 260, 260, 260),
             
             # Personnages D
-            ("Spinner", "D", 'https://i.imgur.com/MeW1vaE.jpeg', 0, 0, 0),
-            ("Shihai", "D", 'https://i.imgur.com/SIaA75c.jpeg', 0, 0, 0),
-            ("Nomu", "D", 'https://i.imgur.com/Vn6WFcc.jpeg', 0, 0, 0),
-            ("Kyoka Jiro", "D", 'https://i.imgur.com/R8DEMdM.jpeg', 0, 0, 0), #TOREVIEW Ajout de perico
+            ("Spinner", "D", 'https://i.imgur.com/MeW1vaE.jpeg', 180, 180, 180),
+            ("Shihai", "D", 'https://i.imgur.com/SIaA75c.jpeg', 180, 180, 180),
+            ("Nomu", "D", 'https://i.imgur.com/Vn6WFcc.jpeg', 180, 180, 180),
+            ("Kyoka Jiro", "D", 'https://i.imgur.com/R8DEMdM.jpeg', 180, 180, 180),
 
             # Personnages E
-            ("Mineta", "E", 'https://i.imgur.com/gORmmMX.jpeg', 0, 0, 0), #BALANCETONPORC
-            ("Shoji", "E", 'https://i.imgur.com/lCTpZJE.jpeg', 0, 0, 0),
+            ("Mineta", "E", 'https://i.imgur.com/gORmmMX.jpeg', 120, 120, 120), 
+            ("Shoji", "E", 'https://i.imgur.com/lCTpZJE.jpeg', 120, 120, 120),
+
             # Personnages F
-            ("Eri", "F", 'https://i.imgur.com/thiVSIU.jpeg', 0, 0, 0),
-            ("Kenji", "F", 'https://i.imgur.com/BGeI2LC.jpeg', 0, 0, 0), #ou https://www.geekgirlauthority.com/wp-content/uploads/2017/08/mhas2e18-deku.jpg
-            ("Sansa", "F", 'https://i.imgur.com/bKASPVp.jpeg', 0, 0, 0),
+            ("Eri", "F", 'https://i.imgur.com/thiVSIU.jpeg', 50, 50, 50),
+            ("Kenji", "F", 'https://i.imgur.com/BGeI2LC.jpeg', 50, 50, 50), 
+            ("Sansa", "F", 'https://i.imgur.com/bKASPVp.jpeg', 50, 50, 50),
             ],
             "Hunter x Hunter" : [ # ✅
             # Personnages X
@@ -498,8 +503,6 @@ all_characters_templates = {
             ("Neon", "E", 'https://i.imgur.com/Rz5HGeZ.png', 95, 115, 120),
             ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 100, 110, 120),
             ("Bodoro", "E", 'https://i.imgur.com/VSWUPF5.jpeg', 115, 110, 105),
-
-
             
             # Personnages F
             ("Mito Freecss", "F", 'https://i.imgur.com/Yy7iG5d.png', 45, 50, 45),
@@ -513,11 +516,13 @@ all_characters_templates = {
             "Avatar" : [ # ✅
             # Personnages X
             ("Aang", "X", "https://i.imgur.com/TqtpU5Q.gif", 930, 920, 925),
+
             # Personnages SS
             ("Lord Ozai", "SS", "https://i.imgur.com/3K6X9Ro.gif", 710, 760, 705),
             ("Iroh", "SS", "https://i.imgur.com/KSigNP8.gif", 690,740,695),
             ("Azula", "SS", "https://i.imgur.com/GT1KSqZ.gif", 660, 720, 685),
             ("Zuko", "SS", "https://i.imgur.com/VLqP4QM.gif", 670, 710, 700),
+
             # Personnages A
             ("Mai", "A", "https://i.imgur.com/opVoND8.gif", 400, 440, 410),
             ("Toph", "A", "https://i.imgur.com/Bjbn4ew.gif", 390, 430, 420),
@@ -532,6 +537,7 @@ all_characters_templates = {
             # Personnages D
             ("Suki", "D", "https://i.imgur.com/Tfhd7Ez.jpeg", 160, 180, 165),
             ("Appa", "D", "https://i.imgur.com/sdASYR2.jpeg", 155, 160, 200),
+
             # Personnages E
             ("Yue", "E", "https://i.imgur.com/vRv3CZJ.jpeg", 110, 80, 90),
             ],
@@ -579,7 +585,6 @@ all_characters_templates = {
             ("Yaga", "B", 'https://i.imgur.com/R8Rq12y.png', 330, 310, 330),
             ("Gakuganji", "B", 'https://i.imgur.com/uAnAEms.png', 310, 340, 320),
             
-
             # Personnages C
             ("Junpei", "C", 'https://i.imgur.com/7sVsWn3.png', 240, 260, 220),
             ("Momo", "C", "https://i.imgur.com/q0viuTx.png", 240, 260, 230),
@@ -587,7 +592,6 @@ all_characters_templates = {
             ("Juzo", "C", "https://i.imgur.com/lkcQCxs.png", 250, 270, 260),
             ("Haruta Shigemo", "C", "https://i.imgur.com/IY5zel0.jpeg", 240, 255, 220),
             
-
             # Personnages D
             ("Miwa", "D", "https://i.imgur.com/M0twNwm.png", 180, 200, 165),
 
@@ -595,12 +599,9 @@ all_characters_templates = {
             ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 110, 120, 125),
             ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 110, 130, 110),
 
-
             # Personnages F
             ("Riko Amanai", "F", "https://i.imgur.com/WkfCzwy.jpeg", 50, 50, 50),
-            ("Tsumiki Fushiguro", "F", "https://i.imgur.com/wNU5qjd.png", 50, 50, 50),
-
-            
+            ("Tsumiki Fushiguro", "F", "https://i.imgur.com/wNU5qjd.png", 50, 50, 50),          
             ],
             "Jojo's Bizarre Adventure" : [ # ✅
             # Personnages X
@@ -608,6 +609,7 @@ all_characters_templates = {
             ("Enrico Pucci", "X", 'https://i.imgur.com/lAyHni9.gif', 950, 1200, 900),
             ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 950, 1050, 950),
             ("Johnny", "X", "https://i.imgur.com/cgLbkoE.gif", 950, 1100, 900),
+
             # Personnages SS
             ("Gyro", "SS", "https://i.imgur.com/qDnzVD7.gif", 700, 750, 700),
             ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.gif', 850, 850, 850),
@@ -616,12 +618,14 @@ all_characters_templates = {
             ("Diego Brando", "SS", "https://i.imgur.com/Ncp5cvE.jpeg", 740, 800, 730), #TOREVIEW
             ("Dio Brando", "SS", 'https://i.imgur.com/xngzKOg.gif', 800, 850, 750),
             ("Kira Yoshikage", "SS", 'https://i.imgur.com/ZQPBO3Q.gif', 700, 800, 700),
+
             # Personnages S
             ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.gif', 550, 580, 550), #TOREVIEW
             ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.gif', 550, 600, 550), #TOREVIEW
             ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm.gif", 550, 570, 550),#TOREVIEW
             ("Jolyne", "S", 'https://i.imgur.com/T2yg742.gif', 500, 550, 550),
             ("Weather Report", "S", "https://i.imgur.com/zHlZilS.gif", 550, 550, 550),
+
             # Personnages A
             ("Anasui", "A", "https://i.imgur.com/cQtCTf7.gif", 400, 450, 440),
             ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.gif', 450, 470, 430),
@@ -635,6 +639,7 @@ all_characters_templates = {
             ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF.gif", 430, 420, 410),
             ("Illuso", "A", "https://i.imgur.com/4oeiAEJ.gif", 400, 420, 440),
             ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.gif', 420, 400, 420),
+
             # Personnages B
             ("Koichi", "B", 'https://i.imgur.com/HZ9vn1d.png', 350, 360, 310),
             ("Emporio", "B", 'https://i.imgur.com/KBZCTy6.png', 320, 340, 310),
@@ -649,6 +654,7 @@ all_characters_templates = {
             ("Squalo", "B", 'https://i.imgur.com/1DP3U16.png', 310, 340, 330),
             ("Joseph", "B", 'https://i.imgur.com/YiGGszt.png', 330, 340, 310),
             ("Mista", "B", 'https://i.imgur.com/ab9sgfg.png', 340, 360, 320),
+
             # Personnages C
             ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 250, 270, 260),
             ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 260, 260, 250),
@@ -660,15 +666,18 @@ all_characters_templates = {
             ("Foo Fighters", "C", 'https://i.imgur.com/ZlCOCPn.png', 270, 240, 250),
             ("Trish", "C", 'https://i.imgur.com/I4nMHqt.png', 250, 270, 260),
             ("Hermes", "C", 'https://i.imgur.com/TbkuZDj.jpeg', 290, 250, 240),
+
             # Personnages D
             ("Abbacchio", "D", 'https://i.imgur.com/5FahNJl.png', 200, 180, 170),
             ("Daniel Darby", "D", 'https://i.imgur.com/w1Qu1p2.jpeg', 160, 170, 180),
             ("Jonathan", "D", 'https://i.imgur.com/dqGKC1P.png', 220, 200, 160),
+
             # Personnages E
             ("Straizo", "E", 'https://i.imgur.com/D4muQp5.png', 100, 130, 110),
             ("Will Zeppeli", "E", 'https://i.imgur.com/SVm9I2K.png', 120, 130, 110),
             ("Boingo", "E", 'https://i.imgur.com/I1GDLQ9.jpeg', 100, 120, 130),
             ("Oingo", "E", 'https://i.imgur.com/4t8W7rq.jpeg', 140, 130, 120),
+
             # Personnages F
             ("Tonio", "F", 'https://i.imgur.com/PIXbcZb.png', 70, 60, 50),
             ("Luca", "F", 'https://i.imgur.com/3HamVjM.png', 40, 60, 50),
@@ -680,23 +689,18 @@ all_characters_templates = {
             ("Tama", "F", 'https://i.imgur.com/1cQyIW5.jpeg', 70, 30, 50),
             ],
             "One Punch Man" : [
-
             # Personnages X
             ("Saitama", "X", "https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 0, 0, 0),
             ("Garou", "X", "https://i.pinimg.com/originals/a2/21/f2/a221f289576e45a0ed2fc3a5f6cb311e.gif", 0, 0, 0),
             ("Boros", "X", "https://steamuserimages-a.akamaihd.net/ugc/930424898985552170/32677D50B018A16166629EC271C52DD6C0644ABE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 0, 0, 0),
             
-
-
             # Personnages SS
-
             ("Watchdog Man", "SS", "https://wallpapercave.com/wp/wp8404550.jpg", 0, 0, 0), #TOREVIEW
             ("Tatsumaki", "SS", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a290752-d7eb-45e3-aa31-8e71b544cde0/ddx9bq9-b00980a3-8482-4791-bf64-f558046bb68f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhMjkwNzUyLWQ3ZWItNDVlMy1hYTMxLThlNzFiNTQ0Y2RlMFwvZGR4OWJxOS1iMDA5ODBhMy04NDgyLTQ3OTEtYmY2NC1mNTU4MDQ2YmI2OGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tQyMqurmzcRYBak3ZNXQli2kTvbsZen9MPklCMs4dsw", 0, 0, 0),
             #("Blast", "SS", image_temporaire, 0, 0, 0),
             ("King", "SS", "https://64.media.tumblr.com/bfa88447c156e886f4499efd2e85a436/tumblr_o7une2LCul1t11lc1o3_r2_500.gif", 0, 0, 0),
 
             # Personnages S
-
             ("Metal Knight", "S", "https://64.media.tumblr.com/5366a39ff74f49fa99b3b75ddcdbbe5e/tumblr_nxv9s1PRxS1s4tq6xo1_500.gif", 0, 0, 0),
             ("Flashy Flash", "S", "https://i.pinimg.com/originals/65/d9/aa/65d9aaac5b9be737a85f1e3321a31751.gif", 0, 0, 0),
             ("Bang", "S", "https://www.serieously.com/app/uploads/2021/10/sylver.gif", 0, 0, 0),
@@ -707,26 +711,26 @@ all_characters_templates = {
             ("Zombieman", "A", "https://64.media.tumblr.com/220b8ea9980e47660ccad29010900975/1c5ae4e6d2c27fda-14/s540x810/c999ca2299c96b4d60267133cd29a2de376586a9.gif", 0, 0, 0),
             ("Metal Bat", "A", "https://img.wattpad.com/50bbff7a70c378858c50f33d312d7e9163bc23b2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f41385a745f354872705631354c773d3d2d33352e313566633933666232666339383461663232323833353634353235382e676966", 0, 0, 0),
             ("Sonic", "A", "https://static.wikia.nocookie.net/one-punch-man/images/8/82/Ninja_one_punch_men.gif/revision/latest?cb=20201024101334&path-prefix=pl", 0, 0, 0),
+            
             # Personnages B
             ("Fubuki", "B", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/02/OK6W-koKDTOqqqLDbIoPArZF0g0L4GyCjAjQGnT5hNk-Cropped.png", 0, 0, 0),
             ("Child Emperor", "B", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/03/Dng4IF-W0AAEkCf.jpg", 0, 0, 0),
             ("Tanktop Master", "B", "https://static.wikia.nocookie.net/onepunchman/images/a/a8/Anime_-_Ej%C3%A9rcito_Tank_Tropper.png/revision/latest?cb=20190702134750&path-prefix=es", 0, 0, 0),
             ("Puri Puri Prisoner", "B", "https://i.redd.it/1zy1fprswuk41.jpg", 0, 0, 0),
 
-
             # Personnages C
             ("Stinger", "C", "https://i0.wp.com/i.pinimg.com/originals/31/79/a9/3179a9a797c0e033691dd2eda5b5a5b7.jpg", 0, 0, 0),
             ("Sneck", "C", "https://static.wikia.nocookie.net/onepunchman/images/6/67/SneckProfile.png/revision/latest?cb=20161112181329", 0, 0, 0),
 
             # Personnages D
-            ("Cyborgorilla", "D", "https://i.ytimg.com/vi/HJAt5DujlIw/maxresdefault.jpg", 0, 0, 0),
+            ("Cyborgorilla", "D", "https://i.ytimg.com/vi/HJAt5DujlIw/maxresdefault.jpg", 180, 180, 180),
 
             # Personnages E
-            ("Grimasse", "E", "https://static.wikia.nocookie.net/onepunchman/images/a/a4/Saitama_flippe_devant_Grimasse.png/revision/latest?cb=20190501171126&path-prefix=fr", 0, 0, 0),
-            ("Crablante", "E", "https://static.wikia.nocookie.net/villains/images/a/a5/Crabrante.jpg/revision/latest?cb=20151214015216", 0, 0, 0),
+            ("Grimasse", "E", "https://static.wikia.nocookie.net/onepunchman/images/a/a4/Saitama_flippe_devant_Grimasse.png/revision/latest?cb=20190501171126&path-prefix=fr", 120, 120, 120),
+            ("Crablante", "E", "https://static.wikia.nocookie.net/villains/images/a/a5/Crabrante.jpg/revision/latest?cb=20151214015216", 120, 120, 120),
 
             # Personnages F
-            ("Mumen Rider", "F", "https://i.redd.it/diszh9zoizoa1.jpg", 0, 0, 0),
+            ("Mumen Rider", "F", "https://i.redd.it/diszh9zoizoa1.jpg", 50, 50, 50),
             ],
             "Demon Slayer" : [
             # Personnages X
@@ -736,13 +740,11 @@ all_characters_templates = {
             ("Kokushibo", "X", "https://i.imgur.com/LZJio0L.gif", 0, 0, 0),
 
             # Personnages SS
-
             ("Gyomei", "SS", "https://i.imgur.com/lk7V07x.gif", 0, 0, 0),
             ("Doma", "SS", "https://i.imgur.com/ypkjkIk.gif", 0, 0, 0),
             ("Akaza", "SS", "https://i.imgur.com/uBwhGcG.gif", 0, 0, 0),
 
             # Personnages S
-
             ("Sanemi", "S", image_temporaire, 0, 0, 0),
             ("Muichiro", "S", image_temporaire, 0, 0, 0),
             ("Obanai", "S", image_temporaire, 0, 0, 0),
@@ -754,55 +756,54 @@ all_characters_templates = {
             ("Mitsuri", "A", image_temporaire, 0, 0, 0),
             ("Nezuko", "A", image_temporaire, 0, 0, 0),
             ("Kanao", "A", image_temporaire, 0, 0, 0),
-            ("Tamayo", "A", image_temporaire, 0, 0, 0),
-            ("Shinobu Kocho", "A", image_temporaire, 0, 0, 0),
+            ("Tamayo", "A", 'https://i.imgur.com/GVvrYyr.gif', 0, 0, 0),
+            ("Shinobu Kocho", "A", 'https://i.imgur.com/TK1yera.gif', 0, 0, 0),
 
             # Personnages B
-            ("Zenitsu", "B", "https://boutique-manga.fr/wp-content/uploads/2021/06/Zenitsu-sensei-711x400.jpg", 0, 0, 0),
-            ("Inosuke", "B", image_temporaire, 0, 0, 0),
-            ("Kaigaku", "B", image_temporaire, 0, 0, 0),
-
-            ("Genya", "B", image_temporaire, 0, 0, 0),
-            ("Daki", "B", image_temporaire, 0, 0, 0),
-            ("Enmu", "B", image_temporaire, 0, 0, 0),
+            ("Zenitsu", "B", "https://i.imgur.com/1hxD21J.jpeg", 0, 0, 0),
+            ("Inosuke", "B", 'https://i.imgur.com/h1Ek7Aa.jpeg', 0, 0, 0),
+            ("Kaigaku", "B", 'https://i.imgur.com/QmDeP6I.jpeg', 0, 0, 0),
+            ("Genya", "B", 'https://i.imgur.com/kE7DIxE.jpeg', 0, 0, 0),
+            ("Daki", "B", 'https://i.imgur.com/dNUE89G.jpeg', 0, 0, 0),
+            ("Enmu", "B", 'https://i.imgur.com/Ey0jwGH.jpeg', 0, 0, 0),
 
             # Personnages C
-            ("Rui", "C", image_temporaire, 0, 0, 0),
-            ("Mukago", "C", image_temporaire, 0, 0, 0),
-            ("Fille Araignee", "C", image_temporaire, 0, 0, 0),
-            ("Mere Araignee", "C", image_temporaire, 0, 0, 0),
-            ("Susamaru", "C", image_temporaire, 0, 0, 0),
-            ("Jigoro", "C", image_temporaire, 0, 0, 0),
-
+            ("Rui", "C", 'https://i.imgur.com/bFzI5bu.jpeg', 0, 0, 0),
+            ("Mukago", "C", 'https://i.imgur.com/EH3xfU2.png', 0, 0, 0),
+            ("Fille Araignee", "C", 'https://i.imgur.com/8ExcM9G.jpeg', 0, 0, 0),
+            ("Mere Araignee", "C", 'https://i.imgur.com/ag5zn5R.png', 0, 0, 0),
+            ("Susamaru", "C", 'https://i.imgur.com/jtutEcc.png', 0, 0, 0),
+            ("Jigoro", "C", 'https://i.imgur.com/kijkJU1.jpeg', 0, 0, 0),
 
             # Personnages D
-            ("Tanjuro", "D", image_temporaire, 0, 0, 0),
+            ("Tanjuro", "D", 'https://i.imgur.com/ksFH87B.jpeg', 180, 180, 180),
 
             # Personnages E
-            ("Shinzu", "E", image_temporaire, 0, 0, 0),
-            ("Murata", "E", image_temporaire, 0, 0, 0),
-            ("Kyogai", "E", image_temporaire, 0, 0, 0),
-            ("Kanamue", "E", image_temporaire, 0, 0, 0),
-            ("Kagaya Ubuyashiki", "E", image_temporaire, 0, 0, 0),
-
+            ("Shinzu", "E", 'https://i.imgur.com/OM3Yn5j.jpeg', 120, 120, 120),
+            ("Murata", "E", 'https://i.imgur.com/lNC5rbm.jpeg', 120, 120, 120),
+            ("Kyogai", "E", 'https://i.imgur.com/7VFZLBx.jpeg', 120, 120, 120),
+            ("Kanamue", "E", 'https://i.imgur.com/WYQmh9H.jpeg', 120, 120, 120),
+            ("Kagaya Ubuyashiki", "E", 'https://i.imgur.com/96vapZl.jpeg', 120, 120, 120),
 
             # Personnages F
-            ("Kiriya Ubuyashiki", "F", image_temporaire, 0, 0, 0),
-            ("Nichika Ubuyashiki", "F", image_temporaire, 0, 0, 0),
-            ("Chachamaru", "F", image_temporaire, 0, 0, 0),
-            ("Aoi Kanzaki", "F", image_temporaire, 0, 0, 0),
-            ("Sumi", "F", image_temporaire, 0, 0, 0),
-            ("Kiyo", "F", image_temporaire, 0, 0, 0),
-            ("Naho", "F", 'https://i.imgur.com/LyTz20q.gif', 0, 0, 0),
-            ("Goto", "F", 'https://pm1.aminoapps.com/8315/5f0fa658f4f7bd2bf29453cf963fd9b3453c9240r1-1280-719v2_hq.jpg', 0, 0, 0),
-            ("Kaburamaru", "F", 'https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kaburamaru.png/revision/latest?cb=20190831165508', 0, 0, 0),
+            ("Kiriya Ubuyashiki", "F", 'https://i.imgur.com/nszgBal.png', 50, 50, 50),
+            ("Nichika Ubuyashiki", "F", 'https://i.imgur.com/von4C2M.png', 50, 50, 50),
+            ("Chachamaru", "F", 'https://i.imgur.com/F5RzFaL.png', 50, 50, 50),
+            ("Aoi Kanzaki", "F", 'https://i.imgur.com/QWv5qQG.jpeg', 50, 50, 50),
+            ("Sumi", "F", 'https://i.imgur.com/WcLXKs0.gif', 50, 50, 50),
+            ("Kiyo", "F", 'https://i.imgur.com/l9MjiEs.jpeg', 50, 50, 50),
+            ("Naho", "F", 'https://i.imgur.com/LyTz20q.gif', 50, 50, 50),
+            ("Goto", "F", 'https://i.imgur.com/3cYKi06.jpeg', 50, 50, 50),
+            ("Kaburamaru", "F", 'https://i.imgur.com/ZtQxLvw.jpeg', 50, 50, 50),
             ],
             "Full Metal Alchemist" : [ # ✅
             # Personnages X
             ("Pere", "X", "https://i.imgur.com/X617w07.gif", 963, 963, 963),
+
             # Personnages SS
             ("Hohenheim", "SS", "https://i.imgur.com/bMNh7n0.gif", 720, 730, 735),
             ("King Bradley", "SS", "https://i.imgur.com/Di7mjqq.gif", 750, 770, 750),
+
             # Personnages S
             ("Edward", "S", "https://i.imgur.com/Lmbb9ZT.gif", 540, 555, 530),
             ("Izumi Curtis", "S", "https://i.imgur.com/WBcqtWl.gif", 535, 540, 530),
@@ -811,6 +812,7 @@ all_characters_templates = {
             ("Scar", "S", 'https://i.imgur.com/9dw5ri9.gif', 580, 600, 790), # high S
             ("Kimbley", "S", 'https://i.imgur.com/r9nB7SF.gif', 530, 555, 535),
             ("Selim", "S", 'https://i.imgur.com/XYj2ZtU.gif', 545, 560, 540),
+
             # Personnages A
             ("Ling Yao", "A", 'https://i.imgur.com/cEoziXY.gif', 420, 430, 410),
             ("Envy", "A", 'https://i.imgur.com/rRFT3ec.gif', 440, 430, 420),
@@ -819,6 +821,7 @@ all_characters_templates = {
             ("Lust", "A", 'https://i.imgur.com/lriujEU.gif', 420, 410, 440),
             ("Olivia Mira Armstrong", "A", 'https://i.imgur.com/Jwzc22O.gif', 440, 450, 420),
             ("Alex Louis Armstrong", "A", 'https://i.imgur.com/Hx8D4HJ.gif', 450, 430, 430),
+
             # Personnages B
             ("Mei Chang", "B", 'https://i.imgur.com/tfeqXJu.jpeg', 330, 325, 335),
             ("Riza Hawkeye", "B", 'https://i.imgur.com/vTsQ4ZZ.jpeg', 335, 330, 325),
@@ -857,16 +860,19 @@ all_characters_templates = {
             # """ PERSONNAGES SNK """
             # Personnages X
             ("Eren Yeager", "X", "https://i.imgur.com/izA5HAI.gif", 960, 950, 945),
+
             # Personnages SS
             ("Armin", "SS", "https://i.imgur.com/CFmYNyt.gif", 750, 655, 750),
             ("Bertholdt Hoover", "SS", "https://i.imgur.com/kyjgDwH.gif", 750, 650, 750),
             ("Levi Ackerman", "SS", "https://i.imgur.com/YdrDGay.gif", 600, 750, 600),
             ("Reiner Braun", "SS", "https://i.imgur.com/cEEtTgd.gif", 700, 730, 750),
+
             # Personnages S
             ("Annie Leonhart", "S", "https://i.imgur.com/mmktpLk.gif", 500, 600, 500),
             ("Sieg Yeager", "S", "https://i.imgur.com/cKjSldG.gif", 540, 540, 550),
             ("Mikasa Ackerman", "S", "https://i.imgur.com/GKcCmA0.gif", 490, 600, 450),
             ("Pieck Finger", "S", "https://i.imgur.com/1oeKEPN.gif", 510, 520, 510),
+
             # Personnages A
             ("Xaver", "A", "https://i.imgur.com/qr62Ecp.jpeg", 500, 330, 500),
             ("Grisha Yeager", "A", "https://i.imgur.com/D5avB4O.gif", 410, 430, 415),
@@ -875,12 +881,14 @@ all_characters_templates = {
             ("Kenny Ackerman", "A", "https://i.imgur.com/QQwRAlM.gif", 380, 500, 385),
             ("Porco Galliard", "A", "https://i.imgur.com/b78cQir.gif", 410, 430, 420),
             ("Erwin", "A", "https://i.imgur.com/0WfIayb.gif", 330, 360, 390),
+
             # Personnages B
             ("Mike Zacharias", "B", "https://i.imgur.com/CdhigbE.png", 300, 400, 300),
             ("Frieda Reiss", "B", "https://i.imgur.com/CScADUO.png", 290, 340, 300),
             ("Jean Kirstein", "B", "https://i.imgur.com/7erh7rA.png", 310, 320, 280),
             ("Hange Zoe", "B", "https://i.imgur.com/IiSqnok.png", 300, 320, 310),
             ("Rhodes Reiss", "B", "https://i.imgur.com/fzsHl7c.png", 500, 200, 400),
+
             # Personnages C
             ("Hannes", "C", "https://i.imgur.com/XtZvC0L.jpeg", 280, 330, 290),
             ("Historia", "C", "https://i.imgur.com/u6tCLmq.jpeg",230, 245, 230),
@@ -888,13 +896,16 @@ all_characters_templates = {
             ("Pixis", "C", "https://i.imgur.com/Vx416zK.png", 220, 210, 210),
             ("Sacha", "C", "https://i.imgur.com/XHs9rWi.png", 230, 260, 230),
             ("Kony", "C", "https://i.imgur.com/7MNFSc1.jpeg", 220, 240, 230),
+
             # Personnages D
             ("Gabi Braun", "D", "https://i.imgur.com/iBw8k6t.png", 160, 180, 140),
             ("Udo", "D", "https://i.imgur.com/p1NWLXE.png", 140, 160, 120),
             ("Zofia", "D", "https://i.imgur.com/99zdhK5.png", 145, 165, 125),
+
             # Personnages E
             ("Theo Magath", "E", "https://i.imgur.com/0cq6zdB.png", 100, 110, 100),
             ("Yelena", "E", "https://i.imgur.com/9LfUJq0.png", 90, 120, 90),
+
             # Personnages F
             ("Willy", "F", "https://i.imgur.com/M8eXW0o.jpeg", 40, 50, 40),
             ("Onyankopon", "F", "https://i.imgur.com/wylRQBl.jpeg", 50, 50, 50),
@@ -920,31 +931,34 @@ all_characters_templates = {
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
             ],
             "Chainsaw Man" : [ # ✅
-                ("Denji", "X", "https://i.imgur.com/YnDFcsy.gif", 940, 960, 945),
-                ("Makima", "X", "https://i.imgur.com/UCcRxPY.gif", 910, 950, 920),
+            # Personnages X
+            ("Denji", "X", "https://i.imgur.com/YnDFcsy.gif", 940, 960, 945),
+            ("Makima", "X", "https://i.imgur.com/UCcRxPY.gif", 910, 950, 920),
 
-                ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 720, 730, 715),
+            # Personnages SS
+            ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 720, 730, 715),
+
+            # Personnages S  
+            ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 510, 570, 540),
+            ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 520, 540, 530),
+            ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 530, 560, 555),
+            ("Samurai Sword", "S", "https://i.imgur.com/8Bj3B08.gif", 565, 580, 575),
+            ("Akane Sawatari", "S", "https://i.imgur.com/mbr0WZ8.gif", 540, 565, 545),
                 
-                ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 510, 570, 540),
-                ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 520, 540, 530),
-                ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 530, 560, 555),
-                ("Samurai Sword", "S", "https://i.imgur.com/8Bj3B08.gif", 565, 580, 575),
-                ("Akane Sawatari", "S", "https://i.imgur.com/mbr0WZ8.gif", 540, 565, 545),
-                
-                ("Power", "A", "https://i.imgur.com/WzSAOuy.gif", 410, 430, 425),
+            # Personnages A
+            ("Power", "A", "https://i.imgur.com/WzSAOuy.gif", 410, 430, 425),
 
+            # Personnages B
+            ("Kobeni Higashiyama", "B", "https://i.imgur.com/yB3UtcT.jpeg", 330, 320, 315),
+            ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 340, 320, 315),
+            ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 330, 340, 310),
 
-                ("Kobeni Higashiyama", "B", "https://i.imgur.com/yB3UtcT.jpeg", 330, 320, 315),
-                ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 340, 320, 315),
-                ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 330, 340, 310),
+            # Personnages C
+            ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 240, 250, 255),
+            ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 255, 250, 240),
 
-                ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 240, 250, 255),
-                ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 255, 250, 240),
-
-
-
-
-                ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 40, 55, 50),
+            # Personnages F
+            ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 40, 55, 50),
             ]
 }
 
