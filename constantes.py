@@ -1,6 +1,6 @@
 CONSTANTS = {
     'HOURLY_TICKETS': 3,
-    'INVOCATION_COST': 0,
+    'INVOCATION_COST': 1,
     'MAX_CHARACTERS': 60,
     'BASE_CHANCE_VICTORY': 0.6,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
@@ -19,7 +19,7 @@ CONSTANTS = {
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
         'X': 0.01,
-        'SS': 2,
+        'SS': 0.02,
         'S': 0.05,
         'A': 0.1,
         'B': 0.15,
@@ -176,6 +176,7 @@ ennemis = {
         'couleur' : CONSTANTS['COLORS']['UVOGUINE'],
         'nomGif' : 'uvoguine',
         'nomPfp' : 'uvoguine',
+        'isNotGif' : False,
         'stats' : {
             'HP' : 500,
             'ATK' : 700,

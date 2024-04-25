@@ -1564,6 +1564,21 @@ async def fakeTeam(message, userFromDb):
     await message.channel.send(embed=embed_info("Team ajoutée", "Votre team a été ajoutée!", discord.Color.green()))
 
 @bot.command()
+async def fakeCharacter(message, userFromDb):
+    # Donne un personnage
+    contenu = message.content
+    if len(contenu.split(' ')) < 2:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!fakecharacter <nom personnage>**!", discord.Color.red()))
+        return
+    nom = " ".join(contenu.split(' ')[1:])
+    character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
+    if character == None:
+        await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
+        return
+    database.create_character(message.author.id, message.author.name, character[0])
+    await message.channel.send(embed=embed_info("Personnage ajouté", f"Vous avez obtenu **{nom}**!", discord.Color.green()))
+
+@bot.command()
 async def getPower(message, userFromDb):
     user = await fetch_user_from_message(message, 2)
     if not user:
@@ -1749,9 +1764,10 @@ commands = {
     "cla": classement,
     "ran": classement,
     "infot": infoTechnique,
-    "fake": fakeTeam,
+    "fakeT": fakeTeam,
     "stat": fakeStatistiquesCombat,
-    "affi": afficherUnivers
+    "affi": afficherUnivers,
+    "fakeCh": fakeCharacter,
 }
 
 
