@@ -604,91 +604,80 @@ all_characters_templates = {
             ],
             "Jojo's Bizarre Adventure" : [
             # Personnages X
-            ("Giorno", "X", 'https://imgur.com/iJ9oUE1', 900, 1200, 950),
-            ("Pucci", "X", 'https://imgur.com/hWurlzP', 950, 1200, 900),
+            ("Giorno Giovanna", "X", 'https://imgur.com/iJ9oUE1', 900, 1200, 950),
+            ("Enrico Pucci", "X", 'https://imgur.com/hWurlzP', 950, 1200, 900),
             ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 950, 1050, 950),
             ("Johnny", "X", "https://imgur.com/839IXuS", 950, 1100, 900),
-            
             # Personnages SS
             ("Gyro", "SS", "https://imgur.com/sPFgVJQ", 700, 750, 700),
-            ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.png', 850, 850, 850),
-            ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.png', 750, 850, 700),
-            ("Jotaro", "SS", 'https://i.imgur.com/XzBAKKf.gif', 750, 800, 750),
-            ("Diego", "SS", "https://imgur.com/Ncp5cvE", 740, 800, 730), #TOREVIEW
-            ("Dio", "SS", 'https://i.imgur.com/xngzKOg.png', 800, 850, 750),
-            ("Kira", "SS", 'https://i.imgur.com/ZQPBO3Q.png', 700, 800, 700),
-
+            ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.gif', 850, 850, 850),
+            ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.gif', 750, 850, 700),
+            ("Jotaro Kujo", "SS", 'https://i.imgur.com/XzBAKKf.gif', 750, 800, 750),
+            ("Diego Brando", "SS", "https://i.imgur.com/Ncp5cvE.jpeg", 740, 800, 730), #TOREVIEW
+            ("Dio Brando", "SS", 'https://i.imgur.com/xngzKOg.gif', 800, 850, 750),
+            ("Kira Yoshikage", "SS", 'https://i.imgur.com/ZQPBO3Q.gif', 700, 800, 700),
             # Personnages S
-            ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.png', 550, 580, 550), #TOREVIEW
-            ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.png', 550, 600, 550), #TOREVIEW
-            ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm", 550, 570, 550),#TOREVIEW
-            ("Jolyne", "S", 'https://i.imgur.com/T2yg742.png', 500, 550, 550),
-            ("Weather Report", "S", "https://i.imgur.com/zHlZilS", 550, 550, 550),
-            
+            ("Josuke", "S", 'https://i.imgur.com/AcnhlnJ.gif', 550, 580, 550), #TOREVIEW
+            ("Fugo", "S", 'https://i.imgur.com/gBcvGNj.gif', 550, 600, 550), #TOREVIEW
+            ("Vanilla Ice", "S", "https://i.imgur.com/VoH5XBm.gif", 550, 570, 550),#TOREVIEW
+            ("Jolyne", "S", 'https://i.imgur.com/T2yg742.gif', 500, 550, 550),
+            ("Weather Report", "S", "https://i.imgur.com/zHlZilS.gif", 550, 550, 550),
             # Personnages A
-            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 420, 450, 420),
-            ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.png', 450, 450, 450),
-            ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.png', 420, 480, 420),
-            ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.png', 400, 440, 420),
-            ("Kakyoin", "A", 'https://i.imgur.com/ZsxN3PG.png', 420, 420, 420),
-            ("Polnareff", "A", 'https://i.imgur.com/eZjHHa9.png', 420, 450, 420),
-            ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.png', 420, 450, 420),
-            ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.png', 420, 420, 420),
-            ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.png', 420, 420, 420),
-            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 420, 420, 420),
-            ("Illuso", "A", "https://i.imgur.com/4oeiAEJ", 420, 420, 420),
-            ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.png', 420, 420, 420),
-
-            
+            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 400, 450, 440),
+            ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.gif', 450, 470, 430),
+            ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.gif', 440, 480, 400),
+            ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.gif', 410, 440, 430),
+            ("Kakyoin", "A", 'https://i.imgur.com/ZsxN3PG.gif', 440, 420, 400),
+            ("Polnareff", "A", 'https://i.imgur.com/eZjHHa9.gif', 430, 450, 410),
+            ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.gif', 430, 450, 410),
+            ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.gif', 440, 420, 400),
+            ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.gif', 410, 420, 430),
+            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 430, 420, 410),
+            ("Illuso", "A", "https://i.imgur.com/4oeiAEJ.gif", 400, 420, 440),
+            ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.gif', 420, 400, 420),
             # Personnages B
-            ("Koichi", "B", 'https://i.imgur.com/HZ9vn1d.png', 330, 360, 320),
-            ("Emporio", "B", 'https://i.imgur.com/KBZCTy6.png', 300, 340, 320),
-            ("Akira", "B", 'https://i.imgur.com/xn6pX9Z.png', 300, 370, 320), #TOREVIEW
-            ("Narancia", "B", 'https://i.imgur.com/ndZcfok.png', 300, 350, 320),
-            ("Yukako", "B", 'https://i.imgur.com/JZKQ2KS.png', 330, 330, 320),
-            ("Miyamoto", "B", 'https://i.imgur.com/lZLlEhu.png', 300, 330, 320),
-            ("Wamuu", "B", 'https://i.imgur.com/2Jc0FTu.png', 340, 320, 340),
-            ("Esidisi", "B", 'https://i.imgur.com/mdsI4Ir.png', 340, 320, 340),
-            ("Pesci", "B", 'https://i.imgur.com/RiqetYG.png', 300, 320, 330),
-            ("Melone ", "B", 'https://i.imgur.com/EMitGnp.png', 330, 320, 310),
-            ("Squalo", "B", 'https://i.imgur.com/1DP3U16.png', 320, 340, 320),
-            ("Joseph", "B", 'https://i.imgur.com/YiGGszt.png', 340, 340, 320),
-            ("Mista", "B", 'https://i.imgur.com/ab9sgfg.png', 330, 360, 320),
-
-
+            ("Koichi", "B", 'https://i.imgur.com/HZ9vn1d.png', 350, 360, 310),
+            ("Emporio", "B", 'https://i.imgur.com/KBZCTy6.png', 320, 340, 310),
+            ("Akira", "B", 'https://i.imgur.com/xn6pX9Z.png', 290, 370, 330),
+            ("Narancia", "B", 'https://i.imgur.com/ndZcfok.png', 310, 350, 310),
+            ("Yukako", "B", 'https://i.imgur.com/JZKQ2KS.png', 340, 330, 310),
+            ("Miyamoto", "B", 'https://i.imgur.com/lZLlEhu.png', 310, 330, 320),
+            ("Wamuu", "B", 'https://i.imgur.com/2Jc0FTu.png', 330, 320, 350),
+            ("Esidisi", "B", 'https://i.imgur.com/mdsI4Ir.png', 360, 320, 320),
+            ("Pesci", "B", 'https://i.imgur.com/RiqetYG.png', 320, 320, 310),
+            ("Melone", "B", 'https://i.imgur.com/EMitGnp.png', 310, 320, 330),
+            ("Squalo", "B", 'https://i.imgur.com/1DP3U16.png', 310, 340, 330),
+            ("Joseph", "B", 'https://i.imgur.com/YiGGszt.png', 330, 340, 310),
+            ("Mista", "B", 'https://i.imgur.com/ab9sgfg.png', 340, 360, 320),
             # Personnages C
-            ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 260, 270, 260),
-            ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 250, 260, 250),
-            ("Shigechi", "C", 'https://i.imgur.com/6JKniYe.png', 230, 230, 220),
-            ("Mikitaka", "C", 'https://i.imgur.com/mMs5O78.png', 260, 240, 230),
-            ("Iggy", "C", 'https://i.imgur.com/HTb59id.png', 230, 260, 220),
-            ("Formaggio", "C", 'https://i.imgur.com/WCQtqwq.png', 240, 270, 240),
-            ("Stroheim", "C", 'https://i.imgur.com/OvyOZy3.png', 260, 230, 240),
-            ("Foo Fighters", "C", 'https://i.imgur.com/ZlCOCPn.png', 260, 240, 260),
-            ("Trish", "C", 'https://i.imgur.com/I4nMHqt.png', 240, 270, 240),
-            ("Hermes", "C", 'https://imgur.com/TbkuZDj', 270, 250, 260),
-
+            ("Caesar", "C", 'https://i.imgur.com/3nzbH8Y.png', 250, 270, 260),
+            ("Lisa Lisa", "C", 'https://i.imgur.com/YAcAs5c.jpeg', 260, 260, 250),
+            ("Shigechi", "C", 'https://i.imgur.com/6JKniYe.png', 240, 230, 220),
+            ("Mikitaka", "C", 'https://i.imgur.com/mMs5O78.png', 270, 240, 230),
+            ("Iggy", "C", 'https://i.imgur.com/HTb59id.png', 250, 260, 220),
+            ("Formaggio", "C", 'https://i.imgur.com/WCQtqwq.png', 260, 270, 220),
+            ("Stroheim", "C", 'https://i.imgur.com/OvyOZy3.png', 280, 230, 240),
+            ("Foo Fighters", "C", 'https://i.imgur.com/ZlCOCPn.png', 270, 240, 250),
+            ("Trish", "C", 'https://i.imgur.com/I4nMHqt.png', 250, 270, 260),
+            ("Hermes", "C", 'https://i.imgur.com/TbkuZDj.jpeg', 290, 250, 240),
             # Personnages D
-            ("Abbacchio", "D", 'https://i.imgur.com/5FahNJl.png', 180, 200, 190),
-            ("Daniel Darby", "D", 'https://imgur.com/w1Qu1p2', 170, 170, 170), #TOREVIEW
-            ("Jonathan", "D", 'https://i.imgur.com/dqGKC1P.png', 200, 200, 200),
-
+            ("Abbacchio", "D", 'https://i.imgur.com/5FahNJl.png', 200, 180, 170),
+            ("Daniel Darby", "D", 'https://i.imgur.com/w1Qu1p2.jpeg', 160, 170, 180),
+            ("Jonathan", "D", 'https://i.imgur.com/dqGKC1P.png', 220, 200, 160),
             # Personnages E
-            ("Straizo", "E", 'https://i.imgur.com/D4muQp5.png', 110, 130, 120),
-            ("Will Zeppeli", "E", 'https://i.imgur.com/SVm9I2K.png', 120, 130, 120),
-            ("Boingo", "E", 'https://imgur.com/I1GDLQ9', 110, 120, 120),
-            ("Oingo","E", 'https://imgur.com/4t8W7rq', 130, 130, 120),
-
+            ("Straizo", "E", 'https://i.imgur.com/D4muQp5.png', 100, 130, 110),
+            ("Will Zeppeli", "E", 'https://i.imgur.com/SVm9I2K.png', 120, 130, 110),
+            ("Boingo", "E", 'https://i.imgur.com/I1GDLQ9.jpeg', 100, 120, 130),
+            ("Oingo", "E", 'https://i.imgur.com/4t8W7rq.jpeg', 140, 130, 120),
             # Personnages F
-            ("Tonio", "F", 'https://i.imgur.com/PIXbcZb.png', 50, 60, 50),
-            ("Luca", "F", 'https://i.imgur.com/3HamVjM.png', 40, 50, 60),
-            ("Anne", "F", 'https://imgur.com/AkQ1PV2', 50, 40, 50),
-            ("Speedwagon", "F", 'https://i.imgur.com/Q4pR4ws.png', 50, 60, 50),
-            ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 40, 50, 40),
-            ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 50, 50, 50),
-            ("Dario Brando", "F", "https://imgur.com/LjMHPwB", 40, 40, 40),
-            ("Tama", "F", 'https://imgur.com/1cQyIW5', 50, 30, 60), #ALICE
-
+            ("Tonio", "F", 'https://i.imgur.com/PIXbcZb.png', 70, 60, 50),
+            ("Luca", "F", 'https://i.imgur.com/3HamVjM.png', 40, 60, 50),
+            ("Anne", "F", 'https://i.imgur.com/AkQ1PV2.jpeg', 70, 40, 50),
+            ("Speedwagon", "F", 'https://i.imgur.com/Q4pR4ws.png', 50, 60, 70),
+            ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 50, 60, 30),
+            ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 70, 50, 30),
+            ("Dario Brando", "F", "https://imgur.com/LjMHPwB", 60, 40, 20),
+            ("Tama", "F", 'https://i.imgur.com/1cQyIW5.jpeg', 70, 30, 50),
             ],
             "One Punch Man" : [
 
@@ -988,48 +977,48 @@ all_synergies = [
     (26, "Kumo", "ATK", 0.15, "Kumo est le village cache des Nuages, l'un des cinq grands villages ninjas.", image_temporaire, "#FFA500"),
     (27, "Iwa", "ATK", 0.15, "Iwa est le village cache de la Roche, l'un des cinq grands villages ninjas.", image_temporaire, "#0000FF"),
     (28, "Receptacle", "ATK", 0.15, "Les Receptacles sont des personnes qui ont un Monstre scelle en eux.", image_temporaire, "#800080"),
-    (29, "Maître du Feu", "ATK", 0.15, "Les Maîtres du Feu sont des personnages qui maîtrisent le feu.", image_temporaire, "#FFA500"),
-    (30, "Maître de l'Eau", "ATK", 0.15, "Les Maîtres de l'Eau sont des personnages qui maîtrisent l'eau.", image_temporaire, "#0000FF"),
-    (31, "Maître de la Terre", "ATK", 0.15, "Les Maîtres de la Terre sont des personnages qui maîtrisent la terre.", image_temporaire, "#800080"),
-    (32, "Maître de l'Air", "ATK", 0.15, "Les Maîtres de l'Air sont des personnages qui maîtrisent l'air.", image_temporaire, "#FF0000"),
-    (33, "Maître de la Foudre", "ATK", 0.15, "Les Maîtres de la Foudre sont des personnages qui maîtrisent l'eclair.", image_temporaire, "#FFA500"),
-    (34, "Maître de la Glace", "ATK", 0.15, "Les Maîtres de la Glace sont des personnages qui maîtrisent la glace.", image_temporaire, "#0000FF"),
-    (35, "Maître de leclair ", "ATK", 0.15, "Les Maîtres de la Foudre sont des personnages qui maîtrisent la foudre.", image_temporaire, "#800080"),
-    (36, "Maître de la Lave", "ATK", 0.15, "Les Maîtres de la Lave sont des personnages qui maîtrisent la lave.", image_temporaire, "#FF0000"),
-    (37, "Maître du Bois", "ATK", 0.15, "Les Maîtres du Bois sont des personnages qui maîtrisent le bois.", image_temporaire, "#FFA500"),
-    (38, "Maître du Vent", "ATK", 0.15, "Les Maîtres du Vent sont des personnages qui maîtrisent le vent.", image_temporaire, "#0000FF"),
-    (39, "Maître du Sable", "ATK", 0.15, "Les Maîtres du Sable sont des personnages qui maîtrisent le sable.", image_temporaire, "#800080"),
+    (29, "Maitre du Feu", "ATK", 0.15, "Les Maitres du Feu sont des personnages qui maitrisent le feu.", image_temporaire, "#FFA500"),
+    (30, "Maitre de l'Eau", "ATK", 0.15, "Les Maitres de l'Eau sont des personnages qui maitrisent l'eau.", image_temporaire, "#0000FF"),
+    (31, "Maitre de la Terre", "ATK", 0.15, "Les Maitres de la Terre sont des personnages qui maitrisent la terre.", image_temporaire, "#800080"),
+    (32, "Maitre de l'Air", "ATK", 0.15, "Les Maitres de l'Air sont des personnages qui maitrisent l'air.", image_temporaire, "#FF0000"),
+    (33, "Maitre de la Foudre", "ATK", 0.15, "Les Maitres de la Foudre sont des personnages qui maitrisent l'eclair.", image_temporaire, "#FFA500"),
+    (34, "Maitre de la Glace", "ATK", 0.15, "Les Maitres de la Glace sont des personnages qui maitrisent la glace.", image_temporaire, "#0000FF"),
+    (35, "Maitre de leclair ", "ATK", 0.15, "Les Maitres de la Foudre sont des personnages qui maitrisent la foudre.", image_temporaire, "#800080"),
+    (36, "Maitre de la Lave", "ATK", 0.15, "Les Maitres de la Lave sont des personnages qui maitrisent la lave.", image_temporaire, "#FF0000"),
+    (37, "Maitre du Bois", "ATK", 0.15, "Les Maitres du Bois sont des personnages qui maitrisent le bois.", image_temporaire, "#FFA500"),
+    (38, "Maitre du Vent", "ATK", 0.15, "Les Maitres du Vent sont des personnages qui maitrisent le vent.", image_temporaire, "#0000FF"),
+    (39, "Maitre du Sable", "ATK", 0.15, "Les Maitres du Sable sont des personnages qui maitrisent le sable.", image_temporaire, "#800080"),
     (40, "epeiste", "ATK", 0.15, "Les epeistes sont des combattants qui utilisent une epee pour se battre.", image_temporaire, "#FF0000"),
     (41, "Telekinesiste", "ATK", 0.15, "Les Telekinesistes sont des personnes qui peuvent deplacer des objets par la pensee ou ont des pouvoirs psychiques.", image_temporaire, "#FFA500"),
     (42, "Equipage de Barbe Noire", "ATK", 0.15, "L'equipage de Barbe Noire est un groupe de pirates dirige par Barbe Noire.", image_temporaire, "#0000FF"),
     (43, "Equipage de Barbe Blanche", "ATK", 0.15, "L'equipage de Barbe Blanche est un groupe de pirates dirige par Barbe Blanche.", image_temporaire, "#800080"),
     (44, "Uzumaki", "ATK", 0.15, "Le clan Uzumaki est connu pour sa longevite et ses capacites de guerison.", 'https://static1.srcdn.com/wordpress/wp-content/uploads/2022/03/Uzumaki-Clan.jpg', "#FF0000"),
     (45, "Hyuga", "ATK", 0.15, "Le clan Hyuga est connu pour son Byakugan et ses techniques de combat douces.", image_temporaire, "#FFA500"),
-    (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacite à maîtriser les Bijuus.", image_temporaire, "#0000FF"),
+    (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacite à maitriser les Bijuus.", image_temporaire, "#0000FF"),
     (47, "Otsutsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planetes pour obtenir du chakra.", image_temporaire, "#800080"),
     (48, "Insecte", "ATK", 0.15, "Les Insectes sont des creatures qui possedent des pouvoirs speciaux.", image_temporaire, "#FF0000"),
     (49, "Garde Royale", "ATK", 0.15, "La Garde Royale est un groupe qui s'assure de la securite du roi.", image_temporaire, "#FFA500"),
-    (50, "Zeppeli", "ATK", 0.15, "Les Zeppelis sont une famille de maîtres de l'Onde qui combattent les vampires.", image_temporaire, "#0000FF"),
+    (50, "Zeppeli", "ATK", 0.15, "Les Zeppelis sont une famille de maitres de l'Onde qui combattent les vampires.", image_temporaire, "#0000FF"),
     (52, "Homme du pillar", "ATK", 0.15, "Les Pillars sont des guerriers qui servent les vampires et protegent la pierre rouge de l'Aja.", image_temporaire, "#FF0000"),
-    (53, "Maître du Temps", "ATK", 0.15, "Les Maîtres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
-    (54, "Maître de l'Explosion", "ATK", 0.15, "Les Maîtres de l'Explosion sont des personnages qui peuvent creer des explosions.", image_temporaire, "#0000FF"),
+    (53, "Maitre du Temps", "ATK", 0.15, "Les Maitres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
+    (54, "Maitre de l'Explosion", "ATK", 0.15, "Les Maitres de l'Explosion sont des personnages qui peuvent creer des explosions.", image_temporaire, "#0000FF"),
     (55, "Squadra Esecuzioni", "ATK", 0.15, "La Squadra Esecuzioni est un groupe de tueurs à gages qui travaillent pour la Passione.", image_temporaire, "#0000FF"),
     (56, "Hamon", "ATK", 0.15, "Le Hamon est une technique de combat qui utilise l'energie du soleil pour attaquer les vampires.", image_temporaire, "#800080"),
     (57, "Passione", "ATK", 0.15, "La Passione est une organisation criminelle italienne qui contrôle le trafic de drogue.", image_temporaire, "#FF0000"),
     (58, "Team Bucciarati", "ATK", 0.15, "La Team Bucciarati est un groupe de gangsters qui travaillent pour la Passione.", image_temporaire, "#FFA500"),
     (59, "JoBros", "ATK", 0.15, "Les JoBros sont les amis et allies des Joestars qui les aident dans leur combat contre le mal.", image_temporaire, "#0000FF"),
-    (60, "Île de Sirop", "ATK", 0.15, "L'Île de Sirop est une île paradisiaque où les habitants vivent en paix et en harmonie.", image_temporaire, "#800080"),
+    (60, "ile de Sirop", "ATK", 0.15, "L'ile de Sirop est une ile paradisiaque où les habitants vivent en paix et en harmonie.", image_temporaire, "#800080"),
     (61, "equipage de Shanks", "ATK", 0.15, "L'equipage de Shanks est un groupe de pirates dirige par Shanks le Roux.", image_temporaire, "#0000FF"),
     (62, "equipage de Kaido", "ATK", 0.15, "L'equipage de Kaido est un groupe de pirates dirige par Kaido le Cent betes.", image_temporaire, "#800080"),
     (63, "equipage de Big Mom", "ATK", 0.15, "L'equipage de Big Mom est un groupe de pirates dirige par Big Mom.", image_temporaire, "#FF0000"),
     (64, "Draconique", "ATK", 0.15, "Les Dragons sont des creatures mythiques qui possedent des pouvoirs magiques.", image_temporaire, "#FFA500"),
     (65, "Speedster", "ATK", 0.15, "Les Speedsters sont des personnages qui peuvent se deplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
     (66, "Aveugle", "ATK", 0.4 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont developpe d'autres sens pour compenser.", image_temporaire, "#800080"),
-    (67, "Dojo de Bang", "ATK", 0.15, "Le Dojo de Bang est un lieu d'entraînement où les disciples apprennent les techniques de combat de Bang.", image_temporaire, "#FF0000"),
+    (67, "Dojo de Bang", "ATK", 0.15, "Le Dojo de Bang est un lieu d'entrainement où les disciples apprennent les techniques de combat de Bang.", image_temporaire, "#FF0000"),
     (68, "Cyborg", "ATK", 0.15, "Les Cyborgs sont des etres humains qui ont ete ameliores avec des technologies cybernetiques.", image_temporaire, "#FFA500"),
     (69, "JoJo", "ATK", 0.15, "Les JoJos sont les membres de la famille Joestar qui luttent contre les forces du mal.", image_temporaire, "#0000FF"),
     (70, "Fleaux", "ATK", 0.15, "Les Fleaux sont des creatures malefiques qui apportent la destruction et la mort partout où ils passent.", image_temporaire, "#800080"),
-    (71, "ecole de Tokyo", "ATK", 0.15, "L'ecole de Tokyo est un etablissement scolaire où les eleves apprennent à maîtriser leurs pouvoirs surnaturels.", image_temporaire, "#FF0000"),
+    (71, "ecole de Tokyo", "ATK", 0.15, "L'ecole de Tokyo est un etablissement scolaire où les eleves apprennent à maitriser leurs pouvoirs surnaturels.", image_temporaire, "#FF0000"),
     (72, "ecole de Kyoto", "ATK", 0.15, "L'ecole de Kyoto est un etablissement scolaire rival de l'ecole de Tokyo.", image_temporaire, "#FFA500"),
     (73, "Zenin", "ATK", 0.15, "Le clan Zenin est une famille de sorciers qui possede des pouvoirs magiques.", image_temporaire, "#0000FF"),
     (74, "Kamo", "ATK", 0.15, "Le clan Kamo est une famille de sorciers qui possede des pouvoirs magiques.", image_temporaire, "#800080"),
@@ -1046,7 +1035,7 @@ all_synergies = [
     (85, "Souffle de la Fleur", "ATK", 0.15, "Le Souffle de la Fleur est une technique de combat utilisee par les pourfendeurs de demons.", image_temporaire, "#0000FF"),
     (86, "Lune", "ATK", 0.15, "Les Lunes sont des demons puissants qui servent Muzan.", image_temporaire, "#800080"),
     (87, "Brando", "ATK", 0.15, "Les Brando sont une famille de vampires qui cherchent à dominer le monde.", image_temporaire, "#FF0000"),
-    (88, "Maître de la Gravite", "ATK", 0.15, "Les Maîtres de la Gravite sont des personnages qui peuvent contrôler la gravite.", image_temporaire, "#FFA500"),
+    (88, "Maitre de la Gravite", "ATK", 0.15, "Les Maitres de la Gravite sont des personnages qui peuvent contrôler la gravite.", image_temporaire, "#FFA500"),
     (89, "Armstrong", "ATK", 0.15, "La famille Armstrog est une famille illustre et noble qui a servi Amestris pendant des generations.", image_temporaire, "#0000FF"),
     (90, "Homonculus", "ATK", 0.15, "Les Homonculus sont des etres artificiels crees par le Pere pour servir ses desseins.", image_temporaire, "#800080"),
     (91, "Alchimiste d'Etat", "ATK", 0.15, "Les Alchimistes d'Etat sont des alchimistes qui servent le gouvernement d'Amestris.", image_temporaire, "#FF0000"),
@@ -1069,7 +1058,8 @@ all_synergies = [
     (108, "Hunter étoilé", "ATK", 0.15, "L'Association Hunter est une organisation de chasseurs qui traquent les creatures rares et les criminels. Les hunters étoilés sont leurs meilleurs atouts.", "https://i.imgur.com/fHvGkwX.jpeg", "#f40000"),
     (109, "Zodiac", "ATK", 0.15, "Les Zodiacs sont les douze membres du conseil des Hunters qui sont les plus puissants et les plus influents de l'Association Hunter.", "https://i.imgur.com/fHvGkwX.jpeg", "#FFA500"),
     (110, "Brigade Fantome", "ATK", 0.15, "La Brigade Fantome est une organisation criminelle qui lutte contre l'Association Hunter.", "https://i.imgur.com/2KZe6ug.gif", "#00000"),
-    (111, "Forme de vie ultime", "ATK", 0.15, "Les formes de vie ultime sont des créatures ultimes qui dépassent les limites de l'humanité.", "", "#00000"),
+    (111, "Forme de vie ultime", "ATK", 0.15, "Les formes de vie ultime sont des créatures ultimes qui dépassent les limites de l'humanité.", image_temporaire, "#00000"),
+    (112, "Voleur de Pouvoir", "ATK", 0.15, "Les Voleurs de Pouvoir sont des individus qui volent les pouvoirs des autres pour les utiliser à leur avantage.", image_temporaire, "#00000"),
     
 
 ]
@@ -1077,6 +1067,7 @@ all_synergies = [
 # FAIRE FAMILLY KUCHIKI 
 
 all_link_synergies = {
+    112 : ["Kuroro Lucifer","All For One","Yhwach"], # Voleur de Pouvoir
     111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
     110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Shalnark", "Bonolenov", "Karuto Zoldyck", "Uvogin"], # Brigade Fantome
     109 : ["Leorio","Ging Freecs", "Batobai Gigante", "Pariston","Kurapika"], # Zodiac
@@ -1100,8 +1091,8 @@ all_link_synergies = {
     91 : ["Edward Elric","Alphonse Elric","Roy Mustang","Kimbley","Olivia Mira Armstrong","Alex Louis Armstrong"], # Alchimist d'Etat
     90 : ["Lust","Glutonny","Envy","Sloth","Greed","Wrath","Pride","Pere"], # Homonculus
     89 : ["Olivia Mira Armstrong","Alex Louis Armstrong"], # Armstrong
-    88 : ["Kenjaku","Okuyasu","Yuki","Fujitora","Pain"], # Maître de la Gravite
-    87 : ["Dio","Diego","Giorno","Dario Brando"], # Brando
+    88 : ["Kenjaku","Okuyasu","Yuki","Fujitora","Pain"], # Maitre de la Gravite
+    87 : ["Dio Brando","Diego Brando","Giorno Giovanna","Dario Brando"], # Brando
     86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lune
     85 : ["Kanae","Kanao"], # Souffle de la Fleur
     84 : ["Sakonji","Giyu","Sabito","Makomo","Tanjiro","Murata"], # Souffle de l'Eau
@@ -1142,7 +1133,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Revolutionnaires
     19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
-    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa"], # Animal TODO
+    20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
     23 : ["Naruto", "Sakura", "Sasuke", "Kakashi", "Shikamaru", "Choji", "Ino", "Hinata", "Kiba", "Shino", "Neji", "Rock Lee", "Tenten"], # Konoha TODO
@@ -1151,14 +1142,14 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Receptacle TODO
-    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maître du Feu TODO
-    30 : ["Aang", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maître de l'Eau TODO
-    31 : ["Aang", "Toph", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maître de la Terre TODO
-    32 : ["Aang"], # Maître de l'Air TODO
-    33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maître de l'eclair TODO
-    34 : ["Shoto","Aokiji", "Gray", "Toshiro Hitsugaya", "Rukia"], # Maître de la Glace TODO
+    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maitre du Feu TODO
+    30 : ["Aang", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maitre de l'Eau TODO
+    31 : ["Aang", "Toph", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maitre de la Terre TODO
+    32 : ["Aang","Temari"], # Maitre de l'Air TODO
+    33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maitre de l'eclair TODO
+    34 : ["Shoto","Aokiji", "Toshiro Hitsugaya", "Rukia"], # Maitre de la Glace TODO Gray Fullbuster
 
-    36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maître de la Lave TODO
+    36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maitre de la Lave TODO
 
     40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
     41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
@@ -1173,12 +1164,12 @@ all_link_synergies = {
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar", "Gyro","Mario"], # Zeppeli
 
-    53 : ["Dio","Diavolo", "Jotaro","Nighteye"], # Maître du Temps
-    54 : ["Kira Yoshikage", "Bakugo"], # Maître de l'Explosion
+    53 : ["Dio","Diavolo", "Jotaro","Nighteye","Kira Yoshikage","Enrico Pucci"], # Maitre du Temps
+    54 : ["Kira Yoshikage", "Bakugo"], # Maitre de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan", "William Zeppeli", "Joseph", "Caesar", "Lisa Lisa", "Poco"], # Hamon
-    57 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"], # Passione
-    58 : ["Bucciarati","Giorno", "Mista", "Narancia","Fugo", "Abbacchio"], # Team Bucciarati
+    57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"], # Passione
+    58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio"], # Team Bucciarati
     
 }
 
