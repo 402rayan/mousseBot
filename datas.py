@@ -317,6 +317,7 @@ all_characters_templates = {
             ("Kensei", "B", 'https://i.imgur.com/fHD5IZV.png', 335, 345, 330),
             ("Chad", "B", "https://i.imgur.com/o4eSlWY.jpeg", 340, 360, 330),
             ("Yumichika", "B", "https://i.imgur.com/mC8r7ka.jpeg", 320, 330, 340),
+            ("Ginrei Kuchiki", "B", "https://i.imgur.com/Gdg23jz.png", 330, 340, 320),
 
             # Personnages C
             ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 245, 255, 240),
@@ -346,69 +347,72 @@ all_characters_templates = {
             ("All Might", "X", "https://i.imgur.com/CUUh7Cd.gif", 0, 0, 0),
             ("Shigaraki", "X", "https://i.imgur.com/4G7TwKg.gif", 0, 0, 0),
             ("All For One", "X", "https://i.imgur.com/rR1sQPU.gif", 0, 0, 0),
-            ("Star And Stripe", "X", "https://i.imgur.com/awX9W1z.gif", 0, 0, 0),
 
             # Personnages SS
+            ("Star And Stripe", "SS", "https://i.imgur.com/awX9W1z.gif", 0, 0, 0),
             ("Izuku Midoriya", "SS", "https://i.imgur.com/sfcQ2nE.gif", 0, 0, 0),
             ("Endeavor", "SS", "https://i.imgur.com/Y2olaBF.gif", 0, 0, 0),
             ("Overhaul", "SS", "https://i.imgur.com/dcPHh3I.gif", 0, 0, 0),
-            ("Beast Jeanist", "SS", "https://i.imgur.com/YomRbmO.gif", 0, 0, 0),
             ("Nana Shimura", "SS", "https://i.imgur.com/ct2j0jN.gif", 0, 0, 0),
-            ("Dabi", "SS", "https://i.imgur.com/BjDR5Yi.gif", 0, 0, 0),
-            ("Mirio", "SS", "https://i.imgur.com/gOMDPVp.gif", 0, 0, 0),
+            ("Mirio Togata", "SS", "https://i.imgur.com/gOMDPVp.gif", 0, 0, 0),
             ("Re Destro", "SS", "https://i.imgur.com/HQp99hz.gif", 0, 0, 0),
-
+            ("Katsuki Bakugo", "SS", "https://i.imgur.com/NK0LePb.gif", 0, 0, 0),
+            
             # Personnages S
+            ("Dabi", "S", "https://i.imgur.com/BjDR5Yi.gif", 0, 0, 0),
+            ("Beast Jeanist", "S", "https://i.imgur.com/YomRbmO.gif", 0, 0, 0),
             ("Hawks", "S", "https://i.imgur.com/X15PwP6.gif", 0, 0, 0),
             ("Twice", "S", "https://i.imgur.com/aTXRvNJ.gif", 0, 0, 0),
             ("Shoto Todoroki", "S", "https://i.imgur.com/SYm3EIh.gif", 0, 0, 0),
-            ("Katsuki Bakugo", "S", "https://i.imgur.com/NK0LePb.gif", 0, 0, 0),
             ("Eraserhead", "S", "https://i.imgur.com/kPsHrCm.gif", 0, 0, 0),
-            ("Tamaki", "S", "https://i.imgur.com/PrRON0k.gif", 0, 0, 0),
+            ("Tamaki Amajiki", "S", "https://i.imgur.com/PrRON0k.gif", 0, 0, 0),
             ("Stain", "S", "https://i.imgur.com/bLlQH1S.gif", 0, 0, 0),
             ("Fumikage", "S", "https://i.imgur.com/75sU4v8.gif", 0, 0, 0),
             ("Mirko", "S", "https://i.imgur.com/uaH6Nth.gif", 0, 0, 0),
             ("Lady Nagant", "S", "https://i.imgur.com/XTarup4.gif", 0, 0, 0),
-
+            ("Ryuku", "S", "https://i.imgur.com/jUEf20r.gif", 0, 0, 0),
+            ("Shinso Hitoshi", "S", 'https://i.imgur.com/6KR8YEl.gif', 0,0,0), 
+            ("Nejire Hado", "S", 'https://i.imgur.com/JRE6K7R.jpeg', 0,0,0),
+            
             # Personnages A
-            ("Tenya", "A", "https://i.imgur.com/XAE3t5c.gif", 0, 0, 0),
             ("Mt Lady", "A", "https://i.imgur.com/BGdhXVd.gif", 0, 0, 0),
-            ("Nighteye", "A", "https://i.imgur.com/fgO8qfb.gif", 0, 0, 0),
-            ("Ryuku", "A", "https://i.imgur.com/jUEf20r.gif", 0, 0, 0),
             ("Gran Torino", "A", "https://i.imgur.com/pHGoXST.gif", 0, 0, 0),
-
+            ("Nighteye", "A", "https://i.imgur.com/fgO8qfb.gif", 0, 0, 0),
+            ("Midnight", "A", 'https://i.imgur.com/L4S7dNo.jpeg', 330,330,330),
+            ("Himiko Toga", "A", 'https://i.imgur.com/YWZtjvt.gif', 330,330,330),
+            ("Snipe", "A", 'https://i.imgur.com/C5qxDQC.gif', 330,330,330),
+            
             # Personnages B
-            ("Ochaco", "B", 'https://i.imgur.com/GqBcqOI.jpeg', 0, 0, 0),
-            ("Midnight", "B", 'https://i.imgur.com/L4S7dNo.jpeg', 0, 0, 0),
-            ("Denki", "B", 'https://i.imgur.com/aq2fHI5.png', 0, 0, 0),
-            ("Crimson Riot", "B", 'https://i.imgur.com/8VssE2J.jpeg', 0, 0, 0), 
-            ("Nezu", "B", 'https://i.imgur.com/PipbKlv.png', 0, 0, 0),
-            ("Momo Yaoyorozu", "B", 'https://i.imgur.com/3knQkZJ.jpeg', 0, 0, 0),
-            ("Gang Orca", "B", 'https://i.imgur.com/op6GToE.jpeg', 0, 0, 0),
-            ("Shinso Hitoshi", "B", 'https://i.imgur.com/Vw0skrm.jpeg', 0, 0, 0), 
-            ("Nejire Hado", "B", 'https://i.imgur.com/JRE6K7R.jpeg', 0, 0, 0), 
+            ("Tenya", "B", "https://i.imgur.com/XAE3t5c.gif", 0, 0, 0),
+            ("Denki", "B", 'https://i.imgur.com/aq2fHI5.png', 330,330,330),
+            ("Testutetsu", "B", "https://i.imgur.com/06KllgA.jpeg", 260, 260, 260), 
+            ("Momo Yaoyorozu", "B", 'https://i.imgur.com/3knQkZJ.jpeg', 330,330,330),
+            ("Neito Monoma", "B", 'https://i.imgur.com/Px0oEH3.jpeg', 330,330,330),
 
             # Personnages C
+            ("Ochaco", "C", 'https://i.imgur.com/GqBcqOI.jpeg', 330,330,330),
             ("Shindo", "C", 'https://i.imgur.com/I7uLCYw.jpeg', 260, 260, 260),
             ("Rock Lock", "C", 'https://i.imgur.com/s3iBS2y.jpeg', 260, 260, 260),
             ("Vlad King", "C", 'https://i.imgur.com/v4AGxIS.jpeg', 260, 260, 260),
-            ("Testutetsu", "C", "https://i.imgur.com/06KllgA.jpeg", 260, 260, 260), 
             ("Snipe", "C", 'https://i.imgur.com/urx0HwQ.jpeg', 260, 260, 260),
+            ("Shoji", "C", 'https://i.imgur.com/lCTpZJE.jpeg', 260, 260, 260),
+            ("Spinner", "C", 'https://i.imgur.com/MeW1vaE.jpeg', 180, 180, 180),
+            ("Shihai", "C", 'https://i.imgur.com/SIaA75c.jpeg', 180, 180, 180),
+            ("Kyoka Jiro", "C", 'https://i.imgur.com/R8DEMdM.jpeg', 180, 180, 180),
             
             # Personnages D
-            ("Spinner", "D", 'https://i.imgur.com/MeW1vaE.jpeg', 180, 180, 180),
-            ("Shihai", "D", 'https://i.imgur.com/SIaA75c.jpeg', 180, 180, 180),
-            ("Nomu", "D", 'https://i.imgur.com/Vn6WFcc.jpeg', 180, 180, 180),
-            ("Kyoka Jiro", "D", 'https://i.imgur.com/R8DEMdM.jpeg', 180, 180, 180),
-
+            ("Mineta", "D", 'https://i.imgur.com/gORmmMX.jpeg', 180, 180, 180), 
+            
             # Personnages E
-            ("Mineta", "E", 'https://i.imgur.com/gORmmMX.jpeg', 120, 120, 120), 
-            ("Shoji", "E", 'https://i.imgur.com/lCTpZJE.jpeg', 120, 120, 120),
+            ("Natsuo Todoroki", "E", 'https://i.imgur.com/Z1u0j5j.jpeg', 120, 120, 120),
+            ("Rei Todoroki", "E", 'https://i.imgur.com/HkXkdzC.jpeg', 120, 120, 120),
 
             # Personnages F
+            ("Nezu", "F", 'https://i.imgur.com/PipbKlv.png', 50,50,50),
             ("Eri", "F", 'https://i.imgur.com/thiVSIU.jpeg', 50, 50, 50),
             ("Kenji", "F", 'https://i.imgur.com/BGeI2LC.jpeg', 50, 50, 50), 
             ("Sansa", "F", 'https://i.imgur.com/bKASPVp.jpeg', 50, 50, 50),
+            
             ],
             "Hunter x Hunter" : [ # ✅
             # Personnages X
@@ -469,13 +473,12 @@ all_characters_templates = {
             ("Korutopi", "B", "https://i.imgur.com/uqHvQrZ.jpeg", 325, 335, 315),
             ("Koruto", "B", "https://i.imgur.com/QwL2k3G.png", 340, 330, 340),
             ("Meleoron", "B", "https://i.imgur.com/tcEdwmU.jpeg", 325, 335, 330),
-            ("Ikalgo", "B", "https://i.imgur.com/P3Jc5JY.png", 300, 350, 315),
+            ("Ikarugo", "B", "https://i.imgur.com/P3Jc5JY.png", 300, 350, 315),
             ("Welfin", "B", "https://i.imgur.com/JfNtetM.jpeg", 345, 350, 340),
             ("Tsezugera", "B", "https://i.imgur.com/3WvsTfn.png", 320, 350, 320),
             
             # Personnages C
             ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 240, 275, 235),
-            ("Buhara", "C", "https://i.imgur.com/EDIxD4t.png", 300, 220, 260),
             ("Menchi", "C", "https://i.imgur.com/OYoD8tt.jpeg", 270, 260, 255),
             ("Kanaria", "C", "https://i.imgur.com/tSSM35N.jpeg", 270, 260, 255),
             ("Zushi", "C", "https://i.imgur.com/zFDjx8z.png", 265, 275, 255),
@@ -1074,14 +1077,24 @@ all_synergies = [
     (110, "Brigade Fantome", "ATK", 0.15, "La Brigade Fantome est une organisation criminelle qui lutte contre l'Association Hunter.", "https://i.imgur.com/2KZe6ug.gif", "#00000"),
     (111, "Forme de vie ultime", "ATK", 0.15, "Les formes de vie ultime sont des créatures ultimes qui dépassent les limites de l'humanité.", image_temporaire, "#00000"),
     (112, "Voleur de Pouvoir", "ATK", 0.15, "Les Voleurs de Pouvoir sont des individus qui volent les pouvoirs des autres pour les utiliser à leur avantage.", image_temporaire, "#00000"),
-    
-
+    (113, "Todoroki", "ATK", 0.15, "La famille Todoroki est une famille de heros qui possedent des pouvoirs de glace et de feu.", "https://i.imgur.com/69aINzI.jpeg", "#00000"),
+    (114, "Héritier du One For All", "ATK", 0.5, "Les Heritiers du One For All sont des individus qui ont herite du pouvoir du One For All pour proteger le monde des vilains.", image_temporaire, "#00000"),
+    (115, "Kuchiki", "ATK", 0.4, "La famille Kuchiki est une famille de nobles qui sont les gardiens du clan Kuchiki.", image_temporaire, "#00000"),
+    (116, "Shimura" , "ATK", 0.4, "", image_temporaire, "#00000"),
+    (117, "Big 3", "ATK", 0.15, "Le Big 3 est un groupe de trois etudiants de l'U.A. qui sont les plus forts de leur generation.", "https://i.imgur.com/195h0KM.png", "#00000"),
+    (118, "Sniper", "ATK", 0.25, "Les Snipers sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire, "#00000"),
 ]
 
 # FAIRE FAMILLY KUCHIKI 
 
 all_link_synergies = {
-    112 : ["Kuroro Lucifer","All For One","Yhwach"], # Voleur de Pouvoir
+    118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo"], # Sniper
+    117 : ["Mirio Togata","Tamaki Amajiki","Nejire Hado"], # Big 3
+    116 : ["Shigaraki", "Nana Shimura"], # Shimura
+    115 : ["Rukia Kuchiki","Byakuya Kuchiki","Ginrei Kuchiki"], # Famille Kuchiki
+    114 : ["Izuku Midoriya","All Might", "Nana Shimura"],
+    113 : ["Shoto Todoroki", "Endeavor", "Fuyumi Todoroki", "Natsuo Todoroki", "Rei Todoroki","Dabi"], # Famille Todoroki
+    112 : ["Kuroro Lucifer","All For One","Yhwach", "Meito Monoma"], # Voleur de Pouvoir
     111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
     110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Shalnark", "Bonolenov", "Karuto Zoldyck", "Uvogin"], # Brigade Fantome
     109 : ["Leorio","Ging Freecs", "Batobai Gigante", "Pariston","Kurapika"], # Zodiac
@@ -1156,12 +1169,12 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Receptacle TODO
-    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul"],# Maitre du Feu TODO
+    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi", "Madara", "Sasuke","Kakuzu","Jogo","Mohamed Abdul","Dabi"],# Maitre du Feu TODO
     30 : ["Aang", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maitre de l'Eau TODO
     31 : ["Aang", "Toph", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maitre de la Terre TODO
     32 : ["Aang","Temari"], # Maitre de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi","Sasuke", "Killer Bee", "Darui", "A", "Kakuzu", "Ener"], # Maitre de l'eclair TODO
-    34 : ["Shoto","Aokiji", "Toshiro Hitsugaya", "Rukia"], # Maitre de la Glace TODO Gray Fullbuster
+    34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki"], # Maitre de la Glace TODO Gray Fullbuster
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maitre de la Lave TODO
 
