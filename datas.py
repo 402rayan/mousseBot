@@ -604,12 +604,12 @@ all_characters_templates = {
             ],
             "Jojo's Bizarre Adventure" : [
             # Personnages X
-            ("Giorno Giovanna", "X", 'https://imgur.com/iJ9oUE1', 900, 1200, 950),
-            ("Enrico Pucci", "X", 'https://imgur.com/hWurlzP', 950, 1200, 900),
+            ("Giorno Giovanna", "X", 'https://i.imgur.com/iJ9oUE1.gif', 900, 1200, 950),
+            ("Enrico Pucci", "X", 'https://i.imgur.com/lAyHni9.gif', 950, 1200, 900),
             ("Funny Valentine", "X", "https://i.imgur.com/4ugvBxu.jpeg", 950, 1050, 950),
-            ("Johnny", "X", "https://imgur.com/839IXuS", 950, 1100, 900),
+            ("Johnny", "X", "https://i.imgur.com/cgLbkoE.gif", 950, 1100, 900),
             # Personnages SS
-            ("Gyro", "SS", "https://imgur.com/sPFgVJQ", 700, 750, 700),
+            ("Gyro", "SS", "https://i.imgur.com/qDnzVD7.gif", 700, 750, 700),
             ("Kars", "SS", 'https://i.imgur.com/4xhIuVK.gif', 850, 850, 850),
             ("Diavolo", "SS", 'https://i.imgur.com/90RxqGR.gif', 750, 850, 700),
             ("Jotaro Kujo", "SS", 'https://i.imgur.com/XzBAKKf.gif', 750, 800, 750),
@@ -623,7 +623,7 @@ all_characters_templates = {
             ("Jolyne", "S", 'https://i.imgur.com/T2yg742.gif', 500, 550, 550),
             ("Weather Report", "S", "https://i.imgur.com/zHlZilS.gif", 550, 550, 550),
             # Personnages A
-            ("Anasui", "A", "https://i.imgur.com/cQtCTf7", 400, 450, 440),
+            ("Anasui", "A", "https://i.imgur.com/cQtCTf7.gif", 400, 450, 440),
             ("Bucciarati", "A", 'https://i.imgur.com/zaBAVFx.gif', 450, 470, 430),
             ("Risotto", "A", 'https://i.imgur.com/hQxmpqR.gif', 440, 480, 400),
             ("Rohan", "A", 'https://i.imgur.com/UJgfmGg.gif', 410, 440, 430),
@@ -632,7 +632,7 @@ all_characters_templates = {
             ("Okuyasu", "A", 'https://i.imgur.com/BiveNFJ.gif', 430, 450, 410),
             ("Ghiaccio", "A", 'https://i.imgur.com/LNoxXyi.gif', 440, 420, 400),
             ("Prosciutto", "A", 'https://i.imgur.com/CsSR05A.gif', 410, 420, 430),
-            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF", 430, 420, 410),
+            ("Mohamed Abdul", "A", "https://i.imgur.com/2fIG9TF.gif", 430, 420, 410),
             ("Illuso", "A", "https://i.imgur.com/4oeiAEJ.gif", 400, 420, 440),
             ("Cioccolata", "A", 'https://i.imgur.com/XAu2MDR.gif', 420, 400, 420),
             # Personnages B
@@ -676,7 +676,7 @@ all_characters_templates = {
             ("Speedwagon", "F", 'https://i.imgur.com/Q4pR4ws.png', 50, 60, 70),
             ("Poco", "F", 'https://i.imgur.com/qeYo0He.png', 50, 60, 30),
             ("Mario Zucchero", "F", 'https://i.imgur.com/dBDj9C5.png', 70, 50, 30),
-            ("Dario Brando", "F", "https://imgur.com/LjMHPwB", 60, 40, 20),
+            ("Dario Brando", "F", "https://i.imgur.com/LjMHPwB.png", 60, 40, 20),
             ("Tama", "F", 'https://i.imgur.com/1cQyIW5.jpeg', 70, 30, 50),
             ],
             "One Punch Man" : [
