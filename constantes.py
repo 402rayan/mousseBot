@@ -159,6 +159,18 @@ phrases_invocation = [
 
 
 ennemis = {
+    "Dorry et Broggy" : {
+        'nom' : 'Dorry et Broggy',
+        'couleur' : CONSTANTS['COLORS']['BROGGY'],
+        'nomGif' : 'dorryBroggyFight',
+        'isNotGif' : True,
+        'nomPfp' : 'broggy',
+        'stats' : {
+            'HP' : 400,
+            'ATK' : 350,
+            'DEF' : 200,
+        }
+    },
     "UVOGUINE" : {
         'nom' : 'Uvoguine',
         'couleur' : CONSTANTS['COLORS']['UVOGUINE'],

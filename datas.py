@@ -1202,19 +1202,23 @@ all_link_synergies = {
 
 all_techniques = {
     "All Might" : [
-        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
+        ["United States of Smash", "utilise l''", "https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
     ],
     "Sasuke" : [
-        ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
+        ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#928a9f"],
+        ["Amaterasu", "déclence l''", "", "#000000"],
+        ["Chidori", "utilise le", "", "#000000"],
+        ["Susanoo", "s''entoure de", "", "#000000"],
     ],
     "Hit" : [
         ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
     ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
+        ["Kamehameha", "lance un", "https://i.imgur.com/loxqVe0.gif", "#c7f3ee"],
     ],
     "Pere": [
-        ["Alchimie", "utilise l'", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
+        ["Alchimie", "utilise l''", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
     ],
     "Morel": [
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
@@ -1223,6 +1227,6 @@ all_techniques = {
         ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
     ],
     "Tanjiro Kamado" : [
-        ["Souffle de l'eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
+        ["Souffle de l''eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
     ],
 }

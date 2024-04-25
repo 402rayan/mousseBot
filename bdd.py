@@ -518,9 +518,10 @@ class Database:
             print("Une erreur s'est produite lors de l'enregistrement du GIF:", str(e))
 
     def create_character_templates(self):
-        self.cur.executemany('''
-        INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?) 
-        ''', (all_characters_templates_section for all_characters_templates_section in all_characters_templates))
+        for univers in all_characters_templates:
+            self.cur.executemany(''' 
+            INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?)
+            ''', all_characters_templates[univers])
         self.conn.commit()
         logger.info("Les templates de personnages ont été ajoutés à la base de données.")
 
@@ -638,3 +639,11 @@ class Database:
         for univers in all_characters_templates:
             if univers_name.lower() in univers.lower():
                 return all_characters_templates[univers]
+            
+    def get_attaques_by_character_name(self, name):
+        identifiant = self.getIdFromName(name)
+        if identifiant is None:
+            return None
+        self.cur.execute(f"SELECT * FROM character_template_techniques WHERE template_id = {identifiant}")
+        return self.cur.fetchall()
+    

@@ -129,10 +129,10 @@ async def niveau10(message, userFromDb, equipe):
     #     await asyncio.sleep(4)
     
     # Combat avec Uvoguine
-    await combatPvm(message, equipe, ennemis['UVOGUINE'])
-    await asyncio.sleep(4)
+    if not await combatPvm(message, equipe, ennemis['UVOGUINE']):
+        return await echecNiveau(message, userFromDb, 10)
     # Vous avez réussi à le battre
-    # await finDeNiveau(message, userFromDb, 11)
+    await finDeNiveau(message, userFromDb, 10)
 
 async def niveau9(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 9, "Synergie contre fusillade", equipe, CONSTANTS['COLORS']['FRANKLIN'])
@@ -558,12 +558,12 @@ async def niveau2(message, userFromDb, equipe):
         reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🗡️', '💬'])
     except:
         await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
-        return
+        return await echecNiveau(message, userFromDb, 2)
     if str(reaction.emoji) == '🗡️':
         await message.channel.send(embed=embed_raw("Vous attaquez les géants..", "", discord.Color.red()))
-        await asyncio.sleep(4)
-        await message.channel.send(embed=embed_info("Combat contre Dorry et Broggy", "Vous avez vaincu les géants!", discord.Color.green()))
-        await asyncio.sleep(4)
+        await asyncio.sleep(2)
+        if not await combatPvm(message, equipe, ennemis["Dorry et Broggy"]):
+            return await echecNiveau(message, userFromDb, 2)
         await embed_histoire_character(message,"Shanks est perplexe :", "", "shanks", "", "La violence n'est pas toujours la meilleure des solutions.", CONSTANTS['COLORS']['SHANKS'])
         await asyncio.sleep(4)
         embed = discord.Embed(
@@ -1112,9 +1112,111 @@ async def combatPvm(message, team, ennemi):
     somme_stats_ennemi = ennemi['stats']['ATK'] + ennemi['stats']['DEF'] + ennemi['stats']['HP']
     somme_stats_team = team['stats']['ATK'] + team['stats']['DEF'] + team['stats']['HP']
     chanceVictory, combatType = statistiquesCombat(message,somme_stats_team, somme_stats_ennemi)
+    logger.info(f"Chances de victoire de l'équipe : {chanceVictory} - Type de combat : {combatType}")
     victoire = random.random() < chanceVictory
-    await message.channel.send(embed=embed_info("Résultat du combat", f"Vous avez **{'gagné' if victoire else 'perdu'}** le combat! ({combatType})", discord.Color.green() if victoire else discord.Color.red()))
+    logger.info(f"Résultat du combat : {'Victoire' if victoire else 'Défaite'}")
+    if combatType == 0:
+        # Combat facile, on ne montre qu'une attaque
+        if victoire:
+            personnageQuiJoue = random.choice(team['team'])[6]
+        else:
+            personnageQuiJoue = ennemi["nom"]
+        await tour(message, personnageQuiJoue, team)
+    elif combatType == 1:
+        # Combat Low diff
+        # On montre 2 tours du gagnats et 1 tour du perdant dans un ordre aléatoire
+        if victoire:
+            ordre = ["team", "ennemi", "team"]
+        else:
+            ordre = ["ennemi", "team", "ennemi"]
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(3):
+            if ordre[i] == "team":
+                personnageQuiJoue = random.choice(team['team'])[6]
+            else:
+                personnageQuiJoue = ennemi["nom"]
+            await tour(message, personnageQuiJoue, team)
+            await asyncio.sleep(3)
+    elif combatType == 2:
+        #Combat mid diff
+        ordre = ["team", "ennemi", "team", "ennemi", "team"] 
+        random.shuffle(ordre)
+        if victoire:
+            ordre.append("team")
+        else:
+            ordre.append("ennemi")
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(6):
+            if ordre[i] == "team":
+                personnageQuiJoue = random.choice(team['team'])[6]
+            else:
+                personnageQuiJoue = ennemi["nom"]
+            await tour(message, personnageQuiJoue, team)
+            await asyncio.sleep(3)
+    else:
+        # Combat difficile
+        ordre = ["team","ennemi","team","ennemi","team","ennemi","team"]
+        random.shuffle(ordre)
+        if victoire:
+            ordre.append("team")
+        else:
+            ordre.append("ennemi")
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(8):
+            if ordre[i] == "team":
+                personnageQuiJoue = random.choice(team['team'])[6]
+            else:
+                personnageQuiJoue = ennemi["nom"]
+            await tour(message, personnageQuiJoue, team)
+            await asyncio.sleep(3)
+    await asyncio.sleep(2)
+    await message.channel.send(embed=embed_info("Le combat semble être terminé ...", "", 0x00000))
+    await asyncio.sleep(2)
+    # Vous avez triomphé si on a gagné sinon on a perdu
+    if victoire:
+        await message.channel.send(embed=embed_info("Vous avez triomphé de l'adversaire !!", "", discord.Color.gold()))
+    else:
+        await message.channel.send(embed=embed_info("Vous avez été vaincu par l'ennemi!", "", discord.Color.red()))
+    await asyncio.sleep(4)
+    return victoire
     
+
+
+    
+async def tour(message, personnage, ennemi):
+    # Envoie un message pour le tour d'un personnage
+    # On cherche si le personnage a des attaques gifs
+    attaques = database.get_attaques_by_character_name(personnage)
+    # Si le personnage a une attaque ET qu'il a de la chance
+    if random.random() < 0.25: #message de suspens
+        liste_messages = ["Le combat fait rage!", "Le combat est intense!", "Les combattants se jaugent!", "Mais qui l'emportera?", "Le combat est acharné!", "Le combat touche-t-il à sa fin?", "Le combat est serré!"]
+        await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
+        await asyncio.sleep(3)
+    if attaques and len(attaques) > 0 and random.random() < 0.9:
+        attaque = random.choice(attaques)
+        nom = attaque[2]; verbe = attaque[3]; gif = attaque[4]; couleur = int(attaque[5][1:], 16)
+        embed = discord.Embed(
+            title=f"{personnage} {verbe} {nom}",
+            color=couleur
+        )
+        if gif:
+            embed.set_image(url=gif)
+        await message.channel.send(embed=embed)
+        await asyncio.sleep(2)
+        return
+    # Sinon, on envoie une attaque normale
+    rdm = random.random()
+    if rdm < 0.6:
+        liste_attaques = ["attaque", "inflige des dégâts", "frappe fort"]
+        await message.channel.send(embed=embed_info(f"{personnage} {random.choice(liste_attaques)}.", "",discord.Color.red()))
+    elif rdm < 0.90:
+        liste_defenses = ["se protège", "se défend", "se met en garde","est sur la défensive"]
+        await message.channel.send(embed=embed_info(f"{personnage} {random.choice(liste_defenses)}.", "",discord.Color.blue()))
+    else:
+        liste_autres = ["se concentre", "observe l'ennemi", "prend une grande inspiration", "se prépare", "analyse les mouvements de l'ennemi"]
+        await message.channel.send(embed=embed_info(f"{personnage} {random.choice(liste_autres)}.", "",discord.Color.brand_green()))
+    
+
 def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
     # Calcul de la différence relative en pourcentage
     total_stats = somme_stats_ennemi + somme_stats_team
@@ -1133,13 +1235,14 @@ def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
     percentage_difference = abs(difference_relative * 100)  # Convertir en pourcentage
     
     if percentage_difference < 8:
-        combat_type = "VERY_HARD_DIFFICULTY"
+        combat_type = 3 # TRES DIFFICILE
     elif percentage_difference < 15:
-        combat_type = "HARD_DIFFICULTY"
+        combat_type = 2 # DIFFICILE
     elif percentage_difference < 25:
-        combat_type = "LOW_DIFFICULTY"
+        combat_type = 1 # LOW DIFF
     else:
-        combat_type = "NO_DIFFICULTY"
+        combat_type = 0 # NO DIFF
+    logger.info(f"Chances de victoire de l'équipe : {chance_victory_team} - Type de combat : {combat_type}")
     return chance_victory_team, combat_type
 
 
@@ -1168,7 +1271,11 @@ async def introductionCombat(message, team, ennemi):
     )
     await message.channel.send(embed=embedVs)
     await asyncio.sleep(2)
-    await embed_histoire_character(message, ennemi['nom'], ennemi['nomGif'], ennemi['nomPfp'],"", "", ennemi['couleur'])
+    if not ennemi['isNotGif']:
+        isNotGif = False
+    else:
+        isNotGif = True
+    await embed_histoire_character(message, ennemi['nom'], ennemi['nomGif'], ennemi['nomPfp'],"", "", ennemi['couleur'], isNotGif)
     
 
 
