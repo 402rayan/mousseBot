@@ -602,7 +602,7 @@ all_characters_templates = {
 
             
             ],
-            "Jojo's Bizarre Adventure" : [
+            "Jojo's Bizarre Adventure" : [ # ✅
             # Personnages X
             ("Giorno Giovanna", "X", 'https://i.imgur.com/iJ9oUE1.gif', 900, 1200, 950),
             ("Enrico Pucci", "X", 'https://i.imgur.com/lAyHni9.gif', 950, 1200, 900),
@@ -730,16 +730,16 @@ all_characters_templates = {
             ],
             "Demon Slayer" : [
             # Personnages X
-            ("Tanjiro", "X", image_temporaire, 0, 0, 0),
-            ("Muzan", "X", image_temporaire, 0, 0, 0),
-            ("Yoriichi", "X", image_temporaire, 0, 0, 0),
-            ("Kokushibo", "X", image_temporaire, 0, 0, 0),
+            ("Tanjiro Kamado", "X", "https://i.imgur.com/0ZbB8tr.gif", 0, 0, 0),
+            ("Muzan", "X", "https://i.imgur.com/zXvC5Uj.gif", 0, 0, 0),
+            ("Yoriichi Tsugikuni", "X", "https://i.imgur.com/q7ak3HD.gif", 0, 0, 0),
+            ("Kokushibo", "X", "https://i.imgur.com/LZJio0L.gif", 0, 0, 0),
 
             # Personnages SS
 
-            ("Gyomei", "SS", image_temporaire, 0, 0, 0),
-            ("Doma", "SS", image_temporaire, 0, 0, 0),
-            ("Akaza", "SS", image_temporaire, 0, 0, 0),
+            ("Gyomei", "SS", "https://i.imgur.com/lk7V07x.gif", 0, 0, 0),
+            ("Doma", "SS", "https://i.imgur.com/ypkjkIk.gif", 0, 0, 0),
+            ("Akaza", "SS", "https://i.imgur.com/uBwhGcG.gif", 0, 0, 0),
 
             # Personnages S
 
@@ -1095,13 +1095,13 @@ all_link_synergies = {
     87 : ["Dio Brando","Diego Brando","Giorno Giovanna","Dario Brando"], # Brando
     86 : ["Kyogai","Kanamue","Rui","Mukago","Wakuraba","Hairo","Rokuro","Enmu","Daki","Gyutaro","Kaigaku","Gyokko","Akaza","Doma","Kokushibo"], # Lune
     85 : ["Kanae","Kanao"], # Souffle de la Fleur
-    84 : ["Sakonji","Giyu","Sabito","Makomo","Tanjiro","Murata"], # Souffle de l'Eau
+    84 : ["Sakonji","Giyu","Sabito","Makomo","Tanjiro Kamado","Murata"], # Souffle de l'Eau
     83 : ["Zenitsu","Kaigaku","Jigoro"], # Souffle de la Foudre
-    82 : ["Tanjiro", "Yoriichi","Sumiyoshi","Tanjuro"], #Kamado
-    81 : ["Tanjiro","Nezuko","Kanao","Sumiyoshi","Tanjuro"], #Kamado
+    82 : ["Tanjiro Kamado", "Yoriichi","Sumiyoshi","Tanjuro"], #Kamado
+    81 : ["Tanjiro Kamado","Nezuko","Kanao","Sumiyoshi","Tanjuro"], #Kamado
     80 : ["Muzan","Nezuko","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignee","Mere Araignee","Shinzu"], # Demons
     79 : ["Aoi Kanzaki","Sumi","Kiyo","Naho","Goto"], # Domaine des Papillons
-    78 : ["Kanao","Tanjiro","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeur de demons
+    78 : ["Kanao","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi"], # Pourfendeur de demons
     77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui"], # Hashira
     76 : ["Kagaya Ubuyashiki","Amane Ubuyashiki","Hinaki Ubuyashiki","Nichika Ubuyashiki","Kiriya Ubuyashiki","Kanata Ubuyashiki"], # Ubuyashiki
     75 : ["Toji","Megumi","Tsumiki Fushiguro"], # Fushiguro
@@ -1194,5 +1194,8 @@ all_techniques = {
     ],
     "Aang": [
         ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
+    ],
+    "Tanjiro Kamado" : [
+        ["Souffle de l'eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
     ],
 }
