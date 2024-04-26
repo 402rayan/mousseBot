@@ -577,7 +577,7 @@ all_characters_templates = {
             ("Maki Zenin", "S", 'https://i.imgur.com/zGKPJI9.png', 590, 505, 685),
             ("Nanami", "S", 'https://i.imgur.com/phtWBmN.png', 580, 610, 570),
             ("Higuruma", "S", 'https://i.imgur.com/VnEkm6V.jpeg', 550, 585, 525),
-            ("Naobito", "S", 'https://i.imgur.com/FTRAhNn.png', 505, 595, 545),
+            ("Naobito Zenin", "S", 'https://i.imgur.com/FTRAhNn.png', 505, 595, 545),
             ("Miguel", "S", 'https://i.imgur.com/a8zQRsZ.png', 575, 540, 575), 
             ("Mei mei", "S", 'https://i.imgur.com/KoWiulR.png', 525, 565, 535),
             ("Naoya", "S", 'https://i.imgur.com/LiKy4we.png', 510, 590, 540),
@@ -585,7 +585,7 @@ all_characters_templates = {
             
             #Personnages A
             ("Inumaki", "A", 'https://i.imgur.com/D7071yc.gif', 400, 420, 400), 
-            ("Kamo", "A", 'https://i.imgur.com/8N9AYpE.png', 400, 450, 420),
+            ("Noritoshi Kamo", "A", 'https://i.pinimg.com/originals/2d/3c/53/2d3c5328dffe60e4905ec51c4c50026d.gif', 400, 450, 420),
             ("Mechamaru", "A", 'https://i.imgur.com/bjBDlk6.gif', 430, 400, 440),
 
             # Personnages B
@@ -610,10 +610,12 @@ all_characters_templates = {
             # Personnages E
             ("Ijichi", "E", "https://i.imgur.com/6EKKkX3.jpeg", 110, 120, 125),
             ("Kechizu", "E", "https://i.imgur.com/fwEMmNC.png", 110, 130, 110),
-
+            ("Yu Haibara", "E", "https://i.imgur.com/Ab850TD.jpeg", 120, 110, 130),
+            ("Arata Nitta", "E", "https://i.imgur.com/1Z2Z2Zv.jpeg", 120, 80, 130),
             # Personnages F
-            ("Riko Amanai", "F", "https://i.imgur.com/WkfCzwy.jpeg", 50, 50, 50),
-            ("Tsumiki Fushiguro", "F", "https://i.imgur.com/wNU5qjd.png", 50, 50, 50),          
+            ("Akari Nitta", "F", "https://i.imgur.com/1Z2Z2Zv.jpeg", 35, 50, 50),
+            ("Riko Amanai", "F", "https://i.imgur.com/WkfCzwy.jpeg", 20, 15, 20),
+            ("Tsumiki Fushiguro", "F", "https://i.imgur.com/wNU5qjd.png", 15, 30, 30),          
             ],
             "Jojo's Bizarre Adventure" : [ # ✅
             # Personnages X
@@ -1150,9 +1152,9 @@ all_link_synergies = {
     76 : ["Kagaya Ubuyashiki","Amane Ubuyashiki","Hinaki Ubuyashiki","Nichika Ubuyashiki","Kiriya Ubuyashiki","Kanata Ubuyashiki"], # Ubuyashiki
     75 : ["Toji Fushiguro","Megumi Fushiguro","Tsumiki Fushiguro"], # Fushiguro
     74 : ["Noritoshi","Kenjaku"], # Kamo
-    73 : ["Toji", "Naobito","Mai Zenin","Maki","Megumi Fushiguro"], # Zenin
+    73 : ["Toji Fushiguro", "Naobito Zenin","Mai Zenin","Maki Zenin","Megumi Fushiguro"], # Zenin
     72 : ["Gakukanji","Utahime","Arata Nitta","Mai Zenin","Miwa","Mechamaru","Aoi Todo","Noritoshi","Momo","Akari Nitta"], # ecole de Kyoto
-    71 : ["Yaga","Ijichi","Gojo","Kusakabe","Sheko Ieri","Akari Nitta","Megumi","Yuji","Nobara","Maki","Toge Inumaki","Panda","Yuta","Hakari","Nanami","Geto","Yu Haibara"], # ecole de Tokyo
+    71 : ["Yaga","Ijichi","Gojo","Kusakabe","Sheko Ieri","Akari Nitta","Megumi","Yuji","Nobara","Maki Zenin","Toge Inumaki","Panda","Yuta","Kinji Hakari","Nanami","Geto","Yu Haibara"], # ecole de Tokyo
     70 : ["Sukuna", "Mahito", "Jogo", "Dagon", "Hanami", "Choso","Eso","Kechizu"], # Fleaux
     69 : ["Jonathan", "Joseph", "Jotaro", "Josuke", "Giorno", "Jolyne", "Johnny"], # JoJo
     68 : ["Genos","Cyborgorilla","C-17","C-18","C-16"], # Cyborg
@@ -1195,8 +1197,8 @@ all_link_synergies = {
 
     36 : ["Akainu", "Jogo","Mei Terumi","Kurotsuchi"], # Maitre de la Lave TODO
 
-    40 : ["Zoro", "Mihawk","Toji","Maki", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
-    41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
+    40 : ["Zoro", "Mihawk","Toji","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
+    # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
     44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Nagato", "Karin", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki"], # Uzumaki
@@ -1204,7 +1206,7 @@ all_link_synergies = {
     46 : ["Hashirama", "Tobirama", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
     48 : ["Shino", "Meruem", "Pufu", "Youpi", "Neferopito"], # Insecte
-    49 : ["Meruem", "Neferopito", "Youpi", "Pufu"], # Garde Royale
+    49 : ["Neferopito", "Youpi", "Pufu"], # Garde Royale
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar", "Gyro","Mario"], # Zeppeli
 
