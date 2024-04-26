@@ -176,101 +176,102 @@ all_characters_templates = {
 ],
             "One Piece" : [
             # Personnages X
-            ("Kaido", "X", "https://i.imgur.com/BMDbkl8.gif", 0, 0, 0),
-            ("Luffy", "X", "https://i.imgur.com/EmzijMq.gif", 0, 0, 0), # TOREVIEW
-            ("Big Mom", "X", "https://i.imgur.com/tPjCbUc.gif", 0, 0, 0),
-            ("Barbe Noire", "X", "https://i.imgur.com/Y4vdAQ4.gif", 0, 0, 0),
-            ("Barbe Blanche", "X", "https://i.imgur.com/BdnDfQj.gif", 0, 0, 0),
-            ("Shanks", "X", "https://i.imgur.com/faZclqg.gif", 0, 0, 0),
-            ("Dragon", "X", "https://i.imgur.com/Zy9hmOz.gif", 0, 0, 0),
-            ("Gol D. Roger", "X", "https://i.imgur.com/jhHkjfz.gif", 0, 0, 0),
-            ("Mihawk", "X", 'https://i.imgur.com/UICGMYV.gif', 0, 0, 0),
+            ("Kaido", "X", "https://i.imgur.com/BMDbkl8.gif", 1000, 990, 1010),
+            ("Monkey D. Luffy", "X", "https://i.imgur.com/EmzijMq.gif", 950, 940, 930), # TOREVIEW
+            ("Big Mom", "X", "https://i.imgur.com/tPjCbUc.gif", 1005, 910, 1000),
+            ("Barbe Noire", "X", "https://i.imgur.com/Y4vdAQ4.gif", 970, 1000, 965),
+            ("Barbe Blanche", "X", "https://i.imgur.com/BdnDfQj.gif", 1000, 1050, 1010),
+            ("Shanks", "X", "https://i.imgur.com/faZclqg.gif", 930, 970, 930),
+            ("Dragon", "X", "https://i.imgur.com/Zy9hmOz.gif", 930, 950, 915),
+            ("Gol D. Roger", "X", "https://i.imgur.com/jhHkjfz.gif", 940, 970, 930),
+            ("Mihawk", "X", 'https://i.imgur.com/UICGMYV.gif', 935, 980, 915),
             
             # Personnages SS
-            ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 0, 0, 0),
-            ("Aokiji", "SS", 'https://i.imgur.com/LCqY9UI.gif', 0, 0, 0),
-            ("Kizaru", "SS", 'https://i.imgur.com/nTGQsXq.png', 0, 0, 0),
-            ("Fujitora", "SS", 'https://i.imgur.com/OxgHvz2.gif', 0, 0, 0),#TO REVIEW
-            ("Rayleigh", "SS", 'https://i.imgur.com/HzaJdFI.gif', 0, 0, 0),
-            ("Katakuri", "SS", 'https://i.imgur.com/5z0sR8N.gif', 0, 0, 0),
-            ("Ryokugyu", "SS", 'https://i.imgur.com/27FScKO.jpg', 0, 0, 0),
-            ("Garp", "SS", 'https://i.imgur.com/ZLd4sdw.gif', 0, 0, 0),
-            ("Doflamingo", "SS", 'https://i.imgur.com/HHCqR9J.jpg', 0, 0, 0),
-            ("Law", "SS", 'https://i.imgur.com/xJpnwDU.png', 0, 0, 0),
-            ("Kid", "SS", 'https://i.imgur.com/5WxLV4L.gif', 0, 0, 0),
-            ("Zoro", "SS", 'https://i.imgur.com/fPok6pt.gif', 0, 0, 0),
-            ("King", "SS", 'https://i.imgur.com/wq5sEZ7.png', 0, 0, 0),
-            ("Jaygarcia Saturn", "SS", 'https://lh7-us.googleusercontent.com/L2QiJBc7DQI30FQheAARxZU9iIisrRy4VuoMvG593gTNrZBkRtke0WhN3kba5NoCbzHjvohoBwMpkRrkr5nrak31J2iIwFpehMzbvmIr7_wG8QxkHZmZRoGlaGMCUXoGnswptm-5nEEjggVt8RIxqFo', 0, 0, 0),
-            ("Marcus Mars", "SS", 'https://i.imgur.com/wq5OAwa.png', 0, 0, 0),
-            ("Topman Warcury", "SS", 'https://i.imgur.com/xOVHWfz.jpeg', 0, 0, 0),
-            ("Ethanbaron Nusjuro", "SS", 'https://i.imgur.com/btlRYmL.jpeg', 0, 0, 0),
-            ("Shepherd Ju Peter", "SS", 'https://i.imgur.com/A0MDH1W.png', 0, 0, 0),
-
+            ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 730, 790, 745), # high ss
+            ("Aokiji", "SS", 'https://i.imgur.com/LCqY9UI.gif', 700, 720, 725),
+            ("Kizaru", "SS", 'https://i.imgur.com/nTGQsXq.png', 720, 780, 760),
+            ("Fujitora", "SS", 'https://i.imgur.com/OxgHvz2.gif', 720, 760, 725),#TO REVIEW
+            ("Rayleigh", "SS", 'https://i.imgur.com/HzaJdFI.gif', 790, 830, 730), # high ss
+            ("Katakuri", "SS", 'https://i.imgur.com/5z0sR8N.gif', 725, 770, 735),
+            ("Ryokugyu", "SS", 'https://i.imgur.com/27FScKO.jpg', 710, 720, 700),
+            ("Garp", "SS", 'https://i.imgur.com/ZLd4sdw.gif', 750, 780, 750),
+            ("Doflamingo", "SS", 'https://i.imgur.com/HHCqR9J.jpg', 730, 720, 725),
+            ("Law", "SS", 'https://i.imgur.com/xJpnwDU.png', 715, 740, 710),
+            ("Kid", "SS", 'https://i.imgur.com/5WxLV4L.gif', 715, 740, 720),
+            ("Zoro", "SS", 'https://i.imgur.com/fPok6pt.gif', 715, 750, 720),
+            ("Oden", "SS", 'https://i.imgur.com/mACnc1L.jpg', 710, 745, 720),
+            ("King", "SS", 'https://i.imgur.com/wq5sEZ7.png', 715, 720, 710),
+            ("Jaygarcia Saturn", "SS", 'https://lh7-us.googleusercontent.com/L2QiJBc7DQI30FQheAARxZU9iIisrRy4VuoMvG593gTNrZBkRtke0WhN3kba5NoCbzHjvohoBwMpkRrkr5nrak31J2iIwFpehMzbvmIr7_wG8QxkHZmZRoGlaGMCUXoGnswptm-5nEEjggVt8RIxqFo', 710,666,710),
+            ("Marcus Mars", "SS", 'https://i.imgur.com/wq5OAwa.png', 710,666,710),
+            ("Topman Warcury", "SS", 'https://i.imgur.com/xOVHWfz.jpeg', 710,666,710),
+            ("Ethanbaron Nusjuro", "SS", 'https://i.imgur.com/btlRYmL.jpeg', 710,666,710),
+            ("Shepherd Ju Peter", "SS", 'https://i.imgur.com/A0MDH1W.png', 710,666,710),
+            ("Yamato", "SS", "https://i.imgur.com/JD7nx4U.gif", 700, 720, 740),
+            
             # Personnages S
-            ("Sengoku", "S", "https://64.media.tumblr.com/45078c9fbf7f057b3ad92567b26a0eac/73dc2871fbc4e55a-b4/s540x810/4782ec194db6bba07dd4eb688b2bdc66793f5b54.gif", 0, 0, 0),
-            ("Crocodile", "S", 'https://i.imgur.com/H1BwUuK.gif', 0, 0, 0),
-            ("Ener", "S", 'https://i.imgur.com/s9LuY59.png', 0, 0, 0),
-            ("Shiryu", "S", "https://i.imgur.com/RTUxvAI.gif", 0, 0, 0),
-            ("Smoker", "S", "https://i.imgur.com/3vJPaRx.gif", 0, 0, 0),
-            ("Oden", "S", 'https://i.imgur.com/mACnc1L.jpg', 0, 0, 0),
-            ("Sabo", "S", "https://i.imgur.com/vjcu8Gg.gif", 0, 0, 0),
-            ("Boa Hancock", "S", 'https://i.imgur.com/ZWtbLYH.gif', 0, 0, 0),
-            ("Marco", "S", 'https://i.imgur.com/LOo1j5P.gif', 0, 0, 0),
-            ("Sanji", "S", 'https://i.imgur.com/hkob0Vu.jpg', 0, 0, 0),
-            ("Yamato", "S", "https://giffiles.alphacoders.com/216/216308.gif", 0, 0, 0),
-            ("Ace", "S", "https://i.imgur.com/8AGmDrS.gif", 0, 0, 0),
-            ("Rob Lucci", "S", "https://i.imgur.com/aewCvhP.gif", 0, 0, 0),
+            ("Sengoku", "S", "https://64.media.tumblr.com/45078c9fbf7f057b3ad92567b26a0eac/73dc2871fbc4e55a-b4/s540x810/4782ec194db6bba07dd4eb688b2bdc66793f5b54.gif",600, 530, 600),
+            ("Crocodile", "S", 'https://i.imgur.com/H1BwUuK.gif', 550, 600, 620),
+            ("Ener", "S", 'https://i.imgur.com/s9LuY59.png', 540, 590, 610),
+            ("Shiryu", "S", "https://i.imgur.com/RTUxvAI.gif", 530,550,540),
+            ("Smoker", "S", "https://i.imgur.com/3vJPaRx.gif", 550, 520, 600),
+
+            ("Sabo", "S", "https://i.imgur.com/vjcu8Gg.gif", 540, 595, 535),
+            ("Boa Hancock", "S", 'https://i.imgur.com/ZWtbLYH.gif', 535, 545, 555),
+            ("Marco", "S", 'https://i.imgur.com/LOo1j5P.gif', 580, 550, 575),
+            ("Sanji", "S", 'https://i.imgur.com/hkob0Vu.jpg', 540, 555, 550),
+            ("Portgas D. Ace", "S", "https://i.imgur.com/8AGmDrS.gif", 550, 600, 620),
+            ("Rob Lucci", "S", "https://i.imgur.com/aewCvhP.gif", 560, 570, 560),
 
             # Personnages A
-            ("Kuma", "A", "https://i.pinimg.com/originals/ea/ab/8f/eaab8f1c6b949ac0ba4287b128fe0546.gif", 0, 0, 0),
-            ("Kong", "A", "https://i.ytimg.com/vi/iRnFypQECiA/maxresdefault.jpg", 0, 0, 0),
-            ("Ivankov", "A", "https://preview.redd.it/was-ivankov-a-marine-before-a-revolutionary-1080-spoilers-v0-hu512bhdd1ua1.jpg?width=480&format=pjpg&auto=webp&s=fc2c8c335222de2eabcc10dc898eb8c758b20d20", 0, 0, 0),
-            ("Brook", "A", "https://pa1.aminoapps.com/6441/769e80cfc5fa4264e22470c35758624b0f1844f0_hq.gif", 0, 0, 0),
-            ("Robin", "A", 'https://i.imgur.com/tiC5mlA.gif', 0, 0, 0),
-            ("Jinbe", "A", 'https://i.imgur.com/5ktjcxG.png', 0, 0, 0),
-            ("Karasu", "A", "https://64.media.tumblr.com/442ea21ce795aef5dd5c530483bb8f34/tumblr_ppxot6VR2p1v6xsm2o3_540.gif", 0, 0, 0),
-            ("Yassop", "A","https://64.media.tumblr.com/baec79e8188657006b2e80c7405461ec/tumblr_mx8i0nXwyc1rr37qoo1_500.gif", 0, 0, 0),
-            
+            ("Kuma", "A", "https://i.pinimg.com/originals/ea/ab/8f/eaab8f1c6b949ac0ba4287b128fe0546.gif", 395, 420, 445),
+            ("Kong", "A", "https://i.ytimg.com/vi/iRnFypQECiA/maxresdefault.jpg", 440, 420, 445),
+            ("Ivankov", "A", "https://preview.redd.it/was-ivankov-a-marine-before-a-revolutionary-1080-spoilers-v0-hu512bhdd1ua1.jpg?width=480&format=pjpg&auto=webp&s=fc2c8c335222de2eabcc10dc898eb8c758b20d20", 445, 420, 395),
+            ("Brook", "A", "https://pa1.aminoapps.com/6441/769e80cfc5fa4264e22470c35758624b0f1844f0_hq.gif", 445, 420, 395),
+            ("Robin", "A", 'https://i.imgur.com/tiC5mlA.gif', 395, 420, 445),
+            ("Jinbe", "A", 'https://i.imgur.com/5ktjcxG.png', 440, 420, 445),
+            ("Karasu", "A", "https://64.media.tumblr.com/442ea21ce795aef5dd5c530483bb8f34/tumblr_ppxot6VR2p1v6xsm2o3_540.gif", 395, 420, 445),
+            ("Yassop", "A","https://64.media.tumblr.com/baec79e8188657006b2e80c7405461ec/tumblr_mx8i0nXwyc1rr37qoo1_500.gif", 395, 410, 445),
+
             # Personnages B
-            ("Chooper", "B", 'https://i.imgur.com/eSoVui2.png', 0, 0, 0),
-            ("Nami", "B", 'https://i.imgur.com/VAbsCsh.gif', 0, 0, 0),
-            ("Ussop", "B", "https://i.imgur.com/oJD4qsv.gif", 0, 0, 0),
-            ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 0, 0, 0),
-            ("Buggy", "B", "https://i.imgur.com/9aeBJHQ.jpeg", 0, 0, 0),
-            ("Koala", "B", "https://wegotthiscovered.com/wp-content/uploads/2023/04/koala-one-piece.jpg", 0, 0, 0),
-            ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 0, 0, 0),
-            ("Belo Betty", "B", "https://areajugones.sport.es/wp-content/uploads/2020/01/belo-betty-one-piece.jpg", 0, 0, 0),
-            ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 0, 0, 0),
-            ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 0, 0, 0),
-            
+            ("Chooper", "B", 'https://i.imgur.com/eSoVui2.png', 300, 330, 365),
+            ("Nami", "B", 'https://i.imgur.com/VAbsCsh.gif', 335, 330, 305),
+            ("Ussop", "B", "https://i.imgur.com/oJD4qsv.gif", 330, 350, 315),
+            ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 315, 335, 345),
+            ("Buggy", "B", "https://i.imgur.com/9aeBJHQ.jpeg", 355, 330, 305),
+            ("Lindbergh", "B", "https://static.wikia.nocookie.net/onepiece/images/3/31/Cool_Shooter.png/revision/latest?cb=20190414113534", 330, 355, 305),
+            ("Koala", "B", "https://wegotthiscovered.com/wp-content/uploads/2023/04/koala-one-piece.jpg", 330, 355, 305),
+            ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 305, 330, 355),
+            ("Belo Betty", "B", "https://areajugones.sport.es/wp-content/uploads/2020/01/belo-betty-one-piece.jpg", 355, 330, 305),
+            ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 340, 305, 355),
+            ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 305, 330, 355),
+
             # Personnages C
-            ("Vivi", "C", "https://www.mangaluxe.com/dossiers/one-piece/img/nefertari-vivi.jpg", 260, 260, 260),
-            ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 260, 260, 260),
-            ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 260, 260, 260),
-            ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 260, 260, 260),
-            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 260, 260, 260),
-            ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 260, 260, 260),
-            ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 260, 260, 260),
+            ("Vivi", "C", "https://www.mangaluxe.com/dossiers/one-piece/img/nefertari-vivi.jpg", 285, 260, 235),
+            ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 235, 260, 285),
+            ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 285, 260, 235),
+            ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 235, 260, 285),
+            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 285, 260, 235),
+            ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 235, 260, 285),
+            ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 285, 260, 235),
 
             # Personnages D
-            ("Dorry", "D", "https://m.media-amazon.com/images/M/MV5BZDE2OTA2MTMtN2VkZS00NDZkLThmNDctMTYzNDc5NzgxMDEyXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_.jpg", 180, 180, 180),
-            ("Brogy", "D", "https://www.roadtolaughtale.fr/wp-content/uploads/2024/01/broggy.jpg", 180, 180, 180),
-            ("Lindbergh", "D", "https://static.wikia.nocookie.net/onepiece/images/3/31/Cool_Shooter.png/revision/latest?cb=20190414113534", 180, 180, 180),
-            
+            ("Dorry", "D", "https://m.media-amazon.com/images/M/MV5BZDE2OTA2MTMtN2VkZS00NDZkLThmNDctMTYzNDc5NzgxMDEyXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_.jpg", 155, 180, 205),
+            ("Brogy", "D", "https://www.roadtolaughtale.fr/wp-content/uploads/2024/01/broggy.jpg", 205, 180, 155),
+
             # Personnages E
-            ("Helmeppo", "E", "https://img24.tokyvideo.com/videos/319/319429/previews/previews_0009.jpg", 120, 120, 120),
-            ("Hatchan", "E", "https://lh5.googleusercontent.com/E3R0RFsbrh_SRGWZWQtDSYsYJ7O-aWkJ712dsKRX8b7O6nrEo9-94iFS8UShWmB0OIbaG4ce_C94fQiTrYSiybFqRzVrLAp1N86kHOvzDdoSBbHcfqPTyvNVZhklda5HJl9ybAAIpEJ2nAG8oV5sXXM", 120, 120, 120),
-            ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 120, 120, 120),
-            ("Kuro", "E", "https://cdn-www.konbini.com/files/2023/04/one_piece_eiichiro_oda_premierefois14.jpg", 120, 120, 120),
-            ("Wapol", "E", "https://lh6.googleusercontent.com/VoyVXJY9nyRm35lSZLupPJsQkeHhqjGiWGyvglXg_IzfsrB4yYxJwZoc19Cjbt85aoFBTiDIfXav3q9aCKxC_f2Am_vcWRLqUxI1OMmx6_IysLZ7bzoBnCv4NuOHPdmYu8z-J7eM6JFjX7o4-OURPjs", 120, 120, 120),
+            ("Helmeppo", "E", "https://img24.tokyvideo.com/videos/319/319429/previews/previews_0009.jpg", 95, 120, 145),
+            ("Hatchan", "E", "https://lh5.googleusercontent.com/E3R0RFsbrh_SRGWZWQtDSYsYJ7O-aWkJ712dsKRX8b7O6nrEo9-94iFS8UShWmB0OIbaG4ce_C94fQiTrYSiybFqRzVrLAp1N86kHOvzDdoSBbHcfqPTyvNVZhklda5HJl9ybAAIpEJ2nAG8oV5sXXM", 145, 120, 95),
+            ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 145, 120, 95),
+            ("Kuro", "E", "https://cdn-www.konbini.com/files/2023/04/one_piece_eiichiro_oda_premierefois14.jpg", 105, 120, 145),
+            ("Wapol", "E", "https://lh6.googleusercontent.com/VoyVXJY9nyRm35lSZLupPJsQkeHhqjGiWGyvglXg_IzfsrB4yYxJwZoc19Cjbt85aoFBTiDIfXav3q9aCKxC_f2Am_vcWRLqUxI1OMmx6_IysLZ7bzoBnCv4NuOHPdmYu8z-J7eM6JFjX7o4-OURPjs", 145, 120, 95),
 
             # Personnages F
-            ("Merry","F","https://static.wikia.nocookie.net/onepiece/images/c/c1/Merry_spara.png/revision/latest?cb=20220124140512&path-prefix=it",50, 50, 50),
-            ("Gaimon", "F", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/gaimon-cropped.jpg", 50, 50, 50),
-            ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 50, 50, 50),
-            ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 50, 50, 50),
-            ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 50, 50, 50),
-            ], 
+            ("Merry","F","https://static.wikia.nocookie.net/onepiece/images/c/c1/Merry_spara.png/revision/latest?cb=20220124140512&path-prefix=it", 25, 50, 75),
+            ("Gaimon", "F", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/gaimon-cropped.jpg", 75, 50, 25),
+            ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 25, 50, 75),
+            ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 75, 50, 25),
+            ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 25, 50, 75),
+            ],
             "Bleach" : [ # ✅
             # Personnages X
             ("Yhwach", "X", "https://i.imgur.com/OLYulIP.gif", 950, 1200, 1000), 
@@ -980,7 +981,7 @@ all_synergies = [
     (1, "Akatsuki", "ATK", 0.30,"L'akkatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
     (2, "Saiyan", "ATK", 0.30, "Les Saiyans sont connus pour leur force et leur capacité à se transformer en Super Saiyan.", image_temporaire, "#FFA500"),
     (3, "Hollow", "ATK", 0.15, "Les Hollows sont des âmes corrompues qui ont perdu leur coeur et leur raison.", image_temporaire, "#0000FF"),
-    (4, "Mugiwara", "HP", 0.30, "Les Mugiwara sont l'équipage de Luffy, un pirate qui cherche le One Piece.", 'https://steamuserimages-a.akamaihd.net/ugc/481145984302804192/29529359BC636378F426946B2D859F7EB46561BB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#800080"),
+    (4, "Mugiwara", "HP", 0.30, "Les Mugiwara sont l'équipage de Monkey D. Luffy, un pirate qui cherche le One Piece.", 'https://steamuserimages-a.akamaihd.net/ugc/481145984302804192/29529359BC636378F426946B2D859F7EB46561BB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#800080"),
     (5, "Uchiha", "ATK", 0.20, "Le clan Uchiha est connu pour ses capacites de combat et son Sharingan.", 'https://cherry.img.pmdstatic.net/fit/https.3A.2F.2Fimg.2Egaming.2Egentside.2Ecom.2Fs3.2Ffrgsg.2F1280.2Fmanga.2Fdefault_2022-12-21_5b4dbf77-0203-48b1-bfff-103263f3bc90.2Epng/1200x675/quality/80/clan-uchiwa.jpg', "#FF0000"),
     (6, "Quincy", "ATK", 0.30, "Les Quincy sont des chasseurs de Hollows qui utilisent des arcs pour combattre.", 'https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Bleach-Quincy-featured.jpg', "#FFA500"), #TOREVIEW 
     (7, "Amiraux", "ATK", 0.45, "Les Amiraux sont les trois plus puissants marins de la Marine.", 'https://steamuserimages-a.akamaihd.net/ugc/914674978440099035/39C53679BC6727A9D6074B90BCD0C9BC72D1DEDD/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#0000FF"), #TOREVIEW
@@ -1011,7 +1012,6 @@ all_synergies = [
     (32, "Maitre de l'Air", "ATK", 0.15, "Les Maîtres de l'Air sont des personnages qui maîtrisent l'air.", image_temporaire, "#FF0000"),
     (33, "Maitre de la Foudre", "ATK", 0.15, "Les Maîtres de la Foudre sont des personnages qui maîtrisent l'éclair.", image_temporaire, "#FFA500"),
     (34, "Maitre de la Glace", "ATK", 0.15, "Les Maîtres de la Glace sont des personnages qui maîtrisent la glace.", image_temporaire, "#0000FF"),
-    (35, "Maitre de leclair ", "ATK", 0.15, "Les Maîtres de la Foudre sont des personnages qui maîtrisent la foudre.", image_temporaire, "#800080"),
     (36, "Maitre de la Lave", "ATK", 0.15, "Les Maîtres de la Lave sont des personnages qui maîtrisent la lave.", image_temporaire, "#FF0000"),
     (37, "Maitre du Bois", "ATK", 0.15, "Les Maîtres du Bois sont des personnages qui maîtrisent le bois.", image_temporaire, "#FFA500"),
     (38, "Maitre du Vent", "ATK", 0.15, "Les Maîtres du Vent sont des personnages qui maîtrisent le vent.", image_temporaire, "#0000FF"),
@@ -1024,22 +1024,22 @@ all_synergies = [
     (45, "Hyuga", "ATK", 0.15, "Le clan Hyuga est connu pour son Byakugan et ses techniques de combat douces.", image_temporaire, "#FFA500"),
     (46, "Senju", "ATK", 0.15, "Le clan Senju est connu pour son Mokuton et sa capacité à maîtriser les Bijuus.", image_temporaire, "#0000FF"),
     (47, "Otsutsuki", "ATK", 0.15, "Le clan Otsutsuki est une famille de ninjas extraterrestres qui cherchent à absorber des planètes pour obtenir du chakra.", image_temporaire, "#800080"),
-    (48, "Insecte", "ATK", 0.15, "Les Insectes sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#FF0000"),
-    (49, "Garde Royale", "ATK", 0.15, "La Garde Royale est un groupe qui s'assure de la sécurité du roi.", image_temporaire, "#FFA500"),
+    (48, "Insecte", "DEF", 0.25, "Les Insectes sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#FF0000"),
+    (49, "Garde Royale", "DEF", 0.55, "La Garde Royale est un groupe qui s'assure de la sécurité du roi.", image_temporaire, "#FFA500"),
     (50, "Zeppeli", "ATK", 0.15, "Les Zeppelis sont une famille de maîtres de l'Onde qui combattent les vampires.", image_temporaire, "#0000FF"),
     (52, "Homme du pillar", "ATK", 0.15, "Les Pillars sont des guerriers qui servent les vampires et protègent la pierre rouge de l'Aja.", image_temporaire, "#FF0000"),
-    (53, "Maitre du Temps", "ATK", 0.15, "Les Maîtres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
-    (54, "Maitre de l'Explosion", "ATK", 0.15, "Les Maîtres de l'Explosion sont des personnages qui peuvent créer des explosions.", image_temporaire, "#0000FF"),
-    (55, "Squadra Esecuzioni", "ATK", 0.15, "La Squadra Esecuzioni est un groupe de tueurs à gages qui travaillent pour la Passione.", image_temporaire, "#0000FF"),
-    (56, "Hamon", "ATK", 0.15, "Le Hamon est une technique de combat qui utilise l'énergie du soleil pour attaquer les vampires.", image_temporaire, "#800080"),
-    (57, "Passione", "ATK", 0.15, "La Passione est une organisation criminelle italienne qui contrôle le trafic de drogue.", image_temporaire, "#FF0000"),
-    (58, "Team Bucciarati", "ATK", 0.15, "La Team Bucciarati est un groupe de gangsters qui travaillent pour la Passione.", image_temporaire, "#FFA500"),
-    (59, "JoBros", "ATK", 0.15, "Les JoBros sont les amis et allies des Joestars qui les aident dans leur combat contre le mal.", image_temporaire, "#0000FF"),
-    (60, "ile de Sirop", "ATK", 0.15, "L'ile de Sirop est une ile paradisiaque où les habitants vivent en paix et en harmonie.", image_temporaire, "#800080"),
-    (61, "Equipage de Shanks", "ATK", 0.15, "L'equipage de Shanks est un groupe de pirates dirige par Shanks le Roux.", image_temporaire, "#0000FF"),
-    (62, "Equipage de Kaido", "ATK", 0.15, "L'equipage de Kaido est un groupe de pirates dirige par Kaido le Cent betes.", image_temporaire, "#800080"),
-    (63, "Equipage de Big Mom", "ATK", 0.15, "L'equipage de Big Mom est un groupe de pirates dirige par Big Mom.", image_temporaire, "#FF0000"),
-    (64, "Draconique", "ATK", 0.15, "Les Dragons sont des creatures mythiques qui possedent des pouvoirs magiques.", image_temporaire, "#FFA500"),
+    (53, "Maitre du Temps", "ATK", 0.5, "Les Maîtres du Temps sont des personnages qui peuvent contrôler le temps.", image_temporaire, "#FFA500"),
+    (54, "Maitre de l'Explosion", "ATK", 0.5, "Les Maîtres de l'Explosion sont des personnages qui peuvent créer des explosions.", image_temporaire, "#0000FF"),
+    (55, "Squadra Esecuzioni", "ATK", 0.35, "La Squadra Esecuzioni est un groupe de tueurs à gages qui travaillent pour la Passione.", image_temporaire, "#0000FF"),
+    (56, "Hamon", "ATK", 0.4, "Le Hamon est une technique de combat qui utilise l'énergie du soleil pour attaquer les vampires.", image_temporaire, "#800080"),
+    (57, "Passione", "ATK", 0.3, "La Passione est une organisation criminelle italienne qui contrôle le trafic de drogue.", image_temporaire, "#FF0000"),
+    (58, "Team Bucciarati", "ATK", 0.3, "La Team Bucciarati est un groupe de gangsters qui travaillent pour la Passione.", image_temporaire, "#FFA500"),
+    (59, "JoBros", "HP", 0.4, "Les JoBros sont les amis et allies des Joestars qui les aident dans leur combat contre le mal.", image_temporaire, "#0000FF"),
+    (60, "Ile de Sirop", "DEF", 0.35, "L'ile de Sirop est une ile paradisiaque où les habitants vivent en paix et en harmonie.", image_temporaire, "#800080"),
+    (61, "Equipage de Shanks", "ATK", 0.40, "L'equipage de Shanks est un groupe de pirates dirige par Shanks le Roux.", image_temporaire, "#0000FF"),
+    (62, "Equipage de Kaido", "DEF", 0.45, "L'equipage de Kaido est un groupe de pirates dirige par Kaido le Cent betes.", image_temporaire, "#800080"),
+    (63, "Equipage de Big Mom", "HP", 0.45, "L'equipage de Big Mom est un groupe de pirates dirige par Big Mom.", image_temporaire, "#FF0000"),
+    (64, "Draconique", "ATK", 0.45, "Les Dragons sont des creatures mythiques qui possedent des pouvoirs magiques.", image_temporaire, "#FFA500"),
     (65, "Speedster", "ATK", 0.15, "Les Speedsters sont des personnages qui peuvent se deplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
     (66, "Aveugle", "ATK", 0.4 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont developpe d'autres sens pour compenser.", image_temporaire, "#800080"),
     (67, "Dojo de Bang", "ATK", 0.15, "Le Dojo de Bang est un lieu d'entrainement où les disciples apprennent les techniques de combat de Bang.", image_temporaire, "#FF0000"),
@@ -1097,11 +1097,16 @@ all_synergies = [
     (119, "Intangible", "DEF", 0.45, "Les Intangibles sont des individus qui peuvent devenir intangibles et traverser les objets solides.", image_temporaire, "#00000"),
     (120, "Kurosaki", "HP", 0.40, "La famille Kurosaki est une famille de chasseurs de Hollows qui protegent les humains des attaques des Hollows.", image_temporaire, "#00000"),
     (121, "Cinq Doyen", "HP", 0.40, "Les cinq doyens sont la Plus Haute Instance du Gouvernement Mondial.", "https://static.wikia.nocookie.net/onepiece/images/f/f9/Cinq_Doyens_Anime_Post_Ellipse_Infobox.png/revision/latest?cb=20221119194241&path-prefix=fr", "#00000"),
+    (122, "Foetus des Neuf Phases", "HP", 0.65, "Les Foetus des Neuf Phases sont à l'origine neuf fœtus avortés issus du mélange entre une humaine et des fléaux. Mort-nés, ils sont devenus des reliques."),
+    (123, "Famille de Luffy", "HP", 0.40, "La famille de Luffy est une famille de pirates qui navigue sur les mers pour trouver le One Piece.", image_temporaire, "#00000"),
+    
 ]
 
 # FAIRE FAMILLY KUCHIKI 
 
 all_link_synergies = {
+    123 : ["Monkey D. Luffy","Monkey D. Dragon", "Monkey D. Garp"], # Famille de Luffy
+    122 : ["Choso","Eso","Kechizu"], # Foetus des Neuf Phases
     121 : ["Jaygarcia Saturn","Marcus Mars","Topman Warcury", "Ethanbaron Nusjuro","Shepherd Ju Peter"], # Doyen
     120 : ["Ichigo Kurosaki", "Masaki Kurosaki", "Karin Kurosaki", "Yuzu Kurosaki", "Isshin Kurosaki"], # Famille Kurosaki
     6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach"], # Quincy
@@ -1169,16 +1174,16 @@ all_link_synergies = {
     59 : ["Speedwagon","Caesar","Kakyoin","Polnareff","Mohamed Abdul","Stroheim","Okuyasu","Rohan","Koichi","Gyro","Bucciarati","Yasuho","Foo Fighter"], # JoBros
     1 : ["Itachi", "Kisame", "Deidara", "Sasori", "Hidan", "Kakuzu", "Pain", "Konan", "Zetsu", "Tobi"], # Akatsuki
     2 : ["Son Goku", "Vegeta", "Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla"], # Saiyan
-    4 : ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
+    4 : ["Monkey D. Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
     5 : ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Shisui Uchiha", "Fugaku Uchiha", "Indra Otsutsuki", "Izuna Uchiha", "Sarada Uchiha"], # Uchiha
     7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Garp", "Fujitora", "Ryokugyu", "Kong"], # Amiraux
-    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Barbe Noire","Luffy","Mihawk","Crocodile"], # Yonko
+    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Barbe Noire","Monkey D. Luffy","Mihawk","Crocodile"], # Yonko
     14 : ["Yamamoto", "Unohana", "Byakuya", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro", "Rukia"], # Gotei 13
     15 : ["Hashirama", "Tobirama", "Hiruzen", "Minato", "Tsunade", "Kakashi", "Naruto","Mei Terumi", "Onoki", "Gaara"], # Kage
     16 : ["Crocodile", "Doflamingo", "Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Buggy", "Law", "Barbe Noire"], # Shichibukai,
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Revolutionnaires
-    19 : ["Luffy", "Garp", "Roger", "Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
+    19 : ["Monkey D. Luffy", "Garp", "Roger", "Portgas D. Ace", "Dragon", "Sabo", "Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
     20 : ["Kiba", "Akamaru", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Jabra", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko"], # Animal TODO
     21 : ["Sasuke", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Nagato", "Pain", "Obito", "Madara", "Sasuke", "Momoshiki", "Kaguya"], # Rinnegan
@@ -1188,7 +1193,7 @@ all_link_synergies = {
     26 : ["Darui", "C", "Omoi", "Killer Bee", "Samui", "Atsui", "Akatsuchi", "Onoki"], # Kumo TODO
     27 : ["Akatsuchi", "Kurotsuchi", "Onoki", "Deidara", "Kurotsuchi", "Akatsuchi", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto", "Bee", "Yugito", "Yagura", "Roshi", "Han", "Utakata", "Fu", "Ginkaku", "Kinkaku", "Itadori"], # Receptacle TODO
-    29 : ["Aang", "Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi"],# Maitre du Feu TODO
+    29 : ["Aang", "Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi"],# Maitre du Feu TODO
     30 : ["Aang", "Katara", "Korra", "Unalaq", "Ming-Hua", "Ghazan", "Kya", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama","Kisame","Haku"], # Maitre de l'Eau TODO
     31 : ["Aang", "Toph", "Kuvira", "Suyin", "Lin", "Yamato (ANBU)", "Hashirama","Kakuzu"], # Maitre de la Terre TODO
     32 : ["Aang","Temari"], # Maitre de l'Air TODO
@@ -1199,18 +1204,18 @@ all_link_synergies = {
 
     40 : ["Zoro", "Mihawk","Toji","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Erza", "Dabi", "Darui", "Guts", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia", "Byakuya", "Oden", "Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo"], # epeiste
     # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
-    42 : ["Barbe Noire", "Shiryu", "Lafitte", "Van Augur", "Doc Q", "Avalo Pizarro", "Catarina Devon", "Vasco Shot"], # Equipage de Barbe Noire
+    42 : ["Barbe Noire", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Joz", "Vista", "Blamenco", "Rakuyo", "Namur", "Ace", "Haruta", "Fossa", "Izo", "Atmos"], # Equipage de Barbe Blanche
     44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Nagato", "Karin", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki"], # Uzumaki
     45 : ["Neji", "Hinata", "Hiashi", "Hanabi","Himawari", "Boruto"], # Hyuga
     46 : ["Hashirama", "Tobirama", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya", "Rikudo", "Hamura", "Urashiki", "Momoshiki", "Kinshiki", "Toneri", "Isshiki"], # Ototsuki
-    48 : ["Shino", "Meruem", "Pufu", "Youpi", "Neferopito"], # Insecte
+    48 : ["Shino", "Meruem", "Pufu", "Youpi", "Neferopito","Meruem"], # Insecte
     49 : ["Neferopito", "Youpi", "Pufu"], # Garde Royale
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar", "Gyro","Mario"], # Zeppeli
 
-    53 : ["Dio","Diavolo", "Jotaro","Nighteye","Kira Yoshikage","Enrico Pucci"], # Maitre du Temps
+    53 : ["Dio","Diavolo", "Jotaro","Nighteye","Kira Yoshikage","Enrico Pucci","Katakuri"], # Maitre du Temps
     54 : ["Kira Yoshikage", "Bakugo"], # Maitre de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan", "William Zeppeli", "Joseph", "Caesar", "Lisa Lisa", "Poco"], # Hamon
