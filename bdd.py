@@ -448,6 +448,44 @@ class Database:
         team = {'team': team, 'stats': stats, 'synergies': noms_synergies, 'bonus': bonus}
         return team
     
+    def simulation_stats_team(self,team):
+        stats = {'HP': 0, 'ATK': 0, 'DEF': 0}
+        for char in team:
+            if char is not None:
+                stats['HP'] += int(char[4])
+                stats['ATK'] += int(char[5])
+                stats['DEF'] += int(char[6])
+
+        # Calcul des synergies et leurs nombres
+        synergies = {}
+        for char in team:
+            if char is not None:
+                for synergy in self.get_synergies_by_character_template(char[0]):
+                    if synergy[1] not in synergies:
+                        synergies[synergy[1]] = 1
+                    else:
+                        synergies[synergy[1]] += 1
+        
+        # Calcul des boosts des synergies et application sur les statistiques
+        bonus = {'HP': 0, 'ATK': 0, 'DEF': 0}
+        noms_synergies = []
+        for synergy_id, synergy_nb in synergies.items(): # On parcourt les synergies et leur nombre
+            if synergy_nb < 2:
+                continue
+            noms_synergies.append(self.get_synergy(synergy_id)[1]) # On ajoute le nom de la synergie
+            synergy = self.get_synergy(synergy_id)
+            if synergy[2] == 'HP':
+                bonus['HP'] += int(synergy[3] * synergy_nb * stats['HP'])
+            elif synergy[2] == 'ATK':
+                bonus['ATK'] += int(synergy[3] * synergy_nb * stats['ATK'])
+            elif synergy[2] == 'DEF':
+                bonus['DEF'] += int(synergy[3] * synergy_nb * stats['DEF'])
+        stats['HP'] += bonus['HP']; stats['ATK'] += bonus['ATK']; stats['DEF'] += bonus['DEF']
+        
+        team = {'team': team, 'stats': stats, 'synergies': noms_synergies, 'bonus': bonus}
+        return team
+    
+    
     def get_character_by_name_and_user(self, user_discord_id, user_name, char_name):
         logger.info(f"Récupération du personnage {char_name} pour l'utilisateur {user_name} ({user_discord_id}).")
         self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
