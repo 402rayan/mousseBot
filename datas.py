@@ -347,7 +347,7 @@ all_characters_templates = {
             ("Keigo", "E", 'https://i.imgur.com/D8dqhs2.png', 125, 120, 115),
 
             # Personnages F
-            ("Yuzu Korosaki", "F", 'https://i.imgur.com/Spca2oo.png', 40, 35, 35),
+            ("Yuzu Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 40, 35, 35),
             ("Kon", "F", 'https://i.imgur.com/t1az2SQ.png', 45, 50, 55),
             ("Karin Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 50, 55, 45),
             ("Yuzu", "F", 'https://i.imgur.com/plnofeu.png', 55, 45, 50),
@@ -1096,13 +1096,13 @@ all_synergies = [
     (113, "Todoroki", "ATK", 0.40, "La famille Todoroki est une famille de heros qui possedent des pouvoirs de glace et de feu.", "https://i.imgur.com/69aINzI.jpeg", "#00000"),
     (114, "Héritier du One For All", "ATK", 0.5, "Les Heritiers du One For All sont des individus qui ont herite du pouvoir du One For All pour proteger le monde des vilains.", image_temporaire, "#00000"),
     (115, "Kuchiki", "ATK", 0.4, "La famille Kuchiki est une famille de nobles qui sont les gardiens du clan Kuchiki.", image_temporaire, "#00000"),
-    (116, "Shimura" , "ATK", 0.4, "", image_temporaire, "#00000"),
+    (116, "Shimura" , "ATK", 0.4, "La famille Shimura est consituée de , sah flemme de finir mdrr", image_temporaire, "#00000"),
     (117, "Big 3", "HP", 0.50, "Le Big 3 est un groupe de trois etudiants de l'U.A. qui sont les plus forts de leur generation.", "https://i.imgur.com/195h0KM.png", "#00000"),
     (118, "Sniper", "ATK", 0.35, "Les Snipers sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire, "#00000"),
     (119, "Intangible", "DEF", 0.45, "Les Intangibles sont des individus qui peuvent devenir intangibles et traverser les objets solides.", image_temporaire, "#00000"),
     (120, "Kurosaki", "HP", 0.40, "La famille Kurosaki est une famille de chasseurs de Hollows qui protegent les humains des attaques des Hollows.", image_temporaire, "#00000"),
     (121, "Cinq Doyen", "HP", 0.40, "Les cinq doyens sont la Plus Haute Instance du Gouvernement Mondial.", "https://static.wikia.nocookie.net/onepiece/images/f/f9/Cinq_Doyens_Anime_Post_Ellipse_Infobox.png/revision/latest?cb=20221119194241&path-prefix=fr", "#00000"),
-    (122, "Foetus des Neuf Phases", "HP", 0.65, "Les Foetus des Neuf Phases sont à l'origine neuf fœtus avortés issus du mélange entre une humaine et des fléaux. Mort-nés, ils sont devenus des reliques."),
+    (122, "Foetus des Neuf Phases", "HP", 0.65, "Les Foetus des Neuf Phases sont à l'origine neuf fœtus avortés issus du mélange entre une humaine et des fléaux. Mort-nés, ils sont devenus des reliques.", image_temporaire, "#00000"),
     (123, "Famille de Luffy", "HP", 0.40, "La famille de Luffy est une famille de pirates qui navigue sur les mers pour trouver le One Piece.", image_temporaire, "#00000"),
     (124, "ANBU", "ATK", 0.45, "Les ANBU sont une unite speciale de ninjas qui travaillent pour le Hokage.", image_temporaire, "#00000"),
     (125, "Tout Puissant", "ATK", 0.65, "Les Tout Puissants sont des individus qui possedent des pouvoirs divins et qui peuvent detruire des planetes entieres.", image_temporaire, "#00000"),
@@ -1121,19 +1121,19 @@ all_link_synergies = {
     6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach"], # Quincy
     8 : ["Grimmjow", "Ulquiorra", "Nnoitra", "Halibel", "Barragan", "Starrk"], # Espada
     119 : ["Obito Uchiha", "Mirio Togata","Zetsu"], # Intangible
-    118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo"," Mista","Mai Zenin"], # Sniper
+    118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin"], # Sniper
     117 : ["Mirio Togata","Tamaki Amajiki","Nejire Hado"], # Big 3
     116 : ["Shigaraki", "Nana Shimura"], # Shimura
     115 : ["Rukia Kuchiki","Byakuya Kuchiki","Ginrei Kuchiki"], # Famille Kuchiki
     114 : ["Izuku Midoriya","All Might", "Nana Shimura"],
     113 : ["Shoto Todoroki", "Endeavor", "Fuyumi Todoroki", "Natsuo Todoroki", "Rei Todoroki","Dabi"], # Famille Todoroki
-    112 : ["Kuroro Lucifer","All For One","Yhwach", "Meito Monoma"], # Voleur de Pouvoir
+    112 : ["Kuroro Lucifer","All For One","Yhwach", "Neito Monoma"], # Voleur de Pouvoir
     111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
     110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Shalnark", "Bonolenov", "Karuto Zoldyck", "Uvogin"], # Brigade Fantome
-    109 : ["Leorio","Ging Freecs", "Batobai Gigante", "Pariston","Kurapika"], # Zodiac
+    109 : ["Leorio","Ging Freecs", "Botobai Gigante", "Pariston","Kurapika"], # Zodiac
     108 : ["Menchi","Tsezugera", "Morel","Ging Freecss","Biscuit Kruger","Botobai Gigante","Pariston Hill"], # Hunter étoilé
     107 : ["Mito Freecss","Gon Freecss", "Ging Freecss"],
-    106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Fushi","Madoka"], # Section 4 Anti-Demon
+    106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Goten"], # Famille de Son Goku
     103 : ["Whis","Vados","Grand pretre"], # Anges
