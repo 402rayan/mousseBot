@@ -1,3 +1,4 @@
+import time
 from datas import all_characters_templates
 from bdd import Database
 import loguru
@@ -6,9 +7,11 @@ database = Database('mousse.db')
 
 from itertools import combinations
 
+temps_depart = time.time()
+print("Début du programme...", time.strftime('%H:%M:%S', time.localtime(temps_depart)))
 # 1. Créer une liste de toutes les teams possibles
 all_characters = database.get_character_templates()
-all_characters = [character for character in all_characters if character[2] in ['X','SS']]  # Filtrer les personnages de rareté X
+all_characters = [character for character in all_characters if character[2] in ['X','SS','S']]  # Filtrer les personnages de rareté X
 all_teams = []
 
 # Générer toutes les combinaisons possibles de 3 personnages
@@ -42,3 +45,6 @@ with open('teams.log', 'w') as file:
         file.write(f"{team_to_write} : {power} {synergies_to_write}\n")
 
 print("Les teams sont écrites dans le fichier teams.log !")
+
+temps_fin = time.time()
+print("Fin du programme...", time.strftime('%H:%M:%S', time.localtime(temps_fin)))
