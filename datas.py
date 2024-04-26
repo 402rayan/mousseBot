@@ -201,7 +201,7 @@ all_characters_templates = {
             ("Zoro", "SS", 'https://i.imgur.com/fPok6pt.gif', 715, 750, 720),
             ("Oden", "SS", 'https://i.imgur.com/mACnc1L.jpg', 710, 745, 720),
             ("King", "SS", 'https://i.imgur.com/wq5sEZ7.png', 715, 720, 710),
-            ("Jaygarcia Saturn", "SS", 'https://lh7-us.googleusercontent.com/L2QiJBc7DQI30FQheAARxZU9iIisrRy4VuoMvG593gTNrZBkRtke0WhN3kba5NoCbzHjvohoBwMpkRrkr5nrak31J2iIwFpehMzbvmIr7_wG8QxkHZmZRoGlaGMCUXoGnswptm-5nEEjggVt8RIxqFo', 710,666,710),
+            ("Jaygarcia Saturn", "SS", 'https://i.imgur.com/fyHMKWB.png', 710,666,710),
             ("Marcus Mars", "SS", 'https://i.imgur.com/wq5OAwa.png', 710,666,710),
             ("Topman Warcury", "SS", 'https://i.imgur.com/xOVHWfz.jpeg', 710,666,710),
             ("Ethanbaron Nusjuro", "SS", 'https://i.imgur.com/btlRYmL.jpeg', 710,666,710),
@@ -209,12 +209,11 @@ all_characters_templates = {
             ("Yamato", "SS", "https://i.imgur.com/JD7nx4U.gif", 700, 720, 740),
             
             # Personnages S
-            ("Sengoku", "S", "https://64.media.tumblr.com/45078c9fbf7f057b3ad92567b26a0eac/73dc2871fbc4e55a-b4/s540x810/4782ec194db6bba07dd4eb688b2bdc66793f5b54.gif",600, 530, 600),
+            ("Sengoku", "S", "https://i.imgur.com/AJEnLGM.gif",600, 530, 600),
             ("Crocodile", "S", 'https://i.imgur.com/H1BwUuK.gif', 550, 600, 620),
             ("Ener", "S", 'https://i.imgur.com/s9LuY59.png', 540, 590, 610),
             ("Shiryu", "S", "https://i.imgur.com/RTUxvAI.gif", 530,550,540),
             ("Smoker", "S", "https://i.imgur.com/3vJPaRx.gif", 550, 520, 600),
-
             ("Sabo", "S", "https://i.imgur.com/vjcu8Gg.gif", 540, 595, 535),
             ("Boa Hancock", "S", 'https://i.imgur.com/ZWtbLYH.gif', 535, 545, 555),
             ("Marco", "S", 'https://i.imgur.com/LOo1j5P.gif', 580, 550, 575),
@@ -223,14 +222,14 @@ all_characters_templates = {
             ("Rob Lucci", "S", "https://i.imgur.com/aewCvhP.gif", 560, 570, 560),
 
             # Personnages A
-            ("Kuma", "A", "https://i.pinimg.com/originals/ea/ab/8f/eaab8f1c6b949ac0ba4287b128fe0546.gif", 395, 420, 445),
-            ("Kong", "A", "https://i.ytimg.com/vi/iRnFypQECiA/maxresdefault.jpg", 440, 420, 445),
-            ("Ivankov", "A", "https://preview.redd.it/was-ivankov-a-marine-before-a-revolutionary-1080-spoilers-v0-hu512bhdd1ua1.jpg?width=480&format=pjpg&auto=webp&s=fc2c8c335222de2eabcc10dc898eb8c758b20d20", 445, 420, 395),
-            ("Brook", "A", "https://pa1.aminoapps.com/6441/769e80cfc5fa4264e22470c35758624b0f1844f0_hq.gif", 445, 420, 395),
+            ("Kuma", "A", "https://i.imgur.com/chLQErz.gif", 395, 420, 445),
+            ("Kong", "A", "https://i.imgur.com/9KBCQoO.jpeg", 440, 420, 445),
+            ("Ivankov", "A", "https://i.imgur.com/5LxBHGh.jpeg", 445, 420, 395),
+            ("Brook", "A", "https://i.imgur.com/Dusk4ZW.gif", 445, 420, 395),
             ("Robin", "A", 'https://i.imgur.com/tiC5mlA.gif', 395, 420, 445),
             ("Jinbe", "A", 'https://i.imgur.com/5ktjcxG.png', 440, 420, 445),
-            ("Karasu", "A", "https://64.media.tumblr.com/442ea21ce795aef5dd5c530483bb8f34/tumblr_ppxot6VR2p1v6xsm2o3_540.gif", 395, 420, 445),
-            ("Yassop", "A","https://64.media.tumblr.com/baec79e8188657006b2e80c7405461ec/tumblr_mx8i0nXwyc1rr37qoo1_500.gif", 395, 410, 445),
+            ("Karasu", "A", "https://i.imgur.com/M4BBxgI.gif", 395, 420, 445),
+            ("Yassop", "A","https://i.imgur.com/KjovWi0.gif", 395, 410, 445),
 
             # Personnages B
             ("Chooper", "B", 'https://i.imgur.com/eSoVui2.png', 300, 330, 365),
@@ -238,39 +237,39 @@ all_characters_templates = {
             ("Ussop", "B", "https://i.imgur.com/oJD4qsv.gif", 330, 350, 315),
             ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 315, 335, 345),
             ("Buggy", "B", "https://i.imgur.com/9aeBJHQ.jpeg", 355, 330, 305),
-            ("Lindbergh", "B", "https://static.wikia.nocookie.net/onepiece/images/3/31/Cool_Shooter.png/revision/latest?cb=20190414113534", 330, 355, 305),
-            ("Koala", "B", "https://wegotthiscovered.com/wp-content/uploads/2023/04/koala-one-piece.jpg", 330, 355, 305),
+            ("Lindbergh", "B", "https://i.imgur.com/a8tSh0n.jpeg", 330, 355, 305),
+            ("Koala", "B", "https://i.imgur.com/WiiPoza.jpeg", 330, 355, 305),
             ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 305, 330, 355),
-            ("Belo Betty", "B", "https://areajugones.sport.es/wp-content/uploads/2020/01/belo-betty-one-piece.jpg", 355, 330, 305),
+            ("Belo Betty", "B", "https://i.imgur.com/RSckfSk.jpeg", 355, 330, 305),
             ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 340, 305, 355),
             ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 305, 330, 355),
 
             # Personnages C
-            ("Vivi", "C", "https://www.mangaluxe.com/dossiers/one-piece/img/nefertari-vivi.jpg", 285, 260, 235),
+            ("Vivi", "C", "https://i.imgur.com/16YOCq0.jpeg", 285, 260, 235),
             ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 235, 260, 285),
-            ("Don Krieg", "C", "https://cdn.oneesports.gg/cdn-data/2024/02/Anime_DonKrieg_OnePiece-1.jpg", 285, 260, 235),
-            ("Tashigi", "C", "https://www.opgt.it/wp-content/uploads/2018/07/tashigi-1024x578.jpg", 235, 260, 285),
-            ("Cobra", "C", "https://www.mangamag.fr/wp-content/uploads/2023/05/nefertari-cobra-one-piece-1084-assassinat.png", 285, 260, 235),
-            ("Hack", "C", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hack-One-Piece.jpg", 235, 260, 285),
+            ("Don Krieg", "C", "https://i.imgur.com/JvWP2oH.jpeg", 285, 260, 235),
+            ("Tashigi", "C", "https://i.imgur.com/Kkum0d7.jpeg", 235, 260, 285),
+            ("Cobra", "C", "https://i.imgur.com/NbrtIm5.png", 285, 260, 235),
+            ("Hack", "C", "https://i.imgur.com/SFJ2nKt.jpeg", 235, 260, 285),
             ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 285, 260, 235),
 
             # Personnages D
-            ("Dorry", "D", "https://m.media-amazon.com/images/M/MV5BZDE2OTA2MTMtN2VkZS00NDZkLThmNDctMTYzNDc5NzgxMDEyXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_.jpg", 155, 180, 205),
-            ("Brogy", "D", "https://www.roadtolaughtale.fr/wp-content/uploads/2024/01/broggy.jpg", 205, 180, 155),
+            ("Dorry", "D", "https://i.imgur.com/daws2KL.jpeg", 155, 180, 205),
+            ("Brogy", "D", "https://i.imgur.com/LlwBlC8.jpeg", 205, 180, 155),
 
             # Personnages E
-            ("Helmeppo", "E", "https://img24.tokyvideo.com/videos/319/319429/previews/previews_0009.jpg", 95, 120, 145),
-            ("Hatchan", "E", "https://lh5.googleusercontent.com/E3R0RFsbrh_SRGWZWQtDSYsYJ7O-aWkJ712dsKRX8b7O6nrEo9-94iFS8UShWmB0OIbaG4ce_C94fQiTrYSiybFqRzVrLAp1N86kHOvzDdoSBbHcfqPTyvNVZhklda5HJl9ybAAIpEJ2nAG8oV5sXXM", 145, 120, 95),
+            ("Helmeppo", "E", "https://i.imgur.com/ub30nMt.jpeg", 95, 120, 145),
+            ("Hatchan", "E", "https://i.imgur.com/NOhupN5.png", 145, 120, 95),
             ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 145, 120, 95),
-            ("Kuro", "E", "https://cdn-www.konbini.com/files/2023/04/one_piece_eiichiro_oda_premierefois14.jpg", 105, 120, 145),
-            ("Wapol", "E", "https://lh6.googleusercontent.com/VoyVXJY9nyRm35lSZLupPJsQkeHhqjGiWGyvglXg_IzfsrB4yYxJwZoc19Cjbt85aoFBTiDIfXav3q9aCKxC_f2Am_vcWRLqUxI1OMmx6_IysLZ7bzoBnCv4NuOHPdmYu8z-J7eM6JFjX7o4-OURPjs", 145, 120, 95),
+            ("Kuro", "E", "https://i.imgur.com/SUoZvEu.jpeg", 105, 120, 145),
+            ("Wapol", "E", "https://i.imgur.com/PSrXqQ6.jpeg", 145, 120, 95),
 
             # Personnages F
-            ("Merry","F","https://static.wikia.nocookie.net/onepiece/images/c/c1/Merry_spara.png/revision/latest?cb=20220124140512&path-prefix=it", 25, 50, 75),
-            ("Gaimon", "F", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/gaimon-cropped.jpg", 75, 50, 25),
-            ("Kaya", "F", "https://static.wikia.nocookie.net/onepiece/images/7/7c/Kaya_betrachtet_Usopps_Steckbrief.jpg/revision/latest?cb=20110906183227&path-prefix=de", 25, 50, 75),
-            ("Laboon", "F", "https://static.wikia.nocookie.net/onepiece/images/8/89/Little_Laboon.png/revision/latest?cb=20121126013140", 75, 50, 25),
-            ("Portgas D. Rouge", "F", "https://pm1.aminoapps.com/6197/4c59a4fc722f8d2401d5947667df68b10ba03d0e_hq.jpg", 25, 50, 75),
+            ("Merry","F","https://i.imgur.com/elYgXrH.png", 25, 50, 75),
+            ("Gaimon", "F", "https://i.imgur.com/DmyqVEz.jpeg", 75, 50, 25),
+            ("Kaya", "F", "https://i.imgur.com/aZcF3en.jpeg", 25, 50, 75),
+            ("Laboon", "F", "https://i.imgur.com/dqVZ8RB.png", 75, 50, 25),
+            ("Portgas D. Rouge", "F", "https://i.imgur.com/PsLtwjG.jpeg", 25, 50, 75),
             ],
             "Bleach" : [ # ✅
             # Personnages X
