@@ -431,7 +431,7 @@ all_characters_templates = {
             ("Rei Todoroki", "E", 'https://i.imgur.com/HkXkdzC.jpeg', 105, 120, 90),
 
             # Personnages F
-            ('Nezu', 'F', 'https://i.imgur.com/PipbKlv.png', 25, 10, 35) ,
+            ('Nezu', 'F', 'https://i.imgur.com/1Y3GUG5.png', 25, 10, 35) ,
             ('Eri', 'F', 'https://i.imgur.com/thiVSIU.jpeg', 20, 25, 25) ,
             ('Kenji', 'F', 'https://i.imgur.com/BGeI2LC.jpeg', 35, 35, 40) ,
             ('Sansa', 'F', 'https://i.imgur.com/bKASPVp.jpeg', 30, 35, 30) ,
@@ -574,18 +574,19 @@ all_characters_templates = {
             "Jujutsu Kaisen" : [  # ✅
             # Personnages X
             ("Sukuna", "X", "https://i.imgur.com/sALgfhD.gif", 1000, 1100, 1050),
-            ("Gojo", "X", "https://i.imgur.com/ZRlOmKu.gif", 999, 1050, 999),
+            ("Satoru Gojo", "X", "https://i.imgur.com/ZRlOmKu.gif", 999, 1050, 999),
             ("Kenjaku", "X", "https://i.imgur.com/40tFQKc.gif", 910, 920, 925),
 
             # Personnages SS
-            ("Yuta", "SS", "https://i.imgur.com/zG66ujn.gif", 750, 790, 785),
+            ("Yuta Okkotsu", "SS", "https://i.imgur.com/zG66ujn.gif", 750, 790, 785),
             ("Mahoraga", "SS", "https://i.imgur.com/X3JpLMk", 850, 850, 850),
             ("Toji Fushiguro", "SS", 'https://i.imgur.com/W479ima.png', 720, 780, 760),
             ("Aoi Todo", "SS", 'https://i.imgur.com/SpLV3Qv.png', 700, 730, 720),
-            ("Geto", "SS", 'https://i.imgur.com/ZetAyjs.gif', 700, 750, 670),
+            ("Suguru Geto", "SS", 'https://i.imgur.com/ZetAyjs.gif', 700, 750, 670),
             ("Choso", "SS", 'https://i.imgur.com/tPHJtTO.gif', 730, 740, 760),
             ("Mahito", "SS", 'https://i.imgur.com/a2gCQIC.gif', 650, 730, 700),
             ("Jogo", "SS", 'https://i.imgur.com/iyNljeL.gif', 700, 750, 700),
+            ("Uraume", "SS", 'https://i.imgur.com/Ay1WmqD.gif', 705, 740, 700),
             ("Kinji Hakari", "SS", 'https://i.imgur.com/OSTYTVF.png', 777, 777, 777),
             ("Yuki Tsukumo", "SS", 'https://i.imgur.com/WlIBwGu.png', 700, 800, 700),
             ("Hanami","SS","https://i.imgur.com/eO8Ezjm.gif", 700, 730, 700),
@@ -1133,10 +1134,20 @@ all_synergies = [
     (126, "Kujo", "ATK", 0.45, "La famille Kujo est une famille de Stand Users qui combattent les forces du mal.", image_temporaire, "#00000"),
     (127, "Manipulateur de Sang", "ATK", 0.45, "Les Manipulateurs de Sang sont des individus qui peuvent manipuler le sang pour attaquer leurs ennemis.", image_temporaire, "#00000"),
     (128, "CP-0", "DEF", 0.45, "Le CP-0 est une unite speciale de la Marine qui traque les criminels les plus dangereux du monde.", "https://staticg.sportskeeda.com/editor/2023/12/556eb-17027667692782-1920.jpg", "#00000"),
+    (129, "Maître du Brouillard", "DEF", 0.45, "Les Maîtres du Brouillard sont des ninjas qui peuvent manipuler le brouillard pour attaquer leurs ennemis.", image_temporaire, "#00000"),
+    (130, "Maitre des Fleaux", "ATK", 0.45, "Les Maitres des Fleaux sont des individus qui possedent des pouvoirs de fleaux et qui peuvent detruire des villes entieres.", image_temporaire, "#00000"),
+    (131, "Dépourvé d'énergie occulte", "ATK", 0.45, "Les Dépourvus d'énergie occulte sont des individus qui n'ont pas d'énergie occulte et qui doivent utiliser des armes pour combattre.", image_temporaire, "#00000"),
+    (132, "Classe S", "ATK", 0.50, "Les exorcistes de classe S sont les exorcistes les plus dangereux, ils sont capables de battre un pays entier", image_temporaire, "#00000"),
+    (133, "Roi", "ATK", 0.50, "Un roi est un individu qui a le pouvoir absolu sur son royaume et qui peut faire ce qu'il veut.", image_temporaire, "#00000"),
 ]
 
 
 all_link_synergies = {
+    133 : ["Sukuna", "Meruem", "Yhwach","Zeno"], # Roi
+    132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu"], # Classe S
+    131 : ["Toji Fushiguro","Maki Zenin"], # Dépourvu d'énergie occulte
+    130 : ["Suguru Geto","Miguel","Juzo","Uraume","Haruta Shigemo","Sukuna","Kenjaku","Junpei"], # Maitre des Fleaux
+    129 : ["Smoker","Morel","Zabuza"], # Maître du Brouillard
     128 : ["Kaku","Rob Lucci"], # CP-0
     127 : ["Choso","Kechizu", "Katara","Hama"], # Manipulateur de Sang
     126 : ["Jotaro Kujo","Jolyne Kujo"], # Famille Kujo
@@ -1196,7 +1207,7 @@ all_link_synergies = {
     74 : ["Noritoshi Kamo","Kenjaku"], # Kamo
     73 : ["Toji Fushiguro", "Naobito Zenin","Mai Zenin","Maki Zenin","Megumi Fushiguro"], # Zenin
     72 : ["Gakuganji","Utahime","Arata Nitta","Mai Zenin","Miwa","Mechamaru","Aoi Todo","Noritoshi Kamo","Momo","Akari Nitta"], # ecole de Kyoto
-    71 : ["Yaga","Ijichi","Gojo","Kusakabe","Sheko Ieri","Akari Nitta","Megumi Fushiguro","Yuji Itadori","Nobara","Maki Zenin","Toge Inumaki","Panda","Yuta","Kinji Hakari","Nanami","Geto","Yu Haibara"], # ecole de Tokyo
+    71 : ["Yaga","Ijichi","Satoru Gojo","Kusakabe","Sheko Ieri","Akari Nitta","Megumi Fushiguro","Yuji Itadori","Nobara","Maki Zenin","Toge Inumaki","Panda","Yuta Okkotsu","Kinji Hakari","Nanami","Suguru Geto","Yu Haibara"], # ecole de Tokyo
     70 : ["Sukuna", "Mahito", "Jogo", "Dagon", "Hanami", "Choso","Kechizu"], # Fleaux
     69 : ["Jonathan Joestar", "Joseph Joestar", "Jotaro Kujo", "Josuke Higashikata", "Giorno Giovanna", "Jolyne Kujo", "Johnny"], # JoJo
     68 : ["Genos","Cyborgorilla","C-17","C-18"], # Cyborg
@@ -1221,7 +1232,7 @@ all_link_synergies = {
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Monkey D. Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu"], # Revolutionnaires
     19 : ["Monkey D. Luffy", "Monkey D. Garp", "Gol D. Roger", "Portgas D. Ace", "Monkey D. Dragon", "Sabo", "Trafalgar D. Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
-    20 : ["Kiba", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko"], # Animal TODO
+    20 : ["Kiba", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko","Kiriko","Nezu"], # Animal TODO
     21 : ["Sasuke Uchiha", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Pain", "Obito Uchiha", "Madara Uchiha", "Sasuke Uchiha"], # Rinnegan
     23 : ["Naruto Uzumaki", "Sakura", "Sasuke Uchiha", "Kakashi Hatake", "Shikamaru Nara", "Choji", "Ino", "Hinata Hyuga", "Kiba", "Shino", "Neji Hyuga", "Rock Lee", "Tenten"], # Konoha TODO
@@ -1235,7 +1246,7 @@ all_link_synergies = {
     31 : ["Aang","Korra", "Toph", "Yamato (naruto)", "Hashirama Senju","Kakuzu"], # Maitre de la Terre TODO
     32 : ["Aang","Korra","Temari"], # Maitre de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Lord Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena"], # Maitre de la foudre TODO
-    34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia Kuchiki","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki"], # Maitre de la Glace TODO Gray Fullbuster
+    34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia Kuchiki","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki", "Uraume"], # Maitre de la Glace TODO Gray Fullbuster
 
     36 : ["Akainu", "Jogo","Mei Terumi"], # Maitre de la Lave TODO
 
