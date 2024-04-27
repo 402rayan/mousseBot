@@ -928,8 +928,7 @@ async def invocation(message, userFromDb):
     # On vérifie si l'utilisateur a assez de tickets
     tickets = database.get_tickets(message.author.id)
     if tickets < CONSTANTS['INVOCATION_COST']:
-        response = "Vous n'avez pas assez de tickets pour invoquer un personnage!"
-        await message.channel.send(response)
+        await message.channel.send(embed=embed_info("Vous n'avez pas assez de tickets pour invoquer!","", discord.Color.red()))
         return
     donnees = database.summon_character(message.author.id, message.author.name)
     # SI la données est de type String, c'est une erreur
