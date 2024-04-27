@@ -122,6 +122,7 @@ class Database:
         CREATE TABLE IF NOT EXISTS user_choices (
             user_discord_id TEXT,
             lvl1fumee BOOLEAN DEFAULT NULL,
+            lvl4zukoLie BOOLEAN DEFAULT NULL,
             lvl6pucci BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
@@ -163,7 +164,7 @@ class Database:
         
     def insert_user(self, user_discord_id, user_name):
         #On vérifie si l'utilisateur existe déjà
-        logger.info(f"Vérification de l'utilisateur {user_name} ({user_discord_id}) dans la base de données.")
+        #logger.info(f"Vérification de l'utilisateur {user_name} ({user_discord_id}) dans la base de données.")
         self.cur.execute(f"SELECT * FROM users WHERE user_discord_id = {user_discord_id}")
         user = self.cur.fetchone()
         if user is None:
@@ -651,8 +652,8 @@ class Database:
     def getIdFromName(self,name):
         # Retourne l'id du personnage à partir de son nom si il existe, sinon None
         template = self.get_character_template_by_name(0, "Bot", name)
-        logger.info(f"Récupération de l'id du personnage {name}.")
-        logger.info(template)
+        # logger.info(f"Récupération de l'id du personnage {name}.")
+        # logger.info(template)
         if template is None:
             return None
         return template[0]

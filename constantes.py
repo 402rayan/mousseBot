@@ -167,6 +167,42 @@ phrases_invocation = [
 
 
 ennemis = {
+    "Rui" : {
+        'nom' : 'Rui',
+        'couleur' : 0x490c11,
+        'nomGif' : 'rui',
+        'nomPfp' : 'rui',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 1000,
+            'ATK' : 1100,
+            'DEF' : 500,
+        }
+    },
+    "Tompa" : {
+        'nom' : 'Tompa',
+        'couleur' : CONSTANTS['COLORS']['FORET'],
+        'nomGif' : 'tompa',
+        'nomPfp' : 'tompaPfp',
+        'isNotGif' : True,
+        'stats' : {
+            'HP' : 250,
+            'ATK' : 350,
+            'DEF' : 500,
+        }
+    },
+    "Haku" : {
+        'nom' : 'Haku',
+        'couleur' : CONSTANTS['COLORS']['FROID'],
+        'nomGif' : 'haku',
+        'nomPfp' : 'haku',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 500,
+            'ATK' : 600,
+            'DEF' : 500,
+        }
+    },
     "Dorry et Broggy" : {
         'nom' : 'Dorry et Broggy',
         'couleur' : CONSTANTS['COLORS']['BROGGY'],
@@ -174,9 +210,9 @@ ennemis = {
         'isNotGif' : True,
         'nomPfp' : 'broggy',
         'stats' : {
-            'HP' : 400,
-            'ATK' : 350,
-            'DEF' : 200,
+            'HP' : 500,
+            'ATK' : 400,
+            'DEF' : 500,
         }
     },
     "UVOGUINE" : {
