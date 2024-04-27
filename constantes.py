@@ -1,7 +1,7 @@
 CONSTANTS = {
-    'HOURLY_TICKETS': 3,
-    'INVOCATION_COST': 1,
-    'MAX_CHARACTERS': 60,
+    'HOURLY_TICKETS': 4,
+    'INVOCATION_COST': 0,
+    'MAX_CHARACTERS': 999999,
     'BASE_CHANCE_VICTORY': 0.6,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'RARITY_PRICE': {
@@ -22,11 +22,19 @@ CONSTANTS = {
         'SS': 0.02,
         'S': 0.05,
         'A': 0.1,
-        'B': 0.15,
-        'C': 0.2,
+        'B': 0.2,
+        'C': 0.3,
         'D': 0.15,
         'E': 0.1,
-        'F': 0.1,
+        'F': 0.07,
+    },
+    'RARITY_CHANCE_HIGH': {
+        # Change d'obtenir un personnage de la rareté correspondante en cas de GROS ticket
+        'X': 0.1,
+        'SS': 0.15,
+        'S': 0.25,
+        'A': 0.3,
+        'B': 0.2
     },
     'RARITY_COLOR': {
         # Couleur des personnages de la rareté correspondante
@@ -182,5 +190,17 @@ ennemis = {
             'ATK' : 700,
             'DEF' : 500,
         }
-    }
+    },
+    "SAIBAMAN" : {
+        'nom' : 'Saibaman',
+        'couleur' : CONSTANTS['COLORS']['SAIBAMAN'],
+        'nomGif' : 'saibaman',
+        'nomPfp' : 'saibaman',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 150,
+            'ATK' : 130,
+            'DEF' : 150,
+        }
+    },
 }

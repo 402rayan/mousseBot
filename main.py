@@ -608,9 +608,9 @@ async def niveau2(message, userFromDb, equipe):
     await finDeNiveau(message, userFromDb, 3, ticketsGagnes)
 
 async def niveau1(message, userFromDb, equipe):
-    await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
-    await asyncio.sleep(3)
     await message.channel.send(embed=embed_naratteur("Cinématique : Enrico Pucci détruit l'univers...", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    await asyncio.sleep(3)
+    await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
     await asyncio.sleep(4.5)
     await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans un indroit inconnu.. une autre personne semble ne pas être très loin..", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4.5)
@@ -618,33 +618,34 @@ async def niveau1(message, userFromDb, equipe):
     await asyncio.sleep(4.5)
     await embed_histoire_character(message,"Un homme inconnu vous demande : ", "", "inconnu", "", "Tout va bien?", CONSTANTS['COLORS']['INCONNU'])
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
+    await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "", "Mon nom est Shanks.", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à défiler inexorablement.", CONSTANTS['COLORS']['SHANKS'])
+    await embed_histoire_character(message,"Shanks vous raconte :", "", "shanks", "", "J'étais avec mes compagnons sur mon navire lorsque le ciel s'est assombri.", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(5)
-    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'ai alors aperçu un homme vêtu d'une chape noire et puis.. je me suis réveillé ici.", CONSTANTS['COLORS']['SHANKS'])
+    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'ai alors aperçu une sorte de prêtre... et je me suis réveillé ici.", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)
     await embed_histoire_character(message,"Inconu", "", "inconnu", "", "Un bruit surgit..", CONSTANTS['COLORS']['INCONNU'])
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Saibaman", "saibaman", "saibaman", "", "Un monstre vous attaque!", CONSTANTS['COLORS']['SAIBAMAN'],False)
-    await asyncio.sleep(5)
-    await message.channel.send(embed=embed_info("Combat contre le Saibaman", "Vous avez vaincu le Saibaman!", discord.Color.green()))
+    await message.channel.send(embed=embed_naratteur("Un monstre vous attaque!", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "Impressionant!", CONSTANTS['COLORS']['SHANKS'])
+    if not await combatPvm(message, equipe, ennemis["SAIBAMAN"]):
+        return await echecNiveau(message, userFromDb, 1)
     await asyncio.sleep(4)
-    await embed_histoire_character(message,"Shanks :", "", "shanks", "", "Je crois apercevoir de la fumée vers là-bas.", CONSTANTS['COLORS']['SHANKS'])
+    await embed_histoire_character(message,"Shanks est étoné :", "", "shanks", "", "Oh mais tu sais te battre!", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)
-    await message.channel.send(embed=embed_raw("Un bruit retentit de l'autre côté de la forêt..", "", CONSTANTS['COLORS']['BRUIT']))
+    await embed_histoire_character(message,"Shanks semble apercevoir quelque chose :", "", "shanks", "", "Serait-ce de la fumée vers là-bas.", CONSTANTS['COLORS']['SHANKS'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_raw("De l'autre côté, un bruit retentit dans la forêt..", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(5)
     description = "🌲 : Aller vers la forêt" + "\n💨 : Aller vers la fumée"
-    msg = await embed_histoire_character(message,"Shanks :", "", "shanks", description, "Où devrions-nous aller?", CONSTANTS['COLORS']['SHANKS'])
+    msg = await embed_histoire_character(message,"Shanks vous questionne :", "", "shanks", description, "Où devrions-nous aller?", CONSTANTS['COLORS']['SHANKS'])
     for reaction in ['🌲','💨']:
         await msg.add_reaction(reaction)
     try:
         reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['🌲', '💨'])
     except:
         await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
-        return
+        return await echecNiveau(message, userFromDb, 1)
     if str(reaction.emoji) == '🌲':
         await message.channel.send(embed=embed_raw("Vous partez en route vers la forêt.", "", CONSTANTS['COLORS']['FORET']))
     if str(reaction.emoji) == '💨':
@@ -652,9 +653,6 @@ async def niveau1(message, userFromDb, equipe):
     database.updateChoice(userFromDb[1], "lvl1fumee", str(reaction.emoji) == '💨')
     await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 2)
-
-async def test(message, userFromDb):
-    await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "J'étais avec mes compagnons sur mon navire lorsque la lune et le soleil ont commencé à tournoyer inlassablement.\nJ'ai alors aperçu une sorte de prêtre, et je me suis réveiller ici..", "Mon nom est Shanks."[:245], CONSTANTS['COLORS']['SHANKS'])
 
 def embed_raw(titre,description,color, footer=None):
     # Retourne un embed avec un titre, une description, une couleur et un footer
@@ -905,8 +903,16 @@ async def claimHourly(message, userFromDb):
     user = message.author
     claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
-        titre = f"Vous avez obtenu 3 tickets et beaucoup d'expérience!"
+        titre = f"Vous avez obtenu {str(CONSTANTS['HOURLY_TICKETS'])} tickets et beaucoup d'expérience!"
         await message.channel.send(embed=embed_auteur(message.author,f"Récompense :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
+        if random.random() < 0.3:
+            await asyncio.sleep(1)
+            await message.channel.send(embed=embed_info("Récompense spéciale", "Vous avez obtenu un ticket bonus!", discord.Color.gold()))
+            database.update_tickets(user.id, database.get_tickets(user.id) + 1)
+        if random.random() < 0.05:
+            await asyncio.sleep(1)
+            await message.channel.send(embed=embed_info("Récompense spéciale", "Votre prochaine invocation sera chanceuse!", discord.Color.gold()))
+            database.update_special_invocation(user.id, True)
     elif not(claim[0]):
         temps_restant = claim[1]
         temps_restant_minutes = (temps_restant.seconds//60)%60
@@ -930,7 +936,9 @@ async def invocation(message, userFromDb):
     if tickets < CONSTANTS['INVOCATION_COST']:
         await message.channel.send(embed=embed_info("Vous n'avez pas assez de tickets pour invoquer!","", discord.Color.red()))
         return
-    donnees = database.summon_character(message.author.id, message.author.name)
+    specialInvocation = userFromDb[9]
+    print(f"Invocation spéciale : {specialInvocation}")
+    donnees = database.summon_character(message.author.id, message.author.name, specialInvocation)
     # SI la données est de type String, c'est une erreur
     if type(donnees) == str:
         if donnees == "ERROR_NO_CHARACTER":
@@ -939,18 +947,21 @@ async def invocation(message, userFromDb):
             await message.channel.send(embed=embed_info("Erreur", f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !", discord.Color.red(),footer="Vendez des personnages avec !sell"))
         return
     template = donnees[0]
-    msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
+    if specialInvocation:
+        msg = await message.channel.send(embed=embed_info("Invocation chanceuse...", "Veuillez patienter...", 0xf59e42))
+    else:
+        msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
     if rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
         msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
-        await asyncio.sleep(6)
+        # await asyncio.sleep(6)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
         
     elif rarityOfCharacter in ["F", "E", "D", "C"]:
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await msg.edit(embed=embed_invocation(template,message.author))
 
     else:
@@ -959,9 +970,9 @@ async def invocation(message, userFromDb):
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
-            await asyncio.sleep(random.uniform(1, 2))
+            # await asyncio.sleep(random.uniform(1, 2))
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
     return
@@ -1120,7 +1131,7 @@ async def combatPvm(message, team, ennemi):
             personnageQuiJoue = random.choice(team['team'])[6]
         else:
             personnageQuiJoue = ennemi["nom"]
-        await tour(message, personnageQuiJoue, team)
+        await tour(message, personnageQuiJoue, team, onlyAttack=True)
     elif combatType == 1:
         # Combat Low diff
         # On montre 2 tours du gagnats et 1 tour du perdant dans un ordre aléatoire
@@ -1182,7 +1193,7 @@ async def combatPvm(message, team, ennemi):
 
 
     
-async def tour(message, personnage, ennemi):
+async def tour(message, personnage, ennemi,onlyAttack=False):
     # Envoie un message pour le tour d'un personnage
     # On cherche si le personnage a des attaques gifs
     attaques = database.get_attaques_by_character_name(personnage)
@@ -1205,7 +1216,7 @@ async def tour(message, personnage, ennemi):
         return
     # Sinon, on envoie une attaque normale
     rdm = random.random()
-    if rdm < 0.6:
+    if rdm < 0.6 or onlyAttack:
         liste_attaques = ["attaque", "inflige des dégâts", "frappe fort"]
         await message.channel.send(embed=embed_info(f"{personnage} {random.choice(liste_attaques)}.", "",discord.Color.red()))
     elif rdm < 0.90:
@@ -1248,9 +1259,9 @@ def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
 @bot.command()
 async def introductionCombat(message, team, ennemi):
     # Affiche l'introduction du combat
+    logger.info(f"Combat entre {message.author} et {ennemi['nom']}.")
     await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
-    await asyncio.sleep(2)
-    print(team)
+    await asyncio.sleep(0.5)
     team_atk = team['stats']['ATK']; team_def = team['stats']['DEF']; team_hp = team['stats']['HP']
     titre = "Votre équipe est prête à combattre!"; statsTeam = f"HP:{team_hp} ATK:{team_atk} DEF:{team_def}"
     perso1 = team['team'][0]; perso2 = team['team'][1]; perso3 = team['team'][2]
@@ -1397,7 +1408,7 @@ async def voirTeam(message, userFromDb):
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
-        footer += f"\nBonus : {bonus['HP']}HP {bonus['ATK']}ATK {bonus['DEF']}DEF "
+        footer += f"\nBonus de synergies : {bonus['HP']}HP {bonus['ATK']}ATK {bonus['DEF']}DEF "
     embed.set_footer(text=footer)
     await message.channel.send(embed=embed)
     return
@@ -1759,7 +1770,6 @@ commands = {
     "coul": couleur,
     "liste": liste,
     "setlevel": setLevel,
-    "test": test,
     "cla": classement,
     "ran": classement,
     "infot": infoTechnique,

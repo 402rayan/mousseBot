@@ -54,6 +54,7 @@ class Database:
             character_slot_two INTEGER,
             character_slot_three INTEGER,
             histoireLevel INTEGER DEFAULT 1,
+            next_invocation INTEGER DEFAULT 0,
             FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
@@ -331,14 +332,21 @@ class Database:
         self.conn.commit()
         logger.info(f"Le personnage {char_id} a été mis à jour.")
     
-    def summon_character(self, user_discord_id, user_name):
+    def update_special_invocation(self, user_discord_id, value):
+        self.cur.execute(f"UPDATE users SET next_invocation = {value} WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+
+    def summon_character(self, user_discord_id, user_name, special=False):
         # On réduit le nombre de tickets
         tickets = self.get_tickets(user_discord_id)
         if tickets < CONSTANTS['INVOCATION_COST']:
             return None
         tickets -= CONSTANTS['INVOCATION_COST']
         # On choisit la rareté du personnage invoqué
-        rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
+        if special:
+            rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
+        else:
+            rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
@@ -360,6 +368,8 @@ class Database:
         new_character = self.create_character(user_discord_id,user_name, template_id)
         logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}.")
         self.update_tickets(user_discord_id, tickets)
+        if special:
+            self.update_special_invocation(user_discord_id, False)
         return [template, self.get_character(new_character)]
     
     def fakeTeam(self, user_discord_id):

@@ -145,6 +145,7 @@ all_characters_templates = {
             ("Yamato (naruto)", "B", "https://i.imgur.com/ysZw0Ep.jpeg", 355, 315, 340), 
             ("Neji Hyuga", "B", "https://i.imgur.com/acFMgGN.png", 325, 330, 305),
             ("Kankuro", "B", 'https://i.imgur.com/6h0fZTJ.png', 355, 305, 355),
+            ("Chiyo", "B", 'https://i.imgur.com/FTca3VV.jpeg', 305, 355, 310),
             ("Choji", "B", 'https://media1.tenor.com/m/FAqetz7SiCEAAAAd/choji.gif', 305, 345, 365), 
             ("Shino", "B", 'https://i.imgur.com/mVxNOAM.png', 355, 305, 355),
             ("Kiba", "B", 'https://cdn.discordapp.com/attachments/804401351080542269/808361778567970876/KIBA.gif', 305, 355, 305),
@@ -346,7 +347,6 @@ all_characters_templates = {
             ("Masaki Kurosaki","C","https://i.imgur.com/o6oX1Q6.jpeg", 250, 230, 270),
             
             # Personnages D
-            ("Tessai", "D", 'https://i.imgur.com/VwYCDSH.png', 175, 190, 180),
             ("Hanataro", "D", 'https://i.imgur.com/MPaOL4G.png', 185, 170, 180),
             ("Yachiru", "D", 'https://i.imgur.com/6mO9KFd.jpeg', 180, 190, 175),
 
@@ -823,7 +823,7 @@ all_characters_templates = {
             ('Kagaya Ubuyashiki', 'E', 'https://i.imgur.com/96vapZl.jpeg', 120, 150, 105) ,
 
             # Personnages F
-            ('Kiriya Ubuyashiki', 'F', 'https://i.imgur.com/nszgBal.png', 55, 50, 25) ,
+            ('Kiriya Ubuyashiki', 'F', 'https://i.imgur.com/TSP73o7.jpeg', 55, 50, 25) ,
             ('Nichika Ubuyashiki', 'F', 'https://i.imgur.com/von4C2M.png', 50, 30, 40) ,
             ('Chachamaru', 'F', 'https://i.imgur.com/F5RzFaL.png', 35, 60, 45) ,
             ('Aoi Kanzaki', 'F', 'https://i.imgur.com/QWv5qQG.jpeg', 30, 20, 20) ,
@@ -1004,11 +1004,13 @@ all_characters_templates = {
             # Personnages SS
             ("Shaka", "SS", "https://i.imgur.com/tkAVOuQ.gif", 700, 720, 700),
             ],
-
+        "Autre" : [ # ✅
+            ("Moshi", "C", "https://i.imgur.com/OUyDLg1.jpeg", 213, 213, 213),
+        ],
 }
 
 all_synergies = [
-    (1, "Akatsuki", "ATK", 0.45,"L'akkatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
+    (1, "Akatsuki", "ATK", 0.45,"L'akatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
     (2, "Saiyan", "ATK", 0.40, "Les Saiyans sont connus pour leur force et leur capacité à se transformer en Super Saiyan.", image_temporaire, "#FFA500"),
     (3, "Hollow", "ATK", 0.15, "Les Hollows sont des âmes corrompues qui ont perdu leur coeur et leur raison.", image_temporaire, "#0000FF"),
     (4, "Mugiwara", "HP", 0.30, "Les Mugiwara sont l'équipage de Monkey D. Luffy, un pirate qui cherche le One Piece.", 'https://steamuserimages-a.akamaihd.net/ugc/481145984302804192/29529359BC636378F426946B2D859F7EB46561BB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#800080"),
@@ -1070,7 +1072,7 @@ all_synergies = [
     (62, "Equipage de Kaido", "DEF", 0.45, "L'equipage de Kaido est un groupe de pirates dirige par Kaido le Cent betes.", image_temporaire, "#800080"),
     (63, "Equipage de Big Mom", "HP", 0.45, "L'equipage de Big Mom est un groupe de pirates dirige par Big Mom.", image_temporaire, "#FF0000"),
     (64, "Draconique", "ATK", 0.45, "Les Dragons sont des creatures mythiques qui possedent des pouvoirs magiques.", image_temporaire, "#FFA500"),
-    (65, "Speedster", "ATK", 0.35, "Les Speedsters sont des personnages qui peuvent se deplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
+    (65, "Monstre de vitesse", "ATK", 0.50, "Les Monstre de vitesse sont des personnages qui peuvent se deplacer à une vitesse supersonique.", image_temporaire, "#0000FF"),
     (66, "Aveugle", "ATK", 0.40 , "Les Aveugles sont des personnages qui ont perdu la vue mais qui ont developpe d'autres sens pour compenser.", image_temporaire, "#800080"),
     (67, "Dojo de Bang", "ATK", 0.35, "Le Dojo de Bang est un lieu d'entrainement où les disciples apprennent les techniques de combat de Bang.", image_temporaire, "#FF0000"),
     (68, "Cyborg", "DEF", 0.40, "Les Cyborgs sont des etres humains qui ont ete ameliores avec des technologies cybernetiques.", image_temporaire, "#FFA500"),
@@ -1136,13 +1138,19 @@ all_synergies = [
     (128, "CP-0", "DEF", 0.45, "Le CP-0 est une unite speciale de la Marine qui traque les criminels les plus dangereux du monde.", "https://staticg.sportskeeda.com/editor/2023/12/556eb-17027667692782-1920.jpg", "#00000"),
     (129, "Maître du Brouillard", "DEF", 0.45, "Les Maîtres du Brouillard sont des ninjas qui peuvent manipuler le brouillard pour attaquer leurs ennemis.", image_temporaire, "#00000"),
     (130, "Maitre des Fleaux", "ATK", 0.45, "Les Maitres des Fleaux sont des individus qui possedent des pouvoirs de fleaux et qui peuvent detruire des villes entieres.", image_temporaire, "#00000"),
-    (131, "Dépourvé d'énergie occulte", "ATK", 0.45, "Les Dépourvus d'énergie occulte sont des individus qui n'ont pas d'énergie occulte et qui doivent utiliser des armes pour combattre.", image_temporaire, "#00000"),
+    (131, "Dépourvu d'énergie occulte", "ATK", 0.45, "Les Dépourvus d'énergie occulte sont des individus qui n'ont pas d'énergie occulte et qui doivent utiliser des armes pour combattre.", image_temporaire, "#00000"),
     (132, "Classe S", "ATK", 0.50, "Les exorcistes de classe S sont les exorcistes les plus dangereux, ils sont capables de battre un pays entier", image_temporaire, "#00000"),
     (133, "Roi", "ATK", 0.50, "Un roi est un individu qui a le pouvoir absolu sur son royaume et qui peut faire ce qu'il veut.", image_temporaire, "#00000"),
+    (134, "Prisonnier", "DEF", 0.45, "Les prisonniers sont des individus qui ont ete emprisonnes pour leurs crimes et qui doivent purger leur peine.", image_temporaire, "#00000"),
+    (135, "Marionnettiste", "ATK", 0.65, "Les Marionnettistes sont des individus qui peuvent controler les autres par la force de leur volonte.", image_temporaire, "#00000"),
+    (136, "Masqué", "DEF", 0.45, "Les Masqués sont des individus qui portent un masque pour cacher leur identite et proteger leur famille.", image_temporaire, "#00000"),
 ]
 
 
 all_link_synergies = {
+    136 : ["Kakashi Hatake","Satoru Gojo","Takuma Ino"], # Masqué
+    135 : ["Kankuro", "Sasori","Chiyo","Doflamingo"], # Marionnettiste
+    134 : ["Jones","Leluto"], # Prisonnier
     133 : ["Sukuna", "Meruem", "Yhwach","Zeno"], # Roi
     132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu"], # Classe S
     131 : ["Toji Fushiguro","Maki Zenin"], # Dépourvu d'énergie occulte
@@ -1157,7 +1165,8 @@ all_link_synergies = {
     122 : ["Choso","Eso","Kechizu"], # Foetus des Neuf Phases
     121 : ["Jaygarcia Saturn","Marcus Mars","Topman Warcury", "Ethanbaron Nusjuro","Shepherd Ju Peter"], # Doyen
     120 : ["Ichigo Kurosaki", "Masaki Kurosaki", "Karin Kurosaki", "Yuzu Kurosaki", "Isshin Kurosaki"], # Famille Kurosaki
-    6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach"], # Quincy
+    3 : ["Ichigo Kurosaki"], # Hollow
+    6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach","Ichigo Kurosaki"], # Quincy
     8 : ["Grimmjow", "Ulquiorra", "Nnoitra", "Halibel", "Barragan", "Starrk"], # Espada
     119 : ["Obito Uchiha", "Mirio Togata","Zetsu"], # Intangible
     118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin","Benn Beckman","Usopp"], # Sniper
@@ -1213,7 +1222,7 @@ all_link_synergies = {
     68 : ["Genos","Cyborgorilla","C-17","C-18"], # Cyborg
     67 : ["Grimasse","Garou","Charanko","Bang"], # Dojo de Bang
     66 : ["Fujitora","Toph","Tosen","Komugi","Shaka","N'Doul"], # Aveugle 
-    65 : ["Minato Namikaze", "Tobirama Senju", "Yoruichi", "Gran Torino","Sonic"], # Speedster TODO
+    65 : ["Minato Namikaze", "Tobirama Senju", "Yoruichi", "Gran Torino","Sonic"], # Monstre de vitesse TODO
     64 : ["Kaido","Ryukyu","Toshiro Hitsugaya","Shenron","Botobai Gigante"], # Draconique TODO  ,"Acnologia","Igneel"
     63 : ["Big Mom", "Katakuri"], # equipage de Big Mom
     62 : ["Kaido", "King", "Queen"], # equipage de Kaido
@@ -1236,13 +1245,13 @@ all_link_synergies = {
     21 : ["Sasuke Uchiha", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Pain", "Obito Uchiha", "Madara Uchiha", "Sasuke Uchiha"], # Rinnegan
     23 : ["Naruto Uzumaki", "Sakura", "Sasuke Uchiha", "Kakashi Hatake", "Shikamaru Nara", "Choji", "Ino", "Hinata Hyuga", "Kiba", "Shino", "Neji Hyuga", "Rock Lee", "Tenten"], # Konoha TODO
-    24 : ["Gaara", "Temari", "Kankuro", "Yashamaru"], # Suna TODO
+    24 : ["Gaara", "Temari", "Kankuro", "Yashamaru","Chiyo"], # Suna TODO
     25 : ["Kisame", "Zabuza", "Haku", "Mei Terumi", "Suigetsu"], # Kiri TODO
     26 : ["Darui", "Omoi", "Killer Bee", "Samui", "Atsui", "Onoki"], # Kumo TODO
     27 : [ "Onoki", "Deidara", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto Uzumaki", "Killer Bee", "Yugito","Fû", "Yuji Itadori","Madara Uchiha","Obito Uchiha","Gaara","Mito Uzumaki"], # Receptacle TODO
     29 : ["Aang","Korra", "Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Lord Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi","Sukuna"],# Maitre du Feu TODO
-    30 : ["Aang","Korra", "Katara", "Korra", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Haku","Hama"], # Maitre de l'Eau TODO
+    30 : ["Aang","Korra", "Katara", "Korra", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Haku","Hama","Halibel","Jinbe"], # Maitre de l'Eau TODO
     31 : ["Aang","Korra", "Toph", "Yamato (naruto)", "Hashirama Senju","Kakuzu"], # Maitre de la Terre TODO
     32 : ["Aang","Korra","Temari"], # Maitre de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Lord Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena"], # Maitre de la foudre TODO
@@ -1250,11 +1259,11 @@ all_link_synergies = {
 
     36 : ["Akainu", "Jogo","Mei Terumi"], # Maitre de la Lave TODO
 
-    40 : ["Zoro", "Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Dabi", "Darui", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao"], # epeiste
+    40 : ["Zoro", "Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Dabi", "Darui", "Yamamoto", "Trunks", "Tapion", "Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel"], # epeiste
     # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Barbe Noire", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Portgas D. Ace"], # Equipage de Barbe Blanche
-    44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Pain", "Karin", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki","Tsunade"], # Uzumaki
+    44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Pain", "Karin (naruto)", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki","Tsunade"], # Uzumaki
     45 : ["Neji Hyuga", "Hinata Hyuga", "Hiashi", "Hanabi Hyuga","Himawari Uzumaki", "Boruto Uzumaki"], # Hyuga
     46 : ["Hashirama Senju", "Tobirama Senju", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya Otsutsuki", "Rikudo", "Urashiki Otsutsuki", "Momoshiki Otsutsuki", "Toneri Otsutsuki", "Isshiki Otsutsuki"], # Otsutsuki
@@ -1267,7 +1276,7 @@ all_link_synergies = {
     54 : ["Kira Yoshikage", "Katsuki Bakugo"], # Maitre de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan Joestar", "Will Zeppeli", "Joseph Joestar", "Caesar Zeppeli", "Lisa Lisa", "Poco"], # Hamon
-    57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Fugo","Luca","Polpo"], # Passione
+    57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Luca","Polpo"], # Passione
     58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio"], # Team Bucciarati
     
 }
