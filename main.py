@@ -1536,7 +1536,19 @@ async def reset(message, userFromDb):
     if message.author.id not in [724383641752436757,617045747862470803]:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
-    database.reset(False)
+    titre = "Voulez vous reset TOUTES les données ou seulement les personnages?"
+    msg = await message.channel.send(embed=embed_info("Confirmation", titre, discord.Color.gold()))
+    await msg.add_reaction('✅')
+    await msg.add_reaction('❌')
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+    except:
+        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+        return
+    if str(reaction.emoji) != '✅':
+        database.resetCharactersTemplatesAndSynergies()
+    else:
+        database.reset()
     await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
 
 @bot.command()

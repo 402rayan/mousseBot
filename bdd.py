@@ -628,6 +628,19 @@ class Database:
         if verbose:
             logger.info("Les tables ont été supprimées.")
 
+    def resetCharactersTemplatesAndSynergies(self):
+        self.cur.execute("DROP TABLE IF EXISTS character_templates")
+        self.cur.execute("DROP TABLE IF EXISTS synergies")
+        self.cur.execute("DROP TABLE IF EXISTS character_template_synergies")
+        self.cur.execute("DROP TABLE IF EXISTS character_template_techniques")
+        self.conn.commit()
+        self.create_character_template_table()
+        self.create_synergy_table()
+        self.create_character_template_synergy_table()
+        self.create_character_template_technique_table()
+        self.createAllDatas()
+        logger.info("Les tables des personnages et des synergies ont été réinitialisées.")
+        
     def createGifsFromDatabase(self):
         self.cur.execute("SELECT * FROM character_templates")
         characters = self.cur.fetchall()
