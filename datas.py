@@ -202,7 +202,7 @@ all_characters_templates = {
             ("Shanks", "X", "https://i.imgur.com/faZclqg.gif", 930, 970, 930),
             ("Monkey D. Dragon", "X", "https://i.imgur.com/Zy9hmOz.gif", 930, 950, 915),
             ("Gol D. Roger", "X", "https://i.imgur.com/jhHkjfz.gif", 940, 970, 930),
-            ("Mihawk", "X", 'https://i.imgur.com/UICGMYV.gif', 935, 980, 915),
+            ("Dracule Mihawk", "X", 'https://i.imgur.com/UICGMYV.gif', 935, 980, 915),
             
             # Personnages SS
             ("Akainu", "SS", "https://i.imgur.com/OkB0Vk3.gif", 730, 790, 745), # high ss
@@ -254,7 +254,7 @@ all_characters_templates = {
             # Personnages B
             ("Chooper", "B", 'https://i.imgur.com/eSoVui2.png', 300, 330, 365),
             ("Nami", "B", 'https://i.imgur.com/VAbsCsh.gif', 335, 330, 305),
-            ("Usopp", "B", "https://i.imgur.com/oJD4qsv.gif", 330, 350, 315),
+            ("Usopp", "B", "https://i.imgur.com/dhRNN1S.jpeg", 330, 350, 315),
             ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 315, 335, 345),
             ("Buggy", "B", "https://i.imgur.com/9aeBJHQ.jpeg", 355, 330, 305),
             ("Lindbergh", "B", "https://i.imgur.com/a8tSh0n.jpeg", 330, 355, 305),
@@ -264,22 +264,27 @@ all_characters_templates = {
             ("Franky", "B", 'https://i.imgur.com/U08oSKn.gif', 340, 305, 355),
             ("Koby", "B", 'https://i.imgur.com/OtsQuBI.png', 305, 330, 355),
             ("Kaku", "B", 'https://i.imgur.com/9jRznLq.png', 305, 330, 345),
+            ("Tsuru", "B", 'https://i.imgur.com/9KaHWA4.jpeg', 305, 330, 345),
+            ("Doll", "B", "https://i.imgur.com/0yJtSwk.jpeg", 305, 330, 345),
 
             # Personnages C
             ("Vivi", "C", "https://i.imgur.com/16YOCq0.jpeg", 285, 260, 235),
+            ("Kumadori", "C", "https://i.imgur.com/EXrO0fr.png", 235, 260, 285),
             ("Arlong", "C", 'https://i.imgur.com/MXsMw7m.jpg', 235, 260, 285),
             ("Don Krieg", "C", "https://i.imgur.com/JvWP2oH.jpeg", 285, 260, 235),
             ("Tashigi", "C", "https://i.imgur.com/Kkum0d7.jpeg", 235, 260, 285),
+            ("Corazon","C", "https://i.imgur.com/TN4CrB6.jpeg", 285, 260, 235),
             ("Cobra", "C", "https://i.imgur.com/NbrtIm5.png", 285, 260, 235),
             ("Hack", "C", "https://i.imgur.com/SFJ2nKt.jpeg", 235, 260, 285),
             ("Chopper", "C", "https://i.imgur.com/Xbq06Y8.jpeg", 285, 260, 235),
+            ("Haguar D. Sauro", "C", "https://i.imgur.com/d7eeL5L.jpeg", 235, 260, 285),
 
             # Personnages D
             ("Dorry", "D", "https://i.imgur.com/daws2KL.jpeg", 155, 180, 205),
             ("Brogy", "D", "https://i.imgur.com/LlwBlC8.jpeg", 205, 180, 155),
+            ("Hermep", "D", "https://i.imgur.com/jTc7VYu.jpeg", 150, 170, 145),
 
             # Personnages E
-            ("Helmeppo", "E", "https://i.imgur.com/ub30nMt.jpeg", 95, 120, 145),
             ("Hatchan", "E", "https://i.imgur.com/NOhupN5.png", 145, 120, 95),
             ("Pell", "E", 'https://i.imgur.com/fzBiN7h.png', 145, 120, 95),
             ("Kuro", "E", "https://i.imgur.com/SUoZvEu.jpeg", 105, 120, 145),
@@ -357,11 +362,10 @@ all_characters_templates = {
             ("Yachiru", "D", 'https://i.imgur.com/6mO9KFd.jpeg', 180, 190, 175),
 
             # Personnages E
-            ("Jinta", "E", 'https://i.imgur.com/pAuQhV7.png', 115, 120, 125),
-            ("Ururu", "E", 'https://i.imgur.com/DoiSB83.png', 120, 130, 110),
-            ("Keigo", "E", 'https://i.imgur.com/D8dqhs2.png', 125, 120, 115),
+
 
             # Personnages F
+            ("Keigo Asano", "F", 'https://i.imgur.com/D8dqhs2.png', 40, 35, 35),
             ("Yuzu Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 40, 35, 35),
             ("Kon", "F", 'https://i.imgur.com/t1az2SQ.png', 45, 50, 55),
             ("Karin Kurosaki", "F", 'https://i.imgur.com/Spca2oo.png', 50, 55, 45),
@@ -373,7 +377,7 @@ all_characters_templates = {
             "My Hero Academia" : [ # ✅
             # Personnages X
             ("All Might", "X", "https://i.imgur.com/CUUh7Cd.gif", 950, 955, 950),
-            ("Shigaraki", "X", "https://i.imgur.com/4G7TwKg.gif", 930, 1000, 940),
+            ("Tomura Shigaraki", "X", "https://i.imgur.com/4G7TwKg.gif", 930, 1000, 940),
             ("All For One", "X", "https://i.imgur.com/rR1sQPU.gif", 930, 960, 950),
 
             # Personnages SS
@@ -383,11 +387,13 @@ all_characters_templates = {
             ("Chisaki Kai", "SS", "https://i.imgur.com/dcPHh3I.gif", 680, 790, 680),
             ("Nana Shimura", "SS", "https://i.imgur.com/ct2j0jN.gif", 720, 730, 715),
             ("Mirio Togata", "SS", "https://i.imgur.com/gOMDPVp.gif", 710, 735, 700),
-            ("Re Destro", "SS", "https://i.imgur.com/HQp99hz.gif", 690, 700, 700),
+            ("Re-Destro", "SS", "https://i.imgur.com/HQp99hz.gif", 690, 700, 700),
             ("Katsuki Bakugo", "SS", "https://i.imgur.com/NK0LePb.gif", 690, 720, 700),
+            ('Gigantomachia', 'SS', 'https://i.imgur.com/joOFOuN.gif', 730, 720, 680),
             
             # Personnages S
             ('Dabi', 'S', 'https://i.imgur.com/BjDR5Yi.gif', 530, 600, 555) ,
+            ("Shinji Nishiya", "S", "https://i.imgur.com/J2ebGS2.gif", 500, 555, 510),
             ('Beast Jeanist', 'S', 'https://i.imgur.com/YomRbmO.gif', 535, 550, 550) ,
             ('Hawks', 'S', 'https://i.imgur.com/X15PwP6.gif', 545, 595, 590) ,
             ('Twice', 'S', 'https://i.imgur.com/aTXRvNJ.gif', 535, 555, 560) ,
@@ -400,10 +406,12 @@ all_characters_templates = {
             ('Lady Nagant', 'S', 'https://i.imgur.com/XTarup4.gif', 585, 620, 535) ,
             ('Ryukyu', 'S', 'https://i.imgur.com/jUEf20r.gif', 565, 515, 565) ,
             ('Shinso Hitoshi', 'S', 'https://i.imgur.com/6KR8YEl.gif', 500, 555, 510) ,
-            ('Nejire Hado', 'S', 'https://i.imgur.com/JRE6K7R.jpeg', 540, 550, 545) ,
+            ('Nejire Hado', 'S', 'https://i.imgur.com/L3C8OLl.gif', 540, 550, 545) ,
             
+
             # Personnages A
-            ('Mt Lady', 'A', 'https://i.imgur.com/BGdhXVd.gif', 405, 400, 450) ,
+            
+            ('Mt. Lady', 'A', 'https://i.imgur.com/BGdhXVd.gif', 405, 400, 450) ,
             ('Gran Torino', 'A', 'https://i.imgur.com/pHGoXST.gif', 405, 440, 395) ,
             ('Nighteye', 'A', 'https://i.imgur.com/fgO8qfb.gif', 375, 380, 415) ,
             ('Midnight', 'A', 'https://i.imgur.com/L4S7dNo.jpeg', 375, 450, 385) ,
@@ -532,7 +540,7 @@ all_characters_templates = {
             ("Zebulo", "E", "https://i.imgur.com/nuTPuxR.png", 105, 110, 115),
             ("Ciquento", "E", "https://i.imgur.com/rfiLrO7.png", 100, 115, 115),
             ("Miruki Zoldyck", "E", "https://i.imgur.com/IcwaCHD.jpeg", 110, 110, 110),
-            ("Neon", "E", 'https://i.imgur.com/Rz5HGeZ.png', 95, 115, 120),
+            ("Neon Nostrad", "E", 'https://i.imgur.com/Rz5HGeZ.png', 95, 115, 120),
             ("Pegui", "E", 'https://i.imgur.com/u2tYaqs.jpeg', 100, 110, 120),
             ("Bodoro", "E", 'https://i.imgur.com/VSWUPF5.jpeg', 115, 110, 105),
             
@@ -853,11 +861,12 @@ all_characters_templates = {
             ("Alphonse Elric", "S", 'https://i.imgur.com/q6IW5xU.gif', 560, 570, 600),
             ("Roy Mustang", "S", 'https://i.imgur.com/Oyk2Pp4.gif', 550, 700, 540), # high S
             ("Scar", "S", 'https://i.imgur.com/9dw5ri9.gif', 580, 600, 790), # high S
-            ("Kimbley", "S", 'https://i.imgur.com/r9nB7SF.gif', 530, 555, 535),
+            ("Solf J. Kimblee", "S", 'https://i.imgur.com/r9nB7SF.gif', 530, 555, 535),
             ("Selim Bradley", "S", 'https://i.imgur.com/XYj2ZtU.gif', 545, 560, 540),
             ("Ling Yao", "S", 'https://i.imgur.com/cEoziXY.gif', 420, 430, 410),
 
             # Personnages A
+            ("Isaac McDougal", "A", 'https://i.imgur.com/CGtaVQj.gif', 400, 420, 440),
             ("Envy", "A", 'https://i.imgur.com/rRFT3ec.gif', 440, 430, 420),
             ("Sloth", "A", 'https://i.imgur.com/sltbpFK.gif', 450, 430, 410),
             ("Glutonny", "A", "https://i.imgur.com/16YlN6x.gif", 430, 420, 440),
@@ -875,7 +884,7 @@ all_characters_templates = {
 
             # Personnages C
             ("Heinkel", "C", 'https://i.imgur.com/IFSivAT.jpeg', 255, 260, 265),
-            ("Marcoh", "C", 'https://i.imgur.com/6hbihPy.png', 260, 255, 265),
+            ("Tim Marcoh", "C", 'https://i.imgur.com/6hbihPy.png', 260, 255, 265),
             ("Darius", "C", 'https://i.imgur.com/OugYS2B.jpeg', 265, 260, 255),
             ("Frere de Scar", "C", 'https://i.imgur.com/xwYWbhD.jpeg', 265, 265, 250),
 
@@ -890,7 +899,7 @@ all_characters_templates = {
             ("Paninya", "E", 'https://i.imgur.com/uS1Dxp3.jpeg', 115, 120, 125),
             ("Havoc", "E", 'https://i.imgur.com/rM9I8Ot.jpeg', 120, 125, 115),
             ("Heymans", "E", 'https://i.imgur.com/jJdB2II.png', 125, 115, 120),
-            ("Fuery", "E", "https://i.imgur.com/6dCkq7z.jpeg", 120, 120, 120),
+            ("Kain Fuery", "E", "https://i.imgur.com/6dCkq7z.jpeg", 120, 120, 120),
 
             # Personnages F
             ("Yoki", "F", 'https://i.imgur.com/pPbOaqJ.jpeg', 35, 50, 35),
@@ -905,7 +914,7 @@ all_characters_templates = {
             ("Eren Yeager", "X", "https://i.imgur.com/izA5HAI.gif", 960, 950, 945),
 
             # Personnages SS
-            ("Armin", "SS", "https://i.imgur.com/CFmYNyt.gif", 750, 655, 750),
+            ("Armin Arlert", "SS", "https://i.imgur.com/CFmYNyt.gif", 750, 655, 750),
             ("Bertholdt Hoover", "SS", "https://i.imgur.com/kyjgDwH.gif", 750, 650, 750),
             ("Levi Ackerman", "SS", "https://i.imgur.com/YdrDGay.gif", 600, 750, 600),
             ("Reiner Braun", "SS", "https://i.imgur.com/cEEtTgd.gif", 700, 730, 750),
@@ -923,7 +932,7 @@ all_characters_templates = {
             ("Falco Grice", "A", "https://i.imgur.com/KYUnpQb.gif", 420, 390, 430),
             ("Kenny Ackerman", "A", "https://i.imgur.com/QQwRAlM.gif", 380, 500, 385),
             ("Porco Galliard", "A", "https://i.imgur.com/b78cQir.gif", 410, 430, 420),
-            ("Erwin", "A", "https://i.imgur.com/0WfIayb.gif", 330, 360, 390),
+            ("Erwin Smith", "A", "https://i.imgur.com/0WfIayb.gif", 330, 360, 390),
 
             # Personnages B
             ("Mike Zacharias", "B", "https://i.imgur.com/CdhigbE.png", 300, 400, 300),
@@ -934,12 +943,13 @@ all_characters_templates = {
 
             # Personnages C
             ("Hannes", "C", "https://i.imgur.com/XtZvC0L.jpeg", 280, 330, 290),
-            ("Historia", "C", "https://i.imgur.com/u6tCLmq.jpeg",230, 245, 230),
+            ("Historia Reiss", "C", "https://i.imgur.com/u6tCLmq.jpeg",230, 245, 230),
             ("Floch", "C", "https://i.imgur.com/K79IX3o.jpeg", 240, 250, 220 ),
             ("Pixis", "C", "https://i.imgur.com/Vx416zK.png", 220, 210, 210),
-            ("Sacha", "C", "https://i.imgur.com/XHs9rWi.png", 230, 260, 230),
-            ("Kony", "C", "https://i.imgur.com/7MNFSc1.jpeg", 220, 240, 230),
-
+            ("Sasha Blouse", "C", "https://i.imgur.com/XHs9rWi.png", 230, 260, 230),
+            ("Conny Springer", "C", "https://i.imgur.com/7MNFSc1.jpeg", 220, 240, 230),
+            ("Petra Ralle", "C", "https://i.imgur.com/1Z2Z2Zv.png", 250, 230, 220),
+            
             # Personnages D
             ("Gabi Braun", "D", "https://i.imgur.com/iBw8k6t.png", 160, 180, 140),
             ("Udo", "D", "https://i.imgur.com/p1NWLXE.png", 140, 160, 120),
@@ -973,6 +983,7 @@ all_characters_templates = {
 
             # Personnages A
             ("Derrierie", "A", image_temporaire, 0, 0, 0),
+            ("Diane", "A", "https://i.imgur.com/7szSehX.gif", 0, 0, 0),
             ],
             "Chainsaw Man" : [ # ✅
             # Personnages X
@@ -1017,41 +1028,41 @@ all_characters_templates = {
 }
 
 all_synergies = [
-    (1, "Akatsuki", "ATK", 0.45,"L'akatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
+    (1, "Akatsuki", "ATK", 0.55,"L'akatsuki est une organisation criminelle de ninjas déserteurs.", 'https://static.wikia.nocookie.net/naruto/images/6/61/Membres_Akatsuki.png/revision/latest/scale-to-width-down/1200?cb=20130511192621&path-prefix=fr', "#FF0000"),
     (2, "Saiyan", "ATK", 0.40, "Les Saiyans sont connus pour leur force et leur capacité à se transformer en Super Saiyan.", image_temporaire, "#FFA500"),
-    (3, "Hollow", "ATK", 0.15, "Les Hollows sont des âmes corrompues qui ont perdu leur coeur et leur raison.", image_temporaire, "#0000FF"),
-    (4, "Mugiwara", "HP", 0.30, "Les Mugiwara sont l'équipage de Monkey D. Luffy, un pirate qui cherche le One Piece.", 'https://steamuserimages-a.akamaihd.net/ugc/481145984302804192/29529359BC636378F426946B2D859F7EB46561BB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#800080"),
-    (5, "Uchiha", "ATK", 0.20, "Le clan Uchiha est connu pour ses capacites de combat et son Sharingan.", 'https://cherry.img.pmdstatic.net/fit/https.3A.2F.2Fimg.2Egaming.2Egentside.2Ecom.2Fs3.2Ffrgsg.2F1280.2Fmanga.2Fdefault_2022-12-21_5b4dbf77-0203-48b1-bfff-103263f3bc90.2Epng/1200x675/quality/80/clan-uchiwa.jpg', "#FF0000"),
+    (3, "Hollow", "ATK", 0.25, "Les Hollows sont des âmes corrompues qui ont perdu leur coeur et leur raison.", image_temporaire, "#0000FF"),
+    (4, "Mugiwara", "HP", 0.45, "Les Mugiwara sont l'équipage de Monkey D. Luffy, un pirate qui cherche le One Piece.", 'https://steamuserimages-a.akamaihd.net/ugc/481145984302804192/29529359BC636378F426946B2D859F7EB46561BB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#800080"),
+    (5, "Uchiha", "ATK", 0.30, "Le clan Uchiha est connu pour ses capacites de combat et son Sharingan.", 'https://cherry.img.pmdstatic.net/fit/https.3A.2F.2Fimg.2Egaming.2Egentside.2Ecom.2Fs3.2Ffrgsg.2F1280.2Fmanga.2Fdefault_2022-12-21_5b4dbf77-0203-48b1-bfff-103263f3bc90.2Epng/1200x675/quality/80/clan-uchiwa.jpg', "#FF0000"),
     (6, "Quincy", "ATK", 0.35, "Les Quincy sont des chasseurs de Hollows qui utilisent des arcs pour combattre.", 'https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Bleach-Quincy-featured.jpg', "#FFA500"), #TOREVIEW 
-    (7, "Amiraux", "ATK", 0.45, "Les Amiraux sont les trois plus puissants marins de la Marine.", 'https://steamuserimages-a.akamaihd.net/ugc/914674978440099035/39C53679BC6727A9D6074B90BCD0C9BC72D1DEDD/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#0000FF"), #TOREVIEW
-    (8, "Espada", "ATK", 0.45, "Les Espadas sont les dix plus puissants Hollows sous les ordres d'Aizen.", 'https://i.redd.it/d2umjaymimsa1.jpg', "#800080"),
+    (7, "Amiral", "ATK", 0.75, "Les Amiraux sont les trois plus puissants marins de la Marine.", 'https://steamuserimages-a.akamaihd.net/ugc/914674978440099035/39C53679BC6727A9D6074B90BCD0C9BC72D1DEDD/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', "#0000FF"), #TOREVIEW
+    (8, "Espada", "ATK", 0.55, "Les Espadas sont les dix plus puissants Hollows sous les ordres d'Aizen.", 'https://i.redd.it/d2umjaymimsa1.jpg', "#800080"),
     (9, "Vongola", "ATK", 0.15, "La famille Vongola est une organisation mafieuse italienne qui utilise des anneaux pour combattre.", 'https://images2.wikia.nocookie.net/__cb20100422034551/reborn/images/e/e8/Tsuna_And_The_Guardians.PNG', "#FF0000"),
-    (10, "Yonko", "ATK", 0.35, "Les Yonkos sont les quatre plus puissants pirates du Nouveau Monde.", 'https://www.univers-otaku.com/wp-content/uploads/2021/03/one-piece-Yonko.jpg', "#FFA500"),
+    (10, "Yonko", "ATK", 0.55, "Les Yonkos sont les quatre plus puissants pirates du Nouveau Monde.", 'https://www.univers-otaku.com/wp-content/uploads/2021/03/one-piece-Yonko.jpg', "#FFA500"),
     (11, "Akimichi", "ATK", 0.15, "Le clan Akimichi est connu pour sa technique de transformation en geant.", 'https://staticg.sportskeeda.com/editor/2022/06/d5daf-16559000633224.png', "#0000FF"), #TOREVIEW 
     (12, "Vizard", "ATK", 0.15, "Les Vizards sont des Shinigamis qui ont acquis des pouvoirs de Hollows.", 'https://i.pinimg.com/originals/b9/54/72/b95472a06de8ce83188fa0c2723c05cc.gif', "#800080"),
     (13, "Varia", "ATK", 0.15, "La Varia est un groupe d'assassins de la famille Vongola.", 'https://static.wikia.nocookie.net/reborn/images/5/5c/Past_Varia.PNG/revision/latest?cb=20111107024622', "#FF0000"),
     (14, "Gotei 13", "ATK", 0.45, "Le Gotei 13 est une organisation de Shinigamis qui protège le monde des âmes.", 'https://i.redd.it/myfksl030a991.gif', "#FFA500"),
     (15, "Kage", "ATK", 0.50, "Les Kages sont les plus puissants ninjas de leur village.", image_temporaire, "#0000FF"),
-    (16, "Shichibukai", "ATK", 0.45, "Les Shichibukai sont des pirates qui ont accepté de servir la Marine.", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Featured-Image-Shichibukai-Cropped.jpg', "#800080"),
-    (17, "Sannin", "HP", 0.65, "Les Sannins sont les trois ninjas légendaires de Konoha.", 'https://64.media.tumblr.com/0d74a734f45f35a984288446fee484a4/tumblr_omf0oel6qW1rqe0rbo3_540.gifv', "#FF0000"),
+    (16, "Shichibukai", "ATK", 0.55, "Les Shichibukai sont des pirates qui ont accepté de servir la Marine.", 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Featured-Image-Shichibukai-Cropped.jpg', "#800080"),
+    (17, "Sannin", "HP", 0.75, "Les Sannins sont les trois ninjas légendaires de Konoha.", 'https://64.media.tumblr.com/0d74a734f45f35a984288446fee484a4/tumblr_omf0oel6qW1rqe0rbo3_540.gifv', "#FF0000"),
     (18, "Revolutionnaires", "ATK", 0.50, "Les Révolutionnaires sont un groupe qui lutte contre le Gouvernement Mondial.", image_temporaire, "#FFA500"),
-    (19, "Volonte du D", "ATK", 0.50, "La Volonté du D est une mystérieuse lignee de pirates qui défient le Gouvernement Mondial.", image_temporaire, "#0000FF"),
+    (19, "Volonté du D", "ATK", 0.50, "La Volonté du D est une mystérieuse lignee de pirates qui défient le Gouvernement Mondial.", image_temporaire, "#0000FF"),
     (20, "Animal", "ATK", 0.38, "Les Animaux sont des créatures qui possèdent des pouvoirs spéciaux.", image_temporaire, "#800080"),
     (21, "Taka", "ATK", 0.50, "La Taka est un groupe de ninjas qui a été formé par Sasuke Uchiha.", 'https://i.pinimg.com/originals/d0/14/1c/d0141c035bd6a5a3956e5b8161bda71c.gif', "#FF0000"),
-    (22, "Rinnegan", "ATK", 0.35, "Le Rinnegan est le dōjutsu le plus puissant de l'univers Naruto.", 'https://editors.dexerto.fr/wp-content/uploads/sites/2/2023/05/23/naruto-rinnegan.jpg', "#FFA500"),
+    (22, "Rinnegan", "ATK", 0.40, "Le Rinnegan est le dōjutsu le plus puissant de l'univers Naruto.", 'https://editors.dexerto.fr/wp-content/uploads/sites/2/2023/05/23/naruto-rinnegan.jpg', "#FFA500"),
     (23, "Konoha", "HP", 0.15, "Konoha est le village caché de la Feuille, l'un des cinq grands villages ninjas.", image_temporaire, "#0000FF"),
     (24, "Suna", "HP", 0.15, "Suna est le village caché du Sable, l'un des cinq grands villages ninjas.", image_temporaire, "#800080"),
     (25, "Kiri", "HP", 0.15, "Kiri est le village caché de la Brume, l'un des cinq grands villages ninjas.", image_temporaire, "#FF0000"),
     (26, "Kumo", "HP", 0.15, "Kumo est le village caché des Nuages, l'un des cinq grands villages ninjas.", image_temporaire, "#FFA500"),
     (27, "Iwa", "HP", 0.15, "Iwa est le village caché de la Roche, l'un des cinq grands villages ninjas.", image_temporaire, "#0000FF"),
     (28, "Receptacle", "ATK", 0.40, "Les Receptacles sont des personnes qui ont un Monstre scellé en eux.", image_temporaire, "#800080"),
-    (29, "Maitre du Feu", "ATK", 0.27, "Les Maîtres du Feu sont des personnages qui maîtrisent le feu.", image_temporaire, "#FFA500"),
-    (30, "Maitre de l'Eau", "ATK", 0.27, "Les Maîtres de l'Eau sont des personnages qui maîtrisent l'eau.", image_temporaire, "#0000FF"),
-    (31, "Maitre de la Terre", "ATK", 0.27, "Les Maîtres de la Terre sont des personnages qui maîtrisent la terre.", image_temporaire, "#800080"),
-    (32, "Maitre de l'Air", "ATK", 0.27, "Les Maîtres de l'Air sont des personnages qui maîtrisent l'air.", image_temporaire, "#FF0000"),
-    (33, "Maitre de la Foudre", "ATK", 0.40, "Les Maîtres de la Foudre sont des personnages qui maîtrisent l'éclair.", image_temporaire, "#FFA500"),
-    (34, "Maitre de la Glace", "ATK", 0.40, "Les Maîtres de la Glace sont des personnages qui maîtrisent la glace.", image_temporaire, "#0000FF"),
-    (36, "Maitre de la Lave", "ATK", 0.40, "Les Maîtres de la Lave sont des personnages qui maîtrisent la lave.", image_temporaire, "#FF0000"),
+    (29, "Maitre du Feu", "ATK", 0.25, "Les Maîtres du Feu sont des personnages qui maîtrisent le feu.", image_temporaire, "#FFA500"),
+    (30, "Maitre de l'Eau", "ATK", 0.25, "Les Maîtres de l'Eau sont des personnages qui maîtrisent l'eau.", image_temporaire, "#0000FF"),
+    (31, "Maitre de la Terre", "ATK", 0.25, "Les Maîtres de la Terre sont des personnages qui maîtrisent la terre.", image_temporaire, "#800080"),
+    (32, "Maitre de l'Air", "ATK", 0.25, "Les Maîtres de l'Air sont des personnages qui maîtrisent l'air.", image_temporaire, "#FF0000"),
+    (33, "Maitre de la Foudre", "ATK", 0.35, "Les Maîtres de la Foudre sont des personnages qui maîtrisent l'éclair.", image_temporaire, "#FFA500"),
+    (34, "Maitre de la Glace", "ATK", 0.35, "Les Maîtres de la Glace sont des personnages qui maîtrisent la glace.", image_temporaire, "#0000FF"),
+    (36, "Maitre de la Lave", "ATK", 0.45, "Les Maîtres de la Lave sont des personnages qui maîtrisent la lave.", image_temporaire, "#FF0000"),
     (37, "Maitre du Bois", "ATK", 0.50, "Les Maîtres du Bois sont des personnages qui maîtrisent le bois.", image_temporaire, "#FFA500"),
     (38, "Maitre du Vent", "ATK", 0.50, "Les Maîtres du Vent sont des personnages qui maîtrisent le vent.", image_temporaire, "#0000FF"),
     (39, "Maitre du Sable", "ATK", 0.50, "Les Maîtres du Sable sont des personnages qui maîtrisent le sable.", image_temporaire, "#800080"),
@@ -1180,19 +1191,49 @@ all_synergies = [
     (163, "Vétéran", "DEF", 0.55, "Les Vétérans sont des individus qui ont de l'experience dans le combat et qui sont capables de se battre contre n'importe qui.", image_temporaire, "#00000"),
     (164, "Pouvoir de Bouddha", "ATK", 0.80, "Les utilisateurs du pouvoir de Bouddha sont des individus qui peuvent utiliser le pouvoir de Bouddha pour attaquer leurs ennemis.", image_temporaire, "#00000"),
     (165, "Team 7", "ATK", 0.40, "La Team 7 est une equipe de ninjas qui travaillent ensemble pour proteger le village de Konoha.", image_temporaire, "#00000"),
+    (166, "Géant", "HP", 0.60, "Les Géants sont des creatures gigantesques qui attaquent les humains et les devorent.", image_temporaire, "#00000"),
+    (167, "Maitre des corbeaux", "ATK", 0.45, "Les Maitres des corbeaux sont des individus qui peuvent controler les corbeaux pour attaquer leurs ennemis.", image_temporaire, "#00000"),
+    (168, "Manipulateur de cheveux", "ATK", 0.60, "Les Manipulateurs de cheveux sont des individus qui peuvent controler les cheveux pour attaquer leurs ennemis.", image_temporaire, "#00000"),
+    (170, "Bataillon d'Exploration", "ATK", 0.40, "Le Bataillon d'Exploration est une unite speciale de l'armee qui explore les territoires inconnus et qui combat les Titans.", image_temporaire, "#00000"),
+    (171, "Reiss", "HP", 0.40, "La famille Reiss est une famille royale qui dirige le pays de Paradis et qui possede le pouvoir du Titan Originel.", image_temporaire, "#00000"),
+    (172, "Maitre du papier", "ATK", 0.75, "Les Maitres du papier sont des individus qui peuvent controler le papier pour attaquer leurs ennemis.", image_temporaire, "#00000"),
+    (173, "Front de Libération du Paranormal", "ATK", 0.55, "Le Front de Libération du Paranormal est une organisation criminelle qui lutte contre l'Association Hunter.", image_temporaire, "#00000"),
+    (174, "Cross Guild", "ATK", 0.45, "La Cross Guild est une guilde de chasseurs de demons qui traque les demons et les tue pour proteger les humains.", image_temporaire, "#00000"),
+    (175, "Vice Amiral", "DEF", 0.45, "Les Vice-Amiraux sont des officiers de la Marine qui ont le pouvoir de capturer les pirates et de maintenir l'ordre dans le monde.", image_temporaire, "#00000"),
+    (176, "Colonel", "DEF", 0.40, "Les Colonels sont des officiers de l'armee qui commandent des unites de soldats et qui dirigent les operations militaires.", image_temporaire, "#00000"),
+    (177, "Lieutenant", "DEF", 0.35, "Les Lieutenants sont des officiers de l'armee qui assistent les Colonels dans leurs taches et qui dirigent les soldats au combat.", image_temporaire, "#00000"),
+    (178, "Soldat", "DEF", 0.30, "Les Soldats sont des membres de l'armee qui combattent sur le front pour proteger leur pays et leur famille.", image_temporaire, "#00000"),
+    (179, "Magicien", "ATK", 0.55, "Les Magiciens sont des individus qui possedent des pouvoirs magiques et qui peuvent lancer des sorts pour attaquer leurs ennemis.", image_temporaire, "#00000"),
+    (180, "Commandant", "ATK", 0.50, "Les Commandants sont des officiers de l'armee qui dirigent des unites de soldats et qui commandent les operations militaires.", image_temporaire, "#00000"),
+    (181, "Envoûteuse", "DEF", 0.75, "Les Envoûteuses sont des femmes fatales qui utilisent leur charme pour manipuler les hommes et les amener à faire ce qu'elles veulent.", image_temporaire, "#00000"),
 ]
 
 #TEAM 7 etc RIVAL eternel
 
 all_link_synergies = {
+    181 : ["Vezze","Boa Hancock","Makima"], # Envoûteuse
+    180 : ["Ivankov","Karasu","Belo Betty","Lindbergh","Olivia Mira Armstrong"], # Commandant
+    179 : ["Merlin","Momo"], # Magicien
+    178 : ["Ikarugo","Kain Fuery","Falman","Heinkel"], # Soldat
+    177 : ["Hermep","Corazon","Maes Hughes", "Cheetu", "Zazan","Meleoron","Koruto"], # Lieutenant
+    176 : ["Tashigi", "Hina", "Koby","Roy Mustang"], # Colonel
+    175 : ["Smoker","Haguar D. Sauro","Tsuru","Doll"], # Vice Amiral
+    174 : ["Crocodile","Dracule Mihawk", "Buggy"], # Cross Guild
+    173 : ["Tomura Shigaraki", "All For One", "Dabi", "Spinner", "Himiko Toga", "Twice", "Re-Destro", "Gigantomachia"], # Front de Libération du Paranormal
+    172 : ["Konan","Karuto Zoldyck"], # Maitre du papier
+    171 : ["Historia Reiss", "Frieda Reiss", "Rhodes Reiss"], # Reiss
+    170 : ["Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Blouse", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover", "Annie Leonhart","Mike Zacharias","Petra Ralle"], # Bataillon d'Exploration
+    168 : ["Daki","Jiraya","Kumadori","Pamu Shiberia","Yukako"], # Manipulateur de cheveux
+    167 : ["Itachi Uchiha","Karasu","Mei mei","Shisui Uchiha"], # Maitre des corbeaux
+    166 : ["Mt. Lady", "Gigantomachia", "Diane","Armin Arlert","Bertholdt Hoover","Rhodes Reiss","Brogy","Dorry","Haguar D. Sauro"], # Géant
     165 : ["Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Kakashi Hatake", "Sai","Boruto Uzumaki","Sarada Uchiha","Konohamaru Sarutobi","Mitsuki","Kawaki"], # Team 7
     164 : ["Sengoku", "Isaac Netero","Hashirama Senju"], # Pouvoir de Bouddha
-    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto"], # Vétéran
+    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro"], # Vétéran
     162 : ["Kanaria","Gotoh"], # Intendant
     161 : ["Diavolo","Twice","Ling Yao"], # Double personnalité
     160 : ["Jiraya","Ebisu","Tortue Geniale","Denji"], # Pervers
     159 : ["Orochimaru", "Kabuto Yakushi", "Sasuke Uchiha","Mitsuki"], # Maitre des serpents
-    158 : ["Tompa","Mizuki","Miruki Zoldyck"], # Minable et perfide
+    158 : ["Tompa","Mizuki","Miruki Zoldyck","Guido","Riluberto"], # Minable et perfide
     157 : ["Alphonse Elric", "Barry The Chopper"], # Âme
     156 : ["Weather Report","Nami","Monkey D. Dragon"], # Maitre du climat
     155 : ["Son Goku","Son Gohan", "Tortue Geniale", "Krillin", "Yamcha", "Ten Shin Han", "Chaozu", "Piccolo", "Vegeta", "Trunks", "Goten", "Bulma", "Videl", "Pan", "Yajirobe", "C-18","C-17","Majin Buu"], # Z Fighters
@@ -1200,11 +1241,11 @@ all_link_synergies = {
     153 : ["Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Carla Yeager"], # Yeager 
     152 : ["Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice"], # Titan
     151 : ["Shizune","Ijichi"], # Secrétaire
-    149 : ["Kakashi Hatake","Satoru Gojo","Shota Aizawa","Vlad King","Iruka","Wing"], # Professeur
-    148 : ["Glutonny","Majin Buu","Big Mom","Wapol", "Miruki Zoldyck","Menchi"], # Glouton
+    149 : ["Kakashi Hatake","Satoru Gojo","Shota Aizawa","Vlad King","Iruka","Wing","Tortue Geniale","All Might","Snipe"], # Professeur
+    148 : ["Glutonny","Majin Buu","Big Mom","Wapol", "Miruki Zoldyck","Menchi","Todo"], # Glouton
     147 : ["Shikamaru Nara","Fumikage Tokoyami"], # Manipulateur de l'ombre
-    146 : ["Marcoh", "Neferopito","Tsunade","Sakura Haruno"], # Medecin
-    145 : ["Vivi"], # Princesse
+    146 : ["Tim Marcoh", "Neferopito","Tsunade","Sakura Haruno"], # Medecin
+    145 : ["Vivi","Boa Hancock"], # Princesse
     144 : ["Pokkle","Uryu Ishida"], # Archer
     143 : ["Mr. Satan","King (OPM)"], # Imposteur
     142 : ["Broly","Kale","Uvogin"], # Berserker
@@ -1213,15 +1254,15 @@ all_link_synergies = {
     139 : ["Toji Fushiguro","Son Goku","Hashirama Senju","Tobirama Senju","Hiruzen Sarutobi", "Minato Namikaze", "Asuma Sarutobi","Deidara","Itachi Uchiha","Haku","Zabuza Momochi","Madara Uchiha","Sasori","Kimimaro","Hanzo","Chiyo"], # Réssucité
     138 : ["Yukako","Pamu Shiberia","Himiko Toga"], # Yandere
     137 : ["Haruta Shigemo","Daniel Darby"], # Chanceux
-    136 : ["Kakashi Hatake","Satoru Gojo","Takuma Ino","Galgali","Karasu","King"], # Masqué
+    136 : ["Kakashi Hatake","Satoru Gojo","Takuma Ino","Galgali","Karasu","King","Shoji","Shinji Nishiya","Hermep"], # Masqué
     135 : ["Kankuro", "Sasori","Chiyo","Doflamingo"], # Marionnettiste
-    134 : ["Jones","Leluto","Hermes","Jolyne Kujo"], # Prisonnier
-    133 : ["Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Roi Cold","Dabra"], # Roi
+    134 : ["Jones","Leluto","Hermes","Jolyne Kujo","Isaac McDougal","Solf J. Kimblee"], # Prisonnier
+    133 : ["Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Roi Cold","Dabra","Historia Reiss","Wapol"], # Roi
     132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu"], # Classe S
     131 : ["Toji Fushiguro","Maki Zenin"], # Dépourvu d'énergie occulte
     130 : ["Suguru Geto","Miguel","Juzo","Uraume","Haruta Shigemo","Kenjaku","Junpei"], # Maitre des Fleaux
     129 : ["Smoker","Morel","Zabuza Momochi"], # Maître du Brouillard
-    128 : ["Kaku","Rob Lucci"], # CP-0
+    128 : ["Kaku","Rob Lucci","Kumadori"], # CP-0
     127 : ["Choso","Kechizu", "Katara","Hama","Vlad King"], # Manipulateur de Sang
     126 : ["Jotaro Kujo","Jolyne Kujo"], # Famille Kujo
     125 : ["Zeno", "Rikudo","Pere","Athena"], # Tout Puissant
@@ -1234,15 +1275,15 @@ all_link_synergies = {
     6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach","Ichigo Kurosaki"], # Quincy
     8 : ["Grimmjow", "Ulquiorra", "Nnoitra", "Halibel", "Barragan", "Starrk"], # Espada
     119 : ["Obito Uchiha", "Mirio Togata","Zetsu"], # Intangible
-    118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin","Benn Beckman","Usopp"], # Sniper
+    118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin","Benn Beckman","Usopp","Snipe"], # Sniper
     117 : ["Mirio Togata","Tamaki Amajiki","Nejire Hado"], # Big 3
-    116 : ["Shigaraki", "Nana Shimura"], # Shimura
+    116 : ["Tomura Shigaraki", "Nana Shimura"], # Shimura
     115 : ["Rukia Kuchiki","Byakuya Kuchiki","Ginrei Kuchiki"], # Famille Kuchiki
     114 : ["Izuku Midoriya","All Might", "Nana Shimura"],
     113 : ["Shoto Todoroki", "Endeavor", "Fuyumi Todoroki", "Natsuo Todoroki", "Rei Todoroki","Dabi"], # Famille Todoroki
-    112 : ["Kuroro Lucifer","All For One","Yhwach", "Neito Monoma","Enrico Pucci","Ging Freecss","Yuta Okkotsu"], # Voleur de Pouvoir
+    112 : ["Kuroro Lucifer","All For One","Yhwach", "Neito Monoma","Enrico Pucci","Ging Freecss","Yuta Okkotsu","Makima"], # Voleur de Pouvoir
     111 : ["Kars","Meruem","Pere"], # Forme de vie ultime
-    110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Sharnalk", "Bonolenov Ndongo", "Karuto Zoldyck", "Uvogin"], # Brigade Fantome
+    110: ["Kuroro Lucifer", "Hisoka", "Nobunaga", "Machi", "Shizuku", "Franklin", "Feitan", "Phinks", "Sharnalk", "Bonolenov Ndongo", "Karuto Zoldyck", "Uvogin","Korutopi"], # Brigade Fantome
     109 : ["Leorio","Ging Freecss", "Botobai Gigante", "Pariston Hill","Kurapika"], # Zodiac
     108 : ["Menchi","Tsezugera", "Morel","Ging Freecss","Biscuit Kruger","Botobai Gigante","Pariston Hill"], # Hunter étoilé
     107 : ["Mito Freecss","Gon Freecss", "Ging Freecss"],
@@ -1250,18 +1291,18 @@ all_link_synergies = {
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Goten"], # Famille de Son Goku
     103 : ["Whis","Vados","Grand pretre"], # Anges
-    102 : ["Beerus","Champa","Belmod","Shigaraki","Chisaki Kai"], # Destructeur
+    102 : ["Beerus","Champa","Belmod","Tomura Shigaraki","Chisaki Kai"], # Destructeur
     101 : ["Meliodas","Ban","King (NNT)","Diane","Gowther","Merlin","Escanor"], # Les Sept Peches Capitaux
     100 : ["Derrierie","Estarossa","Zeldris","Gloxinia","Drole","Grayroad","Fraudrin","Monspiet","Melascula","Galand"], # Dix Commandements
     99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Miruki Zoldyck", "Aruka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck","Karuto Zoldyck"], # Zoldyck
-    98 : ["Izuku Midoriya","Katsuki Bakugo","Ochaco Uraraka","Tenya Iida","Shoto Todoroki","Momo Yaoyorozu","Eijiro Kirishima","Denki Kaminari","Mina Ashido","Tsuyu Asui","Fumikage Tokoyami","Kyoka Jiro","Hanta Sero","Yuga Aoyama","Toru Hagakure","Mezo Shoji","Koji Koda","Mirio Togata","Tamaki Amajiki","Nejire Hado","Hawks","Endeavor","All Might","Shota Aizawa","Midnight","Snipe","Vlad King","Shoji"], # U.A.
-    97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Fuery","Falman"], # Unite Mustang
+    98 : ["Izuku Midoriya","Katsuki Bakugo","Ochaco Uraraka","Tenya Iida","Shoto Todoroki","Momo Yaoyorozu","Eijiro Kirishima","Denki Kaminari","Mina Ashido","Tsuyu Asui","Fumikage Tokoyami","Kyoka Jiro","Hanta Sero","Yuga Aoyama","Toru Hagakure","Mezo Shoji","Koji Koda","Mirio Togata","Tamaki Amajiki","Nejire Hado","Hawks","Endeavor","All Might","Shota Aizawa","Midnight","Snipe","Vlad King","Shoji","Neito Monoma"], # U.A.
+    97 : ["Roy Mustang", "Havoc", "Riza Hawkeye","Heymans","Kain Fuery","Falman"], # Unite Mustang
     96 : ["King Bradley","Selim Bradley"], # Bradley
     95 : ["Scar","Frere de Scar","Miles"], # Ishval
     94 : ["Edward Elric","Paninya","Lan Fan"], # Automail
     93 : ["Hohenheim","Edward Elric","Alphonse Elric","Trisha Elric"], # Elric
     92 : ["Ling Yao","Mei Chang","Lan Fan","Fu","Xiao Mei"], # Xing
-    91 : ["Edward Elric","Alphonse Elric","Roy Mustang","Kimbley","Olivia Mira Armstrong","Alex Louis Armstrong"], # Alchimiste d'Etat
+    91 : ["Edward Elric","Roy Mustang","Solf J. Kimblee","Alex Louis Armstrong","Tim Marcoh","Isaac McDougal"], # Alchimiste d'Etat
     90 : ["Lust","Glutonny","Envy","Sloth","Ling Yao","King Bradley","Selim Bradley","Pere"], # Homonculus
     89 : ["Olivia Mira Armstrong","Alex Louis Armstrong"], # Armstrong
     88 : ["Kenjaku","Okuyasu","Yuki Tsukumo","Fujitora","Pain","Ochaco Uraraka","Enrico Pucci","Satoru Gojo"], # Maitre de la Gravite
@@ -1275,7 +1316,7 @@ all_link_synergies = {
     80 : ["Muzan","Nezuko","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignee","Mere Araignee","Shinzu","Dabra"], # Demon
     79 : ["Aoi Kanzaki","Sumi Nakahara","Kiyo","Naho","Goto (KNY)","Shinobu Kocho"], # Domaine des Papillons
     78 : ["Kanao","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho"], # Pourfendeur de demons
-    77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui Tengen"], # Hashira
+    77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Uzui Tengen","Jigoro"], # Hashira
     76 : ["Kagaya Ubuyashiki","Amane Ubuyashiki","Hinaki Ubuyashiki","Nichika Ubuyashiki","Kiriya Ubuyashiki","Kanata Ubuyashiki"], # Ubuyashiki
     75 : ["Toji Fushiguro","Megumi Fushiguro","Tsumiki Fushiguro"], # Fushiguro
     74 : ["Noritoshi Kamo","Kenjaku"], # Kamo
@@ -1298,15 +1339,15 @@ all_link_synergies = {
     2 : ["Son Goku", "Vegeta", "Son Gohan", "Trunks", "Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla","Pan"], # Saiyan
     4 : ["Monkey D. Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
     5 : ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Shisui Uchiha", "Fugaku Uchiha", "Indra Otsutsuki", "Izuna Uchiha", "Sarada Uchiha"], # Uchiha
-    7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Monkey D. Garp", "Fujitora", "Ryokugyu", "Kong"], # Amiraux
-    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Barbe Noire","Monkey D. Luffy","Mihawk","Crocodile"], # Yonko
+    7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Monkey D. Garp", "Fujitora", "Ryokugyu", "Kong"], # Amiral
+    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Barbe Noire","Monkey D. Luffy","Dracule Mihawk","Crocodile"], # Yonko
     14 : ["Yamamoto", "Unohana", "Byakuya Kuchiki", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro Hitsugaya", "Rukia Kuchiki"], # Gotei 13
     15 : ["Hashirama Senju", "Tobirama Senju", "Hiruzen Sarutobi", "Minato Namikaze", "Tsunade", "Kakashi Hatake", "Naruto Uzumaki","Mei Terumi", "Onoki", "Gaara","Danzo Shimura"], # Kage
-    16 : ["Crocodile", "Doflamingo", "Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Buggy", "Trafalgar D. Law", "Barbe Noire"], # Shichibukai,
+    16 : ["Crocodile", "Doflamingo", "Dracule Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Buggy", "Trafalgar D. Law", "Barbe Noire"], # Shichibukai,
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Monkey D. Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu","Grisha Yeager"], # Revolutionnaires
-    19 : ["Monkey D. Luffy", "Monkey D. Garp", "Gol D. Roger", "Portgas D. Ace", "Monkey D. Dragon", "Sabo", "Trafalgar D. Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra"], # Volonte du D
-    20 : ["Kiba", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko","Kiriko","Nezu","Xiao Mei","Spinner","Ikarugo","Fumikage Tokoyami","Oolong","Sansa","Cheetu","Panda"], # Animal TODO
+    19 : ["Monkey D. Luffy", "Monkey D. Garp", "Gol D. Roger", "Portgas D. Ace", "Monkey D. Dragon", "Sabo", "Trafalgar D. Law", "Barbe Noire","Portgas D. Rouge","Vivi","Cobra","Haguar D. Sauro"], # Volonte du D
+    20 : ["Kiba", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko","Kiriko","Nezu","Xiao Mei","Spinner","Ikarugo","Fumikage Tokoyami","Oolong","Sansa","Cheetu","Panda","Heinkel","Mike", "Zazan","Meleoron","Hatchan","Tamaki Amajiki"], # Animal TODO
     21 : ["Sasuke Uchiha", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Pain", "Obito Uchiha", "Madara Uchiha", "Sasuke Uchiha"], # Rinnegan
     23 : ["Naruto Uzumaki", "Sakura Haruno", "Sasuke Uchiha", "Kakashi Hatake", "Shikamaru Nara", "Choji", "Ino", "Hinata Hyuga", "Kiba", "Shino", "Neji Hyuga", "Rock Lee", "Tenten","Kawaki"], # Konoha TODO
@@ -1316,15 +1357,16 @@ all_link_synergies = {
     27 : [ "Onoki", "Deidara", "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto Uzumaki", "Killer Bee", "Yugito","Fû", "Yuji Itadori","Madara Uchiha","Obito Uchiha","Gaara","Mito Uzumaki"], # Receptacle TODO
     29 : ["Aang","Korra", "Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Lord Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi","Sukuna"],# Maitre du Feu TODO
-    30 : ["Aang","Korra", "Katara", "Korra", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Haku","Hama","Halibel","Jinbe"], # Maitre de l'Eau TODO
-    31 : ["Aang","Korra", "Toph", "Yamato (naruto)", "Hashirama Senju","Kakuzu"], # Maitre de la Terre TODO
-    32 : ["Aang","Korra","Temari"], # Maitre de l'Air TODO
+    30 : ["Aang","Korra", "Katara", "Korra", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Hama","Halibel","Jinbe"], # Maitre de l'Eau TODO
+    31 : ["Aang","Korra", "Toph", "Yamato (naruto)","Kakuzu"], # Maitre de la Terre TODO
+    32 : ["Aang","Korra","Temari","Mei Terumi"], # Maitre de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Lord Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena","Denki Kaminari"], # Maitre de la foudre TODO
-    34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia Kuchiki","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki", "Uraume"], # Maitre de la Glace TODO Gray Fullbuster
+    34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia Kuchiki","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki", "Uraume","Haku","Isaac McDougal"], # Maitre de la Glace TODO Gray Fullbuster
 
     36 : ["Akainu", "Jogo","Mei Terumi"], # Maitre de la Lave TODO
+    37 : ["Hashirama Senju","Yamato (naruto)", "Shinji Nishiya"], # Maitre du Bois TODO
     39 : ["Gaara"], # Maitre du Sable 
-    40 : ["Zoro", "Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Dabi", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner"], # epeiste
+    40 : ["Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Kuina", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Aizen", "Kenpachi", "Unohana", "Gin", "Dabi", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner","Hatchan","Inazuma","Dorry"], # epeiste
     # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Barbe Noire", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Portgas D. Ace"], # Equipage de Barbe Blanche
@@ -1337,11 +1379,11 @@ all_link_synergies = {
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar Zeppeli", "Gyro Zeppeli"], # Zeppeli
     52 : ["Kars", "Wamuu", "Esidisi", "Santana"], # Pillier
-    53 : ["Dio Brando","Diavolo", "Jotaro Kujo","Nighteye","Kira Yoshikage","Enrico Pucci","Katakuri","Athena","Boingo","Neon"], # Maitre du Temps
-    54 : ["Kira Yoshikage", "Katsuki Bakugo","Kimbley","Genthru"], # Maitre de l'Explosion
+    53 : ["Dio Brando","Diavolo", "Jotaro Kujo","Nighteye","Kira Yoshikage","Enrico Pucci","Katakuri","Athena","Boingo","Neon Nostrad"], # Maitre du Temps
+    54 : ["Kira Yoshikage", "Katsuki Bakugo","Solf J. Kimblee","Genthru"], # Maitre de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Pesci", "Melone", "Illuso", "Formaggio", "Gelato", "Sorbet", "Cioccolata", "Secco"], # Squadra Esecuzioni
     56 : ["Jonathan Joestar", "Will Zeppeli", "Joseph Joestar", "Caesar Zeppeli", "Lisa Lisa", "Poco"], # Hamon
-    57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Luca","Polpo","Trish"], # Mafioso
+    57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Diavolo","Luca","Polpo","Trish","Neon Nostrad"], # Mafioso
     58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo", "Abbacchio","Trish"], # Team Bucciarati
     
 }
