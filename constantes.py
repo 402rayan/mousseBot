@@ -167,6 +167,18 @@ phrases_invocation = [
 
 
 ennemis = {
+    "FRANKLIN" : {
+        'nom' : 'Franklin',
+        'couleur' : CONSTANTS['COLORS']['FRANKLIN'],
+        'nomGif' : 'franklinPose',
+        'nomPfp' : 'franklin',
+        'isNotGif' : True,
+        'stats' : {
+            'HP' : 1000,
+            'ATK' : 1100,
+            'DEF' : 500,
+        }
+    },
     "Rui" : {
         'nom' : 'Rui',
         'couleur' : 0x490c11,
@@ -216,15 +228,15 @@ ennemis = {
         }
     },
     "UVOGUINE" : {
-        'nom' : 'Uvoguine',
+        'nom' : 'Uvogin',
         'couleur' : CONSTANTS['COLORS']['UVOGUINE'],
         'nomGif' : 'uvoguine',
         'nomPfp' : 'uvoguine',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 500,
-            'ATK' : 700,
-            'DEF' : 500,
+            'HP' : 1340,
+            'ATK' : 1340,
+            'DEF' : 1340,
         }
     },
     "SAIBAMAN" : {

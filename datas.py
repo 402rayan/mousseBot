@@ -467,7 +467,7 @@ all_characters_templates = {
             ("Feitan", "S", "https://i.imgur.com/X3AVK76.gif", 525, 600, 515),
             ("Kurapika", "S", 'https://i.imgur.com/ltImMBx.gif', 580, 580, 575),
             ("Kirua Zoldyck", "S", 'https://i.imgur.com/2sLrUqa.gif', 520, 610, 520),
-            ("Uvogin", "S", 'https://i.imgur.com/iqzrrW8.gif', 540, 590, 560),
+            ("Uvogin", "S", 'https://i.imgur.com/WNRMtlT.gif', 540, 590, 560),
             ("Nobunaga", "S", 'https://i.imgur.com/1UMIlo3.gif', 520, 580, 520),
             ("Machi", "S", "https://i.imgur.com/HCAKZfB.gif", 520, 575, 520),
             ("Phinks", "S", "https://i.imgur.com/k5BLUMw.gif", 530, 575, 525),
@@ -1207,7 +1207,7 @@ all_link_synergies = {
     145 : ["Vivi"], # Princesse
     144 : ["Pokkle","Uryu Ishida"], # Archer
     143 : ["Mr. Satan","King (OPM)"], # Imposteur
-    142 : ["Broly","Kale"], # Berserker
+    142 : ["Broly","Kale","Uvogin"], # Berserker
     141 : ["Envy","Oingo","Ginyu"], # Métamorphe
     140 : ["Hiruzen Sarutobi", "Asuma Sarutobi", "Konohamaru Sarutobi"], # Sarutobi
     139 : ["Toji Fushiguro","Son Goku","Hashirama Senju","Tobirama Senju","Hiruzen Sarutobi", "Minato Namikaze", "Asuma Sarutobi","Deidara","Itachi Uchiha","Haku","Zabuza Momochi","Madara Uchiha","Sasori","Kimimaro","Hanzo","Chiyo"], # Réssucité
@@ -1404,5 +1404,13 @@ all_techniques = {
         ["Prison de fils", "créé une", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/RuiSang1.gif/revision/latest?cb=20200627145048&path-prefix=fr", "#490c11"],
         ["Cage du regard assassin", "créé la", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/RuiSang2.gif/revision/latest?cb=20200627145112&path-prefix=fr", "#490c11"],
         ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
-    ]
+    ],
+    "Franklin" : [
+        ["Déluge de Balles", "déverse un", "https://i.imgur.com/0KyJyzH.gif", "#5c3307"],
+        ["Recharge", "", "", "#5c3307"],
+    ],
+    "Uvogin" : [
+        ["Big Bang Impact", "lance un", "https://i.imgur.com/I8LlLN5.gif", "#5c3307"],
+        ["Nen", "déploie son", "https://i.imgur.com/CsGYEAi.gif", "#5c3307"],
+    ],
 }
