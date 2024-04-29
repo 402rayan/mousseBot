@@ -357,7 +357,6 @@ all_characters_templates = {
             # Personnages C
             ("Ganju", "C", 'https://i.imgur.com/4HYU47B.png', 245, 255, 240),
             ("Marechiyo", "C", 'https://i.imgur.com/QdU2qIp.png', 250, 260, 270),
-            ("Love", "C", 'https://i.imgur.com/LJzVWIY.png', 265, 250, 275),
             ("Soken Ishida", "C", "https://i.imgur.com/C3fEyfa.png", 240, 255, 260),
             ("Masaki Kurosaki","C","https://i.imgur.com/o6oX1Q6.jpeg", 250, 230, 270),
             
@@ -1225,11 +1224,17 @@ all_synergies = [
     (195, "Duplicateur", "HP", 0.55, "Les Duplicateurs sont des individus qui peuvent creer des copies d'eux-memes pour combattre leurs ennemis.", image_temporaire, "#00000"),
     (196, "Kaio", "HP", 0.45, "Les Kaios sont des divinites qui protegent l'univers et qui veillent à ce que l'equilibre soit maintenu.", image_temporaire, "#00000"),
     (197, "Race de Freezer", "DEF", 0.60, "Les membres de la race de Freezer sont des guerriers puissants qui sont issus de la même race que Freezer.", image_temporaire, "#00000"),
+    (198, "Héro Professionel", "DEF", 0.45, "Les Heros Professionnels sont des individus qui protegent les citoyens des vilains et qui combattent le crime.", image_temporaire, "#00000"),
+    (199, "Lancier", "ATK", 0.45, "Les Lanciers sont des soldats qui combattent avec des lances et qui sont capables de percer les armures de leurs ennemis.", image_temporaire, "#00000"),
+    (200, "Fée", "DEF", 0.45, "Les Fees sont des creatures magiques qui vivent dans les forets et qui protegent la nature.", image_temporaire, "#00000"),
 ]
 
 #TEAM 7 etc RIVAL eternel
 
 all_link_synergies = {
+    200 : ["King (NNT)"], # Fée
+    199 : ["Stinger","Maki Zenin","King (NNT)"], # Lancier
+    198 : ["Saitama", "Mumen Raider","Fubuki", "Watchdog Man", "Tatsumaki", "King (OPM)", "Bang", "Flashy Flash", "Atomic Samurai", "Child Emperor", "Metal Knight", "Zombieman", "Genos", "Metal Bat", "Tanktop Master", "Puri Puri Prisoner", "Stinger", "Sneck", "All Might", "Star And Stripe", "Endeavor","Nana Shimura","Beast Jeanist","Hawks","Shota Aizawa","Ryukyu","Mt. Lady", "Gran Torino","Midnight", "Rock Lock", "Snipe"], # Héro Professionel
     197 : ["Freezer", "Cooler", "Roi Cold", "Frost"], # Race de Freezer
     196 : ["Zamasu", "Maitre Kaio", "Kaio Shin", "Black Goku"], # Kaio
     195 : ["Momo Yaoyorozu", "Twice", "Hermes", "Korutopi"], # Duplicateur
@@ -1247,7 +1252,7 @@ all_link_synergies = {
     183 : ["Saitama","Ichibe Hyosube"], # Sans cheveux
     182 : ["Momo Yaoyorozu", "Shikamaru Nara", "Pegui"], # Stratège
     181 : ["Vezze","Boa Hancock","Makima"], # Envoûteuse
-    180 : ["Ivankov","Karasu","Belo Betty","Lindbergh","Olivia Mira Armstrong","Erwin Smith"], # Commandant
+    180 : ["Ivankov","Karasu","Belo Betty","Lindbergh","Olivia Mira Armstrong","Erwin Smith","Ginyu"], # Commandant
     179 : ["Merlin","Momo"], # Magicien
     178 : ["Ikarugo","Kain Fuery","Falman","Heinkel","Hannes","Maria Ross","Zofia"], # Soldat
     177 : ["Hermep","Corazon","Maes Hughes", "Cheetu", "Zazan","Meleoron","Koruto","Levi Ackerman"], # Lieutenant
@@ -1263,12 +1268,12 @@ all_link_synergies = {
     166 : ["Mt. Lady", "Gigantomachia", "Diane","Armin Arlert","Bertholdt Hoover","Rhodes Reiss","Brogy","Dorry","Haguar D. Sauro"], # Géant
     165 : ["Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Kakashi Hatake", "Sai","Boruto Uzumaki","Sarada Uchiha","Konohamaru Sarutobi","Mitsuki","Kawaki"], # Team 7
     164 : ["Sengoku", "Isaac Netero","Hashirama Senju"], # Pouvoir de Bouddha
-    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro","Ichibe Hyosube"], # Vétéran
+    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro","Ichibe Hyosube","Iroh"], # Vétéran
     162 : ["Kanaria","Gotoh"], # Intendant
     161 : ["Diavolo","Twice","Ling Yao"], # Double personnalité
     160 : ["Jiraya","Ebisu","Tortue Geniale","Denji","Mineta"], # Pervers
-    159 : ["Orochimaru", "Kabuto Yakushi", "Sasuke Uchiha","Mitsuki"], # Maitre des serpents
-    158 : ["Tompa","Mizuki","Miruki Zoldyck","Guido","Riluberto","Sadaso","Mineta"], # Minable et perfide
+    159 : ["Orochimaru", "Kabuto Yakushi", "Sasuke Uchiha","Mitsuki","Anko"], # Maitre des serpents
+    158 : ["Tompa","Mizuki","Miruki Zoldyck","Guido","Riluberto","Sadaso","Mineta","Cell JR"], # Minable et perfide
     157 : ["Alphonse Elric", "Barry The Chopper"], # Âme
     156 : ["Weather Report","Nami","Monkey D. Dragon"], # Maitre du climat
     155 : ["Son Goku","Son Gohan", "Tortue Geniale", "Krillin", "Yamcha", "Ten Shin Han", "Chaozu", "Piccolo", "Vegeta", "Trunks", "Goten", "Bulma", "Videl", "Pan", "Yajirobe", "C-18","C-17","Majin Buu"], # Z Fighters
@@ -1292,7 +1297,7 @@ all_link_synergies = {
     136 : ["Kakashi Hatake","Satoru Gojo","Takuma Ino","Galgali","Karasu","King","Shoji","Shinji Nishiya","Hermep","Beam"], # Masqué
     135 : ["Kankuro", "Sasori","Chiyo","Doflamingo"], # Marionnettiste
     134 : ["Jones","Leluto","Hermes","Jolyne Kujo","Isaac McDougal","Solf J. Kimblee"], # Prisonnier
-    133 : ["Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Roi Cold","Dabra","Historia Reiss","Wapol","Cobra"], # Roi
+    133 : ["Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Roi Cold","Dabra","Historia Reiss","Wapol","Cobra","King (NNT)"], # Roi
     132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu"], # Classe S
     131 : ["Toji Fushiguro","Maki Zenin"], # Dépourvu d'énergie occulte
     130 : ["Suguru Geto","Miguel","Juzo","Uraume","Haruta Shigemo","Kenjaku","Junpei"], # Maitre des Fleaux
@@ -1385,7 +1390,7 @@ all_link_synergies = {
     20 : ["Kiba", "Karin", "Rob Lucci", "Chopper", "Kaido", "Marco", "Kaku","Cyborgorilla","Crablante", "Tonton","Pakkun", "Laboon","Sajin","Chachamaru","Kaburamaru","Lindbergh","Appa","Tama","Mirko","Kiriko","Nezu","Xiao Mei","Spinner","Ikarugo","Fumikage Tokoyami","Oolong","Sansa","Cheetu","Panda","Heinkel","Mike", "Zazan","Meleoron","Hatchan","Tamaki Amajiki","Pegui","Kenji"], # Animal TODO
     21 : ["Sasuke Uchiha", "Suigetsu", "Karin (naruto)", "Jugo"], # Taka
     22 : ["Pain", "Obito Uchiha", "Madara Uchiha", "Sasuke Uchiha"], # Rinnegan
-    23 : ["Naruto Uzumaki", "Sakura Haruno", "Sasuke Uchiha", "Kakashi Hatake", "Shikamaru Nara", "Choji", "Ino", "Hinata Hyuga", "Kiba", "Shino", "Neji Hyuga", "Rock Lee", "Tenten","Kawaki","Danzo","Jiraya"], # Konoha TODO
+    23 : ["Naruto Uzumaki", "Sakura Haruno", "Sasuke Uchiha", "Kakashi Hatake", "Shikamaru Nara", "Choji", "Ino", "Hinata Hyuga", "Kiba", "Shino", "Neji Hyuga", "Rock Lee", "Tenten","Kawaki","Danzo","Jiraya","Mitsuki"], # Konoha TODO
     24 : ["Gaara", "Temari", "Kankuro", "Yashamaru","Chiyo"], # Suna TODO
     25 : ["Kisame", "Zabuza Momochi", "Haku", "Mei Terumi", "Suigetsu"], # Kiri TODO
     26 : ["Darui", "Omoi", "Killer Bee", "Samui", "Atsui", "Onoki"], # Kumo TODO
@@ -1410,7 +1415,7 @@ all_link_synergies = {
     46 : ["Hashirama Senju", "Tobirama Senju", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya Otsutsuki", "Rikudo", "Urashiki Otsutsuki", "Momoshiki Otsutsuki", "Toneri Otsutsuki", "Isshiki Otsutsuki"], # Otsutsuki
     48 : ["Shino", "Meruem", "Pufu", "Yupi", "Neferopito","Koruto"], # Insecte
-    49 : ["Neferopito", "Yupi", "Pufu","Ichibe Hyosube","Senjumaru Shutara","Kirio Hikifune","Oetsu Nimaiya","Tenjiro Kirinji"], # Garde Royale
+    49 : ["Neferopito", "Yupi", "Pufu","Ichibe Hyosube","Senjumaru Shutara","Kirio Hikifune","Oetsu Nimaiya","Tenjiro Kirinji","Fu","Lang Fan"], # Garde Royale
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar Zeppeli", "Gyro Zeppeli"], # Zeppeli
     52 : ["Kars", "Wamuu", "Esidisi", "Santana"], # Pillier
