@@ -953,13 +953,15 @@ async def admin(message, userFromDb):
     await message.channel.send(response[:2000])
 
 @bot.command()
-async def invocation(message, userFromDb):
+async def invocation(message, userFromDb, lucky=False):
     # On vérifie si l'utilisateur a assez de tickets
     tickets = database.get_tickets(message.author.id)
     if tickets < CONSTANTS['INVOCATION_COST']:
         await message.channel.send(embed=embed_info("Vous n'avez pas assez de tickets pour invoquer!","", discord.Color.red()))
         return
     specialInvocation = userFromDb[9]
+    if lucky:
+        specialInvocation = True
     print(f"Invocation spéciale : {specialInvocation}")
     donnees = database.summon_character(message.author.id, message.author.name, specialInvocation)
     # SI la données est de type String, c'est une erreur
@@ -1812,6 +1814,7 @@ commands = {
     "stat": fakeStatistiquesCombat,
     "affi": afficherUnivers,
     "fakeCh": fakeCharacter,
+    "luckyInv" : invocation,
 }
 
 
