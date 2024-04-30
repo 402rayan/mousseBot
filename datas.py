@@ -263,7 +263,7 @@ all_characters_templates = {
             ("Nami", "B", 'https://i.imgur.com/VAbsCsh.gif', 335, 330, 305),
             ("Usopp", "B", "https://i.imgur.com/dhRNN1S.jpeg", 330, 350, 315),
             ("Hina", "B", 'https://i.imgur.com/2tbPDP4.png', 315, 335, 345),
-            ("Buggy", "B", "https://i.imgur.com/9aeBJHQ.jpeg", 355, 330, 305),
+            ("Baggy", "B", "https://i.imgur.com/uervCQy.png", 355, 330, 305),
             ("Lindbergh", "B", "https://i.imgur.com/a8tSh0n.jpeg", 330, 355, 305),
             ("Koala", "B", "https://i.imgur.com/WiiPoza.jpeg", 330, 355, 305),
             ("Inazuma", "B", 'https://i.imgur.com/PyUiXXv.png', 305, 330, 355),
@@ -419,7 +419,7 @@ all_characters_templates = {
             ('Mt. Lady', 'A', 'https://i.imgur.com/BGdhXVd.gif', 405, 400, 450) ,
             ('Gran Torino', 'A', 'https://i.imgur.com/pHGoXST.gif', 405, 440, 395) ,
             ('Nighteye', 'A', 'https://i.imgur.com/fgO8qfb.gif', 375, 380, 415) ,
-            ('Midnight', 'A', 'https://i.imgur.com/L4S7dNo.jpeg', 375, 450, 385) ,
+            ('Midnight', 'A', 'https://i.imgur.com/RywB3Hh.gif', 375, 450, 385) ,
             ('Himiko Toga', 'A', 'https://i.imgur.com/YWZtjvt.gif', 410, 385, 430) ,
             ('Snipe', 'A', 'https://i.imgur.com/C5qxDQC.gif', 455, 465, 430) ,
             
@@ -1302,7 +1302,7 @@ all_link_synergies = {
     177 : ["Hermep","Corazon","Maes Hughes", "Cheetu", "Zazan","Meleoron","Koruto","Levi Ackerman","Miles","Buccaneer"], # Lieutenant
     176 : ["Tashigi", "Hina", "Koby","Roy Mustang"], # Colonel
     175 : ["Smoker","Haguar D. Sauro","Tsuru","Doll","Vergo"], # Vice Amiral
-    174 : ["Crocodile","Dracule Mihawk", "Buggy"], # Cross Guild
+    174 : ["Crocodile","Dracule Mihawk", "Baggy"], # Cross Guild
     173 : ["Tomura Shigaraki", "All For One", "Dabi", "Spinner", "Himiko Toga", "Twice", "Re-Destro", "Gigantomachia","Mustard"], # Front de Libération du Paranormal
     172 : ["Konan","Karuto Zoldyck"], # Maitre du papier
     171 : ["Historia Reiss", "Frieda Reiss", "Rhodes Reiss"], # Reiss
@@ -1424,10 +1424,10 @@ all_link_synergies = {
     4 : ["Monkey D. Luffy", "Roronoa Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
     5 : ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Shisui Uchiha", "Fugaku Uchiha", "Indra Otsutsuki", "Izuna Uchiha", "Sarada Uchiha"], # Uchiha
     7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Monkey D. Garp", "Fujitora", "Ryokugyu", "Kong","Pixis","Theo Magath"], # Amiral
-    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Marshall D. Teach","Monkey D. Luffy","Buggy"], # Yonko
+    10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Marshall D. Teach","Monkey D. Luffy","Baggy"], # Yonko
     14 : ["Yamamoto", "Unohana", "Byakuya Kuchiki", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro Hitsugaya", "Rukia Kuchiki"], # Gotei 13
     15 : ["Hashirama Senju", "Tobirama Senju", "Hiruzen Sarutobi", "Minato Namikaze", "Tsunade", "Kakashi Hatake", "Naruto Uzumaki","Mei Terumi", "Onoki", "Gaara","Danzo Shimura"], # Kage
-    16 : ["Crocodile", "Don Quichotte Doflamingo", "Dracule Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Buggy", "Trafalgar D. Law", "Marshall D. Teach"], # Shichibukai,
+    16 : ["Crocodile", "Don Quichotte Doflamingo", "Dracule Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Baggy", "Trafalgar D. Law", "Marshall D. Teach"], # Shichibukai,
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
     18 : ["Monkey D. Dragon", "Ivankov", "Kuma", "Sabo", "Koala", "Hack", "Inazuma", "Belo Betty", "Lindbergh", "Karasu","Grisha Yeager"], # Revolutionnaires
     19 : ["Monkey D. Luffy", "Monkey D. Garp", "Gol D. Roger", "Portgas D. Ace", "Monkey D. Dragon", "Sabo", "Trafalgar D. Law", "Marshall D. Teach","Portgas D. Rouge","Vivi","Cobra","Haguar D. Sauro"], # Volonte du D
@@ -1538,6 +1538,7 @@ all_techniques = {
     "Uvogin" : [
         ["Big Bang Impact", "lance un", "https://i.imgur.com/I8LlLN5.gif", "#5c3307"],
         ["Nen", "déploie son", "https://i.imgur.com/CsGYEAi.gif", "#5c3307"],
+        ["Enragé", "devient", "", "#5c3307"],
     ],
     "Meliodas" : [
         ["Frappe avec son épée", "", "https://www.icegif.com/wp-content/uploads/meliodas-icegif-19.gif", "#371745"],

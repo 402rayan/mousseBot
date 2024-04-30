@@ -129,7 +129,8 @@ CONSTANTS = {
         'DANGER' : 0xff0000, 'MAHITO' : 0xa8bacd,
         'FLAMME' : 0xff0000, 'FRANKLIN' : 0x5c3307,
         'BRIGADE_FANTOME' : 0x000000, 'UVOGUINE' : 0x5c5d51,
-        "C18" : 0xeedbab,
+        "C18" : 0xeedbab, "DENKI" : 0xb38d48, "BAGGY" : 0xa10f21,
+        "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b
         
     },
     "NOMS_GIF_INVOCATION": [
