@@ -9,9 +9,11 @@ from constantes import CONSTANTS
 
 from matplotlib import pyplot as plt
 
+if not os.path.exists('statistiques'):
+    os.makedirs('statistiques')
+        
 def generer_team_stats():
-    if not os.path.exists('statistiques'):
-        os.makedirs('statistiques')
+
     """Génère toutes les combinaisons possibles de 3 personnages et calcule les stats de chaque team."""
     """Écrit les teams dans le fichier teams.log."""
     database = Database('mousse.db')
@@ -55,6 +57,12 @@ def generer_team_stats():
 
     print("Les teams sont écrites dans le fichier teams.log !")
 
+    with open("statistiques/teams3000.log","w") as file:
+        for team, power in all_stats[:3000]:
+            team_to_write = [character[1] for character in team['team']]
+            synergies_to_write = [synergie for synergie in team['synergies']]
+            file.write(f"{team_to_write} : {power} {synergies_to_write}\n")
+
     temps_fin = time.time()
     print("Fin du programme...", time.strftime('%H:%M:%S', time.localtime(temps_fin)))
 
@@ -81,7 +89,7 @@ def classement_nombre_synergies(verbose=False):
     all_characters = database.get_character_templates()
     all_characters_synergies = {}
     for character in all_characters:
-        all_characters_synergies[character[1]] = database.get_synergies_by_character_template(character[0])
+        all_characters_synergies[character] = database.get_synergies_by_character_template(character[0])
     print(all_characters_synergies) if verbose else None
     for character, synergies in all_characters_synergies.items():
         if synergies is None:
@@ -90,7 +98,7 @@ def classement_nombre_synergies(verbose=False):
     all_characters_synergies.sort(key=lambda x: x[1], reverse=True)
     with open('statistiques/classement_nombre_synergies.log', 'w') as file:
         for character in all_characters_synergies:
-            file.write(f"{character[0]} : {character[1]}\n")
+            file.write(f"{character[0][1]} [{character[0][2]}] : {character[1]}\n")
 
 def max_puissance_en_invocation(nombre_invocations, Verbose=False):
     liste_perso_puissance = {}
@@ -149,8 +157,8 @@ def demandes():
         classement_nombre_synergies()
 
 
-
 if input("Voulez-vous accéder au menu des demandes ? (o/n) ") == 'o':
     demandes()
+
 
 

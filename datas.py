@@ -1189,7 +1189,7 @@ all_synergies = [
     (142, "Berserker", "ATK", 0.75, "Les Berserkers sont des individus qui entrent dans une rage meurtriere et qui attaquent tout ce qui se trouve sur leur chemin.", image_temporaire, "#00000"),
     (143, "Imposteur", "DEF", 0.45, "Les Imposteurs sont des individus qui se font passer pour quelqu'un d'autre pour tromper leurs ennemis.", image_temporaire, "#00000"),
     (144, "Archer", "ATK", 0.55, "Les Archers sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire, "#00000"),
-    (145, "Prince(sse)", "DEF", 0.45, "Les Princesses sont des jeunes filles de la noblesse qui sont protegees par des gardes du corps.", image_temporaire, "#00000"),
+    (145, "Prince", "DEF", 0.45, "Les Princesses sont des jeunes filles de la noblesse qui sont protegees par des gardes du corps.", image_temporaire, "#00000"),
     (146, "Medecin", "HP", 0.45, "Les Medecins sont des medecins qui soignent les blessures et les maladies des autres.", image_temporaire, "#00000"),
     (147, "Manipulateur de l'ombre", "DEF", 0.45, "Les Manipulateurs de l'ombre sont des individus qui peuvent manipuler les ombres pour attaquer leurs ennemis.", image_temporaire, "#00000"),
     (148, "Glouton", "HP", 0.45, "Les Gloutons sont des individus qui ont un appetit insatiable et qui peuvent manger n'importe quoi.", image_temporaire, "#00000"),
@@ -1251,6 +1251,8 @@ all_synergies = [
     (205, "Armure d'Or", "DEF", 0.75, "Les Armures d'Or sont des armures magiques qui protegent leur porteur des attaques ennemies.", image_temporaire, "#00000"),
     (206, "Tireur", "ATK", 0.40, "Les Tireurs sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire, "#00000"),
     (207, "Sens de la direction douteux", "HP", 0.80, "Les individus avec un sens de la direction douteux sont des personnes qui se perdent facilement et qui ont du mal à trouver leur chemin.", image_temporaire, "#00000"),
+    (208, "Utilisateur de Nunchaku", "ATK", 0.45, "Les Utilisateurs de Nunchaku sont des individus qui maitrisent l'art du nunchaku pour combattre leurs ennemis.", image_temporaire, "#00000"),
+    (209, "Famille de Méliodas", "HP", 0.45, "La famille de Meliodas est une famille de demons qui protegent le royaume de Britannia.", image_temporaire, "#00000"),
     
     
 ]
@@ -1258,6 +1260,8 @@ all_synergies = [
 #TEAM 7 etc RIVAL eternel
 
 all_link_synergies = {
+    209 : ["Estarossa","Meliodas","Zeldris"], # Famille de Méliodas
+    208 : ["Ban","Maki Zenin","Guy","Rock Lee","Kurapika","Toji Zenin",], # Utilisateur de Nunchaku
     207 : ["Roronoa Zoro","Kenpachi","Yachiru",], # Sens de la direction douteux
     206 : ["Riza Hawkeye","Mustard"], # Tireur
     205 : ["Don Krieg","Shaka"], # Armure d'Or
