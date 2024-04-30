@@ -124,13 +124,13 @@ CONSTANTS = {
         'RUI' : 0xFFFFFF,
         'GROTTE' : 0x8B4513,
         'PURPLE_HAZE' : 0xa424c7,
-        'LIGHT' : 0xf4ff91,
-        'CIEL' : 0x87CEEB,
+        'LIGHT' : 0xf4ff91, 'TICKET_DIAMANT' : 0xcd81a1,
+        'CIEL' : 0x87CEEB, 'YORUICHI': 0x4d073b,
         'DANGER' : 0xff0000, 'MAHITO' : 0xa8bacd,
         'FLAMME' : 0xff0000, 'FRANKLIN' : 0x5c3307,
         'BRIGADE_FANTOME' : 0x000000, 'UVOGUINE' : 0x5c5d51,
         "C18" : 0xeedbab, "DENKI" : 0xb38d48, "BAGGY" : 0xa10f21,
-        "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b
+        "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b, "GRAY_CAT" : 0x3c3c3d
         
     },
     "NOMS_GIF_INVOCATION": [
@@ -170,6 +170,22 @@ phrases_invocation = [
 
 
 ennemis = {
+    "YORUICHI" : {
+        'nom' : 'Yoruichi',
+        'couleur' : CONSTANTS['COLORS']['YORUICHI'],
+        'nomGif' : 'yoruichi',
+        'nomPfp' : 'yoruichi',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 2000,
+            'ATK' : 2500,
+            'DEF' : 2200,
+        }
+    },
+
+
+
+
     "FRANKLIN" : {
         'nom' : 'Franklin',
         'couleur' : CONSTANTS['COLORS']['FRANKLIN'],

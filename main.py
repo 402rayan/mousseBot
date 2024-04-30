@@ -72,7 +72,8 @@ async def handle_user_level(message, userFromDb):
         1: niveau1, 2: niveau2, 3: niveau3,
         4: niveau4, 5: niveau5, 6: niveau6,
         7: niveau7, 8: niveau8, 9: niveau9,
-        10: niveau10, 11: niveau11
+        10: niveau10, 11: niveau11, 12 : niveau12,
+        13: niveau13
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -94,6 +95,60 @@ async def histoire(message, userFromDb):
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     await handle_user_level(message, userFromDb)
+
+async def niveau13(message, userFromDb, equipe):
+    # Début de niveau : maison abandonnée
+    await debutDeNiveau(message, userFromDb, 13, "La maison abandonnée", equipe, CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    # On décide de retourner voir le village pour voir comment ça évolue mais sur la route on apercoit une immense maison
+    await message.channel.send(embed=embed_naratteur("Vous décidez de partir en route vers le village pour voir si les habitants se remettent de l'attaque.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_naratteur("Sur la route, vous apercevez une immense maison semblant abandonnée.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4.5)
+    # On décide d'aller voir ce qu'il se passe
+    await message.channel.send(embed=embed_naratteur("Vous décidez d'aller visiter la maison.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    ticket_ramasses = await labyrinthe(message, userFromDb, equipe)
+    if ticket_ramasses < 0:
+        return await echecNiveau(message, userFromDb, 13)
+    await asyncio.sleep(4)
+    # En descendant dans la cave, on sent une présence derrière nous..
+    await message.channel.send(embed=embed_naratteur("En descendant dans la cave, vous sentez une présence derrière vous..", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 14)
+    
+
+async def niveau12(message, userFromDb, equipe):
+    # await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
+    # await asyncio.sleep(4)
+    # # En sortant de la montage, on croise Zuko , il nous félicité d'avoir réussi la tâche
+    # await message.channel.send(embed=embed_naratteur("En sortant de la montagne, vous croisez Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
+    # await asyncio.sleep(4)
+    # await embed_histoire_character(message, "Zuko vous félicite :", "", "zuko", "", "Félicitations, tu as réussi la tâche que je t'ai confié.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # # Zuko nous dit qu'il est étonné qu'il y avait deux membres aulieu d'un
+    # await embed_histoire_character(message, "Zuko est étonné par nos explications :", "", "zuko", "", "Vraiment ?.. J'ignorais qu'il y avait deux membres ici.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # # De son côté il s'est occupé d'un autre membre redoutable nommé Feitan
+    # await embed_histoire_character(message, "Zuko vous raconte :", "", "zuko", "", "De mon côté, j'ai affronté un membre redoutable nommé Feitan. C'était très éprouvant mais j'ai réussi à le battre.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # #Il a obtenu des réponses : Pucci et entrain de former un culte et bâti un château sur la plaine principale
+    # await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "J'ai obtenu des réponses. Le prêtre s'appelle en réalité Enrico Pucci.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "Il est en train de former un culte et a bâti un château sur la plaine principale.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # #Occupons nous d'abord de la brigâde, puis nous nous occuperons de Pucci
+    # await embed_histoire_character(message, "Zuko vous propose un plan :", "", "zuko", "", "Occupons nous d'abord de la brigade, puis nous nous occuperons de Pucci.", CONSTANTS['COLORS']['ZUKO'])
+    # await asyncio.sleep(4)
+    # Super ! J'en profite pour te féliciter encore pour tes combats, tiens un objet qui pourrait t'être utile
+    await embed_histoire_character(message, "Zuko vous félicite à nouveau :", "", "zuko", "", "Tiens un objet qui pourrait t'être utile.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_info("Vous avez reçu un Ticket de Diamant!", "", CONSTANTS['COLORS']['TICKET_DIAMANT'] ,"Votre prochaine invocation sera garantie de qualité supérieure!"))
+    database.update_special_invocation(userFromDb[1], 1)
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 13)
 
 async def niveau11(message, userFromDb, equipe):
     # libération
@@ -120,7 +175,7 @@ async def niveau11(message, userFromDb, equipe):
         await embed_histoire_character(message, "C-18 :", "", "c18", "", "Grâce à vous on peut dire que je suis libérée.", CONSTANTS['COLORS']['C18'])
         await asyncio.sleep(4)
         await embed_histoire_character(message, "C-18 :", "", "c18", "", "Je vous en suis reconnaissante. Permettez moi de joindre votre équipe.", CONSTANTS['COLORS']['C18'])
-        await asyncio.sleep(3)
+        await asyncio.sleep(5)
         await giveCharacterHistory(message, userFromDb, "c18")
         await asyncio.sleep(4.5)
     else:
@@ -156,29 +211,29 @@ async def niveau11(message, userFromDb, equipe):
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
             await asyncio.sleep(4)
             await embed_histoire_character(message, "Baggy vous interpelle :", "", "baggy", "", "Je vous en suis reconnaissant, mon nom est Baggy, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['BAGGY'])
-            await asyncio.sleep(4)
+            await asyncio.sleep(5)
             nomPerso = "Baggy"
         elif str(reaction.emoji) == '🧒':
             await message.channel.send(embed=embed_raw("Vous avez libéré l'adolescent aux cheveux ébouriffés.", "", CONSTANTS['COLORS']['DENKI']))
-            await asyncio.sleep(3)
+            await asyncio.sleep(4)
             await embed_histoire_character(message, "L'adolescent vous remercie :", "", "denki", "", "Merci énormément, partons d'ici rapidement!!!!", CONSTANTS['COLORS']['DENKI'])
             await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
             await asyncio.sleep(4)
             await embed_histoire_character(message, "Denki vous interpelle :", "", "denki", "", "Je vous en suis reconnaissant, je m'appelle Denki, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['DENKI'])
-            await asyncio.sleep(4)
+            await asyncio.sleep(5)
             nomPerso = "Denki Kaminari"
         elif str(reaction.emoji) == '👔':
             await message.channel.send(embed=embed_raw("Vous avez libéré le jeune homme en costume.", "", CONSTANTS['COLORS']['LEORIO']))
-            await asyncio.sleep(3)
+            await asyncio.sleep(4)
             await embed_histoire_character(message, "Le jeune homme vous remercie :", "", "leorio", "", "Merci beaucoup, partons d'ici rapidement!", CONSTANTS['COLORS']['LEORIO'])
             await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
             await asyncio.sleep(4)
             await embed_histoire_character(message, "Leorio vous interpelle :", "", "leorio", "", "Je vous en suis reconnaissant, je m'appelle Leorio, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['LEORIO'])
-            await asyncio.sleep(4)
+            await asyncio.sleep(5)
             nomPerso = "Leorio"
         else:
             await message.channel.send(embed=embed_raw("Vous avez libéré le grand homme blond.", "", CONSTANTS['COLORS']['ERWIN']))
@@ -189,7 +244,7 @@ async def niveau11(message, userFromDb, equipe):
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
             await asyncio.sleep(4)
             await embed_histoire_character(message, "Erwin vous interpelle :", "", "erwin", "", "Je vous en suis reconnaissant, je m'appelle Erwin, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['ERWIN'])
-            await asyncio.sleep(4)
+            await asyncio.sleep(5)
             nomPerso = "Erwin Smith"
         await giveCharacterHistory(message, userFromDb, nomPerso)
         await asyncio.sleep(4.5)
@@ -895,19 +950,19 @@ async def purple(message, userFromDb):
             await asyncio.sleep(2.5)
     return ticketsGagnes, escaped
 
-async def labyrinthe(message, userFromDb):
+async def labyrinthe(message, userFromDb, equipe):
     maison = {
     'Entrée': ['Salon', 'Écurie'],
-    'Chambre 1': ['Salle de bain', 'Chambre 2'],
+    'Chambre Une': ['Salle de bain', 'Chambre Deux'],
     'Cuisine': ['Salon', 'Cellier','Bureau'],
-    'Salon': ['Entrée', 'Cuisine', 'Bureau', 'Chambre 1'],
-    'Salle de bain': ['Chambre 1'],
+    'Salon': ['Entrée', 'Cuisine', 'Bureau', 'Chambre Une'],
+    'Salle de bain': ['Chambre Une'],
     'Bureau': ['Salon', 'Bibliothèque','Cuisine'],
     'Cave': [], 
-    'Grenier': ['Chambre 3'],
+    'Grenier': ['Chambre Trois'],
     'Cellier': ['Cuisine'],
-    'Chambre 3': ['Grenier', 'Chambre 2','Écurie'],
-    'Chambre 2': ['Chambre 1', 'Chambre 3'],
+    'Chambre Trois': ['Grenier', 'Chambre Deux','Écurie'],
+    'Chambre Deux': ['Chambre Une', 'Chambre Trois'],
     'Forge': ['Écurie','Cellier'],
     'Écurie': ['Forge', 'Entrée'],
     'Bibliothèque': ['Bureau', 'Cave']  
@@ -930,15 +985,18 @@ async def labyrinthe(message, userFromDb):
             ticketsRamasses += 1
         if pieceActuelle == 'Forge' and not hasDiscoveredForge:
             hasDiscoveredForge = True
-            await message.channel.send(embed=embed_info(f"Vous sentez une présence...", "", discord.Color.dark_gray()))
-            await asyncio.sleep(2)
-            await message.channel.send(embed=embed_info(f"La présence se rapproche!!!", "", discord.Color.dark_gray()))
-            await asyncio.sleep(2)
-            await message.channel.send(embed=embed_info(f"Ce n'était qu'un petit chat mignon!", "", discord.Color.dark_orange()))
-            await asyncio.sleep(2)
-            await message.channel.send(embed=embed_info(f"Le chat se transforme..", "Combat contre Yoruichi", discord.Color.gold()))
-            await message.channel.send(embed=embed_info(f"Après avoir battu Yoruichi, vous trouvez 6 tickets dans sa poche!", "", discord.Color.gold()))
-            await asyncio.sleep(2)
+            # vous sentez une présence menaçante dans la forge
+            await message.channel.send(embed=embed_info(f"Vous sentez une présence menaçante dans la forge..", "", ))
+            await asyncio.sleep(3.3)
+            # embed character il ne s'agissait uqe d'un petit chat
+            await embed_histoire_character(message, "", "chatMaisonHantee", "", "", "Ce n'était qu'un petit chat!", CONSTANTS['COLORS']['GRAY_CAT'])
+            await asyncio.sleep(5)
+            # Le chat se transforme ..
+            await message.channel.send(embed=embed_info(f"Qu-quoi ? Le chat se transforme..", "", discord.Color.darker_gray()))
+            await asyncio.sleep(3.5)
+            database.updateChoice(userFromDb[1], "lvl13chatMaisonHantee", True)
+            if not await combatPvm(message, equipe, ennemis["YORUICHI"]):
+                return -1
             ticketsRamasses += 6
         if ticketsRamasses <= 0:
             await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"", discord.Color.blue()))
@@ -956,10 +1014,10 @@ async def labyrinthe(message, userFromDb):
         try:
             reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in listeEmojis)
         except:
-            await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
-            return
+            await message.channel.send(embed=embed_info("Maison abandonnée", "Vous avez mis trop de temps à répondre!", CONSTANTS['COLORS']['ZUKO']))
+            return -1
         pieceActuelle = listePiecesAvailables[listeEmojis.index(str(reaction.emoji))]
-    await message.channel.send(embed=embed_info("Labyrinthe", "Vous avez trouvé la sortie de la cave!", discord.Color.green()))
+    return ticketsRamasses
         
 def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, color=discord.Color.gold(), isNotGif=False):
     files = []
@@ -1083,9 +1141,9 @@ async def invocation(message, userFromDb, lucky=False):
         return
     template = donnees[0]
     if specialInvocation:
-        msg = await message.channel.send(embed=embed_info("Invocation chanceuse...", "Veuillez patienter...", 0xf59e42))
-    else:
-        msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
+        await message.channel.send(embed=embed_info("Oh.. Mais c'est un Ticket de Diamant!", "", CONSTANTS['COLORS']['TICKET_DIAMANT']))
+        await asyncio.sleep(2)
+    msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
     if rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
@@ -1918,8 +1976,6 @@ commands = {
     "create": createTemplates,
     "his": histoire,
     "pur": purple,
-    "cook": cookWithSanji,
-    "laby": labyrinthe,
     "reset": reset,
     "coul": couleur,
     "liste": liste,

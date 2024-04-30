@@ -317,8 +317,8 @@ all_characters_templates = {
             ("Jugram", "SS", "https://i.imgur.com/kXmvoS6.gif", 705, 750, 695),
             ("Kyoraku", "SS", "https://i.imgur.com/7DGfP2z.gif", 745, 850, 705),
             ("Byakuya Kuchiki", "SS", "https://i.imgur.com/VZrc8mU.gif", 695, 800, 725),
-            ("Urahara", "SS", "https://i.gifer.com/53FX.gif", 725, 800, 715),
-            ("Yoruichi", "SS", "https://i.gifer.com/3flV.gif", 705, 770, 715),
+            ("Kisuke Urahara", "SS", "https://i.gifer.com/53FX.gif", 725, 800, 715),
+            ("Yoruichi", "SS", "https://i.imgur.com/RgC1S8V.gif", 705, 770, 715),
             ("Unohana", "SS", "https://i.imgur.com/b1x9GUC.gif", 695, 850, 755),
             ("Ulquiorra", "SS", "https://i.imgur.com/OaYNXCg.gif", 690, 800, 710),
             ("Gin", "SS", "https://i.imgur.com/kveTtpS.gif", 705, 750, 715),
@@ -1273,7 +1273,7 @@ all_link_synergies = {
     206 : ["Riza Hawkeye","Mustard","Miles","Conny Springer","Narancia","Maria Ross","Starrk","Franklin"], # Tireur
     205 : ["Don Krieg","Shaka"], # Armure d'Or
     204 : ["Caesar Clown","Don Quichotte Doflamingo","Corazon","Vergo"], # Famille Don Quichotte
-    203 : ["Caesar Clown","Tim Marcoh","Mayuri","Urahara","Hange Zoe"], # Scientifique
+    203 : ["Caesar Clown","Tim Marcoh","Mayuri","Kisuke Urahara","Hange Zoe"], # Scientifique
     202 : ["Hanami","King (NNT)","Ibara Shiozaki","Hashirama Senju","Yamato (naruto)", "Shinji Nishiya","Danzo Shimura", "Ryokugyu"], # Maitre de la nature
     201 : ["Escanor","Pere","Feitan"], # Pouvoir du soleil
     200 : ["King (NNT)","Gloxinia"], # Fée
@@ -1425,7 +1425,7 @@ all_link_synergies = {
     5 : ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Shisui Uchiha", "Fugaku Uchiha", "Indra Otsutsuki", "Izuna Uchiha", "Sarada Uchiha"], # Uchiha
     7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Monkey D. Garp", "Fujitora", "Ryokugyu", "Kong","Pixis","Theo Magath"], # Amiral
     10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Marshall D. Teach","Monkey D. Luffy","Baggy"], # Yonko
-    14 : ["Yamamoto", "Unohana", "Byakuya Kuchiki", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro Hitsugaya", "Rukia Kuchiki"], # Gotei 13
+    14 : ["Yamamoto", "Unohana", "Byakuya Kuchiki", "Kenpachi", "Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro Hitsugaya", "Rukia Kuchiki","Kisuke Urahara","Yoruichi"], # Gotei 13
     15 : ["Hashirama Senju", "Tobirama Senju", "Hiruzen Sarutobi", "Minato Namikaze", "Tsunade", "Kakashi Hatake", "Naruto Uzumaki","Mei Terumi", "Onoki", "Gaara","Danzo Shimura"], # Kage
     16 : ["Crocodile", "Don Quichotte Doflamingo", "Dracule Mihawk", "Kuma", "Boa Hancock", "Jinbe", "Baggy", "Trafalgar D. Law", "Marshall D. Teach"], # Shichibukai,
     17 : ["Jiraya","Orochimaru","Tsunade"], # Sannin
@@ -1450,7 +1450,7 @@ all_link_synergies = {
     36 : ["Akainu", "Jogo","Mei Terumi"], # Maitre de la Lave TODO
     37 : [], # Maitre du Bois 
     39 : ["Gaara"], # Maitre du Sable 
-    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi", "Unohana", "Gin", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner","Hatchan","Inazuma","Dorry","Uzui Tengen","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover","Mike Zacharias","Zeldris","Gilthunder","Samourai Sword","Shimotsuki Kuina","Sakonji Urodaki","Sabito","Kyoraku","Starrk"], # epeiste
+    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi", "Unohana", "Gin", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner","Hatchan","Inazuma","Dorry","Uzui Tengen","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover","Mike Zacharias","Zeldris","Gilthunder","Samourai Sword","Shimotsuki Kuina","Sakonji Urodaki","Sabito","Kyoraku","Starrk","Kisuke Urahara"], # epeiste
     # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Marshall D. Teach", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Portgas D. Ace"], # Equipage de Barbe Blanche
@@ -1568,6 +1568,11 @@ all_techniques = {
     ],
     "Gowther" : [
         ["Projectiles", "lance des", "https://i.imgur.com/fJMs9RN.gif", "#d64e74"],
-    ]
+    ],
+    "Yoruichi" : [
+        ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
+        ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
+    ],
+    
     
 }

@@ -125,6 +125,7 @@ class Database:
             lvl4zukoLie BOOLEAN DEFAULT NULL,
             lvl6pucci BOOLEAN DEFAULT NULL,
             lvl10run BOOLEAN DEFAULT NULL,
+            lvl13chatMaisonHantee BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')
@@ -368,7 +369,7 @@ class Database:
         template_id = template[0]
         template_name = template[1]
         new_character = self.create_character(user_discord_id,user_name, template_id)
-        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}.")
+        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}. L'invocation était spéciale : {special}.")
         self.update_tickets(user_discord_id, tickets)
         if special:
             self.update_special_invocation(user_discord_id, False)
