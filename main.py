@@ -1360,7 +1360,10 @@ async def infoSynergie(message, userFromDb):
         description=description,
         color=color
     )
-    embed.set_footer(text=f"Boost : {typeOfBoost} {forceOfBoost}")
+    def formatteur(nombre):
+        # Prend un nombre comme {0.4} et retourne 40%
+        return str(int(nombre * 100)) + "%"
+    embed.set_footer(text=f"Boost : {typeOfBoost} {formatteur(forceOfBoost)}")
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     embed.add_field(name="Personnages", value=liste_personnages[:1999], inline=False)
     embed.set_image(url=image)
