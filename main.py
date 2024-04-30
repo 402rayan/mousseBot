@@ -102,7 +102,7 @@ async def niveau13(message, userFromDb, equipe):
     await asyncio.sleep(4)
     # On décide de retourner voir le village pour voir comment ça évolue mais sur la route on apercoit une immense maison
     await message.channel.send(embed=embed_naratteur("Vous décidez de partir en route vers le village pour voir si les habitants se remettent de l'attaque.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    await asyncio.sleep(5.5)
     await message.channel.send(embed=embed_naratteur("Sur la route, vous apercevez une immense maison semblant abandonnée.", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4.5)
     # On décide d'aller voir ce qu'il se passe
@@ -111,10 +111,14 @@ async def niveau13(message, userFromDb, equipe):
     ticket_ramasses = await labyrinthe(message, userFromDb, equipe)
     if ticket_ramasses < 0:
         return await echecNiveau(message, userFromDb, 13)
+    await asyncio.sleep(1)
+    # Vous descendez dans la cave
+    await message.channel.send(embed=embed_naratteur("Vous descendez dans la cave..", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4)
-    # En descendant dans la cave, on sent une présence derrière nous..
     await message.channel.send(embed=embed_naratteur("En descendant dans la cave, vous sentez une présence derrière vous..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_naratteur("...", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 14)
     
 
@@ -1943,52 +1947,32 @@ async def list_command(message, userFromDb):
     await message.channel.send(embed=embed)
 
 commands = {
-    "pow": getPower,
-    "pui" : getPower,
-    "tic": getTickets,
-    "hou": claimHourly,
-    "dai": claimHourly,
-    "admin": admin,
-    "list": list_command,
-    "help": list_command,
-    "invo": invocation,
-    "sum": invocation,
-    "inv": inventaire,
-    "pers": inventaire,
-    "bag": inventaire,
-    "givetickets": giveTicket,
-    "donnertickets": giveTicket,
-    "donnerticket": giveTicket,
-    "giveticket": giveTicket,
-    "give_tickets": giveTicket,
-    "donner_tickets": giveTicket,
-    "donner_ticket": giveTicket,
-    "give_ticket": giveTicket,
-    "infos": infoSynergie,
-    "te": voirTeam,
-    "voi": voirTeam,
-    "ajouterteam": ajouterTeam,
-    "addteam": ajouterTeam,
-    "add_team": ajouterTeam,
-    "ajou": ajouterTeam,
-    "sell": sell,
-    "vendre": sell,
-    "create": createTemplates,
-    "his": histoire,
-    "pur": purple,
-    "reset": reset,
-    "coul": couleur,
-    "liste": liste,
-    "setlevel": setLevel,
-    "cla": classement,
-    "ran": classement,
-    "infot": infoTechnique,
-    "fakeT": fakeTeam,
-    "stat": fakeStatistiquesCombat,
-    "affi": afficherUnivers,
-    "fakeCh": fakeCharacter,
-    "luckyInv" : luckyInvocation,
-    "info": info,
+    "add": ajouterTeam,        # "addteam", "add_team"
+    "admi": admin,             # "admin"
+    "aff": afficherUnivers,    # "affi"
+    "bag": inventaire,         # "inv", "inventaire", "pers", "bag"
+    "cla": classement,         # "cla", "ran"
+    "cou": couleur,            # "coul"
+    "cre": createTemplates,    # "create"
+    "don": giveTicket,         # "donnertickets", "donnerticket", "donner_tickets", "donner_ticket"
+    "fakeC": fakeCharacter,    # "fakeCh"
+    "fakeS": fakeStatistiquesCombat,  # "stat"
+    "fakeT": fakeTeam,         # "fakeT"
+    "giv": giveTicket,         # "givetickets", "giveticket", "give_tickets", "give_ticket"
+    "his": histoire,           # "his"
+    "inf": info,               # "info"
+    "infoT": infoTechnique,    # "infot"
+    "infoS": infoSynergie,     # "infos"
+    "lis": list_command,       # "list", "help"
+    "luc": luckyInvocation,    # "luckyInv"
+    "pur": purple,             # "pur"
+    "pow": getPower,           # "pow", "pui"
+    "res": reset,              # "reset"
+    "sel": sell,               # "sell", "vendre"
+    "set": setLevel,           # "setlevel"
+    "su": invocation,          # "summon"
+    "tic": getTickets,         # "tic"
+    "te": voirTeam,            # "te", "voi"
 }
 
 
