@@ -1003,6 +1003,10 @@ async def invocation(message, userFromDb, lucky=False):
     return
 
 @bot.command()
+async def luckyInvocation(message, userFromDb):
+    await invocation(message, userFromDb, True)
+
+@bot.command()
 async def inventaire(message, userFromDb):
     logger.info(f"Commande !inventaire appelée par {message.author.name} ({message.author.id}).")
     characters = database.inventaire(message.author.id, message.author.name)
@@ -1788,7 +1792,6 @@ commands = {
     "donner_tickets": giveTicket,
     "donner_ticket": giveTicket,
     "give_ticket": giveTicket,
-    "info ": info,
     "infos": infoSynergie,
     "te": voirTeam,
     "voi": voirTeam,
@@ -1814,7 +1817,8 @@ commands = {
     "stat": fakeStatistiquesCombat,
     "affi": afficherUnivers,
     "fakeCh": fakeCharacter,
-    "luckyInv" : invocation,
+    "luckyInv" : luckyInvocation,
+    "info": info,
 }
 
 
