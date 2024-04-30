@@ -123,28 +123,22 @@ async def niveau13(message, userFromDb, equipe):
     
 
 async def niveau12(message, userFromDb, equipe):
-    # await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
-    # await asyncio.sleep(4)
-    # # En sortant de la montage, on croise Zuko , il nous félicité d'avoir réussi la tâche
-    # await message.channel.send(embed=embed_naratteur("En sortant de la montagne, vous croisez Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
-    # await asyncio.sleep(4)
-    # await embed_histoire_character(message, "Zuko vous félicite :", "", "zuko", "", "Félicitations, tu as réussi la tâche que je t'ai confié.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # # Zuko nous dit qu'il est étonné qu'il y avait deux membres aulieu d'un
-    # await embed_histoire_character(message, "Zuko est étonné par nos explications :", "", "zuko", "", "Vraiment ?.. J'ignorais qu'il y avait deux membres ici.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # # De son côté il s'est occupé d'un autre membre redoutable nommé Feitan
-    # await embed_histoire_character(message, "Zuko vous raconte :", "", "zuko", "", "De mon côté, j'ai affronté un membre redoutable nommé Feitan. C'était très éprouvant mais j'ai réussi à le battre.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # #Il a obtenu des réponses : Pucci et entrain de former un culte et bâti un château sur la plaine principale
-    # await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "J'ai obtenu des réponses. Le prêtre s'appelle en réalité Enrico Pucci.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "Il est en train de former un culte et a bâti un château sur la plaine principale.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # #Occupons nous d'abord de la brigâde, puis nous nous occuperons de Pucci
-    # await embed_histoire_character(message, "Zuko vous propose un plan :", "", "zuko", "", "Occupons nous d'abord de la brigade, puis nous nous occuperons de Pucci.", CONSTANTS['COLORS']['ZUKO'])
-    # await asyncio.sleep(4)
-    # Super ! J'en profite pour te féliciter encore pour tes combats, tiens un objet qui pourrait t'être utile
+    await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("En sortant de la montagne, vous croisez Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko vous félicite :", "", "zuko", "", "Félicitations, tu as réussi la tâche que je t'ai confié.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko est étonné par nos explications :", "", "zuko", "", "Vraiment ?.. J'ignorais qu'il y avait deux membres ici.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko vous raconte :", "", "zuko", "", "De mon côté, j'ai affronté un membre redoutable nommé Feitan. C'était très éprouvant mais j'ai réussi à le battre.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "J'ai obtenu des réponses. Le prêtre s'appelle en réalité Enrico Pucci.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "Il est en train de former un culte et a bâti un château sur la plaine principale.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Zuko vous propose un plan :", "", "zuko", "", "Occupons nous d'abord de la brigade, puis nous nous occuperons de Pucci.", CONSTANTS['COLORS']['ZUKO'])
+    await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous félicite à nouveau :", "", "zuko", "", "Tiens un objet qui pourrait t'être utile.", CONSTANTS['COLORS']['ZUKO'])
     await asyncio.sleep(5)
     await message.channel.send(embed=embed_info("Vous avez reçu un Ticket de Diamant!", "", CONSTANTS['COLORS']['TICKET_DIAMANT'] ,"Votre prochaine invocation sera garantie de qualité supérieure!"))
