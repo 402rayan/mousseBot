@@ -124,6 +124,7 @@ class Database:
             lvl1fumee BOOLEAN DEFAULT NULL,
             lvl4zukoLie BOOLEAN DEFAULT NULL,
             lvl6pucci BOOLEAN DEFAULT NULL,
+            lvl10run BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')
