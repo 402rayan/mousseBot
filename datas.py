@@ -1270,7 +1270,7 @@ all_link_synergies = {
     209 : ["Estarossa","Meliodas","Zeldris"], # Famille de Méliodas
     208 : ["Ban","Maki Zenin","Guy","Rock Lee","Kurapika","Toji Fushiguro","Ikkaku"], # Utilisateur de Nunchaku
     207 : ["Roronoa Zoro","Kenpachi","Yachiru",], # Sens de la direction douteux
-    206 : ["Riza Hawkeye","Mustard","Miles","Conny Springer","Narancia","Maria Ross"], # Tireur
+    206 : ["Riza Hawkeye","Mustard","Miles","Conny Springer","Narancia","Maria Ross","Starrk"], # Tireur
     205 : ["Don Krieg","Shaka"], # Armure d'Or
     204 : ["Caesar Clown","Don Quichotte Doflamingo","Corazon","Vergo"], # Famille Don Quichotte
     203 : ["Caesar Clown","Tim Marcoh","Mayuri","Urahara","Hange Zoe"], # Scientifique
@@ -1312,7 +1312,7 @@ all_link_synergies = {
     166 : ["Mt. Lady", "Gigantomachia", "Diane","Armin Arlert","Bertholdt Hoover","Rhodes Reiss","Brogy","Dorry","Haguar D. Sauro","Magellan"], # Géant
     165 : ["Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Kakashi Hatake", "Sai","Boruto Uzumaki","Sarada Uchiha","Konohamaru Sarutobi","Mitsuki","Kawaki"], # Team 7
     164 : ["Sengoku", "Isaac Netero","Hashirama Senju"], # Pouvoir de Bouddha
-    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro","Ichibe Hyosube","Iroh"], # Vétéran
+    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro","Ichibe Hyosube","Iroh","Kyoraku"], # Vétéran
     162 : ["Kanaria","Gotoh"], # Intendant
     161 : ["Diavolo","Twice","Ling Yao","Escanor"], # Double personnalité
     160 : ["Jiraya","Ebisu","Tortue Geniale","Denji","Mineta","Hisoka","Sanji","Meliodas","Brook","Kon","Midnight","Haruta Shigemo"], # Pervers
@@ -1327,7 +1327,7 @@ all_link_synergies = {
     151 : ["Shizune","Ijichi"], # Secrétaire
     149 : ["Kakashi Hatake","Satoru Gojo","Shota Aizawa","Vlad King","Iruka","Wing","Tortue Geniale","All Might","Snipe","Maitre Kaio","Izumi Curtis","Midnight","Ebisu","Rayleigh","Dracule Mihawk","Sakonji Urodaki"], # Professeur
     148 : ["Glutonny","Majin Buu","Big Mom","Wapol", "Miruki Zoldyck","Menchi","Todo","Inosuke","Monkey D. Luffy","Son Goku","Sasha Braus","Portgas D. Ace","Choji","Hawk","Beerus","Whis","Yajirobe","Polpo"], # Glouton
-    147 : ["Shikamaru Nara","Fumikage Tokoyami"], # Manipulateur de l'ombre
+    147 : ["Shikamaru Nara","Fumikage Tokoyami","Kyoraku"], # Manipulateur de l'ombre
     146 : ["Tim Marcoh", "Neferopito","Tsunade","Sakura Haruno","Ryuken Ishida","Leorio","Shizune","Kabuto Yakushi","Recovery Girl","Karin (naruto)"], # Medecin
     145 : ["Vivi","Boa Hancock","Vegeta","Ling Yao","Elizabeth Liones","Arthur Pendragon"], # Princesse
     144 : ["Pokkle","Uryu Ishida","Gowther","Noritoshi Kamo","Sasha Braus"], # Archer
@@ -1450,7 +1450,7 @@ all_link_synergies = {
     36 : ["Akainu", "Jogo","Mei Terumi"], # Maitre de la Lave TODO
     37 : [], # Maitre du Bois 
     39 : ["Gaara"], # Maitre du Sable 
-    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi", "Unohana", "Gin", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner","Hatchan","Inazuma","Dorry","Uzui Tengen","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover","Mike Zacharias","Zeldris","Gilthunder","Samourai Sword","Shimotsuki Kuina","Sakonji Urodaki","Sabito"], # epeiste
+    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi", "Unohana", "Gin", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Oden", "Trafalgar D. Law", "Brook","Cavendish","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Miwa","Spinner","Hatchan","Inazuma","Dorry","Uzui Tengen","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover","Mike Zacharias","Zeldris","Gilthunder","Samourai Sword","Shimotsuki Kuina","Sakonji Urodaki","Sabito","Kyoraku","Starrk"], # epeiste
     # 41 : ["Mob", "Ritsu", "Teruki", "Sho Suzuki", "Tome Kurata", "Dimple","Tatsumaki"], # Telekinesiste
     42 : ["Marshall D. Teach", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Barbe Blanche", "Marco", "Portgas D. Ace"], # Equipage de Barbe Blanche
