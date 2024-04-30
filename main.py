@@ -166,7 +166,6 @@ async def niveau9(message, userFromDb, equipe):
     await asyncio.sleep(4)
     # Franklin nous shoot dessus
     await embed_histoire_character(message, "Quelqu'un vous tire dessus!!", "franklinShoot", "franklin", "", "", CONSTANTS['COLORS']['FRANKLIN'])
-    await asyncio.sleep(4)
     description = "➡️ : Esquiver à droite" + "\n⬅️ : Esquiver à gauche" + "\n🛡️ : Essayer de parer"
     emojis = ['➡️', '⬅️', '🛡️']
     for balle in range(3):
