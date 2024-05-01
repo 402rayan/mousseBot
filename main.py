@@ -1532,10 +1532,98 @@ async def pvp(message, userFromDb):
         await message.channel.send(embed=embed_info("Erreur", "Vous devez avoir une équipe complète pour affronter des gens!", discord.Color.red()))
         return
     # On lance le combat
-    print(adversaireDiscord)
+    acceptation, parie = await accepterCombatPvp(message, adversaireDiscord)
+    if not acceptation:
+        return
     victoire = await combatPvp(message, equipe, equipe_adversaire, adversaireDiscord)
     if victoire:
-        await message.channel.send(embed=embed_info("Récompense", "Vous avez gagné 1 ticket!", discord.Color.gold()))
+        vainqueur = message.author
+        perdant = adversaireDiscord
+    else:
+        vainqueur = adversaireDiscord
+        perdant = message.author
+    database.update_tickets(vainqueur.id, database.get_tickets(vainqueur.id) + parie)
+    database.update_tickets(perdant.id, database.get_tickets(perdant.id) - parie)
+    await message.channel.send(embed=embed_info( f"L'équipe de {vainqueur.name} sort triomphante du combat!","", 0x03FF44))
+    await asyncio.sleep(3)
+    await message.channel.send(embed=embed_info( f"{vainqueur.name} a gagné {parie} tickets!","", discord.Color.gold(),f"{perdant.name} a perdu {parie} tickets!"))
+
+
+@bot.command()
+async def accepterCombatPvp(message, adversaireDiscord):
+    # Le joueur A veut combattre le joueur B
+    # Le joueur A doit d'abord valider un montant entre 0, 1, 5 et 10 tickets (s'il a les moyens) grâce à une réaction
+    # Le joueur B doit ensuite accepter le combat
+    # Si le joueur B accepte, le combat commence
+    # Si le joueur B refuse, le combat est annulé
+
+    # On vérifie si l'utilisateur a assez de tickets
+    tickets = database.get_tickets(message.author.id)
+    ticketsEnnemi = database.get_tickets(adversaireDiscord.id)
+    reactions = ['0️⃣', '1️⃣', '5️⃣', '🔟']
+    reactions_valeurs = {
+        '0️⃣': 0,
+        '1️⃣': 1,
+        '5️⃣': 5,
+        '🔟': 10
+    }
+
+    # Calcul du nombre maximal de tickets que les deux joueurs peuvent miser
+    max_mise_possible = min(tickets, ticketsEnnemi)
+
+    # Filtrer les réactions pour n'inclure que celles que les deux joueurs peuvent se permettre
+    valid_reactions = [reaction for reaction in reactions if reactions_valeurs[reaction] <= max_mise_possible]
+
+    # Créer une description qui montre uniquement les réactions valides
+    description = '\n'.join(f"{reaction} : {reactions_valeurs[reaction]} tickets" for reaction in valid_reactions)
+
+    embed = discord.Embed(
+        title="Choisissez la mise du combat.",
+        description=description,
+        color=discord.Color.blue()
+    )
+    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_footer(text=f"Tickets actuels : {tickets}\nTickets de {adversaireDiscord.name} : {ticketsEnnemi}.")
+
+    msg = await message.channel.send(embed=embed)
+    for reaction in valid_reactions:
+        await msg.add_reaction(reaction)
+
+    def check(reaction, user):
+        return user == message.author and str(reaction.emoji) in reactions and reaction.message.id == msg.id
+
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=check)
+    except asyncio.TimeoutError:
+        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+        return False, 0
+
+    mise = reactions_valeurs[str(reaction.emoji)]
+    if mise > tickets or mise > ticketsEnnemi:
+        await message.channel.send(embed=embed_info("Pas assez de tickets", "Vous n'avez pas assez de tickets pour miser autant!", discord.Color.red()))
+        return False, 0
+    # On demande à l'adversaire s'il accepte le combat en le mentionnant et en rappellant la mise
+    embed = discord.Embed(
+        title=f"Acceptez-vous le combat?",
+        description=f"Mise : **{mise} tickets**.",
+        color=discord.Color.blue()
+    )
+    embed.set_author(name=f"{message.author.name} veut vous combattre", icon_url=adversaireDiscord.avatar.url)
+    msg = await message.channel.send(embed=embed, content=adversaireDiscord.mention)
+    await msg.add_reaction('✅')
+    await msg.add_reaction('❌')
+    def check(reaction, user):
+        return user == adversaireDiscord and str(reaction.emoji) in ['✅', '❌'] and reaction.message.id == msg.id
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=check)
+    except asyncio.TimeoutError:
+        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+        return False, 0
+    if str(reaction.emoji) == '❌':
+        await message.channel.send(embed=embed_info(f"{adversaireDiscord.name} a refusé le combat!", f"", discord.Color.red()))
+        return False, 0
+    return True, mise
+    
 
 @bot.command()
 async def combatPvp(message, teamA, teamB, adversaireDiscord):
@@ -1606,11 +1694,6 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
     await message.channel.send(embed=embed_info("Le combat semble être terminé ...", "", 0x00000))
     await asyncio.sleep(2)
     # Vous avez triomphé si on a gagné sinon on a perdu
-    if victoire:
-        await message.channel.send(embed=embed_info("Vous avez triomphé de l'adversaire !!", "", discord.Color.gold()))
-    else:
-        await message.channel.send(embed=embed_info("Vous avez été vaincu par l'ennemi!", "", discord.Color.red()))
-    await asyncio.sleep(4)
     return victoire
 
 
@@ -1622,7 +1705,7 @@ async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     teamA_atk = teamA['stats']['ATK']; teamA_def = teamA['stats']['DEF']; teamA_hp = teamA['stats']['HP']
     teamB_atk = teamB['stats']['ATK']; teamB_def = teamB['stats']['DEF']; teamB_hp = teamB['stats']['HP']
     titre = "Votre équipe est prête à combattre!"; statsTeamA = f"HP:{teamA_hp} ATK:{teamA_atk} DEF:{teamA_def}"
-    titreB = "L'équipe ennemie est prête à combattre!"; statsTeamB = f"HP:{teamB_hp} ATK:{teamB_atk} DEF:{teamB_def}"
+    titreB = "Votre équipe est prête à combattre!"; statsTeamB = f"HP:{teamB_hp} ATK:{teamB_atk} DEF:{teamB_def}"
     perso1A = teamA['team'][0]; perso2A = teamA['team'][1]; perso3A = teamA['team'][2]
     perso1B = teamB['team'][0]; perso2B = teamB['team'][1]; perso3B = teamB['team'][2]
     description1 = f"{perso1A[6]} **[{perso1A[7]}]**"; description2 = f"{perso2A[6]} **[{perso2A[7]}]**"; description3 = f"{perso3A[6]} **[{perso3A[7]}]**"
@@ -1654,8 +1737,12 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
     # On cherche si le personnage a des attaques gifs
     attaques = database.get_attaques_by_character_name(personnage)
     # Si le personnage a une attaque ET qu'il a de la chance
-    if random.random() < 0.25: #message de suspens
+    if random.random() < 0.25 and not onlyAttack: #message de suspens
         liste_messages = ["Le combat fait rage!", "Le combat est intense!", "Les combattants se jaugent!", "Mais qui l'emportera?", "Le combat est acharné!","Le danger se fait ressentir..","Incroyable!!","La tension est à son comble", "Le combat touche-t-il à sa fin?", "Le combat est serré!"]
+        await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
+        await asyncio.sleep(2.5)
+    if onlyAttack:
+        liste_messages = ["Le combat n'est que d'un côté..", "Le combat est déséquilibré!", "Le combat est à sens unique!", "Le combat est facile!", "C'est un massacre...", "Le combat est expéditif!", "Quelle humiliation!", "Trop simple!", "Le combat est plié en un coup??!"]
         await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
         await asyncio.sleep(2.5)
     if attaques and len(attaques) > 0 and random.random() < 0.9:
@@ -1836,7 +1923,7 @@ async def voirTeam(message, userFromDb):
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!team** ou **!team <joueur>**!", discord.Color.red()))
         return
     team = database.get_team(user.id, user.name)
-    embed = discord.Embed(title="Team de " + user.name, color=discord.Color.blue()) 
+    embed = discord.Embed(title="", color=discord.Color.blue()) 
 
     nom_synergies_actives = team['synergies']; personnages = team['team']; stats = team['stats']; bonus = team['bonus']
 
@@ -1858,7 +1945,7 @@ async def voirTeam(message, userFromDb):
             )
             
     embed.add_field(name=f"Statistiques\n{stats['HP']}HP   {stats['ATK']}ATK   {stats['DEF']}DEF", value=f"", inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    embed.set_author(name=f"Team de {user.name}", icon_url=user.avatar.url)
     # On met les synergies en footer et le bonus
     footer = "Synergies actives : " + " ~ ".join(nom_synergies_actives)
     if bonus:
@@ -2204,12 +2291,14 @@ commands = {
     "ba": inventaire,         # "bag"
     "bo": inventaire,          # "box"
     "cla": classement,         # "classement"
+    "da": claimHourly,         # "daily"
     "don": giveTicket,         # "donnertickets", "donnerticket", "donner_tickets", "donner_ticket"
     "fakeC": fakeCharacter,    # "fakeCh"
     "fakeS": fakeStatistiquesCombat,  # "stat"
     "fakeT": fakeTeam,         # "fakeT"
     "giv": giveTicket,         # "givetickets", "giveticket", "give_tickets", "give_ticket"
     "his": histoire,           # "his"
+    "ho": claimHourly,         # "hourly"
     "inf": info,               # "info"
     "infoT": infoTechnique,    # "infot"
     "infoS": infoSynergie,     # "infos"
