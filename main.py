@@ -1509,8 +1509,14 @@ async def pvp(message, userFromDb):
     if adversaire == None or adversaireDiscord == None:
         await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'est pas valide!", discord.Color.red()))
         return
+    if adversaire == message.author.id:
+        await message.channel.send(embed=embed_info("Erreur", "Vous ne pouvez pas vous battre contre vous-même!", discord.Color.red()))
+        return
+    if not database.check_user(adversaire):
+        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas encore joué au jeu!", discord.Color.red()))
+        return
     # On récupère l'équipe de l'adversaire
-    equipe_adversaire = database.get_team(adversaire, "Adversaire")
+    equipe_adversaire = database.get_team(adversaire, adversaireDiscord.name)
     if not equipe_adversaire:
         await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas d'équipe!", discord.Color.red()))
         return
@@ -1528,10 +1534,86 @@ async def pvp(message, userFromDb):
     # On lance le combat
     print(adversaireDiscord)
     victoire = await combatPvp(message, equipe, equipe_adversaire, adversaireDiscord)
+    if victoire:
+        await message.channel.send(embed=embed_info("Récompense", "Vous avez gagné 1 ticket!", discord.Color.gold()))
 
 @bot.command()
 async def combatPvp(message, teamA, teamB, adversaireDiscord):
     await introductionCombatPvp(message, teamA, teamB, adversaireDiscord)
+    await asyncio.sleep(2)
+    # Calcul des sommes des statistiques pour l'équipe et l'ennemi
+    somme_stats_teamA = teamA['stats']['ATK'] + teamA['stats']['DEF'] + teamA['stats']['HP']
+    somme_stats_teamB = teamB['stats']['ATK'] + teamB['stats']['DEF'] + teamB['stats']['HP']
+    chanceVictory, combatType = statistiquesCombat(message,somme_stats_teamA, somme_stats_teamB)
+    #logger.info(f"Chances de victoire de l'équipe : {chanceVictory} - Type de combat : {combatType}")
+    victoire = random.random() < chanceVictory
+    logger.info(f"Résultat du combat : {'Victoire' if victoire else 'Défaite'}")
+    if combatType == 0:
+        # Combat facile, on ne montre qu'une attaque
+        if victoire:
+            personnageQuiJoue = random.choice(teamA['team'])[6]
+        else:
+            personnageQuiJoue = random.choice(teamB['team'])[6]
+        await tour(message, personnageQuiJoue, teamA, onlyAttack=True)
+    elif combatType == 1:
+        # Combat Low diff
+        # On montre 2 tours du gagnats et 1 tour du perdant dans un ordre aléatoire
+        if victoire:
+            ordre = ["teamA", "teamB", "teamA"]
+        else:
+            ordre = ["teamB", "teamA", "teamB"]
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(3):
+            if ordre[i] == "teamA":
+                personnageQuiJoue = random.choice(teamA['team'])[6]
+            else:
+                personnageQuiJoue = random.choice(teamB['team'])[6]
+            await tour(message, personnageQuiJoue, teamA)
+            await asyncio.sleep(3)
+    elif combatType == 2:
+        #Combat mid diff
+        ordre = ["teamA", "teamB", "teamA", "teamB", "teamA"] 
+        random.shuffle(ordre)
+        if victoire:
+            ordre.append("teamA")
+        else:
+            ordre.append("teamB")
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(6):
+            if ordre[i] == "teamA":
+                personnageQuiJoue = random.choice(teamA['team'])[6]
+            else:
+                personnageQuiJoue = random.choice(teamB['team'])[6]
+            await tour(message, personnageQuiJoue, teamA)
+            await asyncio.sleep(3)
+    else:
+        # Combat difficile
+        ordre = ["teamA","teamB","teamA","teamB","teamA","teamB","teamA"]
+        random.shuffle(ordre)
+        if victoire:
+            ordre.append("teamA")
+        else:
+            ordre.append("teamB")
+        logger.info(f"Ordre des tours : {ordre}")
+        for i in range(8):
+            if ordre[i] == "teamA":
+                personnageQuiJoue = random.choice(teamA['team'])[6]
+            else:
+                personnageQuiJoue = random.choice(teamB['team'])[6]
+            await tour(message, personnageQuiJoue, teamA)
+            await asyncio.sleep(3)
+    await asyncio.sleep(2)
+    await message.channel.send(embed=embed_info("Le combat semble être terminé ...", "", 0x00000))
+    await asyncio.sleep(2)
+    # Vous avez triomphé si on a gagné sinon on a perdu
+    if victoire:
+        await message.channel.send(embed=embed_info("Vous avez triomphé de l'adversaire !!", "", discord.Color.gold()))
+    else:
+        await message.channel.send(embed=embed_info("Vous avez été vaincu par l'ennemi!", "", discord.Color.red()))
+    await asyncio.sleep(4)
+    return victoire
+
+
 
 async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     # Affiche l'introduction du combat
@@ -1573,7 +1655,7 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
     attaques = database.get_attaques_by_character_name(personnage)
     # Si le personnage a une attaque ET qu'il a de la chance
     if random.random() < 0.25: #message de suspens
-        liste_messages = ["Le combat fait rage!", "Le combat est intense!", "Les combattants se jaugent!", "Mais qui l'emportera?", "Le combat est acharné!", "Le combat touche-t-il à sa fin?", "Le combat est serré!"]
+        liste_messages = ["Le combat fait rage!", "Le combat est intense!", "Les combattants se jaugent!", "Mais qui l'emportera?", "Le combat est acharné!","Le danger se fait ressentir..","Incroyable!!","La tension est à son comble", "Le combat touche-t-il à sa fin?", "Le combat est serré!"]
         await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
         await asyncio.sleep(2.5)
     if attaques and len(attaques) > 0 and random.random() < 0.9:
