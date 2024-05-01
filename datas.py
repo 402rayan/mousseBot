@@ -1480,6 +1480,19 @@ all_techniques = {
         ["Hakai", "", image_temporaire, hexadecimal_temporaire],
         ["Sphère Destructrice", "lance sa", image_temporaire, hexadecimal_temporaire],
     ],
+    "Champa" : [
+        ["Hakai", "", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Gogeta" : [
+        ["BIG BANG KAMEHAMEHAAAAAA", "ENVOIE", image_temporaire, hexadecimal_temporaire],
+        ["Punition divine", "utilise", image_temporaire, hexadecimal_temporaire],
+        ["Explosion météore", "charge son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Vegeto" : [
+        ["Épée divine", "tranche avec son", image_temporaire, hexadecimal_temporaire],
+        ["FINAL KAMEHAMEHAAAAAAA", "ENVOIE SON", image_temporaire, hexadecimal_temporaire],
+        ["Attaque météore", "frappe avec", image_temporaire, hexadecimal_temporaire],
+    ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
         ["Kamehameha", "lance son", image_temporaire, hexadecimal_temporaire],
@@ -1511,8 +1524,31 @@ all_techniques = {
         ["Lame de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
         ["Bombe divine", "utilise une", image_temporaire, hexadecimal_temporaire],
     ],
+    "Black Goku" : [
+        ["Faux de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
+        ["Black kamehameha", "utilise", image_temporaire, hexadecimal_temporaire],
+        ["Explosion sacrée", "envoie une", image_temporaire, hexadecimal_temporaire],
+    ],
     "Hit" : [
         ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
+    ],
+    "Piccolo" : [
+        ["Makankosappo", "charge son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Trunks" : [
+        ["Lame de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
+        ["Masenko", "envoie", image_temporaire, hexadecimal_temporaire],
+        ["Attaque brûlante", "envoie une", image_temporaire, hexadecimal_temporaire]
+    ],
+    "Kefla" : [
+        ["Explosion gigantesque", "balance son", image_temporaire, hexadecimal_temporaire],
+        ["Ki erratique", "envoie des lasers de", image_temporaire, hexadecimal_temporaire],
+        ["Attaque météore", "frappe avec", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Freezer" : [
+        ["Rayon laser", "perce l'ennemi avec son", image_temporaire, hexadecimal_temporaire],
+        ["Boule de la mort", "utilise sa", image_temporaire, hexadecimal_temporaire],
+        ["Kienzan", "envoie des", image_temporaire, hexadecimal_temporaire]
     ],
     # Full Metal Alchemist
     "Pere": [
