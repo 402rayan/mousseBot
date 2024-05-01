@@ -2,6 +2,8 @@ from constantes import CONSTANTS
 
 
 image_temporaire = "https://picsum.photos/900/500"
+hexadecimal_temporaire = "#000000"
+
 all_characters_templates = {
             "Dragon Ball" : [ # ✅
             ("Super Shenron", "X", "https://i.imgur.com/W7V2Oru.gif", 1500, 1500, 1500),
@@ -1473,29 +1475,33 @@ all_link_synergies = {
 }
 
 all_techniques = {
-    "All Might" : [
-        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
-    ],
-    "Sasuke Uchiha" : [
-        ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
-    ],
+    # Dragon Ball
     "Hit" : [
         ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
     ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
     ],
+    # Full Metal Alchemist
     "Pere": [
         ["Alchimie", "utilise l''", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
     ],
-    "Morel": [
-        ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
-    ],
+    # Avatar
     "Aang": [
         ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
     ],
+    # Demon Slayer
     "Tanjiro Kamado" : [
         ["Souffle de l''eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
+    ],
+    "Rui" : [
+        ["Prison de fils", "créé une", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/RuiSang1.gif/revision/latest?cb=20200627145048&path-prefix=fr", "#490c11"],
+        ["Cage du regard assassin", "créé la", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/RuiSang2.gif/revision/latest?cb=20200627145112&path-prefix=fr", "#490c11"],
+        ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
+    ],
+    # Naruto
+    "Sasuke Uchiha" : [
+        ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
     ],
     "Kakashi Hatake" : [
         ["Sharingan", "active son", "https://i.imgur.com/mKlr2SI.gif", "#d14a4a"],
@@ -1526,11 +1532,8 @@ all_techniques = {
         ["Dome de Glace", "enferme tout le monde dans le", "", "#61c8ed"],
         ["Prisons de Glace", "condamne l''opposant aux", "", "#61c8ed"],
     ],
-    "Rui" : [
-        ["Prison de fils", "créé une", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/RuiSang1.gif/revision/latest?cb=20200627145048&path-prefix=fr", "#490c11"],
-        ["Cage du regard assassin", "créé la", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/RuiSang2.gif/revision/latest?cb=20200627145112&path-prefix=fr", "#490c11"],
-        ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
-    ],
+
+    # Hunter x Hunter
     "Franklin" : [
         ["Déluge de Balles", "déverse un", "https://i.imgur.com/0KyJyzH.gif", "#5c3307"],
         ["Recharge", "", "", "#5c3307"],
@@ -1540,6 +1543,15 @@ all_techniques = {
         ["Nen", "déploie son", "https://i.imgur.com/CsGYEAi.gif", "#5c3307"],
         ["Enragé", "devient", "", "#5c3307"],
     ],
+    "Morel": [
+        ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
+    ],
+    # Bleach
+        "Yoruichi" : [
+        ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
+        ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
+    ],
+    # The Seven Deadly Sins
     "Meliodas" : [
         ["Frappe avec son épée", "", "https://www.icegif.com/wp-content/uploads/meliodas-icegif-19.gif", "#371745"],
         ["Tranche", "", "https://i.imgur.com/l3Ua1ba.gif", "#000000"],
@@ -1569,10 +1581,10 @@ all_techniques = {
     "Gowther" : [
         ["Projectiles", "lance des", "https://i.imgur.com/fJMs9RN.gif", "#d64e74"],
     ],
-    "Yoruichi" : [
-        ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
-        ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
-    ],
     
+    # My Hero Academia
+    "All Might" : [
+        ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
+    ],
     
 }

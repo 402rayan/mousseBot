@@ -146,7 +146,7 @@ async def niveau12(message, userFromDb, equipe):
     await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4)
-    await finDeNiveau(message, userFromDb, 13)
+    await finDeNiveau(message, userFromDb, 13,1)
 
 async def niveau11(message, userFromDb, equipe):
     # libération
@@ -1946,8 +1946,6 @@ commands = {
     "aff": afficherUnivers,    # "affi"
     "bag": inventaire,         # "inv", "inventaire", "pers", "bag"
     "cla": classement,         # "cla", "ran"
-    "cou": couleur,            # "coul"
-    "cre": createTemplates,    # "create"
     "don": giveTicket,         # "donnertickets", "donnerticket", "donner_tickets", "donner_ticket"
     "fakeC": fakeCharacter,    # "fakeCh"
     "fakeS": fakeStatistiquesCombat,  # "stat"
@@ -1958,8 +1956,8 @@ commands = {
     "infoT": infoTechnique,    # "infot"
     "infoS": infoSynergie,     # "infos"
     "lis": list_command,       # "list", "help"
+    "inv": invocation,         # "invo", "invocation"
     "luc": luckyInvocation,    # "luckyInv"
-    "pur": purple,             # "pur"
     "pow": getPower,           # "pow", "pui"
     "res": reset,              # "reset"
     "sel": sell,               # "sell", "vendre"
