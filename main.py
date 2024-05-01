@@ -74,6 +74,7 @@ async def handle_user_level(message, userFromDb):
         7: niveau7, 8: niveau8, 9: niveau9,
         10: niveau10, 11: niveau11, 12 : niveau12,
         13: niveau13, 14: niveau14, 15: niveau15,
+        16: niveau16
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -96,8 +97,63 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
-async def niveau15(message, userFromDb, equipe):
+async def niveau16(message, userFromDb, equipe):
     pass
+
+async def niveau15(message, userFromDb, equipe):
+    # On sort de la cave, on reprend la route vers le village, après quelqeus heures, on atteint le village
+    
+    hasChasedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
+    if hasChasedPucci:
+        await debutDeNiveau(message, userFromDb, 15, "Village, me revoilà..", equipe, 0x000000)
+    else:
+        await debutDeNiveau(message, userFromDb, 15, "Village, me revoilà!", equipe, discord.Color.gold())
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous sortez de la cave et reprenez la route vers le village.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Après quelques heures, vous atteignez le village.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    if hasChasedPucci:
+        # Vous contastez que le village est en ruine, la plus part des habitants sont morts, et vous avez des regrets d'avoir pourchasé Enrico Pucci aulieu d'aider Sanji à combattre le monstre
+        await message.channel.send(embed=embed_naratteur("Vous constatez que le village est en ruine, la plupart des habitants sont morts.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(5.3)
+        await message.channel.send(embed=embed_naratteur("Vous avez des regrets d'avoir pourchassé Enrico Pucci au lieu d'aider Sanji à combattre le monstre.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(5.3)
+        # Vous partez vous recueillir sur la tombe de Sanji
+        await embed_histoire_character(message, "", "sanjiTombe", "",  "\"Sanji, tu as été un grand allié, tu vas nous manquer.\"","Vous partez vous recueillir sur la tombe de Sanji.", 0x000000,True)
+        await asyncio.sleep(5)
+        # On décide de faire le tour des habitants pour prendre des nouvelles, on entend qu'un guerrier aggueri se repose en ce moment même au village
+        await message.channel.send(embed=embed_raw("...","",discord.Color.dark_theme()))
+        await asyncio.sleep(3)
+        await message.channel.send(embed=embed_naratteur("Vous décidez de faire le tour des habitants pour prendre des nouvelles.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4.5)
+        await message.channel.send(embed=embed_naratteur("Vous entendez des échos qu'un guerrier aggueri se reposerait en ce moment même au village.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4.5)
+
+    else:
+        # On constate que le village se reconstruit bien! Tout le monde est heureux et nous remercie d'avoir défendu le village avec sanji
+        await message.channel.send(embed=embed_naratteur("Vous constatez que le village se reconstruit bien, tout le monde est joyeux!", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(5.3)
+        await message.channel.send(embed=embed_naratteur("Les habitants vous remercient d'avoir défendu le village avec Sanji.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(5)
+        # sanji nous remercie personnellement et nous dit qu'il est content de nous revoir!
+        await embed_histoire_character(message, "Sanji vous remercie :", "", "sanji", "", "Je suis content de vous revoir! Merci encore pour l'autre fois!", discord.Color.gold())
+        # Sanji nous donne 2 tickets pour nous remercier
+        await asyncio.sleep(4)
+        await message.channel.send(embed=embed_info("Sanji vous tend 2 tickets en guise de remerciement!", "", discord.Color.gold()))
+        await asyncio.sleep(5)
+        # Il nousdit qu'un guerrier est là en ce moment même au village si ça peut nous intéresser
+        await embed_histoire_character(message, "Sanji vous informe :", "", "sanji", "", "Je ne sais pas si tu es au courant, mais un guerrier aggueri se repose en ce moment même au village.", 0xFFB122)
+        await asyncio.sleep(5)
+        await embed_histoire_character(message, "Sanji vous informe :", "", "sanji", "", "Il est de passage, tu devrais aller le voir avant qu'il ne parte!", discord.Color.gold())
+        await asyncio.sleep(5)
+
+    await message.channel.send(embed=embed_naratteur("C'est décidé, vous allez essayer de le recruter! Mais d'abord il faut manger!", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4.5)
+    await finDeNiveau(message, userFromDb, 16) # a changer
+
+
+
 
 async def niveau14(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 14, "Révélations", equipe, CONSTANTS['COLORS']['EREN'])
@@ -706,7 +762,7 @@ async def niveau3(message, userFromDb, equipe):
     if not await combatPvm(message, equipe, ennemis["Haku"]):
         return await echecNiveau(message, userFromDb, 3)
     # await embed_histoire_character(message, "Shanks est surpris :", "", "shanks", "", "Je ne vous pensais pas aussi fort.", CONSTANTS['COLORS']['SHANKS'])
-    # await asyncio.sleep(4)
+    await asyncio.sleep(4)
     await embed_histoire_character(message, "L'autre homme se jette sur vous :", "", "froid", "", "Tu ne vas pas t'en tirer comme ça!!", CONSTANTS['COLORS']['FROID'])
     await asyncio.sleep(5)
     await embed_histoire_character(message, "Shanks immobilise l'homme avant qu'il ne vous attaque :", "shanksHaki", "shanks", "", "", CONSTANTS['COLORS']['SHANKS'])
@@ -1207,12 +1263,12 @@ async def invocation(message, userFromDb, lucky=False):
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
         msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
-        # await asyncio.sleep(6)
+        await asyncio.sleep(6)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
         
     elif rarityOfCharacter in ["F", "E", "D", "C"]:
-        # await asyncio.sleep(3)
+        await asyncio.sleep(3)
         await msg.edit(embed=embed_invocation(template,message.author))
 
     else:
@@ -1221,9 +1277,9 @@ async def invocation(message, userFromDb, lucky=False):
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
-            # await asyncio.sleep(random.uniform(1, 2))
+            await asyncio.sleep(random.uniform(1, 2))
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        # await asyncio.sleep(3)
+        await asyncio.sleep(3)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
     return
