@@ -152,9 +152,6 @@ async def niveau15(message, userFromDb, equipe):
     await asyncio.sleep(4.5)
     await finDeNiveau(message, userFromDb, 16) # a changer
 
-
-
-
 async def niveau14(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 14, "Révélations", equipe, CONSTANTS['COLORS']['EREN'])
     await asyncio.sleep(4)
@@ -1500,8 +1497,74 @@ async def combatPvm(message, team, ennemi):
         await message.channel.send(embed=embed_info("Vous avez été vaincu par l'ennemi!", "", discord.Color.red()))
     await asyncio.sleep(4)
     return victoire
-    
 
+@bot.command()
+async def pvp(message, userFromDb):
+    logger.info(f"Commande !pvp appelée par {message.author.name} ({message.author.id}).")
+    # On récupère l'identifiant de l'adversaire
+    adversaire = message.content.split(' ')[1]
+    adversaire = idDiscordToInt(adversaire)
+    adversaireDiscord = await bot.fetch_user(adversaire)
+
+    if adversaire == None or adversaireDiscord == None:
+        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'est pas valide!", discord.Color.red()))
+        return
+    # On récupère l'équipe de l'adversaire
+    equipe_adversaire = database.get_team(adversaire, "Adversaire")
+    if not equipe_adversaire:
+        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas d'équipe!", discord.Color.red()))
+        return
+    if None in equipe_adversaire['team']:
+        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas d'équipe complète!", discord.Color.red()))
+        return
+    # On vérifie si l'utilisateur a une équipe
+    equipe = database.get_team(message.author.id,message.author.name)
+    if not equipe:
+        logger.error(f"Erreur lors de la récupération de l'équipe de l'utilisateur {message.author.name} ({message.author.id}).")
+        return
+    if None in equipe['team']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous devez avoir une équipe complète pour affronter des gens!", discord.Color.red()))
+        return
+    # On lance le combat
+    print(adversaireDiscord)
+    victoire = await combatPvp(message, equipe, equipe_adversaire, adversaireDiscord)
+
+@bot.command()
+async def combatPvp(message, teamA, teamB, adversaireDiscord):
+    await introductionCombatPvp(message, teamA, teamB, adversaireDiscord)
+
+async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
+    # Affiche l'introduction du combat
+    await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
+    await asyncio.sleep(0.5)
+    teamA_atk = teamA['stats']['ATK']; teamA_def = teamA['stats']['DEF']; teamA_hp = teamA['stats']['HP']
+    teamB_atk = teamB['stats']['ATK']; teamB_def = teamB['stats']['DEF']; teamB_hp = teamB['stats']['HP']
+    titre = "Votre équipe est prête à combattre!"; statsTeamA = f"HP:{teamA_hp} ATK:{teamA_atk} DEF:{teamA_def}"
+    titreB = "L'équipe ennemie est prête à combattre!"; statsTeamB = f"HP:{teamB_hp} ATK:{teamB_atk} DEF:{teamB_def}"
+    perso1A = teamA['team'][0]; perso2A = teamA['team'][1]; perso3A = teamA['team'][2]
+    perso1B = teamB['team'][0]; perso2B = teamB['team'][1]; perso3B = teamB['team'][2]
+    description1 = f"{perso1A[6]} **[{perso1A[7]}]**"; description2 = f"{perso2A[6]} **[{perso2A[7]}]**"; description3 = f"{perso3A[6]} **[{perso3A[7]}]**"
+    description1B = f"{perso1B[6]} **[{perso1B[7]}]**"; description2B = f"{perso2B[6]} **[{perso2B[7]}]**"; description3B = f"{perso3B[6]} **[{perso3B[7]}]**"
+    embed = embed_character(message,teamA['team'][0], titre, description1, statsTeamA)
+    embed2 = embed_character(message,teamA['team'][1], titre, description1 + " ~ " + description2, statsTeamA)
+    embed3 = embed_character(message,teamA['team'][2], titre, description1 + " ~ " + description2 + " ~ " + description3, statsTeamA)
+    embedB = embed_character(message,teamB['team'][0], titreB, description1B, statsTeamB, adversaireDiscord)
+    embed2B = embed_character(message,teamB['team'][1], titreB, description1B + " ~ " + description2B, statsTeamB, adversaireDiscord)
+    embed3B = embed_character(message,teamB['team'][2], titreB, description1B + " ~ " + description2B + " ~ " + description3B, statsTeamB, adversaireDiscord)
+    msg = await message.channel.send(embed=embed)
+    await asyncio.sleep(2.5)
+    await msg.edit(embed=embed2)
+    await asyncio.sleep(2.5)
+    await msg.edit(embed=embed3)
+    await asyncio.sleep(2.5)
+    await message.channel.send(embed=embedVs)
+    await asyncio.sleep(2)
+    msg2 = await message.channel.send(embed=embedB)
+    await asyncio.sleep(2.5)
+    await msg2.edit(embed=embed2B)
+    await asyncio.sleep(2.5)
+    await msg2.edit(embed=embed3B)
+    return
 
     
 async def tour(message, personnage, ennemi,onlyAttack=False):
@@ -1585,10 +1648,6 @@ async def introductionCombat(message, team, ennemi):
     await asyncio.sleep(2.5)
     await msg.edit(embed=embed3)
     await asyncio.sleep(2.5)
-    embedVs = discord.Embed(
-        title="VS",
-        color=0xffcc33
-    )
     await message.channel.send(embed=embedVs)
     await asyncio.sleep(2)
     if not ennemi['isNotGif']:
@@ -1598,8 +1657,7 @@ async def introductionCombat(message, team, ennemi):
     await embed_histoire_character(message, ennemi['nom'], ennemi['nomGif'], ennemi['nomPfp'],"", "", ennemi['couleur'], isNotGif)
     
 
-
-def embed_character(message, character,title="",description="", footer=""):
+def embed_character(message, character,title="",description="", footer="",author=None):
     # Retourne un embed avec les informations d'un personnage 
     nom = character[6]; hp = character[9]; atk = character[10]; defense = character[11]; rarity = character[7]; nomImage = character[8]
     embed = discord.Embed(
@@ -1608,13 +1666,14 @@ def embed_character(message, character,title="",description="", footer=""):
         color=CONSTANTS['RARITY_COLOR'][rarity],
     )
     embed.set_image(url=nomImage)
-    embed.set_author(name=message.author.name, icon_url=message.author.avatar.url)
+    if author:
+        embed.set_author(name=author.name, icon_url=author.avatar.url)
+    else:
+        embed.set_author(name=message.author.name, icon_url=message.author.avatar.url)
     if footer:
         embed.set_footer(text=footer)
     return embed
 
-    
-    
 @bot.command()
 async def infoSynergie(message, userFromDb):
     # Permet d'obtenir les informations d'une synergie
@@ -2077,6 +2136,7 @@ commands = {
     "lis": list_command,       # "list", "help"
     "luc": luckyInvocation,    # "luckyInv"
     "pow": getPower,           # "pow", "pui"
+    "pv": pvp,                 # "pvp"
     "res": reset,              # "reset"
     "sa": inventaire,          # "sac"
     "sel": sell,               # "sell", "vendre"
@@ -2088,7 +2148,10 @@ commands = {
     "v": voirTeam,             # "voir"
 }
 
-
+embedVs = discord.Embed(
+    title="VS",
+    color=0x8C1BFC
+)
 
 
 
