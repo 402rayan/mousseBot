@@ -17,7 +17,7 @@ all_characters_templates = {
 
             # Personnages SS
             ("Belmod", "SS", "https://i.imgur.com/Yeq7JQY.gif", 800, 900, 800),
-            ("Piccolo", "SS", "https://i.imgur.com/srHRyMX.gif", 800, 850, 800),
+            ("Piccolo", "SS", "https://i.imgur.com/srHRyMX.gif", 800, 850, 800), #TOCHECK
             ("Champa", "SS", 'https://i.imgur.com/F7Q78tL.gif', 800, 1000, 800),
             ("Vegeto", "SS", "https://i.imgur.com/DBewj1R.gif", 770, 810, 770),
             ("Gogeta", "SS", "https://i.imgur.com/5sTq4Q6.gif", 750, 800, 760),
@@ -1476,11 +1476,43 @@ all_link_synergies = {
 
 all_techniques = {
     # Dragon Ball
-    "Hit" : [
-        ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
-    ],
+    "Beerus" : [
+        ["Hakai", "", image_temporaire, hexadecimal_temporaire],
+        ["Sphère Destructrice", "lance sa", image_temporaire, hexadecimal_temporaire],
+    ]
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
+        ["Kamehameha", "lance son", image_temporaire, hexadecimal_temporaire],
+        ["Genkidama", "lance son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Son Gohan" : [
+        ["Kamehameha", "lance son", image_temporaire, hexadecimal_temporaire],
+        ["Makankosappo ultime", "utilise son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Vegeta" : [
+        ["Canon Garric", "lance", image_temporaire, hexadecimal_temporaire],
+        ["Final Flash", "utilise", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Broly" : [
+        ["Ki légendaire", "crache du", image_temporaire, hexadecimal_temporaire],
+        ["Eraser cannon", "utilise", image_temporaire, hexadecimal_temporaire],
+        ["Destruction planétaire", "charge son" image_temporaire, hexadecimal_temporaire]
+    ],
+    "Jiren" : [
+        ["Impact de ki", "lance un", image_temporaire, hexadecimal_temporaire],
+        ["Uppercut colossal", "envoie un", image_temporaire, hexadecimal_temporaire],
+        ["Ki invisible", "attaque avec du", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Toppo" : [
+        ["Hakai imparfait", "utilise son", image_temporaire, hexadecimal_temporaire],
+        ["Boule de Hakai", "envoie des", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Zamasu" : [
+        ["Lame de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
+        ["Bombe divine", "utilise une", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Hit" : [
+        ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
     ],
     # Full Metal Alchemist
     "Pere": [
