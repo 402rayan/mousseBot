@@ -1496,7 +1496,7 @@ all_techniques = {
     "Broly" : [
         ["Ki légendaire", "crache du", image_temporaire, hexadecimal_temporaire],
         ["Eraser cannon", "utilise", image_temporaire, hexadecimal_temporaire],
-        ["Destruction planétaire", "charge son" image_temporaire, hexadecimal_temporaire]
+        ["Destruction planétaire", "charge son", image_temporaire, hexadecimal_temporaire],
     ],
     "Jiren" : [
         ["Impact de ki", "lance un", image_temporaire, hexadecimal_temporaire],
@@ -1618,5 +1618,5 @@ all_techniques = {
     "All Might" : [
         ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
     ],
-    
+
 }
