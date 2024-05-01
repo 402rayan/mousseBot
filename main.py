@@ -73,7 +73,7 @@ async def handle_user_level(message, userFromDb):
         4: niveau4, 5: niveau5, 6: niveau6,
         7: niveau7, 8: niveau8, 9: niveau9,
         10: niveau10, 11: niveau11, 12 : niveau12,
-        13: niveau13
+        13: niveau13, 14: niveau14, 15: niveau15,
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -96,9 +96,66 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
+async def niveau15(message, userFromDb, equipe):
+    pass
+
+async def niveau14(message, userFromDb, equipe):
+    await debutDeNiveau(message, userFromDb, 14, "Révélations", equipe, CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Vous vous retournez pour voir si quelqu'un d'autre est présent.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(5)
+    # Eren se présente
+    await embed_histoire_character(message, "Eren vous interpelle :", "erenIntroduction", "eren", "", "Bonjour, je m'appelle Eren.\nVous avez aussi trouver cet endroit à ce que je vois.", CONSTANTS['COLORS']['EREN'],True)
+    await asyncio.sleep(4)
+    # Ce n'est pas la première fois qu'il vient ici, cet endroit regorge de réponses
+    await embed_histoire_character(message, "Eren vous informe :", "", "eren", "", "Je suis venu ici plusieurs fois, cet endroit regorge de savoir et de réponses.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(5)
+    # Il explique aussi que le but de Pucci et de créer un mode où tous les êtres humains connaîtraient leur destinée. Il croit que cela leur permettrait de vivre sans regrets ni surprises, menant à une forme de paix intérieure.
+    # Cependant il n'a pas assez d'énergie nécessaire, c'est pour cela qu'il cherche à réunir une armée pour tous les sacrifier et voler leur énergie.
+    # Eren  nous explique qu'il faut créer une coalition pour anéantir Pucci si nous souhaitons survivre.
+    await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "La personne qui a bouleversé l'espace-temps cherche à créer un monde où tous les êtres humains connaîtraient leur destinée.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(6)
+    await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Il croit que cela leur permettrait de vivre sans regrets ni surprises, menant à une forme de paix intérieure.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(6)
+    await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Cependant, il n'a pas assez d'énergie nécessaire pour réaliser son plan.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Ainsi, pour réaliser son but, il cherche à réunir une armée et à tous les sacrifier pour voler leur énergie.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(6)
+    await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Nous devons créer une coalition pour anéantir Pucci si nous souhaitons survivre.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(6)
+    # accepter ou refuser (boucle infinie si on refuse)
+    description = "✅ : Accepter\n❌ : Refuser"
+    await embed_histoire_character(message, "Eren vous demande :", "erenTendMain", "eren", "", "Êtes-vous prêt à vous battre à mes côtés?", CONSTANTS['COLORS']['EREN'],True)
+    await asyncio.sleep(4)
+    while True:
+        msg = await message.channel.send(embed=embed_naratteur("Alors?", description, CONSTANTS['COLORS']['BRUIT']))
+        for reaction in ['✅', '❌']:
+            await msg.add_reaction(reaction)
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+        except:
+            await message.channel.send(embed=embed_info("Vous avez mis trop de temps à prendre une décision.", "", discord.Color.red()))
+            return await echecNiveau(message, userFromDb, 14)
+        if str(reaction.emoji) == '✅':
+            break
+        else:
+            await asyncio.sleep(0.5)
+            await embed_histoire_character(message, "Eren :", "", "eren", "", "Je ne peux pas vous forcer à m'aider, mais sachez qu'Enrico Pucci est un adversaire redoutable.", CONSTANTS['COLORS']['EREN'])
+            await asyncio.sleep(4)
+    # Eren YEager est devenu votre allié
+    await asyncio.sleep(0.5)
+    await message.channel.send(embed=embed_naratteur("Eren Yeager est devenu votre allié.", "", discord.Color.green()))
+    # Eren Yeager a trouvé 2 tickets dans une des chambre et nous les donne
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Eren vous informe :", "", "eren", "", "Ah et aussi, j'ai trouvé ça dans une des chambres, ça pourrait te servir.", CONSTANTS['COLORS']['EREN'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_info("Vous avez reçu 2 tickets!", "", discord.Color.gold()))
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 15,2)
+
 async def niveau13(message, userFromDb, equipe):
     # Début de niveau : maison abandonnée
-    await debutDeNiveau(message, userFromDb, 13, "La maison abandonnée", equipe, CONSTANTS['COLORS']['ZUKO'])
+    await debutDeNiveau(message, userFromDb, 13, "La maison abandonnée", equipe, CONSTANTS['COLORS']['YORUICHI'])
     await asyncio.sleep(4)
     # On décide de retourner voir le village pour voir comment ça évolue mais sur la route on apercoit une immense maison
     await message.channel.send(embed=embed_naratteur("Vous décidez de partir en route vers le village pour voir si les habitants se remettent de l'attaque.", "", CONSTANTS['COLORS']['BRUIT']))
@@ -121,7 +178,6 @@ async def niveau13(message, userFromDb, equipe):
     await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 14)
     
-
 async def niveau12(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
     await asyncio.sleep(4)
@@ -995,7 +1051,11 @@ async def labyrinthe(message, userFromDb, equipe):
             database.updateChoice(userFromDb[1], "lvl13chatMaisonHantee", True)
             if not await combatPvm(message, equipe, ennemis["YORUICHI"]):
                 return -1
-            ticketsRamasses += 6
+            await message.channel.send(embed=embed_info(f"Vous avez réussi à vaincre la femme chat, et vous vous apercevez qu'elle avait des objets sur elle!", "", CONSTANTS['COLORS']['BRUIT']))
+            await asyncio.sleep(5.3)
+            await message.channel.send(embed=embed_info(f"Vous avez trouvé 5 tickets !", "", discord.Color.gold()))
+            await asyncio.sleep(3.5)
+            ticketsRamasses += 5
         if ticketsRamasses <= 0:
             await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"", discord.Color.blue()))
         else:
@@ -1944,8 +2004,9 @@ commands = {
     "add": ajouterTeam,        # "addteam", "add_team"
     "admi": admin,             # "admin"
     "aff": afficherUnivers,    # "affi"
-    "bag": inventaire,         # "inv", "inventaire", "pers", "bag"
-    "cla": classement,         # "cla", "ran"
+    "ba": inventaire,         # "bag"
+    "bo": inventaire,          # "box"
+    "cla": classement,         # "classement"
     "don": giveTicket,         # "donnertickets", "donnerticket", "donner_tickets", "donner_ticket"
     "fakeC": fakeCharacter,    # "fakeCh"
     "fakeS": fakeStatistiquesCombat,  # "stat"
@@ -1955,16 +2016,20 @@ commands = {
     "inf": info,               # "info"
     "infoT": infoTechnique,    # "infot"
     "infoS": infoSynergie,     # "infos"
-    "lis": list_command,       # "list", "help"
+    "inve": inventaire,        # "inventaire"
     "inv": invocation,         # "invo", "invocation"
+    "lis": list_command,       # "list", "help"
     "luc": luckyInvocation,    # "luckyInv"
     "pow": getPower,           # "pow", "pui"
     "res": reset,              # "reset"
+    "sa": inventaire,          # "sac"
     "sel": sell,               # "sell", "vendre"
     "set": setLevel,           # "setlevel"
     "su": invocation,          # "summon"
     "tic": getTickets,         # "tic"
     "te": voirTeam,            # "te", "voi"
+    "ve": sell,                # "vendre"
+    "v": voirTeam,             # "voir"
 }
 
 
