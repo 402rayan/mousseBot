@@ -1,19 +1,19 @@
 CONSTANTS = {
     'HOURLY_TICKETS': 4,
-    'INVOCATION_COST': 0,
+    'INVOCATION_COST': 1,
     'MAX_CHARACTERS': 999999,
     'BASE_CHANCE_VICTORY': 0.6,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
-        'X': 100,
-        'SS': 50,
-        'S': 25,
-        'A': 10,
-        'B': 5,
-        'C': 1,
-        'D': 0.5,
-        'E': 0.25,
+        'X': 50,
+        'SS': 25,
+        'S': 12.5,
+        'A': 5,
+        'B': 2.5,
+        'C': 0.5,
+        'D': 0.25,
+        'E': 0.15,
         'F': 0.1,
     },
     'RARITY_CHANCE': {
@@ -135,11 +135,11 @@ CONSTANTS = {
         
     },
     "NOMS_GIF_INVOCATION": [
-        # Nom du gif, texte à afficher, couleur du texte, pfp
-        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
-        ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
-        ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
-        ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron"],
+        # Nom du gif, texte à afficher, couleur du texte, pfp, isLong
+        # ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
+        # ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
+        # ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
+        ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
     ]
 }
 

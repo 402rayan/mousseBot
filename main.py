@@ -1259,8 +1259,14 @@ async def invocation(message, userFromDb, lucky=False):
     if rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
+
+
         msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
-        await asyncio.sleep(6)
+        if schema[-1] == True: # Si l'invocation est longue
+            print("Invocation longue")
+            await asyncio.sleep(8)
+        else:
+            await asyncio.sleep(6)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
         
