@@ -1479,7 +1479,7 @@ all_techniques = {
     "Beerus" : [
         ["Hakai", "", image_temporaire, hexadecimal_temporaire],
         ["Sphère Destructrice", "lance sa", image_temporaire, hexadecimal_temporaire],
-    ]
+    ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
         ["Kamehameha", "lance son", image_temporaire, hexadecimal_temporaire],
