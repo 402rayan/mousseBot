@@ -146,7 +146,6 @@ all_characters_templates = {
             ('Konan', 'A', 'https://i.imgur.com/3mOmZ0v.gif', 415, 410, 405),
             ('Kakuzu', 'A', 'https://i.imgur.com/BKf04A1.gif', 415, 405, 410),
             ('Sai', 'A', 'https://i.imgur.com/03ICbLj.gif', 395, 440, 430),
-            ('Zetsu', 'A', 'image_temporaire', 390, 420, 450),
 
             # Personnages B
             
@@ -800,17 +799,17 @@ all_characters_templates = {
             ('Akaza', 'SS', 'https://i.imgur.com/uBwhGcG.gif', 710, 670, 665) ,
 
             # Personnages S
-            ('Sanemi', 'S', image_temporaire, 535, 570, 540) ,
-            ('Muichiro', 'S', image_temporaire, 530, 585, 550) ,
-            ('Obanai', 'S', image_temporaire, 585, 570, 525) ,
-            ('Giyu', 'S', image_temporaire, 540, 595, 510) ,
+            ('Sanemi Shinazugawa', 'S', "https://i.imgur.com/gsRhxBO.gif", 535, 570, 540) ,
+            ('Muichiro Takito', 'S', "https://i.imgur.com/tha4jTx.gif", 530, 585, 550) ,
+            ('Obanai Iguro', 'S', "https://i.imgur.com/bwibOHS.gif", 585, 570, 525) ,
+            ('Giyu Tomioka', 'S', "https://i.imgur.com/7plvqYg.gif", 540, 595, 510) ,
 
             # Personnages A
             ('Rengoku', 'A', 'https://i.imgur.com/6HL02sP.gif', 425, 390, 465) ,
-            ('Tengen Uzui', 'A', image_temporaire, 410, 385, 440) ,
-            ('Mitsuri', 'A', image_temporaire, 410, 405, 445) ,
-            ('Nezuko', 'A', image_temporaire, 420, 375, 470) ,
-            ('Kanao', 'A', image_temporaire, 460, 410, 430) ,
+            ('Tengen Uzui', 'A', "https://i.imgur.com/oRjrWE4.gif", 410, 385, 440) ,
+            ('Mitsuri Kanroji', 'A', "https://i.imgur.com/JypPx5K.gif", 410, 405, 445) ,
+            ('Nezuko Kamado', 'A', "https://i.imgur.com/Vk0Bc6F.gif", 420, 375, 470) ,
+            ('Kanao Tsuyuri', 'A', "https://i.imgur.com/nYnalOh.gif", 460, 410, 430) ,
             ('Tamayo', 'A', 'https://i.imgur.com/GVvrYyr.gif', 430, 430, 380) ,
             ('Shinobu Kocho', 'A', 'https://i.imgur.com/TK1yera.gif', 450, 420, 460) ,
 
@@ -1159,9 +1158,9 @@ all_synergies = [
     (114, "Héritier du One For All", "ATK", 0.70, "Les Heritiers du One For All sont des individus qui ont herite du pouvoir du One For All pour proteger le monde des vilains.", image_temporaire, "#00000"),
     (115, "Kuchiki", "ATK", 0.5, "La famille Kuchiki est une famille de nobles qui sont les gardiens du clan Kuchiki.", image_temporaire, "#00000"),
     (116, "Shimura" , "ATK", 0.4, "La famille Shimura est consituée de , sah flemme de finir mdrr", image_temporaire, "#00000"),
-    (117, "Big 3", "HP", 0.50, "Le Big 3 est un groupe de trois etudiants de l'U.A. qui sont les plus forts de leur generation.", "https://i.imgur.com/195h0KM.png", "#00000"),
+    (117, "Big 3", "HP", 0.80, "Le Big 3 est un groupe de trois etudiants de l'U.A. qui sont les plus forts de leur generation.", "https://i.imgur.com/195h0KM.png", "#00000"),
     (118, "Sniper", "ATK", 0.55, "Les Snipers sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire, "#00000"),
-    (119, "Intangible", "DEF", 0.65, "Les Intangibles sont des individus qui peuvent devenir intangibles et traverser les objets solides.", image_temporaire, "#00000"),
+    (119, "Intangible", "DEF", 0.80, "Les Intangibles sont des individus qui peuvent devenir intangibles et traverser les objets solides.", image_temporaire, "#00000"),
     (120, "Kurosaki", "HP", 0.40, "La famille Kurosaki est une famille de chasseurs de Hollows qui protegent les humains des attaques des Hollows.", image_temporaire, "#00000"),
     (121, "Cinq Doyen", "HP", 0.60, "Les cinq doyens sont la Plus Haute Instance du Gouvernement Mondial.", "https://static.wikia.nocookie.net/onepiece/images/f/f9/Cinq_Doyens_Anime_Post_Ellipse_Infobox.png/revision/latest?cb=20221119194241&path-prefix=fr", "#00000"),
     (122, "Foetus des Neuf Phases", "HP", 0.65, "Les Foetus des Neuf Phases sont à l'origine neuf fœtus avortés issus du mélange entre une humaine et des fléaux. Mort-nés, ils sont devenus des reliques.", image_temporaire, "#00000"),
@@ -1366,7 +1365,7 @@ all_link_synergies = {
     130 : ["Suguru Geto","Miguel","Juzo","Uraume","Haruta Shigemo","Kenjaku","Junpei"], # Maitre des Fleaux
     129 : ["Smoker","Morel","Zabuza Momochi"], # Maître du Brouillard
     128 : ["Kaku","Rob Lucci","Kumadori"], # CP-0
-    127 : ["Choso","Kechizu", "Katara","Hama","Vlad King","Rui","Noritoshi Kamo","Power","Nezuko","Esidisi","Eso"], # Manipulateur de Sang
+    127 : ["Choso","Kechizu", "Katara","Hama","Vlad King","Rui","Noritoshi Kamo","Power","Nezuko Kamado","Esidisi","Eso"], # Manipulateur de Sang
     126 : ["Jotaro Kujo","Jolyne Kujo"], # Famille Kujo
     125 : ["Zeno", "Rikudo","Pere","Athena","Saitama","Super Shenron"], # Tout Puissant
     124 : ["Kakashi Hatake","Shisui Uchiha","Yugao Uzuki","Sai","Yamato (naruto)","Danzo Shimura","Itachi Uchiha"], # ANBU
@@ -1377,7 +1376,7 @@ all_link_synergies = {
     3 : ["Ichigo Kurosaki"], # Hollow
     6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach","Ichigo Kurosaki"], # Quincy
     8 : ["Grimmjow", "Ulquiorra", "Nnoitra", "Halibel", "Baraggan", "Starrk"], # Espada
-    119 : ["Obito Uchiha", "Mirio Togata","Zetsu"], # Intangible
+    119 : ["Obito Uchiha", "Mirio Togata"], # Intangible
     118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin","Benn Beckman","Usopp","Snipe","Sasha Braus","Gabi Braun"], # Sniper
     117 : ["Mirio Togata","Tamaki Amajiki","Nejire Hado"], # Big 3
     116 : ["Tomura Shigaraki", "Nana Shimura"], # Shimura
@@ -1415,11 +1414,11 @@ all_link_synergies = {
     84 : [], # Souffle de l'Eau
     83 : [], # Souffle de la Foudre
     82 : ["Tanjiro Kamado", "Yoriichi Tsugikuni","Sumiyoshi","Tanjuro"], #Kamado
-    81 : ["Tanjiro Kamado","Nezuko","Kanao","Sumiyoshi","Tanjuro"], # Souffle du Soleil
-    80 : ["Muzan","Nezuko","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignee","Mere Araignee","Shinzu","Dabra","Denji","Makima","Power","Meliodas","Estarossa","Zeldris","Gloxinia","Hendrickson","Monspeet","Gowther","Derieri","Galand","Samourai Sword","Akaza"], # Demon
+    81 : ["Tanjiro Kamado","Nezuko Kamado","Kanao","Sumiyoshi","Tanjuro"], # Souffle du Soleil
+    80 : ["Muzan","Nezuko Kamado","Tamayo","Yushiro","Susamaru","Yahaba","Fille Araignee","Mere Araignee","Shinzu","Dabra","Denji","Makima","Power","Meliodas","Estarossa","Zeldris","Gloxinia","Hendrickson","Monspeet","Gowther","Derieri","Galand","Samourai Sword","Akaza"], # Demon
     79 : ["Aoi Kanzaki","Sumi Nakahara","Kiyo","Naho","Goto (KNY)","Shinobu Kocho"], # Domaine des Papillons
-    78 : ["Kanao","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko","Genya","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hanakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Samourai Sword","Kobeni Higashiyama"], # Pourfendeur de demons
-    77 : ["Giyu","Mitsuri","Obanai","Sanemi","Gyomei","Muichiro","Shinobu Kocho","Rengoku","Kanae Kocho","Tengen Uzui","Jigoro Kuwajima"], # Hashira
+    78 : ["Kanao","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko Kamado","Genya","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hanakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Samourai Sword","Kobeni Higashiyama"], # Pourfendeur de demons
+    77 : ["Giyu Tomioka","Mitsuri Kanroji","Obanai Iguro","Sanemi Shinazugawa","Gyomei","Muichiro Takito","Shinobu Kocho","Rengoku","Kanae Kocho","Tengen Uzui","Jigoro Kuwajima"], # Hashira
     76 : ["Kagaya Ubuyashiki","Amane Ubuyashiki","Hinaki Ubuyashiki","Nichika Ubuyashiki","Kiriya Ubuyashiki","Kanata Ubuyashiki"], # Ubuyashiki
     75 : ["Toji Fushiguro","Megumi Fushiguro","Tsumiki Fushiguro"], # Fushiguro
     74 : ["Noritoshi Kamo","Kenjaku"], # Kamo
@@ -1460,7 +1459,7 @@ all_link_synergies = {
     27 : [ "Onoki", "Deidara"], # Iwa TODO
     28 : ["Naruto Uzumaki", "Killer Bee", "Yugito","Fû", "Yuji Itadori","Madara Uchiha","Obito Uchiha","Gaara","Mito Uzumaki","Kushina Uzumaki","Gaara"], # Receptacle TODO
     29 : ["Aang","Korra", "Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Lord Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi","Sukuna","Yamamoto","Roy Mustang","Kyujuro Rengoku","Escanor","Sanji","Endeavor","King"],# Maitre du Feu TODO
-    30 : ["Aang","Korra", "Katara", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Hama","Halibel","Jinbe","Sakonji Urokodaki","Giyu","Sabito","Tanjiro Kamado","Murata","Zabuza Momochi","N'Doul","Isaac McDougal","Boruto Uzumaki"], # Maitre de l'Eau TODO
+    30 : ["Aang","Korra", "Katara", "Suigetsu", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Hama","Halibel","Jinbe","Sakonji Urokodaki","Giyu Tomioka","Sabito","Tanjiro Kamado","Murata","Zabuza Momochi","N'Doul","Isaac McDougal","Boruto Uzumaki"], # Maitre de l'Eau TODO
     31 : ["Aang","Korra", "Toph Beifong", "Yamato (naruto)","Kakuzu"], # Maitre de la Terre TODO
     32 : ["Aang","Korra","Temari","Mei Terumi","Danzo Shimura","Boruto Uzumaki","Monkey D. Dragon","Wamuu"], # Maitre de l'Air TODO
     33 : ["Zuko", "Iroh", "Azula", "Lord Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena","Denki Kaminari","Zenitsu","Kaigaku","Jigoro Kuwajima","Kirua Zoldyck","Yoruichi","Akira Otoishi","Boruto Uzumaki"], # Maitre de la foudre TODO
