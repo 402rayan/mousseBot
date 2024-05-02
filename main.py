@@ -1508,6 +1508,17 @@ async def combatPvm(message, team, ennemi):
     return victoire
 
 @bot.command()
+async def repeat(message, userFromDb):
+    logger.info(f"Commande !repeat appelée par {message.author.name} ({message.author.id}). {message.content[8:]}")
+    # Supprime le message et le répète
+    try:
+        await message.delete()
+    except:
+        logger.error(f"Impossible de supprimer le message.")
+    await message.channel.send(message.content[8:])
+    return
+
+@bot.command()
 async def pvp(message, userFromDb):
     logger.info(f"Commande !pvp appelée par {message.author.name} ({message.author.id}).")
     # On récupère l'identifiant de l'adversaire
@@ -2325,6 +2336,7 @@ commands = {
     "luc": luckyInvocation,    # "luckyInv"
     "pow": getPower,           # "pow", "pui"
     "pv": pvp,                 # "pvp"
+    "rep": repeat,             # "repeat"
     "res": reset,              # "reset"
     "sa": inventaire,          # "sac"
     "sel": sell,               # "sell", "vendre"
