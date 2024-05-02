@@ -132,14 +132,14 @@ CONSTANTS = {
         'BRIGADE_FANTOME' : 0x000000, 'UVOGUINE' : 0x5c5d51,
         "C18" : 0xeedbab, "DENKI" : 0xb38d48, "BAGGY" : 0xa10f21,
         "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b, "GRAY_CAT" : 0x3c3c3d,
-        "EREN" : 0x3f3131
+        "EREN" : 0x3f3131, "SOMA" : 0xf62a43, "NANAMI" : 0xaca97f,
         
     },
     "NOMS_GIF_INVOCATION": [
         # Nom du gif, texte à afficher, couleur du texte, pfp, isLong
-        # ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
-        # ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
-        # ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
+        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
+        ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
+        ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
         ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
     ]
 }
