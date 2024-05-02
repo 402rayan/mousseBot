@@ -162,7 +162,7 @@ class Database:
         self.crate_user_choices()
         self.create_character_template_technique_table()
         self.conn.commit()
-        logger.info("Les tables ont été créées.")
+        logger.info("Fin de la création des tables.")
         
     def insert_user(self, user_discord_id, user_name):
         #On vérifie si l'utilisateur existe déjà
@@ -175,8 +175,6 @@ class Database:
             self.cur.execute(f"INSERT INTO user_choices (user_discord_id) VALUES ({user_discord_id})")
             self.conn.commit()
             logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a été inscrit dans la base de données.")
-        else:
-            logger.info(f"L'utilisateur {user_name} ({user_discord_id}) existe déjà dans la base de données.")
 
     def get_tickets(self, user_discord_id):
         self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
@@ -319,7 +317,6 @@ class Database:
     def create_character(self, user_discord_id,user_name, template_id):
         self.cur.execute(f"INSERT INTO characters (user_discord_id, template_id) VALUES ({user_discord_id}, {template_id})")
         self.conn.commit()
-        logger.info(f"Un nouveau personnage a été créé pour l'utilisateur {user_name} ({user_discord_id}).")
         return self.cur.lastrowid
     
     def delete_character(self, char_id):
@@ -369,7 +366,7 @@ class Database:
         template_id = template[0]
         template_name = template[1]
         new_character = self.create_character(user_discord_id,user_name, template_id)
-        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}. L'invocation était spéciale : {special}.")
+        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name} [{rarity}] (id : {template_id}) (character Id : {new_character}) . Tickets restants : {tickets}. " + ("Invocation spéciale." if special else ""))
         self.update_tickets(user_discord_id, tickets)
         if special:
             self.update_special_invocation(user_discord_id, False)

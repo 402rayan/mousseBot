@@ -60,7 +60,7 @@ async def on_message(message):
     if not userFromDb:
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
         return
-    contenu = contenu[1:]
+    contenu = contenu[1:].lower()
     for cmd, func in commands.items():
         if contenu.startswith(cmd):
             await execute_command(func, message, userFromDb)
@@ -86,6 +86,7 @@ async def handle_user_level(message, userFromDb):
         return
     handler = level_to_function.get(niveau)
     if handler:
+        logger.info(f"Exécution du niveau {niveau} pour l'utilisateur {message.author.name} ({message.author.id}).")
         await handler(message, userFromDb, equipe)
     else:
         logger.error(f"Niveau inconnu {niveau} pour l'utilisateur {message.author.name} ({message.author.id}).")
@@ -1152,6 +1153,17 @@ def embed_histoire_character(message, nom, nomGif, nomPfp, description,titre, co
         files.append(pfp)
     return message.channel.send(files=files, embed=embed)
         
+async def giveCharacterHistory(message, userFromDb, characterName):
+    # Donne l'histoire d'un personnage
+    character = database.get_character_template_by_name(userFromDb[1], userFromDb[2],characterName)
+    if not character:
+        await message.channel.send(embed=embed_info("Erreur", "Personnage non trouvé!", discord.Color.red()))
+        return
+    await message.channel.send(embed=embed_invocation(character,recruter=True))
+    # On lui ajoute le personnage
+    database.create_character(userFromDb[1], userFromDb[2], character[0])
+    return
+
 # Fin Partie Histoire
 @bot.command()
 async def liste(message, userFromDb):
@@ -1175,18 +1187,6 @@ async def couleur(message, userFromDb):
         # await asyncio.sleep(0.5)
         await message.channel.send(embed=embed_invocation(template))
 
-
-async def giveCharacterHistory(message, userFromDb, characterName):
-    # Donne l'histoire d'un personnage
-    character = database.get_character_template_by_name(userFromDb[1], userFromDb[2],characterName)
-    if not character:
-        await message.channel.send(embed=embed_info("Erreur", "Personnage non trouvé!", discord.Color.red()))
-        return
-    await message.channel.send(embed=embed_invocation(character,recruter=True))
-    # On lui ajoute le personnage
-    database.create_character(userFromDb[1], userFromDb[2], character[0])
-    return
-
 @bot.command()
 async def getTickets(message, userFromDb):
     logger.info(f"Commande !tickets appelée par {message.author.name} ({message.author.id}).")
@@ -1202,6 +1202,7 @@ async def getTickets(message, userFromDb):
 
 @bot.command()
 async def claimHourly(message, userFromDb):
+    logger.info(f"Commande !claimHourly appelée par {message.author.name} ({message.author.id}).")
     user = message.author
     claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
@@ -1241,7 +1242,6 @@ async def invocation(message, userFromDb, lucky=False):
     specialInvocation = userFromDb[9]
     if lucky:
         specialInvocation = True
-    print(f"Invocation spéciale : {specialInvocation}")
     donnees = database.summon_character(message.author.id, message.author.name, specialInvocation)
     # SI la données est de type String, c'est une erreur
     if type(donnees) == str:
@@ -1289,6 +1289,9 @@ async def invocation(message, userFromDb, lucky=False):
 
 @bot.command()
 async def luckyInvocation(message, userFromDb):
+    if message.author.id not in CONSTANTS['ADMINS']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'êtes pas autorisé à utiliser cette commande!", discord.Color.red()))
+        return
     await invocation(message, userFromDb, True)
 
 @bot.command()
@@ -1998,8 +2001,6 @@ async def ajouterTeam(message, userFromDb):
 
     # Génération de l'embem
     nomImage = character[8]
-    print(character)
-    print(nomImage)
     embed = discord.Embed(
         title=f"{ nom } occupe désormais la position { position }.",
         color=discord.Color.green()
@@ -2080,7 +2081,7 @@ async def createTemplates(message, userFromDb):
 
 @bot.command()
 async def reset(message, userFromDb):
-    if message.author.id not in [724383641752436757,617045747862470803]:
+    if message.author.id not in CONSTANTS['ADMINS']:
         await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
         return
     titre = "Voulez vous reset TOUTES les données ou seulement les personnages?"
@@ -2100,6 +2101,7 @@ async def reset(message, userFromDb):
 
 @bot.command()
 async def classement(message, userFromDb):
+    logger.info(f"Commande !classement appelée par {message.author.name} ({message.author.id}).")
     classement = database.getClassement(message.guild.members)
     max_length = 10
     classement = classement[:max_length]
@@ -2110,7 +2112,6 @@ async def classement(message, userFromDb):
         user = await message.guild.fetch_member(identifiant)
         response += f"{index + 1}. {user.name} - {joueur[1]} puissance\n"
     await message.channel.send(embed=embed_info(titre, response, discord.Color.blue(),"La puissance est calculée en fonction des niveaux et des personnages de votre inventaire."))
-
 
 def get_color_based_on_power(power):
     power_ranges = {
@@ -2129,12 +2130,18 @@ def get_color_based_on_power(power):
 async def fakeTeam(message, userFromDb):
     # Fonction pour tester la team
     # On créer les characters All Might, Sasuke et Gojo
+    if message.author.id not in CONSTANTS['ADMINS']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        return
     database.fakeTeam(message.author.id)
     await message.channel.send(embed=embed_info("Team ajoutée", "Votre team a été ajoutée!", discord.Color.green()))
 
 @bot.command()
 async def fakeCharacter(message, userFromDb):
     # Donne un personnage
+    if message.author.id not in CONSTANTS['ADMINS']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        return
     contenu = message.content
     if len(contenu.split(' ')) < 2:
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!fakecharacter <nom personnage>**!", discord.Color.red()))
@@ -2149,6 +2156,7 @@ async def fakeCharacter(message, userFromDb):
 
 @bot.command()
 async def getPower(message, userFromDb):
+    logger.info(f"Commande !power appelée par {message.author.name} ({message.author.id}).")
     user = await fetch_user_from_message(message, 2)
     if not user:
         await message.channel.send(embed=embed_info("Utilisateur invalide", "L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!", discord.Color.red()))
@@ -2194,6 +2202,9 @@ async def afficherUnivers(message, userFromDb):
 
 @bot.command()
 async def setLevel(message, userFromDb):
+    if message.author.id not in CONSTANTS['ADMINS']:
+        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        return
     level = message.content.split(' ')[1]
     if not level.isdigit():
         await message.channel.send(embed=embed_info("Erreur", "Le niveau doit être un nombre!", discord.Color.red()))
@@ -2299,15 +2310,15 @@ commands = {
     "cla": classement,         # "classement"
     "da": claimHourly,         # "daily"
     "don": giveTicket,         # "donnertickets", "donnerticket", "donner_tickets", "donner_ticket"
-    "fakeC": fakeCharacter,    # "fakeCh"
-    "fakeS": fakeStatistiquesCombat,  # "stat"
-    "fakeT": fakeTeam,         # "fakeT"
+    "fakec": fakeCharacter,    # "fakeCh"
+    "fakes": fakeStatistiquesCombat,  # "stat"
+    "faket": fakeTeam,         # "fakeT"
     "giv": giveTicket,         # "givetickets", "giveticket", "give_tickets", "give_ticket"
     "his": histoire,           # "his"
     "ho": claimHourly,         # "hourly"
+    "infot": infoTechnique,    # "infot"
+    "infos": infoSynergie,     # "infos"
     "inf": info,               # "info"
-    "infoT": infoTechnique,    # "infot"
-    "infoS": infoSynergie,     # "infos"
     "inve": inventaire,        # "inventaire"
     "inv": invocation,         # "invo", "invocation"
     "lis": list_command,       # "list", "help"

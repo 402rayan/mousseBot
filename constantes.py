@@ -4,6 +4,7 @@ CONSTANTS = {
     'MAX_CHARACTERS': 999999,
     'BASE_CHANCE_VICTORY': 0.6,
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
+    'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
         'X': 50,
