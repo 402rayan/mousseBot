@@ -108,78 +108,78 @@ async def niveau15(message, userFromDb, equipe):
         await debutDeNiveau(message, userFromDb, 15, "Village, me revoilà..", equipe, 0x000000)
     else:
         await debutDeNiveau(message, userFromDb, 15, "Village, me revoilà!", equipe, discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous sortez de la cave et reprenez la route vers le village.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Après quelques heures, vous atteignez le village.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if hasChasedPucci:
         # Vous contastez que le village est en ruine, la plus part des habitants sont morts, et vous avez des regrets d'avoir pourchasé Enrico Pucci aulieu d'aider Sanji à combattre le monstre
         await message.channel.send(embed=embed_naratteur("Vous constatez que le village est en ruine, la plupart des habitants sont morts.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(5.3)
+        # await asyncio.sleep(5.3)
         await message.channel.send(embed=embed_naratteur("Vous avez des regrets d'avoir pourchassé Enrico Pucci au lieu d'aider Sanji à combattre le monstre.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(5.3)
+        # await asyncio.sleep(5.3)
         # Vous partez vous recueillir sur la tombe de Sanji
         await embed_histoire_character(message, "", "sanjiTombe", "",  "\"Sanji, tu as été un grand allié, tu vas nous manquer.\"","Vous partez vous recueillir sur la tombe de Sanji.", 0x000000,True)
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         # On décide de faire le tour des habitants pour prendre des nouvelles, on entend qu'un guerrier aggueri se repose en ce moment même au village
         await message.channel.send(embed=embed_raw("...","",discord.Color.dark_theme()))
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await message.channel.send(embed=embed_naratteur("Vous décidez de faire le tour des habitants pour prendre des nouvelles.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4.5)
+        # await asyncio.sleep(4.5)
         await message.channel.send(embed=embed_naratteur("Vous entendez des échos qu'un guerrier aggueri se reposerait en ce moment même au village.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4.5)
+        # await asyncio.sleep(4.5)
 
     else:
         # On constate que le village se reconstruit bien! Tout le monde est heureux et nous remercie d'avoir défendu le village avec sanji
         await message.channel.send(embed=embed_naratteur("Vous constatez que le village se reconstruit bien, tout le monde est joyeux!", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(5.3)
+        # await asyncio.sleep(5.3)
         await message.channel.send(embed=embed_naratteur("Les habitants vous remercient d'avoir défendu le village avec Sanji.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         # sanji nous remercie personnellement et nous dit qu'il est content de nous revoir!
         await embed_histoire_character(message, "Sanji vous remercie :", "", "sanji", "", "Je suis content de vous revoir! Merci encore pour l'autre fois!", discord.Color.gold())
         # Sanji nous donne 2 tickets pour nous remercier
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_info("Sanji vous tend 2 tickets en guise de remerciement!", "", discord.Color.gold()))
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         # Il nousdit qu'un guerrier est là en ce moment même au village si ça peut nous intéresser
         await embed_histoire_character(message, "Sanji vous informe :", "", "sanji", "", "Je ne sais pas si tu es au courant, mais un guerrier aggueri se repose en ce moment même au village.", 0xFFB122)
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         await embed_histoire_character(message, "Sanji vous informe :", "", "sanji", "", "Il est de passage, tu devrais aller le voir avant qu'il ne parte!", discord.Color.gold())
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
 
     await message.channel.send(embed=embed_naratteur("C'est décidé, vous allez essayer de le recruter! Mais d'abord il faut manger!", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     await finDeNiveau(message, userFromDb, 16) # a changer
 
 async def niveau14(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 14, "Révélations", equipe, CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous retournez pour voir si quelqu'un d'autre est présent.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     # Eren se présente
     await embed_histoire_character(message, "Eren vous interpelle :", "erenIntroduction", "eren", "", "Bonjour, je m'appelle Eren.\nVous avez aussi trouver cet endroit à ce que je vois.", CONSTANTS['COLORS']['EREN'],True)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Ce n'est pas la première fois qu'il vient ici, cet endroit regorge de réponses
     await embed_histoire_character(message, "Eren vous informe :", "", "eren", "", "Je suis venu ici plusieurs fois, cet endroit regorge de savoir et de réponses.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     # Il explique aussi que le but de Pucci et de créer un mode où tous les êtres humains connaîtraient leur destinée. Il croit que cela leur permettrait de vivre sans regrets ni surprises, menant à une forme de paix intérieure.
     # Cependant il n'a pas assez d'énergie nécessaire, c'est pour cela qu'il cherche à réunir une armée pour tous les sacrifier et voler leur énergie.
     # Eren  nous explique qu'il faut créer une coalition pour anéantir Pucci si nous souhaitons survivre.
     await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "La personne qui a bouleversé l'espace-temps cherche à créer un monde où tous les êtres humains connaîtraient leur destinée.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(6)
+    # await asyncio.sleep(6)
     await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Il croit que cela leur permettrait de vivre sans regrets ni surprises, menant à une forme de paix intérieure.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(6)
+    # await asyncio.sleep(6)
     await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Cependant, il n'a pas assez d'énergie nécessaire pour réaliser son plan.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Ainsi, pour réaliser son but, il cherche à réunir une armée et à tous les sacrifier pour voler leur énergie.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(6)
+    # await asyncio.sleep(6)
     await embed_histoire_character(message, "Eren vous explique :", "", "eren", "", "Nous devons créer une coalition pour anéantir Pucci si nous souhaitons survivre.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(6)
+    # await asyncio.sleep(6)
     # accepter ou refuser (boucle infinie si on refuse)
     description = "✅ : Accepter\n❌ : Refuser"
     await embed_histoire_character(message, "Eren vous demande :", "erenTendMain", "eren", "", "Êtes-vous prêt à vous battre à mes côtés?", CONSTANTS['COLORS']['EREN'],True)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     while True:
         msg = await message.channel.send(embed=embed_naratteur("Alors?", description, CONSTANTS['COLORS']['BRUIT']))
         for reaction in ['✅', '❌']:
@@ -192,69 +192,69 @@ async def niveau14(message, userFromDb, equipe):
         if str(reaction.emoji) == '✅':
             break
         else:
-            await asyncio.sleep(0.5)
+            # await asyncio.sleep(0.5)
             await embed_histoire_character(message, "Eren :", "", "eren", "", "Je ne peux pas vous forcer à m'aider, mais sachez qu'Enrico Pucci est un adversaire redoutable.", CONSTANTS['COLORS']['EREN'])
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
     # Eren YEager est devenu votre allié
-    await asyncio.sleep(0.5)
+    # await asyncio.sleep(0.5)
     await message.channel.send(embed=embed_naratteur("Eren Yeager est devenu votre allié.", "", discord.Color.green()))
     # Eren Yeager a trouvé 2 tickets dans une des chambre et nous les donne
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Eren vous informe :", "", "eren", "", "Ah et aussi, j'ai trouvé ça dans une des chambres, ça pourrait te servir.", CONSTANTS['COLORS']['EREN'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_info("Vous avez reçu 2 tickets!", "", discord.Color.gold()))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 15,2)
 
 async def niveau13(message, userFromDb, equipe):
     # Début de niveau : maison abandonnée
     await debutDeNiveau(message, userFromDb, 13, "La maison abandonnée", equipe, CONSTANTS['COLORS']['YORUICHI'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # On décide de retourner voir le village pour voir comment ça évolue mais sur la route on apercoit une immense maison
     await message.channel.send(embed=embed_naratteur("Vous décidez de partir en route vers le village pour voir si les habitants se remettent de l'attaque.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5.5)
+    # await asyncio.sleep(5.5)
     await message.channel.send(embed=embed_naratteur("Sur la route, vous apercevez une immense maison semblant abandonnée.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     # On décide d'aller voir ce qu'il se passe
     await message.channel.send(embed=embed_naratteur("Vous décidez d'aller visiter la maison.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     ticket_ramasses = await labyrinthe(message, userFromDb, equipe)
     if ticket_ramasses < 0:
         return await echecNiveau(message, userFromDb, 13)
-    await asyncio.sleep(1)
+    # await asyncio.sleep(1)
     # Vous descendez dans la cave
     await message.channel.send(embed=embed_naratteur("Vous descendez dans la cave..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("En descendant dans la cave, vous sentez une présence derrière vous..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("...", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 14)
     
 async def niveau12(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("En sortant de la montagne, vous croisez Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous félicite :", "", "zuko", "", "Félicitations, tu as réussi la tâche que je t'ai confié.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko est étonné par nos explications :", "", "zuko", "", "Vraiment ?.. J'ignorais qu'il y avait deux membres ici.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous raconte :", "", "zuko", "", "De mon côté, j'ai affronté un membre redoutable nommé Feitan. C'était très éprouvant mais j'ai réussi à le battre.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "J'ai obtenu des réponses. Le prêtre s'appelle en réalité Enrico Pucci.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "Il est en train de former un culte et a bâti un château sur la plaine principale.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous propose un plan :", "", "zuko", "", "Occupons nous d'abord de la brigade, puis nous nous occuperons de Pucci.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous félicite à nouveau :", "", "zuko", "", "Tiens un objet qui pourrait t'être utile.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await message.channel.send(embed=embed_info("Vous avez reçu un Ticket de Diamant!", "", CONSTANTS['COLORS']['TICKET_DIAMANT'] ,"Votre prochaine invocation sera garantie de qualité supérieure!"))
     database.update_special_invocation(userFromDb[1], 1)
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 13,1)
 
 async def niveau11(message, userFromDb, equipe):
@@ -262,44 +262,44 @@ async def niveau11(message, userFromDb, equipe):
     hasRun = database.getChoice(userFromDb[1], "lvl10run")
     if hasRun:
         await debutDeNiveau(message, userFromDb, 11, "La seule rescapée", equipe, CONSTANTS['COLORS']['C18'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # On revient vers la grotte, mais Uvoguin avait détruit une grosse partie avant de nous rattraper
         await message.channel.send(embed=embed_naratteur("Vous revenez vers la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Mais vous ne constatez que des horreurs, Uvoguine a détruit une majeure partie de la grotte lorsque vous avez fui.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous entendez cependant quelqu'un au fond..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous vous précipitez vers la personne..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "La personne vous rassure : ", "c18recoiffe", "c18", "", "Ne t'inquiète pas, mon corp peut résister à ça.", CONSTANTS['COLORS']['C18'])
         # Surpris, on lui demande comment ça se fait
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Surpris, vous lui demandez comment c'est possible.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "C18 :", "", "c18", "", "Je suis un cyborg et je m'appelle C-18, je peux résister à des dégâts que vous ne pouvez pas imaginer.", CONSTANTS['COLORS']['C18'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "C-18 :", "", "c18", "", "Grâce à vous on peut dire que je suis libérée.", CONSTANTS['COLORS']['C18'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "C-18 :", "", "c18", "", "Je vous en suis reconnaissante. Permettez moi de joindre votre équipe.", CONSTANTS['COLORS']['C18'])
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         await giveCharacterHistory(message, userFromDb, "c18")
-        await asyncio.sleep(4.5)
+        # await asyncio.sleep(4.5)
     else:
         await debutDeNiveau(message, userFromDb, 11, "Un nouvel allié!", equipe, CONSTANTS['COLORS']['LEORIO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous revenez vers la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Votre combat a fait beaucoup de dégâts..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # La grotte est entrain de s'écrouler, la plus part des gens sont morts
         await message.channel.send(embed=embed_naratteur("La grotte s'écroule..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("La plupart des prisonniers sont morts mais il semble rester quatre personnes.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Il semblerait que vous n'ayez le temps que pour un seul prisonnier
         await message.channel.send(embed=embed_naratteur("Vous n'avez le temps de libérer qu'un seul prisonnier..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         description = "🤡 : Un homme ressemblant à un clown\n🧒 : Un adolescent aux cheveux ébouriffés\n👔 : Un jeune homme en costume\n👱‍♂️ : Un grand homme blond et charismatique"
         msg = await message.channel.send(embed=embed_naratteur("Qui choisissez-vous de libérer?", description, CONSTANTS['COLORS']['BRUIT']))
         for reaction in ['🤡', '🧒', '👔', '👱‍♂️']:
@@ -311,68 +311,68 @@ async def niveau11(message, userFromDb, equipe):
             return await echecNiveau(message, userFromDb, 11)
         if str(reaction.emoji) == '🤡':
             await message.channel.send(embed=embed_raw("Vous avez libéré l'homme ressemblant à un clown.", "", CONSTANTS['COLORS']['BAGGY']))
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
             await embed_histoire_character(message, "L'homme vous remercie :", "", "baggy", "", "Merci BEAUCOUP, partons d'ici RAPIDEMENTT.", CONSTANTS['COLORS']['BAGGY'])
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "Baggy vous interpelle :", "", "baggy", "", "Je vous en suis reconnaissant, mon nom est Baggy, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['BAGGY'])
-            await asyncio.sleep(5)
+            # await asyncio.sleep(5)
             nomPerso = "Baggy"
         elif str(reaction.emoji) == '🧒':
             await message.channel.send(embed=embed_raw("Vous avez libéré l'adolescent aux cheveux ébouriffés.", "", CONSTANTS['COLORS']['DENKI']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "L'adolescent vous remercie :", "", "denki", "", "Merci énormément, partons d'ici rapidement!!!!", CONSTANTS['COLORS']['DENKI'])
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "Denki vous interpelle :", "", "denki", "", "Je vous en suis reconnaissant, je m'appelle Denki, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['DENKI'])
-            await asyncio.sleep(5)
+            # await asyncio.sleep(5)
             nomPerso = "Denki Kaminari"
         elif str(reaction.emoji) == '👔':
             await message.channel.send(embed=embed_raw("Vous avez libéré le jeune homme en costume.", "", CONSTANTS['COLORS']['LEORIO']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "Le jeune homme vous remercie :", "", "leorio", "", "Merci beaucoup, partons d'ici rapidement!", CONSTANTS['COLORS']['LEORIO'])
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "Leorio vous interpelle :", "", "leorio", "", "Je vous en suis reconnaissant, je m'appelle Leorio, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['LEORIO'])
-            await asyncio.sleep(5)
+            # await asyncio.sleep(5)
             nomPerso = "Leorio"
         else:
             await message.channel.send(embed=embed_raw("Vous avez libéré le grand homme blond.", "", CONSTANTS['COLORS']['ERWIN']))
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
             await embed_histoire_character(message, "Le grand homme vous remercie :", "", "erwin", "", "Merci beaucoup, partons d'ici rapidement!", CONSTANTS['COLORS']['ERWIN'])
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             # vous vous dépechez de sortir de la grotte
             await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
-            await asyncio.sleep(4)
+            # await asyncio.sleep(4)
             await embed_histoire_character(message, "Erwin vous interpelle :", "", "erwin", "", "Je vous en suis reconnaissant, je m'appelle Erwin, permettez-moi de combattre à vos côtés.", CONSTANTS['COLORS']['ERWIN'])
-            await asyncio.sleep(5)
+            # await asyncio.sleep(5)
             nomPerso = "Erwin Smith"
         await giveCharacterHistory(message, userFromDb, nomPerso)
-        await asyncio.sleep(4.5)
+        # await asyncio.sleep(4.5)
     await finDeNiveau(message, userFromDb, 12)
 
 async def niveau10(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 10, "Encore un?", equipe, CONSTANTS['COLORS']['UVOGUINE'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Après avoir vaincu Franklin, on continue notre route mais on entend des bruits venant d'une grotte
     await message.channel.send(embed=embed_naratteur("Après avoir vaincu Franklin, vous continuez votre route..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "", "grotte", "", "", "Vous entendez des cris venant d'une grotte..", CONSTANTS['COLORS']['FORET'],True)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Vous décidez d'aller voir ce qu'il se passe
     await message.channel.send(embed=embed_naratteur("Vous décidez d'aller voir ce qu'il se passe..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Des gens sont enfermés dans des cellules et nous crient de nous en aller le plus vite possible
     await embed_histoire_character(message, "Des gens enfermés dans des cellules vous crient :", "", "inconnu", "", "Partez!! Partez d'ici le plus vite possible!", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message, "Un homme vous interpelle :", "uvoguine", "uvoguine", "", "On dirait bien que mon petit-déjeuner est arrivé!", CONSTANTS['COLORS']['UVOGUINE'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # QQue faire ? Fuir ou combattre
     description = "🏃 : Fuir avec lâcheté" + "\n⚔️ : Combattre avec honneur"
     msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['UVOGUINE']))
@@ -386,46 +386,46 @@ async def niveau10(message, userFromDb, equipe):
     database.updateChoice(userFromDb[1], "lvl10run", str(reaction.emoji) != '⚔️')
     if str(reaction.emoji) == '🏃':
         await message.channel.send(embed=embed_info("Vous avez fui la grotte.", "", discord.Color.green()))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # On entend un bruit d'explosion
         await message.channel.send(embed=embed_naratteur("Vous entendez un bruit d'explosion..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         # Mais uvoguine vous a rattrapé
         await embed_histoire_character(message, "Uvoguine vous interpelle :", "", "uvoguine", "", "Espèce de lâche. Tu ne peux pas m'échapper.", CONSTANTS['COLORS']['UVOGUINE'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
     
     # Combat avec Uvoguine
     if not await combatPvm(message, equipe, ennemis['UVOGUINE']):
         return await echecNiveau(message, userFromDb, 10)
     # Vous avez réussi à le battre
     await message.channel.send(embed=embed_naratteur("Vous avez réussi à battre Uvoguine et vous décidez de vous orienter vers les celulles.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 11)
 
 async def niveau9(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 9, "Synergie et fusillade", equipe, CONSTANTS['COLORS']['FRANKLIN'])
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     # On vérifie que l'utilisateur à bien une synergie dans son équipe
     team = database.get_team(userFromDb[1], userFromDb[2])
     synergies = team['synergies']
     if not synergies:
         await message.channel.send(embed=embed_info("Votre équipe ne présente pas de synergie.", "Vous feriez mieux d'écouter les conseils de Zuko.", CONSTANTS['COLORS']['ZUKO']))
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
         return await echecNiveau(message, userFromDb, 9)
     await message.channel.send(embed=embed_naratteur("Super! Vous avez une synergie dans votre équipe!", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Vous partez vers l'ouest 
     await message.channel.send(embed=embed_naratteur("Vous partez vers l'ouest suite à la demande de Zuko.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Sur la route, vous croisez petit à petit des groupes
     await message.channel.send(embed=embed_naratteur("Sur la route, vous commencez à croiser de plus en plus de regroupements de personnes.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Les gens commencent à se regrouper
     await message.channel.send(embed=embed_naratteur("Votre voyage se passe bien.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Après 4h de route, vous arrivez devant une montagne et vous êtes attaqués subitement par un membre de la brigade fantôme, c'est Pakunoda
     await message.channel.send(embed=embed_naratteur("Après quatre heures de route, vous arrivez devant la montagne décrite par Zuko..", "", CONSTANTS['COLORS']['MONTAGNE']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Franklin nous shoot dessus
     await embed_histoire_character(message, "Quelqu'un vous tire dessus!!", "franklinShoot", "franklin", "", "", CONSTANTS['COLORS']['FRANKLIN'])
     description = "➡️ : Esquiver à droite" + "\n⬅️ : Esquiver à gauche" + "\n🛡️ : Essayer de parer"
@@ -433,9 +433,9 @@ async def niveau9(message, userFromDb, equipe):
     for balle in range(3):
         # Une balle arrive sur vous, que faites vous, esquiver à droite, à gauche, essayer de parer
         addition = "autre " if balle > 0 else ""
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Une " + addition + " balle arrive sur vous..", "", CONSTANTS['COLORS']['FRANKLIN']))
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['FRANKLIN']))
         for reaction in emojis:
             await msg.add_reaction(reaction)
@@ -457,20 +457,20 @@ async def niveau9(message, userFromDb, equipe):
                 await message.channel.send(embed=embed_info("Vous avez réussi à esquiver la balle!", "", discord.Color.green()))
             else:
                 await message.channel.send(embed=embed_info("Vous n'avez pas réussi à esquiver la balle! Vous succombez à vos blessures.", "", discord.Color.red()))
-                await asyncio.sleep(2)
+                # await asyncio.sleep(2)
                 return await echecNiveau(message, userFromDb, 9)
             
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # On arrive à atteindre son corps à corps
     await message.channel.send(embed=embed_naratteur("Vous parvenez à vous rapprocher de votre adversaire.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Combat avec Franklin
     if not await combatPvm(message, equipe, ennemis['FRANKLIN']):
         return await echecNiveau(message, userFromDb, 9)
     # Vous avez réussi à le battre
     # Ce combat n'était pas de tout repos, vous continuez votre route mais votre instinct vous dit d'aller plus loin
     await message.channel.send(embed=embed_naratteur("Ce combat n'était pas de tout repos, vous avez finis la mission de Zuko mais votre instinct vous dit d'aller plus loin.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await finDeNiveau(message, userFromDb, 10)
 
 async def niveau8(message, userFromDb, equipe):
@@ -480,140 +480,140 @@ async def niveau8(message, userFromDb, equipe):
         await debutDeNiveau(message, userFromDb, 8, "Paria du village", equipe, CONSTANTS['COLORS']['ZUKO'])
     else:
         await debutDeNiveau(message, userFromDb, 8, "Héros du village", equipe, discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans une pièce sombre..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Zuko nous dit ah tu es
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ah, tu es réveillé.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if followedPucci:
         # Zuko nous dit qu'il a entendu des combats au loin et quil 'est intervenu
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai entendu des combats au loin, je suis intervenu aussi vite que j'ai pu.", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # J'ai réussi à terasser le monstre mais..
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai réussi à vaincre le monstre qui attaquait le village mais..", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Ton ami aux cheveux blonds n'a pas survécu
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ton ami aux cheveux blonds n'a pas survécu.", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Le village t'en veut
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Le village t'en veut, ils te reprochent d'avoir fui le combat.", CONSTANTS['COLORS']['ZUKO'])
     else:
         # Zuko nous dit qu'il a entendu des combats au loin et quil 'est intervenu
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'ai entendu des combats au loin, je suis intervenu aussi vite que j'ai pu.", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # J'ai réussi à terasser le monstre mais..
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ne t'en fais pas, j'ai réussi à vaincre le monstre qui attaquait le village", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Tout le village t'ait reconnaissant de les avoir sauvé
         await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Tout le village t'est reconnaissant de les avoir sauvés.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Je dois partir rapidement à cause d'un terrible groupe d'individus.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Ils se font appeler la brigade fantome, ils font couler le sang partout.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Puis-je te demander une faveur?", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "J'aimerais que tu t'occupes d'un de leur membre qui se situe vers l'ouest.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko :", "", "zuko", "", "Tu devrais pouvoir le battre, mais assure toi quand même d'avoir une synergie dans ton équipe.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Zuko s'en va.", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 9) 
 
 async def niveau7(message, userFromDb, equipe):
     followedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
     if followedPucci:
         await debutDeNiveau(message, userFromDb, 7, "Poursuite du prêtre mystérieux!", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous partez à la poursuite du prêtre..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous le perdez de vue..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Vous entendez que le combat entre le mosntre et Sanji a commencé et des flammes jaillisent de là bas
         await message.channel.send(embed=embed_naratteur("Vous entendez que le combat entre le monstre et Sanji a commencé..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Du feu jaillis de là bas
         await message.channel.send(embed=embed_naratteur("Des flammes jaillissent de là bas..", "", CONSTANTS['COLORS']['FLAMME']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous entendez un petit bruit..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(1.5)
+        # await asyncio.sleep(1.5)
         # Le prêtre nous dit de rester concentré
         await embed_histoire_character(message, "Le prêtre mystérieux vous rappelle à l'ordre :", "", "pucci", "", "Reste concentré ici.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Le prêtre vous attrape par la gorge et vous emporte avec lui", "pucciShot", "pucci", "", "", CONSTANTS['COLORS']['ENRICO_PUCCI'])
-        await asyncio.sleep(6)
+        # await asyncio.sleep(6)
         await message.channel.send(embed=embed_naratteur("Vous êtes projeté au loin, presque inconscient..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Le Prêtre vous donne un ultime avertissement :", "", "pucci", "", "C'est contre mes intérêts de t'éliminer maintenant.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         await embed_histoire_character(message, "Le Prêtre :", "", "pucci", "", "Donc disparaîs de ma vue, insecte.", CONSTANTS['COLORS']['ENRICO_PUCCI'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("L'aura du prêtre et sa force vous est insupportable..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
     
     else:
         await debutDeNiveau(message, userFromDb, 7, "Défense du village", equipe, CONSTANTS['COLORS']['MAHITO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous décidez de rester défendre le village.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous vous dépêchez d'aller prêter main forte à Sanji..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Mahito", "", "mahito", "", "C'est parfait, continuez à venir, venez me rendre plus fort!", CONSTANTS['COLORS']['MAHITO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Sanji est surpris :", "", "sanji", "", "Je ne peux pas le battre! Attaquons le à 2!", discord.Color.gold())
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous vous battez contre Mahito..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Alors que vous pensiez avoir le dessus..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Mahito", "mahitoDomain", "mahito", "", "Extension du-.. Territoire", CONSTANTS['COLORS']['MAHITO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Zuko intervient :", "", "zuko", "", "Lâche-les.", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message, "Zuko", "zukoThrowFire", "zuko", "", "Je vais m'occuper de lui.", CONSTANTS['COLORS']['ZUKO'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # Avec le combat et l'intervention de Zuko, nous nous évanouissons
         await message.channel.send(embed=embed_naratteur("L'épuisement du au combat, et la chaleur ardente du feu vous est insupportable..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous évanouissez..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 8)
 
 async def niveau6(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 6, "Un repas pris de court", equipe, discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous ressortez de la grotte et il fait jour!", "", CONSTANTS['COLORS']['CIEL']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous apercevez un petit village au loin et décidez d'y aller.", "", CONSTANTS['COLORS']['CIEL']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous êtes accueilis avec hospitalité! Les gens sont souriants et gentils!", "", CONSTANTS['COLORS']['CIEL']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous décidez de manger quelque chose et vous vous dirigez vers le chef cuisinier du village..", "", CONSTANTS['COLORS']['CIEL']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Sanji se présente :", "", "sanji", "", "Je suis Sanji, c'est moi qui m'occupe de faire à manger ici.", discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Sanji :", "", "sanji", "", "Et si vous m'aidiez à faire à manger pour ce midi!", discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     reussis = await cookWithSanji(message, userFromDb)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if not reussis:
         return
     await message.channel.send(embed=embed_naratteur("Le repas est un succès et tout le monde est content!", "", CONSTANTS['COLORS']['CIEL']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Sanji est surpris :", "", "sanji", "", "Mai-s... Qu'est-ce que c'est que ça?!", discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Sanji est terrifié :", "sanjiScared", "sanji", "", "De-des gens se transforment en monstres!", discord.Color.gold(),isNotGif=True)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Un monstre attaque le village", "mahitoAttack", "mahito", "", "", CONSTANTS['COLORS']['MAHITO'])
-    await asyncio.sleep(6)
+    # await asyncio.sleep(6)
     await embed_histoire_character(message,"Sanji s'adresse à nous:", "", "sanji", "", "Je vais m'occuper de lui, occupez-vous des habitants!", discord.Color.gold())
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous occupez de mettre en sécurité les habitants du village, mais quelque chose attire votre attention", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("Vous apercevez un homme au loin, un homme qui ressemble fortement au prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     description = "🏃 : Poursuivre le prêtre" + "\n🛡️ : Défendre le village"
     msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['ENRICO_PUCCI']))
     for reaction in ['🏃','🛡️']:
@@ -627,28 +627,28 @@ async def niveau6(message, userFromDb, equipe):
         await message.channel.send(embed=embed_info("Vous partez à la poursuite du prêtre..", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
     else:
         await message.channel.send(embed=embed_info("Vous décider de rester défendre le village.", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     database.updateChoice(userFromDb[1], "lvl6pucci", str(reaction.emoji) == '🏃')
     await finDeNiveau(message, userFromDb, 7)
 
 async def niveau5(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 5, "Caverne", equipe, CONSTANTS['COLORS']['GROTTE'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Un bruit vous réveille alors que vous étiez entrain de vous reposer dans la caverne..", "", CONSTANTS['COLORS']['GROTTE']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("Une étrange odeur se fait sentir..", "", CONSTANTS['COLORS']['GROTTE']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous levez et apercevez une lumière au fond de la caverne..", "", CONSTANTS['COLORS']['LIGHT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous vous approchez de la lumière..", "", CONSTANTS['COLORS']['LIGHT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous apercevez un humain et un monstre violet au loin..", "", CONSTANTS['COLORS']['PURPLE_HAZE']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     # on entend quelqu'un dire "oh encore des visiteurs, purple Haze tu sais quoi faire"
     await embed_histoire_character(message,"Inconnu", "", "inconnu", "", "Encore des visiteurs? Purple Haze tu sais quoi faire.", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     ticketGagnes, escaped = await purple(message, userFromDb)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if not escaped:
         # On prend le nombre de tickets qu'il a
         tickets = database.get_tickets(userFromDb[1])
@@ -660,32 +660,32 @@ async def niveau5(message, userFromDb, equipe):
         nombreAffiche = abs(ticketGagnes)
         await message.channel.send(embed=embed_info("Vous avez perdu..", f"Vous avez perdu {nombreAffiche} tickets.", discord.Color.red()))
         # On retire les tickets
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 6, ticketGagnes)
 
 async def niveau4(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 4, "Une nouvelle rencontre", equipe, CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Shanks nous annonce qu'il va faire route à part, il à ses amis à retrouver 
     await embed_histoire_character(message,"Shanks vous annonce :", "", "shanks", "", "Eh bien.. je dois faire route à part, je pars retrouver les miens!", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Shanks part 
     await embed_histoire_character(message,"Shanks :", "", "shanks", "", "Je vous souhaite bonne chance!", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await message.channel.send(embed=embed_naratteur("Shanks s'en va..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     # On s'en va dans la forêt pour trouver un endroit sûr
     await message.channel.send(embed=embed_raw("Vous partez dans la forêt pour trouver un endroit sûr..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # On croise quelqu'un 
     await embed_histoire_character(message,"Un inconnu vous interpelle", "", "inconnu", "", "Vous.., là-bas!", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko se présente :", "zuko", "zuko", "", "Je m'appelle Zuko!", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko vous raconte :", "", "zuko", "", "Je viens d'un pays en guerre, je suis arrivé ici il y a peu et rien n'y semble différent..", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko :", "", "zuko", "", "Je cherche mon oncle, savez-vous où il se trouve par hasard?", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     description = "🌍 : Inventer une destination" + "\n❌ : Dire non"
     msg = await embed_histoire_character(message,"Que lui répondez-vous?", "", "zuko", description, "", CONSTANTS['COLORS']['ZUKO'])
     for reaction in ['🌍','❌']:
@@ -701,75 +701,75 @@ async def niveau4(message, userFromDb, equipe):
     else:
         await embed_histoire_character(message,"Zuko", "", "zuko", "", "Je vois.. Merci quand même.", CONSTANTS['COLORS']['ZUKO'])
     database.updateChoice(userFromDb[1], "lvl4zukoLie", str(reaction.emoji) == '🌍')
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko", "", "zuko", "", "Tant que nous y sommes, laissez moi vous prévenir.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko", "", "zuko", "", "Les gens commencent à se regrouper, il devient dangereux de voyager seul.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message,"Zuko", "", "zuko", "", "Vous feriez mieux de trouver un endroit sûr rapidement.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Zuko", "", "zuko", "", "Je dois retourner retrouver mon oncle. Nous nous recroiserons sûrement.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_raw("Zuko s'en va..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous continuez votre route dans la forêt mais vous sentez une présence..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_raw("Un homme perfide vous attaque.", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     if not await combatPvm(message, equipe, ennemis["Tompa"]):
         return await echecNiveau(message, userFromDb, 4)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # QUelqu'un vous observait pendant votre combat et profite pour vous attaquer..
     await message.channel.send(embed=embed_naratteur("Un monstre vous observait pendant votre combat et profite pour vous attaquer également..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     if not await combatPvm(message, equipe, ennemis["Rui"]):
         return await echecNiveau(message, userFromDb, 4)
     # Vous continuez votre route et apercevez une grotte au loin
     await message.channel.send(embed=embed_raw("Ces combats vous ont épuisés..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await message.channel.send(embed=embed_naratteur("Vous continuez votre route et apercevez une grotte au loin..", "Vous partez vous reposer au sein de la grotte.", CONSTANTS['COLORS']['GROTTE']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 5)
 
 async def niveau3(message, userFromDb, equipe):
     ticketsGagnes = 0
     await debutDeNiveau(message, userFromDb, 3, "Vêtu de sang", equipe, CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Le bug qui se produit ne vous téléporte pas cette fois, mais la nuit est tombé d'un coup... 
     # Shanks est rassuré, le bug n'est pas si grave
     await embed_histoire_character(message, "Shanks est rassuré :", "", "shanks", "", "L'anomalie n'a pas l'air si grave.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("La nuit est tombée d'un coup suite à l'anomalie..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Vous parcourez la forêt à la recherche d'autres personnes ou de réponses et des murmures se font entendre au loin.
     await message.channel.send(embed=embed_naratteur("Vous partez en direction la forêt à la recherche d'autres personnes ou de réponses..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Alors que vous voyagez, des murmures se font entendre au loin..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Ces murmures sont étranges, comme s'ils étaient les échos du passés. Un évènement sûrement liés aux bugs.
     await message.channel.send(embed=embed_naratteur("Ces murmures sont étranges..", "*Comme s'ils étaient les échos du passé.*", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Après quelques temps, vous quittez la forêt, il commence subitement à faire très froid. Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme, ils ont du sang sur eux. Vous n'avez même pas le temps de réfléchir qu'ils vous attaquent.
     await message.channel.send(embed=embed_naratteur("Vous quittez la forêt, il commence à faire très froid..", "", CONSTANTS['COLORS']['FROID']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Vous arrivez nez à nez avec un jeune garçon accompagné d'un homme.", "Ils ont du sang sur eux..", CONSTANTS['COLORS']['FROID']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message, "Le jeune garçon vous attaque avant même que vous le réalisez.", "", "froid", "", "", CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(3.5)
+    # await asyncio.sleep(3.5)
     if not await combatPvm(message, equipe, ennemis["Haku"]):
         return await echecNiveau(message, userFromDb, 3)
     # await embed_histoire_character(message, "Shanks est surpris :", "", "shanks", "", "Je ne vous pensais pas aussi fort.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "L'autre homme se jette sur vous :", "", "froid", "", "Tu ne vas pas t'en tirer comme ça!!", CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message, "Shanks immobilise l'homme avant qu'il ne vous attaque :", "shanksHaki", "shanks", "", "", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message, "Shanks lui ordonne :", "", "shanks", "", "Reste bien sage et contente toi de répondre à mes questions.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await embed_histoire_character(message, "L'inconnu est sous le choc :", "", "froid", "", "Hmpf..... Je suppose que je n'ai pas le choix..", CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "L'inconnu vous regarde :", "", "froid", "", "Mais ne rêvez pas, je ne répondrai qu'à une seule question.", CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(3.5)
+    # await asyncio.sleep(3.5)
     """
     1 - Sais-tu où sommes nous?  -> Je l'ignore, mais j'ai apercu un pretre qui blablabla
     2 - Comment es-tu arrivé là? -> j'ai aperçu un homme mystérieux accélerer les cycles de la jours et la nuit, puis j'ai été téléporté dans divers monde, un monde remplis d'eau, un monde remplis de bâtiments immenses.. puis un groupe de gens m'ont attaqué
@@ -789,21 +789,21 @@ async def niveau3(message, userFromDb, equipe):
         await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Je l'ignore, tout ce que j'ai aperçu c'est le jour et la nuit qui ne faisaient plus qu'un.", CONSTANTS['COLORS']['FROID'])
     elif str(reaction.emoji) == '3️⃣':
         await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Quand nous sommes venus ici, divers groupes de personnes nous ont attaqués..", CONSTANTS['COLORS']['FROID'])
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Nous ne vous avons pas attaqué pour le plaisir, mais pour nous défendre.", CONSTANTS['COLORS']['FROID'])
     else:
         await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Non, rien d'intéressant.", CONSTANTS['COLORS']['FROID'])
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await embed_histoire_character(message, "Inconnu :", "", "froid", "", "Ah, peut-être que ce truc pourrait t'intéresser.", CONSTANTS['COLORS']['FROID'])
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         ticketsGagnes += 2
         await message.channel.send(embed=embed_info("L'homme vous tend 2 tickets d'invocations.", "", discord.Color.gold()))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message, "Shanks :", "", "shanks", "", "Merci pour ces informations.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Zabuza nous dis de ne surtout pas oublier que ce monde est impitoyable, et qu'il faut être en permanence sur ses gardes
     await embed_histoire_character(message, "Zabuza :", "", "zabuza", "", "Je reconnais ta puissance. Mon nom est Zabuza, laissez moi vous mettre en garde : nous nous recroiserons.", CONSTANTS['COLORS']['FROID'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 4, ticketsGagnes)
 
 async def niveau2(message, userFromDb, equipe):
@@ -813,26 +813,26 @@ async def niveau2(message, userFromDb, equipe):
     if isFumee:
         nom = "Une fumée étrange"
     await debutDeNiveau(message, userFromDb, 2, nom, equipe, CONSTANTS['COLORS']['FORET'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if isFumee:
         await message.channel.send(embed=embed_raw("Votre équipe et Shanks se dirigent vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         # La fumée provient d'un grand feu de camp
         await message.channel.send(embed=embed_raw("La fumée semble provenir d'un grand feu de camp..", "", CONSTANTS['COLORS']['FUMEE']))
     else:
         await message.channel.send(embed=embed_raw("Votre équipe et Shanks se dirigent vers le bruit.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_raw("Vous trouvez un objet brillant!", "", discord.Color.gold(), "Vous avez trouvé un ticket!"))
         ticketsGagnes += 1
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await embed_histoire_character(message,"Shanks constate:", "", "shanks", "", "Il n'y a rien ici.", CONSTANTS['COLORS']['SHANKS'])
-        await asyncio.sleep(4) 
+        # await asyncio.sleep(4) 
         await message.channel.send(embed=embed_raw("Le bruit recommence et s'approche..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Une grande voix s'exclame : ", "", "inconnu", "", "Hmrpf.. Broggy regarde, nous avons des visiteurs!", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message, "Inconnu", "dorryBroggy", "inconnu", "", "Deux géants intimidants vous regardent", CONSTANTS['COLORS']['INCONNU'],isNotGif=True)
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     # Shanks nous demande que faire, Soit les attaquer soit Essayer de leur parler
     description = "🗡️ : Les attaquer" + "\n💬 : Essayer de leur parler"
     msg = await embed_histoire_character(message,"Shanks :", "", "shanks", description, "Que devrions-nous faire?", CONSTANTS['COLORS']['SHANKS'])
@@ -846,11 +846,11 @@ async def niveau2(message, userFromDb, equipe):
         return await echecNiveau(message, userFromDb, 2)
     if str(reaction.emoji) == '🗡️':
         await message.channel.send(embed=embed_raw("Vous attaquez les géants..", "", discord.Color.red()))
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
         if not await combatPvm(message, equipe, ennemis["Dorry et Broggy"]):
             return await echecNiveau(message, userFromDb, 2)
         await embed_histoire_character(message,"Shanks est perplexe :", "", "shanks", "", "Etait-ce vraiment le bon choix?\nLa violence est rarement la meilleure des solutions.", CONSTANTS['COLORS']['SHANKS'])
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         embed = discord.Embed(
             title="Mai-.. Mais que se passe-t-il ?",
             description="",
@@ -859,18 +859,18 @@ async def niveau2(message, userFromDb, equipe):
         pfp = discord.File("./assets/histoire/shanks.png", filename="shanks.png")
         embed.set_author(name="Shanks :", icon_url="attachment://shanks.png")
         msg = await message.channel.send(files=[pfp], embed=embed)
-        await asyncio.sleep(1)
+        # await asyncio.sleep(1)
         # On changer la couleur du message
         for i in range(4):
             embed.color = couleursBug[i]
             await msg.edit(embed=embed)
-            await asyncio.sleep(1.2)
+            # await asyncio.sleep(1.2)
     else:
         # On essaye de leur parler
         await message.channel.send(embed=embed_raw("Vous essayez de leur parler..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        # await asyncio.sleep(4)
         await message.channel.send(embed=embed_raw("Dorry et Broggy vous écoutent attentivement et semblent amicaux..", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(5)
+        # await asyncio.sleep(5)
         # Ils nous trouvent drôles et nous explique qu'eux aussi étaient sur une île quand des bugs ont commencé à se produire
         embed = discord.Embed(
             title="Nous aussi! Nous étions sur notre île quand la nuit a comm-..",
@@ -880,47 +880,47 @@ async def niveau2(message, userFromDb, equipe):
         pfp = discord.File("./assets/histoire/broggy.png", filename="broggy.png")
         embed.set_author(name="Dorry et Broggy :", icon_url="attachment://broggy.png")
         msg = await message.channel.send(files=[pfp], embed=embed)
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
         # On changer la couleur du message
         for i in range(4):
             embed.color = couleursBug[i]
             await msg.edit(embed=embed)
-            await asyncio.sleep(1.2)
-    await asyncio.sleep(1)
+            # await asyncio.sleep(1.2)
+    # await asyncio.sleep(1)
     # Un nouveau bug se produit
     await message.channel.send(embed=embed_raw("Une nouvelle anomalie se produit..", "",CONSTANTS['COLORS']['ENRICO_PUCCI']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 3, ticketsGagnes)
 
 async def niveau1(message, userFromDb, equipe):
     await message.channel.send(embed=embed_naratteur("Cinématique : Enrico Pucci détruit l'univers...", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans un indroit inconnu.. une autre personne semble ne pas être très loin..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     await message.channel.send(embed=embed_naratteur("Vous semblez être dans une forêt..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(4.5)
+    # await asyncio.sleep(4.5)
     await embed_histoire_character(message,"Un homme inconnu vous demande : ", "", "inconnu", "", "Tout va bien?", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "", "Mon nom est Shanks.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Shanks vous raconte :", "", "shanks", "", "J'étais avec mes compagnons sur mon navire lorsque le ciel s'est assombri.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'ai alors aperçu une sorte de prêtre... et je me suis réveillé ici.", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Inconu", "", "inconnu", "", "Un bruit surgit..", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("Un monstre vous attaque!", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     if not await combatPvm(message, equipe, ennemis["SAIBAMAN"]):
         return await echecNiveau(message, userFromDb, 1)
     await embed_histoire_character(message,"Shanks est étoné :", "", "shanks", "", "Oh mais tu sais te battre!", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await embed_histoire_character(message,"Shanks semble apercevoir quelque chose :", "", "shanks", "", "Serait-ce de la fumée vers là-bas?", CONSTANTS['COLORS']['SHANKS'])
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     await message.channel.send(embed=embed_raw("Mais du côté opposé de la fumée, un bruit retentit dans la forêt..", "", CONSTANTS['COLORS']['BRUIT']))
-    await asyncio.sleep(5)
+    # await asyncio.sleep(5)
     description = "🌲 : Aller vers la forêt" + "\n💨 : Aller vers la fumée"
     msg = await embed_histoire_character(message,"Shanks vous questionne :", "", "shanks", description, "Où devrions-nous aller?", CONSTANTS['COLORS']['SHANKS'])
     for reaction in ['🌲','💨']:
@@ -935,7 +935,7 @@ async def niveau1(message, userFromDb, equipe):
     if str(reaction.emoji) == '💨':
         await message.channel.send(embed=embed_raw("Vous partez en route vers la fumée.", "", CONSTANTS['COLORS']['BRUIT']))
     database.updateChoice(userFromDb[1], "lvl1fumee", str(reaction.emoji) == '💨')
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await finDeNiveau(message, userFromDb, 2)
 
 def embed_raw(titre,description,color, footer=None):
@@ -987,9 +987,9 @@ async def cookWithSanji(message, userFromDb):
     # Il faut cliquer sur la bonne dans les 3 secondes sinon on perd!
     # Il y a 4 réactions différentes dont une seule bonne
     ingredientReussis = 0; totalIngredients = 5; temps = 5
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     while ingredientReussis <= totalIngredients:
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
         temps -= (0.2* temps)
         retour = get_ingredient() 
         ingredient = retour[0]
@@ -1010,7 +1010,7 @@ async def cookWithSanji(message, userFromDb):
         else:
             await message.channel.send(embed=embed_info("Vous avez donné le mauvais ingrédient..", "Le plat est un total désastre.", discord.Color.red()))
             return False
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await embed_histoire_character(message, "Sanji", "sanjiTaste", "sanji", "Grâce à vous, Sanji a pu préparer un plat exquis!", "Félicitations!", discord.Color.gold())
     return True
 
@@ -1029,7 +1029,7 @@ async def purple(message, userFromDb):
     await embed_histoire_character(message, "Purple Haze", "purpleHaze", "purpleHaze", "Fuyez aussi vite que vous pouvez!","Purple Haze a déclenché son virus!", discord.Color.purple())
     alive = True; escaped = False
     ticketsGagnes = 0
-    await asyncio.sleep(7)
+    # await asyncio.sleep(7)
     while alive and not escaped:
         # le taux de mort est entre 0 et 0.3
         tauxDeMort = random.random() * 0.3
@@ -1054,7 +1054,7 @@ async def purple(message, userFromDb):
                 return 0, False
             ticketsGagnes += 1
             await message.channel.send(embed=embed_raw("Vous avez pris le ticket!", f"Tickets sur vous : {ticketsGagnes}", discord.Color.gold()))
-            await asyncio.sleep(2.5)
+            # await asyncio.sleep(2.5)
     return ticketsGagnes, escaped
 
 async def labyrinthe(message, userFromDb, equipe):
@@ -1083,37 +1083,37 @@ async def labyrinthe(message, userFromDb, equipe):
         if pieceActuelle == 'Salle de bain' and not hasDiscoveredSdb:
             hasDiscoveredSdb = True
             await message.channel.send(embed=embed_info(f"Vous avez découvert un ticket dans la salle de bain!", "", discord.Color.gold()))
-            await asyncio.sleep(2)
+            # await asyncio.sleep(2)
             ticketsRamasses += 1
         if pieceActuelle == 'Grenier' and not hasDiscoveredGrenier:
             hasDiscoveredGrenier = True
             await message.channel.send(embed=embed_info(f"Vous avez découvert un ticket dans le grenier!", "", discord.Color.gold()))
-            await asyncio.sleep(2)
+            # await asyncio.sleep(2)
             ticketsRamasses += 1
         if pieceActuelle == 'Forge' and not hasDiscoveredForge:
             hasDiscoveredForge = True
             # vous sentez une présence menaçante dans la forge
             await message.channel.send(embed=embed_info(f"Vous sentez une présence menaçante dans la forge..", "", ))
-            await asyncio.sleep(3.3)
+            # await asyncio.sleep(3.3)
             # embed character il ne s'agissait uqe d'un petit chat
             await embed_histoire_character(message, "", "chatMaisonHantee", "", "", "Ce n'était qu'un petit chat!", CONSTANTS['COLORS']['GRAY_CAT'])
-            await asyncio.sleep(5)
+            # await asyncio.sleep(5)
             # Le chat se transforme ..
             await message.channel.send(embed=embed_info(f"Qu-quoi ? Le chat se transforme..", "", discord.Color.darker_gray()))
-            await asyncio.sleep(3.5)
+            # await asyncio.sleep(3.5)
             database.updateChoice(userFromDb[1], "lvl13chatMaisonHantee", True)
             if not await combatPvm(message, equipe, ennemis["YORUICHI"]):
                 return -1
             await message.channel.send(embed=embed_info(f"Vous avez réussi à vaincre la femme chat, et vous vous apercevez qu'elle avait des objets sur elle!", "", CONSTANTS['COLORS']['BRUIT']))
-            await asyncio.sleep(5.3)
+            # await asyncio.sleep(5.3)
             await message.channel.send(embed=embed_info(f"Vous avez trouvé 5 tickets !", "", discord.Color.gold()))
-            await asyncio.sleep(3.5)
+            # await asyncio.sleep(3.5)
             ticketsRamasses += 5
         if ticketsRamasses <= 0:
             await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"", discord.Color.blue()))
         else:
             await message.channel.send(embed=embed_info(f"Vous êtes actuellement dans la pièce {pieceActuelle}.", f"Tickets trouvés : {ticketsRamasses}", discord.Color.blue()))
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
         listePiecesAvailables = maison[pieceActuelle]
         listePiecesAvailables = random.sample(listePiecesAvailables, len(listePiecesAvailables))
         description = ""
@@ -1172,7 +1172,7 @@ async def couleur(message, userFromDb):
     # Récupère un personnage de chaque rang et les affiche avec embed_invocation
     for rang in ["F", "E", "D", "C", "B", "A", "S", "SS", "X"]:
         template = database.get_character_template_by_rarity(rang)
-        await asyncio.sleep(0.5)
+        # await asyncio.sleep(0.5)
         await message.channel.send(embed=embed_invocation(template))
 
 
@@ -1208,11 +1208,11 @@ async def claimHourly(message, userFromDb):
         titre = f"Vous avez obtenu {str(CONSTANTS['HOURLY_TICKETS'])} tickets et beaucoup d'expérience!"
         await message.channel.send(embed=embed_auteur(message.author,f"Récompense :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
         if random.random() < 0.3:
-            await asyncio.sleep(1)
+            # await asyncio.sleep(1)
             await message.channel.send(embed=embed_info("Récompense spéciale", "Vous avez obtenu un ticket bonus!", discord.Color.gold()))
             database.update_tickets(user.id, database.get_tickets(user.id) + 1)
         if random.random() < 0.05:
-            await asyncio.sleep(1)
+            # await asyncio.sleep(1)
             await message.channel.send(embed=embed_info("Récompense spéciale", "Votre prochaine invocation sera chanceuse!", discord.Color.gold()))
             database.update_special_invocation(user.id, True)
     elif not(claim[0]):
@@ -1253,7 +1253,7 @@ async def invocation(message, userFromDb, lucky=False):
     template = donnees[0]
     if specialInvocation:
         await message.channel.send(embed=embed_info("Oh.. Mais c'est un Ticket de Diamant!", "", CONSTANTS['COLORS']['TICKET_DIAMANT']))
-        await asyncio.sleep(2)
+        # await asyncio.sleep(2)
     msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
     if rarityOfCharacter in ['X','SS']:
@@ -1263,15 +1263,15 @@ async def invocation(message, userFromDb, lucky=False):
 
         msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
         if schema[-1] == True: # Si l'invocation est longue
-            print("Invocation longue")
-            await asyncio.sleep(8)
+            duree = 8
         else:
-            await asyncio.sleep(6)
+            duree = 6
+        # await asyncio.sleep(duree)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
         
     elif rarityOfCharacter in ["F", "E", "D", "C"]:
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await msg.edit(embed=embed_invocation(template,message.author))
 
     else:
@@ -1280,9 +1280,9 @@ async def invocation(message, userFromDb, lucky=False):
         couleurs = [discord.Color.green(), discord.Color.blue(), discord.Color.purple(), discord.Color.orange(), discord.Color.red(), discord.Color.gold(), discord.Color.teal(), discord.Color.dark_gold(), discord.Color.dark_teal()]
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
-            await asyncio.sleep(random.uniform(1, 2))
+            # await asyncio.sleep(random.uniform(1, 2))
             await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
-        await asyncio.sleep(3)
+        # await asyncio.sleep(3)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
     return
@@ -1431,7 +1431,7 @@ async def info(message, userFromDb):
 async def combatPvm(message, team, ennemi):
     logger.info(f"Commande !combatPvm appelée par {message.author.name} ({message.author.id})   contre {ennemi['nom']}.")
     await introductionCombat(message, team, ennemi)
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     # Calcul des sommes des statistiques pour l'équipe et l'ennemi
     somme_stats_ennemi = ennemi['stats']['ATK'] + ennemi['stats']['DEF'] + ennemi['stats']['HP']
     somme_stats_team = team['stats']['ATK'] + team['stats']['DEF'] + team['stats']['HP']
@@ -1460,7 +1460,7 @@ async def combatPvm(message, team, ennemi):
             else:
                 personnageQuiJoue = ennemi["nom"]
             await tour(message, personnageQuiJoue, team)
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
     elif combatType == 2:
         #Combat mid diff
         ordre = ["team", "ennemi", "team", "ennemi", "team"] 
@@ -1476,7 +1476,7 @@ async def combatPvm(message, team, ennemi):
             else:
                 personnageQuiJoue = ennemi["nom"]
             await tour(message, personnageQuiJoue, team)
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
     else:
         # Combat difficile
         ordre = ["team","ennemi","team","ennemi","team","ennemi","team"]
@@ -1492,16 +1492,16 @@ async def combatPvm(message, team, ennemi):
             else:
                 personnageQuiJoue = ennemi["nom"]
             await tour(message, personnageQuiJoue, team)
-            await asyncio.sleep(3)
-    await asyncio.sleep(2)
+            # await asyncio.sleep(3)
+    # await asyncio.sleep(2)
     await message.channel.send(embed=embed_info("Le combat semble être terminé ...", "", 0x00000))
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     # Vous avez triomphé si on a gagné sinon on a perdu
     if victoire:
         await message.channel.send(embed=embed_info("Vous avez triomphé de l'adversaire !!", "", discord.Color.gold()))
     else:
         await message.channel.send(embed=embed_info("Vous avez été vaincu par l'ennemi!", "", discord.Color.red()))
-    await asyncio.sleep(4)
+    # await asyncio.sleep(4)
     return victoire
 
 @bot.command()
@@ -1551,7 +1551,7 @@ async def pvp(message, userFromDb):
     database.update_tickets(vainqueur.id, database.get_tickets(vainqueur.id) + parie)
     database.update_tickets(perdant.id, database.get_tickets(perdant.id) - parie)
     await message.channel.send(embed=embed_info( f"L'équipe de {vainqueur.name} sort triomphante du combat!","", 0x03FF44))
-    await asyncio.sleep(3)
+    # await asyncio.sleep(3)
     await message.channel.send(embed=embed_info( f"{vainqueur.name} a gagné {parie} tickets!","", discord.Color.gold(),f"{perdant.name} a perdu {parie} tickets!"))
 
 
@@ -1634,7 +1634,7 @@ async def accepterCombatPvp(message, adversaireDiscord):
 @bot.command()
 async def combatPvp(message, teamA, teamB, adversaireDiscord):
     await introductionCombatPvp(message, teamA, teamB, adversaireDiscord)
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     # Calcul des sommes des statistiques pour l'équipe et l'ennemi
     somme_stats_teamA = teamA['stats']['ATK'] + teamA['stats']['DEF'] + teamA['stats']['HP']
     somme_stats_teamB = teamB['stats']['ATK'] + teamB['stats']['DEF'] + teamB['stats']['HP']
@@ -1663,7 +1663,7 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
             else:
                 personnageQuiJoue = random.choice(teamB['team'])[6]
             await tour(message, personnageQuiJoue, teamA)
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
     elif combatType == 2:
         #Combat mid diff
         ordre = ["teamA", "teamB", "teamA", "teamB", "teamA"] 
@@ -1679,7 +1679,7 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
             else:
                 personnageQuiJoue = random.choice(teamB['team'])[6]
             await tour(message, personnageQuiJoue, teamA)
-            await asyncio.sleep(3)
+            # await asyncio.sleep(3)
     else:
         # Combat difficile
         ordre = ["teamA","teamB","teamA","teamB","teamA","teamB","teamA"]
@@ -1695,10 +1695,10 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
             else:
                 personnageQuiJoue = random.choice(teamB['team'])[6]
             await tour(message, personnageQuiJoue, teamA)
-            await asyncio.sleep(3)
-    await asyncio.sleep(2)
+            # await asyncio.sleep(3)
+    # await asyncio.sleep(2)
     await message.channel.send(embed=embed_info("Le combat semble être terminé ...", "", 0x00000))
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     # Vous avez triomphé si on a gagné sinon on a perdu
     return victoire
 
@@ -1707,7 +1707,7 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
 async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     # Affiche l'introduction du combat
     await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
-    await asyncio.sleep(0.5)
+    # await asyncio.sleep(0.5)
     teamA_atk = teamA['stats']['ATK']; teamA_def = teamA['stats']['DEF']; teamA_hp = teamA['stats']['HP']
     teamB_atk = teamB['stats']['ATK']; teamB_def = teamB['stats']['DEF']; teamB_hp = teamB['stats']['HP']
     titre = "Votre équipe est prête à combattre!"; statsTeamA = f"HP:{teamA_hp} ATK:{teamA_atk} DEF:{teamA_def}"
@@ -1723,17 +1723,17 @@ async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     embed2B = embed_character(message,teamB['team'][1], titreB, description1B + " ~ " + description2B, statsTeamB, adversaireDiscord)
     embed3B = embed_character(message,teamB['team'][2], titreB, description1B + " ~ " + description2B + " ~ " + description3B, statsTeamB, adversaireDiscord)
     msg = await message.channel.send(embed=embed)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg.edit(embed=embed2)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg.edit(embed=embed3)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await message.channel.send(embed=embedVs)
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     msg2 = await message.channel.send(embed=embedB)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg2.edit(embed=embed2B)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg2.edit(embed=embed3B)
     return
 
@@ -1746,11 +1746,11 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
     if random.random() < 0.25 and not onlyAttack: #message de suspens
         liste_messages = ["Le combat fait rage!", "Le combat est intense!", "Les combattants se jaugent!", "Mais qui l'emportera?", "Le combat est acharné!","Le danger se fait ressentir..","Incroyable!!","La tension est à son comble", "Le combat touche-t-il à sa fin?", "Le combat est serré!"]
         await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
-        await asyncio.sleep(2.5)
+        # await asyncio.sleep(2.5)
     if onlyAttack:
         liste_messages = ["Le combat n'est que d'un côté..", "Le combat est déséquilibré!", "Le combat est à sens unique!", "Le combat est facile!", "C'est un massacre...", "Le combat est expéditif!", "Quelle humiliation!", "Trop simple!", "Le combat est plié en un coup??!"]
         await message.channel.send(embed=embed_info(random.choice(liste_messages), "",discord.Color.dark_purple()))
-        await asyncio.sleep(2.5)
+        # await asyncio.sleep(2.5)
     if attaques and len(attaques) > 0 and random.random() < 0.9:
         attaque = random.choice(attaques)
         nom = attaque[2]; verbe = attaque[3]; gif = attaque[4]; couleur = int(attaque[5][1:], 16)
@@ -1761,7 +1761,7 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
         if gif:
             embed.set_image(url=gif)
         await message.channel.send(embed=embed)
-        await asyncio.sleep(1.5)
+        # await asyncio.sleep(1.5)
         return
     # Sinon, on envoie une attaque normale
     rdm = random.random()
@@ -1809,7 +1809,7 @@ def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
 async def introductionCombat(message, team, ennemi):
     # Affiche l'introduction du combat
     await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
-    await asyncio.sleep(0.5)
+    # await asyncio.sleep(0.5)
     team_atk = team['stats']['ATK']; team_def = team['stats']['DEF']; team_hp = team['stats']['HP']
     titre = "Votre équipe est prête à combattre!"; statsTeam = f"HP:{team_hp} ATK:{team_atk} DEF:{team_def}"
     perso1 = team['team'][0]; perso2 = team['team'][1]; perso3 = team['team'][2]
@@ -1818,13 +1818,13 @@ async def introductionCombat(message, team, ennemi):
     embed2 = embed_character(message,team['team'][1], titre, description1 + " ~ " + description2, statsTeam)
     embed3 = embed_character(message,team['team'][2], titre, description1 + " ~ " + description2 + " ~ " + description3, statsTeam)
     msg = await message.channel.send(embed=embed)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg.edit(embed=embed2)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await msg.edit(embed=embed3)
-    await asyncio.sleep(2.5)
+    # await asyncio.sleep(2.5)
     await message.channel.send(embed=embedVs)
-    await asyncio.sleep(2)
+    # await asyncio.sleep(2)
     if not ennemi['isNotGif']:
         isNotGif = False
     else:
