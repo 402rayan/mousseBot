@@ -1602,6 +1602,10 @@ all_techniques = {
     ],
 
     # Hunter x Hunter
+    "Gon" : [
+        ["Jajanken", "prépare son", image_temporaire, hexadecimal_temporaire],
+        ["Recharge", "", "", "#5c3307"],
+    ],
     "Franklin" : [
         ["Déluge de Balles", "déverse un", "https://i.imgur.com/0KyJyzH.gif", "#5c3307"],
         ["Recharge", "", "", "#5c3307"],
@@ -1615,6 +1619,53 @@ all_techniques = {
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
     ],
     # Bleach
+    "Ichigo" : [
+        ["Getsuga Tensho", "envoie un", image_temporaire, hexadecimal_temporaire],
+        ["Cero", "crache un", "https://imgur.com/ZZgr71O", hexadecimal_temporaire],
+    ],
+    "Aizen" : [
+        ["Hado 99", "récite le", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Yamamoto" : [
+        ["Zanka no Tachi : Est", "utilise", "https://imgur.com/zgVMTdr", hexadecimal_temporaire],
+        ["Zanka no Tachi : Ouest", "utilise", "https://imgur.com/CCH55ZX", hexadecimal_temporaire],
+        ["Zanka no Tachi : Nord", "utilise", "https://imgur.com/zQZmGM3", hexadecimal_temporaire],
+        ["Zanka no Tachi : sud", "utilise", "https://imgur.com/IRxf4ks", hexadecimal_temporaire],
+    ],
+    "Ichibe Hyosube" : [
+        ["Senri Tsūtenshō", "écrase avec", image_temporaire, hexadecimal_temporaire],
+        ["Coupant le nom", "tranche en", image_temporaire, hexadecimal_temporaire],
+        ["Changeant le nom", "affaiblit en", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Byakuya Kuchiki" : [
+        ["Senbonzakura Kageyoshi : Senkei", "dévoile la vraie forme de son bankai...", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Jugram" : [
+        ["Senbonzakura Kageyoshi", "relâche son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Kenpachi" : [
+        ["Senbonzakura Kageyoshi", "relâche son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Unohana" : [
+        ["Minazuki", "attaque avec", "https://imgur.com/vAN5RVV", hexadecimal_temporaire],
+    ],
+    "Ulquiorra" : [
+        ["Cero", "relâche son", image_temporaire, hexadecimal_temporaire],
+        ["Resureccion", "se transforme avec...", image_temporaire, hexadecimal_temporaire],
+        ["Segunda", "obtient plus de pouvoir avec...", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Starrk" : [
+        ["Meute de loups", "relâche sa", "https://imgur.com/dk5nUz1", hexadecimal_temporaire],
+        ["Cero", "tire un", "https://imgur.com/LW5pio6", hexadecimal_temporaire],
+        ["Cero Metralleta", "tire des", "https://imgur.com/zaILTvs", hexadecimal_temporaire],
+    ],
+    "Gin" : [
+        ["Shinsō", "relâche", "https://imgur.com/L3xpAp2", hexadecimal_temporaire],
+        ["Kamishini no Yari", "relâche", "https://imgur.com/fO4Lur4", hexadecimal_temporaire],
+    ],
+    "Renji" : [
+        ["Zabimaru", "fait hurler", image_temporaire, hexadecimal_temporaire],
+    ],
         "Yoruichi" : [
         ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
         ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
