@@ -1565,7 +1565,7 @@ async def invocation(message, userFromDb, lucky=False):
         await message.channel.send(embed=embed_invocation(template,message.author))
         
     elif rarityOfCharacter in ["F", "E", "D", "C"]:
-        await asyncio.sleep(3)
+        await asyncio.sleep(2)
         await msg.edit(embed=embed_invocation(template,message.author))
 
     else:
@@ -1575,7 +1575,7 @@ async def invocation(message, userFromDb, lucky=False):
         random.shuffle(couleurs) # On mélange les couleurs
         for i in range(nombreRotation[rarityOfCharacter]):
             await asyncio.sleep(random.uniform(1, 2))
-            await msg.edit(embed=embed_info("Invocation...", phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(), couleurs[i]))
+            await msg.edit(embed=embed_info(phrases_invocation[i] if i < 2 else phrases_invocation[i].upper(),"", couleurs[i]))
         await asyncio.sleep(3)
         await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
@@ -1692,7 +1692,6 @@ async def autoTeam(message, userFromDb):
         await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
         return
     if str(reaction.emoji) == '❌':
-        msg.delete()
         return
     # On équipe la meilleure équipe
     for i in range(3):
@@ -2239,7 +2238,7 @@ async def infoSynergie(message, userFromDb):
         return str(int(nombre * 100)) + "%"
     embed.set_footer(text=f"Boost : {typeOfBoost} {formatteur(forceOfBoost)}")
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
-    embed.add_field(name="Personnages", value=liste_personnages[:1999], inline=False)
+    embed.add_field(name="Personnages", value=liste_personnages[:950] + "..." if len(liste_personnages) > 950 else "", inline=False)
     embed.set_image(url=image)
     
     await message.channel.send(embed=embed)

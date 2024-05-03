@@ -695,7 +695,7 @@ class Database:
         self.create_character_template_synergy_table()
         self.create_character_template_technique_table()
         self.createAllDatas()
-        logger.info("Les tables des personnages et des synergies ont été réinitialisées.")
+        logger.success("Les tables des personnages et des synergies ont été réinitialisées.")
         
     def createGifsFromDatabase(self):
         self.cur.execute("SELECT * FROM character_templates")
@@ -766,10 +766,10 @@ class Database:
         return self.cur.fetchall()
     
     def get_synergie_equilibrage(self, id, verbose=False):
-        self.cur.execute(f"SELECT * FROM character_template_synergies c JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
+        self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
         base_rate = 100 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'X' : 9, 'SS' : 7, 'S' : 5, 'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1, 'E' : 0, 'F' : 0}
+        taux_de_baisse = {'X' : 6.5, 'SS' : 5.75, 'S' : 5, 'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1, 'E' : 0, 'F' : 0}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None
@@ -780,7 +780,7 @@ class Database:
                 print(f"Le personnage {character[3]}[{rarete}] et fait passer le taux de {base_rate + taux_de_baisse[rarete]} à {base_rate}.")
         final_base_rate = max(20, base_rate) / 100
         print(f"La synergie {synergie[1]} a un taux de {final_base_rate}.") if verbose else None
-        return 
+        return final_base_rate
 
     def set_equilibre_synergy(self, id, rate,verbose=False):
         self.cur.execute(f"UPDATE synergies SET force_of_boost = {rate} WHERE synergy_id = {id}")
@@ -798,3 +798,5 @@ class Database:
         logger.success("Toutes les synergies ont été équilibrées.")
 
         
+a = Database('mousse.db')
+print(a.get_synergie_equilibrage(221))
