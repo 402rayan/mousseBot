@@ -1670,16 +1670,36 @@ async def autoTeam(message, userFromDb):
         await message.channel.send(embed=embed_info("Vous avez déjà utilisé cette commande récemment!","Veuillez attendre au moins 5 minutes entre chaque utilisation.", discord.Color.red()))
         return
     max_power = teams[0][1]
+    footer = "✅ : Oui ❌ : Non"
+
     embed = discord.Embed(
-        title="Voici vos meilleures équipes",
-        color=get_color_based_on_power(teams[0][1])
+        title="",
+        color=get_color_based_on_power(teams[0][1]/3)
     )
     for team, power in teams:
         team_to_write = (' - ').join([character[6] for character in team['team']])
         synergies_to_write = (' ~ ').join([synergie for synergie in team['synergies']])
         embed.add_field(name=f"{team_to_write}", value=f"Statistiques totales : **{power}**\nSynergies : {synergies_to_write}", inline=False)
-    embed.set_author(name=message.author.name, icon_url=message.author.avatar.url)
-    await message.channel.send(embed=embed)
+    embed.set_author(name="Meilleurs équipes de " + message.author.name, icon_url=message.author.avatar.url)
+    embed.set_footer(text="Souhaitez vous équiper l'équipe 1?\n" + footer)
+    msg = await message.channel.send(embed=embed)
+    # On lui demande s'il veut équiper la meilleure équipe
+    await msg.add_reaction('✅')
+    await msg.add_reaction('❌')
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) == '❌':
+        msg.delete()
+        return
+    # On équipe la meilleure équipe
+    for i in range(3):
+        character = teams[0][0]['team'][i]
+        database.set_team(message.author.id, message.author.name, character[0], i+1)
+    await message.channel.send(embed=embed_info( "L'équipe 1 a été équipée!","" ,discord.Color.green(), "Vous pouvez l'afficher avec !team"))
+    
 
 @bot.command()
 async def giveTicket(message, userFromDb):
