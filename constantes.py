@@ -133,6 +133,7 @@ CONSTANTS = {
         "C18" : 0xeedbab, "DENKI" : 0xb38d48, "BAGGY" : 0xa10f21,
         "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b, "GRAY_CAT" : 0x3c3c3d,
         "EREN" : 0x3f3131, "SOMA" : 0xf62a43, "NANAMI" : 0xaca97f,
+        "NOUS": 0x000000
         
     },
     "NOMS_GIF_INVOCATION": [
@@ -172,6 +173,18 @@ phrases_invocation = [
 
 
 ennemis = {
+    "NANAMI" : {
+        'nom' : 'Kento Nanami',
+        'couleur' : CONSTANTS['COLORS']['NANAMI'],
+        'nomGif' : 'nanami',
+        'nomPfp' : 'nanami',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 8000,
+            'ATK' : 0,
+            'DEF' : 0,
+        }
+    },
     "YORUICHI" : {
         'nom' : 'Yoruichi',
         'couleur' : CONSTANTS['COLORS']['YORUICHI'],
@@ -179,15 +192,11 @@ ennemis = {
         'nomPfp' : 'yoruichi',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 2000,
-            'ATK' : 2500,
-            'DEF' : 2200,
+            'HP' : 8000,
+            'ATK' : 0,
+            'DEF' : 0,
         }
     },
-
-
-
-
     "FRANKLIN" : {
         'nom' : 'Franklin',
         'couleur' : CONSTANTS['COLORS']['FRANKLIN'],

@@ -127,6 +127,7 @@ class Database:
             lvl6pucci BOOLEAN DEFAULT NULL,
             lvl10run BOOLEAN DEFAULT NULL,
             lvl13chatMaisonHantee BOOLEAN DEFAULT NULL,
+            lvl18skipDialogue BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')
@@ -626,14 +627,14 @@ class Database:
             INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?)
             ''', all_characters_templates[univers])
         self.conn.commit()
-        logger.info("Les templates de personnages ont été ajoutés à la base de données.")
+        logger.success("Les templates de personnages ont été ajoutés à la base de données.")
 
     def create_synergies(self):
         self.cur.executemany('''
         INSERT INTO synergies (synergy_id, name, type_of_boost, force_of_boost, description, image_url, color) VALUES (?, ?, ?, ?, ?, ?, ?) 
         ''', all_synergies)
         self.conn.commit()
-        logger.info("Les synergies ont été ajoutées à la base de données.")
+        logger.success("Les synergies ont été ajoutées à la base de données.")
     
     def create_link_synergies(self):
         for synergy_id, characters in all_link_synergies.items():
@@ -645,7 +646,7 @@ class Database:
                 # print(char_id, synergy_id)
                 self.cur.execute(f"INSERT INTO character_template_synergies (template_id, synergy_id) VALUES ({char_id}, {synergy_id})")
         self.conn.commit()
-        logger.info("Les liens de synergies ont été ajoutés à la base de données.")
+        logger.success("Les liens de synergies ont été ajoutés à la base de données.")
         
     def create_techniques(self, verbose=False):
         for character, techniques in all_techniques.items():
@@ -657,7 +658,7 @@ class Database:
                 if verbose:
                     logger.info(f"La technique {technique[0]} a été ajoutée pour le personnage {character}.")
         self.conn.commit()
-        logger.info("Les techniques ont été ajoutées à la base de données.")
+        logger.success("Les techniques ont été ajoutées à la base de données.")
 
     def createAllDatas(self):
         self.create_character_templates()
@@ -665,7 +666,7 @@ class Database:
         self.create_link_synergies()
         self.create_techniques()
         self.conn.commit()
-        logger.info("Toutes les données ont été ajoutées à la base de données.")
+        logger.success("Toutes les données ont été ajoutées à la base de données.")
 
     def reset(self,verbose=False):
         self.cur.execute("DROP TABLE IF EXISTS users")
@@ -679,6 +680,7 @@ class Database:
         self.create_tables()
 
         self.createAllDatas()
+        self.equilibrer_synergies()
         if verbose:
             logger.info("Les tables ont été supprimées.")
 
@@ -763,3 +765,36 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_techniques WHERE template_id = {identifiant}")
         return self.cur.fetchall()
     
+    def get_synergie_equilibrage(self, id, verbose=False):
+        self.cur.execute(f"SELECT * FROM character_template_synergies c JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
+        base_rate = 100 # De base, le multiplicateur d'une synergie est de 1
+        characters = self.cur.fetchall()
+        taux_de_baisse = {'X' : 9, 'SS' : 7, 'S' : 5, 'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1, 'E' : 0, 'F' : 0}
+        synergie = self.get_synergy(id)
+        if synergie is None:
+            return None
+        for character in characters:
+            rarete = character[4]
+            base_rate -= taux_de_baisse[rarete]
+            if verbose:
+                print(f"Le personnage {character[3]}[{rarete}] et fait passer le taux de {base_rate + taux_de_baisse[rarete]} à {base_rate}.")
+        final_base_rate = max(20, base_rate) / 100
+        print(f"La synergie {synergie[1]} a un taux de {final_base_rate}.") if verbose else None
+        return 
+
+    def set_equilibre_synergy(self, id, rate,verbose=False):
+        self.cur.execute(f"UPDATE synergies SET force_of_boost = {rate} WHERE synergy_id = {id}")
+        self.conn.commit()
+        logger.info(f"La synergie {id} a été mise à jour avec un taux de {rate}.") if verbose else None
+
+    def equilibrer_synergies(self):
+        # on recupere toutes les synergies
+        self.cur.execute(f"SELECT * FROM synergies")
+        synergies = self.cur.fetchall()
+        for synergy in synergies:
+            equilibrage = self.get_synergie_equilibrage(synergy[0],False)
+            if equilibrage is not None:
+                self.set_equilibre_synergy(synergy[0],equilibrage, True)
+        logger.success("Toutes les synergies ont été équilibrées.")
+
+        

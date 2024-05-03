@@ -1360,7 +1360,7 @@ all_link_synergies = {
     178 : ["Ikarugo","Kain Fuery","Falman","Heinkel","Hannes","Maria Ross","Zofia","Darius","Pieck Finger"], # Soldat
     177 : ["Hermep","Corazon","Maes Hughes", "Cheetu", "Zazan","Meleoron","Koruto","Levi Ackerman","Miles","Buccaneer"], # Lieutenant
     176 : ["Tashigi", "Hina", "Koby","Roy Mustang"], # Colonel
-    175 : ["Smoker","Haguar D. Sauro","Tsuru","Doll","Vergo"], # Vice Amiral
+    175 : ["Smoker","Haguar D. Sauro","Tsuru","Doll","Vergo","Monkey D. Garp"], # Vice Amiral
     174 : ["Crocodile","Dracule Mihawk", "Baggy"], # Cross Guild
     173 : ["Tomura Shigaraki", "All For One", "Dabi", "Spinner", "Himiko Toga", "Twice", "Re-Destro", "Gigantomachia","Mustard"], # Front de Libération du Paranormal
     172 : ["Konan","Karuto Zoldyck"], # Maitre du papier
@@ -1482,7 +1482,7 @@ all_link_synergies = {
     2 : ["Son Goku", "Vegeta", "Son Gohan", "Trunks", "Son Goten","Gotenks", "Bardock", "Raditz", "Nappa", "Broly", "Cabba","Caulifla","Kale","Kefla","Pan","Roi Vegeta","Goku Black","Gogeta","Vegeto"], # Saiyan
     4 : ["Monkey D. Luffy", "Roronoa Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"], # Mugiwara
     5 : ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Shisui Uchiha", "Fugaku Uchiha", "Indra Otsutsuki", "Izuna Uchiha", "Sarada Uchiha"], # Uchiha
-    7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Monkey D. Garp", "Fujitora", "Ryokugyu", "Kong"], # Amiral
+    7 : ["Akainu", "Aokiji", "Kizaru", "Sengoku", "Fujitora", "Ryokugyu", "Kong"], # Amiral
     10 : ["Barbe Blanche", "Kaido", "Big Mom", "Shanks", "Marshall D. Teach","Monkey D. Luffy","Baggy"], # Yonko
     14 : ["Yamamoto", "Unohana", "Byakuya Kuchiki", "Kenpachi", "Jushiro Ukitake", "Kyoraku", "Sajin", "Mayuri", "Toshiro Hitsugaya", "Rukia Kuchiki","Kisuke Urahara","Yoruichi"], # Gotei 13
     15 : ["Hashirama Senju", "Tobirama Senju", "Hiruzen Sarutobi", "Minato Namikaze", "Tsunade", "Kakashi Hatake", "Naruto Uzumaki","Mei Terumi", "Onoki", "Gaara","Danzo Shimura","Darui"], # Kage
@@ -1646,6 +1646,14 @@ all_techniques = {
     # Jujutsu Kaisen
     "Naobito Zenin" : [
         ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
+    ],
+    "Kento Nanami" : [
+        ["Attrape l''ennemi par les cheveux", "", "https://i.imgur.com/6dtJ6ld.gif", "#ddd8ae"],
+        ["Attaquer","se prépare à", "https://i.imgur.com/XNH41aE.gif" ,"#14899f"],
+        ["Attaque", "charge son", "https://i.imgur.com/P16NNUU.gif", "#14899f"],
+        ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
+        ["Attaque sans hésiter", "", "https://i.imgur.com/saF6Iht.gif", "#f3d6cb"],
+        ["Heures sups","passe en", "https://i.imgur.com/z3USMrr.gif","#14899f"]
     ],
 
     
