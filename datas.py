@@ -1621,31 +1621,35 @@ all_techniques = {
     # Bleach
     "Ichigo" : [
         ["Getsuga Tensho", "envoie un", "https://i.imgur.com/mHF2EnN.gif", "#360204"],
-        ["Cero", "crache un", "https://imgur.com/ZZgr71O.gif", "#d1252b"],
+        ["Cero", "crache un", "https://i.imgur.com/70blaTc.gif", "#d1252b"],
         ["Slash de Reitasu", "envoie des", "https://i.imgur.com/PUwrStw.gif", "#58120b"],
+        ["Furie", "est dans une", "https://i.imgur.com/X68C2XH.gif", "#c37f3c"],
+        ["Mugetsu", "active", "https://i.imgur.com/oTTHb5B.gif", "#000000"],
+        ["l''attaque de l''adversaire", "attrape", "https://i.imgur.com/amStjId.gif", "#040207"],
     ],
-    "Yhwach" : [
+    "Yhwach" : [ #TOGIF
         ["The Almighty", "active", image_temporaire, hexadecimal_temporaire],
         ["Sankt Altar", "invoque", "https://i.imgur.com/R34bul2.png", "#1064bc"],
         ["Heilig Pfeil", "déchaine", image_temporaire, "#1064bc"],
         ["Épée de Reishi", "crée", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
     ],
-    "Aizen" : [
-        ["Kanzen Saimin", "trompe avec", image_temporaire, hexadecimal_temporaire],
+    "Aizen" : [ #TOGIF
+        ["Kanzen Saimin", "trompe avec", "https://i.imgur.com/mkttGe5.gif", "#3994a4"],
         ["Hakuda", "utilise son", image_temporaire, hexadecimal_temporaire],
-        ["Hado 99", "récite le", image_temporaire, hexadecimal_temporaire],
-        ["Raikoho", "utilise", "https://i.imgur.com/wEqU1hb.gif", "#dfe107"]
+        ["Hadō #99 : Goryūtenmetsu", "récite le", image_temporaire, hexadecimal_temporaire],
+        ["Raikoho", "utilise", "https://i.imgur.com/wEqU1hb.gif", "#dfe107"],
+        ["Pression Spirituelle", "utilise sa", image_temporaire, hexadecimal_temporaire],
     ],
     "Yamamoto" : [
-        ["Zanka no Tachi : Est", "utilise", "https://imgur.com/zgVMTdr.gif", hexadecimal_temporaire],
-        ["Zanka no Tachi : Ouest", "utilise", "https://imgur.com/CCH55ZX.gif", hexadecimal_temporaire],
-        ["Zanka no Tachi : Nord", "utilise", "https://imgur.com/zQZmGM3.gif", hexadecimal_temporaire],
-        ["Zanka no Tachi : sud", "utilise", "https://imgur.com/IRxf4ks.gif", hexadecimal_temporaire],
+        ["Zanka no Tachi : Est", "utilise", "https://imgur.com/zgVMTdr.gif", "#5e3026"],
+        ["Zanka no Tachi : Ouest", "utilise", "https://imgur.com/CCH55ZX.gif", "#de981b"],
+        ["Zanka no Tachi : Nord", "utilise", "https://imgur.com/zQZmGM3.gif", "#540a1d"],
+        ["Zanka no Tachi : sud", "utilise", "https://imgur.com/IRxf4ks.gif", "#e47a1c"],
     ],
     "Kyoraku" : [
-        ["Kageoni", "manipule les ombres,", "https://i.imgur.com/RKm4Qqq.gif", hexadecimal_temporaire],
-        ["Takaoni", "domine l'air,", "https://i.imgur.com/KAeJRad.gif", hexadecimal_temporaire],
-        ["Bushōgoma", "tourbillone,", "https://i.imgur.com/cbmbqUY.gif", hexadecimal_temporaire],
+        ["Kageoni", "manipule les ombres,", "https://i.imgur.com/RKm4Qqq.gif", "#7ebfc5"],
+        ["Takaoni", "domine l''air,", "https://i.imgur.com/KAeJRad.gif", "#4490b5"],
+        ["Bushōgoma", "tourbillone,", "https://i.imgur.com/cbmbqUY.gif", "#c1edf1"],
     ],
     "Ichibe Hyosube" : [
         ["Senri Tsūtenshō", "écrase avec", "https://i.imgur.com/Elu42jv.gif", "#000000"],
@@ -1654,15 +1658,15 @@ all_techniques = {
     ],
     "Senjumaru" : [
         ["Shatatsu Karagara Shigarami no Tsuji", "active son bankai,", "https://i.imgur.com/9jh8re0.gif", "#fb0c32"],
-        ["Shide no Rokushiki Ukimon no Hata", "active", "https://i.imgur.com/frGkeC0.gif", "#fb0c32"]
-        ["Shigarami : défense", "utilise", "https://i.imgur.com/RXvtOaN.gif", "#b19e98"],
+        ["Shide no Rokushiki Ukimon no Hata", "active", "https://i.imgur.com/frGkeC0.gif", "#fb0c32"],
+        ["Shigarami : défense", "utilise", "https://i.imgur.com/RXvtOaN.gif", "#b19e98"], #TOCUT
         ["Destin", "écrit le", image_temporaire, hexadecimal_temporaire],
     ],
     "Kisuke Urahara" : [
         ["Hadō #91 : Senju Kōten Taihō", "incante", "https://i.imgur.com/dbugnqM.gif", "#c84ea4"],
         ["Nake, Benihime", "utilise", "https://i.imgur.com/Mozt8qm.gif", "#3f4e61"],
-        ["Hiasobi, Benihime", "active", "https://i.imgur.com/PxsXbaN.gif", hexadecimal_temporaire],
-        ["Kamisori, Benihime", "envoie", "https://i.imgur.com/2NXRhZP.gif", hexadecimal_temporaire],
+        ["Hiasobi, Benihime", "active", "https://i.imgur.com/PxsXbaN.gif", "#d33143"],
+        ["Kamisori, Benihime", "envoie", "https://i.imgur.com/2NXRhZP.gif", "#ce6a4e"],
     ],
     "Byakuya Kuchiki" : [
         ["Senkei", "dévoile la vraie forme de son bankai...", "https://i.imgur.com/SI3rmzH.png", "#feccee"],
@@ -1673,14 +1677,17 @@ all_techniques = {
     "Jugram" : [
         ["The Balance", "relâche son", "https://i.imgur.com/n7dxZHp.gif", "#1d7e86"],
         ["Épée", "sort son", "https://i.imgur.com/xmPTmXs.gif", "#3f4e61"],
+        ["parade", "réalise une", image_temporaire, hexadecimal_temporaire],
     ],
     "Kenpachi" : [
         ["Nozarashi", "appelle", "https://i.imgur.com/AKUkZjd.gif", "#670f32"],
         ["Reiatsu", "relâche son", "https://i.imgur.com/9srFwb8.gif", "#dfe107"],
-        ["Slash", "envoie un", "https://i.imgur.com/XrfmTF1.gif", hexadecimal_temporaire],
+        ["Slash", "envoie un", "https://i.imgur.com/XrfmTF1.gif", "#e3e0c0"],
     ],
     "Unohana" : [
-        ["Minazuki", "attaque avec", "https://imgur.com/vAN5RVV.gif", hexadecimal_temporaire],
+        ["Minazuki", "attaque avec", "https://imgur.com/vAN5RVV.gif", "#400e10"],
+        ["parade", "réalise une", image_temporaire, hexadecimal_temporaire],
+        ["charge", "fait une", image_temporaire, hexadecimal_temporaire],
     ],
     "Ulquiorra" : [
         ["Cero ulquiorra", "relâche son", "https://i.imgur.com/zbAspmw.gif", "#23dca8"],
@@ -1688,22 +1695,24 @@ all_techniques = {
         ["Lanza del Relámpago", "prépare sa", "https://i.imgur.com/4HTHgLe.gif", "#23dca8"],
     ],
     "Starrk" : [
-        ["Meute de loups", "relâche sa", "https://imgur.com/dk5nUz1.gif", hexadecimal_temporaire],
-        ["Cero starrk", "tire un", "https://imgur.com/LW5pio6.gif", hexadecimal_temporaire],
-        ["Cero Metralleta", "tire des", "https://imgur.com/zaILTvs.gif", hexadecimal_temporaire],
+        ["Meute de loups", "relâche sa", "https://imgur.com/dk5nUz1.gif", "#468eb6"],
+        ["Cero", "tire un", "https://imgur.com/LW5pio6.gif", "#11b2e2"],
+        ["Cero Metralleta", "tire des", "https://imgur.com/zaILTvs.gif", "#1449c1"],
     ],
     "Gin" : [
-        ["Shinsō", "relâche", "https://imgur.com/L3xpAp2.gif", hexadecimal_temporaire],
-        ["Kamishini no Yari", "relâche", "https://imgur.com/fO4Lur4.gif", hexadecimal_temporaire],
+        ["Shinsō", "relâche", "https://imgur.com/L3xpAp2.gif", "#0582b1"],
+        ["Kamishini no Yari", "relâche", "https://imgur.com/fO4Lur4.gif", "#979694"],
     ],
     "Renji" : [
-        ["Zabimaru", "fait hurler", "https://i.imgur.com/SOl62hI.gif", hexadecimal_temporaire],
-        ["Sōō Zabimaru", "envoie chasser", "https://i.imgur.com/6vXLNo0.gif", hexadecimal_temporaire],
+        ["Zabimaru", "fait hurler", "https://i.imgur.com/SOl62hI.gif", "#0b5664"],
+        ["Sōō Zabimaru", "envoie chasser", "https://i.imgur.com/6vXLNo0.gif", "#99a2ad"],
         ["Zaga Teppō", "réduit l''ennemi en cendres avec", "https://i.imgur.com/ItRVkFP.gif", hexadecimal_temporaire],
     ],
         "Yoruichi" : [
         ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
         ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
+        ["Hakuda", "détruit avec son", "https://i.imgur.com/3TvdfJS.gif", "#ea6b42"],
+        ["Rafale", "balance une", "https://i.imgur.com/Qoz9ITj.gif", "#f2e8a8"],
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
