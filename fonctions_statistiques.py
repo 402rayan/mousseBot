@@ -147,11 +147,11 @@ def analyse_stats_aberrantes():
     seuil = input("Entrez le seuil de détection d'aberration (1.3 par défaut) : ")
     seuil = float(seuil) if seuil else 1.3
     for character in all_characters:
-        if character[4] > moyennes[character[2]][0] * seuil:
+        if character[4] > moyennes[character[2]][0] * seuil or character[4] < moyennes[character[2]][0] * (2-seuil):
             print(f"{character[1]} a une attaque de {character[4]} contre une moyenne de {moyennes[character[2]][0]}")
-        if character[5] > moyennes[character[2]][1] * seuil:
+        if character[5] > moyennes[character[2]][1] * seuil or character[5] < moyennes[character[2]][1] * (2-seuil):
             print(f"{character[1]} a une défense de {character[5]} contre une moyenne de {moyennes[character[2]][1]}")
-        if character[6] > moyennes[character[2]][2] * seuil:
+        if character[6] > moyennes[character[2]][2] * seuil or character[6] < moyennes[character[2]][2] * (2-seuil):
             print(f"{character[1]} a une vie de {character[6]} contre une moyenne de {moyennes[character[2]][2]}")
 
 def getMoyennes(all_characters):
