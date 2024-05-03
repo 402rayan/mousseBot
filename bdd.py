@@ -1,3 +1,4 @@
+from itertools import combinations
 import random
 import shutil
 import sqlite3
@@ -55,6 +56,7 @@ class Database:
             character_slot_three INTEGER,
             histoireLevel INTEGER DEFAULT 1,
             next_invocation INTEGER DEFAULT 0,
+            last_time_auto_team DATETIME DEFAULT NULL,
             FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
@@ -76,7 +78,6 @@ class Database:
         )
         ''')
         self.conn.commit()
-
 
     def create_character_table(self):
         self.conn.execute('''
@@ -149,6 +150,46 @@ class Database:
         self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
     
+    def autoTeam(self, user_discord_id,ignoreTime = False):
+        max_character_auto_team = 50
+        # Vérifie que l'utilisateur a moins de 50 personnages
+        self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
+        count = self.cur.fetchone()[0]
+        if count >= max_character_auto_team:
+            return "ERROR_MAX_CHARACTERS"
+        if count < 3:
+            return "ERROR_MIN_CHARACTERS"
+        # Récupère les personnages de l'utilisateur
+        # Verifie qu'il n'a pas utilisé la commande il y a 2 minutes
+        self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
+        last_time = self.cur.fetchone()[0]
+        last_time = datetime.strptime(last_time, '%Y-%m-%d %H:%M:%S.%f') if last_time is not None else None
+        if last_time is not None and last_time + timedelta(minutes=3) > datetime.now() and not ignoreTime:
+            return "ERROR_AUTO_TEAM_TOO_FAST"
+        self.cur.execute(f"UPDATE users SET last_time_auto_team = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+        characters = self.get_characters(user_discord_id)
+        all_teams = []
+        # Générer toutes les combinaisons possibles de 3 personnages
+        for team_characters in combinations(characters, 3):
+            team = sorted(team_characters, key=lambda x: x[1])  # Tri des personnages par nom
+            all_teams.append(team)
+
+        # 2. Éliminer les doublons en utilisant un ensemble
+        teams_set = {tuple(team) for team in all_teams}
+        all_teams = [list(team) for team in teams_set]
+
+        all_stats = []
+
+        for team in all_teams:
+            stats = self.simulation_stats_team(team,True)
+            total_power = stats['stats']['ATK'] + stats['stats']['DEF'] + stats['stats']['HP']
+            all_stats.append((stats, total_power))
+        
+        all_stats.sort(key=lambda x: x[1], reverse=True)
+        return all_stats[:3]
+        
+
     def updateChoice(self, user_discord_id, choice, value):
         self.cur.execute(f"UPDATE user_choices SET {choice} = {value} WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
@@ -206,7 +247,6 @@ class Database:
     def update_level_and_xp(self,character_id, xp_to_add):
         # Récupère l'XP actuel et le niveau de l'utilisateur
         current_xp, current_level = self.get_current_xp_and_level(character_id)
-        print(current_xp, current_level)
         
         # Mise à jour de l'XP
         new_xp = current_xp + xp_to_add
@@ -280,7 +320,7 @@ class Database:
             # print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
             if Levenshtein.distance(template[1].lower(), template_name.lower()) <= 1:
                 if user_name == "Bot":
-                    print(template_name + " a été trouvé avec une distance.")
+                    logger.warning(f"Levenshtein : {template[1].lower()} - {template_name.lower()}")
                 return template
         # Troisième étape : On vérifie si le nom est dans le nom du template
         for template in all_templates:
@@ -288,7 +328,7 @@ class Database:
                 if user_name == "Bot":
                     print(template_name, " a été trouvé dans le nom.")
                 return template
-        print(template_name, " n'a pas été trouvé.")
+        logger.error(f"Le template {template_name} n'a pas été trouvé.")
         return None
     
     def get_synergie_by_name(self, user_discord_id, user_name, synergy_name):
@@ -459,23 +499,37 @@ class Database:
         team = {'team': team, 'stats': stats, 'synergies': noms_synergies, 'bonus': bonus}
         return team
     
-    def simulation_stats_team(self,team):
+    def simulation_stats_team(self,team, isRealData = False):
         stats = {'HP': 0, 'ATK': 0, 'DEF': 0}
-        for char in team:
-            if char is not None:
-                stats['HP'] += int(char[4])
-                stats['ATK'] += int(char[5])
-                stats['DEF'] += int(char[6])
+        if isRealData:
+            for char in team:
+                if char is not None:
+                    stats['HP'] += int(char[9]) + self.get_current_xp_and_level(char[0])[1]
+                    stats['ATK'] += int(char[10]) + self.get_current_xp_and_level(char[0])[1]
+                    stats['DEF'] += int(char[11]) + self.get_current_xp_and_level(char[0])[1]
+        else:
+            for char in team:
+                if char is not None:
+                    stats['HP'] += int(char[4]) 
+                    stats['ATK'] += int(char[5])
+                    stats['DEF'] += int(char[6])
 
         # Calcul des synergies et leurs nombres
         synergies = {}
         for char in team:
             if char is not None:
-                for synergy in self.get_synergies_by_character_template(char[0]):
-                    if synergy[1] not in synergies:
-                        synergies[synergy[1]] = 1
-                    else:
-                        synergies[synergy[1]] += 1
+                if isRealData:
+                    for synergy in self.get_synergies_by_character_template(char[5]):
+                        if synergy[1] not in synergies:
+                            synergies[synergy[1]] = 1
+                        else:
+                            synergies[synergy[1]] += 1
+                else:
+                    for synergy in self.get_synergies_by_character_template(char[0]):
+                        if synergy[1] not in synergies:
+                            synergies[synergy[1]] = 1
+                        else:
+                            synergies[synergy[1]] += 1
         
         # Calcul des boosts des synergies et application sur les statistiques
         bonus = {'HP': 0, 'ATK': 0, 'DEF': 0}

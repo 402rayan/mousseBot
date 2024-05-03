@@ -1269,7 +1269,7 @@ all_synergies = [
     (225, "Divin", "ATK", 0.70, "Les Divins sont des individus qui possedent des pouvoirs divins et qui peuvent detruire des planetes entieres.", image_temporaire, "#00000"),
     (226, "Jumeau", "DEF", 0.45, "Les Jumeaux sont des individus qui sont nes en meme temps et qui partagent un lien special.", image_temporaire, "#00000"),
     (227, "Marque des pourfendeurs", "ATK", 0.45, "Les Marques des Pourfendeurs sont des marques qui apparaissent sur le corps des Pourfendeurs pour les proteger des attaques ennemies.", image_temporaire, "#00000"),
-    (228, "Chef d'Organisation criminelle", "DEF", 0.45, "Les Chefs d'Organisation sont des individus qui dirigent des organisations criminelles et qui controlent le crime dans leur ville.", image_temporaire, "#00000"),
+    (228, "Chef d'Organisation Criminelle", "DEF", 0.45, "Les Chefs d'Organisation sont des individus qui dirigent des organisations criminelles et qui controlent le crime dans leur ville.", image_temporaire, "#00000"),
 ]
 
 # Utilisateur de dague

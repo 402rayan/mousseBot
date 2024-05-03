@@ -1,5 +1,6 @@
 # Import the required modules
 import asyncio
+from datetime import datetime, timedelta
 import os
 import random
 import discord
@@ -1589,6 +1590,35 @@ async def inventaire(message, userFromDb):
             break
 
 @bot.command()
+async def autoTeam(message, userFromDb):
+    # Retourne la liste des 3 meilleurs teams possibles pour le joueur
+    logger.info(f"Commande !autoTeam appelée par {message.author.name} ({message.author.id}).")
+    if message.author.id not in CONSTANTS['ADMINS']:
+        teams = database.autoTeam(message.author.id)
+    else:
+        teams = database.autoTeam(message.author.id, True)
+    if teams == "ERROR_MAX_CHARACTERS":
+        await message.channel.send(embed=embed_info("Vous devez avoir moins de 50 personnages pour utiliser cette commande!","", discord.Color.red()))
+        return
+    if teams == "ERROR_MIN_CHARACTERS":
+        await message.channel.send(embed=embed_info("Vous devez avoir au moins 3 personnages pour utiliser cette commande!","", discord.Color.red()))
+        return
+    if teams == "ERROR_AUTO_TEAM_TOO_FAST":
+        await message.channel.send(embed=embed_info("Vous avez déjà utilisé cette commande récemment!","Veuillez attendre au moins 5 minutes entre chaque utilisation.", discord.Color.red()))
+        return
+    max_power = teams[0][1]
+    embed = discord.Embed(
+        title="Voici vos meilleures équipes",
+        color=get_color_based_on_power(teams[0][1])
+    )
+    for team, power in teams:
+        team_to_write = (' - ').join([character[6] for character in team['team']])
+        synergies_to_write = (' ~ ').join([synergie for synergie in team['synergies']])
+        embed.add_field(name=f"{team_to_write}", value=f"Statistiques totales : **{power}**\nSynergies : {synergies_to_write}", inline=False)
+    embed.set_author(name=message.author.name, icon_url=message.author.avatar.url)
+    await message.channel.send(embed=embed)
+
+@bot.command()
 async def giveTicket(message, userFromDb):
     # Fonction qui permet à un joueur A de donner x tickets à un joueur B
     contenu = message.content
@@ -2346,12 +2376,12 @@ async def classement(message, userFromDb):
     classement = database.getClassement(message.guild.members)
     max_length = 10
     classement = classement[:max_length]
-    titre = "Classement des joueurs de " + message.guild.name + " :"
+    titre = "Classement des joueurs de **" + message.guild.name + "** :"
     response = ""
     for index, joueur in enumerate(classement):
         identifiant = joueur[0]
         user = await message.guild.fetch_member(identifiant)
-        response += f"{index + 1}. {user.name} - {joueur[1]} puissance\n"
+        response += f"{index + 1}. {user.name} - **{joueur[1]}** puissance\n"
     await message.channel.send(embed=embed_info(titre, response, discord.Color.blue(),"La puissance est calculée en fonction des niveaux et des personnages de votre inventaire."))
 
 def get_color_based_on_power(power):
@@ -2546,6 +2576,7 @@ commands = {
     "add": ajouterTeam,        # "addteam", "add_team"
     "admi": admin,             # "admin"
     "aff": afficherUnivers,    # "affi"
+    "au": autoTeam,            # "autoTeam"
     "ba": inventaire,         # "bag"
     "bo": inventaire,          # "box"
     "cla": classement,         # "classement"
