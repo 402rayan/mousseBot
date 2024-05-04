@@ -1644,7 +1644,7 @@ all_techniques = {
         ["Zanka no Tachi : Est", "utilise", "https://imgur.com/zgVMTdr.gif", "#5e3026"],
         ["Zanka no Tachi : Ouest", "utilise", "https://imgur.com/CCH55ZX.gif", "#de981b"],
         ["Zanka no Tachi : Nord", "utilise", "https://imgur.com/zQZmGM3.gif", "#540a1d"],
-        ["Zanka no Tachi : sud", "utilise", "https://imgur.com/IRxf4ks.gif", "#e47a1c"],
+        ["Zanka no Tachi : Sud", "utilise", "https://imgur.com/IRxf4ks.gif", "#e47a1c"],
     ],
     "Kyoraku" : [
         ["Kageoni", "manipule les ombres,", "https://i.imgur.com/RKm4Qqq.gif", "#7ebfc5"],
@@ -1663,7 +1663,7 @@ all_techniques = {
         ["Destin", "écrit le", image_temporaire, hexadecimal_temporaire],
     ],
     "Kisuke Urahara" : [
-        ["Hadō #91 : Senju Kōten Taihō", "incante", "https://i.imgur.com/dbugnqM.gif", "#c84ea4"],
+        ["Hadō #91 : Senju Kōten Taihō", "incante", "https://i.imgur.com/ZabGk5k.gif", "#c84ea4"],#TOSPEED
         ["Nake, Benihime", "utilise", "https://i.imgur.com/Mozt8qm.gif", "#3f4e61"],
         ["Hiasobi, Benihime", "active", "https://i.imgur.com/PxsXbaN.gif", "#d33143"],
         ["Kamisori, Benihime", "envoie", "https://i.imgur.com/2NXRhZP.gif", "#ce6a4e"],
@@ -1713,6 +1713,46 @@ all_techniques = {
         ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
         ["Hakuda", "détruit avec son", "https://i.imgur.com/3TvdfJS.gif", "#ea6b42"],
         ["Rafale", "balance une", "https://i.imgur.com/Qoz9ITj.gif", "#f2e8a8"],
+    ],
+    #Jujutsu Kaisen
+    "Satoru Gojo" : [
+        ["Infini", "active l''", "https://i.imgur.com/ZCJhdVh.gif", "#518c98"],
+        ["Rouge", "utilise", "https://i.imgur.com/1EFWK0U.gif", "#f90727"],
+        ["Bleu", "utilise", "https://i.imgur.com/3fXmK6l.gif", "#1365ca"],
+        ["Violet", "forme un", "https://i.imgur.com/QcO2cfC.gif", "#a60ef1"],
+        ["Extension du territoire : Sphère de l''infini", "active son", "https://i.imgur.com/NHUyKs8.gif", "#2d1a28"],
+        ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],
+        ["Maîtrise du corps à corps", "montre sa", "https://i.imgur.com/OLo0crU.gif", "#17436d"],
+    ],
+    "Sukuna" : [
+        ["Trancher sukuna", "utilise", "https://i.imgur.com/Kr5pygu.gif", "#040404"],
+        ["Découper", "utilise", "https://i.imgur.com/jzZsHne.gif", "#8b9095"],
+        ["Fuga", "utilise", "https://i.imgur.com/i0PQMY3.gif", "#df4012"],
+        ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],
+        ["Extension du territoire : Autel démoniaque", "active son", "https://i.imgur.com/gvKzpbm.gif", "#863022"],
+        ["Écrasement de tête", "fait un", "https://i.imgur.com/uMTONBX.gif", "#2a4c39"]
+    ],
+    "Kenjaku" : [
+        ["Uzumaki", "dévoile sa technique ultime : ", "https://i.imgur.com/AQvIrP1.gif", "#5e197f"],
+        ["Explosion des hématies", "utilise", "https://i.imgur.com/cQwFQR0.gif", "#c5a1a5"],
+        ["Manipulation des esprits", "utilise la", image_temporaire, hexadecimal_temporaire],
+        ["Taijutsu", "utilise son", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Toji Fushiguro" : [
+        ["Taillade l''adversaire", "", "https://i.imgur.com/2EEqXgy.gif", "#714125"],
+        ["Esquives", "fait des", "https://i.imgur.com/5YShl2n.gif", "#4c2e1f"],
+        ["Contre", "effectue un", "https://i.imgur.com/zKHDC83.gif", "#587482"],
+        ["Taillade Fulgurante", "effectue une", "https://i.imgur.com/jqglnGo.gif", "#2b4358"],
+        ["Flashstep", "fait un", "https://i.imgur.com/m6ZionY.gif", "#223c56"],
+    ],
+    "Yuta Okkotsu" : [
+        ["Katana", "coupe avec son", "https://i.imgur.com/Ga15R1e.gif", "#aa9e88"],
+        ["Se défend", "", "https://i.imgur.com/ZoQZnft.gif", "#4d4a4f"],
+        ["Katana d''énergie", "charge son", "https://i.imgur.com/DcqaGRT.gif", "#a03364"],
+        ["Rayon d''énergie occulte", "envoie un", "https://i.imgur.com/Rx2CfzF.gif", "#dd8fbf"],
+        ["Rika", "invoque", "https://i.imgur.com/7rpjIBU.gif", "#fbedf5"],
+        ["Attaque Coordonnée", "fait une", "https://i.imgur.com/fy48wQW.gif", "#b92090"],
+        ["Énergie occulte", "relâche son", "https://i.imgur.com/7whSzsH.gif", "#a80729"],
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
