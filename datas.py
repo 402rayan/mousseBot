@@ -17,7 +17,7 @@ all_characters_templates = {
 
             # Personnages SS
             ("Belmod", "SS", "https://i.imgur.com/Yeq7JQY.gif", 800, 900, 800),
-            ("Piccolo", "SS", "https://i.imgur.com/srHRyMX.gif", 800, 850, 800),
+            ("Piccolo", "SS", "https://i.imgur.com/srHRyMX.gif", 800, 850, 800), #TOCHECK
             ("Champa", "SS", 'https://i.imgur.com/F7Q78tL.gif', 800, 1000, 800),
             ("Vegeto", "SS", "https://i.imgur.com/DBewj1R.gif", 770, 810, 770),
             ("Gogeta", "SS", "https://i.imgur.com/JFrolYA.gif", 750, 800, 760),
@@ -1623,11 +1623,112 @@ all_link_synergies = {
 
 all_techniques = {
     # Dragon Ball
-    "Hit" : [
-        ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
+    "Beerus" : [
+        ["Hakai", "", "https://i.imgur.com/pAu6e7G.gif", "#e991f8"],
+        ["Sphère Destructrice", "lance sa", "https://i.imgur.com/1YNIOFz.gif", "#bd8be2"],
+        ["Éternue", "", "https://i.imgur.com/ZJNbnIH.gif","#cb6b7f"],
+        ["Colère du Dieu de la destruction", "envoie la", "https://i.imgur.com/YhLMMCs.gif", "#f5a03e"],
+        ["Enchainement", "envoie un", "https://i.imgur.com/gieaWmt.gif", "#84738d"],
+        ["s''en fiche du combat et mange sa pizza", "", "https://i.imgur.com/lcT3lVL.gif", "#0662da"],
+        ["Choqué de la nullité du combat", "", "https://i.imgur.com/Mqd6nVH.gif", "#9d7ea8"],
+        ["N''en peut plus du combat", "", "https://i.imgur.com/O3a72WV.gif", "#5e2c97"],
+    ],
+    "Champa" : [
+        ["Hakai", "", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Gogeta" : [
+        ["KAMEHAME-HAAAAAAAAAAA", "", "https://i.imgur.com/OnuTsTG.gif", "#371fde"],
+        ["Punition divine", "utilise", "https://i.imgur.com/Ly5sMII.gif", "#654aba"],
+        ["Punition divine", "utilise", "https://i.imgur.com/zRfP9iX.gif", "#fba009"],
+        ["Combo météore", "enchaîne avec un", "https://i.imgur.com/CzRInJN.gif", "#456ae8"],
+        ["Explosion météore", "charge son", "https://i.imgur.com/VoFhDpU.gif", "#1731df"],
+        ["Combo météore", "réalise un", "https://i.imgur.com/dc7gIIj.gif", "#cd4a11"],
+        ["Provoque l''ennemi", "", "https://i.imgur.com/w53p2Ly.gif", "#283b41"],
+        ["Canon", "balance", "https://i.imgur.com/mZvXd1f.gif", "#7deef7"],
+        ["Posture", "prend sa", "https://i.imgur.com/Qcgs5OY.gif", "#f2a877"],
+    ],
+    "Vegeto" : [
+        ["Épée divine", "tranche avec son", image_temporaire, hexadecimal_temporaire],
+        ["FINAL KAMEHAMEHAAAAAAA", "ENVOIE SON", "https://i.imgur.com/jXJQCP4.gif", "#59b1d5"],
+        ["Attaque météore", "frappe avec", image_temporaire, hexadecimal_temporaire],
+        ["God Impact", "fait un", "https://i.imgur.com/Gk4oMJP.gif", "#0d1313"],
+        ["Provoque l''ennemi", "", "https://i.imgur.com/eEWWCNf.gif", "#053d17"],
+        ["Se protège", "", "https://i.imgur.com/4ye5ZqT.gif", "#d8f7f9"],
     ],
     "Son Goku" : [
         ["Teleportation", "utilise sa", "https://i.imgur.com/skth3A1.gif", "#ff0000"],
+        ["Kamehameha", "lance un", "https://i.imgur.com/ozIJcuK.gif", "#bcdef0"],
+        ["Kamehameha", "lance un", "https://i.imgur.com/CuHFx5j.gif", "#49aad1"],
+        ["Droite", "envoie une grosse", "https://i.imgur.com/7Dg7800.gif", "#d6d951"],
+        ["Esquive", "tape des", "https://i.imgur.com/Rasq5gJ.gif", "#7e97eb"],
+        ["Esquive", "", "https://i.imgur.com/XvK4qm2.gif", "#2c4322"],
+        ["a pitié de son adversaire", "", "https://i.imgur.com/upTNZ6n.gif", "#516bc4"],
+        ["Contre-attaque", "réalise une", "https://i.imgur.com/ApFWb3h.gif", "#a2c8e6"],
+    ],
+    "Son Gohan" : [
+        ["Kamehameha", "lance son", "https://i.imgur.com/7v6zirc.gif", "#5bcbdd"],
+        ["Makankosappo ultime", "utilise", "https://i.imgur.com/Q1ndqFd.gif", "#ad0027"],
+        ["Contre-attaque", "effectue une", "https://i.imgur.com/pntJwnt.gif", "#e25cf0"],
+        ["Déploie son Ki", "", "https://i.imgur.com/8dxkOae.gif", "#92eae3"],
+    ],
+    "Vegeta" : [
+        ["Canon Garric", "lance", "https://i.imgur.com/goDqVvM.gif", "#c369e1"],
+        ["Final Flash", "utilise", "https://i.imgur.com/yE2sHmK.gif", "#dedb4b"],
+        ["Rayon de Ki", "envoie un", "https://i.imgur.com/ewiKMhh.gif", "#eb3d21"],
+        ["Enchaînement", "fait un", "https://i.imgur.com/CHwCkX7.gif", "#dee385"],
+        ["Frappe Flash", "envoie une", "https://i.imgur.com/JRk7aff.gif", "#fa8e20"],
+    ],
+    "Broly" : [
+        ["Eraser cannon", "utilise", "https://i.imgur.com/4bMEl34.gif", "#050f04"],
+        ["Destruction planétaire", "charge son", "https://i.imgur.com/IHSDGQl.gif", "#66fda7"],
+        ["Souffle légendaire", "crache son", "https://i.imgur.com/8hrxYAO.gif", "#b7dd1f"],
+        ["Enchaînement Berserker", "", "https://i.imgur.com/wnuSkOn.gif", "#7f1f07"],
+        ["Traine l''adversaire", "", "https://i.imgur.com/kZM2y6y.gif", "#60b3e4"],
+        ["Est Furieux", "", "https://i.imgur.com/GR5umvo.gif", "#5dba2c"],
+    ],
+    "Jiren" : [
+        ["Impact de ki", "lance un", "https://i.imgur.com/v4Ipwkp.gif", "#c85d33"],
+        ["Uppercut colossal", "envoie un", "https://i.imgur.com/3nVDoiI.gif", "#161318"],
+        ["Ki invisible", "attaque avec du", image_temporaire, hexadecimal_temporaire],
+        ["Contre avec ses yeux", "", "https://i.imgur.com/4OKu0yo.gif", "#140f1f"],
+        ["Contre puissant", "effectue un", "https://i.imgur.com/pNVq3rr.gif", "#140f1f"],
+        ["Brûle tout", "", "https://i.imgur.com/RHx6Eda.gif", "#d94533"]
+    ],
+    "Toppo" : [
+        ["Hakai imparfait", "utilise son", "https://i.imgur.com/T8SJaT6.gif", "#58055b"],
+        ["Boule de Hakai", "envoie des", "https://i.imgur.com/nHT7Zpz.gif", "#88057c"],
+        ["Ki des Doigt", "balance du", "https://i.imgur.com/PR38V3H.gif", "#04070e"],
+        ["Enchaînement téléporté", "", "https://i.imgur.com/Ox7McyB.gif", "#312371"],
+        ["Vague de ki", "envoie une", "https://i.imgur.com/KnXpsyl.gif", "#a9312c"],
+    ],
+    "Black Goku" : [
+        ["Faux de ki", "dégaine sa", "https://i.imgur.com/ar4YKPP.gif", "#f57ffa"],
+        ["Black kamehameha", "utilise", "https://i.imgur.com/54GeAFB.gif", "#f906ef"],
+        ["Explosion sacrée", "envoie une", "https://i.imgur.com/rPNct67.gif", "#203d21"],
+        ["Annihilation", "", "https://i.imgur.com/LupZy1w.gif", "#6662bc"],
+        ["Parade", "", "https://i.imgur.com/E035gaW.gif","#040205"],
+    ],
+    "Hit" : [
+        ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
+        ["Fracture temporelle", "", "https://i.imgur.com/kklcPtu.gif", "#3603f6"],
+        ["Saut temporel", "", "https://i.imgur.com/rP20Hmt.gif", "#071131"],
+        ["Massacrer son adversaire", "arrête le temps pour", "https://i.imgur.com/HKcldBa.gif", "#44dfa3"],
+    ],
+    "Piccolo" : [
+        ["Makankosappo", "charge son", "https://i.imgur.com/HBg2V3a.gif", "#827707"],
+        ["Charge", "", "https://i.imgur.com/V4r06Ui.gif", "#361c67"],
+        ["S''échauffe", "", "https://i.imgur.com/Gck6OH7.gif", "#2ad918"],
+        ["Est sérieux", "", "https://i.imgur.com/npQbMoy.gif", "#f5e984"],
+    ],
+    "Trunks" : [
+        ["Épée", "dégaine son", 'https://i.imgur.com/1GEs349.gif', "#394477"],
+        ["Masenko", "envoie", "https://i.imgur.com/sRCIDcu.gif", "#c9cd50"],
+        ["Attaque brûlante", "prépare son", "https://i.imgur.com/m29kdBa.gif", "#0e6b9f"]
+    ],
+    "Kefla" : [
+        ["Boules de Ki", "balance des", "https://i.imgur.com/zF5aKBU.gif", "#d05d5a"],
+        ["Charge son Ki", "", "https://i.imgur.com/BBsF4DS.gif", "#6ac452"],
+        ["Disques berserk", "charge ses", "https://i.imgur.com/sJ6idlE.gif", "#0a1605"],
     ],
     # Full Metal Alchemist
     "Père": [
@@ -1681,6 +1782,10 @@ all_techniques = {
     ],
 
     # Hunter x Hunter
+    "Gon" : [
+        ["Jajanken", "prépare son", image_temporaire, hexadecimal_temporaire],
+        ["Recharge", "", "", "#5c3307"],
+    ],
     "Franklin" : [
         ["Déluge de Balles", "déverse un", "https://i.imgur.com/0KyJyzH.gif", "#5c3307"],
         ["Recharge", "", "", "#5c3307"],
@@ -1694,9 +1799,226 @@ all_techniques = {
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
     ],
     # Bleach
+    "Ichigo" : [
+        ["Getsuga Tensho", "envoie un", "https://i.imgur.com/mHF2EnN.gif", "#360204"],
+        ["Cero", "crache un", "https://i.imgur.com/70blaTc.gif", "#d1252b"],
+        ["Slash de Reitasu", "envoie des", "https://i.imgur.com/PUwrStw.gif", "#58120b"],
+        ["Furie", "est dans une", "https://i.imgur.com/X68C2XH.gif", "#c37f3c"],
+        ["Mugetsu", "active", "https://i.imgur.com/oTTHb5B.gif", "#000000"],
+        ["l''attaque de l''adversaire", "attrape", "https://i.imgur.com/amStjId.gif", "#040207"],
+    ],
+    "Yhwach" : [ #TOGIF
+        ["The Almighty", "active", image_temporaire, hexadecimal_temporaire],
+        ["Sankt Altar", "invoque", "https://i.imgur.com/R34bul2.png", "#1064bc"],
+        ["Heilig Pfeil", "déchaine", image_temporaire, "#1064bc"],
+        ["Épée de Reishi", "crée", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
+    ],
+    "Aizen" : [ #TOGIF
+        ["Kanzen Saimin", "trompe avec", "https://i.imgur.com/mkttGe5.gif", "#3994a4"],
+        ["Hakuda", "utilise son", image_temporaire, hexadecimal_temporaire],
+        ["Hadō #99 : Goryūtenmetsu", "récite le", image_temporaire, hexadecimal_temporaire],
+        ["Raikoho", "utilise", "https://i.imgur.com/wEqU1hb.gif", "#dfe107"],
+        ["Pression Spirituelle", "utilise sa", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Yamamoto" : [
+        ["Zanka no Tachi : Est", "utilise", "https://imgur.com/zgVMTdr.gif", "#5e3026"],
+        ["Zanka no Tachi : Ouest", "utilise", "https://imgur.com/CCH55ZX.gif", "#de981b"],
+        ["Zanka no Tachi : Nord", "utilise", "https://imgur.com/zQZmGM3.gif", "#540a1d"],
+        ["Zanka no Tachi : Sud", "utilise", "https://imgur.com/IRxf4ks.gif", "#e47a1c"],
+    ],
+    "Kyoraku" : [
+        ["Kageoni", "manipule les ombres,", "https://i.imgur.com/RKm4Qqq.gif", "#7ebfc5"],
+        ["Takaoni", "domine l''air,", "https://i.imgur.com/KAeJRad.gif", "#4490b5"],
+        ["Bushōgoma", "tourbillone,", "https://i.imgur.com/cbmbqUY.gif", "#c1edf1"],
+    ],
+    "Ichibe Hyosube" : [
+        ["Senri Tsūtenshō", "écrase avec", "https://i.imgur.com/Elu42jv.gif", "#000000"],
+        ["Ichimonji", "coupe le nom avec ", "https://i.imgur.com/M0o4Abs.gif", "#000000"],
+        ["Shirafude Ichimonji", "change le nom avec", "https://i.imgur.com/1vQpQJf.gif", "#000000"],
+    ],
+    "Senjumaru" : [
+        ["Shatatsu Karagara Shigarami no Tsuji", "active son bankai,", "https://i.imgur.com/9jh8re0.gif", "#fb0c32"],
+        ["Shide no Rokushiki Ukimon no Hata", "active", "https://i.imgur.com/frGkeC0.gif", "#fb0c32"],
+        ["Shigarami : défense", "utilise", "https://i.imgur.com/RXvtOaN.gif", "#b19e98"], #TOCUT
+        ["Destin", "écrit le", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Kisuke Urahara" : [
+        ["Hadō #91 : Senju Kōten Taihō", "incante", "https://i.imgur.com/ZabGk5k.gif", "#c84ea4"],#TOSPEED
+        ["Nake, Benihime", "utilise", "https://i.imgur.com/Mozt8qm.gif", "#3f4e61"],
+        ["Hiasobi, Benihime", "active", "https://i.imgur.com/PxsXbaN.gif", "#d33143"],
+        ["Kamisori, Benihime", "envoie", "https://i.imgur.com/2NXRhZP.gif", "#ce6a4e"],
+    ],
+    "Byakuya Kuchiki" : [
+        ["Senkei", "dévoile la vraie forme de son bankai...", "https://i.imgur.com/SI3rmzH.png", "#feccee"],
+        ["Senbonzakura", "envoie", "https://i.imgur.com/4ZuadNQ.gif", "#feccee"],
+        ["Byakurai", "incante", "https://i.imgur.com/6EOusS4.gif", "#88bad4"],
+        ["Senka", "se déplace avec le", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Jugram" : [
+        ["The Balance", "relâche son", "https://i.imgur.com/n7dxZHp.gif", "#1d7e86"],
+        ["Épée", "sort son", "https://i.imgur.com/xmPTmXs.gif", "#3f4e61"],
+        ["parade", "réalise une", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Kenpachi" : [
+        ["Nozarashi", "appelle", "https://i.imgur.com/AKUkZjd.gif", "#670f32"],
+        ["Reiatsu", "relâche son", "https://i.imgur.com/9srFwb8.gif", "#dfe107"],
+        ["Slash", "envoie un", "https://i.imgur.com/XrfmTF1.gif", "#e3e0c0"],
+    ],
+    "Unohana" : [
+        ["Minazuki", "attaque avec", "https://imgur.com/vAN5RVV.gif", "#400e10"],
+        ["parade", "réalise une", image_temporaire, hexadecimal_temporaire],
+        ["charge", "fait une", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Ulquiorra" : [
+        ["Cero ulquiorra", "relâche son", "https://i.imgur.com/zbAspmw.gif", "#23dca8"],
+        ["Resureccion : Segunda", "se renforce avec", "https://i.imgur.com/fDcyC7u.gif", "#23dca8"],
+        ["Lanza del Relámpago", "prépare sa", "https://i.imgur.com/4HTHgLe.gif", "#23dca8"],
+    ],
+    "Starrk" : [
+        ["Meute de loups", "relâche sa", "https://imgur.com/dk5nUz1.gif", "#468eb6"],
+        ["Cero", "tire un", "https://imgur.com/LW5pio6.gif", "#11b2e2"],
+        ["Cero Metralleta", "tire des", "https://imgur.com/zaILTvs.gif", "#1449c1"],
+    ],
+    "Gin" : [
+        ["Shinsō", "relâche", "https://imgur.com/L3xpAp2.gif", "#0582b1"],
+        ["Kamishini no Yari", "relâche", "https://imgur.com/fO4Lur4.gif", "#979694"],
+    ],
+    "Renji" : [
+        ["Zabimaru", "fait hurler", "https://i.imgur.com/SOl62hI.gif", "#0b5664"],
+        ["Sōō Zabimaru", "envoie chasser", "https://i.imgur.com/6vXLNo0.gif", "#99a2ad"],
+        ["Zaga Teppō", "réduit l''ennemi en cendres avec", "https://i.imgur.com/ItRVkFP.gif", hexadecimal_temporaire],
+    ],
         "Yoruichi" : [
         ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
         ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
+        ["Hakuda", "détruit avec son", "https://i.imgur.com/3TvdfJS.gif", "#ea6b42"],
+        ["Rafale", "balance une", "https://i.imgur.com/Qoz9ITj.gif", "#f2e8a8"],
+    ],
+    #Jujutsu Kaisen
+    "Satoru Gojo" : [
+        ["Infini", "active l''", "https://i.imgur.com/ZCJhdVh.gif", "#518c98"],
+        ["Rouge", "utilise", "https://i.imgur.com/1EFWK0U.gif", "#f90727"],
+        ["Bleu", "utilise", "https://i.imgur.com/3fXmK6l.gif", "#1365ca"],
+        ["Violet", "forme un", "https://i.imgur.com/QcO2cfC.gif", "#a60ef1"],
+        ["Extension du territoire : Sphère de l''infini", "active son", "https://i.imgur.com/NHUyKs8.gif", "#2d1a28"],
+        ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],
+        ["Maîtrise du corps à corps", "montre sa", "https://i.imgur.com/OLo0crU.gif", "#17436d"],
+    ],
+    "Sukuna" : [
+        ["Trancher sukuna", "utilise", "https://i.imgur.com/Kr5pygu.gif", "#040404"],
+        ["Découper", "utilise", "https://i.imgur.com/jzZsHne.gif", "#8b9095"],
+        ["Fuga", "utilise", "https://i.imgur.com/i0PQMY3.gif", "#df4012"],
+        ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],
+        ["Extension du territoire : Autel démoniaque", "active son", "https://i.imgur.com/gvKzpbm.gif", "#863022"],
+        ["Écrasement de tête", "fait un", "https://i.imgur.com/uMTONBX.gif", "#2a4c39"],
+    ],
+    "Kenjaku" : [
+        ["Uzumaki", "dévoile sa technique ultime : ", "https://i.imgur.com/AQvIrP1.gif", "#5e197f"],
+        ["Explosion des hématies", "utilise", "https://i.imgur.com/cQwFQR0.gif", "#c5a1a5"],
+        ["Manipulation des esprits", "utilise la", "https://i.imgur.com/tJXtEav.gif", "#d00405"],
+        ["Pression", "utilise sa", "https://i.imgur.com/dV7tETr.gif", "#eadace"],
+        ["Extension du territoire : Profusion Utérine", "utilise son", "https://i.imgur.com/tdCIAAP.gif", "#ae9f9e"],
+        ["Esquive", "", "https://i.imgur.com/r25zFby.gif", "#a56f8d"],
+    ],
+    "Toji Fushiguro" : [
+        ["Taillade l''adversaire", "", "https://i.imgur.com/2EEqXgy.gif", "#714125"],
+        ["Esquives", "fait des", "https://i.imgur.com/5YShl2n.gif", "#4c2e1f"],
+        ["Contre", "effectue un", "https://i.imgur.com/zKHDC83.gif", "#587482"],
+        ["Taillade Fulgurante", "effectue une", "https://i.imgur.com/jqglnGo.gif", "#2b4358"],
+        ["Flashstep", "fait un", "https://i.imgur.com/m6ZionY.gif", "#223c56"],
+        ["Extase", "est en", "https://i.imgur.com/7Whfwjf.gif", "#39c4e2"],
+        ["Nuage", "affute", "https://i.imgur.com/BwVVOwJ.gif", "#f9bfa4"],
+    ],
+    "Yuta Okkotsu" : [
+        ["Katana", "coupe avec son", "https://i.imgur.com/Ga15R1e.gif", "#aa9e88"],
+        ["Se défend", "", "https://i.imgur.com/ZoQZnft.gif", "#4d4a4f"],
+        ["Katana d''énergie", "charge son", "https://i.imgur.com/DcqaGRT.gif", "#a03364"],
+        ["Rayon d''énergie occulte", "envoie un", "https://i.imgur.com/Rx2CfzF.gif", "#dd8fbf"],
+        ["Rika", "invoque", "https://i.imgur.com/7rpjIBU.gif", "#fbedf5"],
+        ["Attaque Coordonnée", "fait une", "https://i.imgur.com/fy48wQW.gif", "#b92090"],
+        ["Énergie occulte", "relâche son", "https://i.imgur.com/7whSzsH.gif", "#a80729"],
+    ],
+    "Mahoraga" : [
+        ["Adapté", "s''est", "https://i.imgur.com/2pqEuEd.gif", "#f9f8f9"],
+        ["Est Invoqué", "", "https://i.imgur.com/wvQF3DE.gif", "#f5f7f4"],
+        ["Rafale de poings", "envoie une", "https://i.imgur.com/6yHs8Sk.gif", "#080c0f"],
+        ["Pourchasse l''ennemi", "", "https://i.imgur.com/aRsx59h.gif", "#2a2f35"],
+    ],
+    "Aoi Todo" : [
+        ["Charge ultime", "fait sa", "https://i.imgur.com/EETlu3D.gif", "#61918b"],
+        ["Boogie Woogie", "utilise son", "https://i.imgur.com/gOCAlHY.gif", "#676165"],
+        ["dans le dos de l''ennemi", "se téléporte", "https://i.imgur.com/eanB7MB.gif", "#876a4a"],
+        ["BLACK FLASH", "assène un", "https://i.imgur.com/6OYVEpW.gif", "#090d18"],
+        ["Poing Fulgurant", "prépare son", "https://i.imgur.com/yYH3z4Z.gif","#4c0704"],
+        ["Victoire", "élabore sa", "https://i.imgur.com/sPpAXab.gif", "#151b66"],
+        ["Suplex", "fait un", "https://i.imgur.com/i7q4A5X.gif", "#c8c2bc"],
+    ],
+    "Suguru Geto" : [
+        ["Nuage", "utilise", "https://i.imgur.com/L2cwdSt.gif", "#bd842f"],
+        ["Dragon", "envoie son", "https://i.imgur.com/vENO65T.gif", "#8a5c45"],
+        ["Taijutsu", "utilise son", "https://i.imgur.com/DMfeZCi.gif", "#6f7c76"],
+        ["Manipulation des esprits", "utilise la", "https://i.imgur.com/naYL3Lf.gif", "#232022"],
+        ["Ver", "envoie un", "https://i.imgur.com/WS1aZ3y.gif", "#908275"],
+    ],
+    "Choso" : [
+        ["Dagues de sang", "crée des", "https://i.imgur.com/Z0krrYM.gif", "#ac4640"],
+        ["Sekirin Yakudō", "augmente ses performances avec", "https://i.imgur.com/3HnD0Zz.gif", "#237960"],
+        ["Convergence", "utilise", "https://i.imgur.com/p81PbSC.gif", "#9d180b"],
+        ["Puissant coup de poing", "envoie un", "https://i.imgur.com/o1nVrCd.gif", "#381c23"],
+        ["Senketsu", "lance son", "https://i.imgur.com/SoSD9Oa.gif", "#090203"],
+    ],
+    "Mahito" : [
+        ["Super résistant", "est", "https://i.imgur.com/YiidnjI.gif", "#3a404f"],
+        ["Black Flash", "envoie un", "https://i.imgur.com/6uHHzCS.gif", "#8f13aa"],
+        ["Extension du territoire : altération divine", "ouvre son", "https://i.imgur.com/R3BstVT.gif", "#422079"],
+        ["Rafale d''humains altérés", "tire une", "https://i.imgur.com/zFNPDWk.gif", "#252326"],
+    ],
+    "Jogo" : [
+        ["Boule de feu", "prépare", "https://i.imgur.com/tu8qKsL.gif", "#e7672f"],
+        ["Feu cataclysmique", "écrase avec son", "https://i.imgur.com/dx69mj1.gif", "#ed972f"],
+        ["Tsunami de la fournaise", "utilise", "https://i.imgur.com/eNWy4QF.gif", "#e94d13"],
+        ["Piège volcanique", "a placé un", "https://i.imgur.com/N1h2oCP.gif", "#faa410"],
+        ["Maximum : Météore", "prépare son attaque", "https://i.imgur.com/ZLTscTz.gif", "#ef9a15"],
+    ],
+    "Uraume" : [
+        ["Blizzard", "crée un", "https://i.imgur.com/n48aUYt.gif", "#7dd7f9"],
+        ["Piliers de glace", "crée des", "https://i.imgur.com/sP7V4vW.gif", "#7dd7f9"],
+        ["Se Protège avec de la glace", "", image_temporaire, hexadecimal_temporaire],
+    ],
+    "Kinji Hakari" : [
+        ["Domaine", "se bat dans son", "https://i.imgur.com/Ll8PJQX.gif", "#e44b3d"],
+        ["Extension du territoire : Pari Mortel Inutile", "active son", "https://i.imgur.com/sRtgcrA.gif", "#f638cc"],
+        ["Boost d''énergie maudite", "a obtenu son", "https://i.imgur.com/h3BRPxK.gif", "#34cdab"],
+        ["Frappe sous coc", "utilise une", "https://i.imgur.com/9DSyrOs.gif", "#fffdfe"],
+    ],
+    "Yuki Tsukumo" : [
+        ["Garuda", "envoie", "https://i.imgur.com/ZM4fvvn.gif", "#b79ca5"],
+        ["Maximum : Trou Noir", "utilise son attaque", "https://i.imgur.com/gOqsYHZ.gif", "#000000"],
+        ["Domaine simple", "utilise", "https://i.imgur.com/mIcDtqJ.png", "#1a1a1a"],
+    ],
+    "Hanami" : [
+        ["Champ de fleurs", "utilise", "https://i.imgur.com/sagxuqt.gif", "#c18944"],
+        ["Aura roncière", "montre son", "https://i.imgur.com/XWKu20j.gif", "#d95246"],
+        ["Posture défensive", "prend une", "https://i.imgur.com/VeAtE6h.gif", "#9f7f6f"],
+        ["Extension du territoire : mer de lumière cérémonielle", "utilise son", "https://i.imgur.com/HneVwfk.gif", "#fafca4"],
+    ],
+    "Dagon" : [
+        ["Boit l''ennemi", "", "https://i.imgur.com/GOIylfZ.gif", "#90918c"],
+        ["Se transforme", "", "https://i.imgur.com/sAjievT.gif", "#f90000"],
+        ["Shikigamis marins", "invoque ses", "https://i.imgur.com/jNVPupR.png", "#8eb740"],
+        ["Escadron maritime", "invoque", "https://i.imgur.com/QxkmETz.png", "#85edec"],
+        ["Extension du territoire : Horizon du Skandha Captivant", "utilise son", "https://i.imgur.com/bd0Wllg.gif", "#46dced"],
+    ],
+      "Naobito Zenin" : [
+        ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
+    ],
+    "Kento Nanami" : [
+        ["Attrape l''ennemi par les cheveux", "", "https://i.imgur.com/6dtJ6ld.gif", "#ddd8ae"],
+        ["Attaquer","se prépare à", "https://i.imgur.com/XNH41aE.gif" ,"#14899f"],
+        ["Attaque", "charge son", "https://i.imgur.com/P16NNUU.gif", "#14899f"],
+        ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
+        ["Attaque sans hésiter", "", "https://i.imgur.com/saF6Iht.gif", "#f3d6cb"],
+        ["Heures sups","passe en", "https://i.imgur.com/z3USMrr.gif","#14899f"]
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
@@ -1733,19 +2055,4 @@ all_techniques = {
     "All Might" : [
         ["United States of Smash", "utilise l''","https://i.imgur.com/tGRgG5e.mp4", "#FF0000"], #TOREVIEW format mp4
     ],
-
-    # Jujutsu Kaisen
-    "Naobito Zenin" : [
-        ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
-    ],
-    "Kento Nanami" : [
-        ["Attrape l''ennemi par les cheveux", "", "https://i.imgur.com/6dtJ6ld.gif", "#ddd8ae"],
-        ["Attaquer","se prépare à", "https://i.imgur.com/XNH41aE.gif" ,"#14899f"],
-        ["Attaque", "charge son", "https://i.imgur.com/P16NNUU.gif", "#14899f"],
-        ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
-        ["Attaque sans hésiter", "", "https://i.imgur.com/saF6Iht.gif", "#f3d6cb"],
-        ["Heures sups","passe en", "https://i.imgur.com/z3USMrr.gif","#14899f"]
-    ],
-
-    
 }
