@@ -389,7 +389,7 @@ class Database:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
         else:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
-            #rarity = 'SS'
+            rarity = 'SS'
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
