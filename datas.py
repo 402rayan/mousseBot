@@ -1701,7 +1701,7 @@ all_techniques = {
         ["Enchaînement téléporté", "", "https://i.imgur.com/Ox7McyB.gif", "#312371"],
         ["Vague de ki", "envoie une", "https://i.imgur.com/KnXpsyl.gif", "#a9312c"],
     ],
-    "Black Goku" : [
+    "Goku Black" : [
         ["Faux de ki", "dégaine sa", "https://i.imgur.com/ar4YKPP.gif", "#f57ffa"],
         ["Black kamehameha", "utilise", "https://i.imgur.com/54GeAFB.gif", "#f906ef"],
         ["Explosion sacrée", "envoie une", "https://i.imgur.com/rPNct67.gif", "#203d21"],
