@@ -217,6 +217,7 @@ class Database:
             self.cur.execute(f"INSERT INTO user_choices (user_discord_id) VALUES ({user_discord_id})")
             self.conn.commit()
             logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a été inscrit dans la base de données.")
+            return True
 
     def get_tickets(self, user_discord_id):
         self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
@@ -327,7 +328,7 @@ class Database:
         for template in all_templates:
             if template_name.lower() in template[1].lower():
                 if user_name == "Bot":
-                    print(template_name, " a été trouvé dans le nom.")
+                    logger.warning(template_name, " a été trouvé dans le nom.")
                 return template
         logger.error(f"Le template {template_name} n'a pas été trouvé.")
         return None
@@ -787,7 +788,7 @@ class Database:
     def set_equilibre_synergy(self, id, rate,verbose=False):
         self.cur.execute(f"UPDATE synergies SET force_of_boost = {rate} WHERE synergy_id = {id}")
         self.conn.commit()
-        logger.info(f"La synergie {id} a été mise à jour avec un taux de {rate}.") if verbose else None
+        logger.info(f"La synergie {self.get_synergy(id)[1]} a été mise à jour avec un taux de {rate}.") if verbose else None
 
     def equilibrer_synergies(self):
         # on recupere toutes les synergies
@@ -800,5 +801,3 @@ class Database:
         logger.success("Toutes les synergies ont été équilibrées.")
 
         
-a = Database('mousse.db')
-print(a.get_synergie_equilibrage(221))

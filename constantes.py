@@ -7,15 +7,15 @@ CONSTANTS = {
     'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
-        'X': 50,
-        'SS': 25,
-        'S': 12.5,
+        'X': 25,
+        'SS': 15,
+        'S': 10,
         'A': 5,
-        'B': 2.5,
-        'C': 0.5,
-        'D': 0.25,
-        'E': 0.15,
-        'F': 0.1,
+        'B': 1,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
@@ -133,7 +133,7 @@ CONSTANTS = {
         "C18" : 0xeedbab, "DENKI" : 0xb38d48, "BAGGY" : 0xa10f21,
         "ERWIN" : 0xb89e81, "LEORIO" : 0x3a476b, "GRAY_CAT" : 0x3c3c3d,
         "EREN" : 0x3f3131, "SOMA" : 0xf62a43, "NANAMI" : 0xaca97f,
-        "NOUS": 0x000000
+        "NOUS": 0x000000, "BEERUS": 0xba7eca
         
     },
     "NOMS_GIF_INVOCATION": [
@@ -142,6 +142,44 @@ CONSTANTS = {
         ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
         ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
         ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
+    ],
+    'DESCRIPTION_COMMANDES' : {
+        "`!tutoriel`": "Permet d'avoir un **tutoriel spécifique** de comment jouer.",
+
+        "`!hourly`": "Permet de réclamer **tickets et expériences** chaque heure!",
+        "`!tickets`": "Permet de **voir le nombre de tickets** que vous avez.",
+        "`!invo` / `!summon`": "Permet d'**invoquer un personnage**.",
+
+        "`!inve` / `!sac` / `!box`": "Permet de **voir votre inventaire**.",
+        "`!info {personnage}`": "Permet de **voir les informations d'un personnage**.",
+        "`!sell {personnage}` / `!vendre`": "Permet de **vendre un personnage** contre tickets et expérience.",
+        "`!team` / `!team @personne`": "Permet de **voir votre team** ou celle de quelqu'un.",
+        "`!auto`": "Permet de **voir vos meilleurs teams** potentiels",
+
+        "`!ajouterteam` / `!addteam {position} {personnage}`": "Permet d'**ajouter un personnage à votre team**.",
+
+        "`!pvp @personne`": "Permet de **combattre un autre joueur** en pariant des tickets.",
+        "`!infoSynergie {nom}`": "Permet de **voir les détenteurs d'une synergie**.",
+        
+        "`!power` / `!puissance`": "Permet de **voir votre puissance** basé sur l'inventaire.",
+        "`!classement`": "Permet de **voir le classement** en fonction de la puissance parmi votre serveur.",
+        "`!givetickets @personne {nombre}`": "Permet de **donner des tickets** à un autre joueur.",
+        "`!infoTechnique {nom}`": "Permet de **voir une technique**.",
+    },
+    "LISTE_TUTORIEL" : [
+        
+        ["Réclamer des tickets","Vous pouvez réclamer des tickets toutes les heures grâce à la commande `!hourly`", "https://i.imgur.com/IwF6GGe.gif"],
+        ["Voir ses tickets","Vous pouvez voir vos tickets grâce à la commande `!tickets`", "https://i.imgur.com/uI2K7CT.gif"],
+        ["Invoquer des personnages","Vous pouvez invoquer des personnages grâce à la commande `!invocation`", "https://i.imgur.com/rDTgoJF.gif"],
+        ["Voir les informations d'un personnage","Vous pouvez voir les informations d'un personnage grâce à la commande `!info #personnage`", "https://i.imgur.com/ZSWdXAH.gif"],
+        ["Voir son inventaire","Vous pouvez voir votre inventaire grâce à la commande `!inventaire`", "https://i.imgur.com/TnBrvNu.gif"],
+        ["Créer sa team automatiquement","Vous pouvez créer votre team automatiquement grâce à la commande `!auto`", "https://i.imgur.com/O69GxIz.gif"],
+        ["Ajouter un personnage à sa team","Vous pouvez ajouter manuellement un personnage à votre team grâce à la commande `!addteam {nombre} #nom`", "https://i.imgur.com/fu1vlTe.gif"],
+        ["Jouer au mode Histoire","Vous pouvez jouer au mode histoire grâce à la commande `!histoire`", "https://i.imgur.com/2Nnskt8.gif"],
+        ["Vendre un personnage","Vous pouvez vendre un personnage grâce à la commande `!vendre` ou `!sell #personnage`", "https://i.imgur.com/pndwDbg.gif"],
+        ["Combattre un autre joueur","Vous pouvez combattre un autre joueur grâce à la commande `!pvp @personne`", "https://i.imgur.com/srxwlXO.gif"],
+        ["Voir les détenteurs d'une synergie","Vous pouvez voir les détenteurs d'une synergie grâce à la commande `!infoSynergie`", "https://i.imgur.com/H8B6IZE.gif"],
+        ["Et bien d'autres!","Il y a encore plein de commandes à découvrir! N'hésitez pas à les voir dans `!help`", "https://i.imgur.com/F06wJCG.gif"],
     ]
 }
 

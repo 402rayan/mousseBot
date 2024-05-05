@@ -30,7 +30,7 @@ async def execute_command(command, message, userFromDb):
 
     # Créer un verrou pour l'utilisateur
     # Sauf si c'est la commande inventaire
-    if command != inventaire:
+    if command not in [inventaire, tutoriel, list_command]:
         user_locks[userFromDb[0]] = asyncio.Lock()
         try:
             # Attendre l'acquisition du verrou
@@ -56,7 +56,9 @@ async def on_message(message):
         return
     if not(contenu.startswith('!')) :
         return
-    database.insert_user(auteur.id, auteur.name)
+    if database.insert_user(auteur.id, auteur.name): # Premiere fois que l'utilisateur utilise le bot
+        await embed_histoire_character(message, "", "beerusBienvenue","","**Bienvenue** sur Mousse BOT !\nJe te conseille d'écrire `!tutoriel` pour avoir des informations détaillés sur la façon de jouer!", "Je vois que c'est ta première fois!", CONSTANTS['COLORS']['BEERUS'])
+        return
     userFromDb = database.getUser(auteur.id)
     if not userFromDb:
         logger.error(f"Erreur lors de la récupération de l'utilisateur {message.author.name} ({message.author.id}).")
@@ -1143,8 +1145,8 @@ async def niveau1(message, userFromDb, equipe):
     except:
         await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
         return
-    if str(reaction.emoji) == '❌':
-        return
+    if str(reaction.emoji) != '✅':
+        return 
     await asyncio.sleep(3)
     # Quelque part dans un univers..
     await message.channel.send(embed=embed_naratteur("Quelque part dans un univers..", "", CONSTANTS['COLORS']['HISTOIRE']))
@@ -1726,7 +1728,6 @@ async def autoTeam(message, userFromDb):
         database.set_team(message.author.id, message.author.name, character[0], i+1)
     await message.channel.send(embed=embed_info( "L'équipe 1 a été équipée!","" ,discord.Color.green(), "Vous pouvez l'afficher avec !team"))
     
-
 @bot.command()
 async def giveTicket(message, userFromDb):
     # Fonction qui permet à un joueur A de donner x tickets à un joueur B
@@ -1771,6 +1772,45 @@ def idDiscordToInt(idDiscord):
     except ValueError:
         logger.error(f"Impossible de convertir {idDiscord} en entier.")
         return None
+
+@bot.command()
+async def tutoriel(message, userFromDb):
+    logger.info(f"Commande !tutoriel appelée par {message.author.name} ({message.author.id}).")
+    commands_list = CONSTANTS['LISTE_TUTORIEL']
+    page_number = 0
+    max_pages = (len(commands_list)) 
+
+    # Fonction pour créer une page d'embed
+    def create_page_tuto(page_number):
+        page_number = int(page_number)
+        commande = commands_list[page_number]
+        titre = commande[0] + f"  {page_number + 1}/{max_pages}"; description = commande[1]; nomGif = commande[2]
+        embed = discord.Embed(
+            title=titre,
+            description=description,
+            color=discord.Color.blue()
+        )
+        embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+        embed.set_image(url=nomGif)
+        return embed
+
+    msg = await message.channel.send(embed=create_page_tuto(page_number))
+
+    # Ajouter des réactions
+    await msg.add_reaction("⬅️")
+    await msg.add_reaction("➡️")
+
+    try:
+        while True:
+            reaction, user = await bot.wait_for('reaction_add', timeout=35.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['⬅️', '➡️'])
+            if str(reaction.emoji) == '➡️' and page_number + 1 < max_pages:
+                page_number += 1
+                await msg.edit(embed=create_page_tuto(page_number))
+            elif str(reaction.emoji) == '⬅️' and page_number > 0:
+                page_number -= 1
+                await msg.edit(embed=create_page_tuto(page_number))
+    except asyncio.TimeoutError:
+        return
 
 @bot.command()
 async def info(message, userFromDb):
@@ -1938,7 +1978,6 @@ async def pvp(message, userFromDb):
     await asyncio.sleep(3)
     await message.channel.send(embed=embed_info( f"{vainqueur.name} a gagné {parie} tickets!","", discord.Color.gold(),f"{perdant.name} a perdu {parie} tickets!"))
 
-
 @bot.command()
 async def accepterCombatPvp(message, adversaireDiscord):
     # Le joueur A veut combattre le joueur B
@@ -2014,7 +2053,6 @@ async def accepterCombatPvp(message, adversaireDiscord):
         return False, 0
     return True, mise
     
-
 @bot.command()
 async def combatPvp(message, teamA, teamB, adversaireDiscord):
     await introductionCombatPvp(message, teamA, teamB, adversaireDiscord)
@@ -2086,8 +2124,6 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
     # Vous avez triomphé si on a gagné sinon on a perdu
     return victoire
 
-
-
 async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     # Affiche l'introduction du combat
     await message.channel.send(embed=embed_info("Un combat est sur le point de commencer!", "", discord.Color.red()))
@@ -2121,7 +2157,6 @@ async def introductionCombatPvp(message, teamA, teamB, adversaireDiscord):
     await msg2.edit(embed=embed3B)
     return
 
-    
 async def tour(message, personnage, ennemi,onlyAttack=False):
     # Envoie un message pour le tour d'un personnage
     # On cherche si le personnage a des attaques gifs
@@ -2159,7 +2194,6 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
         liste_autres = ["se concentre", "observe l'ennemi", "prend une grande inspiration", "se prépare", "analyse les mouvements de l'ennemi"]
         await message.channel.send(embed=embed_info(f"{personnage} {random.choice(liste_autres)}.", "",discord.Color.brand_green()))
     
-
 def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
     # Calcul de la différence relative en pourcentage
     total_stats = somme_stats_ennemi + somme_stats_team
@@ -2188,7 +2222,6 @@ def statistiquesCombat(message, somme_stats_team, somme_stats_ennemi):
     logger.info(f"Chances de victoire de l'équipe : {chance_victory_team} - Type de combat : {combat_type}")
     return chance_victory_team, combat_type
 
-
 @bot.command()
 async def introductionCombat(message, team, ennemi):
     # Affiche l'introduction du combat
@@ -2215,7 +2248,6 @@ async def introductionCombat(message, team, ennemi):
         isNotGif = True
     await embed_histoire_character(message, ennemi['nom'], ennemi['nomGif'], ennemi['nomPfp'],"", "", ennemi['couleur'], isNotGif)
     
-
 def embed_character(message, character,title="",description="", footer="",author=None):
     # Retourne un embed avec les informations d'un personnage 
     nom = character[6]; hp = character[9]; atk = character[10]; defense = character[11]; rarity = character[7]; nomImage = character[8]
@@ -2237,6 +2269,7 @@ def embed_character(message, character,title="",description="", footer="",author
 async def infoSynergie(message, userFromDb):
     # Permet d'obtenir les informations d'une synergie
     contenu = message.content
+    logger.info(f"Commande !infosynergie appelée par {message.author.name} ({message.author.id}). Contenu : {contenu}")
     if len(contenu.split(' ')) < 2:
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!infosynergie <nom synergie>**!", discord.Color.red()))
         return
@@ -2248,9 +2281,10 @@ async def infoSynergie(message, userFromDb):
         return
     
     # Création de l'embed
-    nom = synergie[1]; typeOfBoost = synergie[2]; forceOfBoost = synergie[3];
+    nom = synergie[1]; typeOfBoost = synergie[2]; forceOfBoost = synergie[3]
     description = synergie[4]; image = synergie[5]; color = int(synergie[6][1:], 16)
     charactersFromSynergy = database.get_character_template_who_has_synergy(synergie[0])
+    print(charactersFromSynergy)
     if not charactersFromSynergy or len(charactersFromSynergy) == 0:
         liste_personnages = "Aucun personnage n'a cette synergie."
     else:
@@ -2265,13 +2299,14 @@ async def infoSynergie(message, userFromDb):
         return str(int(nombre * 100)) + "%"
     embed.set_footer(text=f"Boost : {typeOfBoost} {formatteur(forceOfBoost)}")
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
-    embed.add_field(name="Personnages", value=liste_personnages[:950] + "..." if len(liste_personnages) > 950 else "", inline=False)
+    embed.add_field(name="Personnages", value=liste_personnages[:950] + "..." if len(liste_personnages) > 950 else liste_personnages, inline=False)
     embed.set_image(url=image)
     
     await message.channel.send(embed=embed)
 
 @bot.command()
 async def infoTechnique(message, userFromDb):
+    logger.info(f"Commande !infotechnique appelée par {message.author.name} ({message.author.id}). {message.content}")
     # Permet d'obtenir les informations d'une technique
     contenu = message.content
     if len(contenu.split(' ')) < 2:
@@ -2304,6 +2339,7 @@ async def infoTechnique(message, userFromDb):
 
 @bot.command()
 async def voirTeam(message, userFromDb): 
+    logger.info(f"Commande !voirTeam appelée par {message.author.name} ({message.author.id}). {message.content}")
     # Permet de voir ses personnages équipés en teams, ou la team d'un autre joueur
     user = await fetch_user_from_message(message, 2)
     if not user:
@@ -2346,6 +2382,7 @@ async def voirTeam(message, userFromDb):
 
 @bot.command()
 async def ajouterTeam(message, userFromDb):
+    logger.info(f"Commande !ajouterTeam appelée par {message.author.name} ({message.author.id}). {message.content}")
     # Permet d'ajouter un personnage à son équipe
     contenu = message.content
     if len(contenu.split(' ')) < 3:
@@ -2412,7 +2449,6 @@ async def fetch_user_from_message(message, nombre_arguments_max=2):
 
 @bot.command()
 async def sell(message, userFromDb):
-    logger.info(f"Commande !sell appelée par {message.author.name} ({message.author.id}).")
     # Permet de vendre un personnage
        # Permet d'ajouter un personnage à son équipe
     contenu = message.content
@@ -2435,7 +2471,7 @@ async def sell(message, userFromDb):
     # Demandez confirmation
     if rarity in ["X", "SS", "S", "A"]:
         response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets? (réagissez)"
-        msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.gold()))
+        msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.orange()))
         await msg.add_reaction('✅')
         await msg.add_reaction('❌')
         # On met une réaction pour confirmer et on attend 30 secondes que l'utilisateur réagisse
@@ -2449,16 +2485,8 @@ async def sell(message, userFromDb):
             return
     database.sell_character(message.author.id,message.author.name, character[0])
     database.update_tickets(message.author.id, database.get_tickets(message.author.id) + tickets_obtenus)
-    logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {rarity} tickets.")
+    logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {tickets_obtenus} tickets.")
     await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
-
-@bot.command()
-async def createTemplates(message, userFromDb):
-    if message.author.id != 724383641752436757:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
-        return
-    database.createAllDatas()
-    await message.channel.send(embed=embed_info("Templates créés", "Les templates de personnages ont été créés!", discord.Color.green()))
 
 @bot.command()
 async def reset(message, userFromDb):
@@ -2658,29 +2686,63 @@ async def fakeStatistiquesCombat(message, userFromDb):
 @bot.command()
 async def list_command(message, userFromDb):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
-    commande = {
-        "!tickets": "Permet de voir le nombre de tickets que vous avez.",
-        "!hourly": "Permet de réclamer tickets  et expériences!",
-        "!invo": "Permet d'invoquer un personnage.",
-        "!inv": "Permet de voir votre inventaire.",
-        "!givetickets *{joueur}* *{nombre}*": "Permet de donner des tickets à un autre joueur.",
-        "!info *{personnage}*": "Permet de voir les informations d'un personnage.",
-        "!team": "Permet de voir votre team.",
-        "!ajouterteam *{position}* *{personnage}*": "Permet d'ajouter un personnage à votre team.",
-        "!sell *{personnage}*": "Permet de vendre un personnage.",
-        "!classement": "Permet de voir le classement des joueurs.",
-        "!power": "Permet de voir votre puissance basé sur l'inventaire.",
-    }
+
+    commands = list(CONSTANTS['DESCRIPTION_COMMANDES'].items())
+    num_commands = len(commands)
+    num_pages = (num_commands - 1) // 5 + 1  # Calcul du nombre total de pages
     
-    embed = discord.Embed(
-        title="Liste des commandes disponibles:",
-        description="",
-        color=discord.Color.blurple()
-    )
-    for key, value in commande.items():
-        embed.add_field(name=key, value=value, inline=False)
-    embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
-    await message.channel.send(embed=embed)
+    current_page = 0  # Page actuelle, commençant à zéro
+
+    # Fonction pour envoyer ou éditer la page actuelle
+    async def send_or_edit_page(sent_message=None):
+        start_index = current_page * 5
+        end_index = min((current_page + 1) * 5, num_commands)
+        
+        embed = discord.Embed(
+            title=f"Liste des commandes disponibles {current_page + 1}/{num_pages} :",
+            description="",
+            color=discord.Color.blurple()
+        )
+        for key, value in commands[start_index:end_index]:
+            embed.add_field(name=key, value=value, inline=False)
+        embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+
+        if sent_message:  # S'il existe un message à éditer
+            await sent_message.edit(embed=embed)
+        else:  # Sinon, envoyer un nouveau message
+            sent_message = await message.channel.send(embed=embed)
+        return sent_message
+    
+    # Envoyer la première page
+    sent_message = await send_or_edit_page()
+    
+    # Ajouter des réactions si nécessaire
+    if num_pages > 1:
+        await sent_message.add_reaction("⬅️")  # Réaction pour aller à la page précédente
+        await sent_message.add_reaction("➡️")  # Réaction pour aller à la page suivante
+
+    # Fonction pour gérer les réactions
+    def check(reaction, user):
+        return user == message.author and str(reaction.emoji) in ["⬅️", "➡️"]
+
+    while True:
+        try:
+            reaction, _ = await bot.wait_for("reaction_add", timeout=35, check=check)
+            
+            # Gérer la réaction pour passer à la page précédente
+            if str(reaction.emoji) == "⬅️":
+                if current_page > 0:
+                    current_page -= 1
+                    sent_message = await send_or_edit_page(sent_message)
+
+            # Gérer la réaction pour passer à la page suivante
+            elif str(reaction.emoji) == "➡️":
+                if current_page < num_pages - 1:
+                    current_page += 1
+                    sent_message = await send_or_edit_page(sent_message)
+
+        except asyncio.TimeoutError:
+            break  # Arrêter la pagination en cas de timeout
 
 commands = {
     "add": ajouterTeam,        # "addteam", "add_team"
@@ -2698,6 +2760,7 @@ commands = {
     "faket": fakeTeam,         # "fakeT"
     "giv": giveTicket,         # "givetickets", "giveticket", "give_tickets", "give_ticket"
     "his": histoire,           # "his"
+    "he": list_command,        # "help"
     "ho": claimHourly,         # "hourly"
     "infot": infoTechnique,    # "infot"
     "infos": infoSynergie,     # "infos"
@@ -2706,7 +2769,8 @@ commands = {
     "inv": invocation,         # "invo", "invocation"
     "lis": list_command,       # "list", "help"
     "luc": luckyInvocation,    # "luckyInv"
-    "pow": getPower,           # "pow", "pui"
+    "po": getPower,            # "power"
+    "pu": getPower,            # "puissance"
     "pv": pvp,                 # "pvp"
     "rep": repeat,             # "repeat"
     "res": reset,              # "reset"
@@ -2716,6 +2780,7 @@ commands = {
     "su": invocation,          # "summon"
     "tic": getTickets,         # "tic"
     "te": voirTeam,            # "te", "voi"
+    "tu": tutoriel,            # "tutoriel"
     "ve": sell,                # "vendre"
     "v": voirTeam,             # "voir"
 }
