@@ -1133,14 +1133,41 @@ async def niveau2(message, userFromDb, equipe):
     await finDeNiveau(message, userFromDb, 3, ticketsGagnes)
 
 async def niveau1(message, userFromDb, equipe):
-    await message.channel.send(embed=embed_naratteur("Cinématique : Enrico Pucci détruit l'univers...", "", CONSTANTS['COLORS']['ENRICO_PUCCI']))
+    # COnfirmation si la personne veut commencer l'histoire
+    desc = "Bienvenue dans le mode histoire, êtes vous prêt à démarrer l'aventure?"
+    msg = await message.channel.send(embed=embed_info(desc, "", discord.Color.blue()))
+    for reaction in ['✅', '❌']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+        return
+    if str(reaction.emoji) == '❌':
+        return
     await asyncio.sleep(3)
+    # Quelque part dans un univers..
+    await message.channel.send(embed=embed_naratteur("Quelque part dans un univers..", "", CONSTANTS['COLORS']['HISTOIRE']))
+    await asyncio.sleep(3.5)
+    # Des gens s'affolent, que se passe-t-il ? Le soleil se lève déjà? gif : introductionSunRising
+    await embed_histoire_character(message,"Des gens s'étonnent en regardant le ciel :", "introductionSunRising", "43638c", "", "Mais que se passe-t-il? Le soleil se lève déjà?!", 0x43638c)
+    await asyncio.sleep(7)
+    await embed_histoire_character(message,"Le cycle s'accélère :", "introductionAccelerating", "0c1029", "", "Il fait jour, et maintenant il fait nuit!? C'es-c'est IMPOSSIBLE!", 0x0c1029)
+    await asyncio.sleep(7)
+    await embed_histoire_character(message,"L'univers tout entier semble se décomposer..", "introductionDecomposition", "inconnu", "", "", 0x080604)
+    await asyncio.sleep(7)
+    await embed_histoire_character(message,"", "pucciVueLoin", "", "", "", 0xe2b76b)
+    await asyncio.sleep(5)
+    await message.channel.send(embed=embed_raw("...","", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(3)
+    await embed_histoire_character(message,"MADE IN HEAVEN !", "madeInHeaven", "pucci", "", "", 0x7a2b29)
+    await asyncio.sleep(6)
     await debutDeNiveau(message, userFromDb, 1, "Introduction", equipe, CONSTANTS['COLORS']['ENRICO_PUCCI'])
     await asyncio.sleep(4.5)
     await message.channel.send(embed=embed_naratteur("Vous vous réveillez dans un indroit inconnu.. une autre personne semble ne pas être très loin..", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4.5)
-    await message.channel.send(embed=embed_naratteur("Vous semblez être dans une forêt..", "", CONSTANTS['COLORS']['FORET']))
-    await asyncio.sleep(4.5)
+    await message.channel.send(embed=embed_naratteur("L'environnement vous entourant ressemble à une forêt..", "", CONSTANTS['COLORS']['FORET']))
+    await asyncio.sleep(4)
     await embed_histoire_character(message,"Un homme inconnu vous demande : ", "", "inconnu", "", "Tout va bien?", CONSTANTS['COLORS']['INCONNU'])
     await asyncio.sleep(4)
     await embed_histoire_character(message,"Shanks se présente : ", "", "shanks", "", "Mon nom est Shanks.", CONSTANTS['COLORS']['SHANKS'])
@@ -1150,12 +1177,12 @@ async def niveau1(message, userFromDb, equipe):
     await embed_histoire_character(message,"Shanks :", "", "shanks", "", "J'ai alors aperçu une sorte de prêtre... et je me suis réveillé ici.", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)
     await embed_histoire_character(message,"Inconu", "", "inconnu", "", "Un bruit surgit..", CONSTANTS['COLORS']['INCONNU'])
-    await asyncio.sleep(4)
+    await asyncio.sleep(3)
     await message.channel.send(embed=embed_naratteur("Un monstre vous attaque!", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4)
     if not await combatPvm(message, equipe, ennemis["SAIBAMAN"]):
         return await echecNiveau(message, userFromDb, 1)
-    await embed_histoire_character(message,"Shanks est étoné :", "", "shanks", "", "Oh mais tu sais te battre!", CONSTANTS['COLORS']['SHANKS'])
+    await embed_histoire_character(message,"Shanks est étonné :", "", "shanks", "", "Oh mais tu sais te battre!", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)
     await embed_histoire_character(message,"Shanks semble apercevoir quelque chose :", "", "shanks", "", "Serait-ce de la fumée vers là-bas?", CONSTANTS['COLORS']['SHANKS'])
     await asyncio.sleep(4)

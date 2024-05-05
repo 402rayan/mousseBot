@@ -388,6 +388,7 @@ class Database:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
         else:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
+            #rarity = 'SS'
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
@@ -396,13 +397,14 @@ class Database:
         if len(liste_personnages) >= CONSTANTS['MAX_CHARACTERS']:
             return "ERROR_MAX_CHARACTERS"
         iteration = 0
-        while True and iteration < 100:
+        while True and iteration < 50:
             template = random.choice(character_templates)
             template_id = template[0]
             if not any(char[2] == template_id for char in liste_personnages):
                 break
             iteration += 1
-        if iteration == 100:
+        if iteration > 49:
+            logger.error(f"Le joueur {user_name} ({user_discord_id}) n'a pas pu invoquer de personnage de rareté {rarity}.")
             return "ERROR_NO_CHARACTER"
         template_id = template[0]
         template_name = template[1]
