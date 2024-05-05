@@ -1481,7 +1481,7 @@ all_techniques = {
         ["Sphère Destructrice", "lance sa", "https://i.imgur.com/1YNIOFz.gif", "#bd8be2"],
         ["Éternue", "", "https://i.imgur.com/ZJNbnIH.gif","#cb6b7f"],
         ["Colère du Dieu de la destruction", "envoie la", "https://i.imgur.com/YhLMMCs.gif", "#f5a03e"],
-        ["Enchainement", "envoie un", "https://i.imgur.com/gieaWmt.gif", "#84738d"]
+        ["Enchainement", "envoie un", "https://i.imgur.com/gieaWmt.gif", "#84738d"],
         ["s''en fiche du combat et mange sa pizza", "", "https://i.imgur.com/lcT3lVL.gif", "#0662da"],
         ["Choqué de la nullité du combat", "", "https://i.imgur.com/Mqd6nVH.gif", "#9d7ea8"],
         ["N''en peut plus du combat", "", "https://i.imgur.com/O3a72WV.gif", "#5e2c97"],
@@ -1514,6 +1514,7 @@ all_techniques = {
         ["Kamehameha", "lance un", "https://i.imgur.com/CuHFx5j.gif", "#49aad1"],
         ["Droite", "envoie une grosse", "https://i.imgur.com/7Dg7800.gif", "#d6d951"],
         ["Esquive", "tape des", "https://i.imgur.com/Rasq5gJ.gif", "#7e97eb"],
+        ["Esquive", "", "https://i.imgur.com/XvK4qm2.gif", "#2c4322"],
         ["a pitié de son adversaire", "", "https://i.imgur.com/upTNZ6n.gif", "#516bc4"],
         ["Contre-attaque", "réalise une", "https://i.imgur.com/ApFWb3h.gif", "#a2c8e6"],
     ],
@@ -1533,7 +1534,7 @@ all_techniques = {
     "Broly" : [
         ["Eraser cannon", "utilise", "https://i.imgur.com/4bMEl34.gif", "#050f04"],
         ["Destruction planétaire", "charge son", "https://i.imgur.com/IHSDGQl.gif", "#66fda7"],
-        ["Souffle légendaire", "crache son", "https://i.imgur.com/8hrxYAO.gif", "#b7dd1f"]
+        ["Souffle légendaire", "crache son", "https://i.imgur.com/8hrxYAO.gif", "#b7dd1f"],
         ["Enchaînement Berserker", "", "https://i.imgur.com/wnuSkOn.gif", "#7f1f07"],
         ["Traine l''adversaire", "", "https://i.imgur.com/kZM2y6y.gif", "#60b3e4"],
         ["Est Furieux", "", "https://i.imgur.com/GR5umvo.gif", "#5dba2c"],
@@ -1553,35 +1554,34 @@ all_techniques = {
         ["Enchaînement téléporté", "", "https://i.imgur.com/Ox7McyB.gif", "#312371"],
         ["Vague de ki", "envoie une", "https://i.imgur.com/KnXpsyl.gif", "#a9312c"],
     ],
-    "Zamasu" : [
-        ["Lame de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
-        ["Bombe divine", "utilise une", image_temporaire, hexadecimal_temporaire],
-    ],
     "Black Goku" : [
-        ["Faux de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
-        ["Black kamehameha", "utilise", image_temporaire, hexadecimal_temporaire],
-        ["Explosion sacrée", "envoie une", image_temporaire, hexadecimal_temporaire],
+        ["Faux de ki", "dégaine sa", "https://i.imgur.com/ar4YKPP.gif", "#f57ffa"],
+        ["Black kamehameha", "utilise", "https://i.imgur.com/54GeAFB.gif", "#f906ef"],
+        ["Explosion sacrée", "envoie une", "https://i.imgur.com/rPNct67.gif", "#203d21"],
+        ["Annihilation", "", "https://i.imgur.com/LupZy1w.gif", "#6662bc"],
+        ["Parade", "", "https://i.imgur.com/E035gaW.gif","#040205"],
     ],
     "Hit" : [
         ["Point Vitaux", "vise les", "https://i.imgur.com/vi0Kg6z.gif", "#ff3bde"],
+        ["Fracture temporelle", "", "https://i.imgur.com/kklcPtu.gif", "#3603f6"],
+        ["Saut temporel", "", "https://i.imgur.com/rP20Hmt.gif", "#071131"],
+        ["Massacrer son adversaire", "arrête le temps pour", "https://i.imgur.com/HKcldBa.gif", "#44dfa3"],
     ],
     "Piccolo" : [
-        ["Makankosappo", "charge son", image_temporaire, hexadecimal_temporaire],
+        ["Makankosappo", "charge son", "https://i.imgur.com/HBg2V3a.gif", "#827707"],
+        ["Charge", "", "https://i.imgur.com/V4r06Ui.gif", "#361c67"],
+        ["S''échauffe", "", "https://i.imgur.com/Gck6OH7.gif", "#2ad918"],
+        ["Est sérieux", "", "https://i.imgur.com/npQbMoy.gif", "#f5e984"],
     ],
     "Trunks" : [
-        ["Lame de ki", "tranche avec sa", image_temporaire, hexadecimal_temporaire],
-        ["Masenko", "envoie", image_temporaire, hexadecimal_temporaire],
-        ["Attaque brûlante", "envoie une", image_temporaire, hexadecimal_temporaire]
+        ["Épée", "dégaine son", 'https://i.imgur.com/1GEs349.gif', "#394477"],
+        ["Masenko", "envoie", "https://i.imgur.com/sRCIDcu.gif", "#c9cd50"],
+        ["Attaque brûlante", "prépare son", "https://i.imgur.com/m29kdBa.gif", "#0e6b9f"]
     ],
     "Kefla" : [
-        ["Explosion gigantesque", "balance son", image_temporaire, hexadecimal_temporaire],
-        ["Ki erratique", "envoie des lasers de", image_temporaire, hexadecimal_temporaire],
-        ["Attaque météore", "frappe avec", image_temporaire, hexadecimal_temporaire],
-    ],
-    "Freezer" : [
-        ["Rayon laser", "perce l''  ennemi avec son", image_temporaire, hexadecimal_temporaire],
-        ["Boule de la mort", "utilise sa", image_temporaire, hexadecimal_temporaire],
-        ["Kienzan", "envoie des", image_temporaire, hexadecimal_temporaire]
+        ["Boules de Ki", "balance des", "https://i.imgur.com/zF5aKBU.gif", "#d05d5a"],
+        ["Charge son Ki", "", "https://i.imgur.com/BBsF4DS.gif", "#6ac452"],
+        ["Disques berserk", "charge ses", "https://i.imgur.com/sJ6idlE.gif", "#0a1605"],
     ],
     # Full Metal Alchemist
     "Pere": [
