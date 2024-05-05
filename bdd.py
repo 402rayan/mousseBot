@@ -1,3 +1,4 @@
+from itertools import combinations
 import random
 import shutil
 import sqlite3
@@ -55,6 +56,7 @@ class Database:
             character_slot_three INTEGER,
             histoireLevel INTEGER DEFAULT 1,
             next_invocation INTEGER DEFAULT 0,
+            last_time_auto_team DATETIME DEFAULT NULL,
             FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
@@ -76,7 +78,6 @@ class Database:
         )
         ''')
         self.conn.commit()
-
 
     def create_character_table(self):
         self.conn.execute('''
@@ -126,6 +127,7 @@ class Database:
             lvl6pucci BOOLEAN DEFAULT NULL,
             lvl10run BOOLEAN DEFAULT NULL,
             lvl13chatMaisonHantee BOOLEAN DEFAULT NULL,
+            lvl18skipDialogue BOOLEAN DEFAULT NULL,
             FOREIGN KEY (user_discord_id) REFERENCES users (user_discord_id)
         )
         ''')
@@ -149,6 +151,46 @@ class Database:
         self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
     
+    def autoTeam(self, user_discord_id,ignoreTime = False):
+        max_character_auto_team = 50
+        # Vérifie que l'utilisateur a moins de 50 personnages
+        self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
+        count = self.cur.fetchone()[0]
+        if count >= max_character_auto_team:
+            return "ERROR_MAX_CHARACTERS"
+        if count < 3:
+            return "ERROR_MIN_CHARACTERS"
+        # Récupère les personnages de l'utilisateur
+        # Verifie qu'il n'a pas utilisé la commande il y a 2 minutes
+        self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
+        last_time = self.cur.fetchone()[0]
+        last_time = datetime.strptime(last_time, '%Y-%m-%d %H:%M:%S.%f') if last_time is not None else None
+        if last_time is not None and last_time + timedelta(minutes=3) > datetime.now() and not ignoreTime:
+            return "ERROR_AUTO_TEAM_TOO_FAST"
+        self.cur.execute(f"UPDATE users SET last_time_auto_team = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+        characters = self.get_characters(user_discord_id)
+        all_teams = []
+        # Générer toutes les combinaisons possibles de 3 personnages
+        for team_characters in combinations(characters, 3):
+            team = sorted(team_characters, key=lambda x: x[1])  # Tri des personnages par nom
+            all_teams.append(team)
+
+        # 2. Éliminer les doublons en utilisant un ensemble
+        teams_set = {tuple(team) for team in all_teams}
+        all_teams = [list(team) for team in teams_set]
+
+        all_stats = []
+
+        for team in all_teams:
+            stats = self.simulation_stats_team(team,True)
+            total_power = stats['stats']['ATK'] + stats['stats']['DEF'] + stats['stats']['HP']
+            all_stats.append((stats, total_power))
+        
+        all_stats.sort(key=lambda x: x[1], reverse=True)
+        return all_stats[:3]
+        
+
     def updateChoice(self, user_discord_id, choice, value):
         self.cur.execute(f"UPDATE user_choices SET {choice} = {value} WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
@@ -162,7 +204,7 @@ class Database:
         self.crate_user_choices()
         self.create_character_template_technique_table()
         self.conn.commit()
-        logger.info("Les tables ont été créées.")
+        logger.info("Fin de la création des tables.")
         
     def insert_user(self, user_discord_id, user_name):
         #On vérifie si l'utilisateur existe déjà
@@ -175,8 +217,7 @@ class Database:
             self.cur.execute(f"INSERT INTO user_choices (user_discord_id) VALUES ({user_discord_id})")
             self.conn.commit()
             logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a été inscrit dans la base de données.")
-        else:
-            logger.info(f"L'utilisateur {user_name} ({user_discord_id}) existe déjà dans la base de données.")
+            return True
 
     def get_tickets(self, user_discord_id):
         self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
@@ -208,7 +249,6 @@ class Database:
     def update_level_and_xp(self,character_id, xp_to_add):
         # Récupère l'XP actuel et le niveau de l'utilisateur
         current_xp, current_level = self.get_current_xp_and_level(character_id)
-        print(current_xp, current_level)
         
         # Mise à jour de l'XP
         new_xp = current_xp + xp_to_add
@@ -282,15 +322,15 @@ class Database:
             # print(template[1].lower(), template_name.lower(), Levenshtein.distance(template[1].lower(), template_name.lower()))
             if Levenshtein.distance(template[1].lower(), template_name.lower()) <= 1:
                 if user_name == "Bot":
-                    print(template_name + " a été trouvé avec une distance.")
+                    logger.warning(f"Levenshtein : {template[1].lower()} - {template_name.lower()}")
                 return template
         # Troisième étape : On vérifie si le nom est dans le nom du template
         for template in all_templates:
             if template_name.lower() in template[1].lower():
                 if user_name == "Bot":
-                    print(template_name, " a été trouvé dans le nom.")
+                    logger.warning(template_name, " a été trouvé dans le nom.")
                 return template
-        print(template_name, " n'a pas été trouvé.")
+        logger.error(f"Le template {template_name} n'a pas été trouvé.")
         return None
     
     def get_synergie_by_name(self, user_discord_id, user_name, synergy_name):
@@ -319,7 +359,6 @@ class Database:
     def create_character(self, user_discord_id,user_name, template_id):
         self.cur.execute(f"INSERT INTO characters (user_discord_id, template_id) VALUES ({user_discord_id}, {template_id})")
         self.conn.commit()
-        logger.info(f"Un nouveau personnage a été créé pour l'utilisateur {user_name} ({user_discord_id}).")
         return self.cur.lastrowid
     
     def delete_character(self, char_id):
@@ -350,6 +389,7 @@ class Database:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
         else:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
+            #rarity = 'SS'
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
@@ -358,18 +398,19 @@ class Database:
         if len(liste_personnages) >= CONSTANTS['MAX_CHARACTERS']:
             return "ERROR_MAX_CHARACTERS"
         iteration = 0
-        while True and iteration < 100:
+        while True and iteration < 50:
             template = random.choice(character_templates)
             template_id = template[0]
             if not any(char[2] == template_id for char in liste_personnages):
                 break
             iteration += 1
-        if iteration == 100:
+        if iteration > 49:
+            logger.error(f"Le joueur {user_name} ({user_discord_id}) n'a pas pu invoquer de personnage de rareté {rarity}.")
             return "ERROR_NO_CHARACTER"
         template_id = template[0]
         template_name = template[1]
         new_character = self.create_character(user_discord_id,user_name, template_id)
-        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name}. Il reste {tickets} tickets. Le personnage invoqué a pour id {new_character}. La rareté est {rarity}. L'invocation était spéciale : {special}.")
+        logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name} [{rarity}] (id : {template_id}) (character Id : {new_character}) . Tickets restants : {tickets}. " + ("Invocation spéciale." if special else ""))
         self.update_tickets(user_discord_id, tickets)
         if special:
             self.update_special_invocation(user_discord_id, False)
@@ -462,23 +503,37 @@ class Database:
         team = {'team': team, 'stats': stats, 'synergies': noms_synergies, 'bonus': bonus}
         return team
     
-    def simulation_stats_team(self,team):
+    def simulation_stats_team(self,team, isRealData = False):
         stats = {'HP': 0, 'ATK': 0, 'DEF': 0}
-        for char in team:
-            if char is not None:
-                stats['HP'] += int(char[4])
-                stats['ATK'] += int(char[5])
-                stats['DEF'] += int(char[6])
+        if isRealData:
+            for char in team:
+                if char is not None:
+                    stats['HP'] += int(char[9]) + self.get_current_xp_and_level(char[0])[1]
+                    stats['ATK'] += int(char[10]) + self.get_current_xp_and_level(char[0])[1]
+                    stats['DEF'] += int(char[11]) + self.get_current_xp_and_level(char[0])[1]
+        else:
+            for char in team:
+                if char is not None:
+                    stats['HP'] += int(char[4]) 
+                    stats['ATK'] += int(char[5])
+                    stats['DEF'] += int(char[6])
 
         # Calcul des synergies et leurs nombres
         synergies = {}
         for char in team:
             if char is not None:
-                for synergy in self.get_synergies_by_character_template(char[0]):
-                    if synergy[1] not in synergies:
-                        synergies[synergy[1]] = 1
-                    else:
-                        synergies[synergy[1]] += 1
+                if isRealData:
+                    for synergy in self.get_synergies_by_character_template(char[5]):
+                        if synergy[1] not in synergies:
+                            synergies[synergy[1]] = 1
+                        else:
+                            synergies[synergy[1]] += 1
+                else:
+                    for synergy in self.get_synergies_by_character_template(char[0]):
+                        if synergy[1] not in synergies:
+                            synergies[synergy[1]] = 1
+                        else:
+                            synergies[synergy[1]] += 1
         
         # Calcul des boosts des synergies et application sur les statistiques
         bonus = {'HP': 0, 'ATK': 0, 'DEF': 0}
@@ -575,14 +630,14 @@ class Database:
             INSERT INTO character_templates (name, rarity, image_url, base_hp, base_attack, base_defense) VALUES (?, ?, ?, ?, ?, ?)
             ''', all_characters_templates[univers])
         self.conn.commit()
-        logger.info("Les templates de personnages ont été ajoutés à la base de données.")
+        logger.success("Les templates de personnages ont été ajoutés à la base de données.")
 
     def create_synergies(self):
         self.cur.executemany('''
         INSERT INTO synergies (synergy_id, name, type_of_boost, force_of_boost, description, image_url, color) VALUES (?, ?, ?, ?, ?, ?, ?) 
         ''', all_synergies)
         self.conn.commit()
-        logger.info("Les synergies ont été ajoutées à la base de données.")
+        logger.success("Les synergies ont été ajoutées à la base de données.")
     
     def create_link_synergies(self):
         for synergy_id, characters in all_link_synergies.items():
@@ -594,7 +649,7 @@ class Database:
                 # print(char_id, synergy_id)
                 self.cur.execute(f"INSERT INTO character_template_synergies (template_id, synergy_id) VALUES ({char_id}, {synergy_id})")
         self.conn.commit()
-        logger.info("Les liens de synergies ont été ajoutés à la base de données.")
+        logger.success("Les liens de synergies ont été ajoutés à la base de données.")
         
     def create_techniques(self, verbose=False):
         for character, techniques in all_techniques.items():
@@ -606,7 +661,7 @@ class Database:
                 if verbose:
                     logger.info(f"La technique {technique[0]} a été ajoutée pour le personnage {character}.")
         self.conn.commit()
-        logger.info("Les techniques ont été ajoutées à la base de données.")
+        logger.success("Les techniques ont été ajoutées à la base de données.")
 
     def createAllDatas(self):
         self.create_character_templates()
@@ -614,7 +669,7 @@ class Database:
         self.create_link_synergies()
         self.create_techniques()
         self.conn.commit()
-        logger.info("Toutes les données ont été ajoutées à la base de données.")
+        logger.success("Toutes les données ont été ajoutées à la base de données.")
 
     def reset(self,verbose=False):
         self.cur.execute("DROP TABLE IF EXISTS users")
@@ -628,6 +683,7 @@ class Database:
         self.create_tables()
 
         self.createAllDatas()
+        self.equilibrer_synergies()
         if verbose:
             logger.info("Les tables ont été supprimées.")
 
@@ -642,7 +698,7 @@ class Database:
         self.create_character_template_synergy_table()
         self.create_character_template_technique_table()
         self.createAllDatas()
-        logger.info("Les tables des personnages et des synergies ont été réinitialisées.")
+        logger.success("Les tables des personnages et des synergies ont été réinitialisées.")
         
     def createGifsFromDatabase(self):
         self.cur.execute("SELECT * FROM character_templates")
@@ -712,3 +768,36 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_techniques WHERE template_id = {identifiant}")
         return self.cur.fetchall()
     
+    def get_synergie_equilibrage(self, id, verbose=False):
+        self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
+        base_rate = 100 # De base, le multiplicateur d'une synergie est de 1
+        characters = self.cur.fetchall()
+        taux_de_baisse = {'X' : 6.5, 'SS' : 5.75, 'S' : 5, 'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1, 'E' : 0, 'F' : 0}
+        synergie = self.get_synergy(id)
+        if synergie is None:
+            return None
+        for character in characters:
+            rarete = character[4]
+            base_rate -= taux_de_baisse[rarete]
+            if verbose:
+                print(f"Le personnage {character[3]}[{rarete}] et fait passer le taux de {base_rate + taux_de_baisse[rarete]} à {base_rate}.")
+        final_base_rate = max(20, base_rate) / 100
+        print(f"La synergie {synergie[1]} a un taux de {final_base_rate}.") if verbose else None
+        return final_base_rate
+
+    def set_equilibre_synergy(self, id, rate,verbose=False):
+        self.cur.execute(f"UPDATE synergies SET force_of_boost = {rate} WHERE synergy_id = {id}")
+        self.conn.commit()
+        logger.info(f"La synergie {self.get_synergy(id)[1]} a été mise à jour avec un taux de {rate}.") if verbose else None
+
+    def equilibrer_synergies(self):
+        # on recupere toutes les synergies
+        self.cur.execute(f"SELECT * FROM synergies")
+        synergies = self.cur.fetchall()
+        for synergy in synergies:
+            equilibrage = self.get_synergie_equilibrage(synergy[0],False)
+            if equilibrage is not None:
+                self.set_equilibre_synergy(synergy[0],equilibrage, True)
+        logger.success("Toutes les synergies ont été équilibrées.")
+
+        
