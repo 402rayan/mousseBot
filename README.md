@@ -4,7 +4,7 @@ Avec ces personnages plusieurs choix s'offrent à nous :
 - Essayer de former la meilleure équipe possible grâce aux synergies entre personnages!
 - Affronter ses amis la commande `!pvp`
 - Découvrire une histoire créée spécialement pour le jeu avec `!histoire`
-- Compléter la collection de tous les personnages! Visible avec `!statisttique`
+- Compléter la collection de tous les personnages! Visible avec `!statistique`
 
 # Lancer le Bot
 
