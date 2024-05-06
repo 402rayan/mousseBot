@@ -194,7 +194,10 @@ class Database:
         # Retourne des statistiques tel que le nombre de personnages par rareté
         self.cur.execute("SELECT rarity, COUNT(*) FROM character_templates GROUP BY rarity")
         nombre_par_rarete = self.cur.fetchall()
-        return {'NOMBRE_PAR_RARETE': nombre_par_rarete}
+        dic = {}
+        for i in nombre_par_rarete:
+            dic[i[0]] = i[1]
+        return {'NOMBRE_PAR_RARETE': dic}
     
     def get_stats_joueur(self, user_discord_id):
         # Retourne des statistiques sur le joueur tel que le nombre de personnages qu'il possède
@@ -406,7 +409,7 @@ class Database:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
         else:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
-            rarity = 'SS'
+            # rarity = 'X'
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()

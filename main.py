@@ -1794,9 +1794,10 @@ async def statistiquesJoueur(message, userFromDb):
     ligne3 = f"⚔️ Nombre de combats : {gras('A venir..')}"
 
     description_rarete = ""
+    print(statsJoueur, statistiques)
     for index in range(len(statsJoueur['NOMBRE_PAR_RARETE'])):
         rarete = statsJoueur['NOMBRE_PAR_RARETE'][index][0]
-        description_rarete += f"{rarete} : {gras(statsJoueur['NOMBRE_PAR_RARETE'][index][1])} / {statistiques['NOMBRE_PAR_RARETE'][index][1]}\n"
+        description_rarete += f"{rarete} : {gras(statsJoueur['NOMBRE_PAR_RARETE'][index][1])} / {statistiques['NOMBRE_PAR_RARETE'][rarete]}\n"
     ligne5 = f"✨ Nombre de personnages par rareté :\n{description_rarete}"
     ligne4 = f"⚡ Puissance : {gras(statsJoueur['PUISSANCE'])}"
     desc = ligne1 + "\n\n" + ligne2 + "\n\n" + ligne3 + "\n\n" + ligne4 + "\n\n" + ligne5
