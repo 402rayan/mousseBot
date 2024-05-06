@@ -161,6 +161,7 @@ CONSTANTS = {
 
         "`!pvp @personne`": "Permet de **combattre un autre joueur** en pariant des tickets.",
         "`!infoSynergie {nom}`": "Permet de **voir les détenteurs d'une synergie**.",
+        "`!stats`": "Permet de **voir vos statistiques**.",
         
         "`!power` / `!puissance`": "Permet de **voir votre puissance** basé sur l'inventaire.",
         "`!classement`": "Permet de **voir le classement** en fonction de la puissance parmi votre serveur.",
@@ -180,6 +181,7 @@ CONSTANTS = {
         ["Vendre un personnage","Vous pouvez vendre un personnage grâce à la commande `!vendre` ou `!sell #personnage`", "https://i.imgur.com/pndwDbg.gif"],
         ["Combattre un autre joueur","Vous pouvez combattre un autre joueur grâce à la commande `!pvp @personne`", "https://i.imgur.com/srxwlXO.gif"],
         ["Voir les détenteurs d'une synergie","Vous pouvez voir les détenteurs d'une synergie grâce à la commande `!infoSynergie`", "https://i.imgur.com/H8B6IZE.gif"],
+        ["Voir ses statistiques","Vous pouvez voir vos statistiques grâce à la commande `!stats`", "https://i.ibb.co/pzztmhD/ezgif-2-0df5ddd9b1.gif"], # https://i.imgur.com/ScdroHQ.gif
         ["Et bien d'autres!","Il y a encore plein de commandes à découvrir! N'hésitez pas à les voir dans `!help`", "https://i.imgur.com/F06wJCG.gif"],
     ]
 }

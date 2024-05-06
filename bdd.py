@@ -151,8 +151,7 @@ class Database:
         self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
     
-    def autoTeam(self, user_discord_id,ignoreTime = False):
-        max_character_auto_team = 50
+    def autoTeam(self, user_discord_id,ignoreTime = False,max_character_auto_team = 60):
         # Vérifie que l'utilisateur a moins de 50 personnages
         self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
         count = self.cur.fetchone()[0]
@@ -189,6 +188,24 @@ class Database:
         
         all_stats.sort(key=lambda x: x[1], reverse=True)
         return all_stats[:3]
+        
+
+    def get_stats(self):
+        # Retourne des statistiques tel que le nombre de personnages par rareté
+        self.cur.execute("SELECT rarity, COUNT(*) FROM character_templates GROUP BY rarity")
+        nombre_par_rarete = self.cur.fetchall()
+        return {'NOMBRE_PAR_RARETE': nombre_par_rarete}
+    
+    def get_stats_joueur(self, user_discord_id):
+        # Retourne des statistiques sur le joueur tel que le nombre de personnages qu'il possède
+        self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
+        nombre_personnages = self.cur.fetchone()[0]
+        self.cur.execute(f"SELECT rarity, COUNT(*) FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} GROUP BY rarity")
+        nombre_par_rarete = self.cur.fetchall()
+        self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
+        nombre_tickets = self.cur.fetchone()[0]
+        puissance = self.getPower(user_discord_id)
+        return {'NOMBRE_PERSONNAGES': nombre_personnages, 'NOMBRE_PAR_RARETE': nombre_par_rarete, 'NOMBRE_TICKETS': nombre_tickets, 'PUISSANCE': puissance}
         
 
     def updateChoice(self, user_discord_id, choice, value):

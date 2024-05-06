@@ -43,10 +43,13 @@ async def execute_command(command, message, userFromDb):
         await command(message, userFromDb)
 
 # Set the confirmation message when the bot is ready
+statistiques = {}
 @bot.event
 async def on_ready():
+    global statistiques
     logger.info(f'{bot.user} est bien connecté!')
     database.create_tables()
+    statistiques = database.get_stats()
     
 @bot.event
 async def on_message(message):
@@ -1688,9 +1691,9 @@ async def autoTeam(message, userFromDb):
     if message.author.id not in CONSTANTS['ADMINS']:
         teams = database.autoTeam(message.author.id)
     else:
-        teams = database.autoTeam(message.author.id, True)
+        teams = database.autoTeam(message.author.id, True, 55)
     if teams == "ERROR_MAX_CHARACTERS":
-        await message.channel.send(embed=embed_info("Vous devez avoir moins de 50 personnages pour utiliser cette commande!","", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Vous devez avoir moins de 55 personnages pour utiliser cette commande!","", discord.Color.red()))
         return
     if teams == "ERROR_MIN_CHARACTERS":
         await message.channel.send(embed=embed_info("Vous devez avoir au moins 3 personnages pour utiliser cette commande!","", discord.Color.red()))
@@ -1772,6 +1775,41 @@ def idDiscordToInt(idDiscord):
     except ValueError:
         logger.error(f"Impossible de convertir {idDiscord} en entier.")
         return None
+
+@bot.command()
+async def statistiquesJoueur(message, userFromDb):
+    logger.info(f"Commande !statistiquesJoueur appelée par {message.author.name} ({message.author.id}). Contenu : {message.content}")
+    user = await fetch_user_from_message(message, 2)
+    if not user:
+        await message.channel.send(embed=embed_info("L'utilisateur n'est pas valide ou n'a pas encore joué au jeu!","", discord.Color.red()))
+        return
+    if user == "ERROR_SYNTAX":
+        await message.channel.send(embed=embed_info( "La commande doit être de la forme **!statistiques <joueur>**! ou `!statistiques`", discord.Color.red()))
+        return
+    statsJoueur = database.get_stats_joueur(user.id)
+    def gras(string):
+        return f"**{string}**"
+    ligne1 = f"🎫 Nombre de tickets : {gras(statsJoueur['NOMBRE_TICKETS'])}"
+    ligne2 = f"👨‍🦲 Nombre de personnages : {gras(statsJoueur['NOMBRE_PERSONNAGES'])}"
+    ligne3 = f"⚔️ Nombre de combats : {gras('A venir..')}"
+
+    description_rarete = ""
+    for index in range(len(statsJoueur['NOMBRE_PAR_RARETE'])):
+        rarete = statsJoueur['NOMBRE_PAR_RARETE'][index][0]
+        description_rarete += f"{rarete} : {gras(statsJoueur['NOMBRE_PAR_RARETE'][index][1])} / {statistiques['NOMBRE_PAR_RARETE'][index][1]}\n"
+    ligne5 = f"✨ Nombre de personnages par rareté :\n{description_rarete}"
+    ligne4 = f"⚡ Puissance : {gras(statsJoueur['PUISSANCE'])}"
+    desc = ligne1 + "\n\n" + ligne2 + "\n\n" + ligne3 + "\n\n" + ligne4 + "\n\n" + ligne5
+    embed = discord.Embed(
+        title="",
+        description=desc,
+        color=get_color_based_on_power(statsJoueur['PUISSANCE'])
+    )
+    embed.set_author(name=f"Statistiques de {user.name}", icon_url=user.avatar.url)
+
+    await message.channel.send(embed=embed)
+
+    
 
 @bot.command()
 async def tutoriel(message, userFromDb):
@@ -2527,7 +2565,12 @@ def get_color_based_on_power(power):
         100: CONSTANTS['RARITY_COLOR']['F'],
         200: CONSTANTS['RARITY_COLOR']['E'],
         300: CONSTANTS['RARITY_COLOR']['D'],
-        float('inf'): CONSTANTS['RARITY_COLOR']['C']  # Supposons que tout supérieur à 300 est 'C'
+        500: CONSTANTS['RARITY_COLOR']['C'],
+        1000: CONSTANTS['RARITY_COLOR']['B'],
+        2500: CONSTANTS['RARITY_COLOR']['A'],
+        5000: CONSTANTS['RARITY_COLOR']['S'],
+        7000: CONSTANTS['RARITY_COLOR']['SS'],
+        float('inf'): CONSTANTS['RARITY_COLOR']['X']  # Supposons que tout supérieur à 300 est 'C'
     }
 
     for threshold, color in power_ranges.items():
@@ -2777,6 +2820,7 @@ commands = {
     "sa": inventaire,          # "sac"
     "sel": sell,               # "sell", "vendre"
     "set": setLevel,           # "setlevel"
+    "st": statistiquesJoueur,  # "satistiques"
     "su": invocation,          # "summon"
     "tic": getTickets,         # "tic"
     "te": voirTeam,            # "te", "voi"
