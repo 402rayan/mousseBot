@@ -790,9 +790,9 @@ class Database:
     
     def get_synergie_equilibrage(self, id, verbose=False):
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
-        base_rate = 100 # De base, le multiplicateur d'une synergie est de 1
+        base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'X' : 6.5, 'SS' : 5.75, 'S' : 5, 'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1, 'E' : 0, 'F' : 0}
+        taux_de_baisse = {'X' : 7.5, 'SS' : 6.75, 'S' : 6, 'A' : 5, 'B' : 4, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 0}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None

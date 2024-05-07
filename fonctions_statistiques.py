@@ -182,6 +182,25 @@ def check_double_synergie():
         if len(synergies) != len(set(synergies)):
             print(f"{character[1]} a des doublons dans ses synergies")
 
+def classement_synergies_les_plus_donnes():
+    # Ecris dans un fichier texte le nombre de personnages qui ont une synergie donnée
+    database = Database('mousse.db')
+    all_synergies = database.get_synergies()
+    all_characters = database.get_character_templates()
+    all_synergies_count = {}
+    for synergy in all_synergies:
+        all_synergies_count[synergy[1]] = 0
+    for character in all_characters:
+        synergies = database.get_synergies_by_character_template(character[0])
+        for synergy in synergies:
+            all_synergies_count[synergy[3]] += 1
+    all_synergies_count = sorted(all_synergies_count.items(), key=lambda x: x[1], reverse=True)
+    with open('statistiques/classement_synergies.log', 'w') as file:
+        for synergy in all_synergies_count:
+            file.write(f"{synergy[0]} : {synergy[1]}\n")
+
+
+
 def demandes():
     if input("Voulez vous reset la BDD ? (o/n) ") == 'o':
         Database('mousse.db').reset()
@@ -197,18 +216,19 @@ def demandes():
     generer_stats = input("Voulez-vous générer les stats des teams (GOURMAND EN RESSOURCE)? (o/n) ")
     if generer_stats == 'o':
         generer_team_stats()
-    classement = input("Voulez-vous générer le classement des personnages ? (o/n) ")
+    classement = input("Voulez-vous générer le classement des statistiques personnages ? (o/n) ")
     if classement == 'o':
         classement_personnages()
     top_synergie = input("Voulez-vous générer le nombre de synergies par personnage ? (o/n) ")
     if top_synergie == 'o':
         classement_nombre_synergies()
+    if input("Voulez-vous générer le classement des synergies les plus données ? (o/n) ") == 'o':
+        classement_synergies_les_plus_donnes()
     print("Fin des demandes.")
     return
 
 
 if input("Voulez-vous accéder au menu des demandes ? (o/n) ") == 'o':
     demandes()
-
 
 

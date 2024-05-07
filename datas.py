@@ -9,7 +9,7 @@ all_characters_templates = {
             ("Super Shenron", "X", "https://i.imgur.com/W7V2Oru.gif", 1500, 1500, 1500),
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 950, 900),
             ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 800, 1300, 800),
-            ("Grand Pretre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1200, 1000),
+            ("Grand Prêtre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1200, 1000),
             ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1040, 1000),
             ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1010, 1050, 1000),
             ("Beerus", "X", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1150, 910),
@@ -431,7 +431,7 @@ all_characters_templates = {
 
             # Personnages C
             ("Ibara Shiozaki", "C", "https://i.imgur.com/psEieZz.jpeg", 285, 260, 235),
-            ('Shindo', 'C', 'https://i.imgur.com/I7uLCYw.jpeg', 285, 285, 270) ,
+            ('Yo Shindo', 'C', 'https://i.imgur.com/I7uLCYw.jpeg', 285, 285, 270) ,
             ('Rock Lock', 'C', 'https://i.imgur.com/s3iBS2y.jpeg', 305, 300, 250) ,
             ('Vlad King', 'C', 'https://i.imgur.com/v4AGxIS.jpeg', 295, 215, 245) ,
             ('Mezo Shoji', 'C', 'https://i.imgur.com/lCTpZJE.jpeg', 255, 260, 305) ,
@@ -516,7 +516,6 @@ all_characters_templates = {
             ("Tsezugera", "B", "https://i.imgur.com/3WvsTfn.png", 320, 350, 320),
             
             # Personnages C
-            ("Satotsu", "C", 'https://i.imgur.com/QQS66Kw.jpeg', 250, 270, 260),
             ("Pokkle", "C", "https://i.imgur.com/7A9UCci.png", 240, 275, 235),
             ("Menchi", "C", "https://i.imgur.com/OYoD8tt.jpeg", 270, 260, 255),
             ("Kanaria", "C", "https://i.imgur.com/tSSM35N.jpeg", 270, 260, 255),
@@ -580,7 +579,7 @@ all_characters_templates = {
             ],
             "Jujutsu Kaisen" : [  # ✅
             # Personnages X
-            ("Sukuna", "X", "https://i.imgur.com/sALgfhD.gif", 1000, 1100, 1050),
+            ("Ryomen Sukuna", "X", "https://i.imgur.com/sALgfhD.gif", 1000, 1100, 1050),
             ("Satoru Gojo", "X", "https://i.imgur.com/NC01s1K.gif", 999, 1050, 999),
             ("Kenjaku", "X", "https://i.imgur.com/40tFQKc.gif", 910, 920, 925),
 
@@ -1007,9 +1006,9 @@ all_characters_templates = {
             ("Beam", "B", "https://i.imgur.com/LmkjMXS.png", 340, 320, 315),
             ("Galgali", "B", "https://i.imgur.com/hzsrj4W.png", 330, 340, 310),
 
-            # Personnages C
-            ("Michiko Tendo", "C", "https://i.imgur.com/vsE0OlY.png", 240, 250, 255),
-            ("Yutaro Kurose", "C", "https://i.imgur.com/Ks0x4qp.png", 255, 250, 240),
+            # Personnages D
+            ("Michiko Tendo", "D", "https://i.imgur.com/vsE0OlY.png", 145, 165, 120),
+            ("Yutaro Kurose", "D", "https://i.imgur.com/Ks0x4qp.png", 145, 165, 125),
 
             # Personnages F
             ("Hirokazu Arai", "F", "https://i.imgur.com/74g6mPD.png", 40, 55, 50),
@@ -1102,7 +1101,7 @@ all_synergies = [
     (75, "Fushiguro", "ATK", 0.40, "La lignée Fushiguro est une lignee d'originaire humaine.", image_temporaire, "#FF0000"),
     (76, "Ubuyashiki", "HP", 0.25, "La famille Ubuyashiki est une famille de demons qui dirige le clan des pourfendeurs de demons.", image_temporaire, "#FFA500"),
     (77, "Hashira", "ATK", 0.40, "Les Hashiras sont les piliers de l'organisation des pourfendeurs de demons.", image_temporaire, "#0000FF"),
-    (78, "Pourfendeur de démons", "ATK", 0.35, "Les Pourfendeurs de demons sont une organisation secrete qui lutte contre les demons.", image_temporaire, "#800080"),
+    (78, "Tueur de Démon", "ATK", 0.35, "Les Pourfendeurs de demons sont une organisation secrete qui lutte contre les demons.", image_temporaire, "#800080"),
     (79, "Domaine des Papillons", "ATK", 0.45, "Le Domaine des Papillons est un lieu mysterieux où les demons se rassemblent pour se nourrir.", image_temporaire, "#FF0000"),
     (80, "Démon", "ATK", 0.35, "Les Demons sont des creatures malefiques qui se nourrissent de la chair humaine.", image_temporaire, "#FFA500"),
     (81, "Kamado", "ATK", 0.45, "La famille Kamado est une famille de pourfendeurs de demons qui a ete decimee par les demons.", image_temporaire, "#0000FF"),
@@ -1334,6 +1333,10 @@ all_synergies = [
     (308, "Utilisateur de l'Infini", "ATK", 0.45, "Les Utilisateurs de l'Infini sont des individus qui utilise l'infini en tant que pouvoir.", image_temporaire, "#00000"),
     (309, "Provocateur de Séisme", "ATK", 0.45, "Les Utilisateurs du Pouvoir Sismique sont des individus qui peuvent creer des tremblements de terre pour attaquer leurs ennemis.", image_temporaire, "#00000"),
     (310, "Détenteur d'Excalibur", "ATK", 0.45, "Les Detenteurs d'Excalibur sont des individus qui possedent l'epee legendaire Excalibur pour combattre leurs ennemis.", image_temporaire, "#00000"),
+    (311, "Transformation du Dernier Recours", "DEF", 0.45, "Les Derniers Recours sont des individus qui utilisent leur dernier souffle pour proteger leur famille et leur pays.", image_temporaire, "#00000"),
+    (312, "Président", "DEF", 0.45, "Les Presidents sont des individus qui dirigent leur pays ou un groupe.", image_temporaire, "#00000"),
+    (313, "Maître des 4 éléments", "DEF", 0.45, "Les Maitres de tous les elements sont des individus qui peuvent maitriser tous les elements pour combattre leurs ennemis.", image_temporaire, "#00000"),
+    (314, "Plasma Stellaire", "HP", 0.45, "Les Utilisateurs du Plasma Stellaire sont des individus qui étaient dus à un sacrifice pour Tengen.", image_temporaire, "#00000"),
 ]
 
 
@@ -1342,7 +1345,10 @@ all_synergies = [
 # Créer RANG Z avec Zeno, Athena, Super Shenron
 
 all_link_synergies = {
-    310 : ["Arthur Pendragon","Link"], # Détenteur d'Excalibur
+    314 : ["Yuki Tsukumo","Riko Amanai"], # Plasma Stellaire
+    312 : ["Funny Valentine","Isaac Netero"], # Président
+    311 : ["Gon Freecss","Gai Maito","Ichigo Kurosaki","Naruto Uzumaki"], # Dernier Recours
+    310 : ["Arthur Pendragon"], # Détenteur d'Excalibur
     309 : ["Edward Newgate","Marshall D. Teach","Yo Shindo"], # Pouvoir Sismique
     308 : ["Satoru Gojo","Merlin"], # Utilisateur de l'Infini
     306 : ["Kenpachi Zaraki","Retsu Unohana"], # Kenpachi
@@ -1353,7 +1359,7 @@ all_link_synergies = {
     301 : ["Kisuke Urahara","Yoruichi Shihoin"], # Boutique d'Urahara
     300 : ["Renji Abarai", "Ichigo Kurosaki","Shinji Hirako","Shuhei Hisagi","Toshiro Hitsugaya","Gin Ichimaru","Sajin Komamura","Ginrei Kuchiki","Rukia Kuchiki","Isshin Kurosaki","Mayuri","Kaname Tosen"], # Expérimenté en Shunpo
     299 : ["Mahoraga"], # Familier
-    #298 : ["Crocodile","Mahito","Franklin"], # Recousu
+    298 : ["Crocodile","Mahito","Franklin","Kishibe"], # Recousu
     #297 : ["Kento Nanami","Rui","Zabuza","Haku","C-18","Baggy","Brogy","Dorry","Sanji","Yoruichi Shihoin","Eren"], # Personnage de !histoire
     296 : ["Jolyne Kujo","Machi","Don Quichotte Doflamingo","Sasori","Chiyo","Kankuro","Beast Jeanist","Rui","Senjumaru Shutara"], # Maître des Fils
     295 : ["Monkey D. Luffy","Baggy","Nico Robin","Wapol","Don Quichotte Doflamingo","Brook","Gecko Moria","Bartholomew Kuma","Jewelry Bonney","Eustass Kid","Trafalgar D. Water Law","Urouge","Boa Hancock","Emporio Ivankov","Inazuma","Edward Newgate","Tsuru","Marshall D. Teach","Fujitora","Don Quichotte Rossinante","Charlotte Linlin","Charlotte Katakuri","Shiryu"], # Paramécia
@@ -1365,7 +1371,7 @@ all_link_synergies = {
     289 : ["Pilaf"], # Sosie d'Imran
     288 : ["Jotaro Kujo","Iggy","Joseph Joestar","Mohamed Abdul","Kakyoin","Jean-Pierre Polnareff"], # Stardust Crusaders
     287 : ["Kugo Ginjo","Ichigo Kurosaki","Chad","Shukuro Tsukishima"], # Fullbringer
-    286 : ["Megumi Fushiguro","Satoru Gojo","Sukuna","Jogo","Dagon","Mahito","Hiromi Higuruma","Kinji Hakari","Naoya Zenin","Kenjaku","Yuta Okkotsu","Hanami"], # Etendeur de Territoire
+    286 : ["Megumi Fushiguro","Satoru Gojo","Ryomen Sukuna","Jogo","Dagon","Mahito","Hiromi Higuruma","Kinji Hakari","Naoya Zenin","Kenjaku","Yuta Okkotsu","Hanami","Yuki Tsukumo"], # Etendeur de Territoire
     285 : ["All Might","Endeavor","Star And Stripe"], # Top 1 Héro
     284 : ["Sosuke Aizen","Soi Fon","Ichibe Hyosube","Byakuya Kuchiki","Shunsui Kyoraku","Yoruichi Shihoin","Jushiro Ukitake","Kisuke Urahara","Yamamoto"], # Expert du Shunpo
     283 : ["Toshiro Hitsugaya","Shuhei Hisagi","Yumichika","Izuru Kira","Rangiku Matsumoto","Shunsui Kyoraku","Isshin Kurosaki","Soi Fon","Kaname Tosen","Mayuri","Rukia Kuchiki","Ginrei Kuchiki"], # Experimenté en Kido
@@ -1400,76 +1406,76 @@ all_link_synergies = {
     254 : ["Toph Beifong","Risotto Nero","Hina","Eustass Kid","Korra"], # Maitre du Metal
     253 : ["All Might","Endeavor","Mirko","Hawks","Beast Jeanist","Child Emperor","Atomic Samurai","Bang","Tatsumaki","Star and Stripe"], # Héro du top 5
     252 : ["Monkey D. Luffy","Shanks","Boa Hancock","Silvers Rayleigh","Portgas D. Ace","Edward Newgate","Don Quichotte Doflamingo","Charlotte Linlin","Charlotte Katakuri","Kozuki Oden","Eustass Kid","Sengoku","Kaido","Gol D. Roger","Yamato","Roronoa Zoro","Monkey D. Garp","Topman Warcury"], # Haki Des RoisF
-    251 : ["Mahito","Aoi Todo","Nobara Kugisaki","Yuji Itadori","Kento Nanami","Yuta Okkotsu","Satoru Gojo"], # Utilisateur du Rayon Noir
+    251 : ["Mahito","Aoi Todo","Nobara Kugisaki","Yuji Itadori","Kento Nanami","Yuta Okkotsu","Satoru Gojo","Ryomen Sukuna"], # Utilisateur du Rayon Noir
     250 : ["Hiromi Higuruma","Diane","Nobara Kugisaki","Usopp","Speedwagon","Power"], # Utilisateur de Marteau
     249 : ["Dio Brando","Vanilla Ice","Straizo"], # Vampire
     248 : ["Alex Louis Armstrong", "Olivia Mira Armstrong","Sabo","Don Quichotte Rossinante","Don Quichotte Doflamingo","Nefertari Vivi","Cobra","Historia Reiss","Rhodes Reiss","Dinah Yeager","Willy Teyber","Frieda Reiss","Mikasa Ackerman","Zuko","Azula","Ozai","Iroh","Mai","Jaygarcia Saturn","Marcus Mars","Topman Warcury", "Ethanbaron Nusjuro","Shepherd Ju Peter","Yue"], # Noble
     247 : ["Alex Louis Armstrong","Caulifla","Izuna Uchiha","Katara","Daki","Boingo","Fubuki","Hanabi Hyuga","Karin Kurosaki","Yuzu Kurosaki","Gaara","Kechizu","Don Quichotte Rossinante","Son Goku","Shinobu Kocho","Zeldris","Scar","Azula","Genya Shinazugawa","Asura Otsutsuki","Arata Nitta","Orihime Inoue","Rukia Kuchiki","Falco Grice","Naoya Zenin","Killer Bee","Tobirama Senju","Estarossa","Ozai","Whis"], # Cadet
-    246 : ["Megumi Fushiguro","Yuji Itadori","Aoi Todo","Maki Zenin","Kinji Hakari","Toge Inumaki","Yuta Okkotsu","Noritoshi Kamo","Kokichi Muta","Nobara Kugisaki","Mai Zenin","Momo Nishimiya","Junpei","Kasumi Miwa","Yu Haibara","Riko Amanai","Josuke Higashikata","Okuyasu Nijimura","Koichi Hirose","Yukako Yamagishi","Momo Yaoyorozu","Izuku Midoriya","Tamaki Amajiki","Shihai Kuroiro","Suguru Geto","Toru Hagakure","Keigo Asano","Kyoka Jiro","Denki Kaminari","Mizuiro Kojima","Shindo","Katsuki Bakugo","Ochaco Uraraka","Ibara Shiozaki","Neito Monoma","Tenya Iida","Shoto Todoroki","Nejire Hado","Panda","Orihime Inoue","Ichigo Kurosaki","Chad","Fumikage Tokoyami","Shinso Hitoshi","Mirio Togata"], # Lyceen
-    245 : ["Sukuna","Megumi Fushiguro","Sai","Suguru Geto","Kabuto Yakushi","Takuma Ino","Junpei","Akane Sawatari","Orochimaru","Dagon","Kenjaku","Charlotte Linlin","Gecko Moria"], # Invocateur
+    246 : ["Megumi Fushiguro","Yuji Itadori","Aoi Todo","Maki Zenin","Kinji Hakari","Toge Inumaki","Yuta Okkotsu","Noritoshi Kamo","Kokichi Muta","Nobara Kugisaki","Mai Zenin","Momo Nishimiya","Junpei","Kasumi Miwa","Yu Haibara","Riko Amanai","Josuke Higashikata","Okuyasu Nijimura","Koichi Hirose","Yukako Yamagishi","Momo Yaoyorozu","Izuku Midoriya","Tamaki Amajiki","Shihai Kuroiro","Suguru Geto","Toru Hagakure","Keigo Asano","Kyoka Jiro","Denki Kaminari","Mizuiro Kojima","Yo Shindo","Katsuki Bakugo","Ochaco Uraraka","Ibara Shiozaki","Neito Monoma","Tenya Iida","Shoto Todoroki","Nejire Hado","Panda","Orihime Inoue","Ichigo Kurosaki","Chad","Fumikage Tokoyami","Shinso Hitoshi","Mirio Togata"], # Lyceen
+    245 : ["Ryomen Sukuna","Megumi Fushiguro","Sai","Suguru Geto","Kabuto Yakushi","Takuma Ino","Junpei","Akane Sawatari","Orochimaru","Dagon","Kenjaku","Charlotte Linlin","Gecko Moria","Funny Valentine"], # Invocateur
     244 : ["Katsuki Bakugo","Sasuke Uchiha","Vegeta","Zuko","Marshall D. Teach","Uryu Ishida","Shimotsuki Kuina","Sonic","Piccolo"], # Rival
     243 : ["Azula","Zuko","Ty Lee","Ozai","Iroh","Mai"], # Nation Du Feu
-    242 : ["Genthru","Momo Yaoyorozu", "Twice", "Hermes Costello", "Korutopi","Nico Robin","Kaio Shin","Guren","Kaito","Shizuku Murasaki","Knuckle Bine","Bonolenov Ndongo","Cheetu","Rikudo","Meliodas","Angel","Edward Elric","Roy Mustang","Solf J. Kimblee","Alex Louis Armstrong","Tim Marcoh","Isaac McDougal","Alphonse Elric","Van Hoheinheim","Père","Scar","Mei Chang","Hisoka","Star and Stripe","Piccolo","Kuroro Lucifer","Vados","Whis","Grand prêtre","Zeno"], # Matérialiseur
+    242 : ["Genthru","Momo Yaoyorozu", "Twice", "Hermes Costello", "Korutopi","Nico Robin","Kaio Shin","Guren","Kaito","Shizuku Murasaki","Knuckle Bine","Bonolenov Ndongo","Cheetu","Rikudo","Meliodas","Angel","Edward Elric","Roy Mustang","Solf J. Kimblee","Alex Louis Armstrong","Tim Marcoh","Isaac McDougal","Alphonse Elric","Van Hoheinheim","Père","Scar","Mei Chang","Hisoka","Star and Stripe","Piccolo","Kuroro Lucifer","Vados","Whis","Grand prêtre","Zeno","Ichibe Hyosube"], # Matérialiseur
     241 : ["Yachiru Kusajishi","Shuhei Hisagi","Ikkaku","Izuru Kira"], # Vice-Capitaine TODO
     240 : ["Sai","Deidara","Rohan Kishibe"], # Artiste
     239 : ["Moshi","Nezu","Chopper","Son Goten","Sajin Komamura","Xiao Mei","Kon (hxh)","Hawk","Nina Tucker"], # Trop MIGNOOON!!!
     238 : ["Sasuke Uchiha","Kimimaro","Anko","Guren","Mizuki","Jugo"], # Marque Maudite
-    237 : ["Itachi Uchiha","Tanjuro Kamado", "Kimimaro","Kaya","Trisha Elric","Jushiro Ukitake","Izumi Curtis","Gol D. Roger","Kokichi Muta","Barbe Blanche"], # Maladie Incurable
+    237 : ["Itachi Uchiha","Tanjuro Kamado", "Kimimaro","Kaya","Trisha Elric","Jushiro Ukitake","Izumi Curtis","Gol D. Roger","Kokichi Muta","Edward Newgate"], # Maladie Incurable
     236 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida","Kanae Katagiri"], # Ishida
     235 : ["Utahime Iori","Aoi Todo","Kento Nanami","Mei Mei","Atsuya Kusakabe","Naobito Zenin","Kokichi Muta","Naoya Zenin"], # Classe 1
     234 : ["Morel Mackernasey","Zushi","Sharnalk","Shoot","Vezze","Ponzu","Miruki Zoldyck","Irumi Zoldyck","Pufu","Karuto Zoldyck","Kikyo Zoldyck","Zazan"], # Nen de Manipulation
     233 : ["Pokkle","Senritsu","Franklin","Leorio","Silva Zoldyck","Meruem","Zeno Zoldyck"], # Nen d'Emission
     232 : ["Biscuit Kruger","Yupi","Machi","Feitan","Kirua Zoldyck","Hisoka"], # Nen de Transformation
     231 : ["Gon Freecss","Guido","Wing","Uvogin","Isaac Netero","Pamu Shiberia","Komugi","Nobunaga","Phinks","Gotoh","Ikarugo"], # Nen de Renforcement
-    230 : ["Himawari Uzumaki","Hanabi Hyuga","Son Goten","Udo","Gabi Braun","Zofia","Zushi","Falco Grice","Yachiru Kusajishi","Gotenks","Mitsuki","Uub","Karin Kurosaki","Yuzu Kurosaki","Shigechi","Mei Chang","Kon (hxh)","Child Emperor","Sarada Uchiha","Emporio","Eri","Poco","Kiyo","Naho","Anne","Inari","Selim Bradley","Aruka Zoldyck"], # Enfant
+    230 : ["Himawari Uzumaki","Hanabi Hyuga","Son Goten","Udo","Gabi Braun","Zofia","Zushi","Falco Grice","Yachiru Kusajishi","Gotenks","Mitsuki","Uub","Karin Kurosaki","Yuzu Kurosaki","Shigechi","Mei Chang","Kon (hxh)","Child Emperor","Sarada Uchiha","Emporio","Eri","Poco","Kiyo","Naho","Anne","Inari","Selim Bradley","Aruka Zoldyck","Gon Freecss","Kirua Zoldyck","Aang"], # Enfant
     229 : ["Himawari Uzumaki","Neji Hyuga","Hanabi Hyuga","Hinata Hyuga","Toneri Otsutsuki","Momoshiki Otsutsuki","Kaguya Otsutsuki","Isshiki Otsutsuki"], # Byakugan
-    228 : ["Tomura Shigaraki","Pain", "Kuroro Lucifer","Don Quichotte Doflamingo", "Chisaki Kai","Re-Destro","Risotto Nero","Crocodile","Isshiki Otsutsuki","Kurapika","Diavolo","Chisaki Kai","Silva Zoldyck","Giorno Giovanna"], # Chef d'Organisation criminelle
+    228 : ["Tomura Shigaraki","Pain", "Kuroro Lucifer","Don Quichotte Doflamingo", "Chisaki Kai","Re-Destro","Risotto Nero","Crocodile","Isshiki Otsutsuki","Kurapika","Diavolo","Silva Zoldyck","Giorno Giovanna","Boros"], # Chef d'Organisation criminelle
     227 : ["Gyomei Himejima","Sanemi Shinazugawa","Obanai Iguro","Mitsuri Kanroji","Giyu Tomioka","Tanjiro Kamado","Muichiro Tokito","Yoriichi Tsugikuni","Kokushibo"], # Marque des pourfendeurs
     226 : ["Beerus","Champa","Kokushibo","Yoriichi Tsugikuni","Mai Zenin","Maki Zenin","Karin Kurosaki","Yuzu Kurosaki","Weather Report","Enrico Pucci","Père","Van Hoheinheim","Rikudo"], # Jumeau
     225 : ["Beerus","Champa","Belmod","Père","Athena","Zamasu", "Maitre Kaio", "Kaio Shin", "Goku Black","Toppo","Ener","Drole","Elizabeth Liones","Estarossa","Kaguya Otsutsuki","Super Shenron","Garou"], # Divin
     224 : ["Caesar Clown","Hisoka","Belmod","Baggy"], # Clown
-    223 : ["Akaza","Bang","Son Goku","Tortue Geniale","Piccolo","Son Gohan","Vegeta","Hisoka","Maki Zenin","Toji Fushiguro","Rock Lee","Gai Maito","Annie Leonhart","Ling Yao","Shota Aizawa","Garou","Yoruichi Shihoin","Izumi Curtis","Trunks","Soi Fon","Lan Fan","Krilin","Jinbe","Mei Chang","Son Goten","Jonathan Joestar","Caesar Zeppeli","Videl","Cell","Lisa Lisa","Mr. Satan","Fu","Ten Shin Han","Yamcha","Will Zeppeli","Beerus","Pan","Wing","Zushi","Chaozu","Whis","Hit","Jiren","Sukuna","Satoru Gojo","C-17","C-18","Sneck","Ty Lee","Gogeta","Vegetto","Genos","Sabo","Shoot","Hack","Azula","Zuko","Orihime Inoue","Emporio Ivankov","Grand Pretre","Zeno Zoldyck","Doma","Toppo","Dio Brando","Isaac Netero","Whis","Vados","Ichigo Kurosaki"], # Expert en Art Martial
+    223 : ["Akaza","Bang","Son Goku","Tortue Geniale","Piccolo","Son Gohan","Vegeta","Hisoka","Maki Zenin","Toji Fushiguro","Rock Lee","Gai Maito","Annie Leonhart","Ling Yao","Shota Aizawa","Garou","Yoruichi Shihoin","Izumi Curtis","Trunks","Soi Fon","Lan Fan","Krilin","Jinbe","Mei Chang","Son Goten","Jonathan Joestar","Caesar Zeppeli","Videl","Cell","Lisa Lisa","Mr. Satan","Fu","Ten Shin Han","Yamcha","Will Zeppeli","Beerus","Pan","Wing","Zushi","Chaozu","Whis","Hit","Jiren","Ryomen Sukuna","Satoru Gojo","C-17","C-18","Sneck","Ty Lee","Gogeta","Vegetto","Genos","Sabo","Shoot","Hack","Azula","Zuko","Orihime Inoue","Emporio Ivankov","Grand Prêtre","Zeno Zoldyck","Doma","Toppo","Dio Brando","Isaac Netero","Vados","Ichigo Kurosaki","Ichibe Hyosube"], # Expert en Art Martial
     222 : ["Katara","Aang","Zuko","Toph Beifong","Appa","Sokka"], # Coalition de l'Avatar
     221 : ["Itachi Uchiha", "Madara Uchiha","Hashirama Senju", "Metal Bat","Edward Elric","Ichigo Kurosaki","Tanjiro Kamado","Portgas D. Ace","Irumi Zoldyck","Byakuya Kuchiki","Son Gohan","Cooler","Sanemi Shinazugawa","Dabi","Fuyumi Todoroki","Natsuo Todoroki","Boruto Uzumaki","Olivia Mira Armstrong","Sokka","Gyutaro","Oingo","Tatsumaki","Hinata Hyuga","Temari","Choso","Don quichotte Doflamingo","Raditz","Kanae Kocho","Frere de Scar","Zuko","Daniel J. D'Arby","Indra Otsutsuki","Akari Nitta","Mei Mei","A","Aoi Todo","Meliodas","Iroh","Vados"], # Grand frère Light yagami
     220 : ["Josuke Higashikata","Metal Bat","Okuyasu Nijimura","Knuckle Bine","Speedwagon"], # Voyou
-    219 : ["Sasuke Uchiha","Zuko","Jean-Pierre Polnareff","Kurapika","Scar","Freezer","Eren yeager","Roy Mustang","Caesar Zeppeli","Tanjiro Kamado","Genos","Gilthunder","Gabi Braun","Katana Man","Tomura Shigaraki","Enrico Pucci","Shoto Todoroki","Dabi","Shinso Hitoshi","Stain","Broly"], # Esprit de Vengeance Thorfinn
+    219 : ["Sasuke Uchiha","Zuko","Jean-Pierre Polnareff","Kurapika","Scar","Freezer","Eren yeager","Roy Mustang","Caesar Zeppeli","Tanjiro Kamado","Genos","Gilthunder","Gabi Braun","Katana Man","Tomura Shigaraki","Enrico Pucci","Shoto Todoroki","Dabi","Shinso Hitoshi","Stain","Broly","Broly"], # Esprit de Vengeance Thorfinn
     218 : ["Asuma Sarutobi","Shunsui Kyoraku","Tengen Uzui","Mikasa Ackerman","Levi Ackerman","Inosuke","Roronoa Zoro","Riza Hawkeye","Coyote Stark","King Bradley","Hatchan","Kozuki Oden","Jushiro Ukitake","Ichigo Kurosaki","Tenten","Pakunoda","Barry The Chopper","Hermep","Mike Zacharias","Hanzo","Katana Man","Gecko Moria","Doma","Madara Uchiha"], # Arme dans chaque main Thorfinn Kohaku Asta
     217 : ["Hidan","Goku Black","Zamasu","Nnoitra Gilga","Kaito","Shuhei Hisagi","Crocodile","Hanzo","Madara Uchiha"], # Faucheur
-    216 : ["Kobeni Higashiyama","Killer Bee","Maes Hughes","Leorio","Himiko Toga","Barry The Chopper","Baggy","Kenny Ackerman","Spinner","Dracule Mihawk","Dio Brando","Tenten","Pamu Shiberia","Hermep","Menchi","Mai","Kars","Anne","Naoya Zenin","Kuroro Zoldyck"], # Manieur de couteau Sun jingwoo juuzou Thorfinn
+    216 : ["Kobeni Higashiyama","Killer Bee","Maes Hughes","Leorio","Himiko Toga","Barry The Chopper","Baggy","Kenny Ackerman","Spinner","Dracule Mihawk","Dio Brando","Tenten","Pamu Shiberia","Hermep","Menchi","Mai","Kars","Anne","Naoya Zenin","Kuroro Lucifer","Kishibe"], # Manieur de couteau Sun jingwoo juuzou Thorfinn
     215 : ["Roy Mustang", "King Bradley","Grumman"], # Führer
     214 : ["King","Aruka Zoldyck","Queen"], # Calamité
     213 : ["Josuke Higashikata","Jotaro Kujo","Koichi Hirose","Okuyasu Nijimura","Rohan Kishibe","Yukako Yamagishi","Shigechi","Tonio Trussardi","Akira Otoishi","Kira Yoshikage","Tama"], # Résident de Morio
     212 : ["Escanor", "Mei Mei","Baraggan","Brogy","Juzo Kumiya","Zombieman","Gyomei Himejima","Kenpachi Zaraki"], # Utilisateur de Hache
-    211 : ["Grand Pretre", "Enrico Pucci","Isaac Netero","Ichibe Hyosube","Gyomei Himejima","Urouge","Uraume","Yahaba","Hidan","Scar","Doma"], # Spirituel
+    211 : ["Grand Prêtre", "Enrico Pucci","Isaac Netero","Ichibe Hyosube","Gyomei Himejima","Urouge","Uraume","Yahaba","Hidan","Scar","Doma"], # Spirituel
     210 : ["Leorio", "Shigechi","Nami","Mei Mei"], # Avare
     209 : ["Estarossa","Meliodas","Zeldris"], # Famille de Méliodas
     208 : ["Ban","Maki Zenin","Gai Maito","Rock Lee","Kurapika","Toji Fushiguro","Ikkaku"], # Utilisateur de Nunchaku
     207 : ["Roronoa Zoro","Kenpachi Zaraki","Yachiru Kusajishi",], # Sens de la direction douteux
-    206 : ["Riza Hawkeye","Mustard","Miles","Conny Springer","Narancia","Maria Ross","Franklin","Merry","Pakunoda","Kaito","Shepherd Ju Peter","Jean Havoc","Udo","Theo Magath","Rudol Von Stroheim","Genya Shinazugawa","Yelena","Jean Kirstein","Floch","Olivia Mira Armstrong","Shoot","Gaimon","Marcus Mars","Kikyo Zoldyck","Kenny Ackerman","Nejire Hado","Nobara Kugisaki","Gotoh","Jaco","Gol D. Roger","Zombieman","Eustass Kid","Queen","Metal Knight","Kizaru","Irumi Zoldyck","Gyro Zeppeli"], # Tireur
+    206 : ["Riza Hawkeye","Mustard","Miles","Conny Springer","Narancia","Maria Ross","Franklin","Merry","Pakunoda","Kaito","Shepherd Ju Peter","Jean Havoc","Udo","Theo Magath","Rudol Von Stroheim","Genya Shinazugawa","Yelena","Jean Kirstein","Floch","Olivia Mira Armstrong","Shoot","Gaimon","Marcus Mars","Kikyo Zoldyck","Kenny Ackerman","Nejire Hado","Nobara Kugisaki","Gotoh","Jaco","Gol D. Roger","Zombieman","Eustass Kid","Queen","Metal Knight","Kizaru","Irumi Zoldyck","Gyro Zeppeli","Funny Valentine"], # Tireur
     205 : ["Don Krieg","Shaka","Arthur Pendragon","Athena"], # Armure d'Or
     204 : ["Caesar Clown","Don Quichotte Doflamingo","Don Quichotte Rossinante","Vergo"], # Famille Don Quichotte
     203 : ["Caesar Clown","Tim Marcoh","Mayuri","Kisuke Urahara","Hange Zoe","Winry Rockbell","Franky","Child Emperor","Frere De Scar","Bulma","Cioccolata","Kars","Tom Xaver","Edward Elric","Alphonse Elric","Ener","Queen","Metal Knight","Jaygarcia Saturn","Kenjaku"], # Scientifique
-    202 : ["Hanami","King (NNT)","Ibara Shiozaki","Hashirama Senju","Tenzo", "Shinji Hirako Nishiya","Danzo Shimura", "Ryokugyu","Kanae Kocho","Kanao Tsuyuri","Shinobu Kocho","Shino Aburame","Asura Otsutsuki","Gloxinia","Naruto Uzumaki","Giorno Giovanna","Kaguya Otsutsuki","Madara Uchiha"], # Maitre de la nature
+    202 : ["Hanami","King (NNT)","Ibara Shiozaki","Hashirama Senju","Tenzo", "Shinji Hirako Nishiya","Danzo Shimura", "Ryokugyu","Kanae Kocho","Kanao Tsuyuri","Shinobu Kocho","Shino Aburame","Asura Otsutsuki","Gloxinia","Naruto Uzumaki","Giorno Giovanna","Kaguya Otsutsuki","Madara Uchiha","Obito Uchiha"], # Maitre de la nature
     201 : ["Escanor","Père","Feitan","Tanjiro Kamado","Sumiyoshi","Tanjuro Kamado","Yoriichi Tsugikuni"], # Pouvoir du soleil
     200 : ["King (NNT)","Gloxinia","Pufu"], # Fée
-    199 : ["Stinger","Maki Zenin","King (NNT)","Gloxinia","Power","Angel","Galand","Ulquiorra","Edward Newgate"], # Lancier 
+    199 : ["Stinger","Maki Zenin","King (NNT)","Gloxinia","Power","Angel","Galand","Ulquiorra","Edward Newgate","Ichibe Hyosube"], # Lancier 
     198 : ["Saitama", "Mumen Rider","Fubuki", "Tatsumaki", "King (OPM)", "Bang", "Flashy Flash", "Atomic Samurai", "Child Emperor", "Metal Knight", "Zombieman", "Genos", "Metal Bat", "Puri Puri Prisoner", "Stinger", "Sneck", "All Might", "Star And Stripe", "Endeavor","Nana Shimura","Beast Jeanist","Hawks","Shota Aizawa","Ryukyu","Mount Lady", "Gran Torino","Midnight", "Rock Lock", "Snipe","Sajin Higawara","Mirko","Lady Nagant","Shinji Hirako Nishiya","Nighteye","Toppo","Jiren"], # Héro Professionel
     197 : ["Freezer", "Cooler", "Grand Roi Cold", "Frost"], # Race de Freezer
     196 : ["Zamasu", "Maitre Kaio", "Kaio Shin", "Goku Black"], # Kaio
     195 : [], # Duplicateur
     194 : ["Mikasa Ackerman", "Levi Ackerman", "Kenny Ackerman"], # Ackerman
     193 : ["Sieg Yeager", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Gabi Braun", "Falco Grice", "Udo", "Zofia"], # Aspirant Guerrier
-    192 : ["Sharnalk","Makima","Irumi Zoldyck","Shinso Hitoshi","Kuroro Lucifer","Ino Yamanaka","Sosuke Aizen","Itachi Uchiha","Madara Uchiha","Sasuke Uchiha","Shisui Uchiha","Kakyoin","Merlin","Enmu","Rohan Kishibe","Kurenai Yuhi","Gowther","Tamayo","Pakunoda","Shinji Hirako","Isshiki Otsutsuki","Shukuro Tsukishima","Kaname Tosen","Shaka","Gyutaro","Senjumaru Shutara","Diego Brando","Irumi Zoldyck","Estarossa","Pufu","Hashirama Senju","Kaguya Otsutsuki","All For One","Arthur Pendragon","Rikudo"], # Manipulateur d'Esprit
+    192 : ["Sharnalk","Makima","Irumi Zoldyck","Shinso Hitoshi","Kuroro Lucifer","Ino Yamanaka","Sosuke Aizen","Itachi Uchiha","Madara Uchiha","Sasuke Uchiha","Shisui Uchiha","Kakyoin","Merlin","Enmu","Rohan Kishibe","Kurenai Yuhi","Gowther","Tamayo","Pakunoda","Shinji Hirako","Isshiki Otsutsuki","Shukuro Tsukishima","Kaname Tosen","Shaka","Gyutaro","Senjumaru Shutara","Diego Brando","Estarossa","Pufu","Hashirama Senju","Kaguya Otsutsuki","All For One","Arthur Pendragon","Rikudo"], # Manipulateur d'Esprit
     191 : [], # Fusion
     190 : ["Toji Fushiguro", "Hit","Zabuza Momochi","Tao Pai Pai","Zeno Zoldyck","Silva Zoldyck","Kirua Zoldyck","Karuto Zoldyck", "Ghiaccio", "Prosciutto", "Formaggio", "Cioccolata","Risotto Nero","Haku","Sonic","Irumi Zoldyck"], # Tueur à gage
     189 : ["Fugo (Purple Haze)","Mayuri","Mustard","Orochimaru","Magellan","Shizune","Kabuto Yakushi","Sasori","Shinobu Kocho","Soi Fon","Chiyo","Caesar Clown","Gloxinia","Zazan","Don Krieg","Hanzo","Eso","Frost","Kechizu","Junpei","Pokkle","Ponzu","Hanami","King (NNT)","Irumi Zoldyck","Gin Ichimaru","Choso"], # Empoisonneur
-    188 : ["Hidan", "Kakuzu","Sosuke Aizen","Isshiki Otsutsuki","Ban","Kars","Père","Zombieman","Zamasu","Vados","Whis","Muzan Kibutsuji"], # Immortel Meliodas ou les homonculus
+    188 : ["Hidan", "Kakuzu","Sosuke Aizen","Isshiki Otsutsuki","Ban","Kars","Père","Zombieman","Zamasu","Vados","Whis","Muzan Kibutsuji","Ichibe Hyosube"], # Immortel Meliodas ou les homonculus
     187 : ["Jiren", "Champa","Vados","Belmod", "Toppo", "Kefla", "Hit", "Goku Black", "Kale", "Caulifla", "Cabba", "Frost", "Trunks"], # Univers Alternatif
-    186 : ["Sukuna","Danzo Shimura","Bucciarati","Inazuma","Lust","Kars","Shukuro Tsukishima","Trafalgar D. Water Law","Gin Ichimaru","Edward Newgate"], # Dissecteur
+    186 : ["Ryomen Sukuna","Danzo Shimura","Bucciarati","Inazuma","Lust","Kars","Shukuro Tsukishima","Trafalgar D. Water Law","Gin Ichimaru","Edward Newgate"], # Dissecteur
     185 : ["Trafalgar D. Water Law", "Eustass Kid", "Monkey D. Luffy", "Roronoa Zoro", "Marshall D. Teach", "Urouge", "Jewelry Bonney"], # Génération Terrible
     184 : [], 
     183 : ["Saitama","Ichibe Hyosube","Ikkaku","Tortue Geniale","Juzo Kumiya","Nappa","Pixis","Yoshinobu Gakuganji","Krilin","Yamamoto","Karasu","Glutonny"], # Sans cheveux
-    182 : ["Shikamaru Nara", "Pegui","Armin Arlert","Erwin Smith","Momo Yaoyorozu","Sosuke Aizen","Kabuto Yakushi","Orochimaru","Maes Hughes","Botobai Gigante","Merlin","Nezu","Sieg Yeager","Izuku Midoriya","Hiromi Higuruma","Tsuru","Shihai Kuroiro","Sokka","Nico Robin","Joseph Joestar","Benn Beckman","Child Emperor","Nighteye","Komugi","Meruem","Tsezugera","Yamamoto","Kokichi Muta","Grand Pretre","Queen","Kento Nanami","Kirua Zoldyck","Aoi Todo","Zeno Zoldyck","Hisoka","Silvers Rayleigh","Kurapika","Chisaki Kai","Doma","Pufu","Makima","Kuroro Lucifer","Yhwach","Mayuri","All For One","Kenjaku","Muzan Kibutsuji"], # Stratège
+    182 : ["Shikamaru Nara", "Pegui","Armin Arlert","Erwin Smith","Momo Yaoyorozu","Sosuke Aizen","Kabuto Yakushi","Orochimaru","Maes Hughes","Botobai Gigante","Merlin","Nezu","Sieg Yeager","Izuku Midoriya","Hiromi Higuruma","Tsuru","Shihai Kuroiro","Sokka","Nico Robin","Joseph Joestar","Benn Beckman","Child Emperor","Nighteye","Komugi","Meruem","Tsezugera","Yamamoto","Kokichi Muta","Grand Prêtre","Queen","Kento Nanami","Kirua Zoldyck","Aoi Todo","Zeno Zoldyck","Hisoka","Silvers Rayleigh","Kurapika","Chisaki Kai","Doma","Pufu","Makima","Kuroro Lucifer","Yhwach","Mayuri","All For One","Kenjaku","Muzan Kibutsuji","Funny Valentine","Tanjiro Kamado","Ryomen Sukuna"], # Stratège
     181 : ["Vezze","Boa Hancock","Makima","Fubuki","Lust"], # Envoûteuse
     180 : ["Emporio Ivankov","Karasu","Belo Betty","Lindbergh","Olivia Mira Armstrong","Erwin Smith","Magellan","Ginyu","Grumman","Pixis","Theo Magath","Vergo","Jugram","Kozuki Oden","Re-Destro"], # Commandant
     179 : ["Merlin","Momo Nishimiya","Babidi"], # Magicien traditionnel
@@ -1484,15 +1490,15 @@ all_link_synergies = {
     170 : ["Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Bertholdt Hoover", "Annie Leonhart","Mike Zacharias","Yelena","Floch","Onyankopon"], # Bataillon d'Exploration
     168 : ["Daki","Jiraya","Kumadori","Pamu Shiberia","Yukako Yamagishi","Momoshiki Otsutsuki","Kaguya Otsutsuki"], # Manipulateur de cheveux
     167 : ["Itachi Uchiha","Karasu","Mei mei","Shisui Uchiha"], # Maitre des corbeaux
-    166 : ["Mount Lady", "Gigantomachia", "Diane","Armin Arlert","Bertholdt Hoover","Rhodes Reiss","Brogy","Dorry","Haguar D. Sauro","Magellan","Laboon","Sloth","Mike","Ryukyu","Choji Akimichi","Gecko Moria","Drole","Re-Destro","Kaido","Charlotte Linlin","Barbe Blanche","Eren Yeager","Charlotte Linlin"], # Géant
+    166 : ["Mount Lady", "Gigantomachia", "Diane","Armin Arlert","Bertholdt Hoover","Rhodes Reiss","Brogy","Dorry","Haguar D. Sauro","Magellan","Laboon","Sloth","Mike","Ryukyu","Choji Akimichi","Gecko Moria","Drole","Re-Destro","Kaido","Charlotte Linlin","Edward Newgate","Eren Yeager"], # Géant
     165 : ["Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Kakashi Hatake", "Sai","Boruto Uzumaki","Sarada Uchiha","Konohamaru Sarutobi","Mitsuki","Kawaki","Tenzo"], # Team 7
     164 : ["Sengoku", "Isaac Netero","Hashirama Senju","Doma"], # Pouvoir de Bouddha
-    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro Kuwajima","Ichibe Hyosube","Iroh","Shunsui Kyoraku","Bang","Jaygarcia Saturn","Marcus Mars","Topman Warcury", "Ethanbaron Nusjuro","Shepherd Ju Peter","Naobito Zenin","Capitaine","Soken Ishida","Pixis","Yoshinobu Gakuganji","Ginrei Kuchiki","Grumman","Hiruzen Sarutobi","Tortue Geniale","Recovery Girl","Gran Torino","Père","Onoki","Hama","Silvers Rayleigh","King Bradley","Toppo","Yhawch","Barbe Blanche"], # Vétéran
+    163 : ["Zeno Zoldyck","Isaac Netero", "Yamamoto","Tsuru","Monkey D. Garp","Sengoku","Jigoro Kuwajima","Ichibe Hyosube","Iroh","Shunsui Kyoraku","Bang","Jaygarcia Saturn","Marcus Mars","Topman Warcury", "Ethanbaron Nusjuro","Shepherd Ju Peter","Naobito Zenin","Capitaine","Soken Ishida","Pixis","Yoshinobu Gakuganji","Ginrei Kuchiki","Grumman","Hiruzen Sarutobi","Tortue Geniale","Recovery Girl","Gran Torino","Onoki","Hama","Silvers Rayleigh","King Bradley","Toppo","Yhwach","Edward Newgate"], # Vétéran
     162 : ["Kanaria","Gotoh","Whis","Vados","Uraume","Kanae Katagiri","Vanilla Ice","Koruto","Merry","Sumi Nakahara","Kiyo"], # Serviteur
     161 : ["Diavolo","Twice","Ling Yao","Escanor", "Gogeta","Vegetto","Zamasu","Gotenks","Kefla","All Might","Panda","Coyote Stark","Aruka Zoldyck"], # Double personnalité
     160 : ["Jiraya","Ebisu","Tortue Geniale","Denji","Mineta","Hisoka","Sanji","Meliodas","Brook","Kon","Midnight","Haruta Shigemo","Kira Yoshikage"], # Pervers
     159 : ["Orochimaru", "Kabuto Yakushi", "Sasuke Uchiha","Mitsuki","Anko","Akane Sawatari"], # Maitre des serpents
-    158 : ["Tompa","Mizuki","Miruki Zoldyck","Guido","Sadaso","Mineta","Cell JR","Shigechi","Majtani","Genthru","Babidi", "Don Krieg","Kuro","Yoki","Pilaf"], # Minable et perfide
+    158 : ["Tompa","Mizuki","Miruki Zoldyck","Guido","Sadaso","Mineta","Cell JR","Majtani","Genthru","Babidi", "Don Krieg","Kuro","Yoki","Pilaf","Akainu"], # Minable et perfide
     157 : ["Alphonse Elric", "Barry The Chopper","Kon","Panda"], # Âme
     156 : ["Weather Report","Nami","Monkey D. Dragon","Arthur Pendragon","Charlotte Linlin"], # Maitre du climat
     155 : ["Son Goku","Son Gohan", "Tortue Geniale", "Krilin", "Yamcha", "Ten Shin Han", "Chaozu", "Piccolo", "Vegeta", "Trunks", "Son Goten", "Bulma", "Videl", "Pan", "Yajirobe", "C-18","C-17","Majin Buu"], # Z Fighters
@@ -1500,15 +1506,15 @@ all_link_synergies = {
     153 : ["Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Carla Yeager","Dinah Yeager"], # Yeager 
     152 : ["Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice","Frieda Reiss","Tom Xaver","Rhodes Reiss","Dinah Yeager","Gigantomachia","Armin Arlert"], # Titan
     151 : ["Shizune","Ijichi","Akari Nitta","Beans"], # Secrétaire
-    149 : ["Kakashi Hatake","Jiraya","Satoru Gojo","Shota Aizawa","Vlad King","Iruka","Wing","Tortue Geniale","All Might","Snipe","Maitre Kaio","Izumi Curtis","Midnight","Ebisu","Silvers Rayleigh","Dracule Mihawk","Sakonji Urokodaki","Bang","Atomic Samurai","Jigoro Kuwajima","Morel Mackernasey","Utahime Iori","Atsuya Kusakabe","Lisa Lisa","Karin","Kurenai Yuhi","Gai Maito","Mizuki","Konohamaru Sarutobi","Biscuit Kruger","Lady Nagant","Masamichi Yaga","Beast Jeanist","Hiruzen Sarutobi","Asuma Sarutobi","Gran Torino","Hama","Kento Nanami","Gyomei Himejima","Nana Shimura","Kisuke Urahara","Iroh","Merlin","Piccolo","Katara","Monkey D. Garp","Isaac Netero","Whis","Vados"], # Mentor
+    149 : ["Kakashi Hatake","Jiraya","Satoru Gojo","Shota Aizawa","Vlad King","Iruka","Wing","Tortue Geniale","All Might","Snipe","Maitre Kaio","Izumi Curtis","Midnight","Ebisu","Silvers Rayleigh","Dracule Mihawk","Sakonji Urokodaki","Bang","Atomic Samurai","Jigoro Kuwajima","Morel Mackernasey","Utahime Iori","Atsuya Kusakabe","Lisa Lisa","Karin","Kurenai Yuhi","Gai Maito","Mizuki","Konohamaru Sarutobi","Biscuit Kruger","Lady Nagant","Masamichi Yaga","Beast Jeanist","Hiruzen Sarutobi","Asuma Sarutobi","Gran Torino","Hama","Kento Nanami","Gyomei Himejima","Nana Shimura","Kisuke Urahara","Iroh","Merlin","Piccolo","Katara","Monkey D. Garp","Isaac Netero","Whis","Vados","Kishibe"], # Mentor
     148 : ["Glutonny","Majin Buu","Charlotte Linlin","Wapol", "Miruki Zoldyck","Menchi","Todo","Inosuke","Monkey D. Luffy","Son Goku","Sasha Braus","Portgas D. Ace","Choji Akimichi","Hawk","Beerus","Whis","Yajirobe","Polpo","Champa","Appa","Jewelry Bonney"], # Glouton
     147 : ["Shikamaru Nara","Fumikage Tokoyami","Shunsui Kyoraku","Megumi Fushiguro","Shihai Kuroiro","Meliodas","Jiraya","Derrierie","Selim Bradley","Gecko Moria","Estarossa","Marshall D. Teach","Arthur Pendragon"], # Manipulateur de l'ombre
-    146 : ["Tim Marcoh", "Neferopito","Tsunade","Sakura Haruno","Ryuken Ishida","Leorio","Shizune","Kabuto Yakushi","Recovery Girl","Karin (naruto)","Josuke Higashikata","Arata Nitta","Fû","Aoi Kanzaki","Kaio Shin","Foo Fighters","Hanataro","Isshin Kurosaki","Asura Otsutsuki","Chopper","Tamayo","Izuru Kira","Maitre Kaio","Orihime Inoue","Emporio Ivankov","Grand Pretre","Machi","Orochimaru","Marco","Shoko Ieiri","Elizabeth Liones","Trafalgar D. Water Law","Naruto Uzumaki","Hashirama Senju","Katara","Korra","Retsu Unohana","Giorno Giovanna","Yhwach","Vados","Whis","Athena"], # Medecin
+    146 : ["Tim Marcoh", "Neferopito","Tsunade","Sakura Haruno","Ryuken Ishida","Leorio","Shizune","Kabuto Yakushi","Recovery Girl","Karin (naruto)","Josuke Higashikata","Arata Nitta","Fû","Aoi Kanzaki","Kaio Shin","Foo Fighters","Hanataro","Isshin Kurosaki","Asura Otsutsuki","Chopper","Tamayo","Izuru Kira","Maitre Kaio","Orihime Inoue","Emporio Ivankov","Grand Prêtre","Machi","Orochimaru","Marco","Shoko Ieiri","Elizabeth Liones","Trafalgar D. Water Law","Naruto Uzumaki","Hashirama Senju","Katara","Korra","Retsu Unohana","Giorno Giovanna","Yhwach","Vados","Whis","Athena"], # Medecin
     145 : ["Nefertari Vivi","Vegeta","Ling Yao","Elizabeth Liones","Mei Chang","Azula","Yue","Zuko"], # Princesse
     144 : ["Pokkle","Uryu Ishida","Gowther","Noritoshi Kamo","Sasha Braus","Ryuken Ishida","Soken Ishida"], # Archer
     143 : ["Mr. Satan","King (OPM)","Majtani","Oingo","Baggy"], # Imposteur
     142 : ["Broly","Kale","Uvogin","Kefla","Yupi","Gigantomachia","Sloth","Jugo","Fugo (Purple Haze)"], # Berserker
-    141 : ["Envy","Oingo","Ginyu","Irumi Zoldyck","Muzan Kibutsuji","Yoruichi Shihoin","King (NNT)","Chopper","Rob Lucci","Heinkel","Darius","Marco","Kaku","King","Queen","Kaido","Mahito","Ryukyu","Shepherd Ju Peter","Yupi","Pufu","Katana Man","Denji","Suigetsu Hozuki","Kimimaro","Freezer","Cooler","Yamato","Tamaki Amajiki","Kabuto Yakushi","Orochimaru","Baggy","Kid Buu","Kiba Inuzuka","Biscuit Kruger","Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice","Frieda Reiss","Tom Xaver","Foo Fighters","Lindbergh","Bardock","Mezo Shoji","Roi Vegeta","Marcus Mars","Jaygarcia Saturn","Jugo","Mayuri","Lust","Nezuko Kamado","Kars","Isshiki Otsutsuki","Père","Kakuzu","Himiko Toga","Sengoku","Ethanbaron Nusjuro","Diego Brando","Naruto Uzumaki","Topman Warcury","Piccolo","Armin Arlert","Kawaki","Charlotte Katakuri","Monkey D. Luffy","Sosuke Aizen","Muzan Kibutsuji"], # Métamorphe
+    141 : ["Envy","Oingo","Ginyu","Irumi Zoldyck","Muzan Kibutsuji","Yoruichi Shihoin","King (NNT)","Chopper","Rob Lucci","Heinkel","Darius","Marco","Kaku","King","Queen","Kaido","Mahito","Ryukyu","Shepherd Ju Peter","Yupi","Pufu","Katana Man","Denji","Suigetsu Hozuki","Kimimaro","Freezer","Cooler","Yamato","Tamaki Amajiki","Kabuto Yakushi","Orochimaru","Baggy","Kid Buu","Kiba Inuzuka","Biscuit Kruger","Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice","Frieda Reiss","Tom Xaver","Foo Fighters","Lindbergh","Bardock","Mezo Shoji","Roi Vegeta","Marcus Mars","Jaygarcia Saturn","Jugo","Mayuri","Lust","Nezuko Kamado","Kars","Isshiki Otsutsuki","Père","Kakuzu","Himiko Toga","Sengoku","Ethanbaron Nusjuro","Diego Brando","Naruto Uzumaki","Topman Warcury","Piccolo","Armin Arlert","Kawaki","Charlotte Katakuri","Monkey D. Luffy","Sosuke Aizen","Ryomen Sukuna"], # Métamorphe
     140 : ["Hiruzen Sarutobi", "Asuma Sarutobi", "Konohamaru Sarutobi"], # Sarutobi
     139 : ["Toji Fushiguro","Son Goku","Hashirama Senju","Tobirama Senju","Hiruzen Sarutobi", "Minato Namikaze", "Asuma Sarutobi","Deidara","Itachi Uchiha","Haku","Zabuza Momochi","Madara Uchiha","Sasori","Kimimaro","Hanzo","Chiyo","Freezer","Shenron","Son Gohan","Trunks","Tortue Geniale","Chaozu","Vegeta","Yamcha","Ten Shin Han","Cell","C-17","Piccolo","Krilin","Pamu Shiberia","Kaito","Fû","Suguru Geto","Katana Man","Galand","Uryu Ishida"], # Ressuscité
     138 : ["Yukako Yamagishi","Pamu Shiberia","Himiko Toga"], # Yandere
@@ -1516,11 +1522,11 @@ all_link_synergies = {
     136 : ["Kakashi Hatake","Satoru Gojo","Takuma Ino","Galgali","Karasu","King","Mezo Shoji","Shinji Hirako Nishiya","Hermep","Beam","Mustard","Inosuke","Spinner","Sabito","Sakonji Urokodaki","Sajin Higawara","Ryukyu","Halibel","Vlad King","Tamaki Amajiki","Sajin Komamura","Kikyo Zoldyck","Mount Lady","Twice","Grimmjow","Stain","Star and Stripe","Chisaki Kai"], # Masqué
     135 : ["Kankuro", "Sasori","Chiyo","Don Quichotte Doflamingo","Masamichi Yaga","Kokichi Muta","Neferopito","Kuroro Lucifer"], # Marionnettiste
     134 : ["Jones","Leluto","Hermes Costello","Jolyne Kujo","Isaac McDougal","Solf J. Kimblee","Lady Nagant","Polpo","Majtani","Yamato","Narciso Anasui","Foo Fighters","Weather Report","Hama","Shiryu"], # Prisonnier
-    133 : ["Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Grand Roi Cold","Dabra","Historia Reiss","Wapol","Cobra","King (NNT)","Zeldris","Gol D. Roger","Emporio Ivankov","Ozai","Zazan","Gloxinia","Nekomamushi","Meliodas","Bartholomew Kuma","Baraggan","Boa Hancock","Drole","Elizabeth Liones","Ban","Arthur Pendragon","Muzan Kibutsuji","Charlotte Linlin"], # Roi
-    132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu","Jogo","Hanami","Dagon","Mahito","Metal Bat","Flashy Flash","Genos","Puri Puri Prisoner","Choso","Zombieman","Deidara","Pain","Orochimaru","Sasori","Itachi Uchiha","Obito Uchiha","Kakuzu","Konan","Kisame","Hidan","Metal Knight","Tatsumaki"], # Classe S
+    133 : ["Ryomen Sukuna", "Meruem", "Yhwach","Zeno","Roi Vegeta","Grand Roi Cold","Dabra","Historia Reiss","Wapol","Cobra","King (NNT)","Zeldris","Gol D. Roger","Emporio Ivankov","Ozai","Zazan","Gloxinia","Nekomamushi","Meliodas","Bartholomew Kuma","Baraggan","Boa Hancock","Drole","Elizabeth Liones","Ban","Arthur Pendragon","Muzan Kibutsuji","Charlotte Linlin"], # Roi
+    132 : ["Suguru Geto","Satoru Gojo","Yuki Tsukumo","Yuta Okkotsu","Jogo","Hanami","Dagon","Mahito","Metal Bat","Flashy Flash","Genos","Puri Puri Prisoner","Choso","Zombieman","Deidara","Pain","Orochimaru","Sasori","Itachi Uchiha","Obito Uchiha","Kakuzu","Konan","Kisame","Hidan","Metal Knight","Tatsumaki","Ryomen Sukuna"], # Classe S
     131 : ["Toji Fushiguro","Maki Zenin","Gai Maito","Rock Lee","Izuku Midoriya","All Might"], # Dépourvu d'énergie occulte
     130 : ["Suguru Geto","Juzo Kumiya","Uraume","Haruta Shigemo","Kenjaku","Junpei"], # Maitre des Fleaux
-    129 : ["Smoker","Morel Mackernasey","Zabuza Momochi","Muichiro Tokito","Izuku Midoriya","Mei Terumi","Weather Report","Rangiku Matsumoto","Naruto Uzumaki"], # Maître du Brouillard
+    129 : ["Smoker","Morel Mackernasey","Zabuza Momochi","Muichiro Tokito","Izuku Midoriya","Mei Terumi","Weather Report","Rangiku Matsumoto"], # Maître du Brouillard
     128 : ["Kaku","Rob Lucci","Kumadori"], # CP-0
     127 : ["Choso","Kechizu", "Katara","Hama","Vlad King","Rui","Noritoshi Kamo","Power","Nezuko Kamado","Esidisi","Eso","Yahaba","Yuji Itadori","Tamayo","Stain","Korra","Retsu Unohana","Muzan Kibutsuji"], # Manipulateur de Sang
     126 : ["Jotaro Kujo","Jolyne Kujo","Holy Kujo"], # Famille Kujo
@@ -1549,8 +1555,8 @@ all_link_synergies = {
     106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Makima"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta","Gogeta","Vegetto","Gotenks"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Son Goten","Goku Black","Gogeta","Vegetto","Gotenks","Son Gohan"], # Famille de Son Goku
-    103 : ["Whis","Vados","Grand Pretre","Angel","Konan"], # Anges
-    102 : ["Beerus","Champa","Belmod","Tomura Shigaraki","Chisaki Kai","Scar","Vanilla Ice","Johnny Joestar","Yamamoto","Grand Pretre","Zeno","Toppo","Baraggan","Athena"], # Annihilateur
+    103 : ["Whis","Vados","Grand Prêtre","Angel","Konan"], # Anges
+    102 : ["Beerus","Champa","Belmod","Tomura Shigaraki","Chisaki Kai","Scar","Vanilla Ice","Johnny Joestar","Yamamoto","Grand Prêtre","Zeno","Toppo","Baraggan","Athena"], # Annihilateur
     101 : ["Meliodas","Ban","King (NNT)","Diane","Gowther","Merlin","Escanor","Lust","Glutonny","Envy","Sloth","Ling Yao","King Bradley","Selim Bradley"], # Péché capital
     100 : ["Derrierie","Estarossa","Zeldris","Gloxinia","Drole","Galand","Gowther","Meliodas"], # Dix Commandements
     99 : ["Kirua Zoldyck" , "Irumi Zoldyck", "Miruki Zoldyck", "Aruka Zoldyck", "Zeno Zoldyck", "Silva Zoldyck", "Kikyo Zoldyck","Karuto Zoldyck"], # Zoldyck
@@ -1564,7 +1570,7 @@ all_link_synergies = {
     91 : ["Edward Elric","Roy Mustang","Solf J. Kimblee","Alex Louis Armstrong","Tim Marcoh","Isaac McDougal","Alphonse Elric","Van Hoheinheim","Père","Scar","Mei Chang","Arthur Pendragon"], # Alchimiste
     90 : [], # Homonculus
     89 : ["Olivia Mira Armstrong","Alex Louis Armstrong"], # Armstrong
-    88 : ["Kenjaku","Okuyasu Nijimura","Yuki Tsukumo","Fujitora","Pain","Ochaco Uraraka","Enrico Pucci","Satoru Gojo","Rikudo","Grand Pretre","Garou"], # Maitre de la Gravite
+    88 : ["Kenjaku","Okuyasu Nijimura","Yuki Tsukumo","Fujitora","Pain","Ochaco Uraraka","Enrico Pucci","Satoru Gojo","Rikudo","Grand Prêtre","Garou"], # Maitre de la Gravite
     87 : ["Dio Brando","Diego Brando","Giorno Giovanna","Dario Brando"], # Brando
     86 : ["Kyogai","Kanamue","Rui","Mukago","Enmu","Daki","Gyutaro","Akaza","Doma","Kokushibo"], # Lune
     85 : [], # Souffle de la Fleur
@@ -1574,7 +1580,7 @@ all_link_synergies = {
     81 : ["Tanjiro Kamado","Sumiyoshi","Tanjuro Kamado","Nezuko Kamado"], # Kamado
     80 : ["Muzan Kibutsuji","Nezuko Kamado","Tamayo","Yahaba","Fille Araignee","Mere Araignee","Shinzu","Dabra","Denji","Makima","Power","Meliodas","Estarossa","Zeldris","Gloxinia","Hendrickson","Gowther","Derrierie","Galand","Katana Man","Akaza","Mukago","Daki","Enmu","Rui","Kyogai","Yupi","Kanamue","Moshi","Doma","Kaguya Otsutsuki"], # Demon
     79 : ["Aoi Kanzaki","Sumi Nakahara","Kiyo","Naho","Shinobu Kocho"], # Domaine des Papillons
-    78 : ["Kanao Tsuyuri","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko Kamado","Genya Shinazugawa","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hanakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Katana Man","Kobeni Higashiyama","Muichiro Tokito","Giyu Tomioka","Michiko Tendo","Aoi Kanzaki","Kyojuro Rengoku","Akane Sawatari"], # Pourfendeur de demons
+    78 : ["Kanao Tsuyuri","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko Kamado","Genya Shinazugawa","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hanakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Katana Man","Kobeni Higashiyama","Muichiro Tokito","Giyu Tomioka","Michiko Tendo","Aoi Kanzaki","Kyojuro Rengoku","Akane Sawatari"], # Tueur de Démon
     77 : ["Giyu Tomioka","Mitsuri Kanroji","Obanai Iguro","Sanemi Shinazugawa","Gyomei Himejima","Muichiro Tokito","Shinobu Kocho","Kyojuro Rengoku","Kanae Kocho","Tengen Uzui","Jigoro Kuwajima"], # Hashira
     76 : ["Kagaya Ubuyashiki"], # Ubuyashiki
     75 : ["Toji Fushiguro","Megumi Fushiguro","Tsumiki Fushiguro"], # Fushiguro
@@ -1582,12 +1588,12 @@ all_link_synergies = {
     73 : ["Toji Fushiguro", "Naobito Zenin","Mai Zenin","Maki Zenin","Megumi Fushiguro","Naoya Zenin"], # Zenin
     72 : ["Yoshinobu Gakuganji","Utahime Iori","Arata Nitta","Mai Zenin","Kasumi Miwa","Kokichi Muta","Aoi Todo","Noritoshi Kamo","Momo Nishimiya"], # ecole de Kyoto
     71 : ["Masamichi Yaga","Ijichi","Satoru Gojo","Atsuya Kusakabe","Shoko Ieiri","Akari Nitta","Megumi Fushiguro","Yuji Itadori","Nobara Kugisaki","Maki Zenin","Toge Inumaki","Panda","Yuta Okkotsu","Kinji Hakari","Kento Nanami","Suguru Geto","Yu Haibara"], # ecole de Tokyo
-    70 : ["Sukuna", "Mahito", "Jogo", "Dagon", "Hanami", "Choso","Kechizu"], # Fleaux
+    70 : ["Ryomen Sukuna", "Mahito", "Jogo", "Dagon", "Hanami", "Choso","Kechizu"], # Fleaux
     69 : ["Jonathan Joestar", "Joseph Joestar", "Jotaro Kujo", "Josuke Higashikata", "Giorno Giovanna", "Jolyne Kujo", "Johnny Joestar"], # JoJo
     68 : ["Genos","Cyborgorilla","C-17","C-18","Rudol Von Stroheim","Franky","Bartholomew Kuma","Metal Knight"], # Cyborg
     67 : ["Grimasse","Garou","Bang"], # Dojo de Bang
     66 : ["Fujitora","Toph Beifong","Kaname Tosen","Komugi","Shaka","N'Doul","Kagaya Ubuyashiki","Yahaba","Gyomei Himejima","All For One"], # Aveugle 
-    65 : ["Minato Namikaze", "Tobirama Senju", "Gran Torino","Sonic","Tenya Iida","Naobito Zenin","Flashy Flash","Shisui Uchiha","Izuku Midoriya","Mirko","Saitama", "Cheetu","Bonolenov Ndongo","Naoya Zenin","Feitan","Kirua Zoldyck","A","Tobirama Senju","Ethanbaron Nusjuro","Jugram","Yoruichi Shihoin","Kizaru","Akaza","Estarossa","Doma","Silva Zoldyck","Charlotte Katakuri","Satoru Gojo","All Might","Isaac Netero","Meruem","Arthur Pendragon","Muzan Kibutsuji","Kokushibo","Garou"], # Monstre de vitesse TODO
+    65 : ["Minato Namikaze", "Tobirama Senju", "Gran Torino","Sonic","Tenya Iida","Naobito Zenin","Flashy Flash","Shisui Uchiha","Izuku Midoriya","Mirko","Saitama", "Cheetu","Bonolenov Ndongo","Naoya Zenin","Feitan","Kirua Zoldyck","A","Ethanbaron Nusjuro","Jugram","Yoruichi Shihoin","Kizaru","Akaza","Estarossa","Doma","Silva Zoldyck","Charlotte Katakuri","Satoru Gojo","All Might","Isaac Netero","Meruem","Arthur Pendragon","Muzan Kibutsuji","Kokushibo","Garou","Gon Freecss","Boros"], # Monstre de vitesse TODO
     64 : ["Kaido","Ryukyu","Toshiro Hitsugaya","Shenron","Botobai Gigante","Super Shenron","Zeno Zoldyck"], # Draconique TODO  ,"Acnologia","Igneel"
     63 : ["Charlotte Linlin", "Charlotte Katakuri"], # equipage de Charlotte Linlin
     62 : ["Kaido", "King", "Queen"], # equipage de Kaido
@@ -1615,18 +1621,19 @@ all_link_synergies = {
     25 : ["Kisame", "Zabuza Momochi", "Haku", "Mei Terumi", "Suigetsu Hozuki"], # Kiri TODO
     26 : ["Darui", "Killer Bee"], # Kumo TODO
     27 : [ "Onoki", "Deidara"], # Iwa TODO
-    28 : ["Naruto Uzumaki", "Killer Bee","Fû", "Yuji Itadori","Madara Uchiha","Obito Uchiha","Gaara","Mito Uzumaki","Kushina Uzumaki","Rikudo","Boruto Uzumaki","Kawaki"], # Receptacle TODO
-    29 : ["Aang","Korra", "Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi Uchiha", "Madara Uchiha", "Sasuke Uchiha","Kakuzu","Jogo","Mohamed Abdul","Dabi","Sukuna","Yamamoto","Roy Mustang","Kyojuro Rengoku","Escanor","Sanji","Endeavor","King","Yoriichi Tsugikuni","Merlin","Shisui Uchiha","Izuna Uchiha","Mitsuri Kanroji","Indra Otsutsuki","Toneri Otsutsuki","Hanzo","Danzo Shimura","Hiruzen Sarutobi","Rikudo","Meliodas","Jiraya","Onoki","Orochimaru","Minato Namikaze","Kakashi Hatake","Tobirama Senju","Naruto Uzumaki","Momoshiki Otsutsuki","Hashirama Senju","Kawaki","Kaguya Otsutsuki"],# Maitre du Feu TODO
-    30 : ["Aang","Korra", "Katara", "Suigetsu Hozuki", "Mei Terumi","Kakuzu","Tobirama Senju","Kisame","Hama","Halibel","Jinbe","Sakonji Urokodaki","Giyu Tomioka","Sabito","Tanjiro Kamado","Zabuza Momochi","N'Doul","Isaac McDougal","Boruto Uzumaki","Asura Otsutsuki","Toneri Otsutsuki","Hiruzen Sarutobi","Rikudo","Konan","Orochimaru","Kakashi Hatake","Itachi Uchiha","Naruto Uzumaki","Momoshiki Otsutsuki","Hashirama Senju","Dagon","Kaguya Otsutsuki","Madara Uchiha"], # Maitre de l'Eau TODO
-    31 : ["Aang","Korra", "Toph Beifong", "Tenzo","Kakuzu","Asura Otsutsuki","Hashirama Senju","Toneri Otsutsuki","Danzo Shimura","Hiruzen Sarutobi","Rikudo","Konan","Jiraya","Onoki","Orochimaru","Drole","Kakashi Hatake","Tobirama Senju","Naruto Uzumaki","Momoshiki Otsutsuki","Diane","Kaguya Otsutsuki","Madara Uchiha"], # Maitre de la Terre TODO
-    32 : ["Aang","Korra","Temari","Mei Terumi","Danzo Shimura","Boruto Uzumaki","Monkey D. Dragon","Wamuu","All For One","Tomura Shigaraki","Weather Report","Sanemi Shinazugawa","Asura Otsutsuki","Toneri Otsutsuki","Hiruzen Sarutobi","Rikudo","Asuma Sarutobi","Konan","Kakuzu","Onoki","Orochimaru","Minato Namikaze","Kakashi Hatake","Tobirama Senju","Naruto Uzumaki","Momoshiki Otsutsuki","Hashirama Senju","Kaguya Otsutsuki","Madara Uchiha","Muzan Kibutsuji","Vados","Whis"], # Maitre de l'Air TODO
-    33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena","Denki Kaminari","Zenitsu","Jigoro Kuwajima","Kirua Zoldyck","Yoruichi Shihoin","Akira Otoishi","Boruto Uzumaki","All For One","Tomura Shigaraki","Gilthunder","Lindbergh","Indra Otsutsuki","Toneri Otsutsuki","Hiruzen Sarutobi","Rikudo","Nekomamushi","Onoki","Orochimaru","A","Minato Namikaze","Tobirama Senju","Naruto Uzumaki","Momoshiki Otsutsuki","Hashirama Senju","Kaguya Otsutsuki","Madara Uchiha","Charlotte Linlin"], # Maitre de la foudre TODO
+    28 : ["Naruto Uzumaki", "Killer Bee","Fû", "Yuji Itadori","Madara Uchiha","Obito Uchiha","Gaara","Mito Uzumaki","Kushina Uzumaki","Rikudo","Boruto Uzumaki","Kawaki","Megumi Fushiguro"], # Receptacle TODO
+    313 : ["Aang","Korra","Kaguya Otsutsuki","Obito Uchiha","Kakuzu","Orochimaru","Hiruzen Sarutobi","Kakashi Hatake","Momoshiki Otsutsuki","Toneri Otsutsuki","Tobirama Senju","Hashirama Senju","Rikudo","Madara Uchiha"], # Maitre de tous les elements
+    29 : ["Portgas D. Ace","Shoto Todoroki", "Sabo", "Iroh", "Zuko", "Ozai", "Azula", "Itachi Uchiha", "Sasuke Uchiha","Jogo","Mohamed Abdul","Dabi","Ryomen Sukuna","Yamamoto","Roy Mustang","Kyojuro Rengoku","Escanor","Sanji","Endeavor","King","Yoriichi Tsugikuni","Merlin","Shisui Uchiha","Izuna Uchiha","Mitsuri Kanroji","Indra Otsutsuki","Hanzo","Danzo Shimura","Meliodas","Jiraya","Onoki","Minato Namikaze","Kawaki"],# Maitre du Feu TODO
+    30 : ["Katara", "Suigetsu Hozuki", "Mei Terumi","Kisame","Hama","Halibel","Jinbe","Sakonji Urokodaki","Giyu Tomioka","Sabito","Tanjiro Kamado","Zabuza Momochi","N'Doul","Isaac McDougal","Boruto Uzumaki","Asura Otsutsuki","Konan","Itachi Uchiha","Dagon"], # Maitre de l'Eau TODO
+    31 : ["Toph Beifong", "Tenzo","Asura Otsutsuki","Danzo Shimura","Konan","Jiraya","Onoki","Drole","Diane"], # Maitre de la Terre TODO
+    32 : ["Temari","Mei Terumi","Danzo Shimura","Boruto Uzumaki","Monkey D. Dragon","Wamuu","All For One","Tomura Shigaraki","Weather Report","Sanemi Shinazugawa","Asura Otsutsuki","Asuma Sarutobi","Konan","Onoki","Minato Namikaze","Naruto Uzumaki","Muzan Kibutsuji","Vados","Whis"], # Maitre de l'Air TODO
+    33 : ["Zuko", "Iroh", "Azula", "Ozai", "Kakashi Hatake","Sasuke Uchiha", "Killer Bee", "Darui", "Kakuzu", "Ener","Athena","Denki Kaminari","Zenitsu","Jigoro Kuwajima","Kirua Zoldyck","Yoruichi Shihoin","Akira Otoishi","Boruto Uzumaki","All For One","Tomura Shigaraki","Gilthunder","Lindbergh","Indra Otsutsuki","Toneri Otsutsuki","Hiruzen Sarutobi","Rikudo","Nekomamushi","Onoki","Orochimaru","A","Minato Namikaze","Tobirama Senju","Naruto Uzumaki","Momoshiki Otsutsuki","Hashirama Senju","Madara Uchiha","Charlotte Linlin","Boros"], # Maitre de la foudre TODO
     34 : ["Shoto Todoroki","Aokiji", "Toshiro Hitsugaya", "Rukia Kuchiki","Natsuo Todoroki","Fuyumi Todoroki","Rei Todoroki", "Uraume","Haku","Isaac McDougal","Ghiaccio","Katara","Doma","Korra","Kaguya Otsutsuki"], # Maitre de la Glace TODO Gray Fullbuster
 
-    36 : ["Akainu", "Jogo","Mei Terumi","Onoki","Naruto Uzumaki"], # Maitre de la Lave TODO
+    36 : ["Akainu", "Jogo","Mei Terumi","Onoki"], # Maitre de la Lave TODO
     39 : ["Gaara","Iggy","Crocodile","Sajin Higawara","Ganju Shiba","Toph Beifong","Onoki"], # Maitre du Sable 
-    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu Hozuki", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi Zaraki", "Retsu Unohana", "Gin Ichimaru", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Kozuki Oden", "Trafalgar D. Water Law", "Brook","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Kasumi Miwa","Spinner","Hatchan","Inazuma","Dorry","Tengen Uzui","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Mike Zacharias","Zeldris","Gilthunder","Katana Man","Shimotsuki Kuina","Sakonji Urokodaki","Sabito","Shunsui Kyoraku","Coyote Stark","Kisuke Urahara","Barry The Chopper","Ganju Shiba","King","Jushiro Ukitake","Jean-Pierre Polnareff","Atomic Samurai","Kaito","Ryokugyu","Muichiro Tokito","Yoriichi Tsugikuni","Tanjuro Kamado","Kimimaro","Atsuya Kusakabe","Yachiru Kusajishi","Zenitsu","Genya Shinazugawa","Giyu Tomioka","Flashy Flash","Shisui Uchiha","Jugram","Hiromi Higuruma","Yuta Okkotsu","Izuna Uchiha","Sokka","Kyojuro Rengoku","Ozaki","Sajin Komamura","Kanao Tsuyuri","Olivia Mira Armstrong","Grand Roi Cold","Shinobu Kocho","Mitsuri Kanroji","Hanataro","Inosuke","Sanemi Shinazugawa","Hendrickson","Isshin Kurosaki","Indra Otsutsuki","Asura Otsutsuki","Yumichika","Shuhei Hisagi","Mayuri","Danzo Shimura","Izuru Kira","Murata","Shinji Hirako","Sonic","Shukuro Tsukishima","Kugo Ginjo","Kaname Tosen","Angel","Nobunaga","Grimmjow","Feitan","Kento Nanami","Orochimaru","Kanae Kocho","Renji Abarai","Rangiku Matsumoto","Gecko Moria","Mahoraga","Ethanbaron Nusjuro","Yoruichi Shihoin","Vegetto","Kizaru","Silvers Rayleigh","Ulquiorra","Estarossa","Toshiro Hitsugaya","Arthur Pendragon","Rikudo","Kokushibo","Charlotte Linlin"], # epeiste Cavendish
-    41 : ["Fubuki","Tatsumaki","Himeno","Majin Buu","Babidi","Kaio Shin","Grand Roi Cold","Ginyu","Maitre Kaio","Whis","Vados","Grand Pretre","Athena"], # Telekinesiste
+    40 : ["Roronoa Zoro", "Dracule Mihawk","Toji Fushiguro","Maki Zenin", "Killer Bee", "Tashigi", "Kaku", "Sasuke Uchiha","Kisame", "Suigetsu Hozuki", "Zabuza Momochi","Shanks", "Gol D. Roger", "Stain", "Ichigo Kurosaki", "Sosuke Aizen", "Kenpachi Zaraki", "Retsu Unohana", "Gin Ichimaru", "Darui", "Yamamoto", "Trunks", "Tapion", "Son Gohan", "Rukia Kuchiki", "Byakuya Kuchiki", "Kozuki Oden", "Trafalgar D. Water Law", "Brook","Fujitora","Shiryu", "Yhwach","Haruta Shigemo","Yugao Uzuki","Ling Yao","Halibel","Yajirobe","Kasumi Miwa","Spinner","Hatchan","Inazuma","Dorry","Tengen Uzui","Dabra","Meliodas", "Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Levi Ackerman", "Hange Zoe", "Erwin Smith", "Jean Kirstein", "Conny Springer", "Sasha Braus", "Historia Reiss", "Ymir", "Reiner Braun", "Mike Zacharias","Zeldris","Gilthunder","Katana Man","Shimotsuki Kuina","Sakonji Urokodaki","Sabito","Shunsui Kyoraku","Coyote Stark","Kisuke Urahara","Barry The Chopper","Ganju Shiba","King","Jushiro Ukitake","Jean-Pierre Polnareff","Atomic Samurai","Kaito","Ryokugyu","Muichiro Tokito","Yoriichi Tsugikuni","Tanjuro Kamado","Kimimaro","Atsuya Kusakabe","Yachiru Kusajishi","Zenitsu","Genya Shinazugawa","Giyu Tomioka","Flashy Flash","Shisui Uchiha","Jugram","Hiromi Higuruma","Yuta Okkotsu","Izuna Uchiha","Sokka","Kyojuro Rengoku","Ozaki","Sajin Komamura","Kanao Tsuyuri","Olivia Mira Armstrong","Grand Roi Cold","Shinobu Kocho","Mitsuri Kanroji","Hanataro","Inosuke","Sanemi Shinazugawa","Hendrickson","Isshin Kurosaki","Indra Otsutsuki","Asura Otsutsuki","Yumichika","Shuhei Hisagi","Mayuri","Danzo Shimura","Izuru Kira","Murata","Shinji Hirako","Sonic","Shukuro Tsukishima","Kugo Ginjo","Kaname Tosen","Angel","Nobunaga","Grimmjow","Feitan","Kento Nanami","Orochimaru","Kanae Kocho","Renji Abarai","Rangiku Matsumoto","Gecko Moria","Mahoraga","Ethanbaron Nusjuro","Yoruichi Shihoin","Vegetto","Kizaru","Silvers Rayleigh","Ulquiorra","Estarossa","Toshiro Hitsugaya","Arthur Pendragon","Rikudo","Kokushibo","Charlotte Linlin","Ichibe Hyosube","Tanjiro Kamado"], # epeiste Cavendish
+    41 : ["Fubuki","Tatsumaki","Himeno","Majin Buu","Babidi","Kaio Shin","Grand Roi Cold","Ginyu","Maitre Kaio","Whis","Vados","Grand Prêtre","Athena","Beerus","Champa"], # Telekinesiste
     42 : ["Marshall D. Teach", "Shiryu", "Aokiji"], # Equipage de Barbe Noire
     43 : ["Edward Newgate", "Marco", "Portgas D. Ace"], # Equipage de Barbe blanche
     44 : ["Naruto Uzumaki", "Kushina Uzumaki", "Pain", "Karin (naruto)", "Mito Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki","Tsunade"], # Uzumaki
@@ -1634,17 +1641,17 @@ all_link_synergies = {
     46 : ["Hashirama Senju", "Tobirama Senju", "Tsunade", "Nawaki"], # Senju
     47 : ["Kaguya Otsutsuki", "Rikudo", "Momoshiki Otsutsuki", "Toneri Otsutsuki", "Isshiki Otsutsuki","Indra Otsutsuki","Asura Otsutsuki"], # Otsutsuki
     48 : ["Meruem", "Pufu", "Yupi","Fû","Zazan"], # Insecte
-    49 : ["Neferopito", "Yupi", "Pufu","Ichibe Hyosube","Senjumaru Shutara","Fu","Lan Fan","Gilthunder","Link"], # Garde Royale Tenjiro Kirinji Ōetsu Nimaiya Kirio Hikifune
+    49 : ["Neferopito", "Yupi", "Pufu","Ichibe Hyosube","Senjumaru Shutara","Fu","Lan Fan","Gilthunder"], # Garde Royale Tenjiro Kirinji Ōetsu Nimaiya Kirio Hikifune
     # 50 Zeppeli
     50 : ["Will Zeppeli", "Caesar Zeppeli", "Gyro Zeppeli"], # Zeppeli
     52 : ["Kars", "Wamuu", "Esidisi"], # Pillier
-    53 : ["Dio Brando","Diavolo", "Jotaro Kujo","Nighteye","Kira Yoshikage","Enrico Pucci","Charlotte Katakuri","Athena","Boingo","Neon Nostrad","Hit","Eri","Baraggan","Jugram","Yhwach","Momoshiki Otsutsuki","Grand Pretre","Whis","Vados","Diego Brando","Zamasu","Arthur Pendragon","Garou","Athena","Isshiki Otsutsuki"], # Maitre du Temps
+    53 : ["Dio Brando","Diavolo", "Jotaro Kujo","Nighteye","Kira Yoshikage","Enrico Pucci","Charlotte Katakuri","Athena","Boingo","Neon Nostrad","Hit","Eri","Baraggan","Jugram","Yhwach","Momoshiki Otsutsuki","Grand Prêtre","Whis","Vados","Diego Brando","Zamasu","Arthur Pendragon","Garou"], # Maitre du Temps
     54 : ["Kira Yoshikage", "Katsuki Bakugo","Solf J. Kimblee","Genthru","Deidara","Tengen Uzui","Bartholomew Kuma"], # Maitre de l'Explosion
     55 : ["Ghiaccio", "Prosciutto", "Formaggio", "Cioccolata","Risotto Nero"], # Squadra Esecuzioni
     56 : ["Jonathan Joestar", "Will Zeppeli", "Joseph Joestar", "Caesar Zeppeli", "Lisa Lisa", "Poco","Straizo","Kars"], # Hamon
     57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo (Purple Haze)", "Abbacchio","Diavolo","Luca","Polpo","Trish","Neon Nostrad","Katana Man"], # Mafioso
     58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo (Purple Haze)", "Abbacchio","Trish"], # Team Bucciarati
-    307 : ["Kurapika","Satoru Gojo"], # Dernier survivant de son clan
+    307 : ["Kurapika","Satoru Gojo","Aang"], # Dernier survivant de son clan
 }
 
 all_techniques = {
@@ -1930,8 +1937,8 @@ all_techniques = {
         ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],
         ["Maîtrise du corps à corps", "montre sa", "https://i.imgur.com/OLo0crU.gif", "#17436d"],
     ],
-    "Sukuna" : [
-        ["Trancher sukuna", "utilise", "https://i.imgur.com/Kr5pygu.gif", "#040404"],
+    "Ryomen Sukuna" : [
+        ["Trancher Ryomen Sukuna", "utilise", "https://i.imgur.com/Kr5pygu.gif", "#040404"],
         ["Découper", "utilise", "https://i.imgur.com/jzZsHne.gif", "#8b9095"],
         ["Fuga", "utilise", "https://i.imgur.com/i0PQMY3.gif", "#df4012"],
         ["Rayon noir", "réussit un", image_temporaire, hexadecimal_temporaire],

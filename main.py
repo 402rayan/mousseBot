@@ -2570,7 +2570,7 @@ def get_color_based_on_power(power):
         1000: CONSTANTS['RARITY_COLOR']['B'],
         2500: CONSTANTS['RARITY_COLOR']['A'],
         5000: CONSTANTS['RARITY_COLOR']['S'],
-        7000: CONSTANTS['RARITY_COLOR']['SS'],
+        8000: CONSTANTS['RARITY_COLOR']['SS'],
         float('inf'): CONSTANTS['RARITY_COLOR']['X']  # Supposons que tout supérieur à 300 est 'C'
     }
 
