@@ -2323,7 +2323,6 @@ async def infoSynergie(message, userFromDb):
     nom = synergie[1]; typeOfBoost = synergie[2]; forceOfBoost = synergie[3]
     description = synergie[4]; image = synergie[5]; color = int(synergie[6][1:], 16)
     charactersFromSynergy = database.get_character_template_who_has_synergy(synergie[0])
-    print(charactersFromSynergy)
     if not charactersFromSynergy or len(charactersFromSynergy) == 0:
         liste_personnages = "Aucun personnage n'a cette synergie."
     else:

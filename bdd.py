@@ -792,7 +792,7 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
         base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'X' : 7.5, 'SS' : 6.75, 'S' : 6, 'A' : 5, 'B' : 4, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 0}
+        taux_de_baisse = {'X' : 8, 'SS' : 6.75, 'S' : 6, 'A' : 5.5, 'B' : 5, 'C' : 4, 'D' : 3.5, 'E' : 2, 'F' : 1}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None
