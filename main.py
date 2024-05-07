@@ -1490,6 +1490,20 @@ async def couleur(message, userFromDb):
         await message.channel.send(embed=embed_invocation(template))
 
 @bot.command()
+async def techniquePersonnage(message, userFromDb):
+    # Affiche toutes les techniques d'un personnage
+    character = (' '.join(message.content.split(' ')[1:])).lower()
+    template = database.get_character_template_by_name(userFromDb[1], userFromDb[2], character)
+    if not template:
+        await message.channel.send(embed=embed_info("Personnage non trouvé!","", discord.Color.red()))
+        return
+    techniques = database.get_techniques(template[0])
+    response = f""
+    for technique in techniques:
+        response += f"{template[1]} - {technique[2]}\n"
+    await message.channel.send(embed=embed_info(f"Techniques de {template[1]} :", response[:2000], discord.Color.blue()))
+
+@bot.command()
 async def getTickets(message, userFromDb):
     logger.info(f"Commande !tickets appelée par {message.author.name} ({message.author.id}).")
     user = await fetch_user_from_message(message, 2)
@@ -2379,7 +2393,7 @@ async def infoTechnique(message, userFromDb):
     if technique == None:
         await message.channel.send(embed=embed_info("Technique introuvable", "Cette technique **n'existe pas**!", discord.Color.red()))
         return
-    
+    print(technique)
     # Création de l'embed
     nom = technique[2]; description = technique[3]; image = technique[4]; color = int(technique[5][1:], 16)
     charactersFromTechnique = database.get_character_template(technique[1])
@@ -2389,7 +2403,7 @@ async def infoTechnique(message, userFromDb):
         liste_personnages = "Cette technique appartient à " + charactersFromTechnique[1]
     embed = discord.Embed(
         title=nom,
-        description="",
+        description=f"{charactersFromTechnique[1]} {description} {technique[2]}",
         color=color
     )
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
@@ -2847,10 +2861,11 @@ commands = {
     "st": statistiquesJoueur,  # "satistiques"
     "su": invocation,          # "summon"
     "tic": getTickets,         # "tic"
-    "te": voirTeam,            # "te", "voi"
+    "tea": voirTeam,            # "te", "voi"
+    "tec" : techniquePersonnage, # "technique"
     "tu": tutoriel,            # "tutoriel"
     "ve": sell,                # "vendre"
-    "v": voirTeam,             # "voir"
+    "voirTea": voirTeam,             # "voir"
 }
 
 embedVs = discord.Embed(

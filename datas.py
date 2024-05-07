@@ -1439,7 +1439,7 @@ all_link_synergies = {
     222 : ["Katara","Aang","Zuko","Toph Beifong","Appa","Sokka"], # Coalition de l'Avatar
     221 : ["Itachi Uchiha", "Madara Uchiha","Hashirama Senju", "Metal Bat","Edward Elric","Ichigo Kurosaki","Tanjiro Kamado","Portgas D. Ace","Irumi Zoldyck","Byakuya Kuchiki","Son Gohan","Cooler","Sanemi Shinazugawa","Dabi","Fuyumi Todoroki","Natsuo Todoroki","Boruto Uzumaki","Olivia Mira Armstrong","Sokka","Gyutaro","Oingo","Tatsumaki","Hinata Hyuga","Temari","Choso","Don quichotte Doflamingo","Raditz","Kanae Kocho","Frere de Scar","Zuko","Daniel J. D'Arby","Indra Otsutsuki","Akari Nitta","Mei Mei","A","Aoi Todo","Meliodas","Iroh","Vados"], # Grand frère Light yagami
     220 : ["Josuke Higashikata","Metal Bat","Okuyasu Nijimura","Knuckle Bine","Speedwagon"], # Voyou
-    219 : ["Sasuke Uchiha","Zuko","Jean-Pierre Polnareff","Kurapika","Scar","Freezer","Eren yeager","Roy Mustang","Caesar Zeppeli","Tanjiro Kamado","Genos","Gilthunder","Gabi Braun","Katana Man","Tomura Shigaraki","Enrico Pucci","Shoto Todoroki","Dabi","Shinso Hitoshi","Stain","Broly","Broly"], # Esprit de Vengeance Thorfinn
+    219 : ["Sasuke Uchiha","Zuko","Jean-Pierre Polnareff","Kurapika","Scar","Freezer","Eren yeager","Roy Mustang","Caesar Zeppeli","Tanjiro Kamado","Genos","Gilthunder","Gabi Braun","Katana Man","Tomura Shigaraki","Enrico Pucci","Shoto Todoroki","Dabi","Shinso Hitoshi","Stain","Broly"], # Esprit de Vengeance Thorfinn
     218 : ["Asuma Sarutobi","Shunsui Kyoraku","Tengen Uzui","Mikasa Ackerman","Levi Ackerman","Inosuke","Roronoa Zoro","Riza Hawkeye","Coyote Stark","King Bradley","Hatchan","Kozuki Oden","Jushiro Ukitake","Ichigo Kurosaki","Tenten","Pakunoda","Barry The Chopper","Hermep","Mike Zacharias","Hanzo","Katana Man","Gecko Moria","Doma","Madara Uchiha"], # Arme dans chaque main Thorfinn Kohaku Asta
     217 : ["Hidan","Goku Black","Zamasu","Nnoitra Gilga","Kaito","Shuhei Hisagi","Crocodile","Hanzo","Madara Uchiha"], # Faucheur
     216 : ["Kobeni Higashiyama","Killer Bee","Maes Hughes","Leorio","Himiko Toga","Barry The Chopper","Baggy","Kenny Ackerman","Spinner","Dracule Mihawk","Dio Brando","Tenten","Pamu Shiberia","Hermep","Menchi","Mai","Kars","Anne","Naoya Zenin","Kuroro Lucifer","Kishibe"], # Manieur de couteau Sun jingwoo juuzou Thorfinn
@@ -1767,10 +1767,7 @@ all_techniques = {
     "Père": [
         ["Alchimie", "utilise l''", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
     ],
-    # Avatar
-    "Aang": [
-        ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
-    ],
+
     # Demon Slayer
     "Tanjiro Kamado" : [
         ["Souffle de l''eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
@@ -2085,5 +2082,64 @@ all_techniques = {
     ],
     
     # My Hero Academia
+    "All Might" : [
 
+    ],
+    "Tomura Shigaraki" : [
+            
+    ],
+    "All For One" : [
+                
+    ],
+    "Star And Stripe" : [
+    ],
+    "Izuku Midoriya" : [
+    ],
+    "Endeavor" : [
+    ],
+    "Chisaki Kai" : [
+    ],
+    "Nana Shimura" : [
+    ],
+    "Mirio Togata" : [
+    ],
+    "Re-Destro" : [
+    ],
+    "Katsuki Bakugo" : [
+    ],
+    "Gigantomachia" : [
+    ],
+    # Avatar
+    "Aang": [
+        ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
+        ["Les 4 éléments", "déferle", "https://i.imgur.com/yBVuMMq.gif", "#a53724"],
+        ["Les coups", "dévie", "https://i.imgur.com/i5NkYCL.gif","#4f1d0f"]
+    ],
+    "Korra": [
+    ],
+    "Ozai": [
+    ],
+    "Iroh": [
+    ],
+    "Azula": [
+        ["Foudre","invoque la","https://i.imgur.com/Zz7FpL7.gif","#21586f"],
+        ["Coups enflammés","envoie une succession de", "https://i.imgur.com/xuQwSdh.gif","#580000"]
+    ],
+    "Zuko": [
+        ["Flammes","génère des", "https://i.imgur.com/Ajn6L2F.gif", "#6feffc"],
+        ["Rafal de Flammes", "envoie une", "https://i.imgur.com/cCUD63G.gif", "#f0e300"],
+        ["Danse des Dragons", "exécute la", "https://i.imgur.com/o6cZ3Sp.gif", "#51311d"],
+        ["Choses sérieuses", "passe aux" , "https://i.imgur.com/fTvScPw.gif", "#34639e"],
+        ["Eclair", "envoie un", "https://i.imgur.com/K57AXhP.gif", "#011213"],
+        ["Flammes","parre avec ses", "https://i.imgur.com/7yVX0xU.gif","#1a7690"]
+    ],
+    "Katara": [
+    ],
+    "Ty Lee" : [
+        ["Avec agilité","combat","https://media1.tenor.com/m/LxaIEe-MnrYAAAAC/ty-lee.gif","#0b0c05"]
+    ]
 }
+
+"""
+
+"""

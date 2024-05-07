@@ -819,4 +819,6 @@ class Database:
                 self.set_equilibre_synergy(synergy[0],equilibrage, True)
         logger.success("Toutes les synergies ont été équilibrées.")
 
-        
+    def get_techniques(self, template_id):
+        self.cur.execute(f"SELECT * FROM character_template_techniques WHERE template_id = {template_id}")
+        return self.cur.fetchall()

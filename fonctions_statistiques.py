@@ -8,63 +8,47 @@ from itertools import combinations
 from constantes import CONSTANTS
 
 from matplotlib import pyplot as plt
+import concurrent.futures
+from itertools import combinations
 
+database = Database('mousse.db')
 if not os.path.exists('statistiques'):
     os.makedirs('statistiques')
         
+
+
+def calculer_stats_pour_une_team(team):
+    stats = database.simulation_stats_team(team)
+    total_power = stats['stats']['ATK'] + stats['stats']['DEF'] + stats['stats']['HP']
+    return (stats, total_power)
+
 def generer_team_stats():
-
-    """Génère toutes les combinaisons possibles de 3 personnages et calcule les stats de chaque team."""
-    """Écrit les teams dans le fichier teams.log."""
-    database = Database('mousse.db')
-
     temps_depart = time.time()
     print("Début du programme...", time.strftime('%H:%M:%S', time.localtime(temps_depart)))
-    # 1. Créer une liste de toutes les teams possibles
+    
     all_characters = database.get_character_templates()
-    all_characters = [character for character in all_characters if character[2] in ['Z','X','SS','S']]  # Filtrer les personnages de rareté X
-    all_teams = []
-
-    # Générer toutes les combinaisons possibles de 3 personnages
-    for team_characters in combinations(all_characters, 3):
-        team = sorted(team_characters, key=lambda x: x[1])  # Tri des personnages par nom
-        all_teams.append(team)
-
+    all_characters = [character for character in all_characters if character[2] in ['Z','X','SS','S']]
+    
+    all_teams = [sorted(team, key=lambda x: x[1]) for team in combinations(all_characters, 3)]
+    
     print("Nombre de teams possibles :", len(all_teams))
 
-    # 2. Éliminer les doublons en utilisant un ensemble
-    teams_set = {tuple(team) for team in all_teams}
-    all_teams = [list(team) for team in teams_set]
-    print("Nombre de teams possibles sans doublons :", len(all_teams))
-
-    all_stats = []
-
-    for team in all_teams:
-        stats = database.simulation_stats_team(team)
-        total_power = stats['stats']['ATK'] + stats['stats']['DEF'] + stats['stats']['HP']
-        all_stats.append((stats, total_power))
-
-    print("Les stats de teams sont calculées !")
+    # Utilisation de ThreadPoolExecutor pour exécuter les calculs en parallèle
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        all_stats = list(executor.map(calculer_stats_pour_une_team, all_teams))
 
     all_stats.sort(key=lambda x: x[1], reverse=True)
-    # Créer un fichier log
-    # 3. Écrire les équipes dans le fichier teams.txt
+    
     with open('statistiques/teams.log', 'w') as file:
-        for team, power in all_stats:
-            team_to_write = [character[1] for character in team['team']]
-            synergies_to_write = [synergie for synergie in team['synergies']]
+        for stats, power in all_stats:
+            team_to_write = [character[1] for character in stats['team']]
+            synergies_to_write = [synergie for synergie in stats['synergies']]
             file.write(f"{team_to_write} : {power} {synergies_to_write}\n")
 
     print("Les teams sont écrites dans le fichier teams.log !")
-
-    with open("statistiques/teams3000.log","w") as file:
-        for team, power in all_stats[:3000]:
-            team_to_write = [character[1] for character in team['team']]
-            synergies_to_write = [synergie for synergie in team['synergies']]
-            file.write(f"{team_to_write} : {power} {synergies_to_write}\n")
-
     temps_fin = time.time()
     print("Fin du programme...", time.strftime('%H:%M:%S', time.localtime(temps_fin)))
+
 
 def somme_proba_invocation():
     def somme_liste(liste):
