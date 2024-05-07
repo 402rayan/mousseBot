@@ -142,7 +142,7 @@ CONSTANTS = {
         ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
         ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
         ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
-        ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2"],
+        ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2",True],
     ],
     'DESCRIPTION_COMMANDES' : {
         "`!tutoriel`": "Permet d'avoir un **tutoriel spécifique** de comment jouer.",
