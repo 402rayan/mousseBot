@@ -22,7 +22,7 @@ def generer_team_stats():
     print("Début du programme...", time.strftime('%H:%M:%S', time.localtime(temps_depart)))
     # 1. Créer une liste de toutes les teams possibles
     all_characters = database.get_character_templates()
-    all_characters = [character for character in all_characters if character[2] in ['X','SS','S']]  # Filtrer les personnages de rareté X
+    all_characters = [character for character in all_characters if character[2] in ['Z','X','SS','S']]  # Filtrer les personnages de rareté X
     all_teams = []
 
     # Générer toutes les combinaisons possibles de 3 personnages

@@ -8,10 +8,10 @@ hexadecimal_temporaire = "#000000"
 
 all_characters_templates = {
             "Dragon Ball" : [ # ✅
-            ("Super Shenron", "X", "https://i.imgur.com/W7V2Oru.gif", 1500, 1500, 1500),
+            ("Super Shenron", "Z", "https://i.imgur.com/W7V2Oru.gif", 3000, 3000, 3000),
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 950, 900),
-            ("Zeno", "X", "https://i.imgur.com/W579wtw.gif", 800, 1300, 800),
-            ("Grand Prêtre", "X", "https://i.imgur.com/XFKPYIb.gif", 1000, 1200, 1000),
+            ("Zeno", "Z", "https://i.imgur.com/W579wtw.gif", 2000, 2500, 2100),
+            ("Grand Prêtre", "Z", "https://i.imgur.com/XFKPYIb.gif", 2500, 2000, 2200),
             ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1040, 1000),
             ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1010, 1050, 1000),
             ("Beerus", "X", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1150, 910),
@@ -729,7 +729,7 @@ all_characters_templates = {
             ],
             "One Punch Man" : [
             # Personnages X
-            ("Saitama", "X", "https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 1050, 1300, 1050),
+            ("Saitama", "Z", "https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 1500, 2000, 1500),
             ("Garou", "X", "https://i.pinimg.com/originals/a2/21/f2/a221f289576e45a0ed2fc3a5f6cb311e.gif", 1000,1000,1000),
             ("Boros", "X", "https://i.imgur.com/ehpRyuO.gif", 950, 940, 945),
             
@@ -1017,13 +1017,13 @@ all_characters_templates = {
             ],
         "Saint Seiya" : [ # ✅
             # Personnages X
-            ("Athena", "X", "https://i.imgur.com/Mhn9qP8.gif", 1000, 1000, 1000),
+            ("Athena", "Z", "https://i.imgur.com/Mhn9qP8.gif", 2000, 2000, 2000),
 
             # Personnages SS
             ("Shaka", "S", "https://i.imgur.com/tkAVOuQ.gif", 620, 660, 640),
             ],
         "Autre" : [ # ✅
-            ("Moshi", "C", "https://i.imgur.com/OUyDLg1.jpeg", 213, 213, 213),
+            ("Moshi", "C", "https://i.imgur.com/OUyDLg1.jpeg", 1, 2, 3),
         ],
 }
 

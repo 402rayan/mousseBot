@@ -3,10 +3,11 @@ CONSTANTS = {
     'INVOCATION_COST': 1,
     'MAX_CHARACTERS': 999999,
     'BASE_CHANCE_VICTORY': 0.6,
-    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X'],
+    'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X','Z'],
     'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
+        'Z': 100,
         'X': 25,
         'SS': 15,
         'S': 10,
@@ -19,18 +20,20 @@ CONSTANTS = {
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
+        'Z': 0.005,
         'X': 0.01,
         'SS': 0.02,
         'S': 0.05,
         'A': 0.1,
         'B': 0.2,
         'C': 0.3,
-        'D': 0.15,
+        'D': 0.1495,
         'E': 0.1,
         'F': 0.07,
     },
     'RARITY_CHANCE_HIGH': {
         # Change d'obtenir un personnage de la rareté correspondante en cas de GROS ticket
+        'Z': 0.01,
         'X': 0.1,
         'SS': 0.15,
         'S': 0.25,
@@ -39,6 +42,7 @@ CONSTANTS = {
     },
     'RARITY_COLOR': {
         # Couleur des personnages de la rareté correspondante
+        'Z': 0xff00e1,
         'X': 0x1e103b, 
         'SS': 0x8C001A,
         'S': 0xD82F00,
@@ -51,7 +55,7 @@ CONSTANTS = {
     },
     'RARITY_POWER': {
         # Puissance des personnages de la rareté correspondante
-        'X' : 100,'SS': 75, 'S' : 60, 'A' : 50, 'B' : 30, 'C' : 20, 'D' : 0, 'E' : 0, 'F' : 0
+        'Z': 500, 'X' : 100,'SS': 75, 'S' : 60, 'A' : 50, 'B' : 30, 'C' : 20, 'D' : 0, 'E' : 0, 'F' : 0
     },
     'INGREDIENTS': {
         "Pomme": "🍎",

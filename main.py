@@ -142,10 +142,6 @@ async def niveau18(message, userFromDb, equipe):
     await asyncio.sleep(4)
     await finDeNiveau(message, userFromDb, 19)
 
-
-
-
-
 async def niveau17(message, userFromDb, equipe):
     # Vous entrez dans la maison du guerrier et observez un homme qui semble très fort avec des cheveux blonds et des lunettes.
     await debutDeNiveau(message, userFromDb, 17, "Le guerrier aguerri", equipe, CONSTANTS['COLORS']['NANAMI'])
@@ -1486,7 +1482,7 @@ async def liste(message, userFromDb):
 @bot.command()
 async def couleur(message, userFromDb):
     # Récupère un personnage de chaque rang et les affiche avec embed_invocation
-    for rang in ["F", "E", "D", "C", "B", "A", "S", "SS", "X"]:
+    for rang in CONSTANTS['RARITY']:
         template = database.get_character_template_by_rarity(rang)
         await asyncio.sleep(0.5)
         await message.channel.send(embed=embed_invocation(template))
@@ -1582,7 +1578,34 @@ async def invocation(message, userFromDb, lucky=False):
         await asyncio.sleep(2)
     msg = await message.channel.send(embed=embed_info("Invocation...", "Veuillez patienter...", discord.Color.gold()))
     rarityOfCharacter = template[2]
-    if rarityOfCharacter in ['X','SS']:
+    if rarityOfCharacter == "Z":
+        await asyncio.sleep(2)
+        liste_transition = {
+            "Inv-" : 0xE699EA,
+            "uoᴉʇɐɔoʌuI" : 0xE699EA,
+            "استدعاء" : 0xFF003E,
+            "Призыв" : 0xE699EA,
+            "呼び出し" : 0x9E9E9E}
+        for transition in liste_transition:
+            await msg.edit(embed=embed_info(transition, "", liste_transition[transition]))
+            await asyncio.sleep(random.uniform(0.2, 0.6))
+        await asyncio.sleep(1)
+        await msg.edit(embed=embed_info("..", "", 0x000000))
+        await asyncio.sleep(2)
+        await msg.edit(embed=embed_info("Votre invocation est étrange..", "", CONSTANTS['COLORS']['ZUKO']))
+        await asyncio.sleep(2)
+        await msg.edit(embed=embed_info("...", "", CONSTANTS['COLORS']['SHANKS']))
+        await asyncio.sleep(2)
+        await msg.delete()
+        await asyncio.sleep(3)
+        await embed_histoire_character(message,"Gol D. Roger :", "rogerSmile","roger","","Mon trésor ? Si vous le voulez, je vous le laisse. Cherchez-le !",0x000000, True)
+        await asyncio.sleep(5)
+        await msg.delete()
+        await message.channel.send(embed=embed_invocation(template,message.author))
+
+        
+
+    elif rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
 
@@ -1809,8 +1832,6 @@ async def statistiquesJoueur(message, userFromDb):
     embed.set_author(name=f"Statistiques de {user.name}", icon_url=user.avatar.url)
 
     await message.channel.send(embed=embed)
-
-    
 
 @bot.command()
 async def tutoriel(message, userFromDb):
@@ -2569,8 +2590,9 @@ def get_color_based_on_power(power):
         1000: CONSTANTS['RARITY_COLOR']['B'],
         2500: CONSTANTS['RARITY_COLOR']['A'],
         5000: CONSTANTS['RARITY_COLOR']['S'],
-        8000: CONSTANTS['RARITY_COLOR']['SS'],
-        float('inf'): CONSTANTS['RARITY_COLOR']['X']  # Supposons que tout supérieur à 300 est 'C'
+        7000: CONSTANTS['RARITY_COLOR']['SS'],
+        12000: CONSTANTS['RARITY_COLOR']['X'],
+        float('inf'): CONSTANTS['RARITY_COLOR']['Z']  # Supposons que tout supérieur à 300 est 'C'
     }
 
     for threshold, color in power_ranges.items():

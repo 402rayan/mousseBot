@@ -409,7 +409,7 @@ class Database:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE_HIGH'].keys()), list(CONSTANTS['RARITY_CHANCE_HIGH'].values()))[0]
         else:
             rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
-            rarity = 'X'
+            rarity = 'Z'
         # On choisit un univers au hasard TODO
         # On invoque un personnage aléatoire
         character_templates = self.get_character_templates()
@@ -449,7 +449,7 @@ class Database:
     def inventaire(self, user_discord_id, user_name):
         # Retourne l'inventaire de l'utilisateur avec les statistiques des personnages en fonction du niveau
         logger.info(f"Récupération de l'inventaire de {user_name} ({user_discord_id}).")
-        rarity_order = {'X': 0, 'SS': 1, 'S': 2, 'A': 3, 'B': 4, 'C': 5, 'D': 6, 'E': 7, 'F': 8}
+        rarity_order = {'Z': 0,'X': 0.5, 'SS': 1, 'S': 2, 'A': 3, 'B': 4, 'C': 5, 'D': 6, 'E': 7, 'F': 8}
 
         # Utiliser une clause CASE pour attribuer un poids à chaque rareté
         case_statement = "CASE"
@@ -792,7 +792,7 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
         base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'X' : 8, 'SS' : 6.75, 'S' : 6, 'A' : 5.5, 'B' : 5, 'C' : 4, 'D' : 3.5, 'E' : 2, 'F' : 1}
+        taux_de_baisse = {'Z' : 8,'X' : 8, 'SS' : 6.75, 'S' : 6, 'A' : 5.5, 'B' : 5, 'C' : 4, 'D' : 3.5, 'E' : 2, 'F' : 1}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None
