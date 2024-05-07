@@ -50,6 +50,8 @@ async def on_ready():
     logger.info(f'{bot.user} est bien connecté!')
     database.create_tables()
     statistiques = database.get_stats()
+    description_du_bot = "!help"
+    await bot.change_presence(activity=discord.Game(name=description_du_bot))
     
 @bot.event
 async def on_message(message):
