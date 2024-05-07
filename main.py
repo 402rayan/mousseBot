@@ -88,7 +88,7 @@ async def handle_user_level(message, userFromDb):
         logger.error(f"Erreur lors de la récupération de l'équipe de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     if None in equipe['team']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous devez avoir une équipe complète pour continuer l'histoire!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Vous devez avoir une équipe complète pour continuer l'histoire!","", discord.Color.red()))
         return
     handler = level_to_function.get(niveau)
     if handler:
@@ -1457,7 +1457,7 @@ async def giveCharacterHistory(message, userFromDb, characterName):
     # Donne l'histoire d'un personnage
     character = database.get_character_template_by_name(userFromDb[1], userFromDb[2],characterName)
     if not character:
-        await message.channel.send(embed=embed_info("Erreur", "Personnage non trouvé!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Personnage non trouvé!","", discord.Color.red()))
         return
     await message.channel.send(embed=embed_invocation(character,recruter=True))
     # On lui ajoute le personnage
@@ -1470,7 +1470,7 @@ async def liste(message, userFromDb):
     # Retourne la liste de tous les persos de rang
     rang = message.content.split(' ')[1]
     if rang not in CONSTANTS['RARITY']:
-        await message.channel.send(embed=embed_info("Erreur", "Le rang n'est pas valide!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Le rang n'est pas valide!","", discord.Color.red()))
         return
     liste = database.get_character_templates()
     response = "Liste des personnages:\n"
@@ -1535,7 +1535,7 @@ async def admin(message, userFromDb):
 async def equilibrageSynergies(message, userFromDb):
     # Si pas admin
     if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'êtes pas autorisé à utiliser cette commande!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous n'êtes pas autorisé à utiliser cette commande!","", discord.Color.red()))
         return
     # On demande s'il est sur
     description = "✅ : Oui\n❌ : Non"
@@ -1568,9 +1568,9 @@ async def invocation(message, userFromDb, lucky=False):
     # SI la données est de type String, c'est une erreur
     if type(donnees) == str:
         if donnees == "ERROR_NO_CHARACTER":
-            await message.channel.send(embed=embed_info("Erreur", "Aucun personnage n'a été trouvé!", discord.Color.red(), footer="Ticket remboursé."))
+            await message.channel.send(embed=embed_info( "Aucun personnage n'a été trouvé!","", discord.Color.red(), footer="Ticket remboursé."))
         elif donnees == "ERROR_MAX_CHARACTERS":
-            await message.channel.send(embed=embed_info("Erreur", f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !", discord.Color.red(),footer="Vendez des personnages avec !sell"))
+            await message.channel.send(embed=embed_info( f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !","", discord.Color.red(),footer="Vendez des personnages avec !sell"))
         return
     template = donnees[0]
     if specialInvocation:
@@ -1639,7 +1639,7 @@ async def invocation(message, userFromDb, lucky=False):
 @bot.command()
 async def luckyInvocation(message, userFromDb):
     if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'êtes pas autorisé à utiliser cette commande!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous n'êtes pas autorisé à utiliser cette commande!","", discord.Color.red()))
         return
     await invocation(message, userFromDb, True)
 
@@ -1780,11 +1780,11 @@ async def giveTicket(message, userFromDb):
         await message.channel.send(embed=embed_info("Pas assez de tickets", "Vous n'avez **pas assez** de tickets pour donner autant!", discord.Color.red()))
         return
     if destinataire == auteur.id:
-        await message.channel.send(embed=embed_info("Erreur", "Vous ne pouvez pas vous donner des tickets à **vous-même**!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous ne pouvez pas vous donner des tickets à **vous-même**!","", discord.Color.red()))
         return
     # Vérfication de l'existence du destinataire
     if not database.check_user(destinataire):
-        await message.channel.send(embed=embed_info("Erreur", "Le joueur n'a pas encore joué au jeu.", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Le joueur n'a pas encore joué au jeu.","", discord.Color.red()))
         return
     database.update_tickets(auteur.id, tickets - montant)
     tickets = database.get_tickets(destinataire)
@@ -1990,28 +1990,28 @@ async def repeat(message, userFromDb):
 
 @bot.command()
 async def pvp(message, userFromDb):
-    logger.info(f"Commande !pvp appelée par {message.author.name} ({message.author.id}).")
+    logger.info(f"Commande !pvp appelée par {message.author.name} ({message.author.id}). Contenu : {message.content}")
     # On récupère l'identifiant de l'adversaire
-    adversaire = message.content.split(' ')[1]
-    adversaire = idDiscordToInt(adversaire)
-    adversaireDiscord = await bot.fetch_user(adversaire)
-
-    if adversaire == None or adversaireDiscord == None:
-        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'est pas valide!", discord.Color.red()))
+    adversaireDiscord = await fetch_user_from_message(message, 2)
+    if adversaireDiscord == "ERROR_SYNTAX":
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme `!pvp @joueur`", discord.Color.red()))
         return
-    if adversaire == message.author.id:
-        await message.channel.send(embed=embed_info("Erreur", "Vous ne pouvez pas vous battre contre vous-même!", discord.Color.red()))
+    if adversaireDiscord == False:
+        await message.channel.send(embed=embed_info( "L'adversaire n'est pas valide!","", discord.Color.red()))
         return
-    if not database.check_user(adversaire):
-        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas encore joué au jeu!", discord.Color.red()))
+    if adversaireDiscord == message.author:
+        await message.channel.send(embed=embed_info( "Vous ne pouvez pas vous battre contre vous-même!","", discord.Color.red()))
+        return
+    if not database.check_user(adversaireDiscord.id):
+        await message.channel.send(embed=embed_info( "L'adversaire n'a pas encore joué au jeu!","", discord.Color.red()))
         return
     # On récupère l'équipe de l'adversaire
-    equipe_adversaire = database.get_team(adversaire, adversaireDiscord.name)
+    equipe_adversaire = database.get_team(adversaireDiscord.id, adversaireDiscord.name)
     if not equipe_adversaire:
-        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas d'équipe!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "L'adversaire n'a pas d'équipe!",'', discord.Color.red()))
         return
     if None in equipe_adversaire['team']:
-        await message.channel.send(embed=embed_info("Erreur", "L'adversaire n'a pas d'équipe complète!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "L'adversaire n'a pas d'équipe complète!",'', discord.Color.red()))
         return
     # On vérifie si l'utilisateur a une équipe
     equipe = database.get_team(message.author.id,message.author.name)
@@ -2019,7 +2019,7 @@ async def pvp(message, userFromDb):
         logger.error(f"Erreur lors de la récupération de l'équipe de l'utilisateur {message.author.name} ({message.author.id}).")
         return
     if None in equipe['team']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous devez avoir une équipe complète pour affronter des gens!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous devez avoir une équipe complète pour affronter des gens!","", discord.Color.red()))
         return
     # On lance le combat
     acceptation, parie = await accepterCombatPvp(message, adversaireDiscord)
@@ -2550,7 +2550,7 @@ async def sell(message, userFromDb):
 @bot.command()
 async def reset(message, userFromDb):
     if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
         return
     titre = "Voulez vous reset TOUTES les données ou seulement les personnages?"
     msg = await message.channel.send(embed=embed_info("Confirmation", titre, discord.Color.gold()))
@@ -2605,7 +2605,7 @@ async def fakeTeam(message, userFromDb):
     # Fonction pour tester la team
     # On créer les characters All Might, Sasuke et Gojo
     if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
         return
     database.fakeTeam(message.author.id)
     await message.channel.send(embed=embed_info("Team ajoutée", "Votre team a été ajoutée!", discord.Color.green()))
@@ -2614,7 +2614,7 @@ async def fakeTeam(message, userFromDb):
 async def fakeCharacter(message, userFromDb):
     # Donne un personnage
     if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
         return
     contenu = message.content
     if len(contenu.split(' ')) < 2:
@@ -2677,15 +2677,15 @@ async def afficherUnivers(message, userFromDb):
 @bot.command()
 async def setLevel(message, userFromDb):
     # if message.author.id not in CONSTANTS['ADMINS']:
-    #     await message.channel.send(embed=embed_info("Erreur", "Vous n'avez pas la permission de faire cela!", discord.Color.red()))
+    #     await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
     #     return
     level = message.content.split(' ')[1]
     if not level.isdigit():
-        await message.channel.send(embed=embed_info("Erreur", "Le niveau doit être un nombre!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Le niveau doit être un nombre!","", discord.Color.red()))
         return
     level = int(level)
     if level < 1 or level > 100:
-        await message.channel.send(embed=embed_info("Erreur", "Le niveau doit être compris entre 1 et 100!", discord.Color.red()))
+        await message.channel.send(embed=embed_info( "Le niveau doit être compris entre 1 et 100!","", discord.Color.red()))
         return
     database.setLevel(message.author.id, level)
     await message.channel.send(embed=embed_info("Niveau modifié", f"Votre niveau a été modifié à {level}!", discord.Color.green()))
