@@ -1656,7 +1656,7 @@ all_link_synergies = {
     58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo (Purple Haze)", "Abbacchio","Trish"], # Team Bucciarati
     307 : ["Kurapika","Satoru Gojo","Aang"], # Dernier survivant de son clan
 }
-
+# https://media1.tenor.com/m/DCSk9f-zAKYAAAAd/tengen-uzui-fight.gif
 all_techniques = {
     # Dragon Ball
     "Beerus" : [
@@ -2183,33 +2183,102 @@ all_techniques = {
     ],
     # Hunter X Hunter
     "Meruem" : [
+        ["Nen du Roi", "utilise le", "https://i.imgur.com/7L1ceJX.gif", "#884198"],
+        ["Nen du Roi", "déclenche le", "https://i.imgur.com/Cl75sMT.gif", "#778750"],
+        ["Transmutation", "TEMP", "https://i.imgur.com/2s5uAPL.gif", "#be6ad9"],
+        ["Metamorphose", "se", "https://i.imgur.com/ky6zyiO.gif", "#b36341"],
+        ["TEMP", "TEMP", "https://i.imgur.com/PcMQLfL.gif", "#ab5ccc"]
     ],
     "Gon Freecss" : [
-        ["TEMPORAIRE", "TEMPORAIRE", "https://i.imgur.com/44awlN2.gif","#e09952"]
+        ["Papier", "lance l''attaque", "https://i.imgur.com/44awlN2.gif","#e09952"],
+        ["transforme en adulte", "se", "https://i.imgur.com/C3mWDlW.gif","#b0832c"],
+        ["Pierre", "renforce et lance", "https://i.imgur.com/kVB3b9b.gif","#e05b32"],
+        ["Ciseaux", "envoi", "https://i.imgur.com/iCO7qN7.gif","#ebe677"],
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/7WWgg92c5CEAAAAC/gon-rage.gif","#eff1ef"]
     ],
     "Kuroro Lucifer" : [
+        ["Skill Hunter", "utilise", "https://i.imgur.com/pCZI3HV.gif", "#ccc0ae"],
+        ["Fun Fun Cloth", "lance", "https://media1.tenor.com/m/rEZ8H21smUAAAAAd/chrollo-lucilfer-chrollo.gif", "#7e1f4b"],
+        ["Nen", "utilise son", "https://media1.tenor.com/m/gu7GDy0btqkAAAAC/chrollo-lucilfer-hunter-x-hunter.gif", "#999c82"],
+        ["Requiem", "orchestre un", "https://media1.tenor.com/m/_YgGGcfe-3IAAAAC/chrollo-lucilfer-chrollo-hxh.gif","#375585"]
     ],
     "Isaac Netero" : [
+        ["First Hand", "TEMP", "https://i.imgur.com/YMLX9he.gif", "#D4CE46"],
+        ["Second Hand", "TEMP", "https://i.imgur.com/jJZRZZc.gif", "#D4CE46"],
+        ["Third Hand", "TEMP", "https://i.imgur.com/rr1dRup.gif","#D4CE46"],
+        ["Fourth Hand", "TEMP", "https://i.imgur.com/JtBMegP.gif","#D4CE46"],
+        ["TEMP", "TEMP", "https://i.imgur.com/meVsbwk.gif","#D4CE46"],
+        ["Ninety-Ninth Hand", "TEMP", "https://i.imgur.com/h66Sp8M.gif","#D4CE46"],
+        ["Dernier Atout", "utilise son", "https://media1.tenor.com/m/nMhU9aKMLfAAAAAC/jeux-ce-zb.gif", "#bd1a44"]        
     ],
-    "Ging Freecss" : [
+    "Ging Freecss" : [ #NO GIF
     ],
-    "Aruka Zoldyck" : [
+    "Aruka Zoldyck" : [ #NO GIF
     ],
     "Zeno Zoldyck" : [
+        ["Aura Blast", "envoie", "https://i.imgur.com/gCfn6TQ.gif", "#51116b"],
+        ["Dragon Head", "utilise", "https://i.imgur.com/KcAgNsM.gif", "#b154e3"],
+        ["Dragon Head", "déploie", "https://media1.tenor.com/m/-J2bhHDopqQAAAAC/aikiria-gif.gif", "#e8d86b"],
+        ["Dragon Head", "améliore", "https://media1.tenor.com/m/-8Q3i2E96igAAAAC/dragon-dive-dragon-dive-hxh.gif", "#462c6d"] #Cest la suite du gif davant en gros
+        ["Dragon Lance", "lance", "https://i.imgur.com/XhrCofg.gif", "#b778bf"]
     ],
     "Irumi Zoldyck" : [
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/ZOEQQVVUqb8AAAAC/illumi-angry.gif", "#da86fa"],
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/CMjz9ndAOsAAAAAC/illumi-zoldyck-hunter-x-hunter.gif", "#cb7fbc"],
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/8kwZDp-nnXIAAAAC/illumi-zoldyck-hunter-x-hunter.gif", "#ac6ddd"],
+        ["TEMP", "TEMP", "https://i.imgur.com/RWWi36d.gif", "#765fdf"]
     ],
     "Silva Zoldyck" : [
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/ZqZo_KYVS04AAAAd/silva-zoldyck-pfp.gif", "#e190f6"], #Pas dautres gifs
     ],
     "Hisoka" : [
+        ["TEMP", "TEMP", "https://i.imgur.com/WvJGlvh.gif", "#b6569f"],
+        ["Gum Cannon", "TEMP", "https://i.imgur.com/tpffNnN.gif", "#b6569f"],
+        ["Bungee Gum", "TEMP", "https://i.imgur.com/jhpmi04.gif", "#b6569f"],
+        ["Gum Manipulation", "TEMP", "https://i.imgur.com/zp1HliP.gif", "#b6569f"],
+        ["Gum Manipulation", "TEMP", "https://qph.cf2.quoracdn.net/main-qimg-bfb33eda0f8a018d3689f30bedaedff7", "#b6569f"],
+        ["Texture Surprise", "TEMP", "https://i.imgur.com/xxNLW8m.gif", "#e574d1"],
+        ["TEMP", "TEMP", "https://i.imgur.com/RCZhy9L.gif", "#e13c6f"]
     ],
     "Neferopito" : [
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/pqNjXh72S7cAAAAd/pitou-neferpitou.gif", "#d689c7"],
+        ["Terpsichora", "lance", "https://media1.tenor.com/m/pRvvkMj6x4EAAAAC/anime-neferpitou.gif", "#ed2a3d"],
+        ["Nen", "utilise son", "https://media1.tenor.com/m/T_HNwwKY7PcAAAAC/nen.gif", "#b044bf"],
+        ["Observe l''adversaire", "", "https://pa1.aminoapps.com/6694/d7970db4b116be73e5e5aaa801718cd7b8fbea8a_hq.gif", "#ffe3f7"],
+        ["TEMP", "TEMP", "https://i.imgur.com/Iw3lD87.gif", "#ff767c"]
     ],
     "Pufu" : [
+        ["Manipulation", "TEMP", "https://media1.tenor.com/m/1BElgZl5qfYAAAAC/shaiapouf.gif", "#e59ce4"],
+        ["Beelzebub", "TEMP", "https://media1.tenor.com/m/AYlJCxcm9AMAAAAC/shaiapouf.gif", "#b57882"],
+        ["Violon", "joue du", "https://media1.tenor.com/m/85kHQ-YQA9oAAAAC/hunterx-hunter-shaiapouf.gif", "#7b442d"],
+        ["Spiritual Message", "TEMP", "https://media1.tenor.com/m/obrAe0FWhYIAAAAd/hunter-x-hunter-pouf.gif", "#69f8e0"]
     ],
     "Yupi" : [
+        ["TEMP", "TEMP", "https://i.imgur.com/cHD9OL5.gif", "#894760"],
+        ["TEMP", "TEMP", "https://i.imgur.com/ry4oLde.gif", "#fe6756"]
     ],
     "Kurapika" : [
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/_-vAoYZHvooAAAAC/kurapika.gif", "#62192b"],
+        ["Chaînes du jugement", "lance", "https://media1.tenor.com/m/YN8NM48Z0nEAAAAC/kurapika-heart.gif" ,"#910c1f"],
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/f3g92T7bGEoAAAAC/kurapika-hunter-x-hunter.gif", "#748ca9"],
+        ["TEMP", "TEMP", "https://media1.tenor.com/m/m_GJi0LZvcgAAAAC/kurapika.gif", "#181c47"],
+        ["Chaîne sacrée", "guérit avec", "https://media1.tenor.com/m/9HpA1lHFKF8AAAAC/hxh-kurapika.gif", "#affaef"]
+    ],
+    "Killua" : [
+        ["Foudre", "attaque avec la", "https://media1.tenor.com/m/cDhSemiSy58AAAAC/killua.gif", "#a7f0f4"],
+        ["Vitesse Divine", "TEMP", "https://media1.tenor.com/m/vjC8ZcDcBO4AAAAC/killua.gif", "#718cd8"],
+        ["Serpent s''eveillant", "utilise le", "https://i.imgur.com/EXwZuBC.gif", "#85835d"],
+        ["Echo Rythmique", "use de l''", "https://i.imgur.com/YFCPo1j.gif", "#90b0dd"],
+        ["Griffes", "sort ses", "https://i.imgur.com/06GE2w4.gif", "#6b7ea5"]
+    ],
+    #AUTRES
+    "Moshi" : [
+        ["Miaule", "", "https://media1.tenor.com/m/lIDWDPQpyf0AAAAC/meow-cats.gif", "#b1f1e3"],
+        ["Rugit", "", "https://media1.tenor.com/m/lX4SEdrhJD4AAAAd/httyd-toothless.gif", "#29cdfa"],
+        ["Sourit", "", "https://media1.tenor.com/m/qdT1lygmdfkAAAAC/little-black-cat-cat.gif", "#9bbfb4"],
+        ["Marche", "", "https://media1.tenor.com/m/GJygKW_CrY0AAAAd/kikis-delivery-service-anime.gif", "#9bbfb4"],
+        ["Boit", "", "https://media1.tenor.com/m/30mo4wsKU0MAAAAC/kiki%27s-delivery-service-jiji.gif", "#9bbfb4"],
+        ["Joue", "", "https://media1.tenor.com/m/WEaJBwpYFrMAAAAd/kikis-delivery-service-anime.gif", "#9bbfb4"]       
     ],
 }
 
