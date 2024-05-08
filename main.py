@@ -483,9 +483,9 @@ async def niveau12(message, userFromDb, equipe):
     await embed_histoire_character(message, "Zuko vous félicite :", "", "zuko", "", "Félicitations, tu as réussi la tâche que je t'ai confié.", CONSTANTS['COLORS']['ZUKO'])
     await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko est étonné par nos explications :", "", "zuko", "", "Vraiment ?.. J'ignorais qu'il y avait deux membres ici.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    await asyncio.sleep(5)
     await embed_histoire_character(message, "Zuko vous raconte :", "", "zuko", "", "De mon côté, j'ai affronté un membre redoutable nommé Feitan. C'était très éprouvant mais j'ai réussi à le battre.", CONSTANTS['COLORS']['ZUKO'])
-    await asyncio.sleep(4)
+    await asyncio.sleep(5)
     await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "J'ai obtenu des réponses. Le prêtre s'appelle en réalité Enrico Pucci.", CONSTANTS['COLORS']['ZUKO'])
     await asyncio.sleep(4)
     await embed_histoire_character(message, "Zuko vous informe :", "", "zuko", "", "Il est en train de former un culte et a bâti un château sur la plaine principale.", CONSTANTS['COLORS']['ZUKO'])
@@ -511,7 +511,7 @@ async def niveau11(message, userFromDb, equipe):
         await message.channel.send(embed=embed_naratteur("Vous revenez vers la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
         await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Mais vous ne constatez que des horreurs, Uvoguine a détruit une majeure partie de la grotte lorsque vous avez fui.", "", CONSTANTS['COLORS']['BRUIT']))
-        await asyncio.sleep(4)
+        await asyncio.sleep(5)
         await message.channel.send(embed=embed_naratteur("Vous entendez cependant quelqu'un au fond..", "", CONSTANTS['COLORS']['BRUIT']))
         await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Vous vous précipitez vers la personne..", "", CONSTANTS['COLORS']['BRUIT']))
@@ -521,7 +521,7 @@ async def niveau11(message, userFromDb, equipe):
         await asyncio.sleep(4)
         await message.channel.send(embed=embed_naratteur("Surpris, vous lui demandez comment c'est possible.", "", CONSTANTS['COLORS']['BRUIT']))
         await asyncio.sleep(4)
-        await embed_histoire_character(message, "C18 :", "", "c18", "", "Je suis un cyborg et je m'appelle C-18, je peux résister à des dégâts que vous ne pouvez pas imaginer.", CONSTANTS['COLORS']['C18'])
+        await embed_histoire_character(message, "C-18 :", "", "c18", "", "Je suis un cyborg et je m'appelle C-18, je peux résister à des dégâts que vous ne pouvez pas imaginer.", CONSTANTS['COLORS']['C18'])
         await asyncio.sleep(4)
         await embed_histoire_character(message, "C-18 :", "", "c18", "", "Grâce à vous on peut dire que je suis libérée.", CONSTANTS['COLORS']['C18'])
         await asyncio.sleep(4)
@@ -529,6 +529,9 @@ async def niveau11(message, userFromDb, equipe):
         await asyncio.sleep(5)
         await giveCharacterHistory(message, userFromDb, "c18")
         await asyncio.sleep(4.5)
+        # on se dépêche de sortir de la grotte
+        await message.channel.send(embed=embed_naratteur("Vous vous dépêchez de sortir de la grotte..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
     else:
         await debutDeNiveau(message, userFromDb, 11, "Un nouvel allié!", equipe, CONSTANTS['COLORS']['LEORIO'])
         await asyncio.sleep(4)
@@ -1517,7 +1520,8 @@ async def getTickets(message, userFromDb):
         await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!tickets** ou **!tickets <joueur>**!", discord.Color.red()))
         return
     tickets = database.get_tickets(user.id)
-    await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue()))
+    ticketDiamant = userFromDb[9] if str(user.id) == userFromDb[1] else False
+    await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue(), footer=f"Votre prochaine invocation sera chanceuse!" if ticketDiamant else ""))
 
 @bot.command()
 async def claimHourly(message, userFromDb):
