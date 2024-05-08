@@ -2564,26 +2564,6 @@ async def sell(message, userFromDb):
     await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
 
 @bot.command()
-async def reset(message, userFromDb):
-    if message.author.id not in CONSTANTS['ADMINS']:
-        await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
-        return
-    titre = "Voulez vous reset TOUTES les données ou seulement les personnages?"
-    msg = await message.channel.send(embed=embed_info("Confirmation", titre, discord.Color.gold()))
-    await msg.add_reaction('✅')
-    await msg.add_reaction('❌')
-    try:
-        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
-    except:
-        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
-        return
-    if str(reaction.emoji) != '✅':
-        database.resetCharactersTemplatesAndSynergies()
-    else:
-        database.reset()
-    await message.channel.send(embed=embed_info("Base de données réinitialisée", "La base de données a été réinitialisée!", discord.Color.green()))
-
-@bot.command()
 async def classement(message, userFromDb):
     logger.info(f"Commande !classement appelée par {message.author.name} ({message.author.id}).")
     classement = database.getClassement(message.guild.members)
@@ -2854,7 +2834,6 @@ commands = {
     "pu": getPower,            # "puissance"
     "pv": pvp,                 # "pvp"
     "rep": repeat,             # "repeat"
-    "res": reset,              # "reset"
     "sa": inventaire,          # "sac"
     "sel": sell,               # "sell", "vendre"
     "set": setLevel,           # "setlevel"

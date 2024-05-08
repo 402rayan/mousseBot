@@ -15,9 +15,6 @@ database = Database('mousse.db')
 if not os.path.exists('statistiques'):
     os.makedirs('statistiques')
         
-
-
-    
 def generer_team_stats():
 
     """Génère toutes les combinaisons possibles de 3 personnages et calcule les stats de chaque team."""
@@ -215,6 +212,8 @@ def classement_synergies_les_plus_donnes():
 def demandes():
     if input("Voulez vous reset la BDD ? (o/n) ") == 'o':
         Database('mousse.db').reset()
+    if input("Voulez vous reset toutes les URL ? (o/n) ") == 'o':
+        Database('mousse.db').remplacer_toutes_les_urls()
     if input("Voulez-vous vérifier les doublons dans les synergies ? (o/n) ") == 'o':
         check_double_synergie()
     if input("Voulez voir les stats aberrantes ? (o/n) ") == 'o':

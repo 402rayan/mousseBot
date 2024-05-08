@@ -822,3 +822,46 @@ class Database:
     def get_techniques(self, template_id):
         self.cur.execute(f"SELECT * FROM character_template_techniques WHERE template_id = {template_id}")
         return self.cur.fetchall()
+    
+    def remplacer_url_image_character_templates(self):
+        self.cur.execute("SELECT * FROM character_templates")
+        characters = self.cur.fetchall()
+        liste_fixe = all_characters_templates
+        for univers in liste_fixe:
+            for character in liste_fixe[univers]:
+                character_in_database = self.get_character_template_by_name(0, "Bot", character[0])
+                if character_in_database is not None:
+                    if character_in_database[3] != character[2]:    
+                        self.cur.execute(f"UPDATE character_templates SET image_url = '{character[2]}' WHERE template_id = {character_in_database[0]}")
+                        logger.info(f"L'image du personnage {character[0]} a été mise à jour.")
+        self.conn.commit()
+        logger.success("Les URLs des images des personnages ont été mises à jour.")
+    
+    def remplacer_url_image_synergies(self):
+        self.cur.execute("SELECT * FROM synergies")
+        synergies = self.cur.fetchall()
+        for synergy in synergies:
+            for synergie in all_synergies:
+                if synergy[1] == synergie[1]:
+                    if synergy[5] != synergie[5] and synergie[5] not in ['https://i.imgur.com/I5FU4lB.png','https://i.imgur.com/H9CetGc.png','https://i.imgur.com/wqFQ0by.png','https://i.imgur.com/BOcSeri.png']:
+                        self.cur.execute(f"UPDATE synergies SET image_url = '{synergie[5]}' WHERE synergy_id = {synergy[0]}")
+                        logger.info(f"L'image de la synergie {synergy[1]} a été mise à jour.")
+        self.conn.commit()
+        logger.success("Les URLs des images des synergies ont été mises à jour.")
+
+    def remplacer_url_image_techniques(self):
+        self.cur.execute("SELECT * FROM character_template_techniques")
+        techniques = self.cur.fetchall()
+        for technique in techniques:
+            for technique_data in all_techniques:
+                if technique[2] == technique_data[0]:
+                    if technique[4] != technique_data[2]:
+                        self.cur.execute(f"UPDATE character_template_techniques SET image_url = '{technique_data[2]}' WHERE technique_id = {technique[0]}")
+                        logger.info(f"L'image de la technique {technique[2]} a été mise à jour.")
+        self.conn.commit()
+        logger.success("Les URLs des images des techniques ont été mises à jour.")
+
+    def remplacer_toutes_les_urls(self):
+        self.remplacer_url_image_character_templates()
+        self.remplacer_url_image_synergies()
+        self.remplacer_url_image_techniques()
