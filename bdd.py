@@ -304,14 +304,20 @@ class Database:
         self.cur.execute(f"UPDATE users SET last_claim = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
         # On rajoute un niveau à toute sa team
-        xp_to_add = 5000
-        self.cur.execute(f"SELECT * FROM characters WHERE user_discord_id = {user_discord_id}")
-        characters = self.cur.fetchall()
-        for character in characters:
-            self.update_level_and_xp(character[0], xp_to_add)
+        xp = random.choice(CONSTANTS['HOURLY_XP'])
+        self.ajouter_niveau_team(user_discord_id,xp)
         logger.info(f"L'utilisateur {user_name} ({user_discord_id}) a réclamé son daily. Il a maintenant {tickets} tickets.")
-        return [True, tickets]
+        return [True, tickets,xp]
         
+    def ajouter_niveau_team(self, user_discord_id, amount):
+        # On récupère la team de l'utilisateur
+        team = self.get_characters(user_discord_id)
+        # On ajoute un niveau à chaque personnage
+        for character in team:
+            self.update_level_and_xp(character[0], amount)
+        logger.info(f"L'utilisateur {user_discord_id} a ajouté {amount} niveaux à sa team.")
+        return
+
     def get_character_templates(self):
         self.cur.execute("SELECT * FROM character_templates")
         return self.cur.fetchall()
@@ -617,7 +623,13 @@ class Database:
     
     def sell_character(self, user_discord_id, user_name, char_id):
         logger.info(f"Vente du personnage {char_id} pour l'utilisateur {user_name} ({user_discord_id}).")
+        rarity = self.get_character(char_id)[7]
+        xp = CONSTANTS['RARITY_XP'][rarity]
+        self.ajouter_niveau_team(user_discord_id, xp)
         self.delete_character(char_id)
+        # On ajoute de l'xp grâce à la constantes RARITY_XP
+
+
         return True
     
     def get_synergies(self):
@@ -692,7 +704,7 @@ class Database:
         self.create_character_templates()
         self.create_synergies()
         self.create_link_synergies()
-        self.create_techniques()
+        self.create_techniques(True)
         self.conn.commit()
         logger.success("Toutes les données ont été ajoutées à la base de données.")
 
@@ -874,4 +886,8 @@ class Database:
 
     def get_last_auto_team_time(self, user_discord_id):
         self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
+    
+    def get_nb_techniques(self, template_id):
+        self.cur.execute(f"SELECT COUNT(*) FROM character_template_techniques WHERE template_id = {template_id}")
         return self.cur.fetchone()[0]

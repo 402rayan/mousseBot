@@ -1518,7 +1518,7 @@ all_link_synergies = {
     144 : ["Pokkle","Uryu Ishida","Gowther","Noritoshi Kamo","Sasha Braus","Ryuken Ishida","Soken Ishida"], # Archer
     143 : ["Mr. Satan","King (OPM)","Majtani","Oingo","Baggy"], # Imposteur
     142 : ["Broly","Kale","Uvogin","Kefla","Yupi","Gigantomachia","Sloth","Jugo","Fugo (Purple Haze)"], # Berserker
-    141 : ["Envy","Oingo","Ginyu","Irumi Zoldyck","Muzan Kibutsuji","Yoruichi Shihoin","King (NNT)","Chopper","Rob Lucci","Heinkel","Darius","Marco","Kaku","King","Queen","Kaido","Mahito","Ryukyu","Shepherd Ju Peter","Yupi","Pufu","Katana Man","Denji","Suigetsu Hozuki","Kimimaro","Freezer","Cooler","Yamato","Tamaki Amajiki","Kabuto Yakushi","Orochimaru","Baggy","Kid Buu","Kiba Inuzuka","Biscuit Kruger","Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice","Frieda Reiss","Tom Xaver","Foo Fighters","Lindbergh","Bardock","Mezo Shoji","Roi Vegeta","Marcus Mars","Jaygarcia Saturn","Jugo","Mayuri","Lust","Nezuko Kamado","Kars","Isshiki Otsutsuki","Père","Kakuzu","Himiko Toga","Sengoku","Ethanbaron Nusjuro","Diego Brando","Naruto Uzumaki","Topman Warcury","Piccolo","Armin Arlert","Kawaki","Charlotte Katakuri","Monkey D. Luffy","Sosuke Aizen","Ryomen Sukuna"], # Métamorphe
+    141 : ["Envy","Oingo","Ginyu","Irumi Zoldyck","Muzan Kibutsuji","Yoruichi Shihoin","King (NNT)","Chopper","Rob Lucci","Heinkel","Darius","Marco","Kaku","King","Queen","Kaido","Mahito","Ryukyu","Shepherd Ju Peter","Yupi","Pufu","Katana Man","Denji","Suigetsu Hozuki","Kimimaro","Freezer","Cooler","Yamato","Tamaki Amajiki","Kabuto Yakushi","Orochimaru","Baggy","Kid Buu","Kiba Inuzuka","Biscuit Kruger","Eren Yeager", "Grisha Yeager", "Sieg Yeager", "Ymir", "Annie Leonhart", "Reiner Braun", "Bertholdt Hoover", "Pieck Finger", "Porco Galliard", "Falco Grice","Frieda Reiss","Tom Xaver","Foo Fighters","Lindbergh","Bardock","Mezo Shoji","Roi Vegeta","Marcus Mars","Jaygarcia Saturn","Jugo","Mayuri","Lust","Nezuko Kamado","Kars","Isshiki Otsutsuki","Père","Kakuzu","Himiko Toga","Sengoku","Ethanbaron Nusjuro","Diego Brando","Naruto Uzumaki","Topman Warcury","Piccolo","Armin Arlert","Kawaki","Charlotte Katakuri","Monkey D. Luffy","Sosuke Aizen","Ryomen Sukuna","Re-Destro"], # Métamorphe
     140 : ["Hiruzen Sarutobi", "Asuma Sarutobi", "Konohamaru Sarutobi"], # Sarutobi
     139 : ["Toji Fushiguro","Son Goku","Hashirama Senju","Tobirama Senju","Hiruzen Sarutobi", "Minato Namikaze", "Asuma Sarutobi","Deidara","Itachi Uchiha","Haku","Zabuza Momochi","Madara Uchiha","Sasori","Kimimaro","Hanzo","Chiyo","Freezer","Shenron","Son Gohan","Trunks","Tortue Geniale","Chaozu","Vegeta","Yamcha","Ten Shin Han","Cell","C-17","Piccolo","Krilin","Pamu Shiberia","Kaito","Fû","Suguru Geto","Katana Man","Galand","Uryu Ishida"], # Ressuscité
     138 : ["Yukako Yamagishi","Pamu Shiberia","Himiko Toga"], # Yandere
@@ -1703,7 +1703,7 @@ all_techniques = {
     ],
     "Son Gohan" : [
         ["Kamehameha", "lance son", "https://i.imgur.com/7v6zirc.gif", "#5bcbdd"],
-        ["Makankosappo ultime", "utilise", "https://i.imgur.com/Q1ndqFd.gif", "#ad0027"],
+        ["Makankosappo ultime", "utilise", "https://i.imgur.com/Q1ndqFd.gif", "#0831ce"],
         ["Contre-attaque", "effectue une", "https://i.imgur.com/pntJwnt.gif", "#e25cf0"],
         ["Déploie son Ki", "", "https://i.imgur.com/8dxkOae.gif", "#92eae3"],
     ],
@@ -1781,11 +1781,41 @@ all_techniques = {
         ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
     ],
     # Naruto
+    "Kaguya Otsutsuki" : [
+        ["Byakugan", "active son", "https://media1.tenor.com/m/oFDGGLm5aMAAAAAC/kaguya.gif", "#e3e5da"],
+    ],
+    "Boruto Uzumaki" : [
+        ["Jogan", "active son", "https://media1.tenor.com/m/sOxPdcPaOYYAAAAC/madara-uchiha.gif", "#203e51"],
+        ["Rasengan", "utilise le", "https://media1.tenor.com/m/MdZogdBGnMMAAAAd/boruto.gif", "##705ca1"],
+    ],
+    "Rikudo" : [
+        ["Rinnegan", "active son", "", ""],
+        ],
+    "Madara Uchiha" : [
+        ["Pluie d''énergie", "envoie une", "https://media1.tenor.com/m/VPIrMcpLbeQAAAAd/madara-madara-uchiha.gif", "#020203"],
+        ["Analyse les mouvements","","https://media1.tenor.com/m/ME7LU5WZaUIAAAAC/%E5%AF%AB%E8%BC%AA%E7%9C%BC.gif","#704e56"],
+        ["Boule de feu", "envoie une", "https://media1.tenor.com/m/DHPr-HlwxSEAAAAd/madara-uchiha-vs.gif", "#66474e"],
+    ],
+    "Isshiki Otsutsuki" : [
+        ['Tiges Noires','projette des','https://media1.tenor.com/m/Ikkq1VpPA_AAAAAC/otsutsuki-isshiki-otsutsuki.gif','#44424c'],
+    ],
+    "Kawaki" : [
+        ["","","https://i.imgur.com/rWnQni7.gif","#213b69"],
+        ["Kama", "active son", "https://media1.tenor.com/m/E2BKZciiIv0AAAAC/kawaki-naruto.gif", "#04504c"],
+    ],
+    "Naruto Uzumaki" : [
+        ["Coup de Poing", "envoie un", "https://media1.tenor.com/m/UTwecZIJfb8AAAAd/isshiki-vs-naruto-baryon-mode.gif","#d63230"]
+    ],
     "Sasuke Uchiha" : [
         ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
+        ["Susano", "s''entoure de","https://i.imgur.com/I9XTSZs.gif","#a150c0"],
+        ["","","https://i.pinimg.com/originals/c7/6e/73/c76e73348d0beb5b78bb92a6e1008a08.gif","#040713"],
+        ["Chidori", "perce avec son", "https://i.imgur.com/46rrvGy.gif", "#3c3132"],
     ],
     "Kakashi Hatake" : [
         ["Sharingan", "active son", "https://i.imgur.com/mKlr2SI.gif", "#d14a4a"],
+        ["Chaîne de foudre", "balance une", "https://media1.tenor.com/m/HulXFh5elUsAAAAC/toumei-datta-sekai-naruto.gif", "#95c5e0"],
+        ["Kamui", "utilise", "https://media1.tenor.com/m/dfM2A2WX9ikAAAAd/kakashi-hatake-naruto-uzumaki.gif", "#d63636"],
     ],
     "Tsunade" : [
         ["Katsuyu", "invoque", "https://i.gifer.com/8UZi.gif", "#FFFFFF"],
@@ -1803,6 +1833,7 @@ all_techniques = {
         ["Téléportation", "utilise la", "https://i.pinimg.com/originals/f4/d5/a5/f4d5a58f5ffde5c1afabe2096af7bc5e.gif", "#d14a4a"],
         ["Sharingan", "active son", "https://64.media.tumblr.com/2140ccf11ade92f5be44e63093c1efd6/tumblr_o6y19xdcfs1rqe0rbo1_540.gif", "#d14a4a"],
         ["Mouvements", "lis les", "https://i.pinimg.com/originals/66/73/4b/66734b28689f5a12243c55f01c43e8a8.gif", "#d14a4a"],
+        ["Boule de Feu","envoie une","https://i.gifer.com/79da.gif","#ffdb46"],
     ],
     "Hidan" : [
         ["Rituel", "active son", "https://steamuserimages-a.akamaihd.net/ugc/171539824338951013/8404D4DB507AA5BEB65400641D3D784130B261FA/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#000000"],
@@ -1827,6 +1858,8 @@ all_techniques = {
         ["Big Bang Impact", "lance un", "https://i.imgur.com/I8LlLN5.gif", "#5c3307"],
         ["Nen", "déploie son", "https://i.imgur.com/CsGYEAi.gif", "#5c3307"],
         ["Enragé", "devient", "", "#5c3307"],
+        ["Fonce","","https://media1.tenor.com/m/BFBKDephujoAAAAd/uvogin-hunter-x-hunter.gif","#1b1714"],
+        
     ],
     "Morel Mackernasey": [
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
@@ -1844,7 +1877,7 @@ all_techniques = {
         ["The Almighty", "active", image_temporaire(), hexadecimal_temporaire],
         ["Sankt Altar", "invoque", "https://i.imgur.com/R34bul2.png", "#1064bc"],
         ["Heilig Pfeil", "déchaine", image_temporaire(), "#1064bc"],
-        ["Épée de Reishi", "crée", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
+        ["Épée de Reishi", "crée l''", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
     ],
     "Sosuke Aizen" : [ #TOGIF
         ["Kanzen Saimin", "trompe avec", "https://i.imgur.com/mkttGe5.gif", "#3994a4"],
@@ -1921,7 +1954,7 @@ all_techniques = {
         ["Sōō Zabimaru", "envoie chasser", "https://i.imgur.com/6vXLNo0.gif", "#99a2ad"],
         ["Zaga Teppō", "réduit l''ennemi en cendres avec", "https://i.imgur.com/ItRVkFP.gif", hexadecimal_temporaire],
     ],
-        "Yoruichi Shihoin" : [
+    "Yoruichi Shihoin" : [
         ["Shunko", "active son", "https://i.imgur.com/eaBDVuu.gif", "#f0f0f0"],
         ["Coup de Poing", "balance un", "https://i.pinimg.com/originals/6c/e5/ae/6ce5ae1ee5b9f968094cf4a87e07a87d.gif", "#522949"],
         ["Hakuda", "détruit avec son", "https://i.imgur.com/3TvdfJS.gif", "#ea6b42"],
@@ -2033,16 +2066,16 @@ all_techniques = {
         ["Champ de fleurs", "utilise", "https://i.imgur.com/sagxuqt.gif", "#c18944"],
         ["Aura roncière", "montre son", "https://i.imgur.com/XWKu20j.gif", "#d95246"],
         ["Posture défensive", "prend une", "https://i.imgur.com/VeAtE6h.gif", "#9f7f6f"],
-        ["Extension du territoire : mer de lumière cérémonielle", "utilise son", "https://i.imgur.com/HneVwfk.gif", "#fafca4"],
+        ["Extension du territoire : Mer de Lumière Cérémonielle", "utilise son", "https://i.imgur.com/HneVwfk.gif", "#fafca4"],
     ],
     "Dagon" : [
         ["Boit l''ennemi", "", "https://i.imgur.com/GOIylfZ.gif", "#90918c"],
         ["Se transforme", "", "https://i.imgur.com/sAjievT.gif", "#f90000"],
         ["Shikigamis marins", "invoque ses", "https://i.imgur.com/jNVPupR.png", "#8eb740"],
-        ["Escadron maritime", "invoque", "https://i.imgur.com/QxkmETz.png", "#85edec"],
+        ["Escadron maritime", "invoque l''", "https://i.imgur.com/QxkmETz.png", "#85edec"],
         ["Extension du territoire : Horizon du Skandha Captivant", "utilise son", "https://i.imgur.com/bd0Wllg.gif", "#46dced"],
     ],
-      "Naobito Zenin" : [
+    "Naobito Zenin" : [
         ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
     ],
     "Kento Nanami" : [
@@ -2052,6 +2085,76 @@ all_techniques = {
         ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
         ["Attaque sans hésiter", "", "https://i.imgur.com/saF6Iht.gif", "#f3d6cb"],
         ["Heures sups","passe en", "https://i.imgur.com/z3USMrr.gif","#14899f"]
+    ],
+    #Jojo's Bizarre Adventure
+    "Giorno Giovanna" : [
+        ["réduit à néant l''adversaire", "", "https://i.imgur.com/gOCisRz.gif", "#8a2bac"],
+        ["MUDA MUDA MUDA", "attaque, ", "https://i.imgur.com/cvSkCGy.gif", "#5b229c"],
+        ["Préviens l''adversaire", "", "https://i.imgur.com/FuazAp3.gif", "#151f40"],
+        ["Écrasements de tête", "", "https://i.imgur.com/EteMSKb.gif", "#7a3547"],
+        ["Nargue l''adversaire", "", "https://i.imgur.com/MGM8AV1.gif", "#cd9d81"],
+    ],
+    "Enrico Pucci" : [
+        ["Monte au paradis", "", "https://i.imgur.com/L4iwUzf.gif", "#9bddf8"],
+        ["Est supérieur à l''adversaire", "", "https://i.imgur.com/ZR87lxj.gif", "#1373bd"],
+        ["", "", "https://i.imgur.com/FCfi3F1.gif", "#0e999d"],
+        ["La grâce", "Chante", "https://i.imgur.com/WCYvUtu.gif", "#d2c288"],
+        ["Inévitable", "est", "https://i.imgur.com/hnkY0lQ.gif", "#9e7fdd"],
+    ],
+    "Funny Valentine" : [
+        ["Nouvelle Dimension", "revient d''une", "https://i.imgur.com/QlFPTeL.gif", "#6bcfe7"],
+        ["S''éveille !", "", "https://i.imgur.com/qEVnsn9.png", "#e467f1"],
+        ["Renvoie le malheur et attire le bonheur", "Love Train : ", "https://i.imgur.com/6ehOGDC.jpeg", "#faeb6a"],
+    ],
+    "Johnny Joestar" : [
+        ["Déterminé", "est", "https://i.imgur.com/e8jYCnM.gif", "#c6855a"],
+        ["Tusk Act 4", "déclenche", "https://i.imgur.com/oSUcujD.gif", "#e08ea5"],
+        ["Pulvérise l''adversaire", "", "https://i.imgur.com/WKiWv64.gif", "#1b70ba"],
+        ["Inarrêtable", "est", "https://i.imgur.com/FVC6MPH.gif", "#e1d594"],
+    ],
+    "Gyro Zeppeli" : [
+        ["Déterminé", "est", "https://i.imgur.com/aHFq5gY.gif", "#df9d74"],
+        ["Crée la rotation du nombre d''or", "", "https://i.imgur.com/XpHOE99.png", "#b38957"],
+        ["Scan les alentours et renforce ses rotations", "active", "https://i.imgur.com/Z0oixSj.gif", "#3f6f06"],
+    ],
+    "Kars" : [
+        ["Est au dessus de la chaîne alimentaire", "", "https://i.imgur.com/xaxz22z.gif", "#33274b"],
+        ["Pare avec ses lames de lumière", "", "https://i.imgur.com/EPQFH6k.gif", "#403d68"],
+        ["Tranche avec sa lame", "", "https://i.imgur.com/GhMA7TX.gif", "#716f71"],
+    ],
+    "Diavolo" : [
+        ["Devient le Boss", "", "https://i.imgur.com/Ehqnm6f.gif", "#1f1324"],
+        ["Fonce sur l''ennemi", "", "https://i.imgur.com/sK0UO3X.gif", "#0b1231"],
+        ["Annonce sa victoire prochaine", "", "https://i.imgur.com/qJ9jvyD.gif", "#10141f"],
+        ["King Crimson", "invoque", "https://i.imgur.com/Hr6KnGW.gif", "#de94b2"],
+        ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
+        ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
+
+    ],
+    "Jotaro Kujo" : [
+        ["Star platinum", "invoque", "https://i.imgur.com/OkgDDaq.gif", "#d54de9"],
+        ["Star Platinum : The World", "arrête le temps grâce à", "https://i.imgur.com/yJVb7Re.gif", "#cfa7e3"],
+        ["Star fingers", "utilise", "https://i.imgur.com/7oXVZzW.gif", "#9dcbc9"],
+        ["Résolu à gagner", "est", "https://i.imgur.com/FXZR3Zh.gif", "#a3b4a2"],
+    ],
+    "Diego Brando" : [
+        ["The World", "", "https://i.imgur.com/8lNWR2i.gif", "#e5ca44"],
+        ["Se transforme en... chose", "", "https://i.imgur.com/94wjVzH.gif", "#a53c16"],
+        ["Est assuré de sa victoire", "", "https://i.imgur.com/KCYnTNT.gif", "#c96b2f"],
+    ],
+    "Dio Brando" : [
+        ["Contemple sa victoire prochaine", "", "https://i.imgur.com/Iu7nW17.gif", "#1c0405"],
+        ["ZA WARUDO", "arrête le temps...", "https://i.imgur.com/n7qFLTJ.gif", "#dac084"],
+        ["Brûle le lieu du combat", "", "https://i.imgur.com/rQREA8v.gif", "#b73428"],
+        ["Suprématie", "impose sa", "https://i.imgur.com/WojIG9j.gif", "#f2d171"],
+        ["Couteaux", "jette des", "https://i.imgur.com/nlPZGPt.gif", "#615c67"],
+    ],
+    "Kira Yoshikage" : [
+        ["Passe à autre chose", "", "https://i.imgur.com/NAwBkx2.gif", "#941853"],
+        ["Ressens du dégoût", "", "https://i.imgur.com/OmTBzsg.gif", "#cc2fd4"],
+        ["Killer queen", "appelle", "https://i.imgur.com/6DWi76c.gif", "#d575f1"],
+        ["Bombe", "active sa", "https://i.imgur.com/tiDGazG.gif", "#500d5f"],
+        ["Poursuite mortelle", "envoie sa", "https://i.imgur.com/WmjnCQm.gif", "#193653"],
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
@@ -2086,39 +2189,94 @@ all_techniques = {
     
     # My Hero Academia
     "All Might" : [
-
+        ["S''énerve","","https://media1.tenor.com/m/74S4j3Oja_EAAAAd/my-hero-academia-sakuga.gif","#172c48"],
+        ["Texas Smash","balance un","https://i.imgur.com/FcgLndf.gif", "#070f27"],
+        ["Carolina Smash","balance son" ,"https://static.wikia.nocookie.net/bokunoheroacademia/images/3/30/Carolina_Smash.gif","#cdcfce"],
+        ["Missouri Smash","lâche un","https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ed/Missouri_Smash.gif","#143c9b"],
+        ["Detroit Smash","utilise son","https://static.wikia.nocookie.net/bokunoheroacademia/images/7/73/Detroit_Smash.gif","#cf642f"],
+        ["United Smash Of America","lance l''","https://media1.tenor.com/m/ZRDPXCwLXcIAAAAd/all-might-my-hero-academia.gif","#c99e16"]
     ],
     "Tomura Shigaraki" : [
-            
+        ["envol","prend son","https://media1.tenor.com/m/9x2rNBbaE20AAAAd/tomura-shigaraki-all-for-one.gif","#2a74fc"],
+        ["Ruine","libère la","https://media1.tenor.com/m/ejjI53pMFHUAAAAd/tomura-shigaraki-rikiya-yotsubashi.gif","#929491"],
+        ["","","https://i.imgur.com/lNtETrN.gif","#ff7a39"],
+        ["Détruit","","https://i.imgur.com/N30iH7h.gif","#e8ecf7"],
+        ["contre","","https://media1.tenor.com/m/C6rXOpe4LQwAAAAd/my-hero-academia-mha.gif","#5b6d9a"]
     ],
     "All For One" : [
-                
+        ["renforce ses muscles","","https://i.pinimg.com/originals/50/04/28/500428e93a16bd7388359b751542e87d.gif","#830312"],
+        ["étend ses doigts","","https://media1.tenor.com/m/wxrqvxIfvXkAAAAd/all-for-one-my-hero-academia.gif","#151d44"],
+        ["frappe de toutes ses forces","","https://media1.tenor.com/m/LaIp-ZnwbAAAAAAC/all-for-one-and-one-for-all-my-hero.gif","#0c1862"],
+        ["détend ses fibres musculaires","","https://static.wikia.nocookie.net/bokunoheroacademia/images/1/10/All_For_One_blasts_All_Might.gif","#07090d"],
+        ["dérobe les pouvoirs de l''adversaire","","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/4a/All_For_One_%28Quirk%29.gif","#492f6a"]
+        
     ],
     "Star And Stripe" : [
     ],
     "Izuku Midoriya" : [
+        ["Revêtement Intégral","active son","https://i.imgur.com/L9NmiVR.gif","#57b59e"],
+        ["Revêtement Intégral 100%","active son","https://i.imgur.com/BZA0Z1S.jpeg","#57b59e"],
+        ["Delaware Detroit Smash, Puissance à 1 000 000% ! ","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b0/Delaware_Detroit_Smash.gif","#3fdc84"],
+        ["Delaware Smash Air Force","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/1/14/Delaware_Smash_Air_Force05.gif/revision/latest?cb=20210522182141&path-prefix=fr","#1c366d"],
+        ["One For All : Revêtement Intégral - Style Coup de Pied","envoie un","https://static.wikia.nocookie.net/bokunoheroacademia/images/d/d5/Full_Cowl_-_Shoot_Style-0.gif/revision/latest?cb=20190716194008&path-prefix=fr","#0b3496"],
+        ["Delaware Smash","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/6/68/Delaware_Smash.gif","#0b3496"],
     ],
     "Endeavor" : [
+        ["Flèche Enflammée","tire une","https://static.wikia.nocookie.net/bokunoheroacademia/images/1/18/Fl%C3%A8che_Enflamm%C3%A9e_Endeavor.gif/revision/latest?cb=20210610151123&path-prefix=fr","#ea2409"],
+        ["Prominence Burn","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/3/38/Prominence_Burn.gif","#f6c74a"],
+        ["Jet Burn","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/42/Flashfire_Fist_-_Jet_Burn-0.gif/revision/latest?cb=20200502190856&path-prefix=fr","#f4ba1a"]    
     ],
     "Chisaki Kai" : [
+        ["désagrège","","https://static.wikia.nocookie.net/bokunoheroacademia/images/3/30/Kai_Chisaki_uses_Overhaul_on_Magne.gif","#f9ecd9"],
+        ["désassemble l''espace","","https://static.wikia.nocookie.net/bokunoheroacademia/images/0/06/Overhaul_Disassemble.gif","#6e7d81"]
     ],
     "Nana Shimura" : [
     ],
     "Mirio Togata" : [
+        ["Phantom Menace","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/f/f2/Phantom_Menace.gif/revision/latest?cb=20200501210903&path-prefix=fr","#cfe3e3"],
+        ["Attaque avec CLAAAASSE!","","https://media1.tenor.com/m/FeLtm8F1bBkAAAAC/anime-mirio.gif","#d56611"],
+        ["Coup de Poing","donne un","https://media1.tenor.com/m/pIGHQmE_nI0AAAAd/mha-my-hero-academia.gif","#6b2c2b"]
     ],
     "Re-Destro" : [
+        ["Stress","envoie son","https://media1.tenor.com/m/CKmp0PhdpVMAAAAd/stress-rikiya.gif","#814ebf"],
+        ["Attaque avec son Stress","","https://media1.tenor.com/m/LPCVEuqP3PcAAAAd/stress.gif","#222022"]
+        
     ],
     "Katsuki Bakugo" : [
+        ["Flashbang","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/4c/Stun_Grenade.gif","#f7f64f"],
+        ["Mitraille","","https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Mitrailleuse_Anti-Blindage.gif/revision/latest?cb=20180907164502&path-prefix=fr","#c7c53a"],
+        ["Vitesse","prend de la","https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ea/Blast_Rush_Turbo.gif/revision/latest?cb=20200321135957&path-prefix=fr","#fcd8bf"],
+        ["donne tout ce qu''il a","","https://media1.tenor.com/m/BJzaBquec_YAAAAC/boku-no-hero-academia-my-hero-academia.gif","#fcfd86"]
     ],
     "Gigantomachia" : [
     ],
+    "Fumikage Tokoyami" : [
+        ["Black Ankh Sabbath","tranche avec","https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3c/Sabbath.gif","#af71e1"],
+    ],
+    "Kyoka Jiro" : [
+        ["Heartbeat Fuzz","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/6/6c/Heartbeat_fuzz.gif/revision/latest?cb=20190724203715&path-prefix=fr","#999788"],
+    ],
+    "Shoto Todoroki" : [
+        ["Forteresse de Glace","matérialise une","https://static.wikia.nocookie.net/bokunoheroacademia/images/f/f1/Giant_Ice_Wall.gif/revision/latest?cb=20181210091012&path-prefix=fr","#d1ecf5"],
+        ["le Feu et la Glace","combine","https://media1.tenor.com/m/aRR3-4vhZ5YAAAAd/todoroki-shouto-my-hero-academia.gif","#dfe6ef"]
+    ],
+    "Ochaco Uraraka" : [
+        ["Service Comète","balance le","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/4e/Service_Com%C3%A8te.gif/revision/latest?cb=20210409135754&path-prefix=fr","#f9ddf7"],
+    ],
+    "Tenya Iida" : [
+        ["Recipro Extend","utilise son","https://static.wikia.nocookie.net/bokunoheroacademia/images/b/bb/Recipro_Extend.gif/revision/latest?cb=20190707131825&path-prefix=fr","#9b867a"],
+    ],  
+    "Dabi" : [
+        ["Flammes","génère des","https://media1.tenor.com/m/DpdQU3nXX8QAAAAC/bluefire-dabi.gif","#25f4f7"],
+        ["Flammes","envoie ses","https://media1.tenor.com/m/SdeFnL4glmQAAAAd/dabi-my-villian-academia.gif","#25f4f7"]
+    ],
     # Avatar
     "Aang": [
-        ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
-        ["Les 4 éléments", "déferle", "https://i.imgur.com/yBVuMMq.gif", "#a53724"],
-        ["Les coups", "dévie", "https://i.imgur.com/i5NkYCL.gif","#4f1d0f"],
-        ["Se moque de l''adversaire", "" , "https://i.imgur.com/J1I4qrL.gif", "#aa6524"],
-        ["Bourrasque de vent","balance une", "https://i.imgur.com/glg5wYr.gif","#9e1c0f"]
+        ["colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
+        ["les 4 éléments", "déferle", "https://i.imgur.com/yBVuMMq.gif", "#a53724"],
+        ["les coups", "dévie", "https://i.imgur.com/i5NkYCL.gif","#4f1d0f"],
+        ["se moque de l''adversaire", "" , "https://i.imgur.com/J1I4qrL.gif", "#aa6524"],
+        ["bourrasque de vent","balance une", "https://i.imgur.com/glg5wYr.gif","#9e1c0f"]
     ],
     "Korra": [
         ["Etat d''Avatar", "entre dans", "https://i.imgur.com/WqCJbPj.gif","#2c2e27"],
@@ -2169,7 +2327,7 @@ all_techniques = {
         ["Analyse l''ennemi", "", "https://i.imgur.com/CJxvfnr.gif", "#a5342c"],
         ["Pare et Riposte","","https://i.imgur.com/sLK9cF6.gif","#6a3224"],
         ["Apeure l''ennemi","","https://i.imgur.com/TskuoMA.gif","#d6b784"],
-        ["Durcit son poing et frappe","https://i.imgur.com/VNSNQvv.gif","#9a8057"],
+        ["Durcit son poing et frappe","", "https://i.imgur.com/VNSNQvv.gif","#9a8057"],
         ["Grand Terrassement","déclenche le","https://i.imgur.com/Efb8NX4.gif","000000"],
         ["Coup de Poing","balance un","https://i.imgur.com/3qsm5wW.gif","#eaddc3"]
     ],
