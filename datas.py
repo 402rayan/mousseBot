@@ -1781,11 +1781,41 @@ all_techniques = {
         ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
     ],
     # Naruto
+    "Kaguya Otsutsuki" : [
+        ["Byakugan", "active son", "https://media1.tenor.com/m/oFDGGLm5aMAAAAAC/kaguya.gif", "#e3e5da"],
+    ],
+    "Boruto Uzumaki" : [
+        ["Jogan", "active son", "https://media1.tenor.com/m/sOxPdcPaOYYAAAAC/madara-uchiha.gif", "#203e51"],
+        ["Rasengan", "utilise le", "https://media1.tenor.com/m/MdZogdBGnMMAAAAd/boruto.gif", "##705ca1"],
+    ],
+    "Rikudo" : [
+        ["Rinnegan", "active son", "", ""],
+        ],
+    "Madara Uchiha" : [
+        ["Pluie d''énergie", "envoie une", "https://media1.tenor.com/m/VPIrMcpLbeQAAAAd/madara-madara-uchiha.gif", "#020203"],
+        ["Analyse les mouvements","","https://media1.tenor.com/m/ME7LU5WZaUIAAAAC/%E5%AF%AB%E8%BC%AA%E7%9C%BC.gif","#704e56"],
+        ["Boule de feu", "envoie une", "https://media1.tenor.com/m/DHPr-HlwxSEAAAAd/madara-uchiha-vs.gif", "#66474e"],
+    ],
+    "Isshiki Otsutsuki" : [
+        ['Tiges Noires','projette des','https://media1.tenor.com/m/Ikkq1VpPA_AAAAAC/otsutsuki-isshiki-otsutsuki.gif','#44424c'],
+    ],
+    "Kawaki" : [
+        ["","","https://i.imgur.com/rWnQni7.gif","#213b69"],
+        ["Kama", "active son", "https://media1.tenor.com/m/E2BKZciiIv0AAAAC/kawaki-naruto.gif", "#04504c"],
+    ],
+    "Naruto Uzumaki" : [
+        ["Coup de Poing", "envoie un", "https://media1.tenor.com/m/UTwecZIJfb8AAAAd/isshiki-vs-naruto-baryon-mode.gif","#d63230"]
+    ],
     "Sasuke Uchiha" : [
         ["Rinnegan", "active son", "https://i.imgur.com/qJ5mfnz.gif", "#d100ff"],
+        ["Susano", "s''entoure de","https://i.imgur.com/I9XTSZs.gif","#a150c0"],
+        ["","","https://i.pinimg.com/originals/c7/6e/73/c76e73348d0beb5b78bb92a6e1008a08.gif","#040713"],
+        ["Chidori", "perce avec son", "https://i.imgur.com/46rrvGy.gif", "#3c3132"],
     ],
     "Kakashi Hatake" : [
         ["Sharingan", "active son", "https://i.imgur.com/mKlr2SI.gif", "#d14a4a"],
+        ["Chaîne de foudre", "balance une", "https://media1.tenor.com/m/HulXFh5elUsAAAAC/toumei-datta-sekai-naruto.gif", "#95c5e0"],
+        ["Kamui", "utilise", "https://media1.tenor.com/m/dfM2A2WX9ikAAAAd/kakashi-hatake-naruto-uzumaki.gif", "#d63636"],
     ],
     "Tsunade" : [
         ["Katsuyu", "invoque", "https://i.gifer.com/8UZi.gif", "#FFFFFF"],
@@ -1803,6 +1833,7 @@ all_techniques = {
         ["Téléportation", "utilise la", "https://i.pinimg.com/originals/f4/d5/a5/f4d5a58f5ffde5c1afabe2096af7bc5e.gif", "#d14a4a"],
         ["Sharingan", "active son", "https://64.media.tumblr.com/2140ccf11ade92f5be44e63093c1efd6/tumblr_o6y19xdcfs1rqe0rbo1_540.gif", "#d14a4a"],
         ["Mouvements", "lis les", "https://i.pinimg.com/originals/66/73/4b/66734b28689f5a12243c55f01c43e8a8.gif", "#d14a4a"],
+        ["Boule de Feu","envoie une","https://i.gifer.com/79da.gif","#ffdb46"],
     ],
     "Hidan" : [
         ["Rituel", "active son", "https://steamuserimages-a.akamaihd.net/ugc/171539824338951013/8404D4DB507AA5BEB65400641D3D784130B261FA/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", "#000000"],
