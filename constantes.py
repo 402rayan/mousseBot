@@ -42,7 +42,7 @@ CONSTANTS = {
     },
     'RARITY_COLOR': {
         # Couleur des personnages de la rareté correspondante
-        'Z': 0xff00e1,
+        'Z': 0xf70dff,
         'X': 0x1e103b, 
         'SS': 0x8C001A,
         'S': 0xD82F00,
