@@ -11,8 +11,14 @@ from constantes import CONSTANTS
 from datas import all_characters_templates, all_synergies, all_link_synergies, all_techniques
 import Levenshtein
 
+# SI le dossiers logs n'existe pas, on le crée
+from os import path, makedirs
+
+if not path.exists("logs"):
+    makedirs("logs")
 # Configurer Loguru pour écrire les logs dans un fichier
-logger.add("logs.log", rotation="100 MB")  # Rotation du fichier après 100 MB
+
+logger.add("./logs/logs_{time}.log", rotation="1 minute")
 
 class Database:
     def __init__(self, db_file):
@@ -164,7 +170,7 @@ class Database:
         self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
         last_time = self.cur.fetchone()[0]
         last_time = datetime.strptime(last_time, '%Y-%m-%d %H:%M:%S.%f') if last_time is not None else None
-        if last_time is not None and last_time + timedelta(minutes=3) > datetime.now() and not ignoreTime:
+        if last_time is not None and last_time + timedelta(minutes=2) > datetime.now() and not ignoreTime:
             return "ERROR_AUTO_TEAM_TOO_FAST"
         self.cur.execute(f"UPDATE users SET last_time_auto_team = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
@@ -865,3 +871,7 @@ class Database:
         self.remplacer_url_image_character_templates()
         self.remplacer_url_image_synergies()
         self.remplacer_url_image_techniques()
+
+    def get_last_auto_team_time(self, user_discord_id):
+        self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
