@@ -3,6 +3,7 @@ import asyncio
 from datetime import datetime, timedelta
 import os
 import random
+from time import time
 import discord
 from discord import File
 from discord.ext import commands 
@@ -1738,7 +1739,19 @@ async def autoTeam(message, userFromDb):
         await message.channel.send(embed=embed_info("Vous devez avoir au moins 3 personnages pour utiliser cette commande!","", discord.Color.red()))
         return
     if teams == "ERROR_AUTO_TEAM_TOO_FAST":
-        await message.channel.send(embed=embed_info("Vous avez déjà utilisé cette commande récemment!","Veuillez attendre au moins 5 minutes entre chaque utilisation.", discord.Color.red()))
+        
+        last_time = database.get_last_auto_team_time(message.author.id)
+        last_time = datetime.strptime(last_time, '%Y-%m-%d %H:%M:%S.%f')
+
+        # Convert current time to datetime
+        current_time = datetime.now()
+
+        # Calculate the remaining time in seconds
+        temps_restant = 120 - (current_time - last_time).total_seconds()
+        temps_restant_minutes = int((temps_restant//60)%60)
+        temps_restant_seconds = int(temps_restant%60)
+        logger.error(f"Temps restant pour {message.author.name} ({message.author.id}) : {temps_restant_minutes} minutes et {temps_restant_seconds} secondes.")
+        await message.channel.send(embed=embed_info("Vous avez déjà utilisé cette commande récemment!", f"Prochaine utilisation possible dans **{temps_restant_minutes} minute et {temps_restant_seconds} secondes**.", discord.Color.red()))
         return
     max_power = teams[0][1]
     footer = "✅ : Oui ❌ : Non"
