@@ -559,10 +559,10 @@ all_characters_templates = {
             ("Azula", "SS", "https://i.imgur.com/GT1KSqZ.gif", 660, 720, 685),
             ("Zuko", "SS", "https://i.imgur.com/VLqP4QM.gif", 670, 710, 700),
             ("Katara", "SS", "https://i.imgur.com/4hOIpNj.gif", 700, 720, 725),
+            ("Toph Beifong", "SS", "https://i.imgur.com/Bjbn4ew.gif", 630, 680, 635),
 
             # Personnage S
             ("Hama", "S", "https://i.imgur.com/zY9YU3f.jpeg", 550, 600, 555),
-            ("Toph Beifong", "S", "https://i.imgur.com/Bjbn4ew.gif", 530, 580, 535),
 
             # Personnages A
             ("Mai", "A", "https://i.imgur.com/opVoND8.gif", 400, 440, 410),
@@ -1665,7 +1665,7 @@ all_techniques = {
         ["Éternue", "", "https://i.imgur.com/ZJNbnIH.gif","#cb6b7f"],
         ["Colère du Dieu de la destruction", "envoie la", "https://i.imgur.com/YhLMMCs.gif", "#f5a03e"],
         ["Enchainement", "envoie un", "https://i.imgur.com/gieaWmt.gif", "#84738d"],
-        ["s''en fiche du combat et mange sa pizza", "", "https://i.imgur.com/lcT3lVL.gif", "#0662da"],
+        ["S''en fiche du combat et mange sa pizza", "", "https://i.imgur.com/lcT3lVL.gif", "#0662da"],
         ["Choqué de la nullité du combat", "", "https://i.imgur.com/Mqd6nVH.gif", "#9d7ea8"],
         ["N''en peut plus du combat", "", "https://i.imgur.com/O3a72WV.gif", "#5e2c97"],
     ],
@@ -2116,17 +2116,29 @@ all_techniques = {
     "Aang": [
         ["Colonnes de flamme", "envoie des", "https://i.imgur.com/nqUJVqG.gif", "#f55a42"],
         ["Les 4 éléments", "déferle", "https://i.imgur.com/yBVuMMq.gif", "#a53724"],
-        ["Les coups", "dévie", "https://i.imgur.com/i5NkYCL.gif","#4f1d0f"]
+        ["Les coups", "dévie", "https://i.imgur.com/i5NkYCL.gif","#4f1d0f"],
+        ["Se moque de l''adversaire", "" , "https://i.imgur.com/J1I4qrL.gif", "#aa6524"],
+        ["Bourrasque de vent","balance une", "https://i.imgur.com/glg5wYr.gif","#9e1c0f"]
     ],
     "Korra": [
+        ["Etat d''Avatar", "entre dans", "https://i.imgur.com/WqCJbPj.gif","#2c2e27"],
+        ["Eau", "manipule l''", "https://i.imgur.com/X5REKZn.gif","#806ae8"],
+        ["Terre", "manipule la", "https://i.imgur.com/YA48cZn.gif","#436710"],
+        ["Déchainement de coup","balance un","https://i.imgur.com/yyLqrr1.gif","#aabfda"],
+        ["Air","déchaîne l''","https://i.imgur.com/BUeWPmH.gif","#4d1086"]
     ],
     "Ozai": [
+        ["Déferlement d''Electricité", "envoie un", "https://i.imgur.com/MxetCFq.gif", "#6fe0ef"],
+        ["Rage","entre dans un état de","https://i.imgur.com/0Ne8lgc.gif","#f4912e"]
     ],
     "Iroh": [
+        ["Feu", "crach du", "https://i.imgur.com/lkXfIUM.gif", "#fce929"],
+        ["Colonne de feu", "envoie une", "https://i.imgur.com/VHSOi9P.gif", "#4e0400"],
+        ["Foudre", "invoque la", "https://i.imgur.com/Ez3QiS6.gif", "#c1cdba"],
     ],
     "Azula": [
         ["Foudre","invoque la","https://i.imgur.com/Zz7FpL7.gif","#21586f"],
-        ["Coups enflammés","envoie une succession de", "https://i.imgur.com/xuQwSdh.gif","#580000"]
+        ["Coups enflammés","envoie une succession de", "https://i.imgur.com/xuQwSdh.gif","#580000"],
     ],
     "Zuko": [
         ["Flammes","génère des", "https://i.imgur.com/Ajn6L2F.gif", "#6feffc"],
@@ -2137,12 +2149,69 @@ all_techniques = {
         ["Flammes","parre avec ses", "https://i.imgur.com/7yVX0xU.gif","#1a7690"]
     ],
     "Katara": [
+        ["Maîtrise de l''eau","utilise sa","https://i.imgur.com/YCYH7qM.gif","#c48d6c"],
+        ["Vague d''Eau","envoie une","https://i.imgur.com/a7Bf69h.gif","#2b97a1"],
+        ["Halo","s''entoure d''un","https://i.imgur.com/vAQYdse.gif","#c1abf7"]
     ],
     "Ty Lee" : [
         ["Avec agilité","combat","https://media1.tenor.com/m/LxaIEe-MnrYAAAAC/ty-lee.gif","#0b0c05"]
-    ]
+    ],
+    "Toph Beifong": [
+        ["Sol","détruit le","https://i.imgur.com/28I0RtB.gif","#563d24"],
+        ["Missiles de Terre","envoie des","https://i.imgur.com/82lUEH3.gif","#658f4f"],
+        ["Esquive et Riposte","","https://i.imgur.com/9VNZjDV.gif","#dde3b8"]
+    ],
+    "Hama": [
+        ["Energie Vitale","absorbe l''","https://64.media.tumblr.com/64364a9198ad4bcdf4f65d2a0e8a7e18/tumblr_p3i9lxDq9j1tndn6wo1_r1_540.gifv","#e23a13"],
+    ],
+    # Attack On Titan
+    "Eren Yeager" : [
+        ["Analyse l''ennemi", "", "https://i.imgur.com/CJxvfnr.gif", "#a5342c"],
+        ["Pare et Riposte","","https://i.imgur.com/sLK9cF6.gif","#6a3224"],
+        ["Apeure l''ennemi","","https://i.imgur.com/TskuoMA.gif","#d6b784"],
+        ["Durcit son poing et frappe","https://i.imgur.com/VNSNQvv.gif","#9a8057"],
+        ["Grand Terrassement","déclenche le","https://i.imgur.com/Efb8NX4.gif","000000"],
+        ["Coup de Poing","balance un","https://i.imgur.com/3qsm5wW.gif","#eaddc3"]
+    ],
+    "Levi Ackerman" : [
+        ["épées","dégaine ses","https://i.imgur.com/6SoCiqQ.gif","#5d94c7"],
+        ["Trancher l''adversaire","s''envole dans les airs pour","https://i.imgur.com/H1Dkeov.gif","#2f5992"],
+        ["toute vitesse", "se déplace à", "https://i.imgur.com/rJRm323.gif","#775d44"],
+        ["Grenade","lance une","https://i.imgur.com/rFwWAzu.gif","#0c233b"],
+        ["Obscurité","se fond dans l''","https://i.imgur.com/0xWhqrJ.gif","#181f2a"],
+        ["Découpe l''adversaire","","https://i.imgur.com/333dLpc.gif","#496479"]
+    ],
+    # Hunter X Hunter
+    "Meruem" : [
+    ],
+    "Gon Freecss" : [
+        ["TEMPORAIRE", "TEMPORAIRE", "https://i.imgur.com/44awlN2.gif","#e09952"]
+    ],
+    "Kuroro Lucifer" : [
+    ],
+    "Isaac Netero" : [
+    ],
+    "Ging Freecss" : [
+    ],
+    "Aruka Zoldyck" : [
+    ],
+    "Zeno Zoldyck" : [
+    ],
+    "Irumi Zoldyck" : [
+    ],
+    "Silva Zoldyck" : [
+    ],
+    "Hisoka" : [
+    ],
+    "Neferopito" : [
+    ],
+    "Pufu" : [
+    ],
+    "Yupi" : [
+    ],
+    "Kurapika" : [
+    ],
 }
 
 """
-
 """
