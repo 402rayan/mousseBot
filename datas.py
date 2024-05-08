@@ -1858,6 +1858,8 @@ all_techniques = {
         ["Big Bang Impact", "lance un", "https://i.imgur.com/I8LlLN5.gif", "#5c3307"],
         ["Nen", "déploie son", "https://i.imgur.com/CsGYEAi.gif", "#5c3307"],
         ["Enragé", "devient", "", "#5c3307"],
+        ["Fonce","","https://media1.tenor.com/m/BFBKDephujoAAAAd/uvogin-hunter-x-hunter.gif","#1b1714"],
+        
     ],
     "Morel Mackernasey": [
         ["Ecran de fumee", "lance un", "https://i.imgur.com/sNGqJb3.gif", "#d100ff"],
@@ -1875,7 +1877,7 @@ all_techniques = {
         ["The Almighty", "active", image_temporaire(), hexadecimal_temporaire],
         ["Sankt Altar", "invoque", "https://i.imgur.com/R34bul2.png", "#1064bc"],
         ["Heilig Pfeil", "déchaine", image_temporaire(), "#1064bc"],
-        ["Épée de Reishi", "crée", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
+        ["Épée de Reishi", "crée l''", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
     ],
     "Sosuke Aizen" : [ #TOGIF
         ["Kanzen Saimin", "trompe avec", "https://i.imgur.com/mkttGe5.gif", "#3994a4"],
@@ -2064,16 +2066,16 @@ all_techniques = {
         ["Champ de fleurs", "utilise", "https://i.imgur.com/sagxuqt.gif", "#c18944"],
         ["Aura roncière", "montre son", "https://i.imgur.com/XWKu20j.gif", "#d95246"],
         ["Posture défensive", "prend une", "https://i.imgur.com/VeAtE6h.gif", "#9f7f6f"],
-        ["Extension du territoire : mer de lumière cérémonielle", "utilise son", "https://i.imgur.com/HneVwfk.gif", "#fafca4"],
+        ["Extension du territoire : Mer de Lumière Cérémonielle", "utilise son", "https://i.imgur.com/HneVwfk.gif", "#fafca4"],
     ],
     "Dagon" : [
         ["Boit l''ennemi", "", "https://i.imgur.com/GOIylfZ.gif", "#90918c"],
         ["Se transforme", "", "https://i.imgur.com/sAjievT.gif", "#f90000"],
         ["Shikigamis marins", "invoque ses", "https://i.imgur.com/jNVPupR.png", "#8eb740"],
-        ["Escadron maritime", "invoque", "https://i.imgur.com/QxkmETz.png", "#85edec"],
+        ["Escadron maritime", "invoque l''", "https://i.imgur.com/QxkmETz.png", "#85edec"],
         ["Extension du territoire : Horizon du Skandha Captivant", "utilise son", "https://i.imgur.com/bd0Wllg.gif", "#46dced"],
     ],
-      "Naobito Zenin" : [
+    "Naobito Zenin" : [
         ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
     ],
     "Kento Nanami" : [
@@ -2086,16 +2088,16 @@ all_techniques = {
     ],
     #Jojo's Bizarre Adventure
     "Giorno Giovanna" : [
-        ["Réduit à néant l''adversaire", "", "https://i.imgur.com/gOCisRz.gif", "#8a2bac"],
-        ["MUDA MUDA MUDA", "", "https://i.imgur.com/cvSkCGy.gif", "#5b229c"],
+        ["réduit à néant l''adversaire", "", "https://i.imgur.com/gOCisRz.gif", "#8a2bac"],
+        ["MUDA MUDA MUDA", "attaque, ", "https://i.imgur.com/cvSkCGy.gif", "#5b229c"],
         ["Préviens l''adversaire", "", "https://i.imgur.com/FuazAp3.gif", "#151f40"],
         ["Écrasements de tête", "", "https://i.imgur.com/EteMSKb.gif", "#7a3547"],
-        ["Montre l''écart de puissance", "", "https://i.imgur.com/MGM8AV1.gif", "#cd9d81"],
+        ["Nargue l''adversaire", "", "https://i.imgur.com/MGM8AV1.gif", "#cd9d81"],
     ],
     "Enrico Pucci" : [
         ["Monte au paradis", "", "https://i.imgur.com/L4iwUzf.gif", "#9bddf8"],
         ["Est supérieur à l''adversaire", "", "https://i.imgur.com/ZR87lxj.gif", "#1373bd"],
-        ["Rush", "", "https://i.imgur.com/FCfi3F1.gif", "#0e999d"],
+        ["", "", "https://i.imgur.com/FCfi3F1.gif", "#0e999d"],
         ["La grâce", "Chante", "https://i.imgur.com/WCYvUtu.gif", "#d2c288"],
         ["Inévitable", "est", "https://i.imgur.com/hnkY0lQ.gif", "#9e7fdd"],
     ],
@@ -2113,12 +2115,12 @@ all_techniques = {
     "Gyro Zeppeli" : [
         ["Déterminé", "est", "https://i.imgur.com/aHFq5gY.gif", "#df9d74"],
         ["Crée la rotation du nombre d''or", "", "https://i.imgur.com/XpHOE99.png", "#b38957"],
-        ["Scan pour renforcer ses rotations", "active", "https://i.imgur.com/Z0oixSj.gif", "#3f6f06"],
+        ["Scan les alentours et renforce ses rotations", "active", "https://i.imgur.com/Z0oixSj.gif", "#3f6f06"],
     ],
     "Kars" : [
-        ["Est au dessus de la chaine alimentaire", "", "https://i.imgur.com/xaxz22z.gif", "#33274b"],
+        ["Est au dessus de la chaîne alimentaire", "", "https://i.imgur.com/xaxz22z.gif", "#33274b"],
         ["Pare avec ses lames de lumière", "", "https://i.imgur.com/EPQFH6k.gif", "#403d68"],
-        ["Coup de coude solaire", "", "https://i.imgur.com/GhMA7TX.gif", "#716f71"],
+        ["Tranche avec sa lame", "", "https://i.imgur.com/GhMA7TX.gif", "#716f71"],
     ],
     "Diavolo" : [
         ["Devient le Boss", "", "https://i.imgur.com/Ehqnm6f.gif", "#1f1324"],
@@ -2126,13 +2128,14 @@ all_techniques = {
         ["Annonce sa victoire prochaine", "", "https://i.imgur.com/qJ9jvyD.gif", "#10141f"],
         ["King Crimson", "invoque", "https://i.imgur.com/Hr6KnGW.gif", "#de94b2"],
         ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
+        ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
 
     ],
     "Jotaro Kujo" : [
-        ["Star platinum", "", "https://i.imgur.com/OkgDDaq.gif", "#d54de9"],
-        ["Star Platinum : The World", "arrête le temps,", "https://i.imgur.com/yJVb7Re.gif", "#cfa7e3"],
-        ["Star fingers", "transperce la cible,", "https://i.imgur.com/7oXVZzW.gif", "#9dcbc9"],
-        ["Est résolu à gagner", "", "https://i.imgur.com/FXZR3Zh.gif", "#a3b4a2"],
+        ["Star platinum", "invoque", "https://i.imgur.com/OkgDDaq.gif", "#d54de9"],
+        ["Star Platinum : The World", "arrête le temps grâce à", "https://i.imgur.com/yJVb7Re.gif", "#cfa7e3"],
+        ["Star fingers", "utilise", "https://i.imgur.com/7oXVZzW.gif", "#9dcbc9"],
+        ["Résolu à gagner", "est", "https://i.imgur.com/FXZR3Zh.gif", "#a3b4a2"],
     ],
     "Diego Brando" : [
         ["The World", "", "https://i.imgur.com/8lNWR2i.gif", "#e5ca44"],
@@ -2241,9 +2244,9 @@ all_techniques = {
     ],
     "Katsuki Bakugo" : [
         ["Flashbang","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/4c/Stun_Grenade.gif","#f7f64f"],
-        ["Mitralle","","https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Mitrailleuse_Anti-Blindage.gif/revision/latest?cb=20180907164502&path-prefix=fr","#c7c53a"],
+        ["Mitraille","","https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Mitrailleuse_Anti-Blindage.gif/revision/latest?cb=20180907164502&path-prefix=fr","#c7c53a"],
         ["Vitesse","prend de la","https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ea/Blast_Rush_Turbo.gif/revision/latest?cb=20200321135957&path-prefix=fr","#fcd8bf"],
-        ["donne tout ce qu'il a","","https://media1.tenor.com/m/BJzaBquec_YAAAAC/boku-no-hero-academia-my-hero-academia.gif","#fcfd86"]
+        ["donne tout ce qu''il a","","https://media1.tenor.com/m/BJzaBquec_YAAAAC/boku-no-hero-academia-my-hero-academia.gif","#fcfd86"]
     ],
     "Gigantomachia" : [
     ],
