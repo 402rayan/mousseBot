@@ -1348,7 +1348,7 @@ all_synergies = [
 
 all_link_synergies = {
     316 : ["Ikarugo","Dagon","Hatchan","Jinbe"], # Aquatique
-    315 : ["Neferopito","Pufu","Meruem","Yupi","Koruto","Cheetu","Ikarugo","Koruto","Pegui"], # Fourmis Chimère
+    315 : ["Neferopito","Pufu","Meruem","Yupi","Koruto","Cheetu","Ikarugo","Pegui"], # Fourmis Chimère
     314 : ["Yuki Tsukumo","Riko Amanai"], # Plasma Stellaire
     312 : ["Funny Valentine","Isaac Netero"], # Président
     311 : ["Gon Freecss","Gai Maito","Ichigo Kurosaki","Naruto Uzumaki"], # Dernier Recours
