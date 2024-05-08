@@ -1165,7 +1165,7 @@ all_synergies = [
     (138, "Yandere", "DEF", 0.45, "Les Yandere sont des individus qui sont obsedes par leur amour pour quelqu'un et qui sont prets à tout pour le proteger.", image_temporaire(), "#00000"),
     (139, "Ressuscité", "DEF", 0.20, "Les Ressuscités sont des individus qui ont ete ramenes a la vie apres leur mort.", image_temporaire(), "#00000"),
     (140, "Sarutobi", "DEF", 0.45, "Les Sarutobis sont une famille de ninjas qui ont servi le village de Konoha pendant des generations.", image_temporaire(), "#00000"),
-    (141, "Changeur de Forme", "DEF", 0.55, "Les Métamorphes sont des individus qui peuvent changer de forme pour se fondre dans leur environnement.", image_temporaire(), "#00000"),
+    (141, "Changeur de Forme", "HP", 0.55, "Les Métamorphes sont des individus qui peuvent changer de forme pour se fondre dans leur environnement.", image_temporaire(), "#00000"),
     (142, "Berserker", "ATK", 0.75, "Les Berserkers sont des individus qui entrent dans une rage meurtriere et qui attaquent tout ce qui se trouve sur leur chemin.", image_temporaire(), "#00000"),
     (143, "Imposteur", "DEF", 1, "Les Imposteurs sont des individus qui se font passer pour quelqu'un d'autre pour tromper leurs ennemis.", image_temporaire(), "#00000"),
     (144, "Archer", "ATK", 0.55, "Les Archers sont des tireurs d'elite qui peuvent atteindre des cibles à longue distance.", image_temporaire(), "#00000"),
@@ -1338,14 +1338,17 @@ all_synergies = [
     (312, "Président", "DEF", 0.45, "Les Presidents sont des individus qui dirigent leur pays ou un groupe.", image_temporaire(), "#00000"),
     (313, "Maitre des 4 éléments", "DEF", 0.45, "Les Maitres de tous les elements sont des individus qui peuvent maitriser tous les elements pour combattre leurs ennemis.", image_temporaire(), "#00000"),
     (314, "Plasma Stellaire", "HP", 0.45, "Les Utilisateurs du Plasma Stellaire sont des individus qui étaient dus à un sacrifice pour Tengen.", image_temporaire(), "#00000"),
+    (315, "Fourmis Chimère", "DEF", 0.45, "Les Fourmis Chimères sont des creatures qui ont ete creees par les Fourmis Reines pour proteger leur colonie.", image_temporaire(), "#00000"),
+    (316, "Aquatique", "DEF", 0.45, "Les Aquatiques sont des individus qui vivent dans l'eau et qui peuvent respirer sous l'eau pour survivre.", image_temporaire(), "#00000"),
 ]
 
 
 # Utilisateur de dague # Traitre (Tosen,Gin) # Voleur d'énergie Angel Quincys 
 # Shou Tucker et Rasa et Vinsmoke Judge
-# Créer RANG Z avec Zeno, Athena, Super Shenron
 
 all_link_synergies = {
+    316 : ["Ikarugo","Dagon","Hatchan","Jinbe"], # Aquatique
+    315 : ["Neferopito","Pufu","Meruem","Yupi","Koruto","Cheetu","Ikarugo","Koruto","Pegui"], # Fourmis Chimère
     314 : ["Yuki Tsukumo","Riko Amanai"], # Plasma Stellaire
     312 : ["Funny Valentine","Isaac Netero"], # Président
     311 : ["Gon Freecss","Gai Maito","Ichigo Kurosaki","Naruto Uzumaki"], # Dernier Recours
