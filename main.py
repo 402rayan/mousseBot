@@ -1923,14 +1923,19 @@ async def info(message, userFromDb):
         return
     
     synergies = database.get_synergies_by_character_template(character[0])
+    nbTechniques = database.get_nb_techniques(character[0])
     hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
     embed = discord.Embed(
         title=f"{nom} **[{rarity}]**",
         color=CONSTANTS['RARITY_COLOR'][rarity],
     )
     embed.set_image(url=image)
-    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
+    texteTechnique = ""
+    if nbTechniques > 0: 
+        texteTechnique = f"\nPossède **{nbTechniques}" + (" technique**" if nbTechniques == 1 else " techniques**")
+    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}" + texteTechnique, inline=False)
     embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+    
     if len(synergies) > 0:
         embed.set_footer(text="Synergies : " + " ~ ".join([synergie[3] for synergie in synergies]))
     await message.channel.send(embed=embed)
@@ -2412,7 +2417,6 @@ async def infoTechnique(message, userFromDb):
     if technique == None:
         await message.channel.send(embed=embed_info("Technique introuvable", "Cette technique **n'existe pas**!", discord.Color.red()))
         return
-    print(technique)
     # Création de l'embed
     nom = technique[2]; description = technique[3]; image = technique[4]; color = int(technique[5][1:], 16)
     charactersFromTechnique = database.get_character_template(technique[1])
@@ -2729,7 +2733,11 @@ def embed_invocation(character_template, user=None,recruter=False):
         color=CONSTANTS['RARITY_COLOR'][rarity],
     )
     embed.set_image(url=image)
-    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}", inline=False)
+    nbTechniques = database.get_nb_techniques(character[0])
+    texteTechnique = ""
+    if nbTechniques > 0: 
+        texteTechnique = f"\nPossède **{nbTechniques}" + (" technique**" if nbTechniques == 1 else " techniques**")
+    embed.add_field(name="", value=f"HP: {hp} ATK: {atk} DEF: {defense}" + texteTechnique, inline=False)
     if not user:
         embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
     else:

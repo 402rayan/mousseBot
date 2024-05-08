@@ -887,3 +887,7 @@ class Database:
     def get_last_auto_team_time(self, user_discord_id):
         self.cur.execute(f"SELECT last_time_auto_team FROM users WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
+    
+    def get_nb_techniques(self, template_id):
+        self.cur.execute(f"SELECT COUNT(*) FROM character_template_techniques WHERE template_id = {template_id}")
+        return self.cur.fetchone()[0]
