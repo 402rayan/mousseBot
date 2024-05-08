@@ -18,7 +18,7 @@ if not path.exists("logs"):
     makedirs("logs")
 # Configurer Loguru pour écrire les logs dans un fichier
 
-logger.add("./logs/logs_{time}.log", rotation="1 minute")
+logger.add("./logs/logs_{time}.log", rotation="1 day")
 
 class Database:
     def __init__(self, db_file):
