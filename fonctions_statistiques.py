@@ -124,7 +124,7 @@ def max_puissance_en_invocation(nombre_invocations, Verbose=False):
         liste_personnage_invoques.append(character)
     # On trie les personnages par puissance
     liste_personnage_invoques.sort(key=lambda x: x[4] + x[5] + x[6], reverse=True)
-    liste_personnage_invoques = liste_personnage_invoques[0:9] if len(liste_personnage_invoques) > 9 else liste_personnage_invoques
+    liste_personnage_invoques = liste_personnage_invoques[0:16] if len(liste_personnage_invoques) > 15 else liste_personnage_invoques
     print(liste_personnage_invoques) if Verbose else None
     all_teams = []
     # Générer toutes les combinaisons possibles de 3 personnages
@@ -155,7 +155,7 @@ def moyenne_max_puissance_en_invocation(nombre_invocations, nombre_simulations=3
 
 def graphique_puissance_invocation():
     """ Crée un graphique de la puissance des personnages en fonction du nombre d'invocations """
-    x = [i for i in range(3, 130)]
+    x = [i for i in range(3, 200)]
     y = [moyenne_max_puissance_en_invocation(i) for i in x]
     # On peut faire un modèle de prédiction pour voir la tendance
     import numpy as np
