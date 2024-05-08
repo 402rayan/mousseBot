@@ -2071,18 +2071,32 @@ all_techniques = {
     ],
     "Gyro Zeppeli" : [
         ["Déterminé", "est", "https://i.imgur.com/aHFq5gY.gif", "#df9d74"],
+        ["Crée la rotation du nombre d''or", "", "https://i.imgur.com/XpHOE99.png", "#b38957"],
+        ["Scan pour renforcer ses rotations", "active", "https://i.imgur.com/Z0oixSj.gif", "#3f6f06"],
     ],
     "Kars" : [
-        [""],
+        ["Est au dessus de la chaine alimentaire", "", "https://i.imgur.com/xaxz22z.gif", "#33274b"],
+        ["Pare avec ses lames de lumière", "", "https://i.imgur.com/EPQFH6k.gif", "#403d68"],
+        ["Coup de coude solaire", "", "https://i.imgur.com/GhMA7TX.gif", "#716f71"],
     ],
     "Diavolo" : [
-        [""],
+        ["Devient le Boss", "", "https://i.imgur.com/Ehqnm6f.gif", "#1f1324"],
+        ["Fonce sur l''ennemi", "", "https://i.imgur.com/sK0UO3X.gif", "#0b1231"],
+        ["Annonce sa victoire prochaine", "", "https://i.imgur.com/qJ9jvyD.gif", "#10141f"],
+        ["King Crimson", "invoque", "https://i.imgur.com/Hr6KnGW.gif", "#de94b2"],
+        ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
+
     ],
     "Jotaro Kujo" : [
-        [""],
+        ["Star platinum", "", "https://i.imgur.com/OkgDDaq.gif", "#d54de9"],
+        ["Star Platinum : The World", "arrête le temps,", "https://i.imgur.com/yJVb7Re.gif", "#cfa7e3"],
+        ["Star fingers", "transperce la cible,", "https://i.imgur.com/7oXVZzW.gif", "#9dcbc9"],
+        ["Est résolu à gagner", "", "https://i.imgur.com/FXZR3Zh.gif", "#a3b4a2"],
     ],
     "Diego Brando" : [
-        [""],
+        ["The World", "", "https://i.imgur.com/8lNWR2i.gif", "#e5ca44"],
+        ["Se transforme en... chose", "", "https://i.imgur.com/94wjVzH.gif", "#a53c16"],
+        ["Est assuré de sa victoire", "", "https://i.imgur.com/KCYnTNT.gif", "#c96b2f"],
     ],
     "Dio Brando" : [
         ["Contemple sa victoire prochaine", "", "https://i.imgur.com/Iu7nW17.gif", "#1c0405"],
@@ -2096,6 +2110,7 @@ all_techniques = {
         ["Ressens du dégoût", "", "https://i.imgur.com/OmTBzsg.gif", "#cc2fd4"],
         ["Killer queen", "appelle", "https://i.imgur.com/6DWi76c.gif", "#d575f1"],
         ["Bombe", "active sa", "https://i.imgur.com/tiDGazG.gif", "#500d5f"],
+        ["Poursuite mortelle", "envoie sa", "https://i.imgur.com/WmjnCQm.gif", "#193653"],
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
