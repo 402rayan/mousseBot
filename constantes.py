@@ -55,7 +55,7 @@ CONSTANTS = {
     },
     'RARITY_POWER': {
         # Puissance des personnages de la rareté correspondante
-        'Z': 500, 'X' : 100,'SS': 75, 'S' : 60, 'A' : 50, 'B' : 30, 'C' : 20, 'D' : 0, 'E' : 0, 'F' : 0
+        'Z': 1000, 'X' : 100,'SS': 75, 'S' : 60, 'A' : 50, 'B' : 30, 'C' : 20, 'D' : 0, 'E' : 0, 'F' : 0
     },
     'LISTE_MESSAGES_FIN_DE_BATAILLE' :  ["Le combat semble être terminé ...", "Le combat est fini ...", "Nous avons un vainqueur!", "...", "C'est fini!", "On dirait que c'est fini ...", "Le combat est terminé!", "C'est terminé ..."],
     'INGREDIENTS': {
@@ -204,6 +204,8 @@ phrases_invocation = [
     "Je sens que c'est quelque chose de rare !",
     "Impressionnant !",
     "Impossible..",
+    "🎉   🎁   🎉   🎁",
+    "🤩   🎊   🎉   🎈",
     "Est-ce que c'est vraiment possible ?",
     "C'est un signe du destin !",
     "Je suis sûr que c'est quelque chose de rare !",
@@ -213,6 +215,7 @@ phrases_invocation = [
     "🎊   🎊   🎊   🎊",
     "🎁   🎁   🎁   🎁",
     "🎈   🎈   🎈   🎈",
+    "Est-ce que c'est un signe ?",
     "C'est le moment de vérité !",
     "Le suspens est à son comble...",
 ]
