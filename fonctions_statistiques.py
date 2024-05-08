@@ -256,6 +256,12 @@ def demandes():
         classement_nombre_synergies()
     if input("Voulez-vous générer le classement des synergies les plus données ? (o/n) ") == 'o':
         classement_synergies_les_plus_donnes()
+    if input("Souhaitez vous clear le dossier logs? (o/n) ") == 'o':
+        for file in os.listdir('./logs'):
+            try:
+                os.remove(f'./logs/{file}')
+            except Exception as e:
+                print(f"Impossible de supprimer {file} : {e}")
     print("Fin des demandes.")
     return
 
