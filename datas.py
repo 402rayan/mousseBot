@@ -1703,7 +1703,7 @@ all_techniques = {
     ],
     "Son Gohan" : [
         ["Kamehameha", "lance son", "https://i.imgur.com/7v6zirc.gif", "#5bcbdd"],
-        ["Makankosappo ultime", "utilise", "https://i.imgur.com/Q1ndqFd.gif", "#ad0027"],
+        ["Makankosappo ultime", "utilise", "https://i.imgur.com/Q1ndqFd.gif", "#0831ce"],
         ["Contre-attaque", "effectue une", "https://i.imgur.com/pntJwnt.gif", "#e25cf0"],
         ["Déploie son Ki", "", "https://i.imgur.com/8dxkOae.gif", "#92eae3"],
     ],
@@ -2083,6 +2083,75 @@ all_techniques = {
         ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
         ["Attaque sans hésiter", "", "https://i.imgur.com/saF6Iht.gif", "#f3d6cb"],
         ["Heures sups","passe en", "https://i.imgur.com/z3USMrr.gif","#14899f"]
+    ],
+    #Jojo's Bizarre Adventure
+    "Giorno Giovanna" : [
+        ["Réduit à néant l''adversaire", "", "https://i.imgur.com/gOCisRz.gif", "#8a2bac"],
+        ["MUDA MUDA MUDA", "", "https://i.imgur.com/cvSkCGy.gif", "#5b229c"],
+        ["Préviens l''adversaire", "", "https://i.imgur.com/FuazAp3.gif", "#151f40"],
+        ["Écrasements de tête", "", "https://i.imgur.com/EteMSKb.gif", "#7a3547"],
+        ["Montre l''écart de puissance", "", "https://i.imgur.com/MGM8AV1.gif", "#cd9d81"],
+    ],
+    "Enrico Pucci" : [
+        ["Monte au paradis", "", "https://i.imgur.com/L4iwUzf.gif", "#9bddf8"],
+        ["Est supérieur à l''adversaire", "", "https://i.imgur.com/ZR87lxj.gif", "#1373bd"],
+        ["Rush", "", "https://i.imgur.com/FCfi3F1.gif", "#0e999d"],
+        ["La grâce", "Chante", "https://i.imgur.com/WCYvUtu.gif", "#d2c288"],
+        ["Inévitable", "est", "https://i.imgur.com/hnkY0lQ.gif", "#9e7fdd"],
+    ],
+    "Funny Valentine" : [
+        ["Nouvelle Dimension", "revient d''une", "https://i.imgur.com/QlFPTeL.gif", "#6bcfe7"],
+        ["S''éveille !", "", "https://i.imgur.com/qEVnsn9.png", "#e467f1"],
+        ["Renvoie le malheur et attire le bonheur", "Love Train : ", "https://i.imgur.com/6ehOGDC.jpeg", "#faeb6a"],
+    ],
+    "Johnny Joestar" : [
+        ["Déterminé", "est", "https://i.imgur.com/e8jYCnM.gif", "#c6855a"],
+        ["Tusk Act 4", "déclenche", "https://i.imgur.com/oSUcujD.gif", "#e08ea5"],
+        ["Pulvérise l''adversaire", "", "https://i.imgur.com/WKiWv64.gif", "#1b70ba"],
+        ["Inarrêtable", "est", "https://i.imgur.com/FVC6MPH.gif", "#e1d594"],
+    ],
+    "Gyro Zeppeli" : [
+        ["Déterminé", "est", "https://i.imgur.com/aHFq5gY.gif", "#df9d74"],
+        ["Crée la rotation du nombre d''or", "", "https://i.imgur.com/XpHOE99.png", "#b38957"],
+        ["Scan pour renforcer ses rotations", "active", "https://i.imgur.com/Z0oixSj.gif", "#3f6f06"],
+    ],
+    "Kars" : [
+        ["Est au dessus de la chaine alimentaire", "", "https://i.imgur.com/xaxz22z.gif", "#33274b"],
+        ["Pare avec ses lames de lumière", "", "https://i.imgur.com/EPQFH6k.gif", "#403d68"],
+        ["Coup de coude solaire", "", "https://i.imgur.com/GhMA7TX.gif", "#716f71"],
+    ],
+    "Diavolo" : [
+        ["Devient le Boss", "", "https://i.imgur.com/Ehqnm6f.gif", "#1f1324"],
+        ["Fonce sur l''ennemi", "", "https://i.imgur.com/sK0UO3X.gif", "#0b1231"],
+        ["Annonce sa victoire prochaine", "", "https://i.imgur.com/qJ9jvyD.gif", "#10141f"],
+        ["King Crimson", "invoque", "https://i.imgur.com/Hr6KnGW.gif", "#de94b2"],
+        ["Efface le futur", "", "https://i.imgur.com/Y5lsxFL.gif", "#f052af"],
+
+    ],
+    "Jotaro Kujo" : [
+        ["Star platinum", "", "https://i.imgur.com/OkgDDaq.gif", "#d54de9"],
+        ["Star Platinum : The World", "arrête le temps,", "https://i.imgur.com/yJVb7Re.gif", "#cfa7e3"],
+        ["Star fingers", "transperce la cible,", "https://i.imgur.com/7oXVZzW.gif", "#9dcbc9"],
+        ["Est résolu à gagner", "", "https://i.imgur.com/FXZR3Zh.gif", "#a3b4a2"],
+    ],
+    "Diego Brando" : [
+        ["The World", "", "https://i.imgur.com/8lNWR2i.gif", "#e5ca44"],
+        ["Se transforme en... chose", "", "https://i.imgur.com/94wjVzH.gif", "#a53c16"],
+        ["Est assuré de sa victoire", "", "https://i.imgur.com/KCYnTNT.gif", "#c96b2f"],
+    ],
+    "Dio Brando" : [
+        ["Contemple sa victoire prochaine", "", "https://i.imgur.com/Iu7nW17.gif", "#1c0405"],
+        ["ZA WARUDO", "arrête le temps...", "https://i.imgur.com/n7qFLTJ.gif", "#dac084"],
+        ["Brûle le lieu du combat", "", "https://i.imgur.com/rQREA8v.gif", "#b73428"],
+        ["Suprématie", "impose sa", "https://i.imgur.com/WojIG9j.gif", "#f2d171"],
+        ["Couteaux", "jette des", "https://i.imgur.com/nlPZGPt.gif", "#615c67"],
+    ],
+    "Kira Yoshikage" : [
+        ["Passe à autre chose", "", "https://i.imgur.com/NAwBkx2.gif", "#941853"],
+        ["Ressens du dégoût", "", "https://i.imgur.com/OmTBzsg.gif", "#cc2fd4"],
+        ["Killer queen", "appelle", "https://i.imgur.com/6DWi76c.gif", "#d575f1"],
+        ["Bombe", "active sa", "https://i.imgur.com/tiDGazG.gif", "#500d5f"],
+        ["Poursuite mortelle", "envoie sa", "https://i.imgur.com/WmjnCQm.gif", "#193653"],
     ],
     # The Seven Deadly Sins
     "Meliodas" : [
