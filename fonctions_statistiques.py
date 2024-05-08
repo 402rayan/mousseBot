@@ -49,8 +49,8 @@ def generer_team_stats():
         all_stats.append((stats, total_power))
         temps_ecoule = time.time() - temps_depart
         temps_restant_estime = temps_ecoule / i * (len(all_teams) - i)
-        if i % 1000 == 0:
-            print(f"Nombre de teams traitées : {i} / {len(all_teams)} - Temps restant estimé : {temps_restant_estime // 60}m{int(temps_restant_estime % 60)}s")
+        if i % 5000 == 0:
+            print(f"Nombre de teams traitées : {i} / {len(all_teams)} - Temps restant estimé : {int(temps_restant_estime // 60)}m{int(temps_restant_estime % 60)}s")
 
     print("Les stats de teams sont calculées !")
 
@@ -113,6 +113,7 @@ def max_puissance_en_invocation(nombre_invocations, Verbose=False):
     """ Retourne le nombre maximum de puissance que l'on peut obtenir en invoquant un certain nombre de fois """
     database = Database('mousse.db')
     character_templates = database.get_character_templates()
+    liste_personnage_invoques = []
     for i in range(nombre_invocations):
         # On choisit une rareté au hasard
         rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
@@ -120,18 +121,39 @@ def max_puissance_en_invocation(nombre_invocations, Verbose=False):
         # On invoque un personnage aléatoire
         character_templates_new = [char for char in character_templates if char[2] == rarity]
         character = random.choice(character_templates_new)
-        power = character[4] + character[5] + character[6]
-        liste_perso_puissance[character[1]] = power
-    liste_perso_puissance = sorted(liste_perso_puissance.items(), key=lambda x: x[1], reverse=True)
-    # On retourne la somme des 3 plus puissants
-    print(liste_perso_puissance[:3]) if Verbose else None
-    return sum([puissance for perso, puissance in liste_perso_puissance[:3]])
+        liste_personnage_invoques.append(character)
+    print(liste_personnage_invoques) if Verbose else None
+    all_teams = []
+    # Générer toutes les combinaisons possibles de 3 personnages
+    for team_characters in combinations(liste_personnage_invoques, 3):
+        team = sorted(team_characters, key=lambda x: x[1])  # Tri des personnages par nom
+        all_teams.append(team)
+    teams_set = {tuple(team) for team in all_teams}
+    all_teams = [list(team) for team in teams_set]
+    all_stats = []
+    for team in all_teams:
+        stats = database.simulation_stats_team(team)
+        total_power = stats['stats']['ATK'] + stats['stats']['DEF'] + stats['stats']['HP']
+        all_stats.append((stats, total_power))
+    all_stats.sort(key=lambda x: x[1], reverse=True)
+    # On affiche la meilleure équipe
+    print(all_stats[0][0]['team']) if Verbose else None
+    return all_stats[0][1]
+
+def moyenne_max_puissance_en_invocation(nombre_invocations, nombre_simulations=30):
+    """ Retourne la moyenne de la puissance obtenue en invoquant un certain nombre de fois """
+    puissances = []
+    print(f"Calcul de la moyenne de la puissance en invoquant {nombre_invocations} fois. Temps départ : {time.strftime('%H:%M:%S', time.localtime(time.time()))}")
+    for i in range(nombre_simulations):
+        puissances.append(max_puissance_en_invocation(nombre_invocations))
+    print(f"Calcul terminé. Temps fin : {time.strftime('%H:%M:%S', time.localtime(time.time()))}")
+    return sum(puissances) / len(puissances)
 
 
 def graphique_puissance_invocation():
     """ Crée un graphique de la puissance des personnages en fonction du nombre d'invocations """
-    x = [i for i in range(1, 400)]
-    y = [max_puissance_en_invocation(i) for i in x]
+    x = [i for i in range(3, 110)]
+    y = [moyenne_max_puissance_en_invocation(i) for i in x]
     # On peut faire un modèle de prédiction pour voir la tendance
     import numpy as np
     z = np.polyfit(x, y, 3)
@@ -218,7 +240,7 @@ def demandes():
         check_double_synergie()
     if input("Voulez voir les stats aberrantes ? (o/n) ") == 'o':
         analyse_stats_aberrantes()
-    if input("Voulez-vous générer un graphique de la puissance des personnages en fonction du nombre d'invocations ? (o/n) ") == 'o':
+    if input("Voulez-vous générer un graphique de la puissance des personnages en fonction du nombre d'invocations (GOURMAND EN RESSOURCE) ? (o/n) ") == 'o':
         graphique_puissance_invocation()
     somme_invocation = input("Voulez-vous calculer la somme des probabilités d'invocation ? (o/n) ")
     if somme_invocation == 'o':
