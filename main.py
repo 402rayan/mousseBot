@@ -1529,7 +1529,7 @@ async def claimHourly(message, userFromDb):
     user = message.author
     claim = database.claim_hourly(user.id, user.name)
     if claim[0]:
-        titre = f"Vous avez obtenu {str(CONSTANTS['HOURLY_TICKETS'])} tickets et beaucoup d'expérience!"
+        titre = f"Vous avez obtenu {str(CONSTANTS['HOURLY_TICKETS'])} tickets et {claim[2]} d'expérience!"
         await message.channel.send(embed=embed_auteur(message.author,f"Récompense :",titre, "", discord.Color.green(), "Revenez dans une heure!"))
         if random.random() < 0.3:
             await asyncio.sleep(1)
@@ -1537,7 +1537,7 @@ async def claimHourly(message, userFromDb):
             database.update_tickets(user.id, database.get_tickets(user.id) + 1)
         if random.random() < 0.05:
             await asyncio.sleep(1)
-            await message.channel.send(embed=embed_info("Récompense spéciale", "Votre prochaine invocation sera chanceuse!", discord.Color.gold()))
+            await message.channel.send(embed=embed_info("Récompense DOUBLEMENT spéciale", "Votre prochaine invocation sera chanceuse!", CONSTANTS['COLORS']['TICKET_DIAMANT']))
             database.update_special_invocation(user.id, True)
     elif not(claim[0]):
         temps_restant = claim[1]
@@ -1628,7 +1628,7 @@ async def invocation(message, userFromDb, lucky=False):
 
         
 
-    elif rarityOfCharacter in ['X','SS']:
+    elif rarityOfCharacter in ['Z','X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
 
@@ -2547,7 +2547,7 @@ async def sell(message, userFromDb):
        # Permet d'ajouter un personnage à son équipe
     contenu = message.content
     if len(contenu.split(' ')) < 2:
-        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme **!ajouterteam <position> <nom personnage>**!", discord.Color.red()))
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme `!sell <nom personnage>`!", discord.Color.red()))
         return
     nom = " ".join(contenu.split(' ')[1:])
     character = database.get_character_template_by_name(message.author.id, message.author.name, nom)
@@ -2562,9 +2562,10 @@ async def sell(message, userFromDb):
     nom = character[6]
     rarity = str(character[7])
     tickets_obtenus = CONSTANTS['RARITY_PRICE'][rarity]
+    xp_obtenu = CONSTANTS['RARITY_XP'][rarity]
     # Demandez confirmation
     if rarity in ["X", "SS", "S", "A"]:
-        response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets? (réagissez)"
+        response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets et {xp_obtenu} xp ? (réagissez)"
         msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.orange()))
         await msg.add_reaction('✅')
         await msg.add_reaction('❌')
@@ -2580,7 +2581,7 @@ async def sell(message, userFromDb):
     database.sell_character(message.author.id,message.author.name, character[0])
     database.update_tickets(message.author.id, database.get_tickets(message.author.id) + tickets_obtenus)
     logger.info(f"L'utilisateur {message.author.name} ({message.author.id}) a vendu {nom} pour {tickets_obtenus} tickets.")
-    await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
+    await message.channel.send(embed=embed_info("Vente effectuée", f"Vous avez vendu **{nom}** pour **{tickets_obtenus} tickets et {xp_obtenu} xp**!", discord.Color.green(), f"Vos tickets : {database.get_tickets(message.author.id)}."))
 
 @bot.command()
 async def classement(message, userFromDb):

@@ -3,6 +3,7 @@ CONSTANTS = {
     'INVOCATION_COST': 1,
     'MAX_CHARACTERS': 999999,
     'BASE_CHANCE_VICTORY': 0.6,
+    'HOURLY_XP': [5000,4000,3000,3500,4500,6000,1000,10000,5250,5100,5300,5555,4200],
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X','Z'],
     'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
@@ -17,6 +18,19 @@ CONSTANTS = {
         'D': 0,
         'E': 0,
         'F': 0,
+    },
+    'RARITY_XP': {
+        # Nombre d'expérience obtenue en vendant un personnage de la rareté correspondante
+        'Z': 1000000,
+        'X': 100000,
+        'SS': 30000,
+        'S': 10000,
+        'A': 5000,
+        'B': 2500,
+        'C': 1400,
+        'D': 900,
+        'E': 600,
+        'F': 350,
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
@@ -229,7 +243,7 @@ ennemis = {
         'nomPfp' : 'nanami',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 8000,
+            'HP' : 12000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -241,7 +255,7 @@ ennemis = {
         'nomPfp' : 'yoruichi',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 8000,
+            'HP' : 10000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -253,7 +267,7 @@ ennemis = {
         'nomPfp' : 'franklin',
         'isNotGif' : True,
         'stats' : {
-            'HP' : 1000,
+            'HP' : 1500,
             'ATK' : 1100,
             'DEF' : 500,
         }
@@ -289,9 +303,9 @@ ennemis = {
         'nomPfp' : 'haku',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 500,
-            'ATK' : 600,
-            'DEF' : 500,
+            'HP' : 1500,
+            'ATK' : 0,
+            'DEF' : 0,
         }
     },
     "Dorry et Broggy" : {
@@ -301,9 +315,9 @@ ennemis = {
         'isNotGif' : True,
         'nomPfp' : 'broggy',
         'stats' : {
-            'HP' : 500,
-            'ATK' : 400,
-            'DEF' : 500,
+            'HP' : 1000,
+            'ATK' : 0,
+            'DEF' : 0,
         }
     },
     "UVOGUINE" : {
@@ -313,9 +327,9 @@ ennemis = {
         'nomPfp' : 'uvoguine',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 1340,
-            'ATK' : 1340,
-            'DEF' : 1340,
+            'HP' : 6500,
+            'ATK' : 0,
+            'DEF' : 0,
         }
     },
     "SAIBAMAN" : {
@@ -325,9 +339,9 @@ ennemis = {
         'nomPfp' : 'saibaman',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 150,
-            'ATK' : 130,
-            'DEF' : 150,
+            'HP' : 600,
+            'ATK' : 0,
+            'DEF' : 0,
         }
     },
 }
