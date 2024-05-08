@@ -2173,7 +2173,7 @@ all_techniques = {
     "Katsuki Bakugo" : [
         ["Flashbang","utilise","https://static.wikia.nocookie.net/bokunoheroacademia/images/4/4c/Stun_Grenade.gif","#f7f64f"],
         ["Mitralle","","https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Mitrailleuse_Anti-Blindage.gif/revision/latest?cb=20180907164502&path-prefix=fr","#c7c53a"],
-        ["Vitesse","prend de la","https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ea/Blast_Rush_Turbo.gif/revision/latest?cb=20200321135957&path-prefix=fr","#fcd8bf"]
+        ["Vitesse","prend de la","https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ea/Blast_Rush_Turbo.gif/revision/latest?cb=20200321135957&path-prefix=fr","#fcd8bf"],
         ["donne tout ce qu'il a","","https://media1.tenor.com/m/BJzaBquec_YAAAAC/boku-no-hero-academia-my-hero-academia.gif","#fcfd86"]
     ],
     "Gigantomachia" : [
