@@ -1779,7 +1779,7 @@ all_techniques = {
         ["Flammes","déploie ses","https://i.imgur.com/TTjgrCY.gif","#fff76a"],
         ["Brule l''adversaire","","https://media1.tenor.com/m/a75aSndVKMwAAAAd/fmab-fma.gif","#fcb71b"],
         ["Déflagration","envoie une","https://media1.tenor.com/m/sX1J2kt2SjkAAAAC/fma-mustang.gif","#f05c2e"],
-        ["Incendie l'ennemi","","https://media1.tenor.com/m/xQ5FvmS9VVQAAAAd/fullmetal-alchemist-roy-mustang.gif","#efc227"],
+        ["Incendie l''ennemi","","https://media1.tenor.com/m/xQ5FvmS9VVQAAAAd/fullmetal-alchemist-roy-mustang.gif","#efc227"],
         ["Carbonise l''adversaire","","https://media1.tenor.com/m/VRzE5iiszo0AAAAC/stfu-dont.gif","#efc227"],
     ],
     "Van Hoheinheim" : [
