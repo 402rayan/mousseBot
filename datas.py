@@ -994,7 +994,7 @@ all_characters_templates = {
             ("Kishibe", "SS", "https://i.imgur.com/woFsMsu.gif", 720, 730, 715),
 
             # Personnages S  
-            ("Aki Hanakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 510, 570, 540),
+            ("Aki Hayakawa", "S", "https://i.imgur.com/bnGI6vv.gif", 510, 570, 540),
             ("Himeno", "S", "https://i.imgur.com/qyBRHdk.gif", 520, 540, 530),
             ("Angel", "S", "https://i.imgur.com/rtJFtA9.gif", 530, 560, 555),
             ("Katana Man", "S", "https://i.imgur.com/8Bj3B08.gif", 565, 580, 575),
@@ -1555,7 +1555,7 @@ all_link_synergies = {
     109 : ["Leorio","Ging Freecss", "Botobai Gigante", "Pariston Hill","Kurapika"], # Zodiac
     108 : ["Menchi","Tsezugera", "Morel Mackernasey","Ging Freecss","Biscuit Kruger","Botobai Gigante","Pariston Hill"], # Hunter étoilé
     107 : ["Mito Freecss","Gon Freecss", "Ging Freecss"],
-    106 : ["Aki Hanakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Makima"], # Section 4 Anti-Demon
+    106 : ["Aki Hayakawa","Denji","Kishibe","Power","Himeno","Kobeni Higashiyama","Hirokazu Arai","Angel","Beam", "Galgali","Makima"], # Section 4 Anti-Demon
     105 : ["Vegeta","Bulma","Trunks","Roi Vegeta","Gogeta","Vegetto","Gotenks"], # Famille de Vegeta
     104 : ["Son Goku", "Raditz", "Bardock", "Chichi" ,"Son Goten","Goku Black","Gogeta","Vegetto","Gotenks","Son Gohan"], # Famille de Son Goku
     103 : ["Whis","Vados","Grand Prêtre","Angel","Konan"], # Anges
@@ -1583,7 +1583,7 @@ all_link_synergies = {
     81 : ["Tanjiro Kamado","Sumiyoshi","Tanjuro Kamado","Nezuko Kamado"], # Kamado
     80 : ["Muzan Kibutsuji","Nezuko Kamado","Tamayo","Yahaba","Fille Araignee","Mere Araignee","Shinzu","Dabra","Denji","Makima","Power","Meliodas","Estarossa","Zeldris","Gloxinia","Hendrickson","Gowther","Derrierie","Galand","Katana Man","Akaza","Mukago","Daki","Enmu","Rui","Kyogai","Yupi","Kanamue","Moshi","Doma","Kaguya Otsutsuki"], # Demon
     79 : ["Aoi Kanzaki","Sumi Nakahara","Kiyo","Naho","Shinobu Kocho"], # Domaine des Papillons
-    78 : ["Kanao Tsuyuri","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko Kamado","Genya Shinazugawa","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hanakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Katana Man","Kobeni Higashiyama","Muichiro Tokito","Giyu Tomioka","Michiko Tendo","Aoi Kanzaki","Kyojuro Rengoku","Akane Sawatari"], # Tueur de Démon
+    78 : ["Kanao Tsuyuri","Tanjiro Kamado","Zenitsu","Inosuke","Nezuko Kamado","Genya Shinazugawa","Murata","Ozaki","Yoriichi Tsugikuni","Shinobu Kocho", "Tengen Uzui","Yutaro Kurose","Aki Hayakawa","Angel","Beam","Denji","Galgali","Himeno","Hirokazu Arai","Kishibe","Makima","Power","Katana Man","Kobeni Higashiyama","Muichiro Tokito","Giyu Tomioka","Michiko Tendo","Aoi Kanzaki","Kyojuro Rengoku","Akane Sawatari"], # Tueur de Démon
     77 : ["Giyu Tomioka","Mitsuri Kanroji","Obanai Iguro","Sanemi Shinazugawa","Gyomei Himejima","Muichiro Tokito","Shinobu Kocho","Kyojuro Rengoku","Kanae Kocho","Tengen Uzui","Jigoro Kuwajima"], # Hashira
     76 : ["Kagaya Ubuyashiki"], # Ubuyashiki
     75 : ["Toji Fushiguro","Megumi Fushiguro","Tsumiki Fushiguro"], # Fushiguro
@@ -1772,9 +1772,55 @@ all_techniques = {
     # Full Metal Alchemist
     "Père": [
         ["Alchimie", "utilise l''", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
+        ["", "", "https://media1.tenor.com/m/MTGs75-_KJ4AAAAC/fma-full.gif", "#62122d"],
+        ["arme", "matérialise une", "https://media1.tenor.com/m/3SHP5csuZosAAAAC/fullmetal-alchemist-brotherhood-finger-gun.gif", "#8d8e8f"],
     ],
-    "Roy Mustang" : [
+    "Roy Mustang" : [ # 2/3gifs
         ["Flammes","déploie ses","https://i.imgur.com/TTjgrCY.gif","#fff76a"],
+        ["Brule l''adversaire","","https://media1.tenor.com/m/a75aSndVKMwAAAAd/fmab-fma.gif","#fcb71b"],
+        ["Déflagration","envoie une","https://media1.tenor.com/m/sX1J2kt2SjkAAAAC/fma-mustang.gif","#f05c2e"],
+        ["Incendie l'ennemi","","https://media1.tenor.com/m/xQ5FvmS9VVQAAAAd/fullmetal-alchemist-roy-mustang.gif","#efc227"],
+        ["Carbonise l''adversaire","","https://media1.tenor.com/m/VRzE5iiszo0AAAAC/stfu-dont.gif","#efc227"],
+    ],
+    "Van Hoheinheim" : [
+        
+    ],
+    "King Bradley" : [
+        ["Part l''attaque","","https://i.imgur.com/makgz4o.gif","#767178"],
+        ["Oeil ultime","déploie son","https://i.imgur.com/QByPw9o.gif","#7c7463"],
+    ],
+    "Scar" : [ # 2 gifs
+        ["Ravage","fait un","https://i.pinimg.com/originals/23/38/c0/2338c063d3296f987de6a3c7c01a9fd2.gif","#d86009"],
+        ["","","https://i.imgur.com/r002xDY.gif","#474343"],
+    ],
+    "Edward Elric" : [ # 2 gifs
+        ["", "", "https://media1.tenor.com/m/O5vSMEvUy5oAAAAC/full-metal-alchemist.gif", "#a8a1a1"],
+        ["", "", "https://media1.tenor.com/m/s_anQNelr7oAAAAd/fullmetal-alchemist-edward-elric.gif", "#5ac0f0"],
+        ["", "", "https://media1.tenor.com/m/4ZBjN30ITM0AAAAC/fullmetal-alchemist.gif", "#0c35d8"],
+        ["", "", "https://media1.tenor.com/m/YbvRgumGMqsAAAAC/edward-elric-fma.gif", "#ac3030"],
+        ["", "", "https://media1.tenor.com/m/CiPgIh1Gl8UAAAAd/edward-elric-fma.gif", "#4d72c1"],
+        ["", "", "https://media1.tenor.com/m/c2ZNRXus3_AAAAAC/fullmetal-alchemist-edward-elric.gif", "#28bdfb"],
+    ],
+    "Ling Yao" : [
+        ["","","https://media1.tenor.com/m/N9Gax4MFaZkAAAAC/fullmetal-alchemist-greed-fma.gif","#3d464f"],
+        ["","","https://media1.tenor.com/m/YNuKfmMvZ1sAAAAC/z1-greed.gif","#f51314"],
+    ],
+    "Mei Chang" : [
+        ["","","https://24.media.tumblr.com/tumblr_m9sap7abQw1rc4zmso1_500.gif","#24d6ff"],
+    ],
+    "Alphonse Elric" : [
+        ["","","https://media1.tenor.com/m/BktThgI_KQgAAAAC/edward-elric-fullmetal-alchemist.gif"   ,"#0e66ce"],
+    ],
+    # Chainsaw Man 
+    "Denji" : [
+    ],
+    "Makima" : [
+    ],
+    "Kishibe" : [
+    ],
+    "Aki Hayakawa" : [ # 2 techniques
+    ],
+    "Power" : [ # 2 techniques
     ],
     # Demon Slayer
     "Tanjiro Kamado" : [
