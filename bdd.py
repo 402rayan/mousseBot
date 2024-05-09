@@ -591,6 +591,12 @@ class Database:
         self.cur.execute(f"SELECT * FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} AND t.name LIKE('{char_name}')") # TODO : Ajout surnom
         return self.cur.fetchone()
     
+    def get_technique_by_name_and_character(self,name,nom_personnage):
+        # On fait une requete croisé entre les techniques et les personnages
+        # On retourne la technique qui a le nom et le nom personnage
+        self.cur.execute(f"SELECT * FROM character_template_techniques t JOIN character_templates c ON t.template_id = c.template_id WHERE t.name = '{name}' AND c.name = '{nom_personnage}'")
+        return self.cur.fetchone()
+    
     def get_technique_by_name(self, name):
         self.cur.execute(f"SELECT * FROM character_template_techniques")
         techniques = self.cur.fetchall()
@@ -895,3 +901,9 @@ class Database:
     def get_nb_techniques(self, template_id):
         self.cur.execute(f"SELECT COUNT(*) FROM character_template_techniques WHERE template_id = {template_id}")
         return self.cur.fetchone()[0]
+    
+    def insert_technique(self, technique,nom):
+        identifiant = self.get_character_template_by_name(0, "Bot", nom)[0]
+        self.cur.execute(f"INSERT INTO character_template_techniques (template_id, name, phrase, image_url, color) VALUES ({identifiant}, '{technique[0]}', '{technique[1]}', '{technique[2]}', '{technique[3]}')")
+        self.conn.commit()
+        logger.success(f"La technique {technique[1]} a été ajoutée pour le personnage {technique[0]}.")

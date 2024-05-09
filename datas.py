@@ -1658,6 +1658,10 @@ all_link_synergies = {
 }
 # https://media1.tenor.com/m/DCSk9f-zAKYAAAAd/tengen-uzui-fight.gif
 all_techniques = {
+    # One Piece
+    "Shanks" : [
+        ["Haki des Rois", "utilise son", "https://i.pinimg.com/originals/7b/f3/4b/7bf34b7bd0cb5190f8154caa422b0bbf.gif", "#b1070b"],
+    ],
     # Dragon Ball
     "Beerus" : [
         ["Hakai", "", "https://i.imgur.com/pAu6e7G.gif", "#e991f8"],

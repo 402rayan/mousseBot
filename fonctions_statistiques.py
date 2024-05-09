@@ -6,6 +6,7 @@ from bdd import Database
 import loguru
 from itertools import combinations
 from constantes import CONSTANTS
+from datas import all_techniques
 
 from matplotlib import pyplot as plt
 import concurrent.futures
@@ -232,7 +233,13 @@ def classement_synergies_les_plus_donnes():
         for synergy in all_synergies_count:
             file.write(f"{synergy[0]} : {synergy[1]}\n")
 
-
+def inserer_techniques_non_existantes():
+    techniques = all_techniques
+    database = Database('mousse.db')
+    for personnage in techniques:
+        for technique in techniques[personnage]:
+            if not database.get_technique_by_name_and_character(technique[0], personnage):
+                database.insert_technique(technique, personnage)
 
 def demandes():
     if input("Voulez vous reset la BDD ? (o/n) ") == 'o':
@@ -243,6 +250,8 @@ def demandes():
         check_double_synergie()
     if input("Voulez voir les stats aberrantes ? (o/n) ") == 'o':
         analyse_stats_aberrantes()
+    if input("Voulez-vous insérer les techniques non existantes ? (o/n) ") == 'o':
+        inserer_techniques_non_existantes()
     if input("Voulez-vous générer un graphique de la puissance des personnages en fonction du nombre d'invocations (GOURMAND EN RESSOURCE) ? (o/n) ") == 'o':
         graphique_puissance_invocation()
     somme_invocation = input("Voulez-vous calculer la somme des probabilités d'invocation ? (o/n) ")

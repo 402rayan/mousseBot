@@ -340,7 +340,7 @@ async def niveau16(message, userFromDb, equipe):
         await embed_histoire_character(message, "Sanji vous remercie :", "", "sanji", "", "Merci pour ton aide, tu as un talent pour la cuisine tu sais!", discord.Color.gold())
         await asyncio.sleep(6)
         # On informe sanji qu'on va partir voir qui est le guerrier aguerri
-        await embed_histoire_character(message, "Vous informez Sanji :", "", "inconnu", "", "Merci beaucoup! Je vais rendre visitre à ce fameux guerrier aguerri dont tu m'as parlé.", discord.Color.gold())
+        await embed_histoire_character(message, "Vous informez Sanji :", "", "inconnu", "", "Merci beaucoup! Je vais rendre visitre à ce fameux guerrier aguerri dont tu m'as parlé.", 0x00000)
         await asyncio.sleep(6)
         # Sanji nous indique la direction et nous préviens qu'il n'est pas très bavard 
         await embed_histoire_character(message, "Sanji vous indique le chemin :", "", "sanji", "", "Il se repose dans cette maison, mais attention, il n'est pas très bavard.", discord.Color.gold())
