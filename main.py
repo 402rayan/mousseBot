@@ -2773,6 +2773,59 @@ async def fakeStatistiquesCombat(message, userFromDb):
     print(a)
 
 @bot.command()
+async def perico(message,userFromDb):
+    # Récupère toutes les techniques, les affiche et demande un nombre, puis montre les techniques à partir de ce nombre une par une avec un intervalle de 5 secondes
+    techniques = database.get_all_techniques()
+    if len(techniques) == 0:
+        await message.channel.send(embed=embed_info("Aucune technique", "Il n'y a aucune technique dans la base de données!", discord.Color.red()))
+        return
+    print(techniques[0])
+    liste_techniques = " ~ ".join([technique[2] for technique in techniques])
+    await message.channel.send(embed=embed_info("Liste des techniques", liste_techniques[:1950], discord.Color.blue()))
+    await asyncio.sleep(2)
+    
+    await message.channel.send(embed=embed_info("Entrez un nombre", "Entrez un nombre pour afficher les techniques à partir de ce nombre.", discord.Color.blue()))
+    def check(m):
+        return m.author == message.author and m.channel == message.channel
+    try:
+        msg = await bot.wait_for('message', check=check, timeout=30.0)
+    except asyncio.TimeoutError:
+        await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+        return
+    if not msg.content.isdigit():
+        await message.channel.send(embed=embed_info("Erreur", "Vous devez entrer un nombre!", discord.Color.red()))
+        return
+    nombre = int(msg.content)
+    if nombre < 1 or nombre > len(techniques):
+        await message.channel.send(embed=embed_info("Erreur", "Le nombre doit être compris entre 1 et le nombre de techniques!", discord.Color.red()))
+        return
+    for index, technique in enumerate(techniques[nombre - 1:], start=nombre):
+        print(technique)
+        nom = technique[2]; description = technique[3]; image = technique[4]; color = int(technique[5][1:], 16)
+        embed = discord.Embed(
+            title=f"{database.get_character_template(technique[1])[1]} {description} {nom} ",
+            description="",
+            color=color
+        )
+        embed.set_image(url=image)
+        embed.set_author(name=bot.user.name, icon_url=bot.user.avatar.url)
+        embed.set_footer(text=f"Technique de " + database.get_character_template(technique[1])[1])
+        await message.channel.send(embed=embed)
+        # On att une réaction pour passer au suivant
+        await asyncio.sleep(3)
+        
+        msg = await message.channel.send(embed=embed_info("Suivant", "Appuyez sur la réaction pour afficher la technique suivante.", discord.Color.blue()))
+        
+        await msg.add_reaction('➡️')
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) == '➡️')
+        except asyncio.TimeoutError:
+            await message.channel.send(embed=embed_info("Temps écoulé", "Vous avez mis trop de temps à répondre!", discord.Color.red()))
+            return
+    return
+            
+
+@bot.command()
 async def list_command(message, userFromDb):
     logger.info(f"Commande !list_command appelée par {message.author.name} ({message.author.id}).")
 

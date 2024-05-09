@@ -185,14 +185,15 @@ CONSTANTS = {
         "`!power` / `!puissance`": "Permet de **voir votre puissance** basé sur l'inventaire.",
         "`!classement`": "Permet de **voir le classement** en fonction de la puissance parmi votre serveur.",
         "`!givetickets @personne {nombre}`": "Permet de **donner des tickets** à un autre joueur.",
-        "`!infoTechnique {nom}`": "Permet de **voir une technique**.",
+        "`!technique {personnage}`": "Permet de **voir les techniques d'un personnage**. **EN CONSTRUCTION**",
+        "`!infoTechnique {nom}`": "Permet de **voir une technique en particulière**. **EN CONSTRUCTION**",
     },
     "LISTE_TUTORIEL" : [
-        
+        ["Bienvenue sur le tutoriel de **Mousse**", "Découvrons comment jouer à ce jeu!", "https://i.imgur.com/je30fG0.gif"],
         ["Réclamer des tickets","Vous pouvez réclamer des tickets toutes les heures grâce à la commande `!hourly`", "https://i.imgur.com/IwF6GGe.gif"],
-        ["Voir ses tickets","Vous pouvez voir vos tickets grâce à la commande `!tickets`", "https://i.imgur.com/uI2K7CT.gif"],
+        ["Voir ses tickets","Vous pouvez voir vos tickets grâce à la commande `!tickets` , Aller, faites le!", "https://i.imgur.com/uI2K7CT.gif"],
         ["Invoquer des personnages","Vous pouvez invoquer des personnages grâce à la commande `!invocation`", "https://i.imgur.com/rDTgoJF.gif"],
-        ["Voir les informations d'un personnage","Vous pouvez voir les informations d'un personnage grâce à la commande `!info #personnage`", "https://i.imgur.com/ZSWdXAH.gif"],
+        ["Voir les informations d'un personnage","Vous pouvez voir les informations d'un personnage grâce à la commande `!info #personnage`", "https://i.imgur.com/crIn1Gd.gif"], #https://i.imgur.com/ZSWdXAH.gif
         ["Voir son inventaire","Vous pouvez voir votre inventaire grâce à la commande `!inventaire`", "https://i.imgur.com/TnBrvNu.gif"],
         ["Créer sa team automatiquement","Vous pouvez créer votre team automatiquement grâce à la commande `!auto`", "https://i.imgur.com/O69GxIz.gif"],
         ["Ajouter un personnage à sa team","Vous pouvez ajouter manuellement un personnage à votre team grâce à la commande `!addteam {nombre} #nom`", "https://i.imgur.com/fu1vlTe.gif"],
@@ -268,8 +269,8 @@ ennemis = {
         'isNotGif' : True,
         'stats' : {
             'HP' : 1500,
-            'ATK' : 1100,
-            'DEF' : 500,
+            'ATK' : 1500,
+            'DEF' : 800,
         }
     },
     "Rui" : {
@@ -327,7 +328,7 @@ ennemis = {
         'nomPfp' : 'uvoguine',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 6500,
+            'HP' : 7000,
             'ATK' : 0,
             'DEF' : 0,
         }

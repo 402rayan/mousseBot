@@ -1023,7 +1023,7 @@ all_characters_templates = {
             ("Shaka", "S", "https://i.imgur.com/tkAVOuQ.gif", 620, 660, 640),
             ],
         "Autre" : [ # ✅
-            ("Moshi", "C", "https://i.imgur.com/OUyDLg1.jpeg", 1, 2, 3),
+            ("Moshi", "C", "https://i.imgur.com/OUyDLg1.jpeg", 300, 290, 300),
         ],
 }
 
@@ -1766,19 +1766,28 @@ all_techniques = {
         ["Charge son Ki", "", "https://i.imgur.com/BBsF4DS.gif", "#6ac452"],
         ["Disques berserk", "charge ses", "https://i.imgur.com/sJ6idlE.gif", "#0a1605"],
     ],
+    "Trunks" : [
+        ["Tranche","","https://i.imgur.com/MIxlDO9.gif","#eccdd6"],
+    ],
     # Full Metal Alchemist
     "Père": [
         ["Alchimie", "utilise l''", "https://i.imgur.com/KzMK7Xu.gif", "#ec000e"],
     ],
-
+    "Roy Mustang" : [
+        ["Flammes","déploie ses","https://i.imgur.com/TTjgrCY.gif","#fff76a"],
+    ],
     # Demon Slayer
     "Tanjiro Kamado" : [
         ["Souffle de l''eau", "utilise le", "https://media.giphy.com/media/RK4qNmmMj17yX80MOY/giphy.gif", "#0000FF"],
+        ["S''imprègne le combat","","https://i.imgur.com/fm4VsvU.gif",""],
+        ["Souffle du Soleil","utilise le","https://media1.tenor.com/m/5mxChCC_L3AAAAAC/tanjiro-tanjiro-hinokami-kagura.gif","#e05918"], #https://i.imgur.com/zDhaiWM.gif
+        ["","","https://media1.tenor.com/m/CyJqKTh92_wAAAAd/demon-slayer-kimetsu-no-yaiba.gif","#fdf467"]
+        
     ],
     "Rui" : [
-        ["Prison de fils", "créé une", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/RuiSang1.gif/revision/latest?cb=20200627145048&path-prefix=fr", "#490c11"],
-        ["Cage du regard assassin", "créé la", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/RuiSang2.gif/revision/latest?cb=20200627145112&path-prefix=fr", "#490c11"],
-        ["Fils à Trancher Rotatif", "créé une roue rotative de", "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/86/RuiSang3.gif/revision/latest?cb=20200627145143&path-prefix=fr", "#490c11"],
+        ["Prison de fils", "créé une", "https://i.imgur.com/czYSgtH.gif", "#490c11"],
+        ["Cage du regard assassin", "créé la", "https://i.imgur.com/gfKiJIi.gif", "#490c11"],
+        ["Fils à Trancher", "créé une roue rotative de", "https://i.imgur.com/uYTqQBS.gif", "#490c11"],
     ],
     # Naruto
     "Kaguya Otsutsuki" : [
@@ -2377,7 +2386,7 @@ all_techniques = {
         ["Aura Blast", "envoie", "https://i.imgur.com/gCfn6TQ.gif", "#51116b"],
         ["Dragon Head", "utilise", "https://i.imgur.com/KcAgNsM.gif", "#b154e3"],
         ["Dragon Head", "déploie", "https://media1.tenor.com/m/-J2bhHDopqQAAAAC/aikiria-gif.gif", "#e8d86b"],
-        ["Dragon Head", "améliore", "https://media1.tenor.com/m/-8Q3i2E96igAAAAC/dragon-dive-dragon-dive-hxh.gif", "#462c6d"] #Cest la suite du gif davant en gros
+        ["Dragon Head", "améliore", "https://media1.tenor.com/m/-8Q3i2E96igAAAAC/dragon-dive-dragon-dive-hxh.gif", "#462c6d"], #Cest la suite du gif davant en gros
         ["Dragon Lance", "lance", "https://i.imgur.com/XhrCofg.gif", "#b778bf"]
     ],
     "Irumi Zoldyck" : [
@@ -2422,7 +2431,7 @@ all_techniques = {
         ["TEMP", "TEMP", "https://media1.tenor.com/m/m_GJi0LZvcgAAAAC/kurapika.gif", "#181c47"],
         ["Chaîne sacrée", "guérit avec", "https://media1.tenor.com/m/9HpA1lHFKF8AAAAC/hxh-kurapika.gif", "#affaef"]
     ],
-    "Killua" : [
+    "Kirua Zoldyck" : [
         ["Foudre", "attaque avec la", "https://media1.tenor.com/m/cDhSemiSy58AAAAC/killua.gif", "#a7f0f4"],
         ["Vitesse Divine", "TEMP", "https://media1.tenor.com/m/vjC8ZcDcBO4AAAAC/killua.gif", "#718cd8"],
         ["Serpent s''eveillant", "utilise le", "https://i.imgur.com/EXwZuBC.gif", "#85835d"],
