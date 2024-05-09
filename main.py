@@ -83,7 +83,8 @@ async def handle_user_level(message, userFromDb):
         7: niveau7, 8: niveau8, 9: niveau9,
         10: niveau10, 11: niveau11, 12 : niveau12,
         13: niveau13, 14: niveau14, 15: niveau15,
-        16: niveau16, 17: niveau17, 18: niveau18
+        16: niveau16, 17: niveau17, 18: niveau18,
+        19: niveau19,
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -107,6 +108,11 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
+async def niveau19(message, userFromDb, equipe):
+    # On affiche que l'arc Jeju Island sort bientôt
+    await debutDeNiveau(message, userFromDb, 19, "Jeju Island", equipe, CONSTANTS['COLORS']['NANAMI'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("L'arc Jeju Island sort bientôt!", "", 0x5c565a,None,"Merci d'avoir joué, et félicitations pour votre progression!"))
 async def niveau18(message, userFromDb, equipe):
     lvl18skipDialogue = database.getChoice(userFromDb[1], "lvl18skipDialogue")
     if lvl18skipDialogue:
