@@ -2900,6 +2900,7 @@ commands = {
     "fakec": fakeCharacter,    # "fakeCh"
     "fakes": fakeStatistiquesCombat,  # "stat"
     "faket": fakeTeam,         # "fakeT"
+    "fi": pvp,                 # "fight"
     "giv": giveTicket,         # "givetickets", "giveticket", "give_tickets", "give_ticket"
     "his": histoire,           # "his"
     "he": list_command,        # "help"
