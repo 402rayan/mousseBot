@@ -1629,7 +1629,6 @@ async def invocation(message, userFromDb, lucky=False):
         await asyncio.sleep(3)
         await embed_histoire_character(message,"Gol D. Roger :", "rogerSmile","roger","","Mon trésor ? Si vous le voulez, je vous le laisse. Cherchez-le !",0x000000, True)
         await asyncio.sleep(5)
-        await msg.delete()
         await message.channel.send(embed=embed_invocation(template,message.author))
 
         
