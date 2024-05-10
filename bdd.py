@@ -177,7 +177,8 @@ class Database:
         if count >= max_character_auto_team:
             logger.info(f"L'utilisateur {user_discord_id} a trop de personnages pour utiliser la commande auto_team.")
             # On trie les characters pour ne prendre que les 35 plus puissants
-            characters.sort(key=lambda x: x[3] + x[4] + x[5], reverse=True)
+            print(characters[0])
+            characters.sort(key=lambda x: x[8] + x[9] + x[10], reverse=True)
             characters = characters[:max_character_auto_team]
         all_teams = []
         # Générer toutes les combinaisons possibles de 3 personnages
