@@ -2154,7 +2154,7 @@ all_techniques = {
         ["Décomposition des mouvements", "pratique la", "https://i.imgur.com/6dtJ6ld.gif", "#677888"],
     ],
     "Kento Nanami" : [
-        ["Attrape l''ennemi par les cheveux", "", "https://i.imgur.com/6dtJ6ld.gif", "#ddd8ae"],
+        ["Attrape l''ennemi par les cheveux", "", "", "#ddd8ae"],
         ["Attaquer","se prépare à", "https://i.imgur.com/XNH41aE.gif" ,"#14899f"],
         ["Attaque", "charge son", "https://i.imgur.com/P16NNUU.gif", "#14899f"],
         ["7/10ème", "attaque aux", "https://i.imgur.com/GcDA3Bg.gif", "#000000"],
