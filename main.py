@@ -1542,10 +1542,16 @@ async def claimHourly(message, userFromDb):
             await asyncio.sleep(1)
             await message.channel.send(embed=embed_info("Récompense spéciale", "Vous avez obtenu un ticket bonus!", discord.Color.gold()))
             database.update_tickets(user.id, database.get_tickets(user.id) + 1)
-        if random.random() < 0.05:
+        if random.random() < 0.1:
+            # Encore un ticket
+            await asyncio.sleep(1)
+            await message.channel.send(embed=embed_info("Récompense spéciale", "Vous avez obtenu un ticket bonus!!!", discord.Color.gold()))
+            database.update_tickets(user.id, database.get_tickets(user.id) + 1)
+        if random.random() < 0.1:
             await asyncio.sleep(1)
             await message.channel.send(embed=embed_info("Récompense DOUBLEMENT spéciale", "Votre prochaine invocation sera chanceuse!", CONSTANTS['COLORS']['TICKET_DIAMANT']))
             database.update_special_invocation(user.id, True)
+        
     elif not(claim[0]):
         temps_restant = claim[1]
         temps_restant_minutes = (temps_restant.seconds//60)%60
@@ -1634,7 +1640,7 @@ async def invocation(message, userFromDb, lucky=False):
 
         
 
-    elif rarityOfCharacter in ['Z','X','SS']:
+    elif rarityOfCharacter in ['X','SS']:
         schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
         nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
 
