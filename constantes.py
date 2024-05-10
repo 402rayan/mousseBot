@@ -189,7 +189,7 @@ CONSTANTS = {
         "`!infoTechnique {nom}`": "Permet de **voir une technique en particulière**. **EN CONSTRUCTION**",
     },
     "LISTE_TUTORIEL" : [
-        ["Bienvenue sur le tutoriel de **Mousse**", "Découvrons comment jouer à ce jeu!", "https://i.imgur.com/je30fG0.gif"],
+        ["Bienvenue sur le tutoriel de **Mousse**", "Le but est simple! Il faut invoquer des personnages! Cela coûte des tickets que l'on peut obtenir toutes les heures!\nAvec ces personnages plusieurs choix s'offrent à nous :\nEssayer de former la meilleure équipe possible grâce aux synergies entre personnages!\nAffronter ses amis la commande `!pvp`\nDécouvrir une histoire créée spécialement pour le jeu avec `!histoire`Compléter la collection de tous les personnages! Visible avec `!statistique`", "https://i.imgur.com/je30fG0.gif"],
         ["Réclamer des tickets","Vous pouvez réclamer des tickets toutes les heures grâce à la commande `!hourly`", "https://i.imgur.com/IwF6GGe.gif"],
         ["Voir ses tickets","Vous pouvez voir vos tickets grâce à la commande `!tickets` , Aller, faites le!", "https://i.imgur.com/uI2K7CT.gif"],
         ["Invoquer des personnages","Vous pouvez invoquer des personnages grâce à la commande `!invocation`", "https://i.imgur.com/rDTgoJF.gif"],
