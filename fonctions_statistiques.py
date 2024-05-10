@@ -241,9 +241,15 @@ def inserer_techniques_non_existantes():
             if not database.get_technique_by_name_and_character(technique[0], personnage):
                 database.insert_technique(technique, personnage)
 
+def remake_technique():
+    database = Database('mousse.db')
+    database.remake_techniques()
+    
 def demandes():
     if input("Voulez vous reset la BDD ? (o/n) ") == 'o':
         Database('mousse.db').reset()
+    if input("Voulez vous reset les techniques ? (o/n) ") == 'o':
+        remake_technique()
     if input("Voulez vous reset toutes les URL ? (o/n) ") == 'o':
         Database('mousse.db').remplacer_toutes_les_urls()
     if input("Voulez-vous vérifier les doublons dans les synergies ? (o/n) ") == 'o':

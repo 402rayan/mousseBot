@@ -910,3 +910,9 @@ class Database:
         self.cur.execute(f"INSERT INTO character_template_techniques (template_id, name, phrase, image_url, color) VALUES ({identifiant}, '{technique[0]}', '{technique[1]}', '{technique[2]}', '{technique[3]}')")
         self.conn.commit()
         logger.success(f"La technique {technique[1]} a été ajoutée pour le personnage {technique[0]}.")
+    
+    def remake_techniques(self):
+        self.cur.execute("DROP TABLE IF EXISTS character_template_techniques")
+        self.create_character_template_technique_table()
+        self.create_techniques()
+        logger.success("Les techniques ont été réinitialisées.")

@@ -1857,7 +1857,14 @@ all_techniques = {
         ["Rasengan", "utilise le", "https://media1.tenor.com/m/MdZogdBGnMMAAAAd/boruto.gif", "##705ca1"],
     ],
     "Rikudo" : [
-        ["Rinnegan", "active son", "", ""],
+        ["Rinnegan", "active son", "", "#F339F8"],
+        ["Chibaku Tensei", "utilise", "", "#F8A039"],
+        ["","","https://media1.tenor.com/m/dKy5kUZX6-cAAAAC/xyroz.gif","#d14d87"],
+        ["Six Chemins","utilise le chakra des","","#63D2FE"],
+        ],
+    "Indra Otsutsuki" : [
+        # Sharingan
+        ["Mangekyo Sharingan", "active son", "https://media1.tenor.com/m/CdWP7ra3UKQAAAAC/indra-otsutsuki.gif", "#fc98fc"],
         ],
     "Madara Uchiha" : [
         ["Pluie d''énergie", "envoie une", "https://media1.tenor.com/m/VPIrMcpLbeQAAAAd/madara-madara-uchiha.gif", "#020203"],
