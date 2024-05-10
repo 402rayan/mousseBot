@@ -8,10 +8,10 @@ CONSTANTS = {
     'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
-        'Z': 100,
-        'X': 20,
-        'SS': 10,
-        'S': 6,
+        'Z': 50,
+        'X': 16,
+        'SS': 7,
+        'S': 5,
         'A': 3,
         'B': 1,
         'C': 0,
