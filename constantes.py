@@ -47,12 +47,12 @@ CONSTANTS = {
     },
     'RARITY_CHANCE_HIGH': {
         # Change d'obtenir un personnage de la rareté correspondante en cas de GROS ticket
-        'Z': 0.01,
-        'X': 0.1,
+        'Z': 0.008,
+        'X': 0.08,
         'SS': 0.15,
         'S': 0.25,
-        'A': 0.32,
-        'B': 0.17
+        'A': 0.34,
+        'B': 0.15
     },
     'RARITY_COLOR': {
         # Couleur des personnages de la rareté correspondante

@@ -2624,7 +2624,7 @@ async def sell(message, userFromDb):
     tickets_obtenus = CONSTANTS['RARITY_PRICE'][rarity]
     xp_obtenu = CONSTANTS['RARITY_XP'][rarity]
     # Demandez confirmation
-    if rarity in ["X", "SS", "S", "A"]:
+    if rarity in ["Z","X", "SS", "S", "A"]:
         response = f"Voulez-vous vraiment vendre {nom} pour {tickets_obtenus} tickets et {xp_obtenu} xp ? (réagissez)"
         msg = await message.channel.send(embed=embed_info("Confirmation", response, discord.Color.orange()))
         await msg.add_reaction('✅')
