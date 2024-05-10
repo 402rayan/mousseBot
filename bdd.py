@@ -157,12 +157,11 @@ class Database:
         self.cur.execute(f"SELECT {choice} FROM user_choices WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchone()[0]
     
-    def autoTeam(self, user_discord_id,ignoreTime = False,max_character_auto_team = 60):
+    def autoTeam(self, user_discord_id,ignoreTime = False,max_character_auto_team = 25):
         # Vérifie que l'utilisateur a moins de 50 personnages
         self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
         count = self.cur.fetchone()[0]
-        if count >= max_character_auto_team:
-            return "ERROR_MAX_CHARACTERS"
+        print(count)
         if count < 3:
             return "ERROR_MIN_CHARACTERS"
         # Récupère les personnages de l'utilisateur
@@ -175,6 +174,11 @@ class Database:
         self.cur.execute(f"UPDATE users SET last_time_auto_team = '{datetime.now()}' WHERE user_discord_id = {user_discord_id}")
         self.conn.commit()
         characters = self.get_characters(user_discord_id)
+        if count >= max_character_auto_team:
+            logger.info(f"L'utilisateur {user_discord_id} a trop de personnages pour utiliser la commande auto_team.")
+            # On trie les characters pour ne prendre que les 35 plus puissants
+            characters.sort(key=lambda x: x[3] + x[4] + x[5], reverse=True)
+            characters = characters[:max_character_auto_team]
         all_teams = []
         # Générer toutes les combinaisons possibles de 3 personnages
         for team_characters in combinations(characters, 3):
