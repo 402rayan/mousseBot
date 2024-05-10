@@ -1659,8 +1659,37 @@ all_link_synergies = {
 # https://media1.tenor.com/m/DCSk9f-zAKYAAAAd/tengen-uzui-fight.gif
 all_techniques = {
     # One Piece
+    "Kaido" : [
+        ["Borobreath", "utilise son", "", "#000000"],
+        ["Massue", "charge sa","https://media1.tenor.com/m/arj97lLhyvAAAAAC/one-piece-kaido.gif","#0c163c"],
+        ["","","https://media1.tenor.com/m/ApBXDR5-XsAAAAAC/one-piece-wano.gif","#df4393"],
+        ["Dragon","se métamorphose en","https://media1.tenor.com/m/GpfOvpe8Lo0AAAAC/kaido.gif","#a335eb"],
+        ["Rigole","","https://media1.tenor.com/m/sgwHbHzprDUAAAAd/one-piece-luffy-vs-kaido.gif","#2021f7"],
+        ["Impitoyable","est","https://media1.tenor.com/m/gmj1GoUKVa0AAAAd/bring-those-brats-one-piece.gif","#103865"],
+        ["Boule de Feu","crache une énorme","https://media1.tenor.com/m/vMlKvEktQd8AAAAd/kaido-one-piece-kaido.gif","#5c3ec2"],
+        ["Coup de Massue","donne un énorme","https://media1.tenor.com/m/8T-g0ngtv_cAAAAd/one-piece-kaido-vs-monkey-d-luffy.gif","#a60f47"],
+        ["s''énerve","","https://media1.tenor.com/m/7Wq2GvRvtzMAAAAd/kaido-luffy.gif","#292454"]
+        
+        
+        ],
+    "Monkey D. Luffy" : [
+        # https://i.redd.it/bv9vpnoacfgb1.gif
+        ["Libre","se sent","https://media1.tenor.com/m/0J_pScnnvGMAAAAC/luffy-gear-5-gear-5.gif","#e7bf62"],
+        ["hallucine","","https://media1.tenor.com/m/unAGOd7wwcoAAAAd/luffy-one-piece.gif","#f8daa0"],
+        ["","","https://media1.tenor.com/m/elfp2tbPDc8AAAAC/one-piece-gear-5.gif","#aa807f"],
+
+    ],
     "Shanks" : [
         ["Haki des Rois", "utilise son", "https://i.pinimg.com/originals/7b/f3/4b/7bf34b7bd0cb5190f8154caa422b0bbf.gif", "#b1070b"],
+    ],
+    "Rob Lucci": [
+        ["Forme Bestiale","renforce sa","https://i.imgur.com/uuqYTNB.gif","#ffc500"],
+        ["Pas de lune","utilise le","https://media1.tenor.com/m/8R6oCYa01aAAAAAC/slipp48-luffy-vs-lucci.gif","#a77285"],
+        ["pare tous les coups","","https://media1.tenor.com/m/iGFinTMr7iUAAAAC/rob-lucci-anime.gif","#cab6a1"],
+        ["prend un malin plaisir","","https://media1.tenor.com/m/YooSVkeE0ysAAAAC/lucci-smile.gif","#0d0c11"],
+        ["Shigan Jet","utilise le","","#e7bf62"],
+        ["Kamisori","utilise le","","#e7bf62"],
+        
     ],
     "Dracule Mihawk" : [
         ["Oeil de Faucon", "utilise son", "", "#000000"],
@@ -2298,10 +2327,9 @@ all_techniques = {
     ],
     "Izuku Midoriya" : [
         ["Revêtement Intégral","active son","https://i.imgur.com/L9NmiVR.gif","#57b59e"],
-        ["Revêtement Intégral 100%","active son","https://i.imgur.com/BZA0Z1S.jpeg","#57b59e"],
         ["Delaware Detroit Smash, Puissance à 1 000 000% ! ","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b0/Delaware_Detroit_Smash.gif","#3fdc84"],
-        ["Delaware Smash Air Force","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/1/14/Delaware_Smash_Air_Force05.gif/revision/latest?cb=20210522182141&path-prefix=fr","#1c366d"],
-        ["One For All : Revêtement Intégral - Style Coup de Pied","envoie un","https://static.wikia.nocookie.net/bokunoheroacademia/images/d/d5/Full_Cowl_-_Shoot_Style-0.gif/revision/latest?cb=20190716194008&path-prefix=fr","#0b3496"],
+        ["Delaware Smash Air Force","balance un","https://i.imgur.com/WSw6WdV.gif","#1c366d"],
+        ["One For All : Revêtement Intégral - Style Coup de Pied","envoie un","https://i.imgur.com/nEBRJdT.gif","#0b3496"],
         ["Delaware Smash","balance un","https://static.wikia.nocookie.net/bokunoheroacademia/images/6/68/Delaware_Smash.gif","#0b3496"],
     ],
     "Endeavor" : [
@@ -2522,7 +2550,7 @@ all_techniques = {
         ["Joue", "", "https://media1.tenor.com/m/WEaJBwpYFrMAAAAd/kikis-delivery-service-anime.gif", "#9bbfb4"]       
     ],
     "Athena" : [
-        ["lance un sort", "", "", "#b8b8b8"],
+        ["Sort de Destruction", "lance un", "", "#b8b8b8"],
         ["libère son pouvoir","","https://64.media.tumblr.com/0a86552b2778d73ead32775b1b9a1c31/1486bbe9371f3a69-c8/s540x810/758e6d0b5d822155501bb100aa8d032dd28567f2.gif","#ffffc2"],
         ["Pétales des roses","invoque des","https://64.media.tumblr.com/3add00ee677172905dba691a78f1085c/91e0e75f8166bd68-55/s540x810/cd48c23c1f10a6b75af0f1fc9c7f430aab40e9a3.gif","#eeade2"],
         ["Soigne toute son équipe","","https://i.imgur.com/cW0oUMo.gif","#eafcbe"],

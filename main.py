@@ -84,7 +84,7 @@ async def handle_user_level(message, userFromDb):
         10: niveau10, 11: niveau11, 12 : niveau12,
         13: niveau13, 14: niveau14, 15: niveau15,
         16: niveau16, 17: niveau17, 18: niveau18,
-        19: niveau19,
+        19: niveau19, niveau20: niveau20
     }
     niveau = getNiveauFromUser(userFromDb)
     equipe = database.get_team(userFromDb[1],userFromDb[2])
@@ -108,11 +108,70 @@ async def histoire(message, userFromDb):
         return
     await handle_user_level(message, userFromDb)
 
-async def niveau19(message, userFromDb, equipe):
+async def niveau20(message, userFromDb, equipe):
     # On affiche que l'arc Jeju Island sort bientôt
-    await debutDeNiveau(message, userFromDb, 19, "Jeju Island", equipe, CONSTANTS['COLORS']['NANAMI'])
+    await debutDeNiveau(message, userFromDb, 20, "PAS SI VITE!", equipe, CONSTANTS['COLORS']['NANAMI'])
     await asyncio.sleep(4)
     await message.channel.send(embed=embed_naratteur("L'arc Jeju Island sort bientôt!", "", 0x5c565a,None,"Merci d'avoir joué, et félicitations pour votre progression!"))
+    
+async def niveau19(message, userFromDb, equipe):
+    # Le landemain matin,
+    await debutDeNiveau(message, userFromDb, 19, "Jeju Island", equipe, CONSTANTS['COLORS']['NANAMI'])
+    await asyncio.sleep(4)
+    await message.channel.send(embed=embed_naratteur("Le lendemain matin est arrivé.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # Nanami débarque pour nous dire de nous réveiller
+    await embed_histoire_character(message, "Nanami vous réveille :", "", "nanami", "", "Réveille-toi, il est temps de partir.", CONSTANTS['COLORS']['NANAMI'])
+    await asyncio.sleep(4)
+    # Continuer à dormir ou se lever
+    description = "😴 : Continuer à dormir\n☀ : Se réveiller"
+    msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['BRUIT']))
+    for reaction in ['😴', '☀']:
+        await msg.add_reaction(reaction)
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['😴', '☀'])
+    except:
+        await message.channel.send(embed=embed_info("Vous avez mis trop de temps à prendre une décision.", "", discord.Color.red()))
+        return await echecNiveau(message, userFromDb, 19)
+    if str(reaction.emoji) == '😴':
+        # On fait un rêve.. 
+        await message.channel.send(embed=embed_naratteur("Vous continuez à dormir et faites un rêve étrange..", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        #un rêve où votre prochaine invocation est un succès
+        await embed_histoire_character(message, "", "", "inconnu", "", "Un rêve où votre prochaine invocation est un succès.", CONSTANTS['COLORS']['NOUS'])
+        await asyncio.sleep(4)
+        # Vous vous réveillez en sueur
+        await message.channel.send(embed=embed_naratteur("Vous vous réveillez en sueur.", "", CONSTANTS['COLORS']['BRUIT']))
+        await asyncio.sleep(4)
+        # Notre prochaine invocation est un succès
+        await message.channel.send(embed=embed_info("Votre rêve va sûrement se réaliser!", "", CONSTANTS['COLORS']['TICKET_DIAMANT'] ,"Votre prochaine invocation sera garantie de qualité supérieure!"))
+        database.update_special_invocation(userFromDb[1], 1)
+        ticketsGagnes = 1
+        await asyncio.sleep(2)
+    await asyncio.sleep(2)
+    await message.channel.send(embed=embed_naratteur("Vous vous levez et vous préparez pour le départ.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # On voyage pendant quelques heures
+    await message.channel.send(embed=embed_naratteur("Vous voyagez pendant quelques heures.", "", CONSTANTS['COLORS']['BRUIT']))
+    await asyncio.sleep(4)
+    # On arrive devant un pont qui mène à l'île Jeju
+    await message.channel.send(embed=embed_naratteur("Vous arrivez devant le pont qui mène à l'île Jeju, mais des personnes bloquent l'accès", "", CONSTANTS['COLORS']['BRUIT']))
+    # Nanami nous dit que nous sommes arrivés
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Nanami vous informe :", "", "nanami", "", "Nous sommes presque arrivés.", CONSTANTS['COLORS']['NANAMI'])
+    await asyncio.sleep(4)
+    # Un inconnu nous dit, arrivé ? vous n'irez pas plus loin
+    await embed_histoire_character(message, "Un inconnu vous interpelle :", "robLucciFront", "robLucci", "", "Presque arrivés? Vous n'irez pas plus loin.", 0x030303,True)
+    await asyncio.sleep(4)
+    if not await combatPvm(message, equipe, ennemis['ROB_LUCCI']):
+        return await echecNiveau(message, userFromDb, 19)
+    # Rob Lucci est blesé mais ne s'avoue pas vaincu
+    await embed_histoire_character(message, "Rob Lucci:", "", "robLucci", "", "Argh.. Je suis blessé, mais je ne suis pas vaincu.", 0x030303)
+    await asyncio.sleep(4)
+    await embed_histoire_character(message, "Rob Lucci s'énerve...", "robLucciTransformation", "robLucci", "", "", 0xffc500)
+    await asyncio.sleep(4)
+    await finDeNiveau(message, userFromDb, 20) 
+
 async def niveau18(message, userFromDb, equipe):
     lvl18skipDialogue = database.getChoice(userFromDb[1], "lvl18skipDialogue")
     if lvl18skipDialogue:
@@ -1979,12 +2038,13 @@ async def info(message, userFromDb):
     if character == None:
         await message.channel.send(embed=embed_info("Personnage introuvable", "Ce personnage **n'existe pas**!", discord.Color.red()))
         return
-    
+    # On check si le personnage est dans l'inventaire
+    coche = "✅" if database.check_character_template(message.author.id, character[0]) else ""
     synergies = database.get_synergies_by_character_template(character[0])
     nbTechniques = database.get_nb_techniques(character[0])
     hp = character[4]; atk = character[5]; defense = character[6]; image = character[3]; nom = character[1]; rarity = character[2]
     embed = discord.Embed(
-        title=f"{nom} **[{rarity}]**",
+        title=f"{nom} **[{rarity}]  {coche}**",
         color=CONSTANTS['RARITY_COLOR'][rarity],
     )
     embed.set_image(url=image)
@@ -2280,7 +2340,7 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
             await asyncio.sleep(3)
     await asyncio.sleep(2)
     await message.channel.send(embed=embed_info(random.choice(CONSTANTS['LISTE_MESSAGES_FIN_DE_BATAILLE']), "", CONSTANTS['COLORS']['NOUS']))
-    await asyncio.sleep(2)
+    await asyncio.sleep(0.75)
     # Vous avez triomphé si on a gagné sinon on a perdu
     return victoire
 

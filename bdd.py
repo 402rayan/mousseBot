@@ -959,3 +959,8 @@ class Database:
         self.create_character_template_technique_table()
         self.create_techniques()
         logger.success("Les techniques ont été réinitialisées.")
+        
+    def check_character_template(self,user_discord_id,template_id):
+        # return True si l'utilisateur a ce personnage
+        self.cur.execute(f"SELECT * FROM characters WHERE user_discord_id = {user_discord_id} AND template_id = {template_id}")
+        return self.cur.fetchone() is not None

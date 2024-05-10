@@ -237,6 +237,30 @@ phrases_invocation = [
 
 
 ennemis = {
+    "ROB_LUCCI_TRANSFORM" : {
+        'nom' : 'Rob Lucci',
+        'couleur' : CONSTANTS['COLORS']['DARK_RED'],
+        'nomGif' : 'robLucciTransform',
+        'nomPfp' : 'robLucciTransform',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 15000,
+            'ATK' : 0,
+            'DEF' : 0,
+        }
+    },
+    "ROB_LUCCI" : {
+        'nom' : 'Rob Lucci',
+        'couleur' : CONSTANTS['COLORS']['DARK_RED'],
+        'nomGif' : 'robLucci',
+        'nomPfp' : 'robLucci',
+        'isNotGif' : False,
+        'stats' : {
+            'HP' : 10000,
+            'ATK' : 0,
+            'DEF' : 0,
+        }
+    },
     "NANAMI" : {
         'nom' : 'Kento Nanami',
         'couleur' : CONSTANTS['COLORS']['NANAMI'],
