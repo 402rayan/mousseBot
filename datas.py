@@ -1662,6 +1662,15 @@ all_techniques = {
     "Shanks" : [
         ["Haki des Rois", "utilise son", "https://i.pinimg.com/originals/7b/f3/4b/7bf34b7bd0cb5190f8154caa422b0bbf.gif", "#b1070b"],
     ],
+    "Dracule Mihawk" : [
+        ["Oeil de Faucon", "utilise son", "", "#000000"],
+        ["Tranche à distance","","https://i.gifer.com/2eHI.gif","#dafcee"],
+        ["Découpe l''ennemi","","https://i.gifer.com/2VcZ.gif","#79c9ee"],
+        ["Frappe si vite que personne n''a rien vu","","https://i.gifer.com/3f63.gif","#ce273b"],
+        ["Haki","utilise son","https://i.gifer.com/2eHJ.gif","#000000"],
+        ["Couteau","sort son","https://static.wikia.nocookie.net/onepiece/images/1/15/Kogatana_Infobox.png/revision/latest?cb=20230122133859","#0ac0f9"]
+
+    ],
     # Dragon Ball
     "Beerus" : [
         ["Hakai", "", "https://i.imgur.com/pAu6e7G.gif", "#e991f8"],
