@@ -2331,7 +2331,7 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
         attaque = random.choice(attaques)
         nom = attaque[2]; verbe = attaque[3]; gif = attaque[4]; couleur = int(attaque[5][1:], 16)
         embed = discord.Embed(
-            title=f"{personnage} {verbe} {nom}",
+            title=f"{personnage} {verbe} {nom}" if verbe != "" else f"{personnage} {nom}",
             color=couleur
         )
         if gif:
