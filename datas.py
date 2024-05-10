@@ -1672,6 +1672,14 @@ all_techniques = {
 
     ],
     # Dragon Ball
+    "Super Shenron" : [
+        ["exauce un voeu", "", "", "#f7f7f7"],
+        ["est sur le point de détruire toute la galaxie...","","","#000000"],
+        ["est d''une autre envergure","","","#000000"],
+        ["ne prends même pas part au combat.","","","#000000"],
+        ["se met en colère","","","#000000"],
+        ["détruit tout","","","#000000"],
+    ],
     "Beerus" : [
         ["Hakai", "", "https://i.imgur.com/pAu6e7G.gif", "#e991f8"],
         ["Sphère Destructrice", "lance sa", "https://i.imgur.com/1YNIOFz.gif", "#bd8be2"],
