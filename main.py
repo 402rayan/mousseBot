@@ -60,7 +60,7 @@ async def on_message(message):
     auteur = message.author
     if auteur == bot.user: # Check if the message is from the bot
         return
-    if not(contenu.startswith('!')) :
+    if not(contenu.startswith('!') or contenu.startswith('?') or contenu.startswith('m ')):
         return
     if database.insert_user(auteur.id, auteur.name): # Premiere fois que l'utilisateur utilise le bot
         await embed_histoire_character(message, "", "beerusBienvenue","","**Bienvenue** sur Mousse BOT !\nJe te conseille d'écrire `!tutoriel` pour avoir des informations détaillés sur la façon de jouer!", "Je vois que c'est ta première fois!", CONSTANTS['COLORS']['BEERUS'])
