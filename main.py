@@ -1556,7 +1556,7 @@ async def claimHourly(message, userFromDb):
         temps_restant = claim[1]
         temps_restant_minutes = (temps_restant.seconds//60)%60
         temps_restants_secondes = temps_restant.seconds%60
-        titre = "Récompense journalière déjà récupérée!"
+        titre = "Récompense de l'heure déjà récupérée!"
         response = f"Prochaine récompense dans **{temps_restant_minutes} minutes et {temps_restants_secondes} secondes**."
         await message.channel.send(embed=embed_info(titre , response, discord.Color.red()))
     
@@ -2331,7 +2331,7 @@ async def tour(message, personnage, ennemi,onlyAttack=False):
         attaque = random.choice(attaques)
         nom = attaque[2]; verbe = attaque[3]; gif = attaque[4]; couleur = int(attaque[5][1:], 16)
         embed = discord.Embed(
-            title=f"{personnage} {verbe} {nom}",
+            title=f"{personnage} {verbe} {nom}" if verbe != "" else f"{personnage} {nom}",
             color=couleur
         )
         if gif:

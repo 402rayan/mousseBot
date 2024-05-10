@@ -822,9 +822,9 @@ class Database:
     
     def get_synergie_equilibrage(self, id, verbose=False):
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
-        base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
+        base_rate = 110 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'Z' : 8,'X' : 8, 'SS' : 6.75, 'S' : 6, 'A' : 5.5, 'B' : 5, 'C' : 4, 'D' : 3.5, 'E' : 2, 'F' : 1}
+        taux_de_baisse = {'Z' : 4,'X' : 3, 'SS' : 3, 'S' : 3, 'A' : 3, 'B' : 3, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 0}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None
@@ -833,7 +833,7 @@ class Database:
             base_rate -= taux_de_baisse[rarete]
             if verbose:
                 print(f"Le personnage {character[3]}[{rarete}] et fait passer le taux de {base_rate + taux_de_baisse[rarete]} à {base_rate}.")
-        final_base_rate = max(20, base_rate) / 100
+        final_base_rate = max(35, base_rate) / 100
         print(f"La synergie {synergie[1]} a un taux de {final_base_rate}.") if verbose else None
         return final_base_rate
 

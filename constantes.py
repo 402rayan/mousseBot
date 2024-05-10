@@ -244,7 +244,7 @@ ennemis = {
         'nomPfp' : 'nanami',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 12000,
+            'HP' : 13000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -256,7 +256,7 @@ ennemis = {
         'nomPfp' : 'yoruichi',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 10000,
+            'HP' : 12000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -268,7 +268,7 @@ ennemis = {
         'nomPfp' : 'franklin',
         'isNotGif' : True,
         'stats' : {
-            'HP' : 1500,
+            'HP' : 2500,
             'ATK' : 1500,
             'DEF' : 800,
         }
@@ -280,7 +280,7 @@ ennemis = {
         'nomPfp' : 'rui',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 1000,
+            'HP' : 2000,
             'ATK' : 1100,
             'DEF' : 500,
         }
@@ -304,7 +304,7 @@ ennemis = {
         'nomPfp' : 'haku',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 1500,
+            'HP' : 2500,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -316,7 +316,7 @@ ennemis = {
         'isNotGif' : True,
         'nomPfp' : 'broggy',
         'stats' : {
-            'HP' : 1000,
+            'HP' : 2000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -328,7 +328,7 @@ ennemis = {
         'nomPfp' : 'uvoguine',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 7000,
+            'HP' : 8000,
             'ATK' : 0,
             'DEF' : 0,
         }
@@ -340,7 +340,7 @@ ennemis = {
         'nomPfp' : 'saibaman',
         'isNotGif' : False,
         'stats' : {
-            'HP' : 600,
+            'HP' : 1000,
             'ATK' : 0,
             'DEF' : 0,
         }
