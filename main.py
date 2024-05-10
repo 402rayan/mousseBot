@@ -1606,7 +1606,7 @@ async def invocation(message, userFromDb, lucky=False):
         if donnees == "ERROR_NO_CHARACTER":
             await message.channel.send(embed=embed_info( "Aucun personnage n'a été trouvé!","", discord.Color.red(), footer="Ticket remboursé."))
         elif donnees == "ERROR_MAX_CHARACTERS":
-            await message.channel.send(embed=embed_info( f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !","", discord.Color.red(),footer="Vendez des personnages avec !sell"))
+            await message.channel.send(embed=embed_info( f"Vous avez atteint le nombre maximum de personnages {CONSTANTS['MAX_CHARACTERS']} !","", discord.Color.red(),footer="Vendez des personnages avec !sell ou !sellAll"))
         return
     template = donnees[0]
     if specialInvocation:
@@ -1741,6 +1741,50 @@ async def inventaire(message, userFromDb):
                 await inventory_msg.edit(embed=create_embed(page_index))
         except asyncio.TimeoutError:
             break
+
+@bot.command()
+async def sellAll(message,userFromDb):
+    logger.info(f"Commande !sellAll appelée par {message.author.name} ({message.author.id}).")
+    # On récupère la rareté qu'il veut vendre
+    if len(message.content.split(' ')) != 2:
+        await message.channel.send(embed=embed_info("Erreur de syntaxe", "La commande doit être de la forme `!sellAll <rareté>`!", discord.Color.red()))
+        return
+    rarity = message.content.split(' ')[1].upper()
+    if rarity not in CONSTANTS['RARITY']:
+        await message.channel.send(embed=embed_info("Rareté invalide", "La rareté n'est pas valide!", discord.Color.red()))
+        return
+    # On récupère les personnages
+    characters = database.get_characters(message.author.id, rarity)
+    if characters is None or len(characters) == 0:
+        await message.channel.send(embed=embed_info("Inventaire vide", f"Vous n'avez pas de personnages de rang {rarity}.", discord.Color.red()))
+        return
+    if rarity in ['Z','X', 'SS', 'S','A']:
+        # On demande une confirm
+        description = "✅ : Oui\n❌ : Non"
+        msg = await message.channel.send(embed=embed_info(f"Êtes-vous sûr de vouloir vendre tous vos {len(characters)} personnages de rang " + rarity + " ?", description, discord.Color.blue()))
+        await msg.add_reaction('✅')
+        await msg.add_reaction('❌')
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=30.0, check=lambda reaction, user: user == message.author and str(reaction.emoji) in ['✅', '❌'])
+        except:
+            await message.channel.send(embed=embed_info("Vous avez mis trop de temps à répondre!", "", discord.Color.red()))
+            return
+        if str(reaction.emoji) != '✅':
+            await message.channel.send(embed=embed_info("Opération annulée.", "", discord.Color.red()))
+            return
+    message.channel.send(embed=embed_info("Vente en cours...", "Veuillez patienter...", discord.Color.gold()))
+    total_xp = 0 ; total_tickets = 0
+    for character in characters:
+        rang = character[7]
+        xp = CONSTANTS['RARITY_XP'][rang]
+        total_xp += xp
+        tickets = CONSTANTS['RARITY_PRICE'][rang]
+        total_tickets += tickets
+        database.delete_character(character[0])
+    database.ajouter_niveau_team(message.author.id, total_xp)
+    database.update_tickets(message.author.id, total_tickets)
+    await message.channel.send(embed=embed_info("Vente réussie!", f"Vous avez gagné **{total_xp} d'expérience et {total_tickets} tickets**!", discord.Color.green(),f"Vous avez vendu {len(characters)} personnages de rang {rarity}."))
+
 
 @bot.command()
 async def autoTeam(message, userFromDb):
@@ -2929,7 +2973,8 @@ commands = {
     "pv": pvp,                 # "pvp"
     "rep": repeat,             # "repeat"
     "sa": inventaire,          # "sac"
-    "sel": sell,               # "sell", "vendre"
+    "sellall": sellAll,          # "sellall"
+    "sell": sell,               # "sell", "vendre"
     "set": setLevel,           # "setlevel"
     "st": statistiquesJoueur,  # "satistiques"
     "su": invocation,          # "summon"

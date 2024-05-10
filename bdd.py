@@ -326,8 +326,11 @@ class Database:
         self.cur.execute(f"SELECT * FROM character_templates WHERE template_id = {template_id}")
         return self.cur.fetchone()
     
-    def get_characters(self, user_discord_id):
-        self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id}")
+    def get_characters(self, user_discord_id,rarity=None):
+        if rarity is not None:
+            self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} AND t.rarity = '{rarity}'")
+        else:
+            self.cur.execute(f"SELECT * FROM characters c LEFT JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id}")
         return self.cur.fetchall()
     
     def get_character_with_stats(self,character):
