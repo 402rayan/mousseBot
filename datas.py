@@ -2497,6 +2497,15 @@ all_techniques = {
         ["Boit", "", "https://media1.tenor.com/m/30mo4wsKU0MAAAAC/kiki%27s-delivery-service-jiji.gif", "#9bbfb4"],
         ["Joue", "", "https://media1.tenor.com/m/WEaJBwpYFrMAAAAd/kikis-delivery-service-anime.gif", "#9bbfb4"]       
     ],
+    "Athena" : [
+        ["lance un sort", "", "", "#b8b8b8"],
+        ["libère son pouvoir","","https://64.media.tumblr.com/0a86552b2778d73ead32775b1b9a1c31/1486bbe9371f3a69-c8/s540x810/758e6d0b5d822155501bb100aa8d032dd28567f2.gif","#ffffc2"],
+        ["Pétales des roses","invoque des","https://64.media.tumblr.com/3add00ee677172905dba691a78f1085c/91e0e75f8166bd68-55/s540x810/cd48c23c1f10a6b75af0f1fc9c7f430aab40e9a3.gif","#eeade2"],
+        ["Soigne toute son équipe","","https://i.imgur.com/cW0oUMo.gif","#eafcbe"],
+        ["Temps","arrête le","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaKaf9ehLnS3ppjAcNoPnZcqVT5dezO04IA&usqp=CAU","#d29edc"],
+        ["Coup de bâton","donne un","","#f7d4d4"],
+        ["Armure d''or","équipe son","","#FBCA42"]
+    ]
 }
 
 """
