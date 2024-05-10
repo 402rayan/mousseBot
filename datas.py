@@ -729,7 +729,7 @@ all_characters_templates = {
             ],
             "One Punch Man" : [
             # Personnages X
-            ("Saitama", "Z", "https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 1500, 2000, 1500),
+            ("Saitama", "Z", "https://i.imgur.com/7tRrngl.gif", 1500, 2000, 1500),
             ("Garou", "X", "https://i.pinimg.com/originals/a2/21/f2/a221f289576e45a0ed2fc3a5f6cb311e.gif", 1000,1000,1000),
             ("Boros", "X", "https://i.imgur.com/ehpRyuO.gif", 950, 940, 945),
             
@@ -1681,6 +1681,14 @@ all_techniques = {
     ],
     "Shanks" : [
         ["Haki des Rois", "utilise son", "https://i.pinimg.com/originals/7b/f3/4b/7bf34b7bd0cb5190f8154caa422b0bbf.gif", "#b1070b"],
+        ["est amusé par le combat.","","https://media1.tenor.com/m/ebCdK2Gv5IoAAAAC/one-piece-shanks.gif","#590d1c"],
+        ["exerce une pression","","https://media1.tenor.com/m/uBrwnMXSud0AAAAC/shanks.gif","#6b190e"],
+        ["pare l''attaque","","https://media1.tenor.com/m/WQEAKg0QwKEAAAAC/shanks-coby.gif","#010106"],
+        
+        # fais une technique de sabre gryffon
+        ["tranche avec Gryffon","","","#C13131"],
+        
+        
     ],
     "Rob Lucci": [
         ["Forme Bestiale","renforce sa","https://i.imgur.com/uuqYTNB.gif","#ffc500"],
@@ -1984,12 +1992,20 @@ all_techniques = {
         ["Furie", "est dans une", "https://i.imgur.com/X68C2XH.gif", "#c37f3c"],
         ["Mugetsu", "active", "https://i.imgur.com/oTTHb5B.gif", "#000000"],
         ["l''attaque de l''adversaire", "attrape", "https://i.imgur.com/amStjId.gif", "#040207"],
+        ["","","https://media1.tenor.com/m/PSy8E4iOXwUAAAAC/ichigo-bleach.gif","#050306"]
     ],
     "Yhwach" : [ #TOGIF
-        ["The Almighty", "active", image_temporaire(), hexadecimal_temporaire],
+        ["The Almighty", "active", "", "#a6e7ed"],
         ["Sankt Altar", "invoque", "https://i.imgur.com/R34bul2.png", "#1064bc"],
-        ["Heilig Pfeil", "déchaine", image_temporaire(), "#1064bc"],
-        ["Épée de Reishi", "crée l''", "https://i.imgur.com/cJoydwT.png", "#30b1cb"]
+        ["Heilig Pfeil", "déchaine", "", "#1064bc"],
+        ["Épée de Reishi", "crée l''", "https://i.imgur.com/cJoydwT.png", "#30b1cb"],
+        ["est amusé par le combat.","","https://media1.tenor.com/m/htCXv04FJt8AAAAC/bleach-thousand-year-blood-war.gif","#58a7bf"],
+        ["Épée","dégaine l''","https://media1.tenor.com/m/5TNvbe47QXkAAAAd/yhwach-bleach.gif","#a6e7ed"],
+        ["","","https://media1.tenor.com/m/ywSo3OejttYAAAAC/yhwach-yuha-bach.gif","#52e8f3"],
+        ["","","https://media1.tenor.com/m/nD8hAWQGOp0AAAAd/yhwach-yuha.gif","#e3a344"],
+        ["","","https://media1.tenor.com/m/Z5mymX50tfIAAAAC/yhwach-tybw-bleach.gif","#3c6063"],
+        
+        
     ],
     "Sosuke Aizen" : [ #TOGIF
         ["Kanzen Saimin", "trompe avec", "https://i.imgur.com/mkttGe5.gif", "#3994a4"],
