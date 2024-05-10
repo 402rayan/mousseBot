@@ -9,10 +9,10 @@ CONSTANTS = {
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
         'Z': 100,
-        'X': 25,
-        'SS': 15,
-        'S': 10,
-        'A': 5,
+        'X': 20,
+        'SS': 12,
+        'S': 8,
+        'A': 4,
         'B': 1,
         'C': 0,
         'D': 0,
