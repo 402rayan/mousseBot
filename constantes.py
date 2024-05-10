@@ -34,8 +34,8 @@ CONSTANTS = {
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
-        'Z': 0.005,
-        'X': 0.01,
+        'Z': 0.002,
+        'X': 0.008,
         'SS': 0.02,
         'S': 0.05,
         'A': 0.1,

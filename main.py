@@ -1782,7 +1782,7 @@ async def sellAll(message,userFromDb):
         total_tickets += tickets
         database.delete_character(character[0])
     database.ajouter_niveau_team(message.author.id, total_xp)
-    database.update_tickets(message.author.id, total_tickets)
+    database.update_tickets(message.author.id, total_tickets + database.get_tickets(message.author.id))
     await message.channel.send(embed=embed_info("Vente réussie!", f"Vous avez gagné **{total_xp} d'expérience et {total_tickets} tickets**!", discord.Color.green(),f"Vous avez vendu {len(characters)} personnages de rang {rarity}."))
 
 
