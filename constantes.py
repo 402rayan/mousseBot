@@ -10,9 +10,9 @@ CONSTANTS = {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
         'Z': 100,
         'X': 20,
-        'SS': 12,
-        'S': 8,
-        'A': 4,
+        'SS': 10,
+        'S': 6,
+        'A': 3,
         'B': 1,
         'C': 0,
         'D': 0,
