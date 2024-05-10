@@ -480,7 +480,7 @@ async def niveau13(message, userFromDb, equipe):
     await asyncio.sleep(5)
     await message.channel.send(embed=embed_naratteur("...", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(3)
-    await finDeNiveau(message, userFromDb, 14)
+    await finDeNiveau(message, userFromDb, 14,ticket_ramasses)
     
 async def niveau12(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 12, "Ticket de Diamant", equipe, CONSTANTS['COLORS']['TICKET_DIAMANT'])
