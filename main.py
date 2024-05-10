@@ -1906,7 +1906,8 @@ async def statistiquesJoueur(message, userFromDb):
         return f"**{string}**"
     ligne1 = f"🎫 Nombre de tickets : {gras(statsJoueur['NOMBRE_TICKETS'])}"
     ligne2 = f"👨‍🦲 Nombre de personnages : {gras(statsJoueur['NOMBRE_PERSONNAGES'])}"
-    ligne3 = f"⚔️ Nombre de combats : {gras('A venir..')}"
+    ligne3 = f"🏆 Nombre de victoires : {gras(statsJoueur['NOMBRE_TOTAL_VICTOIRE'])}"
+    ligne6 = f"🔮 Nombre d'invocations : {gras(statsJoueur['NOMBRE_TOTAL_INVOCATION'])}"
 
     description_rarete = ""
     print(statsJoueur, statistiques)
@@ -1915,7 +1916,7 @@ async def statistiquesJoueur(message, userFromDb):
         description_rarete += f"{rarete} : {gras(statsJoueur['NOMBRE_PAR_RARETE'][index][1])} / {statistiques['NOMBRE_PAR_RARETE'][rarete]}\n"
     ligne5 = f"✨ Nombre de personnages par rareté :\n{description_rarete}"
     ligne4 = f"⚡ Puissance : {gras(statsJoueur['PUISSANCE'])}"
-    desc = ligne1 + "\n\n" + ligne2 + "\n\n" + ligne3 + "\n\n" + ligne4 + "\n\n" + ligne5
+    desc = ligne1 + "\n\n" + ligne2 + "\n\n" + ligne3 + "\n\n" + ligne6 +  "\n\n" + ligne4 + "\n\n" + ligne5
     embed = discord.Embed(
         title="",
         description=desc,
@@ -2125,9 +2126,11 @@ async def pvp(message, userFromDb):
     victoire = await combatPvp(message, equipe, equipe_adversaire, adversaireDiscord)
     if victoire:
         vainqueur = message.author
+        database.ajouter_une_victoire(message.author.id)
         perdant = adversaireDiscord
     else:
         vainqueur = adversaireDiscord
+        database.ajouter_une_victoire(adversaireDiscord.id)
         perdant = message.author
     database.update_tickets(vainqueur.id, database.get_tickets(vainqueur.id) + parie)
     database.update_tickets(perdant.id, database.get_tickets(perdant.id) - parie)
@@ -2656,7 +2659,7 @@ async def classement(message, userFromDb):
         identifiant = joueur[0]
         user = await message.guild.fetch_member(identifiant)
         response += f"{index + 1}. {user.name} - **{joueur[1]}** puissance\n"
-    await message.channel.send(embed=embed_info(titre, response, discord.Color.blue(),"La puissance est calculée en fonction des niveaux et des personnages de votre inventaire."))
+    await message.channel.send(embed=embed_info(titre, response, discord.Color.blue(),"La puissance est calculée en fonction de la team équipée de chaque joueur.."))
 
 def get_color_based_on_power(power):
     power_ranges = {

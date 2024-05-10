@@ -63,6 +63,8 @@ class Database:
             histoireLevel INTEGER DEFAULT 1,
             next_invocation INTEGER DEFAULT 0,
             last_time_auto_team DATETIME DEFAULT NULL,
+            nb_total_invocation INTEGER DEFAULT 0,
+            nb_total_victoire INTEGER DEFAULT 0,
             FOREIGN KEY (character_slot_one) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_two) REFERENCES characters (char_id),
             FOREIGN KEY (character_slot_three) REFERENCES characters (char_id)
@@ -220,8 +222,38 @@ class Database:
         self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
         nombre_tickets = self.cur.fetchone()[0]
         puissance = self.getPower(user_discord_id)
-        return {'NOMBRE_PERSONNAGES': nombre_personnages, 'NOMBRE_PAR_RARETE': nombre_par_rarete, 'NOMBRE_TICKETS': nombre_tickets, 'PUISSANCE': puissance}
+        team = self.get_team(user_discord_id,"Bot")
+        power = 0
+        for stats in team['stats']:
+            power += int(team['stats'][stats])
+        return {'NOMBRE_PERSONNAGES': nombre_personnages, 'NOMBRE_PAR_RARETE': nombre_par_rarete, 'NOMBRE_TICKETS': nombre_tickets, 'PUISSANCE': power,'NOMBRE_TOTAL_INVOCATION' : self.get_total_invocation(user_discord_id), 'NOMBRE_TOTAL_VICTOIRE' : self.get_total_victoire(user_discord_id)}
         
+    def get_total_invocation(self, user_discord_id):
+        # On retourne la colonne total_invocation
+        self.cur.execute(f"SELECT nb_total_invocation FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
+
+    def ajouter_une_invocation(self, user_discord_id):
+        # On ajoute 1 à la colonne total_invocation
+        self.cur.execute(f"UPDATE users SET nb_total_invocation = nb_total_invocation + 1 WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+
+    def get_total_victoire(self, user_discord_id):
+        # On retourne la colonne total_invocation
+        self.cur.execute(f"SELECT nb_total_victoire FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
+    
+    def ajouter_une_victoire(self, user_discord_id):
+        # On ajoute 1 à la colonne total_invocation
+        self.cur.execute(f"UPDATE users SET nb_total_victoire = nb_total_victoire + 1 WHERE user_discord_id = {user_discord_id}")
+        self.conn.commit()
+
+    def temporaire(self):
+        # on créé la colonne total_invocation dans la table users
+        self.cur.execute("ALTER TABLE users ADD nb_total_victoire INTEGER DEFAULT 0")
+        self.cur.execute("ALTER TABLE users ADD nb_total_invocation INTEGER DEFAULT 0")
+        self.conn.commit()
+
 
     def updateChoice(self, user_discord_id, choice, value):
         self.cur.execute(f"UPDATE user_choices SET {choice} = {value} WHERE user_discord_id = {user_discord_id}")
@@ -449,6 +481,7 @@ class Database:
             return "ERROR_NO_CHARACTER"
         template_id = template[0]
         template_name = template[1]
+        self.ajouter_une_invocation(user_discord_id)
         new_character = self.create_character(user_discord_id,user_name, template_id)
         logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {template_name} [{rarity}] (id : {template_id}) (character Id : {new_character}) . Tickets restants : {tickets}. " + ("Invocation spéciale." if special else ""))
         self.update_tickets(user_discord_id, tickets)
@@ -784,7 +817,11 @@ class Database:
         users = self.cur.fetchall()
         classement = []
         for users in users:
-            classement.append([users[1],self.getPower(users[1])])
+            team = self.get_team(users[1],users[2])
+            power = 0
+            for stats in team['stats']:
+                power += int(team['stats'][stats])
+            classement.append([users[1],power])
         classement.sort(key=lambda x: x[1], reverse=True)
         return classement
 
