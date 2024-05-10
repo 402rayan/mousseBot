@@ -352,7 +352,7 @@ async def niveau16(message, userFromDb, equipe):
 
 async def niveau15(message, userFromDb, equipe):
     # On sort de la cave, on reprend la route vers le village, après quelqeus heures, on atteint le village
-    
+    ticketsGagnes = 0
     hasChasedPucci = database.getChoice(userFromDb[1], "lvl6pucci")
     if hasChasedPucci:
         await debutDeNiveau(message, userFromDb, 15, "Village, me revoilà..", equipe, 0x000000)
@@ -391,6 +391,7 @@ async def niveau15(message, userFromDb, equipe):
         # Sanji nous donne 2 tickets pour nous remercier
         await asyncio.sleep(4)
         await message.channel.send(embed=embed_info("Sanji vous tend 2 tickets en guise de remerciement!", "", discord.Color.gold()))
+        ticketsGagnes = 2
         await asyncio.sleep(5)
         # Il nousdit qu'un guerrier est là en ce moment même au village si ça peut nous intéresser
         await embed_histoire_character(message, "Sanji vous informe :", "", "sanji", "", "Je ne sais pas si tu es au courant, mais un guerrier aggueri se repose en ce moment même au village.", 0xFFB122)
@@ -400,7 +401,7 @@ async def niveau15(message, userFromDb, equipe):
 
     await message.channel.send(embed=embed_naratteur("C'est décidé, vous allez essayer de le recruter! Mais d'abord il faut manger!", "", CONSTANTS['COLORS']['BRUIT']))
     await asyncio.sleep(4.5)
-    await finDeNiveau(message, userFromDb, 16) # a changer
+    await finDeNiveau(message, userFromDb, 16,ticketsGagnes) # a changer
 
 async def niveau14(message, userFromDb, equipe):
     await debutDeNiveau(message, userFromDb, 14, "Révélations", equipe, CONSTANTS['COLORS']['EREN'])
