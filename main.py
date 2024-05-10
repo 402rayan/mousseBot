@@ -2753,9 +2753,9 @@ async def afficherUnivers(message, userFromDb):
 
 @bot.command()
 async def setLevel(message, userFromDb):
-    # if message.author.id not in CONSTANTS['ADMINS']:
-    #     await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
-    #     return
+    if message.author.id not in CONSTANTS['ADMINS']:
+        await message.channel.send(embed=embed_info( "Vous n'avez pas la permission de faire cela!","", discord.Color.red()))
+        return
     level = message.content.split(' ')[1]
     if not level.isdigit():
         await message.channel.send(embed=embed_info( "Le niveau doit être un nombre!","", discord.Color.red()))
