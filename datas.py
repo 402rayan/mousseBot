@@ -1659,6 +1659,28 @@ all_link_synergies = {
 # https://media1.tenor.com/m/DCSk9f-zAKYAAAAd/tengen-uzui-fight.gif
 all_techniques = {
     # One Piece
+    "Edward Newgate" : [
+        ["Fureur","entre dans une","https://media1.tenor.com/m/O77jn3B2T2MAAAAC/whitebeard-shirohige.gif","#6e292d"],
+        ["Suprémacie","proclame sa","https://media1.tenor.com/m/0hn0fRF06J0AAAAC/whitebeard-marineford.gif","#faf9fb"],
+        ["","","https://media1.tenor.com/m/b2oqWYk-m5gAAAAC/whitebeard-one-piece.gif","#4ec8f8"],
+        ["","","https://media1.tenor.com/m/EgAVjXRjQSsAAAAC/whitebeard-edward-newgate.gif","#2242aa"],
+        ["","","https://media1.tenor.com/m/t16EQf4cln0AAAAd/one.gif","#2e6399"],
+        ["","","https://media1.tenor.com/m/z2azzX3rTeIAAAAd/whitebeard-one-piece.gif","#dac4c0"],
+        ["Haki","utilise son","https://media1.tenor.com/m/JRKtTDGd_s0AAAAC/gold-roger-whitebeard-jamal.gif","#645ba2"],
+        ["descend de la Jack aulieu de combattre","","https://media1.tenor.com/m/71FsL5RcH6MAAAAC/one-piece-whitebeard.gif","#a02c36"],
+        ["Force","frappe de toute sa","https://media1.tenor.com/m/j0se6ETRdlYAAAAC/whitebeard-vs-akainu-one-piece.gif","#426e94"],
+        ["est impitoyable","","https://media1.tenor.com/m/CpGh-ufGo9MAAAAC/whitebeard-shirohige.gif","#a4b4b8"]
+        ],
+    "Marshall D. Teach": [
+        ["Ténèbres","invoque les","https://media1.tenor.com/m/qcolBcAm_x4AAAAC/blackbeard-kurohige.gif","#0f0e0f"],
+        ["Obscurité","répend l''","https://media1.tenor.com/m/fGQOmUKJrscAAAAd/law-blackbeard.gif","#0a090b"],
+        ["Séisme","provoque un","https://media1.tenor.com/m/9Ql_cxVYJZIAAAAC/one-piece-blackbeard.gif","#89071c"],
+        ["","","https://media1.tenor.com/m/XXNx95XZgNgAAAAC/blackbeard-kurohige.gif","#3a4d5e"],
+        ["","","https://media1.tenor.com/m/tVjGnw9igowAAAAC/one-piece-blackbeard.gif","#050306"],
+        ["approche","","https://media1.tenor.com/m/TQLkoJe8H68AAAAC/blackbeard-one-piece.gif","#080b13"],
+        ["","","https://media1.tenor.com/m/irdiHXGVimAAAAAC/marshall-d-teach-black-beard.gif","#090612"],
+        ["Malheur","répend le","https://media1.tenor.com/m/jBLJoPmBhY0AAAAd/blackbeard-marshall-d-teach.gif","#4f4d5d"]
+        ],
     "Kaido" : [
         ["Borobreath", "utilise son", "", "#000000"],
         ["Massue", "charge sa","https://media1.tenor.com/m/arj97lLhyvAAAAAC/one-piece-kaido.gif","#0c163c"],
@@ -1672,6 +1694,9 @@ all_techniques = {
         
         
         ],
+    "Gol D. Roger" : [
+        ["Haki","utilise son","https://media1.tenor.com/m/ix-AGqBe1XYAAAAC/gold-roger-whitebeard-jamal.gif","#1e151f"],
+    ],
     "Monkey D. Luffy" : [
         # https://i.redd.it/bv9vpnoacfgb1.gif
         ["Libre","se sent","https://media1.tenor.com/m/0J_pScnnvGMAAAAC/luffy-gear-5-gear-5.gif","#e7bf62"],
