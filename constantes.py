@@ -157,11 +157,18 @@ CONSTANTS = {
     },
     "NOMS_GIF_INVOCATION": [
         # Nom du gif, texte à afficher, couleur du texte, pfp, isLong
-        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
-        ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
-        ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
-        ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
-        ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2",True],
+        # ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
+        # ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
+        # ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
+        # ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
+        # ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2",True],
+        ["unionFaitLaForce","L'union fait la force !", 0x5cb0ef, "toriko"],
+        ["bizarreInvocation","Bizarre cette invocation...", 0xe8e3e3,"megumi"],
+        ["roiDesPirates","Le roi des pirates ?... Ça sera moi !", 0xd4d8cb,"luffy"],
+        ["vegetaRain","...", 0x09185d, "vegeta"],
+        ["luffyLaugh","Cette invocation me fait rire!",0xfefef8,"luffy"],
+        ["stardustCrusaders","...",0xfec2e6, "jotaro"],
+        
     ],
     'DESCRIPTION_COMMANDES' : {
         "`!tutoriel`": "Permet d'avoir un **tutoriel spécifique** de comment jouer.",
