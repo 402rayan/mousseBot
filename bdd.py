@@ -859,7 +859,7 @@ class Database:
     
     def get_synergie_equilibrage(self, id, verbose=False):
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
-        base_rate = 110 # De base, le multiplicateur d'une synergie est de 1
+        base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
         taux_de_baisse = {'Z' : 4,'X' : 3, 'SS' : 3, 'S' : 3, 'A' : 3, 'B' : 3, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 0}
         synergie = self.get_synergy(id)
@@ -870,7 +870,7 @@ class Database:
             base_rate -= taux_de_baisse[rarete]
             if verbose:
                 print(f"Le personnage {character[3]}[{rarete}] et fait passer le taux de {base_rate + taux_de_baisse[rarete]} à {base_rate}.")
-        final_base_rate = max(35, base_rate) / 100
+        final_base_rate = max(40, base_rate) / 100
         print(f"La synergie {synergie[1]} a un taux de {final_base_rate}.") if verbose else None
         return final_base_rate
 
@@ -964,3 +964,10 @@ class Database:
         # return True si l'utilisateur a ce personnage
         self.cur.execute(f"SELECT * FROM characters WHERE user_discord_id = {user_discord_id} AND template_id = {template_id}")
         return self.cur.fetchone() is not None
+    
+    def remake_characters_templates(self):
+        self.cur.execute("DROP TABLE IF EXISTS character_templates")
+        self.create_character_template_table()
+        self.create_character_templates()
+        self.conn.commit()
+        logger.success("Les templates de personnages ont été réinitialisés.")

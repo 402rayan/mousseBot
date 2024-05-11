@@ -8,10 +8,10 @@ hexadecimal_temporaire = "#000000"
 
 all_characters_templates = {
             "Dragon Ball" : [ # ✅
-            ("Super Shenron", "Z", "https://i.imgur.com/W7V2Oru.gif", 3000, 3000, 3000),
+            ("Super Shenron", "Z", "https://i.imgur.com/W7V2Oru.gif", 2000, 2000, 2000),
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 950, 900),
             ("Zeno", "Z", "https://i.imgur.com/W579wtw.gif", 2000, 2500, 2100),
-            ("Grand Prêtre", "Z", "https://i.imgur.com/XFKPYIb.gif", 2500, 2000, 2200),
+            ("Grand Prêtre", "Z", "https://i.imgur.com/XFKPYIb.gif", 2000, 2000, 1800),
             ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1040, 1000),
             ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1010, 1050, 1000),
             ("Beerus", "X", 'https://i.imgur.com/9ZLOxBK.gif', 920, 1150, 910),
@@ -1017,7 +1017,7 @@ all_characters_templates = {
             ],
         "Saint Seiya" : [ # ✅
             # Personnages X
-            ("Athena", "Z", "https://i.imgur.com/Mhn9qP8.gif", 2000, 2000, 2000),
+            ("Athena", "Z", "https://i.imgur.com/Mhn9qP8.gif", 1500, 1600, 1700),
 
             # Personnages SS
             ("Shaka", "S", "https://i.imgur.com/tkAVOuQ.gif", 620, 660, 640),

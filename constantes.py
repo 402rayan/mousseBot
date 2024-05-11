@@ -1,18 +1,18 @@
 CONSTANTS = {
     'HOURLY_TICKETS': 5,
     'INVOCATION_COST': 1,
-    'MAX_CHARACTERS': 999999,
+    'MAX_CHARACTERS': 200,
     'BASE_CHANCE_VICTORY': 0.6,
-    'HOURLY_XP': [5000,4000,3000,3500,4500,6000,1000,10000,5250,5100,5300,5555,4200],
+    'HOURLY_XP': [5000,4000,3000,3500,4500,6000,1000,10000,5250,5100,5300,5555,4200,100000,4000,8000,20000,3000,5000,5555,5432,10000],
     'RARITY': ['F', 'E', 'D', 'C', 'B', 'A', 'S', 'SS', 'X','Z'],
     'ADMINS' : [724383641752436757,617045747862470803], # ID des admins
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
-        'Z': 50,
-        'X': 16,
-        'SS': 7,
-        'S': 5,
-        'A': 3,
+        'Z': 40,
+        'X': 15,
+        'SS': 6,
+        'S': 4,
+        'A': 2,
         'B': 1,
         'C': 0,
         'D': 0,
@@ -22,7 +22,7 @@ CONSTANTS = {
     'RARITY_XP': {
         # Nombre d'expérience obtenue en vendant un personnage de la rareté correspondante
         'Z': 1000000,
-        'X': 100000,
+        'X': 150000,
         'SS': 30000,
         'S': 10000,
         'A': 5000,
@@ -34,7 +34,7 @@ CONSTANTS = {
     },
     'RARITY_CHANCE': {
         # Chance d'obtenir un personnage de la rareté correspondante
-        'Z': 0.002,
+        'Z': 0.001,
         'X': 0.008,
         'SS': 0.02,
         'S': 0.05,
@@ -47,8 +47,8 @@ CONSTANTS = {
     },
     'RARITY_CHANCE_HIGH': {
         # Change d'obtenir un personnage de la rareté correspondante en cas de GROS ticket
-        'Z': 0.008,
-        'X': 0.08,
+        'Z': 0.004,
+        'X': 0.07,
         'SS': 0.15,
         'S': 0.25,
         'A': 0.34,

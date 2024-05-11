@@ -245,15 +245,20 @@ def remake_technique():
     database = Database('mousse.db')
     database.remake_techniques()
 
+def remake_characters_templates():
+    database = Database('mousse.db')
+    database.remake_characters_templates()
 def fonction_temporaire():
     database = Database('mousse.db')
     database.temporaire()
-    
+
 def demandes():
     if input("Voulez vous reset la BDD ? (o/n) ") == 'o':
         Database('mousse.db').reset()
     if input("Voulez vous utiliser la fonction TEMPORAIRE ? (o/n) ") == 'o':
         fonction_temporaire()
+    if input("Voulez vous reset les charactes templates ? (o/n) ") == 'o':
+        remake_characters_templates()
     if input("Voulez vous reset les techniques ? (o/n) ") == 'o':
         remake_technique()
     if input("Voulez vous reset toutes les URL ? (o/n) ") == 'o':
