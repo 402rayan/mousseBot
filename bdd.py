@@ -473,6 +473,9 @@ class Database:
         while True and iteration < 50:
             template = random.choice(character_templates)
             template_id = template[0]
+            if rarity not in ['Z','X','SS','S','A']:
+                print("Rareté non prise en compte")
+                break
             if not any(char[2] == template_id for char in liste_personnages):
                 break
             iteration += 1
