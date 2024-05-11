@@ -123,6 +123,7 @@ async def niveau19(message, userFromDb, equipe):
     # Nanami débarque pour nous dire de nous réveiller
     await embed_histoire_character(message, "Nanami vous réveille :", "", "nanami", "", "Réveille-toi, il est temps de partir.", CONSTANTS['COLORS']['NANAMI'])
     await asyncio.sleep(4)
+    ticketsGagnes = 0
     # Continuer à dormir ou se lever
     description = "😴 : Continuer à dormir\n☀ : Se réveiller"
     msg = await message.channel.send(embed=embed_naratteur("Que faites-vous?", description, CONSTANTS['COLORS']['BRUIT']))
@@ -170,7 +171,7 @@ async def niveau19(message, userFromDb, equipe):
     await asyncio.sleep(4)
     await embed_histoire_character(message, "Rob Lucci s'énerve...", "robLucciTransformation", "robLucci", "", "", 0xffc500)
     await asyncio.sleep(4)
-    await finDeNiveau(message, userFromDb, 20) 
+    await finDeNiveau(message, userFromDb, 20,ticketsGagnes) 
 
 async def niveau18(message, userFromDb, equipe):
     lvl18skipDialogue = database.getChoice(userFromDb[1], "lvl18skipDialogue")
