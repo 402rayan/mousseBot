@@ -1662,10 +1662,10 @@ all_techniques = {
     "Edward Newgate" : [
         ["Fureur","entre dans une","https://media1.tenor.com/m/O77jn3B2T2MAAAAC/whitebeard-shirohige.gif","#6e292d"],
         ["Suprémacie","proclame sa","https://media1.tenor.com/m/0hn0fRF06J0AAAAC/whitebeard-marineford.gif","#faf9fb"],
-        ["","","https://media1.tenor.com/m/b2oqWYk-m5gAAAAC/whitebeard-one-piece.gif","#4ec8f8"],
-        ["","","https://media1.tenor.com/m/EgAVjXRjQSsAAAAC/whitebeard-edward-newgate.gif","#2242aa"],
-        ["","","https://media1.tenor.com/m/t16EQf4cln0AAAAd/one.gif","#2e6399"],
-        ["","","https://media1.tenor.com/m/z2azzX3rTeIAAAAd/whitebeard-one-piece.gif","#dac4c0"],
+        ["n''a pas peur de l''adversaire","","https://media1.tenor.com/m/b2oqWYk-m5gAAAAC/whitebeard-one-piece.gif","#4ec8f8"],
+        ["charge son poing","","https://media1.tenor.com/m/EgAVjXRjQSsAAAAC/whitebeard-edward-newgate.gif","#2242aa"],
+        ["est TERRIFIANT","","https://media1.tenor.com/m/t16EQf4cln0AAAAd/one.gif","#2e6399"],
+        ["redonne espoir à son équipe","","https://media1.tenor.com/m/z2azzX3rTeIAAAAd/whitebeard-one-piece.gif","#dac4c0"],
         ["Haki","utilise son","https://media1.tenor.com/m/JRKtTDGd_s0AAAAC/gold-roger-whitebeard-jamal.gif","#645ba2"],
         ["descend de la Jack aulieu de combattre","","https://media1.tenor.com/m/71FsL5RcH6MAAAAC/one-piece-whitebeard.gif","#a02c36"],
         ["Force","frappe de toute sa","https://media1.tenor.com/m/j0se6ETRdlYAAAAC/whitebeard-vs-akainu-one-piece.gif","#426e94"],
@@ -1675,10 +1675,10 @@ all_techniques = {
         ["Ténèbres","invoque les","https://media1.tenor.com/m/qcolBcAm_x4AAAAC/blackbeard-kurohige.gif","#0f0e0f"],
         ["Obscurité","répend l''","https://media1.tenor.com/m/fGQOmUKJrscAAAAd/law-blackbeard.gif","#0a090b"],
         ["Séisme","provoque un","https://media1.tenor.com/m/9Ql_cxVYJZIAAAAC/one-piece-blackbeard.gif","#89071c"],
-        ["","","https://media1.tenor.com/m/XXNx95XZgNgAAAAC/blackbeard-kurohige.gif","#3a4d5e"],
-        ["","","https://media1.tenor.com/m/tVjGnw9igowAAAAC/one-piece-blackbeard.gif","#050306"],
+        ["frappe avec le GURA GURA NOOO MI!!!","","https://media1.tenor.com/m/XXNx95XZgNgAAAAC/blackbeard-kurohige.gif","#3a4d5e"],
+        ["s''empare des pouvoirs","","https://media1.tenor.com/m/tVjGnw9igowAAAAC/one-piece-blackbeard.gif","#050306"],
         ["approche","","https://media1.tenor.com/m/TQLkoJe8H68AAAAC/blackbeard-one-piece.gif","#080b13"],
-        ["","","https://media1.tenor.com/m/irdiHXGVimAAAAAC/marshall-d-teach-black-beard.gif","#090612"],
+        ["Gura Gura no Mi","utilise le","https://media1.tenor.com/m/irdiHXGVimAAAAAC/marshall-d-teach-black-beard.gif","#090612"],
         ["Malheur","répend le","https://media1.tenor.com/m/jBLJoPmBhY0AAAAd/blackbeard-marshall-d-teach.gif","#4f4d5d"]
         ],
     "Kaido" : [
@@ -1742,13 +1742,13 @@ all_techniques = {
         ["Efface l''univers","","","#000000"],
         ["force tout le monde à s''agenouiller","","https://media1.tenor.com/m/z_m0pEgSEhYAAAAd/dbs-dragon-ball-super.gif","#564d2d"],
         ["appelle son double","","https://i.imgur.com/DV7Xsmz.gif","#5adcfe"],
-        ["est amusé par le combat","","https://i.imgur.com/xIJnEbi.gif","#c87700"],
-        ["est étonné par votre nullité","","https://i.imgur.com/jDG8qtb.gif","#100b2e"],
-        ["","","https://qph.cf2.quoracdn.net/main-qimg-297ff5c1c13bc1bf0688bf0b38943032","#a1d8e3"],
-        ["","","https://64.media.tumblr.com/67bb373027ff9c6becebcfd24023742d/tumblr_pmemkykvPb1wafdbeo1_500.gif",""],
+        ["et Zeno sont amusés par le combat","","https://i.imgur.com/xIJnEbi.gif","#c87700"],
+        ["et Zeno sont étonnés par la nullité de l''adversaire","","https://i.imgur.com/jDG8qtb.gif","#100b2e"],
+        ["ne prend pas part au combat","","https://i.imgur.com/G2mNJVB.gif","#a1d8e3"],
+        ["s''amuse avec Zeno aulieu de combattre","","https://64.media.tumblr.com/67bb373027ff9c6becebcfd24023742d/tumblr_pmemkykvPb1wafdbeo1_500.gif","#d4cf2e"],
         ["et Zeno vous souhaitent la bienvenue","","https://64.media.tumblr.com/67bb373027ff9c6becebcfd24023742d/tumblr_pmemkykvPb1wafdbeo1_500.gif","#b1c997"],
-        ["","","https://i.imgur.com/1mwuion.gif","#7bc6dc"],
-        ["retweet le combat","","","#7bc6dc"],
+        ["est époustouflé par le combat","","https://i.imgur.com/1mwuion.gif","#7bc6dc"],
+        ["retweet le combat mdrrr","","","#7bc6dc"],
         ],
     "Vados" : [
         ["","","https://media1.tenor.com/m/-Ku4nzfbkX0AAAAC/dbz-dbs.gif","#814c94"],
@@ -1944,7 +1944,7 @@ all_techniques = {
     ],
     "Boruto Uzumaki" : [
         ["Jogan", "active son", "https://media1.tenor.com/m/sOxPdcPaOYYAAAAC/madara-uchiha.gif", "#203e51"],
-        ["Rasengan", "utilise le", "https://media1.tenor.com/m/MdZogdBGnMMAAAAd/boruto.gif", "##705ca1"],
+        ["Rasengan", "utilise le", "https://media1.tenor.com/m/MdZogdBGnMMAAAAd/boruto.gif", "#705ca1"],
     ],
     "Rikudo" : [
         ["Rinnegan", "active son", "", "#F339F8"],
@@ -1958,10 +1958,10 @@ all_techniques = {
         ],
     "Madara Uchiha" : [
         ["Pluie d''énergie", "envoie une", "https://media1.tenor.com/m/VPIrMcpLbeQAAAAd/madara-madara-uchiha.gif", "#020203"],
-        ["Analyse les mouvements","","https://media1.tenor.com/m/ME7LU5WZaUIAAAAC/%E5%AF%AB%E8%BC%AA%E7%9C%BC.gif","#704e56"],
+        ["analyse les mouvements","","https://media1.tenor.com/m/ME7LU5WZaUIAAAAC/%E5%AF%AB%E8%BC%AA%E7%9C%BC.gif","#704e56"],
         ["Boule de feu", "envoie une", "https://media1.tenor.com/m/DHPr-HlwxSEAAAAd/madara-uchiha-vs.gif", "#66474e"],
-        ["","","https://media1.tenor.com/m/vZyH_I0M0N8AAAAC/madara-fire-ball.gif","#fcbd2b"],
-        ["","","https://media1.tenor.com/m/p4_EICgq1wwAAAAC/uchiha-madara-sharingan.gif","#282e40"],
+        ["Feu","envoie du","https://media1.tenor.com/m/vZyH_I0M0N8AAAAC/madara-fire-ball.gif","#fcbd2b"],
+        ["Sharigan","active son","https://media1.tenor.com/m/p4_EICgq1wwAAAAC/uchiha-madara-sharingan.gif","#282e40"],
         ["Sasusano","s''entoure de","https://media1.tenor.com/m/Ow0_KfLUF9kAAAAC/madara.gif","#8d1e2c"],
         ["Carnage","fait un","https://media1.tenor.com/m/9gfpFXcHwnYAAAAd/madara.gif","#9597ab"],
         ["Chakra de Hashirama","puise dans le","https://media1.tenor.com/m/jQFqoZ_PS8kAAAAC/madara-uchiha-madara.gif","#4c4c43"],
@@ -1971,12 +1971,12 @@ all_techniques = {
     "Obito Uchiha": [
         ["Kamui", "utilise", "https://media1.tenor.com/m/CcQ6DNKb1TAAAAAC/obito-kamui-ice.gif", "#351326"],
         ["Vie","revient à la","https://media1.tenor.com/m/NkHbgbHM-w8AAAAC/obito-uchiha-tobi.gif","#964447"],
-        ["","","https://media1.tenor.com/m/1rZBXGbSaFwAAAAC/naruto-obito-uchiha.gif","#3b2c66"],
+        ["Boule de Magma","envoie une","https://media1.tenor.com/m/1rZBXGbSaFwAAAAC/naruto-obito-uchiha.gif","#3b2c66"],
         ["pare les attaques","","https://i.imgur.com/IwZptq9.gif","#365353"],
-        ["","","https://i.imgur.com/hrZoLy7.gif","#747474"],
-        ["","","https://i.imgur.com/iXY01UL.gif","#dbdbdb"],
-        ["","","https://i.imgur.com/kjRZnzA.gif","#ac876c"],
-        ["annihile","","https://static.wikia.nocookie.net/c59e5815-e3bb-45bc-be23-b8a4e2ecf4f6/scale-to-width/755","#0d5253"],
+        ["se transforme","","https://i.imgur.com/hrZoLy7.gif","#747474"],
+        ["s''énèrve","","https://i.imgur.com/iXY01UL.gif","#dbdbdb"],
+        ["aspire tout","","https://i.imgur.com/kjRZnzA.gif","#ac876c"],
+        ["annihile l''adversaire","","https://i.imgur.com/KY5AYV3.gif","#0d5253"],
         ["Intangible","est","https://i.imgur.com/eEIcegU.gif","#2e3533"],
         ],
     "Isshiki Otsutsuki" : [
@@ -2027,12 +2027,12 @@ all_techniques = {
         ["Dome de Glace", "enferme tout le monde dans le", "", "#61c8ed"],
         ["Prisons de Glace", "condamne l''opposant aux", "", "#61c8ed"],
     ],
-
-    # Hunter x Hunter
-    "Gon Freecss" : [
-        ["Jajanken", "prépare son", image_temporaire(), hexadecimal_temporaire],
-        ["Recharge", "", "", "#5c3307"],
+    "Gai Maito" : [
+        ["fonce avec hargne","","https://media1.tenor.com/m/OwjtEmjYofkAAAAC/naruto-8th.gif","#830f0f"],
+        ["prend la posture du Phénix","","https://media1.tenor.com/m/pfcaNUMPdbwAAAAC/maght-guy-naruto.gif","#f96b6b"],
+        ["devient Gai de la Nuit..","","https://media1.tenor.com/m/brubblCLirIAAAAC/guy-guy-sensei.gif","#a42434"],
     ],
+    # Hunter x Hunter
     "Franklin" : [
         ["Déluge de Balles", "déverse un", "https://i.imgur.com/0KyJyzH.gif", "#5c3307"],
         ["Recharge", "", "", "#5c3307"],
