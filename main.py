@@ -1968,7 +1968,8 @@ async def statistiquesJoueur(message, userFromDb):
     ligne2 = f"👨‍🦲 Nombre de personnages : {gras(statsJoueur['NOMBRE_PERSONNAGES'])}"
     ligne3 = f"🏆 Nombre de victoires : {gras(statsJoueur['NOMBRE_TOTAL_VICTOIRE'])}"
     ligne6 = f"🔮 Nombre d'invocations : {gras(statsJoueur['NOMBRE_TOTAL_INVOCATION'])}"
-
+    # Niveau dans l'histoire
+    ligne7 = f"📖 Niveau dans l'histoire : {gras(getNiveauFromUser(userFromDb))}"
     description_rarete = ""
     print(statsJoueur, statistiques)
     for index in range(len(statsJoueur['NOMBRE_PAR_RARETE'])):
@@ -1976,7 +1977,7 @@ async def statistiquesJoueur(message, userFromDb):
         description_rarete += f"{rarete} : {gras(statsJoueur['NOMBRE_PAR_RARETE'][index][1])} / {statistiques['NOMBRE_PAR_RARETE'][rarete]}\n"
     ligne5 = f"✨ Nombre de personnages par rareté :\n{description_rarete}"
     ligne4 = f"⚡ Puissance : {gras(statsJoueur['PUISSANCE'])}"
-    desc = ligne1 + "\n\n" + ligne2 + "\n\n" + ligne3 + "\n\n" + ligne6 +  "\n\n" + ligne4 + "\n\n" + ligne5
+    desc = ligne1 + "\n" + ligne7 + "\n" + ligne2 + "\n\n" + ligne3 + "\n" + ligne6 +  "\n" + ligne4 + "\n\n" + ligne5
     embed = discord.Embed(
         title="",
         description=desc,
@@ -2736,15 +2737,15 @@ async def classement(message, userFromDb):
 
 def get_color_based_on_power(power):
     power_ranges = {
-        100: CONSTANTS['RARITY_COLOR']['F'],
-        200: CONSTANTS['RARITY_COLOR']['E'],
-        300: CONSTANTS['RARITY_COLOR']['D'],
-        500: CONSTANTS['RARITY_COLOR']['C'],
-        1000: CONSTANTS['RARITY_COLOR']['B'],
-        2500: CONSTANTS['RARITY_COLOR']['A'],
-        5000: CONSTANTS['RARITY_COLOR']['S'],
-        7000: CONSTANTS['RARITY_COLOR']['SS'],
-        12000: CONSTANTS['RARITY_COLOR']['X'],
+        1000: CONSTANTS['RARITY_COLOR']['F'],
+        2500: CONSTANTS['RARITY_COLOR']['E'],
+        5000: CONSTANTS['RARITY_COLOR']['D'],
+        8000: CONSTANTS['RARITY_COLOR']['C'],
+        13000: CONSTANTS['RARITY_COLOR']['B'],
+        19000: CONSTANTS['RARITY_COLOR']['A'],
+        24000: CONSTANTS['RARITY_COLOR']['S'],
+        30000: CONSTANTS['RARITY_COLOR']['SS'],
+        36000: CONSTANTS['RARITY_COLOR']['X'],
         float('inf'): CONSTANTS['RARITY_COLOR']['Z']  # Supposons que tout supérieur à 300 est 'C'
     }
 
