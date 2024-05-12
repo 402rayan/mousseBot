@@ -10,7 +10,7 @@ all_characters_templates = {
             "Dragon Ball" : [ # ✅
             ("Super Shenron", "Z", "https://i.imgur.com/W7V2Oru.gif", 2000, 2000, 2000),
             ("Son Goku", "X", "https://i.imgur.com/1dpz2hV.gif", 905, 950, 900),
-            ("Zeno", "Z", "https://i.imgur.com/W579wtw.gif", 2000, 2500, 2100),
+            ("Zeno", "Z", "https://i.imgur.com/W579wtw.gif", 1500, 2500, 1500),
             ("Grand Prêtre", "Z", "https://i.imgur.com/XFKPYIb.gif", 2000, 2000, 1800),
             ("Whis", "X", 'https://i.imgur.com/UHCV2D1.gif', 1050, 1040, 1000),
             ("Vados", "X", 'https://i.imgur.com/6WuAjqS.gif',1010, 1050, 1000),
@@ -1734,6 +1734,26 @@ all_techniques = {
 
     ],
     # Dragon Ball
+    "Grand Prêtre" : [
+        ["est amusé par ce combat de faibles","","https://i.imgur.com/AwPLe0B.gif","#d1e5fd"],
+        
+        ],
+    "Zeno" : [
+        ["Efface l''univers","","","#000000"],
+        ["force tout le monde à s''agenouiller","","https://media1.tenor.com/m/z_m0pEgSEhYAAAAd/dbs-dragon-ball-super.gif","#564d2d"],
+        ["appelle son double","","https://i.imgur.com/DV7Xsmz.gif","#5adcfe"],
+        ["est amusé par le combat","","https://i.imgur.com/xIJnEbi.gif","#c87700"],
+        ["est étonné par votre nullité","","https://i.imgur.com/jDG8qtb.gif","#100b2e"],
+        ["","","https://qph.cf2.quoracdn.net/main-qimg-297ff5c1c13bc1bf0688bf0b38943032","#a1d8e3"],
+        ["","","https://64.media.tumblr.com/67bb373027ff9c6becebcfd24023742d/tumblr_pmemkykvPb1wafdbeo1_500.gif",""],
+        ["et Zeno vous souhaitent la bienvenue","","https://64.media.tumblr.com/67bb373027ff9c6becebcfd24023742d/tumblr_pmemkykvPb1wafdbeo1_500.gif","#b1c997"],
+        ["","","https://i.imgur.com/1mwuion.gif","#7bc6dc"],
+        ["retweet le combat","","","#7bc6dc"],
+        ],
+    "Vados" : [
+        ["","","https://media1.tenor.com/m/-Ku4nzfbkX0AAAAC/dbz-dbs.gif","#814c94"],
+        
+        ],
     "Super Shenron" : [
         ["exauce un voeu", "", "", "#f7f7f7"],
         ["est sur le point de détruire toute la galaxie...","","","#000000"],
@@ -1753,7 +1773,7 @@ all_techniques = {
         ["N''en peut plus du combat", "", "https://i.imgur.com/O3a72WV.gif", "#5e2c97"],
     ],
     "Champa" : [
-        ["Hakai", "", image_temporaire(), hexadecimal_temporaire],
+        ["Hakai", "lance son", "", "#976b99"],
     ],
     "Gogeta" : [
         ["KAMEHAME-HAAAAAAAAAAA", "", "https://i.imgur.com/OnuTsTG.gif", "#371fde"],
@@ -1940,7 +1960,25 @@ all_techniques = {
         ["Pluie d''énergie", "envoie une", "https://media1.tenor.com/m/VPIrMcpLbeQAAAAd/madara-madara-uchiha.gif", "#020203"],
         ["Analyse les mouvements","","https://media1.tenor.com/m/ME7LU5WZaUIAAAAC/%E5%AF%AB%E8%BC%AA%E7%9C%BC.gif","#704e56"],
         ["Boule de feu", "envoie une", "https://media1.tenor.com/m/DHPr-HlwxSEAAAAd/madara-uchiha-vs.gif", "#66474e"],
+        ["","","https://media1.tenor.com/m/vZyH_I0M0N8AAAAC/madara-fire-ball.gif","#fcbd2b"],
+        ["","","https://media1.tenor.com/m/p4_EICgq1wwAAAAC/uchiha-madara-sharingan.gif","#282e40"],
+        ["Sasusano","s''entoure de","https://media1.tenor.com/m/Ow0_KfLUF9kAAAAC/madara.gif","#8d1e2c"],
+        ["Carnage","fait un","https://media1.tenor.com/m/9gfpFXcHwnYAAAAd/madara.gif","#9597ab"],
+        ["Chakra de Hashirama","puise dans le","https://media1.tenor.com/m/jQFqoZ_PS8kAAAAC/madara-uchiha-madara.gif","#4c4c43"],
+        ["Rinnegan","déploie son","https://i.imgur.com/yFU5Omf.gif","#f0e4d3"],
+        
     ],
+    "Obito Uchiha": [
+        ["Kamui", "utilise", "https://media1.tenor.com/m/CcQ6DNKb1TAAAAAC/obito-kamui-ice.gif", "#351326"],
+        ["Vie","revient à la","https://media1.tenor.com/m/NkHbgbHM-w8AAAAC/obito-uchiha-tobi.gif","#964447"],
+        ["","","https://media1.tenor.com/m/1rZBXGbSaFwAAAAC/naruto-obito-uchiha.gif","#3b2c66"],
+        ["pare les attaques","","https://i.imgur.com/IwZptq9.gif","#365353"],
+        ["","","https://i.imgur.com/hrZoLy7.gif","#747474"],
+        ["","","https://i.imgur.com/iXY01UL.gif","#dbdbdb"],
+        ["","","https://i.imgur.com/kjRZnzA.gif","#ac876c"],
+        ["annihile","","https://static.wikia.nocookie.net/c59e5815-e3bb-45bc-be23-b8a4e2ecf4f6/scale-to-width/755","#0d5253"],
+        ["Intangible","est","https://i.imgur.com/eEIcegU.gif","#2e3533"],
+        ],
     "Isshiki Otsutsuki" : [
         ['Tiges Noires','projette des','https://media1.tenor.com/m/Ikkq1VpPA_AAAAAC/otsutsuki-isshiki-otsutsuki.gif','#44424c'],
     ],

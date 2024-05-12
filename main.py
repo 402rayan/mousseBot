@@ -2296,9 +2296,15 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
         # Combat Low diff
         # On montre 2 tours du gagnats et 1 tour du perdant dans un ordre aléatoire
         if victoire:
-            ordre = ["teamA", "teamB", "teamA"]
+            if random.random() < 0.5:
+                ordre = ["teamA", "teamB", "teamA"]
+            else:
+                ordre = ["teamA","teamA","teamA"]
         else:
-            ordre = ["teamB", "teamA", "teamB"]
+            if random.random() < 0.5:
+                ordre = ["teamB", "teamA", "teamB"]
+            else:
+                ordre = ["teamB","teamB","teamB"]
         logger.info(f"Ordre des tours : {ordre}")
         for i in range(3):
             if ordre[i] == "teamA":
@@ -2309,7 +2315,7 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
             await asyncio.sleep(3)
     elif combatType == 2:
         #Combat mid diff
-        ordre = ["teamA", "teamB", "teamA", "teamB", "teamA"] 
+        ordre = ["teamA", "teamB", "teamA", "teamB", "teamA","teamB"] 
         random.shuffle(ordre)
         if victoire:
             ordre.append("teamA")
@@ -2326,6 +2332,12 @@ async def combatPvp(message, teamA, teamB, adversaireDiscord):
     else:
         # Combat difficile
         ordre = ["teamA","teamB","teamA","teamB","teamA","teamB","teamA"]
+        for i in range(3):
+            if random.random() < 0.6:
+                if random.random() < 0.5:
+                    ordre.append("teamA")
+                else:
+                    ordre.append("teamB")
         random.shuffle(ordre)
         if victoire:
             ordre.append("teamA")
