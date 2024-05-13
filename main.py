@@ -1853,7 +1853,7 @@ async def autoTeam(message, userFromDb):
     # Message calcul en cours
     await message.channel.send(embed=embed_info("Calcul des meilleures équipes...", "Veuillez patienter...", discord.Color.blue()))
     if message.author.id not in CONSTANTS['ADMINS']:
-        teams = database.autoTeam(message.author.id)
+        teams = database.autoTeam(message.author.id, False, 35)
     else:
         teams = database.autoTeam(message.author.id, True, 35)
     if teams == "ERROR_MIN_CHARACTERS":
@@ -1969,7 +1969,7 @@ async def statistiquesJoueur(message, userFromDb):
     ligne3 = f"🏆 Nombre de victoires : {gras(statsJoueur['NOMBRE_TOTAL_VICTOIRE'])}"
     ligne6 = f"🔮 Nombre d'invocations : {gras(statsJoueur['NOMBRE_TOTAL_INVOCATION'])}"
     # Niveau dans l'histoire
-    ligne7 = f"📖 Niveau dans l'histoire : {gras(getNiveauFromUser(userFromDb))}"
+    ligne7 = f"📖 Niveau dans l'histoire : {gras(database.get_niveau_histoire(user.id))}"
     description_rarete = ""
     print(statsJoueur, statistiques)
     for index in range(len(statsJoueur['NOMBRE_PAR_RARETE'])):

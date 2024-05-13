@@ -862,9 +862,9 @@ class Database:
     
     def get_synergie_equilibrage(self, id, verbose=False):
         self.cur.execute(f"SELECT * FROM character_template_synergies c LEFT JOIN character_templates ct ON c.template_id = ct.template_id WHERE synergy_id = {id}")
-        base_rate = 120 # De base, le multiplicateur d'une synergie est de 1
+        base_rate = 200 # De base, le multiplicateur d'une synergie est de 1
         characters = self.cur.fetchall()
-        taux_de_baisse = {'Z' : 4,'X' : 3, 'SS' : 3, 'S' : 3, 'A' : 3, 'B' : 3, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 0}
+        taux_de_baisse = {'Z' : 10,'X' : 10, 'SS' : 10, 'S' : 10, 'A' : 10, 'B' : 6, 'C' : 3, 'D' : 3, 'E' : 2, 'F' : 0}
         synergie = self.get_synergy(id)
         if synergie is None:
             return None
@@ -974,3 +974,7 @@ class Database:
         self.create_character_templates()
         self.conn.commit()
         logger.success("Les templates de personnages ont été réinitialisés.")
+    
+    def get_niveau_histoire(self, user_discord_id):
+        self.cur.execute(f"SELECT histoireLevel FROM users WHERE user_discord_id = {user_discord_id}")
+        return self.cur.fetchone()[0]
