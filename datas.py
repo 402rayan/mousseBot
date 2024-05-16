@@ -1340,6 +1340,7 @@ all_synergies = [
     (314, "Plasma Stellaire", "HP", 0.45, "Les Utilisateurs du Plasma Stellaire sont des individus qui étaient dus à un sacrifice pour Tengen.", image_temporaire(), "#00000"),
     (315, "Fourmis Chimère", "DEF", 0.45, "Les Fourmis Chimères sont des creatures qui ont ete creees par les Fourmis Reines pour proteger leur colonie.", image_temporaire(), "#00000"),
     (316, "Aquatique", "DEF", 0.45, "Les Aquatiques sont des individus qui vivent dans l'eau et qui peuvent respirer sous l'eau pour survivre.", image_temporaire(), "#00000"),
+    (317, "Plus fort exorciste de sa génération", "ATK", 0.45, "The Strongest Sorcerer in History Vs The Strongest Sorcerer of Today", "https://i.imgur.com/OP0LItV.jpeg", "#20151f"),
 ]
 
 
@@ -1347,6 +1348,7 @@ all_synergies = [
 # Shou Tucker et Rasa et Vinsmoke Judge
 
 all_link_synergies = {
+
     316 : ["Ikarugo","Dagon","Hatchan","Jinbe"], # Aquatique
     315 : ["Neferopito","Pufu","Meruem","Yupi","Koruto","Cheetu","Ikarugo","Pegui"], # Fourmis Chimère
     314 : ["Yuki Tsukumo","Riko Amanai"], # Plasma Stellaire
@@ -1542,7 +1544,7 @@ all_link_synergies = {
     120 : ["Ichigo Kurosaki", "Masaki Kurosaki", "Karin Kurosaki", "Yuzu Kurosaki", "Isshin Kurosaki"], # Famille Kurosaki
     6 : ["Uryu Ishida", "Soken Ishida", "Ryuken Ishida", "Masaki Kurosaki", "Yhwach","Ichigo Kurosaki","Kanae Katagiri","Jugram"], # Quincy
     8 : ["Grimmjow", "Ulquiorra", "Nnoitra Gilga", "Halibel", "Baraggan", "Coyote Stark"], # Espada
-    119 : ["Obito Uchiha", "Mirio Togata","Arthur Pendragon"], # Intangible
+    119 : ["Obito Uchiha", "Mirio Togata","Arthur Pendragon","Vanilla Ice"], # Intangible
     118 : ["Lady Nagant", "Riza Hawkeye", "Ikarugo","Mista","Mai Zenin","Benn Beckman","Usopp","Snipe","Sasha Braus","Gabi Braun","Uryu Ishida","Mai","Yasopp","Coyote Stark","Charlotte Katakuri"], # Sniper
     117 : ["Mirio Togata","Tamaki Amajiki","Nejire Hado"], # Big 3
     116 : ["Tomura Shigaraki", "Nana Shimura"], # Shimura
@@ -1655,6 +1657,7 @@ all_link_synergies = {
     57 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo (Purple Haze)", "Abbacchio","Diavolo","Luca","Polpo","Trish","Neon Nostrad","Katana Man"], # Mafioso
     58 : ["Bucciarati","Giorno Giovanna", "Mista", "Narancia","Fugo (Purple Haze)", "Abbacchio","Trish"], # Team Bucciarati
     307 : ["Kurapika","Satoru Gojo","Aang"], # Dernier survivant de son clan
+    317 : ["Satoru Gojo","Sukuna"], # Plus fort exorciste de sa génération
 }
 # https://media1.tenor.com/m/DCSk9f-zAKYAAAAd/tengen-uzui-fight.gif
 all_techniques = {
