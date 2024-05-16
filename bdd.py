@@ -224,7 +224,16 @@ class Database:
         # Retourne des statistiques sur le joueur tel que le nombre de personnages qu'il possède
         self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
         nombre_personnages = self.cur.fetchone()[0]
-        self.cur.execute(f"SELECT rarity, COUNT(*) FROM characters c JOIN character_templates t ON c.template_id = t.template_id WHERE user_discord_id = {user_discord_id} GROUP BY rarity")
+        self.cur.execute(f"""
+            SELECT rarity, COUNT(*)
+            FROM (
+                SELECT DISTINCT c.template_id, t.rarity
+                FROM characters c
+                JOIN character_templates t ON c.template_id = t.template_id
+                WHERE c.user_discord_id = {user_discord_id}
+            ) AS unique_characters
+            GROUP BY rarity
+        """)
         nombre_par_rarete = self.cur.fetchall()
         self.cur.execute(f"SELECT tickets FROM users WHERE user_discord_id = {user_discord_id}")
         nombre_tickets = self.cur.fetchone()[0]
