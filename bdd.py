@@ -160,7 +160,7 @@ class Database:
         return self.cur.fetchone()[0]
     
     def autoTeam(self, user_discord_id,ignoreTime = False,max_character_auto_team = 25):
-        # Vérifie que l'utilisateur a moins de 50 personnages
+        # Vérifie que l'utilisateur a moins de max_character_auto_team personnages
         self.cur.execute(f"SELECT COUNT(*) FROM characters WHERE user_discord_id = {user_discord_id}")
         count = self.cur.fetchone()[0]
         print(count)
@@ -183,6 +183,8 @@ class Database:
             logger.info(characters[0])
             characters.sort(key=lambda x: x[9] + x[10] + x[11], reverse=True)
             characters = characters[:max_character_auto_team]
+        # On rend unique les characters par nom pour éviter les doublons
+        characters = list(set(characters))
         all_teams = []
         # Générer toutes les combinaisons possibles de 3 personnages
         for team_characters in combinations(characters, 3):
