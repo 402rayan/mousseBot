@@ -306,18 +306,18 @@ class Database:
     
     def xp_for_next_level(self, current_level):
         # Base XP required for the first level
-        base_xp = 100
+        base_xp = 700
         # Growth rate
-        growth_rate = 1.15
+        growth_rate = 1.098
         # Calculate XP for the next level
-        return int(base_xp * (growth_rate ** current_level))
+        return int(base_xp * (growth_rate ** (current_level/2)))
 
     def get_current_xp_and_level(self, character_id):
         self.cur.execute(f"SELECT experience, level FROM characters WHERE char_id = {character_id}")
         current_xp, current_level = self.cur.fetchone()
         return current_xp, current_level
     
-    def update_level_and_xp(self,character_id, xp_to_add):
+    def update_level_and_xp(self,character_id, xp_to_add,verbose=False):
         # Récupère l'XP actuel et le niveau de l'utilisateur
         current_xp, current_level = self.get_current_xp_and_level(character_id)
         
@@ -329,7 +329,7 @@ class Database:
         
         # Mettre à jour l'XP et le niveau dans la base de données
         self.cur.execute(f"UPDATE characters SET experience = {new_xp}, level = {current_level} WHERE char_id = {character_id}")
-        logger.info(f"Le personnage {character_id} a gagné {xp_to_add} XP. Il est maintenant niveau {current_level} avec {new_xp} XP.")
+        logger.info(f"Le personnage {character_id} a gagné {xp_to_add} XP. Il est maintenant niveau {current_level} avec {new_xp} XP.") if verbose else None
         self.conn.commit()
         
     def claim_hourly(self, user_discord_id, user_name):

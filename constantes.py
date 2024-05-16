@@ -9,7 +9,7 @@ CONSTANTS = {
     'RARITY_PRICE': {
         # Nombre de tickets obtenus en vendant un personnage de la rareté correspondante
         'Z': 40,
-        'X': 15,
+        'X': 18,
         'SS': 7,
         'S': 4,
         'A': 2,
@@ -21,7 +21,7 @@ CONSTANTS = {
     },
     'RARITY_XP': {
         # Nombre d'expérience obtenue en vendant un personnage de la rareté correspondante
-        'Z': 2000000,
+        'Z': 1000000,
         'X': 180000,
         'SS': 50000,
         'S': 10000,
