@@ -50,9 +50,8 @@ CONSTANTS = {
         'Z': 0.004,
         'X': 0.07,
         'SS': 0.15,
-        'S': 0.25,
-        'A': 0.34,
-        'B': 0.15
+        'S': 0.30,
+        'A': 0.45,
     },
     'RARITY_COLOR': {
         # Couleur des personnages de la rareté correspondante
