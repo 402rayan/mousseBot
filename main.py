@@ -1852,10 +1852,7 @@ async def autoTeam(message, userFromDb):
     logger.info(f"Commande !autoTeam appelée par {message.author.name} ({message.author.id}).")
     # Message calcul en cours
     await message.channel.send(embed=embed_info("Calcul des meilleures équipes...", "Veuillez patienter...", discord.Color.blue()))
-    if message.author.id not in CONSTANTS['ADMINS']:
-        teams = database.autoTeam(message.author.id, False, 35)
-    else:
-        teams = database.autoTeam(message.author.id, True, 35)
+    teams = database.autoTeam(message.author.id, message.author.id in CONSTANTS['ADMINS'], 35)
     if teams == "ERROR_MIN_CHARACTERS":
         await message.channel.send(embed=embed_info("Vous devez avoir au moins 3 personnages pour utiliser cette commande!","", discord.Color.red()))
         return
@@ -1874,8 +1871,7 @@ async def autoTeam(message, userFromDb):
         logger.error(f"Temps restant pour {message.author.name} ({message.author.id}) : {temps_restant_minutes} minutes et {temps_restant_seconds} secondes.")
         await message.channel.send(embed=embed_info("Vous avez déjà utilisé cette commande récemment!", f"Prochaine utilisation possible dans **{temps_restant_minutes} minute et {temps_restant_seconds} secondes**.", discord.Color.red()))
         return
-    
-    
+       
     max_power = teams[0][1]
     footer = "✅ : Oui ❌ : Non"
 
