@@ -315,7 +315,7 @@ class Database:
     
     def xp_for_next_level(self, current_level):
         # Base XP required for the first level
-        base_xp = 700
+        base_xp = 800
         # Growth rate
         growth_rate = 1.098
         # Calculate XP for the next level
