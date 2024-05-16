@@ -40,10 +40,10 @@ CONSTANTS = {
         'S': 0.05,
         'A': 0.1,
         'B': 0.2,
-        'C': 0.2955,
-        'D': 0.1495,
+        'C': 0.2755,
+        'D': 0.1595,
         'E': 0.1,
-        'F': 0.07,
+        'F': 0.08,
     },
     'RARITY_CHANCE_HIGH': {
         # Change d'obtenir un personnage de la rareté correspondante en cas de GROS ticket
