@@ -184,10 +184,15 @@ class Database:
             characters.sort(key=lambda x: x[9] + x[10] + x[11], reverse=True)
             characters = characters[:max_character_auto_team]
         # On rend unique les characters par nom pour éviter les doublons
-        characters = list(set(characters))
+        unique_name = []
+        unique_characters = []
+        for character in characters:
+            if character[6] not in unique_name:
+                unique_name.append(character[6])
+                unique_characters.append(character)
         all_teams = []
         # Générer toutes les combinaisons possibles de 3 personnages
-        for team_characters in combinations(characters, 3):
+        for team_characters in combinations(unique_characters, 3):
             team = sorted(team_characters, key=lambda x: x[1])  # Tri des personnages par nom
             all_teams.append(team)
 
