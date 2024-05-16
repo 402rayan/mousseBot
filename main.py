@@ -2605,8 +2605,47 @@ async def voirTeam(message, userFromDb):
     if bonus:
         footer += f"\nBonus de synergies : {bonus['HP']}HP {bonus['ATK']}ATK {bonus['DEF']}DEF "
     embed.set_footer(text=footer)
-    await message.channel.send(embed=embed)
-    return
+    msg = await message.channel.send(embed=embed)
+    # On créer un embed pour chaque personnage avec son image et son nom
+    embed_personnages = []
+    i = 0
+    for personnage in personnages:
+        i += 1
+        if personnage is None:
+            continue
+        nom = personnage[6]; image = personnage[8]
+        newEmbed = discord.Embed(
+            title=f"{nom} [{personnage[7]}]",
+            color=CONSTANTS['RARITY_COLOR'][personnage[7]]
+        )
+        newEmbed.set_image(url=image)
+        newEmbed.set_author(name=f"Membre {i} de l'équipe de {user.name}", icon_url=user.avatar.url)
+        embed_personnages.append(newEmbed)
+    # On ajoute des réactions de défilement
+    if len(embed_personnages) == 0:
+        return
+    embed_personnages.append(embed)
+    await msg.add_reaction('⬅️')
+    await msg.add_reaction('➡️')
+    # On crée une fonction pour changer d'embed
+    def check(reaction, user):
+        return user == message.author and str(reaction.emoji) in ['⬅️', '➡️'] and reaction.message.id == msg.id
+    index = -1
+    while True:
+        try:
+            reaction, user = await bot.wait_for('reaction_add', timeout=15.0, check=check)
+        except asyncio.TimeoutError:
+            break
+        if str(reaction.emoji) == '➡️':
+            index = (index + 1) % len(embed_personnages)
+        else:
+            index = (index - 1) % len(embed_personnages)
+        print(index)
+        await msg.edit(embed=embed_personnages[index])
+        try:
+            await msg.remove_reaction(reaction, user)
+        except discord.errors.Forbidden:
+            pass
 
 @bot.command()
 async def ajouterTeam(message, userFromDb):
@@ -3052,10 +3091,11 @@ commands = {
     "set": setLevel,           # "setlevel"
     "st": statistiquesJoueur,  # "satistiques"
     "su": invocation,          # "summon"
-    "tic": getTickets,         # "tic"
+
     "tea": voirTeam,            # "te", "voi"
     "tec" : techniquePersonnage, # "technique"
     "tu": tutoriel,            # "tutoriel"
+    "t": getTickets,         # "tic"
     "ve": sell,                # "vendre"
     "voirTea": voirTeam,             # "voir"
 }
