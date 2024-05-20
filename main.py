@@ -1591,6 +1591,61 @@ async def getTickets(message, userFromDb):
     await message.channel.send(embed=embed_info(title=f"{user.name} a {tickets} tickets.",description="", color=discord.Color.blue(), footer=f"Votre prochaine invocation sera chanceuse!" if ticketDiamant else ""))
 
 @bot.command()
+async def multi(message, userFromDb):
+    # Invoque 5 personnages en meme temps
+    logger.info(f"Commande !multi appelée par {message.author.name} ({message.author.id}).")
+    invo = database.multi_summon(message.author.id, message.author.name)
+    if invo == "ERROR_NOT_ENOUGH_TICKETS":
+        await message.channel.send(embed=embed_info("Vous n'avez pas assez de tickets pour invoquer!","", discord.Color.red(), footer=f"Il vous faut {CONSTANTS['MULTI_INVOCATION_COST']} tickets pour faire une multi-invocation."))
+        return
+    if invo == "ERROR_NO_CHARACTER":
+        await message.channel.send(embed=embed_info("Aucun personnage n'a été trouvé!","", discord.Color.red()))
+        return
+    else:
+        # On sépare les personnages SS et X dans une autre variable
+        invo_ss_x = []
+        invo_normal = []
+        for character in invo:
+            if character[2] in ['SS','X']:
+                invo_ss_x.append(character)
+            else:
+                invo_normal.append(character)
+        msg = await message.channel.send(embed=embed_info("Multi-Invocation en cours...", "", discord.Color.blue()))
+        await asyncio.sleep(1)
+        for character in invo_normal:
+            print(character)
+            await msg.edit(embed=embed_invocation(character))
+            await asyncio.sleep(2)
+        await asyncio.sleep(1)
+        # On envoie le récapitulatif 
+        embed = discord.Embed(
+            title=" ~ ".join([f"{character[1]} [{character[2]}]" for character in invo]),
+            description="",
+            color=discord.Color.blue()
+        )
+        embed.set_author(name=f"Récapitulatif de l'invocation de {message.author.name}", icon_url=message.author.avatar.url)
+        await message.channel.send(embed=embed) if len(invo_ss_x) == 0 else await message.channel.send(embed=embed_info("Oh mais j'oubliais..", "", random.choice(list(CONSTANTS['COLORS'].values()))))
+        if len(invo_ss_x) > 0:
+            await asyncio.sleep(2)
+            schema = random.choice(CONSTANTS['NOMS_GIF_INVOCATION'])
+            nomDuGif = schema[0] ; texteAAfficher = schema[1] ; couleur = schema[2] ; nomPfp = schema[3]
+
+            msg = await embed_histoire_character(message=message, nom=texteAAfficher, nomGif=nomDuGif, nomPfp=nomPfp, color=couleur, description="", titre="")
+            if schema[-1] == True: # Si l'invocation est longue
+                duree = 8
+            else:
+                duree = 6
+            await asyncio.sleep(duree)
+            await msg.delete()
+            for character in invo_ss_x:
+                await message.channel.send(embed=embed_invocation(character))
+                await asyncio.sleep(2)
+            await asyncio.sleep(1)
+            # On envoie le récapitulatif
+            await message.channel.send(embed=embed)
+    
+
+@bot.command()
 async def claimHourly(message, userFromDb):
     logger.info(f"Commande !claimHourly appelée par {message.author.name} ({message.author.id}).")
     user = message.author
@@ -3080,6 +3135,7 @@ commands = {
     "inv": invocation,         # "invo", "invocation"
     "lis": list_command,       # "list", "help"
     "luc": luckyInvocation,    # "luckyInv"
+    "mu": multi,               # "multi"
     "po": getPower,            # "power"
     "pu": getPower,            # "puissance"
     "pv": pvp,                 # "pvp"

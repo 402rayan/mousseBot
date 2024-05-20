@@ -508,6 +508,45 @@ class Database:
             self.update_special_invocation(user_discord_id, False)
         return [template, self.get_character(new_character)]
     
+    def multi_summon(self, user_discord_id, user_name):
+        # Retourne une liste de 5 personnages invoqués aléatoirement
+        # Si les personnages sont de raretés A S SS X Z, on vérifie qu'il n'a pas les personnages
+        # Vérifier que l'utilisateur a assez de tickets
+        tickets = self.get_tickets(user_discord_id)
+        if tickets < CONSTANTS['MULTI_INVOCATION_COST']:
+            logger.error(f"Le joueur {user_name} ({user_discord_id}) n'a pas assez de tickets pour invoquer.")
+            return "ERROR_NOT_ENOUGH_TICKETS"
+        characters = []
+        all_characters = self.get_character_templates()
+        liste_personnages = self.get_characters(user_discord_id)
+        for i in range(5):
+            y = 0
+            while True and y < 20:
+                y += 1
+                rarity = random.choices(list(CONSTANTS['RARITY_CHANCE'].keys()), list(CONSTANTS['RARITY_CHANCE'].values()))[0]
+                character_templates = [char for char in all_characters if char[2] == rarity]
+                template = random.choice(character_templates)
+                template_id = template[0]
+                if rarity in ['Z','X','SS','S','A']:
+                    if any(char[2] == template_id for char in liste_personnages):
+                        logger.info(f"Le joueur {user_name} ({user_discord_id}) a déjà le personnage {template[1]} [{rarity}].")
+                    else:
+                        characters.append(template)    
+                else:
+                    characters.append(template)
+                    break
+                
+        if len(characters) < 5:
+            logger.error(f"Le joueur {user_name} ({user_discord_id}) n'a pas pu invoquer de personnage.")
+            return "ERROR_NO_CHARACTER"
+        # On enleve le cout de l'invocation
+        tickets -= CONSTANTS['MULTI_INVOCATION_COST']
+        self.update_tickets(user_discord_id, tickets)
+        for character in characters:
+            new_character = self.create_character(user_discord_id,user_name, character[0])
+            logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {character[1]} [{character[2]} (id : {character[0]}) (character Id : {new_character}) lors d'une invocation multiple.")
+        return characters[:5]
+            
     def fakeTeam(self, user_discord_id):
         # Donne Gojo, Sasuke et All Might
         goku = self.get_character_template_by_name(user_discord_id, "Bot", "Goku")

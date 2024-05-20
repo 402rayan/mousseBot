@@ -1,6 +1,7 @@
 CONSTANTS = {
     'HOURLY_TICKETS': 5,
     'INVOCATION_COST': 1,
+    'MULTI_INVOCATION_COST': 5,
     'MAX_CHARACTERS': 999,
     'BASE_CHANCE_VICTORY': 0.6,
     'HOURLY_XP': [5000,4000,15000,1,300000,2,5000,3200,3300,4200,4100,4001,3000,3500,4500,6000,1000,10000,5250,5100,5300,5555,4200,100000,4000,8000,20000,3000,5000,5555,5432,10000],
@@ -114,7 +115,6 @@ CONSTANTS = {
         "Cerise": "🍒",
         "Raisin": "🍇",
         "Noix de coco": "🥥",
-        "Noix": "🌰",
         "Miel": "🍯",
         "Sel": "🧂",
         "Pêche": "🍑",
@@ -156,11 +156,11 @@ CONSTANTS = {
     },
     "NOMS_GIF_INVOCATION": [
         # Nom du gif, texte à afficher, couleur du texte, pfp, isLong
-        # ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
-        # ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
-        # ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
-        # ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
-        # ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2",True],
+        ["genkidama", "Goku vous prête sa force!", 0x4e6cd9, "goku"],
+        ["narutoLight","Naruto vous prête sa force!", 0xff4e03, "naruto"],
+        ["shanksPreteForce", "Shanks vous transmet un pouvoir!", 0xffce68, "shanks"],
+        ["shenronInvocation", "Votre souhait est exaucé!", 0x90f724, "shenron", True],
+        ["gohanTransformation", "Son Gohan vous prête sa force!", 0xaa0011, "gohanSSJ2",True],
         ["unionFaitLaForce","L'union fait la force !", 0x5cb0ef, "toriko"],
         ["bizarreInvocation","Bizarre cette invocation...", 0xe8e3e3,"megumi"],
         ["roiDesPirates","Le roi des pirates ?... Ça sera moi !", 0xd4d8cb,"luffy"],
