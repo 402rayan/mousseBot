@@ -545,6 +545,9 @@ class Database:
         for character in characters:
             new_character = self.create_character(user_discord_id,user_name, character[0])
             logger.info(f"Le joueur {user_name} ({user_discord_id}) a invoqué {character[1]} [{character[2]} (id : {character[0]}) (character Id : {new_character}) lors d'une invocation multiple.")
+        # On ajoute 5 invos aux stats
+        for i in range(5):
+            self.ajouter_une_invocation(user_discord_id)
         return characters[:5]
             
     def fakeTeam(self, user_discord_id):
